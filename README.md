@@ -4,9 +4,9 @@
 
 **Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more). Browse, search, add and edit mythological entities, places and artifacts, then test your knowledge with three-difficulty quizzes.
 
-### Latest addition — V1.6.5
+### Latest addition — V1.7.0
 
-Quiz progress (entities and places) now survives screen rotation.
+Global button style to avoid truncated text on small screens.
 ### Getting started
 
 1. Clone the repository.
@@ -19,9 +19,9 @@ Quiz progress (entities and places) now survives screen rotation.
 
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
-### Dernier ajout — V1.6.5
+### Dernier ajout — V1.7.0
 
-Conservation du quiz (entités et lieux) lors d'une rotation d'écran.
+Style de bouton global pour éviter le texte tronqué sur petits écrans.
 ### Démarrage
 
 1. Cloner le dépôt.
