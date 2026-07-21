@@ -5162,12 +5162,12 @@
       "difficulty": 1
     },
     {
-      "name": "Anneau d'Andvari",
+      "name": "Andvaranaut",
       "mythology": "Nordique",
       "artifactType": "Artefact",
       "ownerName": "Fáfnir puis Sigurd",
       "creatorName": "Le nain Andvari",
-      "power": "Multiplie l'or de son possesseur, mais porte une malédiction mortelle",
+      "power": "Anneau qui multiplie l'or de son possesseur, mais porte une malédiction mortelle",
       "story": "Volé au nain Andvari par Loki pour payer une dette ; maudit, il cause la mort de tous ses possesseurs, dont Fáfnir",
       "clue": "Anneau maudit convoité par le dragon Fáfnir",
       "difficulty": 2
@@ -5245,6 +5245,90 @@
       "power": "Disque tranchant qui revient toujours à la main de son porteur, détruit le mal",
       "story": "Utilisé par Vishnou pour vaincre de nombreux démons dans la mythologie hindoue",
       "clue": "Disque tournoyant du dieu Vishnou",
+      "difficulty": 3
+    },
+    {
+      "name": "Keraunos",
+      "mythology": "Grecque",
+      "artifactType": "Arme",
+      "ownerName": "Zeus",
+      "creatorName": "Les Cyclopes",
+      "power": "Foudre destructrice qui ne manque jamais sa cible, symbole de l'autorité suprême de Zeus",
+      "story": "Offerte à Zeus par les Cyclopes lors de la Titanomachie, tout comme le trident de Poséidon et la Kunée d'Hadès",
+      "clue": "Foudre du roi des dieux grecs",
+      "difficulty": 1
+    },
+    {
+      "name": "Kunée",
+      "mythology": "Grecque",
+      "artifactType": "Objet magique",
+      "ownerName": "Hadès",
+      "creatorName": "Les Cyclopes",
+      "power": "Casque qui rend invisible celui qui le porte",
+      "story": "Offerte à Hadès par les Cyclopes lors de la Titanomachie, aux côtés du trident de Poséidon et de la foudre de Zeus",
+      "clue": "Casque d'invisibilité du dieu des Enfers",
+      "difficulty": 2
+    },
+    {
+      "name": "Talaria",
+      "mythology": "Grecque",
+      "artifactType": "Objet magique",
+      "ownerName": "Hermès",
+      "creatorName": "Héphaïstos",
+      "power": "Sandales ailées permettant de voler à une vitesse fulgurante",
+      "story": "Portées par Hermès, messager des dieux, pour parcourir le monde et les Enfers à toute vitesse",
+      "clue": "Sandales ailées du messager des dieux",
+      "difficulty": 1
+    },
+    {
+      "name": "Harpé",
+      "mythology": "Grecque",
+      "artifactType": "Arme",
+      "ownerName": "Cronos, puis Persée",
+      "power": "Serpe tranchante capable de trancher la chair des immortels",
+      "story": "Utilisée par Cronos pour émasculer son père Ouranos, puis prêtée par Hermès à Persée pour trancher la tête de la Gorgone Méduse",
+      "clue": "Serpe utilisée par Cronos contre son propre père",
+      "difficulty": 2
+    },
+    {
+      "name": "Yata no Kagami",
+      "mythology": "Japonaise",
+      "artifactType": "Objet magique",
+      "ownerName": "Famille impériale du Japon",
+      "power": "Miroir sacré symbolisant la sagesse et la vérité, une des trois insignes impériales",
+      "story": "Utilisé par les dieux pour attirer la déesse du soleil Amaterasu hors de sa grotte en lui reflétant sa propre lumière",
+      "clue": "Miroir sacré utilisé pour attirer la déesse du soleil hors de sa grotte",
+      "difficulty": 2
+    },
+    {
+      "name": "Yasakani no Magatama",
+      "mythology": "Japonaise",
+      "artifactType": "Objet magique",
+      "ownerName": "Famille impériale du Japon",
+      "power": "Bijou de jade en forme de virgule, symbole de bienveillance et de prospérité",
+      "story": "Une des trois insignes impériales du Japon, aux côtés du miroir Yata no Kagami et de l'épée Kusanagi-no-Tsurugi",
+      "clue": "Bijou de jade parmi les trésors impériaux du Japon",
+      "difficulty": 3
+    },
+    {
+      "name": "Gleipnir",
+      "mythology": "Nordique",
+      "artifactType": "Artefact",
+      "ownerName": "Utilisé pour enchaîner le loup Fenrir",
+      "creatorName": "Les nains, fils d'Ivaldi",
+      "power": "Ruban fin et souple en apparence, mais incassable, capable de retenir le loup Fenrir",
+      "story": "Fabriqué à partir de six ingrédients impossibles : le bruit des pas d'un chat, la barbe d'une femme, les racines d'une montagne, les tendons d'un ours, le souffle d'un poisson et la salive d'un oiseau",
+      "clue": "Ruban magique forgé pour enchaîner le loup Fenrir",
+      "difficulty": 2
+    },
+    {
+      "name": "Muramasa",
+      "mythology": "Japonaise",
+      "artifactType": "Arme",
+      "creatorName": "Le forgeron Sengo Muramasa",
+      "power": "Lame assoiffée de sang, réputée maudite et poussant son porteur à la violence",
+      "story": "Katanas forgés par le maître Muramasa, rival légendaire de Masamune ; leur réputation maléfique en a fait des armes redoutées",
+      "clue": "Katana maudit assoiffé de sang",
       "difficulty": 3
     }
   ]
