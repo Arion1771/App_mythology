@@ -4,9 +4,9 @@
 
 **Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more). Browse, search, add and edit mythological entities, places and artifacts, then test your knowledge with three-difficulty quizzes.
 
-### Latest addition — V1.6.2
+### Latest addition — V1.6.3
 
-Erinyes/Grées/Valkyrie races fully wired into existing screens.
+Legacy 'Primodrial' typo now tolerated in god-type parsing.
 ### Getting started
 
 1. Clone the repository.
@@ -19,9 +19,9 @@ Erinyes/Grées/Valkyrie races fully wired into existing screens.
 
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
-### Dernier ajout — V1.6.2
+### Dernier ajout — V1.6.3
 
-Finition de l'affichage des races Érinyes, Grées et Valkyries dans les écrans existants.
+Tolérance de l'ancienne coquille 'Primodrial' dans le typage divin.
 ### Démarrage
 
 1. Cloner le dépôt.

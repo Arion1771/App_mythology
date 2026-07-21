@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.6.3
+
+- Tolérance de l'ancienne coquille 'Primodrial' dans le typage divin
+
+
 #### V1.6.2
 
 - Finition de l'affichage des races Érinyes, Grées et Valkyries dans les écrans existants (traductions, groupes de formulaire)
