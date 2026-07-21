@@ -47,13 +47,26 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _answerRevealed = MutableLiveData(false)
     val answerRevealed: LiveData<Boolean> = _answerRevealed
 
+    // Empêche le rechargement (et donc la remise à zéro) du quiz lors d'un
+    // changement de configuration (ex. rotation de l'écran), le ViewModel
+    // survivant à la recréation du fragment.
+    private var entityQuizLoaded = false
+
     /**
      * Charge un quiz selon le niveau choisi :
      * - EASY   : 10 entités difficulty=1
      * - MEDIUM : 10 difficulty=1 + 10 difficulty=2
      * - HARD   : 10 difficulty=1 + 10 difficulty=2 + 10 difficulty=3
      */
-    fun loadEntityQuiz(level: QuizLevel = QuizLevel.EASY) = viewModelScope.launch {
+    fun loadEntityQuiz(level: QuizLevel = QuizLevel.EASY) {
+        // Ne charge le quiz qu'une seule fois : après une rotation, le quiz en
+        // cours (index, score, résultats…) est conservé au lieu d'être réinitialisé.
+        if (entityQuizLoaded) return
+        entityQuizLoaded = true
+        loadEntityQuizInternal(level)
+    }
+
+    private fun loadEntityQuizInternal(level: QuizLevel) = viewModelScope.launch {
         val pool = mutableListOf<EntiteEntity>()
         pool += entiteRepo.getRandomByDifficulty(1, 10)
         if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) {
@@ -143,7 +156,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _foundIds = MutableLiveData<Set<Int>>(emptySet())
     val foundIds: LiveData<Set<Int>> = _foundIds
 
-    fun loadPlaceQuizzes() { _foundIds.value = emptySet() }
+    private var placeQuizLoaded = false
+
+    fun loadPlaceQuizzes() {
+        // Comme pour le quiz d'entités : on préserve les lieux déjà trouvés
+        // lors d'une rotation de l'écran.
+        if (placeQuizLoaded) return
+        placeQuizLoaded = true
+        _foundIds.value = emptySet()
+    }
 
     fun checkPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceEntity? {
         val found = _foundIds.value ?: emptySet()

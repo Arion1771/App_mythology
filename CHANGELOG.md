@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.6.5
+
+- Conservation du quiz (entités et lieux) lors d'une rotation d'écran
+
+
 #### V1.6.4
 
 - Correction de la coquille 'Primodrial' → 'Primordial' en base de données
