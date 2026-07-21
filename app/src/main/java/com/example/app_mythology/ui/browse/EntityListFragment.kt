@@ -3,6 +3,7 @@ package com.example.app_mythology.ui.browse
 import android.os.Bundle
 import android.view.*
 import android.widget.*
+import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -27,7 +28,7 @@ class EntityListFragment : Fragment() {
         setHasOptionsMenu(true)
 
         val recycler = view.findViewById<RecyclerView>(R.id.recycler_entities)
-        val spinner = view.findViewById<Spinner>(R.id.spinner_filter)
+        val spinner  = view.findViewById<Spinner>(R.id.spinner_filter)
 
         adapter = EntityAdapter { entity ->
             findNavController().navigate(
@@ -35,32 +36,41 @@ class EntityListFragment : Fragment() {
                 bundleOf("entityId" to entity.id)
             )
         }
-
         recycler.layoutManager = LinearLayoutManager(requireContext())
         recycler.adapter = adapter
 
-        // Remplir le spinner avec Races + Mythologies
-        val filterOptions = mutableListOf("Toutes (par race)")
+        // Remplir le spinner une seule fois quand les deux LiveData sont disponibles
+        var raceList    = listOf<String>()
+        var mythoList   = listOf<String>()
+
+        fun buildSpinner() {
+            val options = mutableListOf("Toutes (par race)") +
+                    raceList.map  { "Race : ${translateRace(it)}" } +
+                    mythoList.map { "Mythologie : $it" }
+            spinner.adapter = ArrayAdapter(requireContext(),
+                android.R.layout.simple_spinner_item, options)
+                .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+        }
+
         viewModel.races.observe(viewLifecycleOwner) { races ->
-            viewModel.mythologies.observe(viewLifecycleOwner) { mythologies ->
-                val options = mutableListOf("Toutes (par race)") +
-                        races.map { "Race : $it" } +
-                        mythologies.map { "Mythologie : $it" }
-                val spinnerAdapter = ArrayAdapter(
-                    requireContext(),
-                    android.R.layout.simple_spinner_item,
-                    options
-                ).apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
-                spinner.adapter = spinnerAdapter
-            }
+            raceList = races
+            buildSpinner()
+        }
+        viewModel.mythologies.observe(viewLifecycleOwner) { mythologies ->
+            mythoList = mythologies
+            buildSpinner()
         }
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, v: View?, pos: Int, id: Long) {
                 val selected = parent.getItemAtPosition(pos).toString()
                 when {
-                    selected.startsWith("Race : ") ->
-                        viewModel.filterByRace(selected.removePrefix("Race : "))
+                    selected.startsWith("Race : ") -> {
+                        // Retrouver la valeur originale (anglais)
+                        val fr = selected.removePrefix("Race : ")
+                        val en = raceList.firstOrNull { translateRace(it) == fr } ?: fr
+                        viewModel.filterByRace(en)
+                    }
                     selected.startsWith("Mythologie : ") ->
                         viewModel.filterByMythology(selected.removePrefix("Mythologie : "))
                     else -> viewModel.showAll()
@@ -78,6 +88,7 @@ class EntityListFragment : Fragment() {
         inflater.inflate(R.menu.menu_entity_list, menu)
         val searchItem = menu.findItem(R.id.action_search)
         val searchView = searchItem.actionView as SearchView
+        searchView.queryHint = "Rechercher…"
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(q: String?) = false
             override fun onQueryTextChange(q: String?): Boolean {
@@ -85,5 +96,24 @@ class EntityListFragment : Fragment() {
                 return true
             }
         })
+    }
+
+    private fun translateRace(race: String) = when (race) {
+        "God"              -> "Dieu"
+        "Titan"            -> "Titan"
+        "Giant"            -> "Géant"
+        "Heroes"           -> "Héros"
+        "Monster"          -> "Monstre"
+        "Cyclope"          -> "Cyclope"
+        "Hecatoncheires"   -> "Hécatonchire"
+        "Muses"            -> "Muse"
+        "Erinyes"          -> "Érinye"
+        "Grées"            -> "Grée"
+        "Valkyrie"         -> "Valkyrie"
+        "Archangels"       -> "Archange"
+        "Arthurian_Knight" -> "Chevalier Arthurien"
+        "Demon_Prince"     -> "Démon"
+        "Zodiacal_Sign"    -> "Signe du Zodiaque"
+        else               -> race
     }
 }
