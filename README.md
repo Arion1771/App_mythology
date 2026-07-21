@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V0.1.0
+
+- Added the data model for mythological entities (gods, titans, giants, heroes, monsters, muses, archangels, Arthurian knights, demons, cyclopes, hecatoncheires, zodiac signs)
+
 #### V0.0.0
 
 - Repository initialisation (`.gitignore`, `README.md`)
@@ -23,6 +27,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V0.1.0
+
+- Ajout du modèle de données des entités mythologiques (dieux, titans, géants, héros, monstres, muses, archanges, chevaliers arthuriens, démons, cyclopes, hécatonchires, signes du zodiaque)
 
 #### V0.0.0
 
