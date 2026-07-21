@@ -98,7 +98,7 @@
       "domain": "Titan des corps célestes",
       "equivalentName": null,
       "clue": "Titan des corps célestes",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Crios"
     },
     {
@@ -207,7 +207,7 @@
       "ascendantName": "Helios/Hécate",
       "story": "Magicienne divine, fille d'Hélios, métamorphoses les compagnons d'Ulysse en porcs",
       "clue": "Magicienne divine, fille d'Hélios",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 20,
@@ -217,7 +217,7 @@
       "domain": "Titan du Nord, des solutions et de l'intelligence",
       "equivalentName": null,
       "clue": "Titan du Nord, des solutions et de l'intelligence",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Ouranos",
       "motherName": "Gaïa"
     },
@@ -310,7 +310,7 @@
       "domain": "Déesses chthoniennes de la vengeance",
       "clue": "Déesses chthoniennes de la vengeance",
       "equivalentName": "Furies",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 29,
@@ -343,7 +343,7 @@
       "monsterType": "Divinité Marine Primordiale",
       "description": "Trois sœurs partageant un seul œil et une seule dent, gardiennes d'un secret convoité par Persée",
       "clue": "Trois sœurs partageant un seul œil et une seule dent",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 32,
@@ -398,7 +398,7 @@
       "godType": "Primordial",
       "equivalentName": "Dies",
       "clue": "Déesse du Jour",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Erèbe",
       "motherName": "Nyx"
     },
@@ -502,7 +502,7 @@
       "ascendantName": "Hélios ( Grand-père )",
       "story": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
       "clue": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Hélios"
     },
     {
@@ -524,7 +524,7 @@
       "domain": "Dieu des Rêves, on s'endort dans ses bras",
       "equivalentName": "Morpheus",
       "clue": "Dieu des Rêves",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Hypnos"
     },
     {
@@ -557,7 +557,7 @@
       "ascendantName": "Calliope",
       "story": "Pars chercher sa femme au enfer mais échoue, connnu pour ses talents à la lyre",
       "clue": "Pars chercher sa femme au enfer mais échoue",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 51,
@@ -660,7 +660,7 @@
       "domain": "Titan de la prévoyance, offre le feu aux Hommes",
       "equivalentName": null,
       "clue": "Titan de la prévoyance",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Japet"
     },
     {
@@ -683,7 +683,7 @@
       "monsterType": "Sanglier",
       "description": "Bète Immense, terrifiant le mont Erymanthe, tué par Héraclès",
       "clue": "Bète Immense, tué par Héraclès",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 62,
@@ -714,7 +714,7 @@
       "domain": "Titanide de la lune",
       "equivalentName": "Luna",
       "clue": "Titanide de la lune",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Hypérion"
     },
     {
@@ -1718,7 +1718,7 @@
       "monsterType": "Nymphe des Vents",
       "description": "Assistante d'Éole, Brise",
       "clue": "Assistante d'Éole, Brise",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "id": 160,
@@ -1809,7 +1809,7 @@
       "domain": "Dieu du vent de l'Est",
       "equivalentName": "Vulturnus",
       "clue": "Dieu du vent de l'Est",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "id": 169,
@@ -1888,7 +1888,7 @@
       "monsterType": "Nymphe des Nuages",
       "description": "Habite les nuages",
       "clue": "Habite les nuages",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "id": 177,
@@ -1899,7 +1899,7 @@
       "domain": "Dieu du vent du sud",
       "equivalentName": "Auster",
       "clue": "Dieu du vent du sud",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "id": 178,
@@ -2031,7 +2031,7 @@
       "domain": "Dieu des vents",
       "equivalentName": "Éole",
       "clue": "Dieu des vents",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 191,
@@ -2102,7 +2102,7 @@
       "domain": "Dieu de la nature",
       "equivalentName": "Pan",
       "clue": "Dieu de la nature",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 197,
@@ -2113,7 +2113,7 @@
       "domain": "Équivalent romain des Erinyes, déesses de la vengeance",
       "clue": "Équivalent romain des Erinyes",
       "equivalentName": "Erinyes",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 198,
@@ -2158,7 +2158,7 @@
       "domain": "Titanide de la lune",
       "equivalentName": "Séléné",
       "clue": "Titanide de la lune",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 202,
@@ -2273,7 +2273,7 @@
       "domain": "Titan du soleil",
       "equivalentName": "Hélios",
       "clue": "Titan du soleil",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 212,
@@ -3862,7 +3862,7 @@
       "race": "God",
       "domain": "Dieu de la Pluie et de la Foudre",
       "clue": "Dieu de la Pluie et de la Foudre",
-      "difficulty": 2
+      "difficulty": 3
     },
     {
       "id": 369,
