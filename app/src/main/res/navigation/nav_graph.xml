@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- ── Accueil ─────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.app_mythology.ui.home.HomeFragment"
+        android:label="MythoBase"
+        tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_browseChoice"
+            app:destination="@id/browseChoiceFragment" />
+        <action android:id="@+id/action_home_to_addChoice"
+            app:destination="@id/addChoiceFragment" />
+        <action android:id="@+id/action_home_to_quizChoice"
+            app:destination="@id/quizChoiceFragment" />
+    </fragment>
+
+    <!-- ── Parcourir ──────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/browseChoiceFragment"
+        android:name="com.example.app_mythology.ui.browse.BrowseChoiceFragment"
+        android:label="Parcourir"
+        tools:layout="@layout/fragment_browse_choice">
+        <action android:id="@+id/action_browseChoice_to_entityList"
+            app:destination="@id/entityListFragment" />
+        <action android:id="@+id/action_browseChoice_to_placeList"
+            app:destination="@id/placeListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entityListFragment"
+        android:name="com.example.app_mythology.ui.browse.EntityListFragment"
+        android:label="Entités"
+        tools:layout="@layout/fragment_entity_list">
+        <action android:id="@+id/action_entityList_to_entityDetail"
+            app:destination="@id/entityDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entityDetailFragment"
+        android:name="com.example.app_mythology.ui.browse.EntityDetailFragment"
+        android:label="Détail"
+        tools:layout="@layout/fragment_entity_detail">
+        <argument android:name="entityId" app:argType="integer" android:defaultValue="-1" />
+        <action android:id="@+id/action_entityDetail_to_editEntity"
+            app:destination="@id/editEntityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editEntityFragment"
+        android:name="com.example.app_mythology.ui.add.EditEntityFragment"
+        android:label="Modifier"
+        tools:layout="@layout/fragment_add_entity">
+        <argument android:name="entityId" app:argType="integer" android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeListFragment"
+        android:name="com.example.app_mythology.ui.browse.PlaceListFragment"
+        android:label="Lieux"
+        tools:layout="@layout/fragment_place_list">
+        <action android:id="@+id/action_placeList_to_placeDetail"
+            app:destination="@id/placeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeDetailFragment"
+        android:name="com.example.app_mythology.ui.browse.PlaceDetailFragment"
+        android:label="Lieu — Détail"
+        tools:layout="@layout/fragment_place_detail">
+        <argument android:name="placeId" app:argType="integer" android:defaultValue="-1" />
+        <action android:id="@+id/action_placeDetail_to_editPlace"
+            app:destination="@id/editPlaceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editPlaceFragment"
+        android:name="com.example.app_mythology.ui.add.EditPlaceFragment"
+        android:label="Modifier lieu"
+        tools:layout="@layout/fragment_add_place">
+        <argument android:name="placeId" app:argType="integer" android:defaultValue="-1" />
+    </fragment>
+
+    <!-- ── Ajouter ────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/addChoiceFragment"
+        android:name="com.example.app_mythology.ui.add.AddChoiceFragment"
+        android:label="Ajouter"
+        tools:layout="@layout/fragment_add_choice">
+        <action android:id="@+id/action_addChoice_to_addEntity"
+            app:destination="@id/addEntityFragment" />
+        <action android:id="@+id/action_addChoice_to_addPlace"
+            app:destination="@id/addPlaceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEntityFragment"
+        android:name="com.example.app_mythology.ui.add.AddEntityFragment"
+        android:label="Nouvelle entité"
+        tools:layout="@layout/fragment_add_entity" />
+
+    <fragment
+        android:id="@+id/addPlaceFragment"
+        android:name="com.example.app_mythology.ui.add.AddPlaceFragment"
+        android:label="Nouveau lieu"
+        tools:layout="@layout/fragment_add_place" />
+
+    <!-- ── Quiz ───────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/quizChoiceFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizChoiceFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz_choice">
+        <action android:id="@+id/action_quizChoice_to_quizEntity"
+            app:destination="@id/quizEntityFragment" />
+        <action android:id="@+id/action_quizChoice_to_quizPlaceChoice"
+            app:destination="@id/quizPlaceChoiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizEntityFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizEntityFragment"
+        android:label="Quiz Entités"
+        tools:layout="@layout/fragment_quiz_entity" />
+
+    <fragment
+        android:id="@+id/quizPlaceChoiceFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizPlaceChoiceFragment"
+        android:label="Quiz Lieux"
+        tools:layout="@layout/fragment_quiz_place_choice">
+        <action android:id="@+id/action_quizPlaceChoice_to_quizYggdrasil"
+            app:destination="@id/quizYggdrasilFragment" />
+        <action android:id="@+id/action_quizPlaceChoice_to_quizRivers"
+            app:destination="@id/quizRiversFragment" />
+        <action android:id="@+id/action_quizPlaceChoice_to_quizUnderworld"
+            app:destination="@id/quizUnderworldFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizYggdrasilFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizPlaceFragment"
+        android:label="Arbre Monde"
+        tools:layout="@layout/fragment_quiz_place">
+        <argument android:name="quizType" app:argType="string" android:defaultValue="yggdrasil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizRiversFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizPlaceFragment"
+        android:label="Fleuves de l'Enfer"
+        tools:layout="@layout/fragment_quiz_place">
+        <argument android:name="quizType" app:argType="string" android:defaultValue="rivers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizUnderworldFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizPlaceFragment"
+        android:label="Royaume des Morts"
+        tools:layout="@layout/fragment_quiz_place">
+        <argument android:name="quizType" app:argType="string" android:defaultValue="underworld" />
+    </fragment>
+
+</navigation>
