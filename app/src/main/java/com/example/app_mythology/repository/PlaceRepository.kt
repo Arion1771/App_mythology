@@ -25,9 +25,14 @@ class PlaceRepository(private val dao: PlaceDao) {
     suspend fun deleteById(id: Int) = dao.deleteById(id)
 
     companion object {
-        @Volatile private var INSTANCE: PlaceRepository? = null
-        fun getInstance(db: AppDatabase) = INSTANCE ?: synchronized(this) {
-            PlaceRepository(db.placeDao()).also { INSTANCE = it }
+        @Volatile
+        private var INSTANCE: PlaceRepository? = null
+
+        fun getInstance(db: AppDatabase): PlaceRepository {
+            return INSTANCE ?: synchronized(this) {
+                INSTANCE ?: PlaceRepository(db.placeDao())
+                    .also { INSTANCE = it }
+            }
         }
     }
 }
