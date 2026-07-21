@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V2.0.5
+
+- Normalised non-Latin letters (attached oe ligature, Norse thorn/eth) into Latin equivalents
+
 #### V2.0.4
 
 - Added 23 new artifacts
@@ -147,6 +151,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.0.5
+
+- Normalisation des lettres non-latines (ligature oe attachée, thorn/eth norrois) en équivalents latins
 
 #### V2.0.4
 
