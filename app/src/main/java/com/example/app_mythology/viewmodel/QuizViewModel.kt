@@ -27,14 +27,14 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _currentStep  = MutableLiveData(1)
     val currentStep: LiveData<Int> = _currentStep
 
-    private val _score        = MutableLiveData(0)
-    val score: LiveData<Int> = _score
+    private val _score        = MutableLiveData(0.0)
+    val score: LiveData<Double> = _score
+
+    private val _maxScore = MutableLiveData(0.0)
+    val maxScore: LiveData<Double> = _maxScore
 
     private val _quizFinished = MutableLiveData(false)
     val quizFinished: LiveData<Boolean> = _quizFinished
-
-    private val _maxScore = MutableLiveData(20)
-    val maxScore: LiveData<Int> = _maxScore
 
     // Résultats de chaque question : null, "green", "yellow", "red"
     private val _results = MutableLiveData<List<String?>>(emptyList())
@@ -42,6 +42,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _waitingForNext = MutableLiveData(false)
     val waitingForNext: LiveData<Boolean> = _waitingForNext
+
+    // true dès qu'une réponse (juste ou fausse au 2e essai) a été donnée pour la question courante
+    private val _answerRevealed = MutableLiveData(false)
+    val answerRevealed: LiveData<Boolean> = _answerRevealed
 
     /**
      * Charge un quiz selon le niveau choisi :
@@ -60,14 +64,16 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
         pool.shuffle()
 
-        _quizEntites.value   = pool
-        _currentIndex.value  = 0
-        _currentStep.value   = 1
-        _score.value         = 0
-        _quizFinished.value  = false
-        _maxScore.value       = pool.size * 2
-        _results.value       = MutableList(pool.size) { null }
+        _quizEntites.value    = pool
+        _currentIndex.value   = 0
+        _currentStep.value    = 1
+        _score.value          = 0.0
+        _quizFinished.value   = false
+        // Score max = somme des difficultés (chaque question vaut "niveau" points au mieux)
+        _maxScore.value        = pool.sumOf { it.difficulty.toDouble() }
+        _results.value        = MutableList(pool.size) { null }
         _waitingForNext.value = false
+        _answerRevealed.value = false
     }
 
     fun checkAnswer(input: String): Boolean {
@@ -76,26 +82,39 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         return normalize(input) == normalize(current.name)
     }
 
+    /**
+     * Pas 1 correct  → +difficulty points, infos révélées, attend "suivant"
+     * Pas 1 incorrect → passe au pas 2 (deuxième essai)
+     * Pas 2 correct  → +difficulty/2 points, infos révélées, attend "suivant"
+     * Pas 2 incorrect → 0 point, réponse révélée, attend "suivant"
+     */
     fun submitAnswer(correct: Boolean) {
-        val step  = _currentStep.value ?: 1
-        val index = _currentIndex.value ?: 0
+        val step      = _currentStep.value ?: 1
+        val index     = _currentIndex.value ?: 0
+        val entities  = _quizEntites.value ?: return
+        val current   = entities.getOrNull(index) ?: return
+        val difficulty = current.difficulty.toDouble()
+
         if (correct) {
-            _score.value = (_score.value ?: 0) + if (step == 1) 2 else 1
+            val gained = if (step == 1) difficulty else difficulty / 2.0
+            _score.value = (_score.value ?: 0.0) + gained
             updateResult(index, if (step == 1) "green" else "yellow")
-            _waitingForNext.value = false
-            advanceToNext()
+            _answerRevealed.value = true
+            _waitingForNext.value = true
         } else {
             if (step == 1) {
                 _currentStep.value = 2
             } else {
                 updateResult(index, "red")
+                _answerRevealed.value = true
                 _waitingForNext.value = true
             }
         }
     }
 
     fun nextAfterWrong() {
-        _waitingForNext.value = false
+        _waitingForNext.value  = false
+        _answerRevealed.value  = false
         advanceToNext()
     }
 
