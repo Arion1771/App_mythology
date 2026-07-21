@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V1.6.3
+
+- The old 'Primodrial' typo is tolerated in the divine typing
+
 #### V1.6.2
 
 - Finished displaying the Érinyes, Grées and Valkyries races in the existing screens (translations, form groups)
@@ -83,6 +87,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V1.6.3
+
+- Tolérance de l'ancienne coquille 'Primodrial' dans le typage divin
 
 #### V1.6.2
 

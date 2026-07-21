@@ -118,7 +118,8 @@ class EntityDetailFragment : Fragment() {
     }
 
     private fun translateGodType(t: String) = when (t) {
-        "Olympien" -> "Olympien"; "Primordial" -> "Primordial"
+        "Olympien" -> "Olympien"
+        "Primordial", "Primodrial" -> "Primordial"
         "Ase" -> "Ase"; "Vane" -> "Vane"; "Norne" -> "Norne"
         "Parque" -> "Parque"; "Deva" -> "Deva"; "Yaksha" -> "Yaksha"
         "Asura" -> "Asura"; "Naga" -> "Naga"; "Rakshasa" -> "Rakshasa"
