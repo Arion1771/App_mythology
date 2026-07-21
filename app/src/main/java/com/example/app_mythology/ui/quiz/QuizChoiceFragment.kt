@@ -26,5 +26,9 @@ class QuizChoiceFragment : Fragment() {
         view.findViewById<Button>(R.id.btn_quiz_place).setOnClickListener {
             findNavController().navigate(R.id.action_quizChoice_to_quizPlaceChoice)
         }
+
+        view.findViewById<Button>(R.id.btn_quiz_artifact).setOnClickListener {
+            findNavController().navigate(R.id.action_quizChoice_to_quizArtifactChoice)
+        }
     }
 }

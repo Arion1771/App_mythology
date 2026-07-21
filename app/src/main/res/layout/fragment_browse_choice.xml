@@ -26,9 +26,17 @@
 
     <Button
         android:id="@+id/btn_browse_place"
-        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary" 
+        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
         android:layout_width="220dp"
         android:layout_height="56dp"
-        android:text="Lieux"/>
+        android:text="Lieux"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_browse_artifact"
+        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="Artéfacts"/>
 
 </LinearLayout>
