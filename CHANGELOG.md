@@ -2,6 +2,11 @@
 
 ## V2
 
+
+#### V2.0.1
+
+- Ajout des artéfacts initiaux en base : Excalibur, Mjolnir, Anneau d'Andvari, Gungnir, Égide, Trident de Poséidon, Toison d'or, Brísingamen, Gáe Bulg, Kusanagi-no-Tsurugi, Sudarshana Chakra, Saint Graal (Ajout)
+
 ### V2.0.0
 
 - Ajout du système d'artéfacts (armes et objets magiques) : base de données, parcours, ajout/modification et quiz dédié
