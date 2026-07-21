@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V2.0.2
+
+- Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Added)
+
 #### V2.0.1
 
 - Ajout des artéfacts initiaux en base : Excalibur, Mjolnir, Anneau d'Andvari, Gungnir, Égide, Trident de Poséidon, Toison d'or, Brísingamen, Gáe Bulg, Kusanagi-no-Tsurugi, Sudarshana Chakra, Saint Graal (Added)
@@ -111,6 +115,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.0.2
+
+- Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Ajout)
 
 #### V2.0.1
 
