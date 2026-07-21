@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.App_mythology" parent="Theme.MaterialComponents.DayNight">
+        <!-- Theme avec ActionBar native (pas NoActionBar) -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <!-- ActionBar sombre -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <style name="Theme.App_mythology" parent="Base.Theme.App_mythology"/>
+
+    <style name="MyActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@color/surface</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="navigationIconTint">@color/primary</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+</resources>
