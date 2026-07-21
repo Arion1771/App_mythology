@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.5.0
+
+- Ajout du choix de difficulté du quiz d'entités et renommage du package quizz→quiz
+
+
 ### V1.4.0
 
 - Ajout de l'ajout/édition des lieux et de leur parcours
