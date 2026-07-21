@@ -5330,6 +5330,239 @@
       "story": "Katanas forgés par le maître Muramasa, rival légendaire de Masamune ; leur réputation maléfique en a fait des armes redoutées",
       "clue": "Katana maudit assoiffé de sang",
       "difficulty": 3
+    },
+    {
+      "name": "Ambroisie",
+      "mythology": "Grecque",
+      "artifactType": "Nourriture",
+      "ownerName": "Les dieux de l'Olympe",
+      "power": "Nourriture des dieux qui confère l'immortalité à qui la consomme",
+      "story": "Réservée aux dieux ; sa consommation par un mortel provoquerait l'immortalité, comme dans le mythe de Tantale",
+      "clue": "Nourriture des dieux grecs, source d'immortalité",
+      "difficulty": 1
+    },
+    {
+      "name": "Nectar",
+      "mythology": "Grecque",
+      "artifactType": "Nourriture",
+      "ownerName": "Les dieux de l'Olympe",
+      "power": "Boisson des dieux qui confère l'immortalité",
+      "story": "Souvent associé à l'ambroisie comme breuvage exclusif des dieux de l'Olympe",
+      "clue": "Boisson des dieux grecs, associée à l'ambroisie",
+      "difficulty": 1
+    },
+    {
+      "name": "Pommes d'Idunn",
+      "mythology": "Nordique",
+      "artifactType": "Nourriture",
+      "ownerName": "Idunn",
+      "power": "Pommes magiques qui préservent la jeunesse éternelle des dieux",
+      "story": "Gardées par la déesse Idunn ; leur vol temporaire par le géant Þjazi menace les Ases de vieillissement",
+      "clue": "Pommes qui gardent les dieux nordiques éternellement jeunes",
+      "difficulty": 2
+    },
+    {
+      "name": "Pêches d'immortalité",
+      "mythology": "Chinoise",
+      "artifactType": "Nourriture",
+      "ownerName": "Xiwangmu, la Reine Mère d'Occident",
+      "power": "Pêches qui confèrent l'immortalité à qui les mange",
+      "story": "Poussent dans le jardin céleste de Xiwangmu et ne mûrissent qu'une fois tous les trois mille ans",
+      "clue": "Fruits d'immortalité de la Reine Mère d'Occident",
+      "difficulty": 2
+    },
+    {
+      "name": "Amrita",
+      "mythology": "Hindouisme",
+      "artifactType": "Nourriture",
+      "ownerName": "Les Devas",
+      "power": "Nectar d'immortalité",
+      "story": "Obtenu en barattant l'océan de lait (Samudra Manthan) par les dévas et les asuras",
+      "clue": "Nectar d'immortalité issu du barattage de l'océan de lait",
+      "difficulty": 2
+    },
+    {
+      "name": "Óðrœrir",
+      "mythology": "Nordique",
+      "artifactType": "Nourriture",
+      "ownerName": "Odin",
+      "power": "Hydromel qui confère le don de la poésie et la sagesse à qui le boit",
+      "story": "Créé à partir du sang de Kvasir mêlé à du miel ; Odin le dérobe au géant Suttungr sous la forme d'un aigle",
+      "clue": "Hydromel qui confère le don de la poésie",
+      "difficulty": 3
+    },
+    {
+      "name": "Char d'Hélios",
+      "mythology": "Grecque",
+      "artifactType": "Véhicule",
+      "ownerName": "Hélios",
+      "power": "Char tiré par des chevaux flamboyants qui traverse le ciel chaque jour, portant le soleil",
+      "story": "Phaéton, fils d'Hélios, perd le contrôle du char en tentant de le conduire, manquant d'embraser la Terre",
+      "clue": "Char qui porte le soleil à travers le ciel",
+      "difficulty": 1
+    },
+    {
+      "name": "Skidbladnir",
+      "mythology": "Nordique",
+      "artifactType": "Véhicule",
+      "ownerName": "Freyr",
+      "creatorName": "Les fils d'Ivaldi",
+      "power": "Navire toujours favorisé par le vent, qui se replie comme un tissu pour tenir dans une poche",
+      "story": "Un des cadeaux forgés par les nains pour les dieux, offert à Freyr",
+      "clue": "Navire magique qui se replie comme un tissu",
+      "difficulty": 3
+    },
+    {
+      "name": "Barque solaire de Rê",
+      "mythology": "Égyptienne",
+      "artifactType": "Véhicule",
+      "ownerName": "Rê",
+      "power": "Bateau qui transporte le dieu-soleil à travers le ciel le jour et le monde souterrain la nuit",
+      "story": "Chaque nuit, Rê affronte le serpent Apophis à bord de cette barque pour renaître au matin",
+      "clue": "Bateau du dieu-soleil égyptien, traverse le monde souterrain la nuit",
+      "difficulty": 2
+    },
+    {
+      "name": "Pushpaka Vimana",
+      "mythology": "Hindouisme",
+      "artifactType": "Véhicule",
+      "ownerName": "Kubera, puis Ravana",
+      "creatorName": "Vishvakarma",
+      "power": "Char volant capable de se déplacer à volonté et de s'agrandir pour accueillir des passagers",
+      "story": "Volé à Kubera par son demi-frère Ravana, roi démon de Lanka, puis utilisé par Rama pour rentrer chez lui dans le Ramayana",
+      "clue": "Char volant dérobé par le roi démon Ravana",
+      "difficulty": 3
+    },
+    {
+      "name": "Draupnir",
+      "mythology": "Nordique",
+      "artifactType": "Artefact",
+      "ownerName": "Odin",
+      "creatorName": "Les nains Sindri et Brokk",
+      "power": "Anneau en or qui se duplique en huit nouveaux anneaux identiques toutes les neuf nuits",
+      "story": "Forgé lors du même pari que Mjolnir ; Odin le dépose sur le bûcher funéraire de Baldr",
+      "clue": "Anneau d'Odin qui se multiplie tous les neuf jours",
+      "difficulty": 2
+    },
+    {
+      "name": "Caducée",
+      "mythology": "Grecque",
+      "artifactType": "Objet magique",
+      "ownerName": "Hermès",
+      "power": "Bâton entouré de deux serpents, symbole du commerce et des messages, capable d'endormir ou de réveiller",
+      "story": "Souvent confondu avec le bâton d'Asclépios, qui ne porte qu'un seul serpent et symbolise la médecine",
+      "clue": "Bâton d'Hermès entouré de deux serpents",
+      "difficulty": 2
+    },
+    {
+      "name": "Œil d'Horus",
+      "mythology": "Égyptienne",
+      "artifactType": "Objet magique",
+      "ownerName": "Horus",
+      "power": "Amulette de protection, de santé et de pouvoir royal",
+      "story": "Horus perd son œil lors d'un combat contre Seth ; Thot le restaure, en faisant un symbole de guérison",
+      "clue": "Amulette de protection en forme d'œil, liée au dieu-faucon",
+      "difficulty": 1
+    },
+    {
+      "name": "Lance de Lugh",
+      "mythology": "Celtique Irlandaise",
+      "artifactType": "Arme",
+      "ownerName": "Lugh",
+      "power": "Lance invincible qui garantit la victoire à celui qui la brandit",
+      "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Gorias",
+      "clue": "Lance invincible, un des Quatre Trésors irlandais",
+      "difficulty": 3
+    },
+    {
+      "name": "Claíomh Solais",
+      "mythology": "Celtique Irlandaise",
+      "artifactType": "Arme",
+      "ownerName": "Nuada",
+      "power": "Épée de lumière dont nul ne peut échapper une fois dégainée",
+      "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Findias",
+      "clue": "Épée de lumière, un des Quatre Trésors irlandais",
+      "difficulty": 3
+    },
+    {
+      "name": "Lia Fáil",
+      "mythology": "Celtique Irlandaise",
+      "artifactType": "Artefact",
+      "power": "Pierre de couronnement qui pousse un cri lorsqu'un roi légitime d'Irlande la touche",
+      "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Falias",
+      "clue": "Pierre qui crie pour reconnaître le vrai roi d'Irlande",
+      "difficulty": 3
+    },
+    {
+      "name": "Chaudron du Dagda",
+      "mythology": "Celtique Irlandaise",
+      "artifactType": "Objet magique",
+      "ownerName": "Le Dagda",
+      "power": "Chaudron inépuisable qui rassasie toujours ceux qui y puisent",
+      "story": "Un des Quatre Trésors des Tuatha Dé Danann, apporté de la cité mythique de Murias",
+      "clue": "Chaudron inépuisable, un des Quatre Trésors irlandais",
+      "difficulty": 2
+    },
+    {
+      "name": "Tablette des Destinées",
+      "mythology": "Mésopotamienne",
+      "artifactType": "Artefact",
+      "ownerName": "Enlil, disputée entre plusieurs divinités",
+      "power": "Confère l'autorité suprême et le contrôle des destins de l'univers à son détenteur",
+      "story": "Volée par le démon-oiseau Anzu, puis récupérée après un combat divin",
+      "clue": "Tablette qui confère le contrôle des destins de l'univers",
+      "difficulty": 3
+    },
+    {
+      "name": "Ruyi Jingu Bang",
+      "mythology": "Chinoise",
+      "artifactType": "Arme",
+      "ownerName": "Sun Wukong",
+      "power": "Bâton capable de changer de taille à volonté, du plus petit au plus immense",
+      "story": "Trouvé par Sun Wukong au fond de l'océan, où il était gardé par le Roi-Dragon de la mer de l'Est",
+      "clue": "Bâton du Roi Singe qui change de taille à volonté",
+      "difficulty": 2
+    },
+    {
+      "name": "Totsuka-no-Tsurugi",
+      "mythology": "Japonaise",
+      "artifactType": "Arme",
+      "ownerName": "Susanoo",
+      "power": "Épée à dix empans utilisée pour trancher un dragon à huit têtes",
+      "story": "Utilisée par Susanoo pour tuer le dragon Yamata no Orochi ; c'est en fendant sa queue qu'il découvre Kusanagi-no-Tsurugi",
+      "clue": "Épée utilisée par Susanoo pour vaincre un dragon à huit têtes",
+      "difficulty": 2
+    },
+    {
+      "name": "Fourreau d'Excalibur",
+      "mythology": "Arthurienne",
+      "artifactType": "Objet magique",
+      "ownerName": "Arthur Pendragon",
+      "creatorName": "La Dame du Lac",
+      "power": "Empêche son porteur de perdre du sang, quelle que soit la blessure",
+      "story": "Selon Merlin, le fourreau vaut plus que l'épée elle-même ; il est volé par Morgane pour affaiblir Arthur",
+      "clue": "Objet plus précieux qu'Excalibur elle-même selon Merlin",
+      "difficulty": 3
+    },
+    {
+      "name": "Boîte de Pandore",
+      "mythology": "Grecque",
+      "artifactType": "Artefact",
+      "ownerName": "Pandore",
+      "power": "Contient tous les maux de l'humanité, avec l'espoir tout au fond",
+      "story": "Offerte à Pandore par les dieux avec l'interdiction de l'ouvrir ; sa curiosité libère les maux sur le monde",
+      "clue": "Récipient qui libère tous les maux de l'humanité",
+      "difficulty": 1
+    },
+    {
+      "name": "Pommes d'or des Hespérides",
+      "mythology": "Grecque",
+      "artifactType": "Artefact",
+      "ownerName": "Gardées par les Hespérides et le dragon Ladon",
+      "power": "Pommes d'or symbole d'amour et de mariage, offertes par Gaïa à Héra",
+      "story": "Onzième travail d'Héraclès : les dérober au jardin des Hespérides, gardé par le dragon Ladon",
+      "clue": "Pommes d'or dérobées par Héraclès dans un jardin gardé par un dragon",
+      "difficulty": 2
     }
   ]
 }
