@@ -6,6 +6,16 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical" android:padding="20dp">
 
+        <!-- Pastille de difficulté centrée en haut -->
+        <TextView android:id="@+id/tv_difficulty_badge"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textColor="#FF1A1A1A"
+            android:background="@drawable/dot_neutral"
+            android:layout_marginBottom="12dp"/>
+
         <!-- Pastilles de progression — défilement horizontal si nombreuses -->
         <HorizontalScrollView
             android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -33,6 +43,7 @@
             android:textSize="16sp" android:textColor="#FFEAEAEA"
             android:layout_marginBottom="16dp"/>
 
+        <!-- Bloc infos révélées (pas 2 visible, ou après réponse correcte/incorrecte) -->
         <LinearLayout android:id="@+id/group_all_info"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical" android:visibility="gone"
