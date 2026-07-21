@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V2.0.3
+
+- Extended the artifact types (Vehicle, Food)
+
 #### V2.0.2
 
 - Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Added)
@@ -115,6 +119,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.0.3
+
+- Extension des types d'artéfacts (Véhicule, Nourriture)
 
 #### V2.0.2
 

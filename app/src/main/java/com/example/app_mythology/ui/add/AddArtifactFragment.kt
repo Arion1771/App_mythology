@@ -16,7 +16,7 @@ open class AddArtifactFragment : Fragment() {
     protected open val editMode = false
     protected var existingId: Int = -1
 
-    private val typesInternal = listOf("Arme", "Artefact", "Objet magique")
+    private val typesInternal = listOf("Arme", "Artefact", "Objet magique", "Véhicule", "Nourriture")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
