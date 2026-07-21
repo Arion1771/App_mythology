@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nom *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_place_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ex : Styx, Asgard, Élysée…"
+            android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant"
+            android:backgroundTint="@color/primary" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Description *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_place_description"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Description générale du lieu…"
+            android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant"
+            android:backgroundTint="@color/primary" android:minLines="2" android:gravity="top"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Mythologie *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/spinner_place_mythology"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Type de lieu *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/spinner_place_type"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary" android:layout_marginBottom="20dp"/>
+
+        <!-- Royaume -->
+        <LinearLayout android:id="@+id/group_realm"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Habitants" android:textColor="@color/on_surface_variant"
+                android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_inhabitants"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Elfes, Géants de feu…"
+                android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant"
+                android:backgroundTint="@color/primary" android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- Fleuve -->
+        <LinearLayout android:id="@+id/group_river"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Particularité" android:textColor="@color/on_surface_variant"
+                android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_particularity"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Fait oublier les souvenirs…"
+                android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant"
+                android:backgroundTint="@color/primary" android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- Enfers -->
+        <LinearLayout android:id="@+id/group_underworld"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Âmes qui y séjournent" android:textColor="@color/on_surface_variant"
+                android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_souls"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Héros et âmes vertueuses…"
+                android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant"
+                android:backgroundTint="@color/primary" android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_place_save"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Enregistrer"
+            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

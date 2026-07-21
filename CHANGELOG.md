@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.4.0
+
+- Ajout de l'ajout/édition des lieux et de leur parcours
+
+
 ### V1.3.0
 
 - Ajout de l'édition des entités et mise en forme des écrans de parcours/ajout
