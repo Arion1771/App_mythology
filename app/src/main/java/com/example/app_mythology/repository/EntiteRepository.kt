@@ -20,8 +20,8 @@ class EntiteRepository(private val dao: EntiteDao) {
     fun search(query: String) = dao.search(query)
 
     suspend fun getRandomForQuiz() = dao.getRandomForQuiz()
-    suspend fun getRandomForQuizByMythology(mythology: String) =
-        dao.getRandomForQuizByMythology(mythology)
+    suspend fun getRandomByDifficulty(difficulty: Int, limit: Int) =
+        dao.getRandomByDifficulty(difficulty, limit)
 
     suspend fun insert(entite: EntiteEntity): Long = dao.insert(entite)
     suspend fun insertAll(entites: List<EntiteEntity>) = dao.insertAll(entites)
@@ -31,8 +31,10 @@ class EntiteRepository(private val dao: EntiteDao) {
 
     companion object {
         @Volatile private var INSTANCE: EntiteRepository? = null
-        fun getInstance(db: AppDatabase) = INSTANCE ?: synchronized(this) {
-            EntiteRepository(db.entiteDao()).also { INSTANCE = it }
+        fun getInstance(db: AppDatabase): EntiteRepository {
+            return INSTANCE ?: synchronized(this) {
+                INSTANCE ?: EntiteRepository(db.entiteDao()).also { INSTANCE = it }
+            }
         }
     }
 }
