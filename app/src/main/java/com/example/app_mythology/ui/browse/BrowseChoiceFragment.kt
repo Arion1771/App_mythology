@@ -26,5 +26,9 @@ class BrowseChoiceFragment : Fragment() {
         view.findViewById<Button>(R.id.btn_browse_place).setOnClickListener {
             findNavController().navigate(R.id.action_browseChoice_to_placeList)
         }
+
+        view.findViewById<Button>(R.id.btn_browse_artifact).setOnClickListener {
+            findNavController().navigate(R.id.action_browseChoice_to_artifactList)
+        }
     }
 }

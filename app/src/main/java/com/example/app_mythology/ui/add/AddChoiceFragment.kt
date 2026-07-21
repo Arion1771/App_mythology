@@ -26,5 +26,9 @@ class AddChoiceFragment : Fragment() {
         view.findViewById<Button>(R.id.btn_add_place).setOnClickListener {
             findNavController().navigate(R.id.action_addChoice_to_addPlace)
         }
+
+        view.findViewById<Button>(R.id.btn_add_artifact).setOnClickListener {
+            findNavController().navigate(R.id.action_addChoice_to_addArtifact)
+        }
     }
 }

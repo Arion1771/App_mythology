@@ -8,14 +8,15 @@ import androidx.room.RoomDatabase
 import org.json.JSONObject
 
 @Database(
-    entities = [EntiteEntity::class, PlaceEntity::class],
-    version = 3,
+    entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class],
+    version = 4,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun entiteDao(): EntiteDao
     abstract fun placeDao(): PlaceDao
+    abstract fun artifactDao(): ArtifactDao
 
     companion object {
         @Volatile
@@ -102,6 +103,25 @@ abstract class AppDatabase : RoomDatabase() {
                 ))
             }
             Log.d("AppDatabase", "✓ ${places.length()} lieux insérés")
+
+            val artifacts = root.optJSONArray("artifacts") ?: org.json.JSONArray()
+            for (i in 0 until artifacts.length()) {
+                val o = artifacts.getJSONObject(i)
+                db.artifactDao().insert(ArtifactEntity(
+                    name         = o.optString("name"),
+                    mythology    = o.optString("mythology"),
+                    artifactType = o.optString("artifactType"),
+                    ownerName    = o.ns("ownerName"),
+                    creatorName  = o.ns("creatorName"),
+                    power        = o.ns("power"),
+                    story        = o.ns("story"),
+                    description  = o.ns("description"),
+                    clue         = o.ns("clue"),
+                    difficulty   = if (o.has("difficulty") && !o.isNull("difficulty"))
+                                        o.getInt("difficulty") else 1
+                ))
+            }
+            Log.d("AppDatabase", "✓ ${artifacts.length()} artéfacts insérés")
         }
 
         private fun JSONObject.ns(key: String): String? {

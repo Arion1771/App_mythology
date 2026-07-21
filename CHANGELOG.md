@@ -1,5 +1,12 @@
 # Changelog
 
+## V2
+
+### V2.0.0
+
+- Ajout du système d'artéfacts (armes et objets magiques) : base de données, parcours, ajout/modification et quiz dédié
+
+
 ## V1
 
 
