@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.6.2
+
+- Finition de l'affichage des races Érinyes, Grées et Valkyries dans les écrans existants (traductions, groupes de formulaire)
+
+
 #### V1.6.1
 
 - Ajout de nouvelles entités (Érinyes, Grées, Valkyries) en base et tri des identifiants par mythologie
