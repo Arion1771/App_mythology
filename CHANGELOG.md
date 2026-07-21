@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.3.0
+
+- Ajout de l'édition des entités et mise en forme des écrans de parcours/ajout
+
+
 ### V1.2.0
 
 - Peuplement initial de la base de données mythologique (assets/prepopulate.json, populateIfEmpty)
