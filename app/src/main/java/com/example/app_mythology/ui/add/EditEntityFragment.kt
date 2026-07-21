@@ -16,13 +16,13 @@ class EditEntityFragment : AddEntityFragment() {
 
     private val races = listOf(
         "God", "Titan", "Giant", "Heroes", "Monster",
-        "Cyclope", "Hecatoncheires", "Muses", "Archangels",
-        "Arthurian_Knight", "Demon_Prince", "Zodiacal_Sign"
+        "Cyclope", "Hecatoncheires", "Muses", "Erinyes", "Grées", "Valkyrie",
+        "Archangels", "Arthurian_Knight", "Demon_Prince", "Zodiacal_Sign"
     )
     private val racesDisplay = listOf(
         "Dieu", "Titan", "Géant", "Héros", "Monstre",
-        "Cyclope", "Hécatonchire", "Muse", "Archange",
-        "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
+        "Cyclope", "Hécatonchire", "Muse", "Érinye", "Grée", "Valkyrie",
+        "Archange", "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

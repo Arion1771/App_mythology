@@ -17,13 +17,13 @@ open class AddEntityFragment : Fragment() {
 
     private val races = listOf(
         "God", "Titan", "Giant", "Heroes", "Monster",
-        "Cyclope", "Hecatoncheires", "Muses", "Archangels",
-        "Arthurian_Knight", "Demon_Prince", "Zodiacal_Sign"
+        "Cyclope", "Hecatoncheires", "Muses", "Erinyes", "Grées", "Valkyrie",
+        "Archangels", "Arthurian_Knight", "Demon_Prince", "Zodiacal_Sign"
     )
     private val racesDisplay = listOf(
         "Dieu", "Titan", "Géant", "Héros", "Monstre",
-        "Cyclope", "Hécatonchire", "Muse", "Archange",
-        "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
+        "Cyclope", "Hécatonchire", "Muse", "Érinye", "Grée", "Valkyrie",
+        "Archange", "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
     )
 
     override fun onCreateView(
@@ -48,6 +48,9 @@ open class AddEntityFragment : Fragment() {
             "Cyclope"          to R.id.group_cyclope,
             "Hecatoncheires"   to null,
             "Muses"            to R.id.group_muses,
+            "Erinyes"          to null,
+            "Grées"            to null,
+            "Valkyrie"         to null,
             "Archangels"       to R.id.group_archangels,
             "Arthurian_Knight" to R.id.group_knight,
             "Demon_Prince"     to R.id.group_demon,
