@@ -302,7 +302,7 @@
                 android:text="Équivalent chinois" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
             <EditText android:id="@+id/et_chinese"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:hint="Ex : Rat, Bœuf…" android:textColor="@color/on_surface"
+                android:hint="Ex : Rat, Boeuf…" android:textColor="@color/on_surface"
                 android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
                 android:layout_marginBottom="12dp"/>
         </LinearLayout>

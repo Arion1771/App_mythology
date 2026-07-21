@@ -3,6 +3,11 @@
 ## V2
 
 
+#### V2.0.5
+
+- Normalisation des lettres non-latines (ligature oe attachée, thorn/eth norrois) en équivalents latins
+
+
 #### V2.0.4
 
 - Ajout de 23 nouveaux artéfacts
