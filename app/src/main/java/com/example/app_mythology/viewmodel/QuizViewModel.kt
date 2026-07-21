@@ -12,117 +12,171 @@ import kotlinx.coroutines.launch
 class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private val entiteRepo = EntiteRepository.getInstance(AppDatabase.getInstance(application))
-    private val placeRepo = PlaceRepository.getInstance(AppDatabase.getInstance(application))
+    private val placeRepo  = PlaceRepository.getInstance(AppDatabase.getInstance(application))
 
-    // ─── Quiz Entités ──────────────────────────────────────────────────────
+    // ── Quiz Entités ───────────────────────────────────────────────────────
 
-    private val _quizEntites = MutableLiveData<List<EntiteEntity>>()
+    enum class QuizLevel { EASY, MEDIUM, HARD }
+
+    private val _quizEntites  = MutableLiveData<List<EntiteEntity>>()
     val quizEntites: LiveData<List<EntiteEntity>> = _quizEntites
 
     private val _currentIndex = MutableLiveData(0)
     val currentIndex: LiveData<Int> = _currentIndex
 
-    // Pas courant : 1 = premier essai (mytho+domaine), 2 = second essai (tout sauf nom)
-    private val _currentStep = MutableLiveData(1)
+    private val _currentStep  = MutableLiveData(1)
     val currentStep: LiveData<Int> = _currentStep
 
-    private val _score = MutableLiveData(0)
-    val score: LiveData<Int> = _score
+    private val _score        = MutableLiveData(0.0)
+    val score: LiveData<Double> = _score
+
+    private val _maxScore = MutableLiveData(0.0)
+    val maxScore: LiveData<Double> = _maxScore
 
     private val _quizFinished = MutableLiveData(false)
     val quizFinished: LiveData<Boolean> = _quizFinished
 
-    fun loadEntityQuiz() = viewModelScope.launch {
-        _quizEntites.value = entiteRepo.getRandomForQuiz()
-        _currentIndex.value = 0
-        _currentStep.value = 1
-        _score.value = 0
-        _quizFinished.value = false
-    }
+    // Résultats de chaque question : null, "green", "yellow", "red"
+    private val _results = MutableLiveData<List<String?>>(emptyList())
+    val results: LiveData<List<String?>> = _results
+
+    private val _waitingForNext = MutableLiveData(false)
+    val waitingForNext: LiveData<Boolean> = _waitingForNext
+
+    // true dès qu'une réponse (juste ou fausse au 2e essai) a été donnée pour la question courante
+    private val _answerRevealed = MutableLiveData(false)
+    val answerRevealed: LiveData<Boolean> = _answerRevealed
+
+    // Empêche le rechargement (et donc la remise à zéro) du quiz lors d'un
+    // changement de configuration (ex. rotation de l'écran), le ViewModel
+    // survivant à la recréation du fragment.
+    private var entityQuizLoaded = false
 
     /**
-     * Vérifie la réponse en ignorant accents et casse.
-     * Retourne true si correcte.
+     * Charge un quiz selon le niveau choisi :
+     * - EASY   : 10 entités difficulty=1
+     * - MEDIUM : 10 difficulty=1 + 10 difficulty=2
+     * - HARD   : 10 difficulty=1 + 10 difficulty=2 + 10 difficulty=3
      */
+    fun loadEntityQuiz(level: QuizLevel = QuizLevel.EASY) {
+        // Ne charge le quiz qu'une seule fois : après une rotation, le quiz en
+        // cours (index, score, résultats…) est conservé au lieu d'être réinitialisé.
+        if (entityQuizLoaded) return
+        entityQuizLoaded = true
+        loadEntityQuizInternal(level)
+    }
+
+    private fun loadEntityQuizInternal(level: QuizLevel) = viewModelScope.launch {
+        val pool = mutableListOf<EntiteEntity>()
+        pool += entiteRepo.getRandomByDifficulty(1, 10)
+        if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) {
+            pool += entiteRepo.getRandomByDifficulty(2, 10)
+        }
+        if (level == QuizLevel.HARD) {
+            pool += entiteRepo.getRandomByDifficulty(3, 10)
+        }
+        pool.shuffle()
+
+        _quizEntites.value    = pool
+        _currentIndex.value   = 0
+        _currentStep.value    = 1
+        _score.value          = 0.0
+        _quizFinished.value   = false
+        // Score max = somme des difficultés (chaque question vaut "niveau" points au mieux)
+        _maxScore.value        = pool.sumOf { it.difficulty.toDouble() }
+        _results.value        = MutableList(pool.size) { null }
+        _waitingForNext.value = false
+        _answerRevealed.value = false
+    }
+
     fun checkAnswer(input: String): Boolean {
         val entities = _quizEntites.value ?: return false
-        val current = entities.getOrNull(_currentIndex.value ?: 0) ?: return false
+        val current  = entities.getOrNull(_currentIndex.value ?: 0) ?: return false
         return normalize(input) == normalize(current.name)
     }
 
     /**
-     * Appelé après validation d'une réponse.
-     * [correct] = si l'utilisateur a trouvé le nom.
+     * Pas 1 correct  → +difficulty points, infos révélées, attend "suivant"
+     * Pas 1 incorrect → passe au pas 2 (deuxième essai)
+     * Pas 2 correct  → +difficulty/2 points, infos révélées, attend "suivant"
+     * Pas 2 incorrect → 0 point, réponse révélée, attend "suivant"
      */
     fun submitAnswer(correct: Boolean) {
-        val step = _currentStep.value ?: 1
+        val step      = _currentStep.value ?: 1
+        val index     = _currentIndex.value ?: 0
+        val entities  = _quizEntites.value ?: return
+        val current   = entities.getOrNull(index) ?: return
+        val difficulty = current.difficulty.toDouble()
+
         if (correct) {
-            _score.value = (_score.value ?: 0) + if (step == 1) 2 else 1
-            advanceToNext()
+            val gained = if (step == 1) difficulty else difficulty / 2.0
+            _score.value = (_score.value ?: 0.0) + gained
+            updateResult(index, if (step == 1) "green" else "yellow")
+            _answerRevealed.value = true
+            _waitingForNext.value = true
         } else {
             if (step == 1) {
-                // Passer au second pas : afficher tout sauf le nom
                 _currentStep.value = 2
             } else {
-                // Pas de points, passer à l'entité suivante
-                advanceToNext()
+                updateResult(index, "red")
+                _answerRevealed.value = true
+                _waitingForNext.value = true
             }
         }
     }
 
+    fun nextAfterWrong() {
+        _waitingForNext.value  = false
+        _answerRevealed.value  = false
+        advanceToNext()
+    }
+
+    private fun updateResult(index: Int, value: String) {
+        val list = (_results.value ?: emptyList()).toMutableList()
+        if (index < list.size) list[index] = value
+        _results.value = list
+    }
+
     private fun advanceToNext() {
         val next = (_currentIndex.value ?: 0) + 1
-        if (next >= (_quizEntites.value?.size ?: 10)) {
+        if (next >= (_quizEntites.value?.size ?: 0)) {
             _quizFinished.value = true
         } else {
             _currentIndex.value = next
-            _currentStep.value = 1
+            _currentStep.value  = 1
         }
     }
 
-    // ─── Quiz Lieux ────────────────────────────────────────────────────────
+    // ── Quiz Lieux ─────────────────────────────────────────────────────────
 
-    private val _yggdrasilRealms = MutableLiveData<List<PlaceEntity>>()
-    val yggdrasilRealms: LiveData<List<PlaceEntity>> = _yggdrasilRealms
+    val yggdrasilRealms:  LiveData<List<PlaceEntity>> = placeRepo.yggdrasilRealms
+    val hellRivers:       LiveData<List<PlaceEntity>> = placeRepo.hellRivers
+    val underworldPlaces: LiveData<List<PlaceEntity>> = placeRepo.underworldPlaces
 
-    private val _hellRivers = MutableLiveData<List<PlaceEntity>>()
-    val hellRivers: LiveData<List<PlaceEntity>> = _hellRivers
-
-    private val _underworldPlaces = MutableLiveData<List<PlaceEntity>>()
-    val underworldPlaces: LiveData<List<PlaceEntity>> = _underworldPlaces
-
-    // Ensemble des noms déjà trouvés (par quiz de lieu)
     private val _foundIds = MutableLiveData<Set<Int>>(emptySet())
     val foundIds: LiveData<Set<Int>> = _foundIds
 
+    private var placeQuizLoaded = false
+
     fun loadPlaceQuizzes() {
-        placeRepo.yggdrasilRealms.observeForever { _yggdrasilRealms.value = it }
-        placeRepo.hellRivers.observeForever { _hellRivers.value = it }
-        placeRepo.underworldPlaces.observeForever { _underworldPlaces.value = it }
+        // Comme pour le quiz d'entités : on préserve les lieux déjà trouvés
+        // lors d'une rotation de l'écran.
+        if (placeQuizLoaded) return
+        placeQuizLoaded = true
         _foundIds.value = emptySet()
     }
 
-    /**
-     * Vérifie si le nom saisi correspond à un lieu non encore trouvé dans la liste donnée.
-     * Retourne l'id du lieu trouvé, ou null.
-     */
     fun checkPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceEntity? {
         val found = _foundIds.value ?: emptySet()
-        return places.firstOrNull { p ->
-            p.id !in found && normalize(input) == normalize(p.name)
-        }
+        return places.firstOrNull { p -> p.id !in found && normalize(input) == normalize(p.name) }
     }
 
     fun markPlaceFound(id: Int) {
-        val current = _foundIds.value ?: emptySet()
-        _foundIds.value = current + id
+        _foundIds.value = (_foundIds.value ?: emptySet()) + id
     }
 
-    // ─── Utilitaire ────────────────────────────────────────────────────────
-
-    private fun normalize(s: String): String {
-        return java.text.Normalizer
+    private fun normalize(s: String): String =
+        java.text.Normalizer
             .normalize(s.trim().lowercase(), java.text.Normalizer.Form.NFD)
             .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
-    }
 }
