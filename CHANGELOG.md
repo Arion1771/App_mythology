@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.5.1
+
+- Adaptation de MainActivity à l'ActionBar native requise par le thème
+
+
 ### V1.5.0
 
 - Ajout du choix de difficulté du quiz d'entités et renommage du package quizz→quiz
