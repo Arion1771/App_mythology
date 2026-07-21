@@ -1,8 +1,7 @@
-enum class GiantType {
-    Jotunn,
-    Geant,
-    GeantDeFeu
-}
+package com.example.app_mythology.Model.entity
+
+import com.example.app_mythology.Model.base.Entity
+import com.example.app_mythology.Model.enum.GiantType
 
 class Giant(
     name: String,
