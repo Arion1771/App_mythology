@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.6.0
+
+- Refonte du système de score du quiz d'entités (pondéré par la difficulté) et de l'affichage des réponses
+
+
 #### V1.5.1
 
 - Adaptation de MainActivity à l'ActionBar native requise par le thème

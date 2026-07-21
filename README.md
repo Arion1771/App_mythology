@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V1.6.0
+
+- Overhaul of the entity quiz scoring (weighted by difficulty) and of how answers are displayed
+
 #### V1.5.1
 
 - MainActivity adapted to the native ActionBar required by the theme
@@ -71,6 +75,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V1.6.0
+
+- Refonte du système de score du quiz d'entités (pondéré par la difficulté) et de l'affichage des réponses
 
 #### V1.5.1
 
