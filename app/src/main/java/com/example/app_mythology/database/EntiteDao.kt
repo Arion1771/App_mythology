@@ -6,6 +6,9 @@ import androidx.room.*
 @Dao
 interface EntiteDao {
 
+    @Query("SELECT COUNT(*) FROM entites")
+    suspend fun countAll(): Int
+
     @Query("SELECT * FROM entites ORDER BY name ASC")
     fun getAll(): LiveData<List<EntiteEntity>>
 
@@ -27,8 +30,9 @@ interface EntiteDao {
     @Query("SELECT * FROM entites ORDER BY RANDOM() LIMIT 10")
     suspend fun getRandomForQuiz(): List<EntiteEntity>
 
-    @Query("SELECT * FROM entites WHERE mythology = :mythology ORDER BY RANDOM() LIMIT 10")
-    suspend fun getRandomForQuizByMythology(mythology: String): List<EntiteEntity>
+    /** Tire jusqu'à [limit] entités aléatoires d'un niveau de difficulté donné. */
+    @Query("SELECT * FROM entites WHERE difficulty = :difficulty ORDER BY RANDOM() LIMIT :limit")
+    suspend fun getRandomByDifficulty(difficulty: Int, limit: Int): List<EntiteEntity>
 
     @Query("SELECT DISTINCT mythology FROM entites ORDER BY mythology ASC")
     fun getDistinctMythologies(): LiveData<List<String>>
