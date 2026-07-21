@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.6.1
+
+- Ajout de nouvelles entités (Érinyes, Grées, Valkyries) en base et tri des identifiants par mythologie
+
+
 ### V1.6.0
 
 - Refonte du système de score du quiz d'entités (pondéré par la difficulté) et de l'affichage des réponses
