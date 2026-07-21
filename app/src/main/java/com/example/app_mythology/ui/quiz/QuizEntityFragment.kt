@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.viewmodel.QuizViewModel
+import kotlin.math.roundToInt
 
 class QuizEntityFragment : Fragment() {
 
@@ -32,6 +33,7 @@ class QuizEntityFragment : Fragment() {
             else     -> QuizViewModel.QuizLevel.EASY
         }
 
+        val tvDifficultyBadge = view.findViewById<TextView>(R.id.tv_difficulty_badge)
         val tvProgress    = view.findViewById<TextView>(R.id.tv_quiz_progress)
         val tvMythology   = view.findViewById<TextView>(R.id.tv_quiz_mythology)
         val tvDomain      = view.findViewById<TextView>(R.id.tv_quiz_domain)
@@ -67,13 +69,15 @@ class QuizEntityFragment : Fragment() {
             tvProgress.text  = "Question ${index + 1} / ${entities.size}"
             tvMythology.text = "Mythologie : ${e.mythology}"
             tvRace.text      = "Race : ${translateRace(e.race)}"
+            tvDifficultyBadge.text = e.difficulty.toString()
 
-            // Seul l'indice (clue) est affiché — rien d'autre
+            // Seul l'indice (clue) est affiché — rien d'autre tant que pas révélé
             tvDomain.text = e.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
 
             etAnswer.text.clear()
-            etAnswer.isEnabled    = true
-            btnValidate.isEnabled = true
+            etAnswer.isEnabled      = true
+            btnValidate.isEnabled   = true
+            btnValidate.isVisible   = true
             groupAllInfo.isVisible  = step == 2
             tvCorrectName.isVisible = false
             btnNext.isVisible       = false
@@ -103,15 +107,31 @@ class QuizEntityFragment : Fragment() {
             }
         }
 
-        viewModel.waitingForNext.observe(viewLifecycleOwner) { waiting ->
-            if (waiting) {
-                val entity = viewModel.quizEntites.value
-                    ?.getOrNull(viewModel.currentIndex.value ?: 0)
-                tvCorrectName.text      = "Réponse : ${entity?.name}"
-                tvCorrectName.isVisible = true
-                btnValidate.isEnabled   = false
-                etAnswer.isEnabled      = false
-                btnNext.isVisible       = true
+        // Quand une réponse est révélée (juste ou fausse), on cache "Valider"
+        // et on affiche uniquement "Question suivante"
+        viewModel.answerRevealed.observe(viewLifecycleOwner) { revealed ->
+            if (revealed) {
+                btnValidate.isVisible = false
+                etAnswer.isEnabled    = false
+                btnNext.isVisible     = true
+
+                val entities = viewModel.quizEntites.value ?: return@observe
+                val index    = viewModel.currentIndex.value ?: 0
+                val results  = viewModel.results.value ?: emptyList()
+                val entity   = entities.getOrNull(index) ?: return@observe
+                val resultForThis = results.getOrNull(index)
+
+                if (resultForThis == "green" || resultForThis == "yellow") {
+                    // Bonne réponse → afficher toutes les infos, pas de "Réponse correcte" en rouge
+                    groupAllInfo.isVisible  = true
+                    tvAllInfo.text          = buildAllInfo(entity)
+                    tvCorrectName.isVisible = false
+                } else if (resultForThis == "red") {
+                    // Mauvaise réponse au 2e essai → la réponse était déjà affichée par le pas 2,
+                    // on montre en plus le nom correct
+                    tvCorrectName.text      = "Réponse : ${entity.name}"
+                    tvCorrectName.isVisible = true
+                }
             }
         }
 
@@ -126,16 +146,21 @@ class QuizEntityFragment : Fragment() {
         viewModel.quizFinished.observe(viewLifecycleOwner) { finished ->
             if (finished) {
                 layoutResult.isVisible = true
-                btnValidate.isEnabled  = false
+                btnValidate.isVisible  = false
                 etAnswer.isEnabled     = false
                 btnNext.isVisible      = false
-                val max = viewModel.maxScore.value ?: 20
-                tvScore.text = "Score : ${viewModel.score.value ?: 0} / $max"
+                val score = viewModel.score.value ?: 0.0
+                val max   = viewModel.maxScore.value ?: 0.0
+                tvScore.text = "Score : ${formatScore(score)} / ${formatScore(max)}"
             }
         }
 
         btnRestart.setOnClickListener { findNavController().navigateUp() }
     }
+
+    private fun formatScore(v: Double): String =
+        if (v == v.roundToInt().toDouble()) v.roundToInt().toString()
+        else String.format("%.1f", v)
 
     private fun buildAllInfo(e: EntiteEntity) = buildString {
         appendLine("Race : ${translateRace(e.race)}")
@@ -143,6 +168,9 @@ class QuizEntityFragment : Fragment() {
         e.clue?.let          { appendLine("Indice : $it") }
         e.domain?.let        { appendLine("Domaine : $it") }
         e.godType?.let       { appendLine("Type divin : ${translateGodType(it)}") }
+        e.fatherName?.let    { appendLine("Père : $it") }
+        e.motherName?.let    { appendLine("Mère : $it") }
+        e.equivalentName?.let{ appendLine("Équivalent : $it") }
         e.opponentName?.let  { appendLine("Opposant : $it") }
         e.giantType?.let     { appendLine("Type de géant : $it") }
         e.story?.let         { appendLine("Histoire : $it") }
@@ -151,7 +179,6 @@ class QuizEntityFragment : Fragment() {
         e.death?.let         { appendLine("Mort : $it") }
         e.description?.let   { appendLine("Description : $it") }
         e.ascendantName?.let { appendLine("Ascendant : $it") }
-        e.equivalentName?.let{ appendLine("Équivalent : $it") }
         e.monsterType?.let   { appendLine("Type : $it") }
         e.museType?.let      { appendLine("Type de muse : $it") }
         e.zodiacType?.let    { appendLine("Zodiaque : $it") }
