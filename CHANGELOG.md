@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.2.0
+
+- Peuplement initial de la base de données mythologique (assets/prepopulate.json, populateIfEmpty)
+
+
 #### V1.1.1
 
 - Ajustements de configuration Gradle

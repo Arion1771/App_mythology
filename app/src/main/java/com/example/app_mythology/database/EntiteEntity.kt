@@ -13,15 +13,16 @@ data class EntiteEntity(
     val mythology: String,
     val race: String,
 
+    // ─── Quiz ──────────────────────────────────────────────────────────────
+    val clue: String? = null,        // Indice affiché pendant le quiz
+    val difficulty: Int = 1,         // 1 = facile, 2 = moyen, 3 = difficile
+
     // ─── God ───────────────────────────────────────────────────────────────
     val domain: String? = null,
     val godType: String? = null,
     val equivalentName: String? = null,
     val fatherName: String? = null,
     val motherName: String? = null,
-
-    // ─── Titan ─────────────────────────────────────────────────────────────
-    // domain partagé
 
     // ─── Giant ─────────────────────────────────────────────────────────────
     val giantType: String? = null,
@@ -47,4 +48,8 @@ data class EntiteEntity(
 
     // ─── Arthurian_Knight ──────────────────────────────────────────────────
     val death: String? = null,
+
+    // ─── Zodiacal_Sign ─────────────────────────────────────────────────────
+    val zodiacType: String? = null,
+    val chineseEquivalent: String? = null
 )

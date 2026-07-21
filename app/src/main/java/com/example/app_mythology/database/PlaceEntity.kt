@@ -4,27 +4,24 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 /**
- * placeType : "River" | "Realm" | "Underworld"
- * Pour Underworld, le champ [region] précise : Elysée, Tartare,
- * Champs d'Asphodèle, Champs du Châtiment, Érèbe, etc.
+ * placeType : "Fleuve" | "Royaume" | "Enfers"
  */
 @Entity(tableName = "places")
 data class PlaceEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
-    // ─── Communs (Place) ───────────────────────────────────────────────────
     val name: String,
     val mythology: String,
     val description: String,
-    val placeType: String,
+    val placeType: String,      // "Fleuve", "Royaume", "Enfers"
 
-    // ─── River ─────────────────────────────────────────────────────────────
+    // Fleuve
     val particularity: String? = null,
 
-    // ─── Realm (Yggdrasil + autres royaumes) ──────────────────────────────
+    // Royaume
     val inhabitants: String? = null,
 
-    // ─── Underworld (Enfers grecs) ─────────────────────────────────────────
-    val region: String? = null
+    // Enfers — âmes qui y séjournent
+    val souls: String? = null
 )
