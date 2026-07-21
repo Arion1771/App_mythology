@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.1.0
+
+- Mise en place du thème visuel sombre et des écrans de navigation existants (Accueil, choix Parcourir/Ajouter/Quiz)
+
+
 #### V1.0.1
 
 - Ajout du wrapper Gradle et de ressources de chaînes manquantes
