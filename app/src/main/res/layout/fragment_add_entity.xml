@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nom -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nom *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ex : Aphrodite" android:textColor="@color/on_surface"
+            android:textColorHint="@color/on_surface_variant"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Mythologie -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Mythologie *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <Spinner android:id="@+id/spinner_mythology"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:backgroundTint="@color/primary"/>
+            <Button android:id="@+id/btn_add_mythology"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="+ Autre"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+
+        <!-- Race -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Race *" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/spinner_race"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ══ GOD ══════════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_god"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Domaine" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_domain"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Amour et beauté" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Type de dieu" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_godtype"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Olympien, Primordial…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Équivalent romain/grec" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_equivalent"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Vénus" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Père" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_father"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Zeus" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Mère" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_mother"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Héra" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ TITAN ════════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_titan"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Domaine" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_domain_titan"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Temps, Océan…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Équivalent romain" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_equivalent_titan"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Saturne" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ GIANT ════════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_giant"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Type de géant" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_gianttype"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Jotunn, GeantDeFeu…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Dieu opposé" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_opponent"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Zeus" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ HEROES ═══════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_heroes"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Histoire / Quête" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_story"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Douze travaux d'Hercule…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:minLines="2" android:gravity="top"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Tué par" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_killer"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Paris" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Ascendant divin" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_ascendant"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Zeus" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ MONSTER ══════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_monster"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Type de monstre" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_monstertype"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Dragon, Loup, Serpent…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Description" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_description"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Description de la créature…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:minLines="2" android:gravity="top"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ CYCLOPE ══════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_cyclope"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <CheckBox android:id="@+id/cb_primordial"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Cyclope primordial"
+                android:textColor="@color/on_surface"
+                android:buttonTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Histoire" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_story_cyclope"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Forgeron d'Héphaïstos…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:minLines="2" android:gravity="top"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ MUSES ════════════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_muses"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Domaine artistique" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_domain_muses"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Poésie épique, Musique…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Type de muse" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_musetype"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Grecque ou Beotienne" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ ARCHANGELS ═══════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_archangels"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Rôle" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_role"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Messager de Dieu, Gardien…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ ARTHURIAN_KNIGHT ══════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_knight"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Histoire / Quête" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_story_knight"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Chevalier de la Table Ronde…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:minLines="2" android:gravity="top"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Mort" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_death"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Tué par Mordred…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ DEMON_PRINCE ══════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_demon"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Domaine / Péché" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_domain_demon"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Avarice, Luxure…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <!-- ══ ZODIACAL_SIGN ══════════════════════════════════════════ -->
+        <LinearLayout android:id="@+id/group_zodiac"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Type de zodiaque" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_zodiactype"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Classique ou Chinois" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Équivalent chinois" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+            <EditText android:id="@+id/et_chinese"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Ex : Rat, Bœuf…" android:textColor="@color/on_surface"
+                android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Enregistrer"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/on_primary"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

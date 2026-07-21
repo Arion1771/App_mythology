@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- En-tête toujours visible -->
+        <TextView android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="26sp" android:textStyle="bold"
+            android:textColor="#FFEAEAEA" android:layout_marginBottom="4dp"/>
+
+        <TextView android:id="@+id/tv_detail_mythology"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FF9E9E9E"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView android:id="@+id/tv_detail_race"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FF9E9E9E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Champs optionnels : chaque row est un LinearLayout autonome -->
+        <LinearLayout android:id="@+id/row_domain"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Domaine" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_domain"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_godtype"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Type divin" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_godtype"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_equivalent"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Équivalent" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_equivalent"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_father"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Père" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_father"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_mother"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Mère" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_mother"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_gianttype"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Type de géant" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_gianttype"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_opponent"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Opposant" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_opponent"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_story"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Histoire" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_story"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_killer"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Tué par" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_killer"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_ascendant"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Ascendant" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_ascendant"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_monstertype"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Type" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_monstertype"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_description"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Description" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_description"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_primordial"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Primordial" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_primordial"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_musetype"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Type de muse" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_musetype"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_role"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Rôle" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_role"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_death"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Mort" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_death"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

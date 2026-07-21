@@ -13,19 +13,19 @@ class EntiteViewModel(application: Application) : AndroidViewModel(application) 
         AppDatabase.getInstance(application)
     )
 
-    // ─── Filtre actif ──────────────────────────────────────────────────────
     private val _filterMode = MutableLiveData<FilterMode>(FilterMode.ALL)
     private val _filterValue = MutableLiveData<String>("")
 
     enum class FilterMode { ALL, BY_RACE, BY_MYTHOLOGY, BY_MYTHOLOGY_AND_RACE, SEARCH }
 
-    // ─── Liste résultante selon le filtre ─────────────────────────────────
-    val entites: LiveData<List<EntiteEntity>> = MediatorLiveData<List<EntiteEntity>>().apply {
+    // MediatorLiveData corrigé — évite le crash dû aux sources multiples simultanées
+    private var currentSource: LiveData<List<EntiteEntity>>? = null
+    val entites: MediatorLiveData<List<EntiteEntity>> = MediatorLiveData<List<EntiteEntity>>().apply {
         fun refresh() {
-            removeSource(repository.allEntites)
+            currentSource?.let { removeSource(it) }
             val mode = _filterMode.value ?: FilterMode.ALL
             val value = _filterValue.value ?: ""
-            val source = when (mode) {
+            val newSource: LiveData<List<EntiteEntity>> = when (mode) {
                 FilterMode.ALL -> repository.allEntites
                 FilterMode.BY_RACE -> repository.getByRace(value)
                 FilterMode.BY_MYTHOLOGY -> repository.getByMythology(value)
@@ -35,7 +35,8 @@ class EntiteViewModel(application: Application) : AndroidViewModel(application) 
                 }
                 FilterMode.SEARCH -> repository.search(value)
             }
-            addSource(source) { setValue(it) }
+            currentSource = newSource
+            addSource(newSource) { setValue(it) }
         }
         addSource(_filterMode) { refresh() }
         addSource(_filterValue) { refresh() }
@@ -44,42 +45,15 @@ class EntiteViewModel(application: Application) : AndroidViewModel(application) 
     val mythologies: LiveData<List<String>> = repository.mythologies
     val races: LiveData<List<String>> = repository.races
 
-    // ─── Actions filtre ────────────────────────────────────────────────────
-    fun showAll() {
-        _filterMode.value = FilterMode.ALL
-        _filterValue.value = ""
-    }
-
-    fun filterByRace(race: String) {
-        _filterMode.value = FilterMode.BY_RACE
-        _filterValue.value = race
-    }
-
-    fun filterByMythology(mythology: String) {
-        _filterMode.value = FilterMode.BY_MYTHOLOGY
-        _filterValue.value = mythology
-    }
-
+    fun showAll() { _filterMode.value = FilterMode.ALL; _filterValue.value = "" }
+    fun filterByRace(race: String) { _filterMode.value = FilterMode.BY_RACE; _filterValue.value = race }
+    fun filterByMythology(mythology: String) { _filterMode.value = FilterMode.BY_MYTHOLOGY; _filterValue.value = mythology }
     fun filterByMythologyAndRace(mythology: String, race: String) {
-        _filterMode.value = FilterMode.BY_MYTHOLOGY_AND_RACE
-        _filterValue.value = "$mythology|$race"
+        _filterMode.value = FilterMode.BY_MYTHOLOGY_AND_RACE; _filterValue.value = "$mythology|$race"
     }
+    fun search(query: String) { _filterMode.value = FilterMode.SEARCH; _filterValue.value = query }
 
-    fun search(query: String) {
-        _filterMode.value = FilterMode.SEARCH
-        _filterValue.value = query
-    }
-
-    // ─── CRUD ──────────────────────────────────────────────────────────────
-    fun insert(entite: EntiteEntity) = viewModelScope.launch {
-        repository.insert(entite)
-    }
-
-    fun update(entite: EntiteEntity) = viewModelScope.launch {
-        repository.update(entite)
-    }
-
-    fun delete(entite: EntiteEntity) = viewModelScope.launch {
-        repository.delete(entite)
-    }
+    fun insert(entite: EntiteEntity) = viewModelScope.launch { repository.insert(entite) }
+    fun update(entite: EntiteEntity) = viewModelScope.launch { repository.update(entite) }
+    fun delete(entite: EntiteEntity) = viewModelScope.launch { repository.delete(entite) }
 }

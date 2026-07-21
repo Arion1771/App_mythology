@@ -11,15 +11,19 @@ import com.example.app_mythology.R
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.viewmodel.EntiteViewModel
 
-class AddEntityFragment : Fragment() {
+open class AddEntityFragment : Fragment() {
 
-    private val viewModel: EntiteViewModel by viewModels()
+    protected val viewModel: EntiteViewModel by viewModels()
 
-    // Races disponibles
     private val races = listOf(
         "God", "Titan", "Giant", "Heroes", "Monster",
         "Cyclope", "Hecatoncheires", "Muses", "Archangels",
         "Arthurian_Knight", "Demon_Prince", "Zodiacal_Sign"
+    )
+    private val racesDisplay = listOf(
+        "Dieu", "Titan", "Géant", "Héros", "Monstre",
+        "Cyclope", "Hécatonchire", "Muse", "Archange",
+        "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
     )
 
     override fun onCreateView(
@@ -30,41 +34,36 @@ class AddEntityFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val etName = view.findViewById<EditText>(R.id.et_name)
         val spinnerMytho = view.findViewById<Spinner>(R.id.spinner_mythology)
-        val btnAddMytho = view.findViewById<Button>(R.id.btn_add_mythology)
-        val spinnerRace = view.findViewById<Spinner>(R.id.spinner_race)
-        val btnSave = view.findViewById<Button>(R.id.btn_save)
+        val btnAddMytho  = view.findViewById<Button>(R.id.btn_add_mythology)
+        val spinnerRace  = view.findViewById<Spinner>(R.id.spinner_race)
+        val btnSave      = view.findViewById<Button>(R.id.btn_save)
 
-        // Groupes de champs spécifiques par race
-        val groupGod = view.findViewById<View>(R.id.group_god)
-        val groupTitan = view.findViewById<View>(R.id.group_titan)
-        val groupGiant = view.findViewById<View>(R.id.group_giant)
-        val groupHeroes = view.findViewById<View>(R.id.group_heroes)
-        val groupMonster = view.findViewById<View>(R.id.group_monster)
-        val groupCyclope = view.findViewById<View>(R.id.group_cyclope)
-        val groupMuses = view.findViewById<View>(R.id.group_muses)
-        val groupArchangels = view.findViewById<View>(R.id.group_archangels)
-        val groupKnight = view.findViewById<View>(R.id.group_knight)
-
-        val allGroups = listOf(
-            groupGod, groupTitan, groupGiant, groupHeroes, groupMonster,
-            groupCyclope, groupMuses, groupArchangels, groupKnight
+        val groups = mapOf(
+            "God"              to R.id.group_god,
+            "Titan"            to R.id.group_titan,
+            "Giant"            to R.id.group_giant,
+            "Heroes"           to R.id.group_heroes,
+            "Monster"          to R.id.group_monster,
+            "Cyclope"          to R.id.group_cyclope,
+            "Hecatoncheires"   to null,
+            "Muses"            to R.id.group_muses,
+            "Archangels"       to R.id.group_archangels,
+            "Arthurian_Knight" to R.id.group_knight,
+            "Demon_Prince"     to R.id.group_demon,
+            "Zodiacal_Sign"    to R.id.group_zodiac
         )
 
-        // Spinner mythologies (depuis la base + saisie libre)
+        // Mythologies depuis la base
         val mythologyList = mutableListOf<String>()
         viewModel.mythologies.observe(viewLifecycleOwner) { list ->
             mythologyList.clear()
             mythologyList.addAll(list)
-            spinnerMytho.adapter = ArrayAdapter(
-                requireContext(),
-                android.R.layout.simple_spinner_item,
-                mythologyList
-            ).apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+            spinnerMytho.adapter = ArrayAdapter(requireContext(),
+                android.R.layout.simple_spinner_item, mythologyList)
+                .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
         }
 
-        // Ajout d'une nouvelle mythologie
         btnAddMytho.setOnClickListener {
             val et = EditText(requireContext())
             android.app.AlertDialog.Builder(requireContext())
@@ -78,80 +77,90 @@ class AddEntityFragment : Fragment() {
                         spinnerMytho.setSelection(mythologyList.indexOf(newMytho))
                     }
                 }
-                .setNegativeButton("Annuler", null)
-                .show()
+                .setNegativeButton("Annuler", null).show()
         }
 
-        // Spinner races
-        spinnerRace.adapter = ArrayAdapter(
-            requireContext(),
-            android.R.layout.simple_spinner_item,
-            races
-        ).apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+        // Spinner races (affiché en français)
+        spinnerRace.adapter = ArrayAdapter(requireContext(),
+            android.R.layout.simple_spinner_item, racesDisplay)
+            .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
 
-        // Afficher les champs selon la race sélectionnée
+        // Afficher le bon groupe selon la race
         spinnerRace.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p: AdapterView<*>, v: View?, pos: Int, id: Long) {
-                allGroups.forEach { it.isVisible = false }
-                when (races[pos]) {
-                    "God" -> groupGod.isVisible = true
-                    "Titan" -> groupTitan.isVisible = true
-                    "Giant" -> groupGiant.isVisible = true
-                    "Heroes" -> groupHeroes.isVisible = true
-                    "Monster" -> groupMonster.isVisible = true
-                    "Cyclope" -> groupCyclope.isVisible = true
-                    "Muses" -> groupMuses.isVisible = true
-                    "Archangels" -> groupArchangels.isVisible = true
-                    "Arthurian_Knight" -> groupKnight.isVisible = true
+                groups.values.forEach { resId ->
+                    resId?.let { view.findViewById<View>(it).isVisible = false }
                 }
+                groups[races[pos]]?.let { view.findViewById<View>(it).isVisible = true }
             }
             override fun onNothingSelected(p: AdapterView<*>) {}
         }
 
         btnSave.setOnClickListener {
-            val name = etName.text.toString().trim()
+            val name = view.getText(R.id.et_name)
             val mythology = spinnerMytho.selectedItem?.toString() ?: ""
-            val race = spinnerRace.selectedItem?.toString() ?: ""
+            val race = races[spinnerRace.selectedItemPosition]
 
-            if (name.isEmpty() || mythology.isEmpty()) {
+            if (name.isNullOrBlank() || mythology.isBlank()) {
                 Toast.makeText(requireContext(), "Nom et mythologie requis", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
-            val entity = buildEntity(view, name, mythology, race)
-            viewModel.insert(entity)
+            viewModel.insert(buildEntity(view, name, mythology, race))
             findNavController().navigateUp()
         }
     }
 
-    private fun buildEntity(view: View, name: String, mythology: String, race: String): EntiteEntity {
+    protected open fun buildEntity(view: View, name: String, mythology: String, race: String,
+                                    existingId: Int = 0): EntiteEntity {
+        // Lire le champ domain selon la race active
+        val domain = when (race) {
+            "God"          -> view.getText(R.id.et_domain)
+            "Titan"        -> view.getText(R.id.et_domain_titan)
+            "Muses"        -> view.getText(R.id.et_domain_muses)
+            "Demon_Prince" -> view.getText(R.id.et_domain_demon)
+            else           -> null
+        }
+        val story = when (race) {
+            "Heroes"           -> view.getText(R.id.et_story)
+            "Cyclope"          -> view.getText(R.id.et_story_cyclope)
+            "Arthurian_Knight" -> view.getText(R.id.et_story_knight)
+            else               -> null
+        }
+        val equivalent = when (race) {
+            "God"   -> view.getText(R.id.et_equivalent)
+            "Titan" -> view.getText(R.id.et_equivalent_titan)
+            else    -> null
+        }
         return EntiteEntity(
-            name = name,
-            mythology = mythology,
-            race = race,
-            domain = view.findText(R.id.et_domain),
-            godType = view.findText(R.id.et_godtype),
-            equivalentName = view.findText(R.id.et_equivalent),
-            fatherName = view.findText(R.id.et_father),
-            motherName = view.findText(R.id.et_mother),
-            giantType = view.findText(R.id.et_gianttype),
-            opponentName = view.findText(R.id.et_opponent),
-            story = view.findText(R.id.et_story),
-            killer = view.findText(R.id.et_killer),
-            ascendantName = view.findText(R.id.et_ascendant),
-            monsterType = view.findText(R.id.et_monstertype),
-            description = view.findText(R.id.et_description),
-            primordial = view.findCheckbox(R.id.cb_primordial),
-            museType = view.findText(R.id.et_musetype),
-            role = view.findText(R.id.et_role),
-            death = view.findText(R.id.et_death)
+            id                = existingId,
+            name              = name,
+            mythology         = mythology,
+            race              = race,
+            domain            = domain,
+            godType           = view.getText(R.id.et_godtype),
+            equivalentName    = equivalent,
+            fatherName        = view.getText(R.id.et_father),
+            motherName        = view.getText(R.id.et_mother),
+            giantType         = view.getText(R.id.et_gianttype),
+            opponentName      = view.getText(R.id.et_opponent),
+            story             = story,
+            killer            = view.getText(R.id.et_killer),
+            ascendantName     = view.getText(R.id.et_ascendant),
+            monsterType       = view.getText(R.id.et_monstertype),
+            description       = view.getText(R.id.et_description),
+            primordial        = view.findCheckbox(R.id.cb_primordial),
+            museType          = view.getText(R.id.et_musetype),
+            role              = view.getText(R.id.et_role),
+            death             = view.getText(R.id.et_death),
+            zodiacType        = view.getText(R.id.et_zodiactype),
+            chineseEquivalent = view.getText(R.id.et_chinese)
         )
     }
 
-    private fun View.findText(id: Int): String? =
-        try { (findViewById<EditText>(id)?.text?.toString()?.trim()).takeIf { !it.isNullOrEmpty() } }
-        catch (e: Exception) { null }
+    protected fun View.getText(id: Int): String? =
+        try { findViewById<EditText>(id)?.text?.toString()?.trim().takeIf { !it.isNullOrEmpty() } }
+        catch (_: Exception) { null }
 
     private fun View.findCheckbox(id: Int): Boolean? =
-        try { findViewById<CheckBox>(id)?.isChecked } catch (e: Exception) { null }
+        try { findViewById<CheckBox>(id)?.isChecked } catch (_: Exception) { null }
 }
