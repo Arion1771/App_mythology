@@ -3,6 +3,11 @@
 ## V1
 
 
+### V1.7.0
+
+- Style de bouton global pour éviter le texte tronqué sur petits écrans
+
+
 #### V1.6.5
 
 - Conservation du quiz (entités et lieux) lors d'une rotation d'écran
