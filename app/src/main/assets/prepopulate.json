@@ -5116,5 +5116,136 @@
       "placeType": "Enfers",
       "souls": "Toutes les âmes au passage vers les Enfers"
     }
+  ],
+  "artifacts": [
+    {
+      "name": "Excalibur",
+      "mythology": "Arthurienne",
+      "artifactType": "Arme",
+      "ownerName": "Arthur Pendragon",
+      "creatorName": "La Dame du Lac",
+      "power": "Rend son porteur invincible au combat",
+      "story": "Offerte à Arthur par la Dame du Lac après que sa première épée se soit brisée",
+      "clue": "Épée légendaire du roi Arthur",
+      "difficulty": 1
+    },
+    {
+      "name": "Mjolnir",
+      "mythology": "Nordique",
+      "artifactType": "Arme",
+      "ownerName": "Thor",
+      "creatorName": "Les nains Sindri et Brokk",
+      "power": "Marteau qui revient toujours dans la main de son porteur ; seuls les dignes peuvent le soulever",
+      "story": "Forgé lors d'un pari entre Loki et les nains, malgré un manche un peu court à cause d'un sabotage de Loki",
+      "clue": "Marteau du dieu du tonnerre nordique",
+      "difficulty": 1
+    },
+    {
+      "name": "Trident de Poséidon",
+      "mythology": "Grecque",
+      "artifactType": "Arme",
+      "ownerName": "Poséidon",
+      "creatorName": "Les Cyclopes",
+      "power": "Contrôle les mers, provoque tempêtes et séismes",
+      "story": "Offert à Poséidon par les Cyclopes lors de la guerre contre les Titans",
+      "clue": "Arme à trois pointes du dieu des mers",
+      "difficulty": 1
+    },
+    {
+      "name": "Saint Graal",
+      "mythology": "Arthurienne",
+      "artifactType": "Artefact",
+      "ownerName": "Recherché par les chevaliers de la Table Ronde",
+      "power": "Offrirait la vie éternelle ou la guérison à qui le trouve",
+      "story": "Coupe utilisée lors de la Cène, quête ultime des chevaliers de la Table Ronde",
+      "clue": "Coupe sacrée recherchée par les chevaliers de la Table Ronde",
+      "difficulty": 1
+    },
+    {
+      "name": "Anneau d'Andvari",
+      "mythology": "Nordique",
+      "artifactType": "Artefact",
+      "ownerName": "Fáfnir puis Sigurd",
+      "creatorName": "Le nain Andvari",
+      "power": "Multiplie l'or de son possesseur, mais porte une malédiction mortelle",
+      "story": "Volé au nain Andvari par Loki pour payer une dette ; maudit, il cause la mort de tous ses possesseurs, dont Fáfnir",
+      "clue": "Anneau maudit convoité par le dragon Fáfnir",
+      "difficulty": 2
+    },
+    {
+      "name": "Gungnir",
+      "mythology": "Nordique",
+      "artifactType": "Arme",
+      "ownerName": "Odin",
+      "creatorName": "Les fils d'Ivaldi",
+      "power": "Lance qui ne manque jamais sa cible",
+      "story": "Forgée par des nains puis offerte à Odin par Loki",
+      "clue": "Lance d'Odin qui ne rate jamais sa cible",
+      "difficulty": 2
+    },
+    {
+      "name": "Égide",
+      "mythology": "Grecque",
+      "artifactType": "Objet magique",
+      "ownerName": "Zeus, parfois prêtée à Athéna",
+      "creatorName": "Héphaïstos",
+      "power": "Bouclier semant la terreur chez l'ennemi, orné de la tête de Méduse",
+      "story": "Forgée par Héphaïstos pour Zeus, souvent représentée portée par Athéna",
+      "clue": "Bouclier terrifiant orné de la tête de Méduse",
+      "difficulty": 2
+    },
+    {
+      "name": "Toison d'or",
+      "mythology": "Grecque",
+      "artifactType": "Artefact",
+      "ownerName": "Gardée par un dragon en Colchide",
+      "power": "Symbole de royauté et d'autorité légitime",
+      "story": "Provient d'un bélier ailé envoyé par Zeus ; quête de Jason et des Argonautes pour la récupérer",
+      "clue": "Objet convoité par Jason et les Argonautes",
+      "difficulty": 2
+    },
+    {
+      "name": "Brísingamen",
+      "mythology": "Nordique",
+      "artifactType": "Objet magique",
+      "ownerName": "Freyja",
+      "creatorName": "Quatre nains forgerons",
+      "power": "Collier d'une beauté extraordinaire, symbole de fertilité",
+      "story": "Freyja l'obtient en échange d'une nuit passée avec chacun des quatre nains qui l'ont forgé",
+      "clue": "Collier convoité de la déesse Freyja",
+      "difficulty": 3
+    },
+    {
+      "name": "Gáe Bulg",
+      "mythology": "Celtique Irlandaise",
+      "artifactType": "Arme",
+      "ownerName": "Cúchulainn",
+      "creatorName": "La guerrière Scáthach",
+      "power": "Lance barbelée qui se multiplie en pénétrant le corps de l'adversaire, mortelle à coup sûr",
+      "story": "Offerte par Scáthach à son élève Cúchulainn, utilisée tragiquement contre son ami Ferdiad",
+      "clue": "Lance barbelée du héros Cúchulainn",
+      "difficulty": 3
+    },
+    {
+      "name": "Kusanagi-no-Tsurugi",
+      "mythology": "Japonaise",
+      "artifactType": "Arme",
+      "ownerName": "Famille impériale du Japon",
+      "power": "Une des trois insignes impériales du Japon, associée au contrôle du vent",
+      "story": "Trouvée par le dieu Susanoo dans la queue du dragon Yamata no Orochi après l'avoir vaincu",
+      "clue": "Épée trouvée dans la queue d'un dragon à huit têtes",
+      "difficulty": 3
+    },
+    {
+      "name": "Sudarshana Chakra",
+      "mythology": "Hindouisme",
+      "artifactType": "Arme",
+      "ownerName": "Vishnou",
+      "creatorName": "Vishvakarma",
+      "power": "Disque tranchant qui revient toujours à la main de son porteur, détruit le mal",
+      "story": "Utilisé par Vishnou pour vaincre de nombreux démons dans la mythologie hindoue",
+      "clue": "Disque tournoyant du dieu Vishnou",
+      "difficulty": 3
+    }
   ]
 }
