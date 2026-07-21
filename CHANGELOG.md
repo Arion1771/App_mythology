@@ -3,6 +3,35 @@
 ## V2
 
 
+#### V2.0.4
+
+- Ajout de 23 nouveaux artéfacts
+- Artefact :
+  - Ambroisie (Ajout)
+  - Nectar (Ajout)
+  - Pommes d'Idunn (Ajout)
+  - Pêches d'immortalité (Ajout)
+  - Amrita (Ajout)
+  - Óðrœrir (Ajout)
+  - Char d'Hélios (Ajout)
+  - Skidbladnir (Ajout)
+  - Barque solaire de Rê (Ajout)
+  - Pushpaka Vimana (Ajout)
+  - Draupnir (Ajout)
+  - Caducée (Ajout)
+  - Œil d'Horus (Ajout)
+  - Lance de Lugh (Ajout)
+  - Claíomh Solais (Ajout)
+  - Lia Fáil (Ajout)
+  - Chaudron du Dagda (Ajout)
+  - Tablette des Destinées (Ajout)
+  - Ruyi Jingu Bang (Ajout)
+  - Totsuka-no-Tsurugi (Ajout)
+  - Fourreau d'Excalibur (Ajout)
+  - Boîte de Pandore (Ajout)
+  - Pommes d'or des Hespérides (Ajout)
+
+
 #### V2.0.3
 
 - Extension des types d'artéfacts (Véhicule, Nourriture)

@@ -6,6 +6,34 @@
 
 ### Changes since the first version
 
+#### V2.0.4
+
+- Added 23 new artifacts
+- Artifact:
+  - Ambroisie (Added)
+  - Nectar (Added)
+  - Pommes d'Idunn (Added)
+  - Pêches d'immortalité (Added)
+  - Amrita (Added)
+  - Óðrœrir (Added)
+  - Char d'Hélios (Added)
+  - Skidbladnir (Added)
+  - Barque solaire de Rê (Added)
+  - Pushpaka Vimana (Added)
+  - Draupnir (Added)
+  - Caducée (Added)
+  - Œil d'Horus (Added)
+  - Lance de Lugh (Added)
+  - Claíomh Solais (Added)
+  - Lia Fáil (Added)
+  - Chaudron du Dagda (Added)
+  - Tablette des Destinées (Added)
+  - Ruyi Jingu Bang (Added)
+  - Totsuka-no-Tsurugi (Added)
+  - Fourreau d'Excalibur (Added)
+  - Boîte de Pandore (Added)
+  - Pommes d'or des Hespérides (Added)
+
 #### V2.0.3
 
 - Extended the artifact types (Vehicle, Food)
@@ -119,6 +147,34 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.0.4
+
+- Ajout de 23 nouveaux artéfacts
+- Artefact :
+  - Ambroisie (Ajout)
+  - Nectar (Ajout)
+  - Pommes d'Idunn (Ajout)
+  - Pêches d'immortalité (Ajout)
+  - Amrita (Ajout)
+  - Óðrœrir (Ajout)
+  - Char d'Hélios (Ajout)
+  - Skidbladnir (Ajout)
+  - Barque solaire de Rê (Ajout)
+  - Pushpaka Vimana (Ajout)
+  - Draupnir (Ajout)
+  - Caducée (Ajout)
+  - Œil d'Horus (Ajout)
+  - Lance de Lugh (Ajout)
+  - Claíomh Solais (Ajout)
+  - Lia Fáil (Ajout)
+  - Chaudron du Dagda (Ajout)
+  - Tablette des Destinées (Ajout)
+  - Ruyi Jingu Bang (Ajout)
+  - Totsuka-no-Tsurugi (Ajout)
+  - Fourreau d'Excalibur (Ajout)
+  - Boîte de Pandore (Ajout)
+  - Pommes d'or des Hespérides (Ajout)
 
 #### V2.0.3
 
