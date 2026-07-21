@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="26sp" android:textStyle="bold"
+            android:textColor="#FFEAEAEA" android:layout_marginBottom="4dp"/>
+
+        <TextView android:id="@+id/tv_detail_mythology"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FF9E9E9E"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView android:id="@+id/tv_detail_race"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FF9E9E9E"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/tv_detail_description"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FFEAEAEA"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout android:id="@+id/row_particularity"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Particularité" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_particularity"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_inhabitants"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Habitants" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_inhabitants"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/row_region"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Âmes" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_region"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
