@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V1.0.1
+
+- Added the Gradle wrapper and missing string resources
+
 #### V1.0.0
 
 - First working version of the app: Room persistence, navigation, Home/Browse/Add/Quiz screens
@@ -39,6 +43,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V1.0.1
+
+- Ajout du wrapper Gradle et de ressources de chaînes manquantes
 
 #### V1.0.0
 
