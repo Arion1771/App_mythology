@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.6.4
+
+- Correction de la coquille 'Primodrial' → 'Primordial' en base de données
+
+
 #### V1.6.3
 
 - Tolérance de l'ancienne coquille 'Primodrial' dans le typage divin
