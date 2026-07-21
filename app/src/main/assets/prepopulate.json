@@ -341,8 +341,8 @@
       "mythology": "Grecque",
       "race": "Monster",
       "monsterType": "Divinité Marine Primordiale",
-      "description": "Trois sœurs partageant un seul œil et une seule dent, gardiennes d'un secret convoité par Persée",
-      "clue": "Trois sœurs partageant un seul œil et une seule dent",
+      "description": "Trois soeurs partageant un seul oeil et une seule dent, gardiennes d'un secret convoité par Persée",
+      "clue": "Trois soeurs partageant un seul oeil et une seule dent",
       "difficulty": 2
     },
     {
@@ -791,7 +791,7 @@
     },
     {
       "id": 72,
-      "name": "Œdipe",
+      "name": "Oedipe",
       "mythology": "Grecque",
       "race": "Heroes",
       "ascendantName": null,
@@ -1155,8 +1155,8 @@
       "mythology": "Grecque",
       "race": "Monster",
       "monsterType": "Gorgone",
-      "description": "L'une des trois Gorgones, sœur immortelle de Méduse",
-      "clue": "Gorgone, sœur immortelle de Méduse",
+      "description": "L'une des trois Gorgones, soeur immortelle de Méduse",
+      "clue": "Gorgone, soeur immortelle de Méduse",
       "difficulty": 2
     },
     {
@@ -1589,8 +1589,8 @@
       "mythology": "Grecque",
       "race": "Monster",
       "monsterType": "Gorgone",
-      "description": "L'une des trois Gorgones, sœur immortelle de Méduse",
-      "clue": "Gorgone, sœur immortelle de Méduse",
+      "description": "L'une des trois Gorgones, soeur immortelle de Méduse",
+      "clue": "Gorgone, soeur immortelle de Méduse",
       "difficulty": 2
     },
     {
@@ -3539,7 +3539,7 @@
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
       "zodiacType": "Chinois",
-      "description": "Dixième signe du zodiaque chinois (aussi appelé Bœuf), associé aux années 2009, 2021, 2033... Symbole de force tranquille, de persévérance et de travail.",
+      "description": "Dixième signe du zodiaque chinois (aussi appelé Boeuf), associé aux années 2009, 2021, 2033... Symbole de force tranquille, de persévérance et de travail.",
       "clue": "Dixième signe du zodiaque chinois (années 2009, 2021, 2033...)",
       "difficulty": 1
     },
@@ -4669,7 +4669,7 @@
       "name": "Chamuel",
       "mythology": "Abrahamique",
       "race": "Archangels",
-      "role": "Archange de l'amour et des relations, guide vers l'âme sœur",
+      "role": "Archange de l'amour et des relations, guide vers l'âme soeur",
       "clue": "Amour et relations",
       "difficulty": 3
     },
@@ -4841,7 +4841,7 @@
       "name": "Mordred",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
-      "story": "Fils illégitime (souvent incestueux) d'Arthur et de sa demi-sœur, il usurpe le trône pendant l'absence du roi.",
+      "story": "Fils illégitime (souvent incestueux) d'Arthur et de sa demi-soeur, il usurpe le trône pendant l'absence du roi.",
       "death": "Tué de la main du roi Arthur lors de la bataille de Camlann.",
       "clue": "Fils illégitime d'Arthur",
       "difficulty": 2,
@@ -4853,7 +4853,7 @@
       "name": "Morgane",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
-      "story": "Fée, magicienne maudite et demi-sœur d'Arthur (souvent antagoniste).",
+      "story": "Fée, magicienne maudite et demi-soeur d'Arthur (souvent antagoniste).",
       "death": "Immortelle, elle emmène Arthur mourant sur l'île d'Avalon.",
       "clue": "Fée, magicienne maudite",
       "difficulty": 2
@@ -5202,7 +5202,7 @@
       "power": "Symbole de royauté et d'autorité légitime",
       "story": "Provient d'un bélier ailé envoyé par Zeus ; quête de Jason et des Argonautes pour la récupérer",
       "clue": "Objet convoité par Jason et les Argonautes",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
       "name": "Brísingamen",
@@ -5278,7 +5278,7 @@
       "power": "Sandales ailées permettant de voler à une vitesse fulgurante",
       "story": "Portées par Hermès, messager des dieux, pour parcourir le monde et les Enfers à toute vitesse",
       "clue": "Sandales ailées du messager des dieux",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "name": "Harpé",
@@ -5329,7 +5329,7 @@
       "power": "Lame assoiffée de sang, réputée maudite et poussant son porteur à la violence",
       "story": "Katanas forgés par le maître Muramasa, rival légendaire de Masamune ; leur réputation maléfique en a fait des armes redoutées",
       "clue": "Katana maudit assoiffé de sang",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "name": "Ambroisie",
@@ -5357,7 +5357,7 @@
       "artifactType": "Nourriture",
       "ownerName": "Idunn",
       "power": "Pommes magiques qui préservent la jeunesse éternelle des dieux",
-      "story": "Gardées par la déesse Idunn ; leur vol temporaire par le géant Þjazi menace les Ases de vieillissement",
+      "story": "Gardées par la déesse Idunn ; leur vol temporaire par le géant Thjazi menace les Ases de vieillissement",
       "clue": "Pommes qui gardent les dieux nordiques éternellement jeunes",
       "difficulty": 2
     },
@@ -5379,10 +5379,10 @@
       "power": "Nectar d'immortalité",
       "story": "Obtenu en barattant l'océan de lait (Samudra Manthan) par les dévas et les asuras",
       "clue": "Nectar d'immortalité issu du barattage de l'océan de lait",
-      "difficulty": 2
+      "difficulty": 3
     },
     {
-      "name": "Óðrœrir",
+      "name": "Ódroerir",
       "mythology": "Nordique",
       "artifactType": "Nourriture",
       "ownerName": "Odin",
@@ -5452,16 +5452,16 @@
       "power": "Bâton entouré de deux serpents, symbole du commerce et des messages, capable d'endormir ou de réveiller",
       "story": "Souvent confondu avec le bâton d'Asclépios, qui ne porte qu'un seul serpent et symbolise la médecine",
       "clue": "Bâton d'Hermès entouré de deux serpents",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
-      "name": "Œil d'Horus",
+      "name": "Oeil d'Horus",
       "mythology": "Égyptienne",
       "artifactType": "Objet magique",
       "ownerName": "Horus",
       "power": "Amulette de protection, de santé et de pouvoir royal",
-      "story": "Horus perd son œil lors d'un combat contre Seth ; Thot le restaure, en faisant un symbole de guérison",
-      "clue": "Amulette de protection en forme d'œil, liée au dieu-faucon",
+      "story": "Horus perd son oeil lors d'un combat contre Seth ; Thot le restaure, en faisant un symbole de guérison",
+      "clue": "Amulette de protection en forme d'oeil, liée au dieu-faucon",
       "difficulty": 1
     },
     {
@@ -5501,7 +5501,7 @@
       "power": "Chaudron inépuisable qui rassasie toujours ceux qui y puisent",
       "story": "Un des Quatre Trésors des Tuatha Dé Danann, apporté de la cité mythique de Murias",
       "clue": "Chaudron inépuisable, un des Quatre Trésors irlandais",
-      "difficulty": 2
+      "difficulty": 3
     },
     {
       "name": "Tablette des Destinées",
@@ -5521,7 +5521,7 @@
       "power": "Bâton capable de changer de taille à volonté, du plus petit au plus immense",
       "story": "Trouvé par Sun Wukong au fond de l'océan, où il était gardé par le Roi-Dragon de la mer de l'Est",
       "clue": "Bâton du Roi Singe qui change de taille à volonté",
-      "difficulty": 2
+      "difficulty": 3
     },
     {
       "name": "Totsuka-no-Tsurugi",
@@ -5531,7 +5531,7 @@
       "power": "Épée à dix empans utilisée pour trancher un dragon à huit têtes",
       "story": "Utilisée par Susanoo pour tuer le dragon Yamata no Orochi ; c'est en fendant sa queue qu'il découvre Kusanagi-no-Tsurugi",
       "clue": "Épée utilisée par Susanoo pour vaincre un dragon à huit têtes",
-      "difficulty": 2
+      "difficulty": 3
     },
     {
       "name": "Fourreau d'Excalibur",
