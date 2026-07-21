@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="32dp"
+    android:background="@color/surface">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Choisissez la difficulté" android:textSize="20sp" android:textStyle="bold"
+        android:textColor="#FFEAEAEA" android:layout_marginBottom="48dp"/>
+
+    <Button android:id="@+id/btn_level_easy"
+        android:layout_width="240dp" android:layout_height="56dp"
+        android:text="Facile (10 questions)"
+        android:backgroundTint="#FF4CAF50" android:textColor="#FF1A1A1A"
+        android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btn_level_medium"
+        android:layout_width="240dp" android:layout_height="56dp"
+        android:text="Moyen (20 questions)"
+        android:backgroundTint="#FFFFC107" android:textColor="#FF1A1A1A"
+        android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btn_level_hard"
+        android:layout_width="240dp" android:layout_height="56dp"
+        android:text="Difficile (30 questions)"
+        android:backgroundTint="#FFFF5252" android:textColor="#FF1A1A1A"/>
+
+</LinearLayout>
