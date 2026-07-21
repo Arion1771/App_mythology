@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.1.1
+
+- Ajustements de configuration Gradle
+
+
 ### V1.1.0
 
 - Mise en place du thème visuel sombre et des écrans de navigation existants (Accueil, choix Parcourir/Ajouter/Quiz)
