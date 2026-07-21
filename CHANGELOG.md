@@ -1,5 +1,12 @@
 # Changelog
 
+## V1
+
+### V1.0.0
+
+- Version fonctionnelle initiale de l'application : persistance Room, navigation, écrans Accueil/Parcourir/Ajouter/Quiz
+
+
 ## V0
 
 
