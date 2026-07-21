@@ -3,6 +3,11 @@
 ## V0
 
 
+#### V0.1.2
+
+- Ajout des classes GiantType, MuseType, ZodiacType, Realm et River
+
+
 #### V0.1.1
 
 - Réorganisation des classes du modèle en packages (base/entity/enum/sign)
