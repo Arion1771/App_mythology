@@ -3,6 +3,11 @@
 ## V1
 
 
+#### V1.7.1
+
+- Rééquilibrage des niveaux de difficulté de plusieurs entités
+
+
 ### V1.7.0
 
 - Style de bouton global pour éviter le texte tronqué sur petits écrans
