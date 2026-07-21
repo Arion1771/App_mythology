@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V0.1.2
+
+- Added the GiantType, MuseType, ZodiacType, Realm and River classes
+
 #### V0.1.1
 
 - Reorganised the model classes into packages (base/entity/enum/sign)
@@ -31,6 +35,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V0.1.2
+
+- Ajout des classes GiantType, MuseType, ZodiacType, Realm et River
 
 #### V0.1.1
 
