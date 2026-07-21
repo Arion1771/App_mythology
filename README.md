@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V1.6.5
+
+- The quiz (entities and places) is kept when the screen rotates
+
 #### V1.6.4
 
 - Fixed the 'Primodrial' → 'Primordial' typo in the database
@@ -91,6 +95,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V1.6.5
+
+- Conservation du quiz (entités et lieux) lors d'une rotation d'écran
 
 #### V1.6.4
 
