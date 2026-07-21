@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 /**
- * artifactType : "Arme" | "Artefact" | "Objet magique"
+ * artifactType : "Arme" | "Artefact" | "Objet magique" | "Véhicule" | "Nourriture"
  */
 @Entity(tableName = "artifacts")
 data class ArtifactEntity(

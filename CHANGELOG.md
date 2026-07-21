@@ -3,6 +3,11 @@
 ## V2
 
 
+#### V2.0.3
+
+- Extension des types d'artéfacts (Véhicule, Nourriture)
+
+
 #### V2.0.2
 
 - Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Ajout)
