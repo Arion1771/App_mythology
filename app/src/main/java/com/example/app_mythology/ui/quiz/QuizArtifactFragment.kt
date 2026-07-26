@@ -70,6 +70,7 @@ class QuizArtifactFragment : Fragment() {
             tvMythology.text = "Mythologie : ${a.mythology}"
             tvRace.text      = "Type : ${a.artifactType}"
             tvDifficultyBadge.text = a.difficulty.toString()
+            tvDifficultyBadge.setBackgroundResource(difficultyBadgeRes(a.difficulty))
 
             tvDomain.text = a.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
 
@@ -155,6 +156,13 @@ class QuizArtifactFragment : Fragment() {
     private fun formatScore(v: Double): String =
         if (v == v.roundToInt().toDouble()) v.roundToInt().toString()
         else String.format("%.1f", v)
+
+    private fun difficultyBadgeRes(difficulty: Int) = when (difficulty) {
+        1    -> R.drawable.dot_green
+        2    -> R.drawable.dot_yellow
+        3    -> R.drawable.dot_red
+        else -> R.drawable.dot_neutral
+    }
 
     private fun buildAllInfo(a: ArtifactEntity) = buildString {
         a.ownerName?.let   { appendLine("Propriétaire : $it") }
