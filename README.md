@@ -6,6 +6,11 @@
 
 ### Changes since the first version
 
+#### V2.4.0
+
+- Dedicated result screen for the entity and artifact quizzes (`QuizEntityResultFragment` / `QuizArtifactResultFragment`), shown only once the current question can no longer be answered (found, or two wrong attempts): name coloured (green/yellow/red) according to the result, all the additional information (pop culture included), and a button to go to the next question or see the score
+- The rest of the quiz flow (step 1 clue only, step 2 information revealed inline after a first wrong answer) is unchanged
+
 #### V2.3.3
 
 - Overhaul of the `popularCulture` field: it now only lists the title(s) of the work (video game, film, series, anime/manga), comma-separated, with no descriptive sentence
@@ -246,6 +251,11 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.4.0
+
+- Écran de résultat dédié pour les quiz d'entités et d'artéfacts (`QuizEntityResultFragment` / `QuizArtifactResultFragment`), affiché uniquement lorsqu'on ne peut plus répondre à la question en cours (trouvé, ou deux essais faux) : nom coloré (vert/jaune/rouge) selon le résultat, toutes les informations complémentaires (dont la culture populaire), et bouton pour passer à la question suivante ou voir le score
+- Le reste du déroulé du quiz (étape 1 indice seul, étape 2 infos révélées inline après une première réponse fausse) reste inchangé
 
 #### V2.3.3
 
