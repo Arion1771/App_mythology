@@ -3,6 +3,16 @@
 ## V2
 
 
+### V2.3.0
+
+- Ajout du champ `popularCulture` sur les entités : apparitions notables dans les jeux vidéo, films, séries et animés/mangas, renseigné pour 85 entités notables (schéma, version Room 5, formulaires d'ajout/édition et fiche détaillée) ; volontairement absent du récapitulatif du quiz pour ne pas révéler la réponse
+
+
+### V2.2.0
+
+- Pastille de difficulté colorée dans le quiz (entités et artéfacts) : vert/jaune/rouge selon le niveau facile/moyen/difficile, au lieu d'un fond neutre
+
+
 ### V2.1.0
 
 - Suppression des doublons d'information à l'étape 2 du quiz (entités et artéfacts) : race/type, mythologie et indice, déjà affichés en permanence depuis le début de la question, ne sont plus répétés dans le bloc d'informations complémentaires

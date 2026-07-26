@@ -54,6 +54,7 @@ class EntityDetailFragment : Fragment() {
         bind(view, R.id.tv_detail_death,       R.id.row_death,       e.death)
         bind(view, R.id.tv_detail_father,      R.id.row_father,      e.fatherName)
         bind(view, R.id.tv_detail_mother,      R.id.row_mother,      e.motherName)
+        bind(view, R.id.tv_detail_popularculture, R.id.row_popularculture, e.popularCulture)
 
         // Primordial
         e.primordial?.let {
