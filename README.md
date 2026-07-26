@@ -6,6 +6,11 @@
 
 ### Changes since the first version
 
+#### V2.3.3
+
+- Overhaul of the `popularCulture` field: it now only lists the title(s) of the work (video game, film, series, anime/manga), comma-separated, with no descriptive sentence
+- New review pass over all entities: 109 more entities filled in (194 in total), with verified references (Smite, God of War, Percy Jackson, Kaamelott, Hades/Hades II, Assassin's Creed, Marvel, Naruto, Harry Potter, Dungeons & Dragons…)
+
 #### V2.3.2
 
 - Archangels: aligned with the Book of Enoch (1 Enoch 20), removed Chamuel, Haniel, Jophiel, Métatron, Sandalphon and Zadkiel (a separate esoteric tradition) and added Sariel, keeping only the 7 original archangels
@@ -241,6 +246,11 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.3.3
+
+- Refonte du champ `popularCulture` : ne cite plus que le(s) titre(s) de l'œuvre (jeu vidéo, film, série, animé/manga), séparés par virgule, sans phrase descriptive
+- Nouvelle passe de vérification sur l'ensemble des entités : 109 entités supplémentaires renseignées (194 au total), avec des références vérifiées (Smite, God of War, Percy Jackson, Kaamelott, Hadès/Hadès II, Assassin's Creed, Marvel, Naruto, Harry Potter, Donjons & Dragons…)
 
 #### V2.3.2
 
