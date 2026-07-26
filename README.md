@@ -4,9 +4,9 @@
 
 **Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more). Browse, search, add and edit mythological entities, places and artifacts, then test your knowledge with three-difficulty quizzes.
 
-### Latest addition — V2.3.3
+### Latest addition — V2.4.0
 
-Reworked the `popularCulture` field to cite only work titles (Smite, God of War, Percy Jackson, Kaamelott, Hades/Hades II, Assassin's Creed, Marvel, Naruto, Harry Potter, Dungeons & Dragons…), and extended coverage to 194 entities after a full re-check.
+Added a dedicated result screen for the entity and artifact quizzes, shown only once you can no longer answer (found it, or two wrong guesses): the name is color-coded (green/yellow/red) and all complementary info is shown, followed by a button to continue or see the score.
 ### Getting started
 
 1. Clone the repository.
@@ -19,9 +19,9 @@ Reworked the `popularCulture` field to cite only work titles (Smite, God of War,
 
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
-### Dernier ajout — V2.3.3
+### Dernier ajout — V2.4.0
 
-Refonte du champ `popularCulture` pour ne citer que le(s) titre(s) d'œuvre (Smite, God of War, Percy Jackson, Kaamelott, Hadès/Hadès II, Assassin's Creed, Marvel, Naruto, Harry Potter, Donjons & Dragons…), et extension de la couverture à 194 entités après une nouvelle passe de vérification.
+Ajout d'un écran de résultat dédié pour les quiz d'entités et d'artéfacts, affiché uniquement lorsqu'on ne peut plus répondre (trouvé, ou deux essais faux) : nom coloré (vert/jaune/rouge) selon le résultat et toutes les informations complémentaires, suivi d'un bouton pour continuer ou voir le score.
 ### Démarrage
 
 1. Cloner le dépôt.
