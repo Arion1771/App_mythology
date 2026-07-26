@@ -170,16 +170,29 @@
         android:label="Difficulté"
         tools:layout="@layout/fragment_quiz_entity_choice">
         <action android:id="@+id/action_quizEntityChoice_to_quizEntity"
-            app:destination="@id/quizEntityFragment" />
+            app:destination="@id/quiz_entity_graph" />
     </fragment>
 
-    <fragment
-        android:id="@+id/quizEntityFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizEntityFragment"
-        android:label="Quiz Entités"
-        tools:layout="@layout/fragment_quiz_entity">
-        <argument android:name="level" app:argType="string" android:defaultValue="easy" />
-    </fragment>
+    <navigation android:id="@+id/quiz_entity_graph"
+        app:startDestination="@id/quizEntityFragment">
+
+        <fragment
+            android:id="@+id/quizEntityFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizEntityFragment"
+            android:label="Quiz Entités"
+            tools:layout="@layout/fragment_quiz_entity">
+            <argument android:name="level" app:argType="string" android:defaultValue="easy" />
+            <action android:id="@+id/action_quizEntity_to_quizEntityResult"
+                app:destination="@id/quizEntityResultFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/quizEntityResultFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizEntityResultFragment"
+            android:label="Résultat"
+            tools:layout="@layout/fragment_quiz_result" />
+
+    </navigation>
 
     <fragment
         android:id="@+id/quizPlaceChoiceFragment"
@@ -224,15 +237,28 @@
         android:label="Difficulté"
         tools:layout="@layout/fragment_quiz_entity_choice">
         <action android:id="@+id/action_quizArtifactChoice_to_quizArtifact"
-            app:destination="@id/quizArtifactFragment" />
+            app:destination="@id/quiz_artifact_graph" />
     </fragment>
 
-    <fragment
-        android:id="@+id/quizArtifactFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizArtifactFragment"
-        android:label="Quiz Artéfacts"
-        tools:layout="@layout/fragment_quiz_entity">
-        <argument android:name="level" app:argType="string" android:defaultValue="easy" />
-    </fragment>
+    <navigation android:id="@+id/quiz_artifact_graph"
+        app:startDestination="@id/quizArtifactFragment">
+
+        <fragment
+            android:id="@+id/quizArtifactFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizArtifactFragment"
+            android:label="Quiz Artéfacts"
+            tools:layout="@layout/fragment_quiz_entity">
+            <argument android:name="level" app:argType="string" android:defaultValue="easy" />
+            <action android:id="@+id/action_quizArtifact_to_quizArtifactResult"
+                app:destination="@id/quizArtifactResultFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/quizArtifactResultFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizArtifactResultFragment"
+            android:label="Résultat"
+            tools:layout="@layout/fragment_quiz_result" />
+
+    </navigation>
 
 </navigation>

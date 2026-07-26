@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.viewmodel.QuizViewModel
@@ -16,7 +16,7 @@ import kotlin.math.roundToInt
 
 class QuizArtifactFragment : Fragment() {
 
-    private val viewModel: QuizViewModel by viewModels()
+    private val viewModel: QuizViewModel by navGraphViewModels(R.id.quiz_artifact_graph)
     private val dots = mutableListOf<View>()
 
     override fun onCreateView(
@@ -40,10 +40,8 @@ class QuizArtifactFragment : Fragment() {
         val tvRace        = view.findViewById<TextView>(R.id.tv_quiz_race)
         val tvAllInfo     = view.findViewById<TextView>(R.id.tv_quiz_all_info)
         val groupAllInfo  = view.findViewById<View>(R.id.group_all_info)
-        val tvCorrectName = view.findViewById<TextView>(R.id.tv_correct_name)
         val etAnswer      = view.findViewById<EditText>(R.id.et_answer)
         val btnValidate   = view.findViewById<Button>(R.id.btn_validate)
-        val btnNext       = view.findViewById<Button>(R.id.btn_next_after_wrong)
         val tvScore       = view.findViewById<TextView>(R.id.tv_score)
         val layoutResult  = view.findViewById<View>(R.id.layout_result)
         val btnRestart    = view.findViewById<Button>(R.id.btn_restart)
@@ -79,8 +77,6 @@ class QuizArtifactFragment : Fragment() {
             btnValidate.isEnabled   = true
             btnValidate.isVisible   = true
             groupAllInfo.isVisible  = step == 2
-            tvCorrectName.isVisible = false
-            btnNext.isVisible       = false
             if (step == 2) tvAllInfo.text = buildAllInfo(a)
         }
 
@@ -107,30 +103,15 @@ class QuizArtifactFragment : Fragment() {
             }
         }
 
+        // Quand on ne peut plus répondre (trouvé, ou deux essais faux), on
+        // bascule vers l'écran dédié qui affiche le verdict et le nom coloré
         viewModel.answerRevealed.observe(viewLifecycleOwner) { revealed ->
             if (revealed) {
                 btnValidate.isVisible = false
                 etAnswer.isEnabled    = false
-                btnNext.isVisible     = true
-
-                val artifacts = viewModel.quizArtifacts.value ?: return@observe
-                val index     = viewModel.currentIndex.value ?: 0
-                val results   = viewModel.results.value ?: emptyList()
-                val artifact  = artifacts.getOrNull(index) ?: return@observe
-                val resultForThis = results.getOrNull(index)
-
-                if (resultForThis == "green" || resultForThis == "yellow") {
-                    groupAllInfo.isVisible  = true
-                    tvAllInfo.text          = buildAllInfo(artifact)
-                    tvCorrectName.isVisible = false
-                } else if (resultForThis == "red") {
-                    tvCorrectName.text      = "Réponse : ${artifact.name}"
-                    tvCorrectName.isVisible = true
-                }
+                findNavController().navigate(R.id.action_quizArtifact_to_quizArtifactResult)
             }
         }
-
-        btnNext.setOnClickListener { viewModel.nextAfterWrong() }
 
         btnValidate.setOnClickListener {
             val input = etAnswer.text.toString()
@@ -143,7 +124,6 @@ class QuizArtifactFragment : Fragment() {
                 layoutResult.isVisible = true
                 btnValidate.isVisible  = false
                 etAnswer.isEnabled     = false
-                btnNext.isVisible      = false
                 val score = viewModel.score.value ?: 0.0
                 val max   = viewModel.maxScore.value ?: 0.0
                 tvScore.text = "Score : ${formatScore(score)} / ${formatScore(max)}"

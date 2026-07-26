@@ -43,7 +43,7 @@
             android:textSize="16sp" android:textColor="#FFEAEAEA"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Bloc infos révélées (pas 2 visible, ou après réponse correcte/incorrecte) -->
+        <!-- Bloc infos révélées uniquement au pas 2 (après une première réponse fausse) -->
         <LinearLayout android:id="@+id/group_all_info"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical" android:visibility="gone"
@@ -53,11 +53,6 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:textSize="14sp" android:textColor="#FFEAEAEA"/>
         </LinearLayout>
-
-        <TextView android:id="@+id/tv_correct_name"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFF6B6B"
-            android:visibility="gone" android:layout_marginBottom="12dp"/>
 
         <EditText android:id="@+id/et_answer"
             android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -70,11 +65,6 @@
             android:layout_width="match_parent" android:layout_height="56dp"
             android:text="Valider" android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"
             android:layout_marginBottom="8dp"/>
-
-        <Button android:id="@+id/btn_next_after_wrong"
-            android:layout_width="match_parent" android:layout_height="56dp"
-            android:text="Question suivante →" android:backgroundTint="#FF3A3A3A"
-            android:textColor="#FFEAEAEA" android:visibility="gone" android:layout_marginBottom="8dp"/>
 
         <LinearLayout android:id="@+id/layout_result"
             android:layout_width="match_parent" android:layout_height="wrap_content"

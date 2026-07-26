@@ -3,6 +3,18 @@
 ## V2
 
 
+### V2.4.0
+
+- Écran de résultat dédié pour les quiz d'entités et d'artéfacts (`QuizEntityResultFragment` / `QuizArtifactResultFragment`), affiché uniquement lorsqu'on ne peut plus répondre à la question en cours (trouvé, ou deux essais faux) : nom coloré (vert/jaune/rouge) selon le résultat, toutes les informations complémentaires (dont la culture populaire), et bouton pour passer à la question suivante ou voir le score
+- Le reste du déroulé du quiz (étape 1 indice seul, étape 2 infos révélées inline après une première réponse fausse) reste inchangé
+
+
+#### V2.3.3
+
+- Refonte du champ `popularCulture` : ne cite plus que le(s) titre(s) de l'œuvre (jeu vidéo, film, série, animé/manga), séparés par virgule, sans phrase descriptive
+- Nouvelle passe de vérification sur l'ensemble des entités : 109 entités supplémentaires renseignées (194 au total), avec des références vérifiées (Smite, God of War, Percy Jackson, Kaamelott, Hadès/Hadès II, Assassin's Creed, Marvel, Naruto, Harry Potter, Donjons & Dragons…)
+
+
 #### V2.3.2
 
 - Archanges : conformité au Livre d'Hénoch (1 Hénoch 20), suppression de Chamuel, Haniel, Jophiel, Métatron, Sandalphon et Zadkiel (tradition ésotérique distincte) et ajout de Sariel, pour ne conserver que les 7 archanges originels
