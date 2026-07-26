@@ -3,6 +3,11 @@
 ## V2
 
 
+#### V2.3.1
+
+- Ajout de `Base.md`, inventaire complet des entités, lieux et artéfacts de la base (listes à puces par mythologie puis par race/type d'artéfact/regroupement de quiz), à tenir à jour à chaque changement touchant la base
+
+
 ### V2.3.0
 
 - Ajout du champ `popularCulture` sur les entités : apparitions notables dans les jeux vidéo, films, séries et animés/mangas, renseigné pour 85 entités notables (schéma, version Room 5, formulaires d'ajout/édition et fiche détaillée) ; volontairement absent du récapitulatif du quiz pour ne pas révéler la réponse
