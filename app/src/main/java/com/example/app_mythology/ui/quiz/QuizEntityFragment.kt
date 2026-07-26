@@ -70,6 +70,7 @@ class QuizEntityFragment : Fragment() {
             tvMythology.text = "Mythologie : ${e.mythology}"
             tvRace.text      = "Race : ${translateRace(e.race)}"
             tvDifficultyBadge.text = e.difficulty.toString()
+            tvDifficultyBadge.setBackgroundResource(difficultyBadgeRes(e.difficulty))
 
             // Seul l'indice (clue) est affiché — rien d'autre tant que pas révélé
             tvDomain.text = e.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
@@ -161,6 +162,13 @@ class QuizEntityFragment : Fragment() {
     private fun formatScore(v: Double): String =
         if (v == v.roundToInt().toDouble()) v.roundToInt().toString()
         else String.format("%.1f", v)
+
+    private fun difficultyBadgeRes(difficulty: Int) = when (difficulty) {
+        1    -> R.drawable.dot_green
+        2    -> R.drawable.dot_yellow
+        3    -> R.drawable.dot_red
+        else -> R.drawable.dot_neutral
+    }
 
     private fun buildAllInfo(e: EntiteEntity) = buildString {
         e.domain?.let        { appendLine("Domaine : $it") }

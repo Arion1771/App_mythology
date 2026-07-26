@@ -6,6 +6,18 @@
 
 ### Changes since the first version
 
+#### V2.3.1
+
+- Added `Base.md`, a complete inventory of the entities, places and artifacts in the database (bullet lists by mythology then by race/artifact type/quiz grouping), to be kept up to date with every database change
+
+#### V2.3.0
+
+- Added the `popularCulture` field on entities: notable appearances in video games, films, series and anime/manga, filled in for 85 notable entities (schema, Room version 5, add/edit forms and detail sheet); deliberately left out of the quiz recap so as not to give the answer away
+
+#### V2.2.0
+
+- Coloured difficulty badge in the quiz (entities and artifacts): green/yellow/red for easy/medium/hard, instead of a neutral background
+
 #### V2.1.0
 
 - Removed duplicate information at step 2 of the quiz (entities and artifacts): race/type, mythology and clue, already shown at all times since the start of the question, are no longer repeated in the additional information block
@@ -218,6 +230,18 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.3.1
+
+- Ajout de `Base.md`, inventaire complet des entités, lieux et artéfacts de la base (listes à puces par mythologie puis par race/type d'artéfact/regroupement de quiz), à tenir à jour à chaque changement touchant la base
+
+#### V2.3.0
+
+- Ajout du champ `popularCulture` sur les entités : apparitions notables dans les jeux vidéo, films, séries et animés/mangas, renseigné pour 85 entités notables (schéma, version Room 5, formulaires d'ajout/édition et fiche détaillée) ; volontairement absent du récapitulatif du quiz pour ne pas révéler la réponse
+
+#### V2.2.0
+
+- Pastille de difficulté colorée dans le quiz (entités et artéfacts) : vert/jaune/rouge selon le niveau facile/moyen/difficile, au lieu d'un fond neutre
 
 #### V2.1.0
 
