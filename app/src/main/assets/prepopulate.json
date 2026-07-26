@@ -8,6 +8,7 @@
       "godType": "Autre",
       "domain": "Déesse du destin",
       "equivalentName": "3 Parques",
+      "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux de l'Olympe doivent se soumettre.",
       "clue": "Déesse du destin",
       "difficulty": 1
     },
@@ -19,6 +20,7 @@
       "domain": "Déesses mineures des arts",
       "equivalentName": "9 Camènes",
       "id": 2,
+      "description": "Filles du roi des dieux et d'une Titanide de la mémoire, elles président chacune à un art différent et inspirent poètes et artistes depuis leur montagne sacrée.",
       "clue": "Déesses mineures des arts",
       "difficulty": 1
     },
@@ -29,6 +31,7 @@
       "race": "Heroes",
       "ascendantName": "Thétis",
       "story": "Héros à l'invulnérabilité totale à l'exception du talon, par là où sa mère Thétis l'a tenu en le plongeant dans le Styx",
+      "description": "Trempé enfant dans un fleuve infernal par sa mère pour le rendre invulnérable, il meurt finalement d'une flèche à l'unique endroit resté vulnérable.",
       "clue": "Héros presque invulnérable",
       "difficulty": 1
     },
@@ -50,6 +53,7 @@
       "domain": "Déesse de la beauté",
       "godType": "Olympien",
       "equivalentName": "Vénus",
+      "description": "Née de l'écume marine après la castration d'un dieu primordial, elle possède une ceinture magique rendant irrésistible quiconque la porte.",
       "clue": "Déesse de la beauté",
       "difficulty": 1
     },
@@ -61,6 +65,7 @@
       "domain": "Dieu de la lumière et des arts",
       "godType": "Olympien",
       "equivalentName": "Apollon",
+      "description": "Jumeau d'une déesse chasseresse, il rend ses oracles à travers une prêtresse inspirée par des vapeurs mystérieuses s'échappant d'une faille rocheuse.",
       "clue": "Dieu de la lumière",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -73,6 +78,7 @@
       "domain": "Dieu de la guerre et de la violence",
       "godType": "Olympien",
       "equivalentName": "Mars",
+      "description": "Détesté par la plupart des autres Olympiens malgré son rang divin, il est associé à la violence brutale des champs de bataille plutôt qu'à la stratégie militaire.",
       "clue": "Dieu de la guerre",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -86,6 +92,7 @@
       "domain": "Déesse de la chasteté, de l'innocence et de la chasse",
       "godType": "Olympien",
       "equivalentName": "Diane",
+      "description": "Jumelle d'un dieu archer, elle obtient de son père le vœu de rester éternellement vierge et parcourt les forêts avec un cortège de nymphes.",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -97,6 +104,7 @@
       "race": "Titan",
       "domain": "Titan des corps célestes",
       "equivalentName": null,
+      "description": "Titan associé aux astres, il est l'époux d'une déesse de l'aurore et le père de nombreuses divinités stellaires et des vents cardinaux.",
       "clue": "Titan des corps célestes",
       "difficulty": 2,
       "fatherName": "Crios"
@@ -109,6 +117,7 @@
       "domain": "Déesse de la sagesse et de la stratégie guerrière",
       "godType": "Olympien",
       "equivalentName": "Minerve",
+      "description": "Née directement du crâne de son père après qu'il eut avalé sa mère enceinte, elle jaillit déjà adulte et armée de pied en cap.",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -120,6 +129,7 @@
       "race": "Titan",
       "domain": "Titan portant la voûte céleste",
       "equivalentName": null,
+      "description": "Condamné en punition d'une guerre contre les dieux olympiens à porter un fardeau écrasant pour l'éternité, il tente une fois de s'en débarrasser en confiant la tâche à un héros de passage.",
       "clue": "Titan portant la voûte céleste",
       "difficulty": 1,
       "fatherName": "Japet"
@@ -131,6 +141,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Argonautes, frère mortel de Pollux",
+      "description": "Frère jumeau né d'un père mortel, il partage l'immortalité de son frère divin après sa propre mort, les deux passant l'éternité un jour sur deux entre Enfers et Olympe.",
       "clue": "Argonautes, frère mortel de Pollux",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -163,6 +174,7 @@
       "domain": "Vide Primordial, Néant Originel",
       "godType": "Primordial",
       "equivalentName": "Chaos",
+      "description": "Premier état de l'univers avant toute forme organisée, il engendre à lui seul les toutes premières divinités primordiales sans union avec quiconque.",
       "clue": "Vide Primordial",
       "difficulty": 1
     },
@@ -174,6 +186,7 @@
       "domain": "Dieu des passages et passeur des âmes vers les Enfers",
       "equivalentName": "Charon",
       "id": 16,
+      "description": "Il exige une pièce de monnaie placée dans la bouche des défunts pour accepter de les transporter à travers le fleuve séparant le monde des vivants de celui des morts.",
       "clue": "Dieu des passages et passeur des âmes vers les Enfers",
       "difficulty": 1,
       "fatherName": "Érèbe",
@@ -206,6 +219,7 @@
       "race": "Heroes",
       "ascendantName": "Helios/Hécate",
       "story": "Magicienne divine, fille d'Hélios, métamorphoses les compagnons d'Ulysse en porcs",
+      "description": "Elle vit recluse sur une île où elle transforme les marins imprudents en animaux à l'aide de potions et d'un bâton magique.",
       "clue": "Magicienne divine, fille d'Hélios",
       "difficulty": 2
     },
@@ -216,6 +230,7 @@
       "race": "Titan",
       "domain": "Titan du Nord, des solutions et de l'intelligence",
       "equivalentName": null,
+      "description": "Titan associé à l'intelligence, il est le père d'une déesse devenue mère de deux grandes divinités olympiennes.",
       "clue": "Titan du Nord, des solutions et de l'intelligence",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -228,6 +243,7 @@
       "race": "Titan",
       "domain": "Roi des titan et titan du temps",
       "equivalentName": "Saturne",
+      "description": "Après avoir mutilé et détrôné son propre père à l'aide d'une faucille, il dévore chacun de ses enfants par crainte d'une prophétie annonçant sa propre chute.",
       "clue": "Roi des titan et titan du temps",
       "difficulty": 1,
       "fatherName": "Ouranos",
@@ -240,6 +256,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Créateur du labyrinthe, père d'Icare et oncle de Perdrix",
+      "description": "Architecte et inventeur de génie, il conçoit une structure si complexe que même son créateur peine à en retrouver la sortie.",
       "clue": "Créateur du labyrinthe",
       "difficulty": 1
     },
@@ -251,6 +268,7 @@
       "domain": "Déesse de l'agriculture",
       "godType": "Olympien",
       "equivalentName": "Cérès",
+      "description": "Le deuil qu'elle porte après l'enlèvement de sa fille plonge la terre entière dans un hiver stérile jusqu'à ce qu'un compromis soit trouvé avec le ravisseur.",
       "clue": "Déesse de l'agriculture",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -264,6 +282,7 @@
       "domain": "Dieu du vin et de la fête",
       "godType": "Olympien",
       "equivalentName": "Bacchus",
+      "description": "Né une seconde fois de la cuisse de son père après la mort de sa mère mortelle, il enseigne aux hommes l'art de la viticulture et déchaîne des cortèges de fidèles en transe.",
       "clue": "Dieu du vin et de la fête",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -286,6 +305,7 @@
       "godType": "Autre",
       "domain": "Dieu des vents",
       "equivalentName": "Aeolus",
+      "description": "Gardien mortel élevé au rang de maître des vents, il les enferme dans une outre qu'il offre à un héros de passage, avec l'ordre de ne l'ouvrir qu'une fois arrivé chez lui.",
       "clue": "Dieu des vents",
       "difficulty": 1
     },
@@ -297,6 +317,7 @@
       "domain": "Dieu des Ténèbres et de l'Obscurité",
       "godType": "Primordial",
       "equivalentName": "Erebus",
+      "description": "Personnification des ténèbres primordiales, il s'unit à sa propre sœur pour engendrer le jour et l'éther lumineux.",
       "clue": "Dieu des Ténèbres et de l'Obscurité",
       "difficulty": 1,
       "fatherName": "Chaos"
@@ -308,6 +329,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Déesses chthoniennes de la vengeance",
+      "description": "Nées du sang versé lors de la mutilation du ciel primordial, elles remontent des Enfers pour tourmenter les criminels que la justice humaine laisse impunis.",
       "clue": "Déesses chthoniennes de la vengeance",
       "equivalentName": "Furies",
       "difficulty": 2
@@ -320,6 +342,7 @@
       "domain": "Dieu de l'amour",
       "godType": "Primordial",
       "equivalentName": "Cupidon",
+      "description": "Ses flèches, les unes en or suscitant l'amour, les autres en plomb provoquant l'aversion, décident du sort amoureux des dieux comme des mortels.",
       "clue": "Dieu de l'amour",
       "difficulty": 1
     },
@@ -331,6 +354,7 @@
       "domain": "Déesse de la Terre",
       "godType": "Primordial",
       "equivalentName": "Terra",
+      "description": "Surgie du vide primordial, elle engendre seule le ciel étoilé pour qu'il la recouvre entièrement, puis s'unit à lui pour donner naissance aux premières générations divines.",
       "clue": "Déesse de la Terre",
       "difficulty": 1,
       "fatherName": "Chaos"
@@ -363,6 +387,7 @@
       "godType": "Olympien",
       "domain": "Dieu de la richesse et du monde souterrain",
       "equivalentName": "Pluton",
+      "description": "Bien que redouté, il ne quitte que rarement son royaume souterrain et se montre étonnamment juste envers les âmes qu'il gouverne, contrairement à l'image qu'on lui prête souvent.",
       "clue": "Dieu de la richesse et du monde souterrain",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -375,6 +400,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Héros Troyen, Frère de Paris et fils de Priam, Tueur de Patrocle",
+      "description": "Meilleur défenseur de sa cité assiégée, il est traîné derrière un char autour des murailles après sa défaite face à son adversaire le plus acharné.",
       "clue": "Héros Troyen, Tueur de Patrocle",
       "difficulty": 1
     },
@@ -385,6 +411,7 @@
       "race": "Titan",
       "domain": "Titan du soleil",
       "equivalentName": "Sol",
+      "description": "Il traverse le ciel chaque jour sur un char tiré par des chevaux flamboyants, observant tout ce qui se passe sur terre depuis les hauteurs.",
       "clue": "Titan du soleil",
       "difficulty": 1,
       "fatherName": "Hypérion"
@@ -397,6 +424,7 @@
       "domain": "Déesse du Jour et de la Lumière Terrestre",
       "godType": "Primordial",
       "equivalentName": "Dies",
+      "description": "Fille de la Nuit et des Ténèbres, elle quitte chaque matin les Enfers au moment où sa mère y entre, dans un cycle perpétuel.",
       "clue": "Déesse du Jour",
       "difficulty": 2,
       "fatherName": "Érèbe",
@@ -410,6 +438,7 @@
       "domain": "Dieu de la forge, du feu et de l'artisanat",
       "godType": "Olympien",
       "equivalentName": "Vulcain",
+      "description": "Rejeté par sa propre mère à sa naissance en raison de sa difformité, il devient malgré tout le forgeron le plus talentueux de l'Olympe et se venge par un piège astucieux.",
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -423,6 +452,7 @@
       "domain": "Déesse de la famille, du mariage et de la fidélité",
       "godType": "Olympien",
       "equivalentName": "Junon",
+      "description": "Épouse et sœur du roi des dieux, elle poursuit sans relâche de sa jalousie les nombreuses conquêtes et enfants illégitimes de son mari volage.",
       "clue": "Déesse de la famille",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -436,6 +466,7 @@
       "ascendantName": "Zeus",
       "story": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "equivalentName": "Hercule",
+      "description": "Rendu fou par une déesse jalouse, il tue sa propre famille dans un accès de démence, et doit accomplir une série d'épreuves impossibles pour expier ce crime.",
       "clue": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "difficulty": 1
     },
@@ -447,6 +478,7 @@
       "domain": "Messager des dieux, dieux des voyageurs, des voleurs et des marchands",
       "godType": "Olympien",
       "equivalentName": "Mercure",
+      "description": "À peine né, il vole déjà le troupeau d'un dieu et invente la lyre à partir d'une carapace de tortue pour se faire pardonner.",
       "clue": "Messager des dieux",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -459,6 +491,7 @@
       "godType": "Olympien",
       "domain": "Déesse du foyer",
       "equivalentName": "Vesta",
+      "description": "Première née puis dernière recrachée par son père, elle cède sa place parmi les douze grandes divinités olympiennes pour préserver la paix, préférant veiller sur le feu sacré.",
       "clue": "Déesse du foyer",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -481,6 +514,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Fils de Dédale, s'envole trop près du soleil et tombe dans la mer",
+      "description": "Enfermé avec son père dans une tour, il s'envole grâce à des ailes de plumes et de cire, mais périt pour avoir désobéi à l'avertissement de ne pas trop s'approcher du soleil.",
       "clue": "Fils de Dédale",
       "difficulty": 1
     },
@@ -491,6 +525,7 @@
       "race": "Heroes",
       "ascendantName": "Éole",
       "story": "Chef des Argonautes, Retrouve la Toison d'Or",
+      "description": "Envoyé par un oncle usurpateur récupérer une toison dorée gardée par un dragon, il rassemble un équipage de héros pour l'accompagner dans cette quête périlleuse.",
       "clue": "Chef des Argonautes",
       "difficulty": 1
     },
@@ -501,6 +536,7 @@
       "race": "Heroes",
       "ascendantName": "Hélios ( Grand-père )",
       "story": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
+      "description": "Après avoir trahi sa propre famille par amour, elle se venge d'un époux infidèle par un acte d'une cruauté extrême envers leurs propres enfants.",
       "clue": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
       "difficulty": 2,
       "fatherName": "Hélios"
@@ -512,6 +548,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Béni par le touché d'or",
+      "description": "Ayant reçu l'exaucement d'un vœu imprudent, il se retrouve incapable de manger ou de boire, transformant même sa propre fille au moindre contact.",
       "clue": "Béni par le touché d'or",
       "difficulty": 1
     },
@@ -523,6 +560,7 @@
       "godType": "Autre",
       "domain": "Dieu des Rêves, on s'endort dans ses bras",
       "equivalentName": "Morpheus",
+      "description": "Fils du dieu du sommeil, il a le pouvoir de prendre l'apparence de n'importe quel humain dans les rêves des dormeurs.",
       "clue": "Dieu des Rêves",
       "difficulty": 2,
       "fatherName": "Hypnos"
@@ -545,6 +583,7 @@
       "domain": "Déesse de la nuit",
       "godType": "Primordial",
       "equivalentName": "Nox",
+      "description": "Si redoutable que même le roi des dieux hésite à s'aventurer dans sa demeure, elle engendre seule une descendance nombreuse de divinités funestes.",
       "clue": "Déesse de la nuit",
       "difficulty": 1,
       "fatherName": "Chaos"
@@ -556,6 +595,7 @@
       "race": "Heroes",
       "ascendantName": "Calliope",
       "story": "Pars chercher sa femme au enfer mais échoue, connnu pour ses talents à la lyre",
+      "description": "Musicien légendaire capable de charmer arbres et bêtes sauvages par son chant, il perd son épouse une seconde fois pour s'être retourné trop tôt.",
       "clue": "Pars chercher sa femme au enfer mais échoue",
       "difficulty": 2
     },
@@ -567,6 +607,7 @@
       "domain": "Dieu de la voûte céleste",
       "godType": "Primordial",
       "equivalentName": "Uranus",
+      "description": "Il s'unit chaque nuit à son épouse en l'écrasant de tout son poids, l'empêchant de mettre au monde leurs enfants, jusqu'à ce que l'un d'eux se rebelle armé d'une faucille.",
       "clue": "Dieu de la voûte céleste",
       "difficulty": 1,
       "motherName": "Gaïa"
@@ -579,6 +620,7 @@
       "godType": "Autre",
       "domain": "Dieu de la nature",
       "equivalentName": "Faunus",
+      "description": "Mi-homme mi-bouc dès la naissance, il effraie sa propre mère et donne son nom au sentiment de terreur irraisonnée qu'il peut provoquer chez les voyageurs égarés.",
       "clue": "Dieu de la nature",
       "difficulty": 1
     },
@@ -600,6 +642,7 @@
       "race": "Heroes",
       "ascendantName": "Zeus",
       "story": "Tueur de la méduse",
+      "description": "Envoyé chercher la tête d'une gorgone dont le regard pétrifie quiconque le croise, il utilise un bouclier poli comme miroir pour l'affronter sans jamais la regarder directement.",
       "clue": "Tueur de la méduse",
       "difficulty": 1
     },
@@ -611,6 +654,7 @@
       "godType": "Autre",
       "domain": "Déesse du printemps, enfermée au enfer 6 mois de l'année",
       "equivalentName": "Proserpine",
+      "description": "Enlevée par le souverain des Enfers alors qu'elle cueillait des fleurs, elle doit désormais partager son année entre le monde souterrain et la surface après avoir goûté quelques grains de grenade.",
       "clue": "Déesse du printemps",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -623,6 +667,7 @@
       "race": "Heroes",
       "ascendantName": "Zeus",
       "story": "Argonautes, frère immortel de Castor",
+      "description": "Fils divin d'un père immortel, il partage son immortalité avec son frère jumeau mortel après la mort de ce dernier, les deux passant l'éternité un jour sur deux entre Enfers et Olympe.",
       "clue": "Argonautes, frère immortel de Castor",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -635,6 +680,7 @@
       "story": "Cyclope résidant du pays des Cyclopes, aveuglé par Ulysse qui se fait passer pour ''personne''",
       "primordial": false,
       "equivalentName": "Polyphemus",
+      "description": "Fils d'un dieu marin, il est aveuglé par un rusé voyageur qui s'était présenté sous un faux nom pour échapper à sa vengeance ensuite.",
       "clue": "Cyclope de l'île de Sicile",
       "difficulty": 1,
       "fatherName": "Poséidon"
@@ -647,6 +693,7 @@
       "domain": "Dieu des océans et des cataclysmes",
       "godType": "Olympien",
       "equivalentName": "Neptune",
+      "description": "Armé d'une arme à trois pointes capable de déclencher des séismes et des raz-de-marée, il dispute sans succès plusieurs villes grecques à d'autres divinités olympiennes.",
       "clue": "Dieu des océans",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -659,6 +706,7 @@
       "race": "Titan",
       "domain": "Titan de la prévoyance, offre le feu aux Hommes",
       "equivalentName": null,
+      "description": "Il déroba le feu sacré pour le donner aux hommes, un acte de défi qui lui vaut d'être enchaîné à un rocher où un rapace dévore son foie chaque jour.",
       "clue": "Titan de la prévoyance",
       "difficulty": 2,
       "fatherName": "Japet"
@@ -670,6 +718,7 @@
       "race": "Titan",
       "domain": "Reine des titan et titanide de la maternité",
       "equivalentName": null,
+      "description": "Pour sauver son dernier-né d'être dévoré comme ses aînés, elle substitue à l'enfant une pierre emmaillotée que son époux avale sans s'apercevoir de la ruse.",
       "clue": "Reine des titan et titanide de la maternité",
       "difficulty": 1,
       "fatherName": "Ouranos",
@@ -713,6 +762,7 @@
       "race": "Titan",
       "domain": "Titanide de la lune",
       "equivalentName": "Luna",
+      "description": "Elle traverse le ciel nocturne sur un char et tombe amoureuse d'un berger mortel qu'elle visite chaque nuit pendant son sommeil éternel.",
       "clue": "Titanide de la lune",
       "difficulty": 2,
       "fatherName": "Hypérion"
@@ -734,6 +784,7 @@
       "race": "Heroes",
       "ascendantName": "Éole",
       "story": "Enchaîne Thanatos pour eviter la mort, Condamné a pousser un rocher pour l'éternité",
+      "description": "Ayant tenté de déjouer la mort à plusieurs reprises par la ruse, il est condamné pour l'éternité à répéter un effort toujours recommencé et jamais achevé.",
       "clue": "Condamné a pousser un rocher pour l'éternité",
       "difficulty": 1
     },
@@ -755,6 +806,7 @@
       "domain": "personnification de l’abîme éponyme, parfois vu comme père des géants",
       "godType": "Primordial",
       "equivalentName": "Tartarus",
+      "description": "Aussi profond sous la terre que le ciel est haut au-dessus d'elle, cet abîme sert de prison aux ennemis vaincus des dieux olympiens.",
       "clue": "personnification de l’abîme éponyme, parfois vu comme père des géants",
       "difficulty": 1
     },
@@ -765,6 +817,7 @@
       "race": "Heroes",
       "ascendantName": "Poséidon",
       "story": "Tueur du Minotaure, Roi mythique d'Athène, Fils d'Egée",
+      "description": "Après avoir suivi un fil déroulé pour retrouver son chemin dans un dédale, il oublie de hisser une voile blanche annonçant sa victoire, provoquant le suicide de son père par désespoir.",
       "clue": "Tueur du Minotaure",
       "difficulty": 1
     },
@@ -775,6 +828,7 @@
       "race": "Heroes",
       "ascendantName": "Hermès ( Arrière-grand-père )",
       "story": "Héros de l'Iliade et de l'Odyssée, époux de Pénélope, père de Télémaque",
+      "description": "Rusé stratège à l'origine d'un cheval de bois décisif, il met dix années supplémentaires à rentrer chez lui, affrontant monstres et tentations en chemin.",
       "clue": "Héros de l'Iliade et de l'Odyssée",
       "difficulty": 1
     },
@@ -786,6 +840,7 @@
       "domain": "Dieux du ciel et roi des dieux",
       "godType": "Olympien",
       "equivalentName": "Jupiter",
+      "description": "Caché à sa naissance pour échapper à un père dévorant ses propres enfants, il finit par le renverser et se partage ensuite le règne du monde avec ses frères.",
       "clue": "Dieux du ciel et roi des dieux",
       "difficulty": 1
     },
@@ -796,6 +851,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Tueur du Sphinx, il tue son père et épouse sa mère",
+      "description": "Abandonné à sa naissance à cause d'une prophétie funeste, il finit par l'accomplir sans le savoir en tuant un inconnu sur une route et en épousant une femme qui se révèle être un membre proche de sa famille.",
       "clue": "Tueur du Sphinx",
       "difficulty": 1
     },
@@ -807,6 +863,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Misère, du Brouillard de la mort et des Poisons",
       "equivalentName": "Caligo",
+      "description": "Personnification de la tristesse et de la misère éternelle, elle est décrite ornant le bouclier d'un grand héros, pâle et décharnée.",
       "clue": "Déesse de la Misère",
       "difficulty": 2
     },
@@ -817,6 +874,7 @@
       "race": "Heroes",
       "ascendantName": "Zeus ( Arrière-grand-père )",
       "story": "Second meilleur guerrier grec lors de la guerre de Troie",
+      "description": "Après avoir été privé des armes d'un héros défunt au profit d'un rival plus rusé, il sombre dans la folie et se donne la mort par honte.",
       "clue": "Second meilleur guerrier grec lors de la guerre de Troie",
       "difficulty": 2
     },
@@ -871,6 +929,7 @@
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueur pour la foudre",
       "primordial": true,
       "equivalentName": "Arges",
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclat lumineux lors de la fabrication de l'arme du roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueur pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -904,6 +963,7 @@
       "godType": "Autre",
       "domain": "Dieu de la médecine",
       "equivalentName": "Esculape",
+      "description": "Sa maîtrise de la guérison est si grande qu'il parvient à ressusciter les morts, un pouvoir qui inquiète tant le souverain des Enfers qu'il en réclame la punition.",
       "clue": "Dieu de la médecine",
       "difficulty": 2,
       "fatherName": "Apollon"
@@ -915,6 +975,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Seule femme Argonaute, Entraînée par Artémis",
+      "description": "Abandonnée à la naissance et élevée par une ourse, elle jure de ne se marier qu'à l'homme capable de la battre à la course.",
       "clue": "Seule femme Argonaute, Entraînée par Artémis",
       "difficulty": 2
     },
@@ -925,6 +986,7 @@
       "race": "Heroes",
       "ascendantName": "Poséidon",
       "story": "Tueur de la chimère, Cavalier de Pégase",
+      "description": "Monté sur un cheval ailé prêté par les dieux, il tente ensuite de s'élever jusqu'à l'Olympe et est précipité au sol pour son arrogance.",
       "clue": "Tueur de la chimère",
       "difficulty": 2
     },
@@ -946,6 +1008,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent du nord",
       "equivalentName": "Aquilon",
+      "description": "Le plus violent des quatre vents cardinaux, il enlève une princesse athénienne dont il aura des fils capables de voler.",
       "clue": "Dieu du vent du nord",
       "difficulty": 2
     },
@@ -954,6 +1017,7 @@
       "name": "Briarée",
       "mythology": "Grecque",
       "race": "Hecatoncheires",
+      "description": "Doté de cent bras et cinquante têtes, il est appelé à la rescousse du roi des dieux lors d'un complot fomenté par d'autres divinités olympiennes.",
       "clue": "Frère de Cottos et Gygès",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -967,6 +1031,7 @@
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
       "primordial": true,
       "equivalentName": "Brontes",
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte le grondement du tonnerre lors de la fabrication de l'arme du roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -979,6 +1044,7 @@
       "race": "Heroes",
       "ascendantName": "Borée",
       "story": "Argonautes, Boréades, frère de Zétés",
+      "description": "Fils ailé du vent du nord, il participe avec son frère jumeau à la chasse de créatures ailées qui tourmentent un roi aveugle.",
       "clue": "Argonautes, Boréades, frère de Zétés",
       "difficulty": 2
     },
@@ -999,6 +1065,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Connaît l'avenir mais personne ne la crois, princesse troyenne",
+      "description": "Ayant repoussé les avances d'un dieu après avoir reçu le don de prophétie, elle est punie par une malédiction qui rend ses prédictions toujours vraies mais jamais crues.",
       "clue": "Connaît l'avenir mais personne ne la crois",
       "difficulty": 2
     },
@@ -1010,6 +1077,7 @@
       "godType": "Autre",
       "domain": "Déesse de la neige",
       "equivalentName": "Chione",
+      "description": "Fille du vent du nord, elle donne naissance à un fils messager après une idylle avec le dieu porteur du caducée.",
       "clue": "Déesse de la neige",
       "difficulty": 2
     },
@@ -1028,6 +1096,7 @@
       "name": "Cottos",
       "mythology": "Grecque",
       "race": "Hecatoncheires",
+      "description": "Doté de cent bras et cinquante têtes comme ses frères, il participe à la victoire finale contre les Titans après avoir été libéré du Tartare.",
       "clue": "Frère de Briarée et Gygès",
       "difficulty": 2
     },
@@ -1038,6 +1107,7 @@
       "race": "Titan",
       "domain": "Titan du Sud et des constellations",
       "equivalentName": "Crius",
+      "description": "Titan le moins documenté du groupe originel, il est associé aux constellations et père de plusieurs divinités liées aux étoiles.",
       "clue": "Titan du Sud et des constellations",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1061,6 +1131,7 @@
       "godType": "Autre",
       "domain": "Dieu de la Terreur et de l'effroi",
       "equivalentName": "Formido",
+      "description": "Fils du dieu de la guerre, il accompagne son père au combat aux côtés de son frère jumeau incarnant une peur différente.",
       "clue": "Dieu de la Terreur et de l'effroi",
       "difficulty": 2
     },
@@ -1145,6 +1216,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Discorde",
       "equivalentName": "Discordia",
+      "description": "Non invitée à un mariage divin, elle se venge en jetant parmi les convives un objet doré destiné à la plus belle, déclenchant une rivalité qui mènera à une grande guerre.",
       "clue": "Déesse de la Discorde",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1184,6 +1256,7 @@
       "name": "Gygès",
       "mythology": "Grecque",
       "race": "Hecatoncheires",
+      "description": "Doté de cent bras et cinquante têtes comme ses frères, il participe à la victoire finale contre les Titans après avoir été libéré du Tartare.",
       "clue": "Frère de Briarée et Cottos",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1207,6 +1280,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Jeunesse",
       "equivalentName": "Juventas",
+      "description": "Elle sert le nectar et l'ambroisie aux dieux de l'Olympe jusqu'à son mariage avec un héros divinisé après ses douze travaux.",
       "clue": "Déesse de la Jeunesse",
       "difficulty": 2,
       "fatherName": "Zeus",
@@ -1220,6 +1294,7 @@
       "godType": "Autre",
       "domain": "Déesse de la magie",
       "equivalentName": "Trivia",
+      "description": "Associée aux carrefours et à la lune, elle est invoquée par les magiciennes et accompagnée de chiens fantomatiques lors de ses apparitions nocturnes.",
       "clue": "Déesse de la magie",
       "difficulty": 2
     },
@@ -1241,6 +1316,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Santé, de la Propreté et de l'Hygiène",
       "equivalentName": "Salus",
+      "description": "Fille du dieu de la médecine, elle est associée à la prévention et à l'hygiène plutôt qu'à la guérison elle-même, et donne son nom à un concept médical moderne.",
       "clue": "Déesse de la Santé",
       "difficulty": 2,
       "fatherName": "Asclépios"
@@ -1252,6 +1328,7 @@
       "race": "Titan",
       "domain": "Titan de l'Est, du soleil et de la lumière",
       "equivalentName": null,
+      "description": "Titan associé à la lumière céleste, il est le père d'une triade de divinités régnant respectivement sur le soleil, la lune et l'aurore.",
       "clue": "Titan de l'Est, du soleil et de la lumière",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1265,6 +1342,7 @@
       "godType": "Autre",
       "domain": "Dieu du sommeil",
       "equivalentName": "Somnus",
+      "description": "Il vit dans une caverne où ne pénètrent jamais les rayons du soleil, et son simple toucher plonge dieux et mortels dans un sommeil profond.",
       "clue": "Dieu du sommeil",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1277,6 +1355,7 @@
       "godType": "Autre",
       "domain": "Déesse des arc en ciel",
       "equivalentName": "Arcus",
+      "description": "Messagère rapide des dieux, elle relie le ciel à la terre et à la mer par le chemin coloré qu'elle emprunte.",
       "clue": "Déesse des arc en ciel",
       "difficulty": 2
     },
@@ -1287,6 +1366,7 @@
       "race": "Titan",
       "domain": "Titan de l'Ouest et de la réflexion",
       "equivalentName": "Iapetus",
+      "description": "Titan associé à la mortalité et à l'artisanat humain, il est le père de plusieurs figures emblématiques du destin et de la ruse face aux dieux.",
       "clue": "Titan de l'Ouest et de la réflexion",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1339,6 +1419,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Changé en loup par Zeus après lui avoir servi de la chair humaine",
+      "description": "Roi impie qui voulut tester l'omniscience divine par un acte abominable, sa punition est parfois vue comme l'origine mythologique de la transformation en loup-garou.",
       "clue": "Changé en loup par Zeus après lui avoir servi de la chair humaine",
       "difficulty": 2
     },
@@ -1358,6 +1439,7 @@
       "mythology": "Grecque",
       "race": "Heroes",
       "story": "Héros meneur de la chasse au sanglier de Calydon, sa vie liée à un tison magique",
+      "description": "Sa vie est liée à un tison magique que sa mère conserve précieusement, jusqu'à ce qu'elle le jette au feu par vengeance après qu'il a tué ses propres oncles.",
       "clue": "Meneur de la chasse au sanglier de Calydon",
       "difficulty": 2
     },
@@ -1378,6 +1460,7 @@
       "race": "Titan",
       "domain": "Titanide de la mémoire",
       "equivalentName": "Moneta",
+      "description": "Titanide unie neuf nuits de suite au roi des dieux, elle devient la mère d'un groupe de déesses inspiratrices des arts.",
       "clue": "Titanide de la mémoire",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1391,6 +1474,7 @@
       "godType": "Autre",
       "domain": "Déesse de la vengeance et de l'équilibre",
       "equivalentName": "Invidia",
+      "description": "Elle punit l'excès et l'orgueil démesuré, notamment celui d'un jeune homme tombé amoureux de son propre reflet.",
       "clue": "Déesse de la vengeance et de l'équilibre",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1403,6 +1487,7 @@
       "godType": "Primordial",
       "domain": "Vieux dieu de la mer et de l'écume",
       "equivalentName": "Nereus",
+      "description": "Réputé pour sa sagesse et sa capacité à changer de forme, il est le père de cinquante filles marines bienveillantes envers les marins.",
       "clue": "Vieux dieu de la mer et de l'écume",
       "difficulty": 2
     },
@@ -1424,6 +1509,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Victoire",
       "equivalentName": "Victoire",
+      "description": "Représentée avec des ailes, elle accompagne les grandes divinités et les héros triomphants sur les champs de bataille comme dans les compétitions sportives.",
       "clue": "Déesse de la Victoire",
       "difficulty": 2
     },
@@ -1434,6 +1520,7 @@
       "race": "Titan",
       "domain": "Titan des mers et des océans",
       "equivalentName": null,
+      "description": "Titan représentant le fleuve primordial censé encercler le monde entier, il est le père de trois mille divinités fluviales et marines.",
       "clue": "Titan des mers et des océans",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1486,6 +1573,7 @@
       "race": "Heroes",
       "ascendantName": null,
       "story": "Arbitre de la pomme de la discorde, fils de Priam et frère d'Hector, il tue Achille d'une flèche dans le talon",
+      "description": "Berger élevé loin de la cour après une prophétie annonçant qu'il causerait la perte de sa cité, son choix entre trois déesses déclenche un conflit majeur.",
       "clue": "Arbitre de la pomme de la discorde",
       "difficulty": 2
     },
@@ -1496,6 +1584,7 @@
       "race": "Titan",
       "domain": "Titanide de l'intellect et des prophéties",
       "equivalentName": null,
+      "description": "Titanide associée à l'oracle de Delphes avant que celui-ci ne passe sous la tutelle d'un dieu olympien, elle est la grand-mère de deux jumeaux divins.",
       "clue": "Titanide de l'intellect et des prophéties",
       "difficulty": 2
     },
@@ -1507,6 +1596,7 @@
       "godType": "Autre",
       "domain": "Dieu de la Peur, la Panique et de la Déroute",
       "equivalentName": "Pavor",
+      "description": "Fils du dieu de la guerre, il accompagne son père au combat aux côtés de son frère jumeau incarnant la terreur.",
       "clue": "Dieu de la Peur, la Panique et de la Déroute",
       "difficulty": 2
     },
@@ -1537,6 +1627,7 @@
       "godType": "Autre",
       "domain": "Divinité des Fleuves (Achelous connu)",
       "id": 142,
+      "description": "Ce sont les trois mille fils du grand fleuve primordial, chacun personnifiant un cours d'eau différent du monde connu des Grecs.",
       "clue": "Divinité des Fleuves",
       "difficulty": 2
     },
@@ -1578,6 +1669,7 @@
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
       "primordial": true,
       "equivalentName": "Steropes",
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclair proprement dit lors de la fabrication de l'arme du roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1600,6 +1692,7 @@
       "race": "Heroes",
       "ascendantName": "Zeus",
       "story": "Donne son fils à manger aux Olympiens, condamné à une faim et soif sans fin",
+      "description": "Sa punition consiste à rester éternellement immergé jusqu'au menton dans l'eau, sous un arbre fruitier, sans jamais pouvoir boire ni manger.",
       "clue": "Donne son fils à manger aux Olympiens",
       "difficulty": 2
     },
@@ -1621,6 +1714,7 @@
       "godType": "Autre",
       "domain": "Dieu de la mort",
       "equivalentName": "Mors",
+      "description": "Frère jumeau du dieu du sommeil, il est parfois trompé ou enchaîné par des mortels rusés cherchant à échapper temporairement à son emprise.",
       "clue": "Dieu de la mort",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1632,6 +1726,7 @@
       "race": "Titan",
       "domain": "Titanide de la justice",
       "equivalentName": "Justitia",
+      "description": "Titanide souvent représentée avec une balance et un bandeau sur les yeux, elle est également douée du don de prophétie.",
       "clue": "Titanide de la justice",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1665,6 +1760,7 @@
       "godType": "Autre",
       "domain": "Déesse de la chance",
       "equivalentName": "Fortuna",
+      "description": "Représentée tenant une corne d'abondance et un gouvernail, elle symbolise l'imprévisibilité du destin, tantôt favorable, tantôt funeste.",
       "clue": "Déesse de la chance",
       "difficulty": 2
     },
@@ -1688,6 +1784,7 @@
       "race": "Heroes",
       "ascendantName": "Borée",
       "story": "Argonautes, Boréades, frère de Calais",
+      "description": "Fils ailé du vent du nord, il participe avec son frère jumeau à la chasse de créatures ailées qui tourmentent un roi aveugle.",
       "clue": "Argonautes, Boréades, frère de Calais",
       "difficulty": 2
     },
@@ -1698,6 +1795,7 @@
       "race": "Muses",
       "domain": "Chant",
       "museType": "Beotienne",
+      "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Chant",
       "difficulty": 3
     },
@@ -1707,6 +1805,7 @@
       "mythology": "Grecque",
       "race": "Erinyes",
       "domain": "Colère implacable",
+      "description": "L'une des trois sœurs vengeresses nées du sang d'Ouranos mutilé, elle poursuit sans relâche les coupables de crimes impunis.",
       "clue": "Colère implacable",
       "difficulty": 3
     },
@@ -1727,6 +1826,7 @@
       "race": "Muses",
       "domain": "Poésie Épique",
       "museType": "Grecque",
+      "description": "Considérée comme la plus éminente des neuf sœurs, elle est traditionnellement présentée comme la mère d'un célèbre musicien thrace.",
       "clue": "Poésie Épique",
       "difficulty": 3
     },
@@ -1747,6 +1847,7 @@
       "race": "Muses",
       "domain": "Histoire",
       "museType": "Grecque",
+      "description": "Elle est souvent représentée tenant un rouleau ou un coffret de manuscrits, symbole de la mémoire des exploits passés.",
       "clue": "Histoire",
       "difficulty": 3
     },
@@ -1758,6 +1859,7 @@
       "godType": "Autre",
       "domain": "Déesse des tempêtes marine",
       "equivalentName": "Tempestas",
+      "description": "Fille de Poséidon, elle fut donnée en mariage à l'un des Hécatonchires pour sceller une alliance après la Titanomachie.",
       "clue": "Déesse des tempêtes marine",
       "difficulty": 3
     },
@@ -1767,6 +1869,7 @@
       "mythology": "Grecque",
       "race": "Grées",
       "domain": "La Terrifiante",
+      "description": "Elle fait partie d'un trio de sœurs nées vieilles, qui ne partagent qu'un œil et une dent uniques entre elles.",
       "clue": "La Terrifiante",
       "difficulty": 3
     },
@@ -1778,6 +1881,7 @@
       "godType": "Autre",
       "domain": "Déesse de guerre et de la stratégie",
       "equivalentName": "Bellone",
+      "description": "Compagne du dieu de la guerre, elle sème le chaos sur les champs de bataille et se réjouit du massacre.",
       "clue": "Déesse de guerre et de la stratégie",
       "difficulty": 3
     },
@@ -1787,6 +1891,7 @@
       "mythology": "Grecque",
       "race": "Grées",
       "domain": "L'Horrible",
+      "description": "Avec ses sœurs, elle garde le secret menant au repaire des Gorgones et ne possède, comme elles, qu'un œil et une dent en commun.",
       "clue": "L'Horrible",
       "difficulty": 3
     },
@@ -1797,6 +1902,7 @@
       "race": "Muses",
       "domain": "Poésie Lyrique et érotique",
       "museType": "Grecque",
+      "description": "Représentée avec une lyre, elle inspire les poèmes consacrés à l'amour et à la séduction.",
       "clue": "Poésie Lyrique et érotique",
       "difficulty": 3
     },
@@ -1808,6 +1914,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent de l'Est",
       "equivalentName": "Vulturnus",
+      "description": "Contrairement à ses frères associés à des saisons précises, son caractère reste plus ambigu et changeant dans les textes anciens.",
       "clue": "Dieu du vent de l'Est",
       "difficulty": 2
     },
@@ -1818,6 +1925,7 @@
       "race": "Muses",
       "domain": "Musique",
       "museType": "Grecque",
+      "description": "Associée à la flûte double, elle est parfois créditée de l'invention de cet instrument.",
       "clue": "Musique",
       "difficulty": 3
     },
@@ -1847,6 +1955,7 @@
       "mythology": "Grecque",
       "race": "Erinyes",
       "domain": "Jalousie vengeresse",
+      "description": "L'une des trois sœurs vengeresses, son nom est resté dans le langage courant pour désigner une femme acariâtre.",
       "clue": "Jalousie vengeresse",
       "difficulty": 3
     },
@@ -1857,6 +1966,7 @@
       "race": "Muses",
       "domain": "Méditation et soin",
       "museType": "Beotienne",
+      "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Méditation et soin",
       "difficulty": 3
     },
@@ -1880,6 +1990,7 @@
       "race": "Muses",
       "domain": "Chant et Tragédie",
       "museType": "Grecque",
+      "description": "Représentée avec un masque tragique, elle deviendra plus tard la muse patronne du théâtre tragique dans son ensemble.",
       "clue": "Chant et Tragédie",
       "difficulty": 3
     },
@@ -1890,6 +2001,7 @@
       "race": "Muses",
       "domain": "Mémoire",
       "museType": "Beotienne",
+      "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Mémoire",
       "difficulty": 3
     },
@@ -1911,6 +2023,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent du sud",
       "equivalentName": "Auster",
+      "description": "Associé à la fin de l'été et à l'automne, il apporte les brumes et les orages redoutés pour les récoltes.",
       "clue": "Dieu du vent du sud",
       "difficulty": 2
     },
@@ -1930,6 +2043,7 @@
       "mythology": "Grecque",
       "race": "Grées",
       "domain": "L'Alarmante",
+      "description": "Elle appartient au même trio de gardiennes âgées que ses sœurs, et un héros célèbre leur déroba leur œil unique pour les forcer à l'aider.",
       "clue": "L'Alarmante",
       "difficulty": 3
     },
@@ -1940,6 +2054,7 @@
       "race": "Heroes",
       "ascendantName": "Athéna",
       "story": "Neveu et apprenti de Dédale, tué par ce dernier par jalousie, parfois nommé Talos",
+      "description": "Neveu et apprenti d'un grand inventeur, il est jeté du haut d'une colline par jalousie après avoir conçu des outils ingénieux, mais une déesse le transforme en oiseau avant qu'il ne touche le sol.",
       "clue": "Neveu et apprenti de Dédale",
       "difficulty": 3
     },
@@ -1950,6 +2065,7 @@
       "race": "Muses",
       "domain": "Rhétorique et Éloquence",
       "museType": "Grecque",
+      "description": "Souvent représentée pensive et voilée, elle est associée aux hymnes sacrés autant qu'à l'art oratoire.",
       "clue": "Rhétorique et Éloquence",
       "difficulty": 3
     },
@@ -1970,6 +2086,7 @@
       "race": "Muses",
       "domain": "Danse",
       "museType": "Grecque",
+      "description": "Représentée une lyre à la main, elle est également associée à l'art de la danse chorale grecque.",
       "clue": "Danse",
       "difficulty": 3
     },
@@ -1980,6 +2097,7 @@
       "race": "Muses",
       "domain": "Comédie",
       "museType": "Grecque",
+      "description": "Représentée avec un masque souriant et une couronne de lierre, elle protège également les fêtes et les banquets.",
       "clue": "Comédie",
       "difficulty": 3
     },
@@ -1989,6 +2107,7 @@
       "mythology": "Grecque",
       "race": "Erinyes",
       "domain": "Vengeance du meurtre",
+      "description": "L'une des trois sœurs vengeresses, elle punit spécifiquement les meurtriers, en particulier ceux qui ont tué un membre de leur propre famille.",
       "clue": "Vengeance du meurtre",
       "difficulty": 3
     },
@@ -1999,6 +2118,7 @@
       "race": "Muses",
       "domain": "Astronomie et Astrologie",
       "museType": "Grecque",
+      "description": "Représentée avec un globe céleste et un compas, elle est invoquée par les astronomes et les poètes traitant de sujets cosmiques.",
       "clue": "Astronomie et Astrologie",
       "difficulty": 3
     },
@@ -2010,6 +2130,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent de l'ouest",
       "equivalentName": "Favonius",
+      "description": "Le plus doux des quatre vents cardinaux, il est associé au printemps et épouse une nymphe des fleurs.",
       "clue": "Dieu du vent de l'ouest",
       "difficulty": 3
     },
@@ -2021,6 +2142,7 @@
       "godType": "Autre",
       "domain": "Déesses du destin",
       "equivalentName": "3 Moires",
+      "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux doivent se soumettre.",
       "clue": "Déesses du destin",
       "difficulty": 1
     },
@@ -2032,6 +2154,7 @@
       "museType": "Grecque",
       "equivalentName": "9 Muses",
       "id": 190,
+      "description": "Ces neuf déesses inspiratrices président chacune à un art différent et sont associées à une source sacrée proche de Rome.",
       "clue": "Équivalent romain des 9 Muses grecques",
       "difficulty": 1
     },
@@ -2043,6 +2166,7 @@
       "godType": "Autre",
       "domain": "Dieu des vents",
       "equivalentName": "Éole",
+      "description": "Gardien des vents qu'il enferme dans une outre ou une caverne, il les libère ou les retient selon la volonté des dieux ou les faveurs qu'on lui demande.",
       "clue": "Dieu des vents",
       "difficulty": 2
     },
@@ -2054,6 +2178,7 @@
       "domain": "Dieu de la lumière et des arts",
       "godType": "Olympien",
       "equivalentName": "Apollon",
+      "description": "Rendant ses oracles à travers une prêtresse inspirée, il partage avec sa sœur jumelle la maîtrise de l'arc et de la lumière.",
       "clue": "Dieu de la lumière et des arts",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -2066,6 +2191,7 @@
       "equivalentName": "Dionysos",
       "godType": "Olympien",
       "domain": "Dieu du vin et de la fête",
+      "description": "Né une seconde fois de la cuisse de son père, il enseigne l'art de la viticulture et déchaîne des cortèges de fidèles en transe à travers les campagnes.",
       "clue": "Dieu du vin et de la fête",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2078,6 +2204,7 @@
       "equivalentName": "Déméter",
       "godType": "Olympien",
       "domain": "Déesse de l'agriculture",
+      "description": "Le deuil qu'elle porte après l'enlèvement de sa fille plonge la terre entière dans un hiver stérile jusqu'à ce qu'un compromis soit trouvé avec le ravisseur.",
       "clue": "Déesse de l'agriculture",
       "difficulty": 1,
       "fatherName": "Saturne"
@@ -2090,6 +2217,7 @@
       "equivalentName": "Éros",
       "godType": "Primordial",
       "domain": "Dieu de l'amour",
+      "description": "Ses flèches, les unes en or suscitant l'amour, les autres en plomb provoquant l'aversion, décident du sort amoureux des dieux comme des mortels.",
       "clue": "Dieu de l'amour",
       "difficulty": 1,
       "motherName": "Vénus"
@@ -2102,6 +2230,7 @@
       "equivalentName": "Artémis",
       "godType": "Olympien",
       "domain": "Déesse de la chasteté, de l'innocence et de la chasse",
+      "description": "Jumelle d'un dieu archer, elle obtient de son père le vœu de rester éternellement vierge et parcourt les forêts avec un cortège de nymphes.",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2114,6 +2243,7 @@
       "godType": "Autre",
       "domain": "Dieu de la nature",
       "equivalentName": "Pan",
+      "description": "Il rend des oracles à travers le bruissement des feuilles de la forêt sacrée et protège les troupeaux et les récoltes.",
       "clue": "Dieu de la nature",
       "difficulty": 2
     },
@@ -2124,6 +2254,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Équivalent romain des Érinyes, déesses de la vengeance",
+      "description": "Ce trio de déesses vengeresses châtie les crimes que la justice humaine laisse impunis, en particulier ceux commis envers la famille.",
       "clue": "Équivalent romain des Érinyes",
       "equivalentName": "Érinyes",
       "difficulty": 2
@@ -2136,6 +2267,7 @@
       "equivalentName": "Héraclès",
       "ascendantName": "Zeus",
       "story": "Réalise 12 Travaux pour expier le meurtre de sa famille",
+      "description": "Rendu fou par une déesse jalouse, il tue sa propre famille dans un accès de démence, et doit accomplir une série d'épreuves impossibles pour expier ce crime.",
       "clue": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2148,6 +2280,7 @@
       "equivalentName": "Héra",
       "godType": "Olympien",
       "domain": "Déesse de la famille, du mariage et de la fidélité",
+      "description": "Épouse et sœur du roi des dieux, elle poursuit sans relâche de sa jalousie les nombreuses conquêtes et enfants illégitimes de son mari volage.",
       "clue": "Déesse de la famille",
       "difficulty": 1,
       "fatherName": "Saturne"
@@ -2160,6 +2293,7 @@
       "equivalentName": "Zeus",
       "godType": "Olympien",
       "domain": "Dieux du ciel et roi des dieux",
+      "description": "Caché à sa naissance pour échapper à un père dévorant ses propres enfants, il finit par le renverser et se partage ensuite le règne du monde avec ses frères.",
       "clue": "Roi des dieux",
       "difficulty": 1
     },
@@ -2170,6 +2304,7 @@
       "race": "Titan",
       "domain": "Titanide de la lune",
       "equivalentName": "Séléné",
+      "description": "Elle conduit un char argenté à travers le ciel nocturne et tombe amoureuse d'un berger mortel qu'elle visite pendant son sommeil éternel.",
       "clue": "Titanide de la lune",
       "difficulty": 2
     },
@@ -2181,6 +2316,7 @@
       "equivalentName": "Arès",
       "godType": "Olympien",
       "domain": "Dieu de la guerre et de la violence",
+      "description": "Associé à la puissance militaire romaine plus qu'à la simple violence brutale, il est vénéré comme un protecteur de l'État autant que comme un dieu guerrier.",
       "clue": "Dieu de la guerre",
       "difficulty": 1,
       "fatherName": "Jupiter",
@@ -2194,6 +2330,7 @@
       "equivalentName": "Hermès",
       "godType": "Olympien",
       "domain": "Messager des dieux, dieux des voyageurs, des voleurs et des marchands",
+      "description": "Messager rapide reconnaissable à ses sandales ailées, il est également le protecteur des voyageurs, des commerçants et, plus étonnamment, des voleurs.",
       "clue": "Messager des dieux",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2206,6 +2343,7 @@
       "equivalentName": "Athéna",
       "godType": "Olympien",
       "domain": "Déesse de la sagesse et de la stratégie et de l'artisanat",
+      "description": "Née directement du crâne de son père après qu'il eut avalé sa mère enceinte, elle jaillit déjà adulte et armée de pied en cap.",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2218,6 +2356,7 @@
       "equivalentName": "Poséidon",
       "godType": "Olympien",
       "domain": "Dieu des océans et des cataclysmes",
+      "description": "Armé d'une arme à trois pointes capable de déclencher des séismes et des raz-de-marée, il règne sur toutes les étendues d'eau du monde connu.",
       "clue": "Dieu des océans",
       "difficulty": 1,
       "fatherName": "Saturne"
@@ -2230,6 +2369,7 @@
       "godType": "Olympien",
       "domain": "Dieu de la richesse et du monde souterrain",
       "equivalentName": "Hadès",
+      "description": "Bien que redouté, il ne quitte que rarement son royaume souterrain et se montre étonnamment juste envers les âmes qu'il gouverne, contrairement à l'image qu'on lui prête souvent.",
       "clue": "Dieu de la richesse et du monde souterrain",
       "difficulty": 1,
       "fatherName": "Saturne"
@@ -2242,6 +2382,7 @@
       "story": "Cyclope résidant du pays des Cyclopes, aveuglé par Ulysse qui se fait passer pour ''personne''",
       "primordial": false,
       "equivalentName": "Polyphème",
+      "description": "Fils d'un dieu marin, il est aveuglé par un rusé voyageur qui s'était présenté sous un faux nom pour échapper à sa vengeance ensuite.",
       "clue": "Cyclope de l'île de Sicile",
       "difficulty": 1
     },
@@ -2252,6 +2393,7 @@
       "race": "Heroes",
       "ascendantName": "Mars",
       "story": "Créateur de Rome, Frère de Romulus",
+      "description": "Abandonné avec son frère jumeau sur les rives d'un fleuve et allaité par une louve, il meurt de la main de son propre frère lors d'une dispute sur l'emplacement d'une nouvelle cité.",
       "clue": "Créateur de Rome, Frère de Romulus",
       "difficulty": 1,
       "fatherName": "Mars"
@@ -2263,6 +2405,7 @@
       "race": "Heroes",
       "ascendantName": "Mars",
       "story": "Créateur de Rome, Frère de Rémus",
+      "description": "Abandonné avec son frère jumeau sur les rives d'un fleuve et allaité par une louve, il fonde une cité après avoir tué son propre frère lors d'une dispute sur son emplacement.",
       "clue": "Créateur de Rome, Frère de Rémus",
       "difficulty": 1,
       "fatherName": "Mars"
@@ -2274,6 +2417,7 @@
       "race": "Titan",
       "equivalentName": "Cronos",
       "domain": "Titan du temps et des récoltes, Roi des Titan",
+      "description": "Après avoir mutilé et détrôné son propre père, il dévore chacun de ses enfants par crainte d'une prophétie annonçant sa propre chute, jusqu'à ce que l'un d'eux échappe à ce sort grâce à une ruse.",
       "clue": "Roi des Titan",
       "difficulty": 1,
       "fatherName": "Uranus"
@@ -2285,6 +2429,7 @@
       "race": "Titan",
       "domain": "Titan du soleil",
       "equivalentName": "Hélios",
+      "description": "Il traverse le ciel chaque jour sur un char tiré par des chevaux flamboyants, illuminant le monde de son passage.",
       "clue": "Titan du soleil",
       "difficulty": 2
     },
@@ -2296,6 +2441,7 @@
       "equivalentName": "Tartare",
       "godType": "Primordial",
       "domain": "personnification de l'abîme éponyme",
+      "description": "Aussi profond sous la terre que le ciel est haut au-dessus d'elle, cet abîme sert de prison aux ennemis vaincus des dieux.",
       "clue": "personnification de l'abîme éponyme",
       "difficulty": 1
     },
@@ -2307,6 +2453,7 @@
       "equivalentName": "Gaïa",
       "godType": "Primordial",
       "domain": "Déesse de la Terre",
+      "description": "Surgie du vide primordial, elle engendre seule le ciel étoilé pour qu'il la recouvre entièrement, puis s'unit à lui pour donner naissance aux premières générations divines.",
       "clue": "Déesse de la Terre",
       "difficulty": 1
     },
@@ -2318,6 +2465,7 @@
       "equivalentName": "Ouranos",
       "godType": "Primordial",
       "domain": "Dieu de la voûte céleste",
+      "description": "Il s'unit chaque nuit à son épouse en l'écrasant de tout son poids, l'empêchant de mettre au monde leurs enfants, jusqu'à ce que l'un d'eux se rebelle armé d'une faucille.",
       "clue": "Dieu de la voûte céleste",
       "difficulty": 1
     },
@@ -2329,6 +2477,7 @@
       "equivalentName": "Aphrodite",
       "godType": "Olympien",
       "domain": "Déesse de la beauté",
+      "description": "Née de l'écume marine, elle possède une ceinture magique rendant irrésistible quiconque la porte, et est revendiquée comme ancêtre par les fondateurs légendaires de Rome.",
       "clue": "Déesse de la beauté",
       "difficulty": 1
     },
@@ -2340,6 +2489,7 @@
       "godType": "Olympien",
       "domain": "Déesse du foyer",
       "equivalentName": "Hestia",
+      "description": "Première née puis dernière recrachée par son père, elle cède sa place parmi les grandes divinités pour préserver la paix, préférant veiller sur le feu sacré entretenu par des prêtresses vouées à la chasteté.",
       "clue": "Déesse du foyer",
       "difficulty": 1,
       "fatherName": "Saturne"
@@ -2352,6 +2502,7 @@
       "equivalentName": "Héphaïstos",
       "godType": "Olympien",
       "domain": "Dieu de la forge et du feu",
+      "description": "Rejeté par sa propre mère à sa naissance en raison de sa difformité, il devient malgré tout le forgeron le plus talentueux, son atelier situé sous un volcan en activité.",
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Jupiter",
@@ -2365,6 +2516,7 @@
       "equivalentName": "Argès",
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueure pour la foudre",
       "primordial": true,
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclat lumineux lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueure pour la foudre",
       "difficulty": 2
     },
@@ -2376,6 +2528,7 @@
       "equivalentName": "Brontès",
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
       "primordial": true,
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte le grondement du tonnerre lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
       "difficulty": 2
     },
@@ -2387,6 +2540,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Misère",
       "equivalentName": "Achlys",
+      "description": "Personnification latine du brouillard et de l'obscurité originelle, associée à la tristesse et à la confusion primordiale.",
       "clue": "Déesse de la Misère",
       "difficulty": 2
     },
@@ -2398,6 +2552,7 @@
       "godType": "Autre",
       "domain": "Déesse de la neige",
       "equivalentName": "Chioné",
+      "description": "Fille d'un dieu du vent, elle donne naissance à un fils messager après une idylle avec un dieu ailé porteur d'un caducée.",
       "clue": "Déesse de la neige",
       "difficulty": 2
     },
@@ -2408,6 +2563,7 @@
       "race": "Titan",
       "equivalentName": "Crios",
       "domain": "Titan du Sud et des constellations",
+      "description": "Titan le moins documenté du groupe originel dans la tradition latine, associé aux constellations et à l'orientation australe.",
       "clue": "Titan du Sud et des constellations",
       "difficulty": 2,
       "fatherName": "Uranus",
@@ -2421,6 +2577,7 @@
       "equivalentName": "Héméra",
       "godType": "Primordial",
       "domain": "Déesse du Jour et de la Lumière Terrestre",
+      "description": "Personnification latine de la clarté diurne, elle succède chaque matin à sa mère qui règne sur l'obscurité nocturne.",
       "clue": "Déesse du Jour",
       "difficulty": 2
     },
@@ -2432,6 +2589,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Discorde",
       "equivalentName": "Éris",
+      "description": "Elle sème la zizanie parmi mortels et divinités, célèbre pour avoir jeté lors d'un banquet un objet doré destiné à la plus belle, déclenchant une rivalité qui mènera à un grand conflit.",
       "clue": "Déesse de la Discorde",
       "difficulty": 2
     },
@@ -2442,6 +2600,7 @@
       "race": "Heroes",
       "ascendantName": "Vénus",
       "story": "Héros troyen fondateur de Rome, fils de Vénus, sujet de l'Énéide de Virgile",
+      "description": "Après une fuite depuis une cité en flammes, il erre plusieurs années en Méditerranée avant de fonder en Italie la lignée qui donnera naissance à une grande cité.",
       "clue": "Héros troyen fondateur de Rome",
       "difficulty": 2
     },
@@ -2453,6 +2612,7 @@
       "equivalentName": "Érèbe",
       "godType": "Primordial",
       "domain": "Dieu des Ténèbres et de l'Obscurité",
+      "description": "Personnification latine des ténèbres primordiales, il engendre avec la déesse de la nuit plusieurs entités funestes comme la mort et le sommeil.",
       "clue": "Dieu des Ténèbres",
       "difficulty": 2
     },
@@ -2464,6 +2624,7 @@
       "godType": "Autre",
       "domain": "Dieu de la médecine",
       "equivalentName": "Asclépios",
+      "description": "Sa maîtrise de la guérison est telle qu'il ressuscite les morts, un pouvoir qui alarme tant le souverain des Enfers qu'il en réclame la punition.",
       "clue": "Dieu de la médecine",
       "difficulty": 2
     },
@@ -2486,6 +2647,7 @@
       "godType": "Autre",
       "domain": "Dieu de la Terreur et de l'effroi",
       "equivalentName": "Deimos",
+      "description": "Fils du dieu de la guerre, il sème l'effroi sur les champs de bataille aux côtés d'un frère jumeau incarnant une peur différente.",
       "clue": "Dieu de la Terreur et de l'effroi",
       "difficulty": 2
     },
@@ -2497,6 +2659,7 @@
       "godType": "Autre",
       "domain": "Déesse de la chance",
       "equivalentName": "Tyché",
+      "description": "Représentée les yeux bandés sur une roue ou une sphère instable, elle symbolise l'instabilité du sort qui élève ou abaisse les puissants sans prévenir.",
       "clue": "Déesse de la chance",
       "difficulty": 2
     },
@@ -2507,6 +2670,7 @@
       "godType": "Autre",
       "domain": "Dieu des choix et des portes",
       "id": 232,
+      "description": "Doté de deux visages tournés en sens opposés, il observe simultanément le passé et l'avenir et préside à tous les commencements.",
       "clue": "Dieu des choix et des portes",
       "difficulty": 2
     },
@@ -2517,6 +2681,7 @@
       "race": "Titan",
       "domain": "Titanide de la justice",
       "equivalentName": "Thémis",
+      "description": "Représentée avec une balance et un bandeau sur les yeux, elle inspirera plus tard le symbole universel de la justice impartiale.",
       "clue": "Titanide de la justice",
       "difficulty": 2
     },
@@ -2528,6 +2693,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Jeunesse",
       "equivalentName": "Hébé",
+      "description": "Elle veille sur le passage rituel des jeunes Romains à l'âge adulte et sur leur aptitude à porter les armes.",
       "clue": "Déesse de la Jeunesse",
       "difficulty": 2
     },
@@ -2538,6 +2704,7 @@
       "race": "Titan",
       "equivalentName": "Japet",
       "domain": "Titan de l'Ouest et de la réflexion",
+      "description": "Titan associé à la mortalité, il est le père de plusieurs figures emblématiques du destin et de la ruse face aux dieux.",
       "clue": "Titan de l'Ouest et de la réflexion",
       "difficulty": 2,
       "fatherName": "Uranus",
@@ -2551,6 +2718,7 @@
       "godType": "Autre",
       "domain": "Dieu des Rêves",
       "equivalentName": "Morphée",
+      "description": "Fils du dieu du sommeil, il façonne les rêves en empruntant l'apparence de n'importe quel être humain qu'il visite.",
       "clue": "Dieu des Rêves",
       "difficulty": 2
     },
@@ -2562,6 +2730,7 @@
       "godType": "Autre",
       "domain": "Dieu de la mort",
       "equivalentName": "Thanatos",
+      "description": "Frère jumeau du dieu du sommeil dans la tradition latine, il est craint mais parfois trompé par des mortels rusés.",
       "clue": "Dieu de la mort",
       "difficulty": 2
     },
@@ -2573,6 +2742,7 @@
       "godType": "Primordial",
       "domain": "Vieux dieu de la mer",
       "equivalentName": "Nérée",
+      "description": "Réputé pour sa sagesse et sa capacité à changer de forme dans la tradition latine, il est le père de nombreuses filles marines bienveillantes envers les marins.",
       "clue": "Vieux dieu de la mer",
       "difficulty": 2
     },
@@ -2584,6 +2754,7 @@
       "equivalentName": "Nyx",
       "godType": "Primordial",
       "domain": "Déesse de la nuit",
+      "description": "Personnification latine de la nuit, si redoutable que même le roi des dieux hésite à s'aventurer dans sa demeure.",
       "clue": "Déesse de la nuit",
       "difficulty": 2
     },
@@ -2595,6 +2766,7 @@
       "godType": "Autre",
       "domain": "Déesse du printemps, enfermée au enfer 6 mois de l'année",
       "equivalentName": "Perséphone",
+      "description": "Enlevée par le dieu des Enfers pour devenir sa reine, elle partage désormais son année entre le monde souterrain et la surface.",
       "clue": "Déesse du printemps",
       "difficulty": 2,
       "fatherName": "Jupiter",
@@ -2607,6 +2779,7 @@
       "godType": "Autre",
       "domain": "Dieu des Forêts",
       "id": 241,
+      "description": "Divinité rustique protégeant les frontières entre terres cultivées et forêts sauvages, il est honoré par les paysans et les bûcherons.",
       "clue": "Dieu des Forêts",
       "difficulty": 2
     },
@@ -2618,6 +2791,7 @@
       "godType": "Autre",
       "domain": "Dieu du sommeil",
       "equivalentName": "Hypnos",
+      "description": "Il vit dans une demeure où ne pénètre jamais la lumière du jour, et son simple toucher plonge dieux et mortels dans un sommeil profond.",
       "clue": "Dieu du sommeil",
       "difficulty": 2
     },
@@ -2629,6 +2803,7 @@
       "equivalentName": "Stéropès",
       "story": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
       "primordial": true,
+      "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclair proprement dit lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
       "difficulty": 2
     },
@@ -2639,6 +2814,7 @@
       "godType": "Autre",
       "domain": "Dieu des Frontières",
       "id": 244,
+      "description": "Représenté par une simple borne de pierre, il refuse traditionnellement de céder sa place, même face au roi des dieux, selon une légende fondatrice.",
       "clue": "Dieu des Frontières",
       "difficulty": 2
     },
@@ -2650,6 +2826,7 @@
       "godType": "Autre",
       "domain": "Déesse de la magie",
       "equivalentName": "Hécate",
+      "description": "Son nom latin évoque les carrefours à trois chemins où on lui rendait un culte nocturne, en compagnie de chiens fantomatiques.",
       "clue": "Déesse de la magie",
       "difficulty": 2
     },
@@ -2672,6 +2849,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Victoire",
       "equivalentName": "Niké",
+      "description": "Représentée avec des ailes, elle couronne les généraux triomphants et orne le sommet de nombreux monuments commémoratifs romains.",
       "clue": "Déesse de la Victoire",
       "difficulty": 2
     },
@@ -2683,6 +2861,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent du nord",
       "equivalentName": "Borée",
+      "description": "Le plus violent des vents cardinaux dans la tradition latine, il est associé aux tempêtes hivernales les plus redoutées des marins.",
       "clue": "Dieu du vent du nord",
       "difficulty": 2
     },
@@ -2694,6 +2873,7 @@
       "godType": "Autre",
       "domain": "Déesse des arc en ciel",
       "equivalentName": "Iris",
+      "description": "Messagère rapide des dieux dans la tradition latine, elle relie le ciel à la terre par le chemin coloré qu'elle emprunte.",
       "clue": "Déesse des arc en ciel",
       "difficulty": 2
     },
@@ -2705,6 +2885,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent du sud",
       "equivalentName": "Notos",
+      "description": "Associé à la fin de l'été, il apporte dans la tradition latine les brumes chaudes et humides redoutées pour les récoltes.",
       "clue": "Dieu du vent du sud",
       "difficulty": 2
     },
@@ -2716,6 +2897,7 @@
       "godType": "Autre",
       "domain": "Déesse de guerre et de la stratégie",
       "equivalentName": "Enyo",
+      "description": "Souvent associée au dieu de la guerre comme épouse ou sœur, elle conduit son char sur les champs de bataille et incarne la fureur guerrière romaine.",
       "clue": "Déesse de guerre et de la stratégie",
       "difficulty": 2
     },
@@ -2727,6 +2909,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent de l'Est",
       "equivalentName": "Euros",
+      "description": "Vent cardinal moins documenté que ses homologues dans la tradition romaine, associé au lever du soleil.",
       "clue": "Dieu du vent de l'Est",
       "difficulty": 2
     },
@@ -2738,6 +2921,7 @@
       "godType": "Autre",
       "domain": "Dieu du vent de l'ouest",
       "equivalentName": "Zéphyr",
+      "description": "Le plus doux des vents cardinaux dans la tradition latine, il annonce traditionnellement l'arrivée du printemps.",
       "clue": "Dieu du vent de l'ouest",
       "difficulty": 2
     },
@@ -2749,6 +2933,7 @@
       "godType": "Autre",
       "domain": "Déesse de la vengeance",
       "equivalentName": "Némésis",
+      "description": "Personnification latine de l'envie, elle est décrite se nourrissant de chair de vipère et dépérissant à la vue du bonheur d'autrui.",
       "clue": "Déesse de la vengeance",
       "difficulty": 2
     },
@@ -2759,6 +2944,7 @@
       "race": "Titan",
       "domain": "Titanide de la mémoire",
       "equivalentName": "Mnémosyne",
+      "description": "Son nom latin est à l'origine du mot désignant la monnaie, car un temple qui lui était dédié abritait l'atelier de frappe des pièces de Rome.",
       "clue": "Titanide de la mémoire",
       "difficulty": 2
     },
@@ -2770,6 +2956,7 @@
       "godType": "Autre",
       "domain": "Dieu de la Peur",
       "equivalentName": "Phobos",
+      "description": "Fils du dieu de la guerre dans la tradition latine, il sème la panique sur les champs de bataille aux côtés d'un frère jumeau.",
       "clue": "Dieu de la Peur",
       "difficulty": 2
     },
@@ -2781,6 +2968,7 @@
       "godType": "Autre",
       "domain": "Déesse de la Santé",
       "equivalentName": "Hygie",
+      "description": "Elle incarne le bien-être et la sécurité publique autant que la santé individuelle, et donne son nom à une formule de salutation latine.",
       "clue": "Déesse de la Santé",
       "difficulty": 2
     },
@@ -2792,6 +2980,7 @@
       "godType": "Autre",
       "domain": "Déesse des tempêtes marine",
       "equivalentName": "Cymopolée",
+      "description": "Personnification latine des tempêtes soudaines, elle est invoquée par les marins romains pour apaiser les eaux avant une traversée.",
       "clue": "Déesse des tempêtes marine",
       "difficulty": 2
     },
@@ -2802,6 +2991,7 @@
       "godType": "Primordial",
       "domain": "Dieu du ciel romain, équivalent d'Ouranos",
       "id": 259,
+      "description": "Personnification de la voûte céleste, il est le père de nombreuses divinités primordiales selon certaines généalogies latines.",
       "clue": "Dieu du ciel romain, équivalent d'Ouranos",
       "difficulty": 3
     },
@@ -2823,6 +3013,7 @@
       "race": "God",
       "godType": "Vane",
       "domain": "Déesse de la fertilité,de l'amour et de la beauté",
+      "description": "Elle possède une moitié des guerriers tombés au combat, l'autre moitié revenant au roi des dieux, et pleure des larmes d'or lorsqu'elle est séparée de son époux disparu.",
       "clue": "Déesse de la fertilité",
       "difficulty": 1,
       "fatherName": "Njord"
@@ -2834,6 +3025,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Gardien du Bifröst",
+      "description": "Doté d'une ouïe si fine qu'il entend l'herbe pousser, il veille sans jamais dormir à l'entrée du royaume des dieux et sonnera son cor à l'annonce du crépuscule final.",
       "clue": "Gardien du Bifröst",
       "difficulty": 1
     },
@@ -2844,6 +3036,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Déesse la mort",
+      "description": "Mi-vivante mi-cadavre d'apparence, elle règne sur ceux qui ne sont pas morts au combat, dans un royaume froid et brumeux distinct de la grande salle des guerriers.",
       "clue": "Déesse la mort",
       "difficulty": 1,
       "fatherName": "Loki"
@@ -2887,6 +3080,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Roi des dieux",
+      "description": "Il sacrifie un œil pour obtenir la sagesse d'une source mystique et se pend volontairement à l'arbre-monde pendant neuf jours pour percer le secret des runes.",
       "clue": "Dieu de l’Éternité, de l'Intemporel et roi des dieux",
       "difficulty": 1
     },
@@ -2897,6 +3091,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Dieu de la foudre, du tonerre et de la force",
+      "description": "Protecteur des dieux contre les géants, il doit parfois se déguiser en mariée pour récupérer son arme dérobée, au grand embarras des autres divinités.",
       "clue": "Dieu de la foudre et du tonerre",
       "difficulty": 1,
       "fatherName": "Odin"
@@ -2908,6 +3103,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Dieu de la justice",
+      "description": "Il sacrifie sa main droite dans la gueule d'un loup monstrueux pour permettre aux autres dieux de l'enchaîner par la ruse.",
       "clue": "Dieu de la justice",
       "difficulty": 1,
       "fatherName": "Odin"
@@ -2919,6 +3115,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Guerrières divines d'Odin choisissant les morts au combat pour le Valhalla",
+      "description": "Chevauchant à travers le ciel, elles choisissent parmi les guerriers tombés au combat ceux qui rejoindront la grande salle du roi des dieux.",
       "clue": "Guerrières d'Odin choisissant les morts au combat",
       "difficulty": 1
     },
@@ -2929,6 +3126,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Déesses du destins",
+      "description": "Ces trois sœurs tissent, mesurent et coupent le fil du destin de chaque être vivant au pied de l'arbre-monde.",
       "clue": "Déesses du destins",
       "difficulty": 2
     },
@@ -2939,6 +3137,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Dieu de la lumière",
+      "description": "Le plus aimé des dieux, sa mort provoquée par une ruse et un seul objet oublié dans un serment universel est perçue comme un présage du crépuscule des dieux.",
       "clue": "Dieu de la lumière",
       "difficulty": 2,
       "fatherName": "Odin",
@@ -2981,6 +3180,7 @@
       "race": "God",
       "godType": "Vane",
       "domain": "Dieu de l'agriculture, de la prospérité et de la paix",
+      "description": "Il possède un sanglier doré et un navire pliable pouvant tenir dans une poche, et renonce à son épée magique par amour pour une géante.",
       "clue": "Dieu de l'agriculture",
       "difficulty": 2,
       "fatherName": "Njord"
@@ -2992,6 +3192,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Déesse du foyer, épouse d'Odin",
+      "description": "Épouse du roi des dieux, elle connaît le destin de tous mais ne le révèle jamais, et fait jurer à toute chose de ne pas blesser son fils.",
       "clue": "Déesse du foyer",
       "difficulty": 2
     },
@@ -3032,6 +3233,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Déesse de la jeunesse et de l'immortalité",
+      "description": "Elle garde les pommes qui préservent la jeunesse éternelle des dieux, et son enlèvement par un géant provoque leur vieillissement soudain.",
       "clue": "Déesse de l'immortalité",
       "difficulty": 2
     },
@@ -3042,6 +3244,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Dieu des arts et de la poésie",
+      "description": "Né de la salive mêlée de deux clans divins réconciliés, sa sagesse est si grande que des nains le tuent pour transformer son sang en un hydromel offrant le don de poésie.",
       "clue": "Dieu des arts",
       "difficulty": 2
     },
@@ -3052,6 +3255,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Connaissance et Sagesse",
+      "description": "Décapité lors d'un conflit entre deux clans divins, sa tête préservée par magie continue de délivrer des conseils au roi des dieux.",
       "clue": "Connaissance et Sagesse",
       "difficulty": 2
     },
@@ -3082,6 +3286,7 @@
       "race": "God",
       "godType": "Vane",
       "domain": "Dieu de la mer et des vents",
+      "description": "Son mariage avec une géante des montagnes échoue rapidement, ni l'un ni l'autre ne supportant l'environnement de son conjoint.",
       "clue": "Dieu de la mer et des vents",
       "difficulty": 2
     },
@@ -3102,6 +3307,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Déesse de la terre et des moissons, épouse de Thor à la chevelure d'or",
+      "description": "Sa chevelure dorée, coupée par malice par un dieu rusé, doit être remplacée par une parure forgée par des nains talentueux.",
       "clue": "Déesse de la terre et des moissons",
       "difficulty": 2
     },
@@ -3112,6 +3318,7 @@
       "race": "God",
       "godType": "Ase",
       "domain": "Déesse de l'Hiver et de la Montagne",
+      "description": "Skieuse et chasseresse redoutable, elle choisit son époux parmi les dieux uniquement en regardant leurs pieds, provoquant un mariage malheureux.",
       "clue": "Déesse de l'Hiver et de la Montagne",
       "difficulty": 2
     },
@@ -3154,6 +3361,7 @@
       "race": "Giant",
       "giantType": "Géant Jotunns",
       "domain": "Géant de la malice",
+      "description": "Maître d'illusions dans une forteresse géante, il humilie des dieux venus lui rendre visite par des défis truqués avant de révéler la supercherie.",
       "clue": "Géant de la malice",
       "difficulty": 2
     },
@@ -3173,6 +3381,7 @@
       "mythology": "Nordique",
       "race": "Valkyrie",
       "domain": "La plus célèbre des Valkyries, liée au héros Sigurd",
+      "description": "Punie et plongée dans un sommeil magique entouré de flammes, elle n'est réveillée que par un héros suffisamment brave pour traverser le brasier.",
       "clue": "La plus célèbre des Valkyries",
       "difficulty": 3
     },
@@ -3222,6 +3431,7 @@
       "mythology": "Nordique",
       "race": "Heroes",
       "story": "Guerriers valeureux morts au combat, choisis par les Valkyries pour rejoindre le Valhalla et combattre aux côtés d'Odin lors du Ragnarök",
+      "description": "Ils s'entraînent au combat chaque jour dans la grande salle et se préparent ainsi à la bataille finale annoncée par les prophéties.",
       "clue": "Guerriers du Valhalla choisis par les Valkyries",
       "difficulty": 3
     },
@@ -3231,6 +3441,7 @@
       "mythology": "Nordique",
       "race": "Valkyrie",
       "domain": "Valkyrie choisissant les guerriers destinés au Valhalla",
+      "description": "Elle apparaît notamment dans des poèmes scaldiques où elle intervient directement dans l'issue de batailles historiques.",
       "clue": "Choisit les guerriers destinés au Valhalla",
       "difficulty": 3
     },
@@ -3250,6 +3461,7 @@
       "mythology": "Nordique",
       "race": "Valkyrie",
       "domain": "Valkyrie éprise du héros mortel Helgi",
+      "description": "Son histoire d'amour, contrariée par un mariage arrangé et une vengeance familiale, inspire l'un des grands poèmes héroïques nordiques.",
       "clue": "Éprise du héros mortel Helgi",
       "difficulty": 3
     },
@@ -3279,6 +3491,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu Chacal de l’embaumement",
+      "description": "Représenté avec une tête de chacal, il pèse le cœur des défunts face à une plume symbolisant la vérité pour déterminer leur sort dans l'au-delà.",
       "clue": "Dieu de l’embaumement",
       "difficulty": 1,
       "fatherName": "Osiris"
@@ -3289,6 +3502,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu faucon du courage et Roi des dieux",
+      "description": "Son œil, perdu au combat contre le meurtrier de son père puis restauré par magie, devient un puissant symbole de protection dans toute l'Égypte antique.",
       "clue": "Roi des dieux",
       "difficulty": 1,
       "fatherName": "Osiris",
@@ -3300,6 +3514,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse de la Magie et de la loyauté, femme d'Osiris",
+      "description": "Après avoir rassemblé les morceaux du corps démembré de son époux assassiné, elle utilise ses pouvoirs magiques pour le ranimer suffisamment afin de concevoir un fils.",
       "clue": "Déesse de la Magie",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3311,6 +3526,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse funéraire et protectrice des morts, épouse de Seth",
+      "description": "Sœur d'une grande déesse protectrice, elle assiste sa sœur dans la protection des morts et dans la reconstitution du corps de leur frère assassiné.",
       "clue": "Déesse funéraire et protectrice des morts",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3322,6 +3538,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu régnant sur les morts",
+      "description": "Assassiné et démembré par son propre frère jaloux, il est ramené suffisamment à la vie par les pouvoirs magiques de son épouse pour engendrer un fils vengeur.",
       "clue": "Dieu régnant sur les morts",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3333,6 +3550,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu du soleil au zénith",
+      "description": "Il traverse le ciel le jour sur une barque solaire et affronte chaque nuit un serpent du chaos lors de sa traversée du monde souterrain.",
       "clue": "Dieu du soleil au zénith",
       "difficulty": 1
     },
@@ -3342,6 +3560,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu du mal",
+      "description": "Jaloux de son frère, il l'assassine et démembre son corps pour l'empêcher de revenir à la vie, avant de s'opposer ensuite à son neveu vengeur dans une lutte pour le trône.",
       "clue": "Dieu du mal",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3353,6 +3572,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu ibis de la sagesse, de l'ecriture",
+      "description": "Représenté avec une tête d'ibis, il consigne le verdict de la pesée du cœur des défunts et aurait inventé l'écriture hiéroglyphique.",
       "clue": "Dieu de la sagesse, de l'ecriture",
       "difficulty": 1
     },
@@ -3362,6 +3582,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Serpent du chaos, affronte Ré toutes les nuits",
+      "description": "Ce gigantesque serpent tente chaque nuit d'empêcher la barque solaire de traverser le monde souterrain, dans un combat recommencé sans fin.",
       "clue": "Serpent du chaos",
       "difficulty": 2
     },
@@ -3371,6 +3592,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse des chats, Garde de Ré sur la barque solaire lors de la nuit",
+      "description": "Autrefois représentée sous les traits d'une lionne guerrière, son iconographie s'adoucit avec le temps pour devenir protectrice du foyer et des femmes enceintes.",
       "clue": "Déesse des chats",
       "difficulty": 2
     },
@@ -3380,6 +3602,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu des nains",
+      "description": "Malgré son apparence difforme et grimaçante destinée à effrayer les esprits malveillants, il est un protecteur bienveillant du foyer, des femmes enceintes et des enfants.",
       "clue": "Dieu des nains",
       "difficulty": 2
     },
@@ -3389,6 +3612,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu de la terre",
+      "description": "Allongé sous le corps arqué de son épouse céleste, il forme avec elle un couple séparé de force par leur propre père.",
       "clue": "Dieu de la terre",
       "difficulty": 2
     },
@@ -3398,6 +3622,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu scarabée du soleil levant",
+      "description": "Représenté sous forme de scarabée, il pousse le disque solaire naissant comme cet insecte pousse une boule de fumier, symbole du renouveau quotidien.",
       "clue": "Dieu du soleil levant",
       "difficulty": 2
     },
@@ -3407,6 +3632,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu de la lune, de la guérison et du temps",
+      "description": "Fils du roi des dieux thébain et de la déesse mère, il complète une triade divine vénérée dans le grand temple de Thèbes.",
       "clue": "Dieu de la lune",
       "difficulty": 2
     },
@@ -3416,6 +3642,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse de l'ordre",
+      "description": "Son plumage d'autruche sert à peser le cœur des défunts lors du jugement final, déterminant leur accès à l'au-delà.",
       "clue": "Déesse de l'ordre",
       "difficulty": 2
     },
@@ -3425,6 +3652,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse du ciel",
+      "description": "Son corps étoilé arqué au-dessus de la terre avale le soleil chaque soir pour lui donner naissance à nouveau chaque matin.",
       "clue": "Déesse du ciel",
       "difficulty": 2
     },
@@ -3444,6 +3672,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu des artisans et créateur de la pensée et du verbe",
+      "description": "Selon la théologie de Memphis, il crée le monde par la seule puissance de sa pensée et de sa parole, sans avoir besoin d'action physique.",
       "clue": "Dieu des artisans et créateur de la pensée et du verbe",
       "difficulty": 2
     },
@@ -3453,6 +3682,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu du vent et de l'air",
+      "description": "Il sépare de ses bras levés le ciel de la terre, maintenant l'espace vital où circule l'air qu'il personnifie.",
       "clue": "Dieu du vent et de l'air",
       "difficulty": 2
     },
@@ -3462,6 +3692,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu crocodile de la fertilité et de l'eau",
+      "description": "Représenté avec une tête de crocodile, il est associé à la puissance du Nil et à la protection contre les dangers aquatiques.",
       "clue": "Dieu de la fertilité et de l'eau",
       "difficulty": 2
     },
@@ -3471,6 +3702,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu de l'invisible, de l'air et divinité créatrice transcendante",
+      "description": "Fusionné avec le dieu solaire pour former une figure suprême du panthéon thébain, il devient le patron du plus grand temple d'Égypte antique.",
       "clue": "Dieu de l'invisible, de l'air et divinité créatrice transcendante",
       "difficulty": 3
     },
@@ -3480,6 +3712,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu étranger de la guerre, associé a Shou",
+      "description": "Chasseur céleste armé d'une lance, il est associé au mythe de l'œil du soleil parti se réfugier en Nubie avant d'être ramené en Égypte.",
       "clue": "Dieu étranger de la guerre",
       "difficulty": 3
     },
@@ -3489,6 +3722,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Dieu du Nil",
+      "description": "Représenté avec un ventre rebondi, il incarne la crue annuelle qui fertilise les terres agricoles.",
       "clue": "Dieu du Nil",
       "difficulty": 3
     },
@@ -3498,6 +3732,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse de l'amour, de la joie et de la maternité",
+      "description": "Souvent représentée sous forme de vache ou coiffée de cornes encadrant un disque solaire, elle est aussi associée à la musique et à la joie.",
       "clue": "Déesse de la maternité",
       "difficulty": 3
     },
@@ -3507,6 +3742,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse mère, reine des dieux et épouse d'Amon",
+      "description": "Souvent coiffée de la double couronne d'Égypte, elle forme avec son époux et leur fils une triade divine vénérée à Thèbes.",
       "clue": "Déesse mère, reine des dieux et épouse d'Amon",
       "difficulty": 3
     },
@@ -3516,6 +3752,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse de la Création, du Tissage et de la Guerre",
+      "description": "Déesse guerrière et tisserande associée à la ville de Saïs, elle est parfois considérée comme la mère du dieu-soleil.",
       "clue": "Déesse de la Création",
       "difficulty": 3
     },
@@ -3525,6 +3762,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse Lionne du combat",
+      "description": "Représentée avec une tête de lionne, son souffle est dit provoquer les vents du désert et les épidémies lorsqu'elle est en colère.",
       "clue": "Déesse du combat",
       "difficulty": 3
     },
@@ -3534,6 +3772,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse des Scorpions et du Venin (Protectrice des hommes)",
+      "description": "Associée à la respiration et à la guérison des piqûres venimeuses, elle figure parmi les quatre déesses protectrices des vases canopes.",
       "clue": "Déesse des Scorpions et du Venin (Protectrice des hommes)",
       "difficulty": 3
     },
@@ -3543,6 +3782,7 @@
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse de la féminité et de l'accouchement",
+      "description": "Représentée sous une forme d'hippopotame debout au ventre gonflé, elle est invoquée pour protéger les femmes enceintes des forces maléfiques.",
       "clue": "Déesse de la féminité et de l'accouchement",
       "difficulty": 3
     },
@@ -3692,6 +3932,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Dieux guerrier de la Jeunesse et de la Rébellion",
+      "description": "Enfant prodige né d'une grossesse de trois ans, il se rebelle contre son propre père après un conflit avec un roi-dragon et se bat monté sur des roues de feu.",
       "clue": "Dieux guerrier de la Jeunesse et de la Rébellion",
       "difficulty": 2
     },
@@ -3701,6 +3942,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Déesse de la création",
+      "description": "Elle façonne les premiers humains à partir d'argile et répare plus tard une brèche dans le ciel avec des pierres de cinq couleurs fondues.",
       "clue": "Déesse de la création",
       "difficulty": 2
     },
@@ -3720,6 +3962,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Dieu de la Pudeur et de la Décence",
+      "description": "Doté d'un troisième œil au milieu du front, il est accompagné d'un chien céleste et réputé pour sa force face aux démons.",
       "clue": "Dieu de la Pudeur",
       "difficulty": 3
     },
@@ -3729,6 +3972,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Dieu du Fleuve Jaune",
+      "description": "Ce dieu-fleuve est réputé avoir autrefois exigé des mariages sacrificiels de jeunes femmes, avant qu'un magistrat ne mette fin à la pratique.",
       "clue": "Dieu du Fleuve Jaune",
       "difficulty": 3
     },
@@ -3738,6 +3982,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Dieu du chaos",
+      "description": "Selon la légende, son corps se sépara en mourant pour former les différents éléments du monde : montagnes, fleuves et ciel étoilé.",
       "clue": "Dieu du chaos",
       "difficulty": 3
     },
@@ -3747,6 +3992,7 @@
       "mythology": "Chinoise",
       "race": "God",
       "domain": "Dieu de l'Esprit Indomptable, de la Résistance et des Épreuve",
+      "description": "Décapité après avoir défié le souverain céleste, il continue le combat en utilisant son nombril comme bouche et ses mamelons comme yeux.",
       "clue": "Dieu de l'Esprit Indomptable",
       "difficulty": 3
     },
@@ -3756,6 +4002,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannan sacerdotale du Sacré, de la Science, des Contrats, du Temps, de l’Éternité et des Éléments. Dieu druide,",
+      "description": "Possédant un chaudron d'abondance inépuisable et une massue capable de tuer neuf hommes d'un coup ou de les ressusciter de l'autre, il est un père tutélaire pour son peuple.",
       "clue": "Dannan sacerdotale du Sacré",
       "difficulty": 2
     },
@@ -3765,6 +4012,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannane guerrière du Massacre, de la Violence, de l'Aurore et des Héros.",
+      "description": "Souvent présentée comme une triple déesse annonçant la mort par ses cris, elle apparaît parfois sous la forme d'une corneille planant au-dessus des champs de bataille.",
       "clue": "Dannane guerrière du Massacre",
       "difficulty": 2
     },
@@ -3784,6 +4032,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannane guerrière des Arts, de la Magie et de la Médecine",
+      "description": "Fille du dieu bon, elle est vénérée comme patronne des poètes, des guérisseurs et des forgerons.",
       "clue": "Dannane guerrière des Arts, de la Magie et de la Médecine",
       "difficulty": 3
     },
@@ -3793,6 +4042,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Mère de tous les Dannans",
+      "description": "Elle est notamment connue comme la mère d'un héros guerrier maîtrisant tous les arts, enfermée par son père pour empêcher une prophétie de se réaliser.",
       "clue": "Mère de tous les Dannans",
       "difficulty": 3
     },
@@ -3802,6 +4052,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Déesse souveraine, personnification mythologique de l'Irlande",
+      "description": "Elle donna son nom à l'île qu'elle incarne, après avoir promis aux nouveaux envahisseurs qu'elle y resterait associée à jamais.",
       "clue": "Déesse souveraine",
       "difficulty": 3
     },
@@ -3811,6 +4062,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "'Aos sì' anciennement humaine. Règne sur le Pouvoir Légitime et ses Dangers.",
+      "description": "Transformée en flaque d'eau puis en papillon par une épouse jalouse, elle finit par se réincarner sous forme humaine après une longue série de métamorphoses.",
       "clue": "'Aos sì' anciennement humaine",
       "difficulty": 3
     },
@@ -3820,6 +4072,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannan artisan de la Forge",
+      "description": "Forgeron divin, il fabrique des armes increvables pour les siens et brasse une bière garantissant l'immortalité à quiconque la boit.",
       "clue": "Dannan artisan de la Forge",
       "difficulty": 3
     },
@@ -3829,6 +4082,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannan de la Guerre à distance, des Invention, du Savoir, du Soleil et de Lumière.",
+      "description": "Il est au cœur d'un célèbre triangle amoureux impliquant une mortelle qu'il tente de reconquérir après qu'elle a oublié son amour passé sous forme d'esprit.",
       "clue": "Dannan de la Guerre à distance",
       "difficulty": 3
     },
@@ -3838,6 +4092,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dieu Souverain de l'Autre-monde (Sidh) où sont cachés les Dannans",
+      "description": "Maître de tous les savoirs et arts à la fois, il rejoint la cour royale après avoir prouvé qu'il excellait dans chaque domaine où les autres n'excellaient que dans un seul.",
       "clue": "Dieu Souverain de l'Autre-monde",
       "difficulty": 3
     },
@@ -3847,6 +4102,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannan guerrier de la Royauté et des richesses",
+      "description": "Ayant perdu un bras au combat, il dut céder temporairement son trône avant qu'un bras articulé en argent ne lui permette de régner à nouveau.",
       "clue": "Dannan guerrier de la Royauté",
       "difficulty": 3
     },
@@ -3856,6 +4112,7 @@
       "mythology": "Celtique Irlandaise",
       "race": "God",
       "domain": "Dannan guerrier de la Magie, du Ciel nocturne, de l’Écriture, de la Poésie et de la Force.",
+      "description": "Réputé pour sa force et son éloquence, il est traditionnellement crédité de l'invention d'un système d'écriture utilisant des encoches sur la pierre ou le bois.",
       "clue": "Dannan guerrier de la Magie",
       "difficulty": 3
     },
@@ -3865,6 +4122,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu des abeilles et du miel",
+      "description": "Vénéré notamment par les apiculteurs de la péninsule du Yucatán, il est associé à l'abeille sans dard sacrée de la région.",
       "clue": "Dieu des abeilles et du miel",
       "difficulty": 2
     },
@@ -3874,6 +4132,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu de la Pluie et de la Foudre",
+      "description": "Souvent représenté avec un long nez recourbé et portant une hache, il est invoqué lors de cérémonies agricoles pour assurer des récoltes abondantes.",
       "clue": "Dieu de la Pluie et de la Foudre",
       "difficulty": 3
     },
@@ -3883,6 +4142,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu Serpent des Vents",
+      "description": "Son ombre serpentine descend visiblement les marches d'une célèbre pyramide lors des équinoxes, phénomène toujours observé aujourd'hui.",
       "clue": "Dieu Serpent des Vents",
       "difficulty": 2
     },
@@ -3892,6 +4152,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu de la mort et des enfers",
+      "description": "Souvent représenté avec un corps squelettique ou en décomposition, il règne sur le niveau le plus bas du monde souterrain.",
       "clue": "Dieu de la mort et des enfers",
       "difficulty": 3
     },
@@ -3901,6 +4162,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Déesse de la Lune et de la Nuit",
+      "description": "Associée à une chauve-souris et à une montagne sacrée, elle est vénérée par un lignage royal comme protectrice tutélaire.",
       "clue": "Déesse de la Lune et de la Nuit",
       "difficulty": 3
     },
@@ -3910,6 +4172,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu des Montagne et des Séisme",
+      "description": "Réputé capable de renverser n'importe quelle montagne d'un coup de pied, il fut vaincu par la ruse de deux frères jumeaux qui le poussèrent à trop manger avant un défi.",
       "clue": "Dieu des Montagne et des Séisme",
       "difficulty": 3
     },
@@ -3919,6 +4182,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu des Chauve-Souris",
+      "description": "Transformé en singe par ses demi-frères jaloux de son talent, il devient avec son jumeau le saint patron des artistes et des artisans.",
       "clue": "Dieu des Chauve-Souris",
       "difficulty": 3
     },
@@ -3928,6 +4192,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
+      "description": "Comme son frère jumeau, il fut changé en singe par leurs demi-frères et partage avec lui le patronage des arts et de l'artisanat.",
       "clue": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
       "difficulty": 3
     },
@@ -3937,6 +4202,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
+      "description": "Il est parfois vénéré comme saint patron des scribes et de l'écriture, en complément du domaine artistique partagé avec son frère jumeau.",
       "clue": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
       "difficulty": 3
     },
@@ -3946,6 +4212,7 @@
       "mythology": "Maya",
       "race": "God",
       "domain": "Déesse de l'eau",
+      "description": "Associée à la lune, à la médecine et à l'accouchement, elle est souvent représentée en compagnie d'un lapin ou tenant un serpent.",
       "clue": "Déesse de l'eau",
       "difficulty": 3
     },
@@ -3955,6 +4222,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Déesse du soleil",
+      "description": "Offensée par le comportement destructeur de son frère, elle se retire dans une grotte et plonge le monde dans l'obscurité, jusqu'à ce qu'une danse comique et un miroir la fassent ressortir.",
       "clue": "Déesse du soleil",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -3965,6 +4233,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu de la création et de la vie",
+      "description": "Avec son épouse, il brasse les eaux primordiales avec une lance ornée de joyaux pour créer les premières îles du Japon.",
       "clue": "Dieu de la création et de la vie",
       "difficulty": 1
     },
@@ -3974,6 +4243,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Déesse de la création et de la mort",
+      "description": "Elle meurt en donnant naissance au dieu du feu, puis se transforme en une créature putréfiée régnant sur le monde souterrain après que son époux l'a suivie et regardée contre sa promesse.",
       "clue": "Déesse de la création et de la mort",
       "difficulty": 1
     },
@@ -3983,6 +4253,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu de la mer",
+      "description": "Banni du ciel pour son comportement destructeur, il se rachète en tuant un dragon à huit têtes et en découvrant une épée sacrée cachée dans sa queue.",
       "clue": "Dieu de la mer",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -3993,6 +4264,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu de la nuit et de la lune",
+      "description": "Il s'attire la colère de sa sœur en tuant la déesse de la nourriture lors d'un banquet, provoquant une séparation définitive entre le jour et la nuit.",
       "clue": "Dieu de la nuit et de la lune",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -4003,6 +4275,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu du vent",
+      "description": "Représenté portant un grand sac sur les épaules, il en libère les vents à sa guise, parfois de façon destructrice.",
       "clue": "Dieu du vent",
       "difficulty": 2
     },
@@ -4012,6 +4285,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu de l'agriculture",
+      "description": "Vénéré aussi bien comme divinité masculine que féminine selon les sanctuaires, il est associé au riz et escorté par des renards messagers.",
       "clue": "Dieu de l'agriculture",
       "difficulty": 2
     },
@@ -4021,6 +4295,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu des tempête",
+      "description": "Entouré d'un cercle de tambours qu'il frappe pour produire le tonnerre, il est souvent représenté avec un compagnon incarnant le vent.",
       "clue": "Dieu des tempête",
       "difficulty": 2
     },
@@ -4030,6 +4305,7 @@
       "mythology": "Shinto",
       "race": "God",
       "domain": "Dieu de la Guerre",
+      "description": "Vénéré comme protecteur des guerriers et des archers, il est aussi considéré comme la déification d'un empereur légendaire.",
       "clue": "Dieu de la Guerre",
       "difficulty": 3
     },
@@ -4039,6 +4315,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "9e avatar du dieu Vishnou descendu sur Terre",
+      "description": "Prince né dans le luxe et protégé de toute souffrance, il renonce à sa vie princière après avoir découvert la maladie, la vieillesse et la mort, pour atteindre l'éveil sous un arbre.",
       "clue": "9e avatar du dieu Vishnou descendu sur Terre",
       "difficulty": 1
     },
@@ -4048,6 +4325,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Dieu du feu, des sacrifice et du foyer",
+      "description": "Messager entre les hommes et les dieux, il transporte les offrandes sacrificielles vers le ciel à travers les flammes du rituel.",
       "clue": "Dieu du feu, des sacrifice et du foyer",
       "difficulty": 2
     },
@@ -4057,6 +4335,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Roi des Dieu et Dieu de la Création et de l'éveil Divin",
+      "description": "Souvent représenté avec quatre visages regardant chaque point cardinal, il naît d'un lotus poussant du nombril d'une autre grande divinité.",
       "clue": "Roi des Dieu et Dieu de la Création et de l'éveil Divin",
       "difficulty": 2
     },
@@ -4066,6 +4345,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Dieu de la sagesse de l’éducation et intelligence, possède une tête d'éléphant",
+      "description": "Reconnaissable à sa tête d'éléphant, il doit cette apparence à un malentendu tragique avec son propre père, et il est invoqué avant toute nouvelle entreprise.",
       "clue": "Dieu de la sagesse",
       "difficulty": 2,
       "fatherName": "Shiva"
@@ -4076,6 +4356,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Roi de Dieux et Dieu du Ciel",
+      "description": "Armé d'une arme façonnée à partir des ossements d'un sage, il combat un démon serpent responsable d'une grande sécheresse.",
       "clue": "Roi de Dieux et Dieu du Ciel",
       "difficulty": 2
     },
@@ -4085,6 +4366,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Déesse de la Préservation, Transformation et Destruction",
+      "description": "Représentée avec une guirlande de crânes et la langue tirée, elle incarne la destruction nécessaire du temps et de l'ego avant de se calmer sous le pied de son époux.",
       "clue": "Déesse de la Destruction",
       "difficulty": 2
     },
@@ -4094,6 +4376,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Dieu du Yoga et de la Destruction",
+      "description": "Sa danse cosmique rythme à la fois la création et la destruction de l'univers, et un troisième œil sur son front peut réduire toute chose en cendres.",
       "clue": "Dieu du Yoga et de la Destruction",
       "difficulty": 2
     },
@@ -4103,6 +4386,7 @@
       "mythology": "Hindouisme",
       "race": "God",
       "domain": "Dieu protecteur du monde",
+      "description": "Il descend sur terre sous diverses incarnations chaque fois que l'équilibre du monde est menacé par le chaos.",
       "clue": "Dieu protecteur du monde",
       "difficulty": 2
     },
@@ -4112,6 +4396,7 @@
       "mythology": "Mésopotamienne",
       "race": "God",
       "domain": "Déesse de l'Amour et de la Guerre",
+      "description": "Elle descend au royaume des morts pour tenter d'en reprendre le contrôle et doit se dépouiller d'un vêtement à chacune des sept portes qu'elle franchit.",
       "clue": "Déesse de l'Amour et de la Guerre",
       "difficulty": 2
     },
@@ -4132,6 +4417,7 @@
       "mythology": "Mésopotamienne",
       "race": "God",
       "domain": "Dieu de l'Exorcisme, de Babylone et de la Création",
+      "description": "Devenu le dieu suprême de Babylone en récompense d'avoir vaincu la déesse primordiale du chaos marin, il façonne ensuite le monde et l'humanité à partir des restes de son adversaire.",
       "clue": "Dieu de l'Exorcisme, de Babylone et de la Création",
       "difficulty": 3
     },
@@ -4141,6 +4427,7 @@
       "mythology": "Yoruba",
       "race": "God",
       "domain": "Dieu de la Création de l'univers et du Ciel",
+      "description": "Considéré comme trop distant et abstrait pour recevoir un culte direct, il délègue la gestion du monde à des divinités intermédiaires plus accessibles.",
       "clue": "Dieu de la Création de l'univers et du Ciel",
       "difficulty": 2
     },
@@ -4150,6 +4437,7 @@
       "mythology": "Yoruba",
       "race": "God",
       "domain": "Dieu Créateur des Hommes et de la Justice",
+      "description": "Chargé de façonner les corps humains dans l'argile, il se laisse une fois griser par le vin de palme, ce qui expliquerait l'origine des handicaps physiques selon la tradition.",
       "clue": "Dieu Créateur des Hommes et de la Justice",
       "difficulty": 2
     },
@@ -4159,6 +4447,7 @@
       "mythology": "Yoruba",
       "race": "God",
       "domain": "Déesse des Rivières, des Esprit et de la Fertilité",
+      "description": "Mère protectrice associée à l'eau et à la maternité, elle est aujourd'hui encore vénérée dans plusieurs traditions afro-américaines issues de la diaspora.",
       "clue": "Déesse des Rivières, des Esprit et de la Fertilité",
       "difficulty": 2
     },
@@ -4168,6 +4457,7 @@
       "mythology": "Aztèque",
       "race": "God",
       "domain": "Dieu Serpent des Vents",
+      "description": "Ce serpent à plumes descend aux Enfers pour y récupérer les ossements des générations passées et créer une nouvelle humanité en y versant son propre sang.",
       "clue": "Dieu Serpent des Vents",
       "difficulty": 2
     },
@@ -4177,6 +4467,7 @@
       "mythology": "Aztèque",
       "race": "God",
       "domain": "Dieu de l'eau",
+      "description": "Il réside dans un paradis pluvieux réservé aux victimes de noyade et de foudre, et exige des offrandes pour garantir la pluie.",
       "clue": "Dieu de l'eau",
       "difficulty": 2
     },
@@ -4186,6 +4477,7 @@
       "mythology": "Celtique",
       "race": "God",
       "domain": "Déesse des Animaux et de la Chasse",
+      "description": "Associée à l'ours, elle est particulièrement vénérée dans les régions alpines et helvètes du monde celtique continental.",
       "clue": "Déesse des Animaux et de la Chasse",
       "difficulty": 2
     },
@@ -4195,6 +4487,7 @@
       "mythology": "Celtique",
       "race": "God",
       "domain": "Déesse de la Guerre et de la Destruction",
+      "description": "Figure de la guerre et de la souveraineté, elle peut prédire l'issue des batailles et apparaît parfois sous une forme animale annonciatrice de mort.",
       "clue": "Déesse de la Guerre et de la Destruction",
       "difficulty": 2
     },
@@ -4204,6 +4497,7 @@
       "mythology": "Gaulois",
       "race": "God",
       "domain": "Dieu de la Nature et des Cycles",
+      "description": "Représenté assis en tailleur et coiffé de bois de cerf, il est associé à la faune sauvage, à l'abondance et au cycle des saisons.",
       "clue": "Dieu de la Nature",
       "difficulty": 2
     },
@@ -4213,6 +4507,7 @@
       "mythology": "Gaulois",
       "race": "God",
       "domain": "Dieu de la Guerre, Juge des Morts",
+      "description": "Dieu tutélaire de la tribu, il aurait été honoré par des sacrifices humains selon certaines sources antiques, bien que ce point reste débattu par les historiens.",
       "clue": "Dieu de la Guerre, Juge des Morts",
       "difficulty": 3
     },
@@ -4222,6 +4517,7 @@
       "mythology": "Slave",
       "race": "God",
       "domain": "Déesse de la Sorcellerie et de la Chasse",
+      "description": "Elle vit dans une hutte montée sur des pattes de poulet, au fond d'une forêt, et se déplace dans un mortier qu'elle propulse à l'aide d'un pilon.",
       "clue": "Déesse de la Sorcellerie et de la Chasse",
       "difficulty": 3
     },
@@ -4231,6 +4527,7 @@
       "mythology": "Slave",
       "race": "God",
       "domain": "Dieu de la Nuit et de l'Obscurité",
+      "description": "Son nom signifie littéralement 'dieu noir', et il est traditionnellement opposé à une divinité solaire incarnant les forces bénéfiques et lumineuses.",
       "clue": "Dieu de la Nuit et de l'Obscurité",
       "difficulty": 3
     },
@@ -4240,6 +4537,7 @@
       "mythology": "Vaudou",
       "race": "God",
       "domain": "Iwa (Dieu) de la Vie et de la Mort",
+      "description": "Reconnaissable à son haut-de-forme, ses lunettes noires et son visage peint en crâne, il se tient au carrefour entre le monde des vivants et celui des morts.",
       "clue": "Iwa (Dieu) de la Vie et de la Mort",
       "difficulty": 2
     },
@@ -4249,6 +4547,7 @@
       "mythology": "Vaudou",
       "race": "God",
       "domain": "Iwa (Déesse) des Morts et du passage à l’au-delà",
+      "description": "Épouse du gardien des cimetières, elle est honorée par une offrande de rhum poivré versée sur la première tombe féminine d'un cimetière consacré.",
       "clue": "Iwa (Déesse) des Morts et du passage à l’au-delà",
       "difficulty": 3
     },
@@ -4258,6 +4557,7 @@
       "mythology": "Celte",
       "race": "God",
       "domain": "Banshee Déesse de la Beauté et de l'Amour",
+      "description": "Reine légendaire de l'Autre-monde associée à un promontoire rocheux, elle est parfois annoncée par trois oiseaux enchanteurs dont le chant guérit les malades.",
       "clue": "Banshee Déesse de la Beauté et de l'Amour",
       "difficulty": 3
     },
@@ -4267,6 +4567,7 @@
       "mythology": "Hawaïenne",
       "race": "God",
       "domain": "Déesse du Feu, des Éclairs, de la Danse, des Volcans et de la Violence",
+      "description": "Elle façonne les îles depuis sa demeure au sommet d'un volcan actif, et sa colère se manifeste par des éruptions et des coulées de lave.",
       "clue": "Déesse du Feu, des Éclairs, de la Danse, des Volcans et de la Violence",
       "difficulty": 2
     },
@@ -4276,6 +4577,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe d'air représenté par une paire de plateaux, il est associé à la recherche d'équilibre et d'harmonie, sous la tutelle de la planète Vénus.",
       "clue": "Signe des gens nés entre le 23 septembre et le 22 octobre",
       "difficulty": 1
     },
@@ -4285,6 +4587,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Premier signe du zodiaque, associé à l'élément feu et à la planète Mars, il est représenté par un animal aux cornes recourbées.",
       "clue": "Signe des gens nés entre le 21 mars et le 20 avril",
       "difficulty": 1
     },
@@ -4294,6 +4597,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe d'eau placé sous la tutelle de la Lune, il est représenté par un crustacé à carapace, symbole de protection et de sensibilité.",
       "clue": "Signe des gens nés entre le 20 juin et le 22 Juillet",
       "difficulty": 1
     },
@@ -4303,6 +4607,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe de terre gouverné par Saturne, il est représenté par une créature hybride à corps de chèvre et queue de poisson.",
       "clue": "Signe des gens nés entre le 22 décembre et le 20 janvier",
       "difficulty": 1
     },
@@ -4312,6 +4617,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe d'air placé sous la tutelle de Mercure, il est représenté par une paire de jumeaux symbolisant la dualité et la communication.",
       "clue": "Signe des gens nés entre le 21 mai et le 21 juin",
       "difficulty": 1
     },
@@ -4331,6 +4637,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe de feu gouverné par le Soleil, il est représenté par le roi des animaux, symbole de fierté et de rayonnement.",
       "clue": "Signe des gens nés entre le 23 juillet et le 22 août",
       "difficulty": 1
     },
@@ -4340,6 +4647,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Dernier signe du zodiaque, associé à l'élément eau et à la planète Neptune, il est représenté par une paire de créatures aquatiques nageant en sens opposés.",
       "clue": "Signe des gens nés entre le 19 fevrier et le 20 mars",
       "difficulty": 1
     },
@@ -4349,6 +4657,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe de feu gouverné par Jupiter, il est représenté par un archer mi-homme mi-cheval visant vers les étoiles.",
       "clue": "Signe des gens nés entre le 23 novembre et le 21 décembre",
       "difficulty": 1
     },
@@ -4358,6 +4667,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe d'eau associé à Mars et Pluton, il est représenté par un arthropode venimeux, symbole d'intensité et de transformation.",
       "clue": "Signe des gens nés entre le 23 octobre et le 22 novembre",
       "difficulty": 1
     },
@@ -4367,6 +4677,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe de terre gouverné par Vénus, il est représenté par un animal aux cornes puissantes, symbole de patience et d'obstination.",
       "clue": "Signe des gens nés entre le 21 avril et le 20 mai",
       "difficulty": 1
     },
@@ -4376,6 +4687,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe d'air gouverné par Uranus, il est représenté par un porteur d'eau versant le contenu d'une jarre, symbole d'originalité et d'innovation.",
       "clue": "Signe des gens nés entre le 21 janvier et le 18 fevrier",
       "difficulty": 1
     },
@@ -4385,6 +4697,7 @@
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
       "zodiacType": "Classique",
+      "description": "Signe de terre placé sous la tutelle de Mercure, il est représenté par une jeune femme tenant un épi de blé, symbole de méthode et de perfectionnisme.",
       "clue": "Signe des gens nés entre le 23 août et le 22 septembre",
       "difficulty": 1
     },
@@ -4575,6 +4888,7 @@
       "race": "Heroes",
       "domain": null,
       "story": "Héros légendaire de Sumer, recherche l'immortalité après la mort d'Enkidou",
+      "description": "Roi aux deux tiers divin, il part en quête d'une plante d'immortalité après avoir perdu son compagnon le plus proche, avant de se résigner à sa condition mortelle.",
       "clue": "Héros légendaire de Sumer, recherche l'immortalité après la mort d'Enkidou",
       "difficulty": 2
     },
@@ -4584,6 +4898,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Luxure",
+      "description": "Selon certaines traditions rabbiniques tardives, elle aurait été la toute première femme, refusant de se soumettre à son compagnon avant de le quitter et de devenir une figure démoniaque nocturne.",
       "clue": "Luxure",
       "difficulty": 1
     },
@@ -4593,6 +4908,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Orgueil",
+      "description": "Son nom signifie littéralement 'porteur de lumière', et il est traditionnellement identifié à un ange déchu pour s'être rebellé contre l'autorité divine par orgueil.",
       "clue": "Orgueil",
       "difficulty": 1
     },
@@ -4602,6 +4918,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Colère et Cruauté",
+      "description": "Son nom signifie 'l'adversaire' ou 'l'accusateur' en hébreu, et il apparaît dans le livre de Job comme un accusateur testant la fidélité d'un homme juste avant de devenir la figure du mal absolu.",
       "clue": "Colère et Cruauté",
       "difficulty": 1
     },
@@ -4611,6 +4928,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Luxure",
+      "description": "Démon associé à la luxure, il est mentionné dans un livre deutérocanonique où il tue sept maris successifs avant d'être chassé par une odeur de poisson brûlé.",
       "clue": "Luxure",
       "difficulty": 2
     },
@@ -4620,6 +4938,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Gourmandise",
+      "description": "Son nom hébreu signifie 'sans valeur' ou 'sans maître', et il est associé dans certains textes à la tromperie et à l'absence totale de loi divine.",
       "clue": "Gourmandise",
       "difficulty": 2
     },
@@ -4629,6 +4948,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange messager de Dieu",
+      "description": "Il annonce les naissances les plus importantes des grandes religions abrahamiques et souffle dans la trompette annonçant le jugement final.",
       "clue": "Messager de Dieu",
       "difficulty": 2
     },
@@ -4638,6 +4958,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Envie",
+      "description": "Créature marine monstrueuse mentionnée dans les textes bibliques, sa force est telle que seul le créateur lui-même est capable de la maîtriser.",
       "clue": "Envie",
       "difficulty": 2
     },
@@ -4647,6 +4968,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange protecteur, chef des armées célestes",
+      "description": "Il mène les armées célestes contre les forces rebelles et pèse les âmes lors du jugement dans certaines traditions.",
       "clue": "Chef des armées célestes",
       "difficulty": 2
     },
@@ -4656,6 +4978,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange guérisseur, protecteur des voyageurs",
+      "description": "Son nom signifie 'Dieu guérit', et il accompagne un jeune homme lors d'un voyage périlleux dans un livre deutérocanonique.",
       "clue": "Guérisseur, protecteur des voyageurs",
       "difficulty": 2
     },
@@ -4665,6 +4988,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de la sagesse et de la lumière divine",
+      "description": "Son nom signifie 'lumière de Dieu', et il est associé dans les textes apocryphes aux avertissements adressés à l'humanité avant de grands cataclysmes.",
       "clue": "Sagesse et lumière divine",
       "difficulty": 2
     },
@@ -4674,6 +4998,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Paresse",
+      "description": "Associé à la paresse, il est parfois représenté assis sur des toilettes, une image satirique héritée de sa vénération originelle liée à un dieu moabite.",
       "clue": "Paresse",
       "difficulty": 3
     },
@@ -4683,6 +5008,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de l'amour et des relations, guide vers l'âme soeur",
+      "description": "Il est traditionnellement invoqué pour apaiser les conflits et retrouver des objets ou des relations perdues.",
       "clue": "Amour et relations",
       "difficulty": 3
     },
@@ -4692,6 +5018,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de la grâce divine et de l'intuition",
+      "description": "Associé à la planète Vénus dans certaines traditions ésotériques, il est lié à l'intuition et à la beauté spirituelle.",
       "clue": "Grâce divine et intuition",
       "difficulty": 3
     },
@@ -4701,6 +5028,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange qui aide à faire le bilan de sa vie et à se réorienter",
+      "description": "Son nom signifie 'miséricorde de Dieu', et il est traditionnellement associé aux visions prophétiques et à l'au-delà.",
       "clue": "Aide à faire le bilan de sa vie",
       "difficulty": 3
     },
@@ -4710,6 +5038,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de la beauté intérieure et de la sagesse",
+      "description": "Son nom signifie 'beauté de Dieu', et la tradition lui attribue le rôle de gardien du jardin d'Éden après l'expulsion des premiers humains.",
       "clue": "Beauté intérieure et sagesse",
       "difficulty": 3
     },
@@ -4719,6 +5048,7 @@
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
       "domain": "Avarice et Cupidité",
+      "description": "Son nom, d'origine araméenne, désigne à l'origine simplement la richesse matérielle avant de devenir la personnification de l'avidité.",
       "clue": "Avarice et Cupidité",
       "difficulty": 3
     },
@@ -4728,6 +5058,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange scribe céleste, ancien prophète Hénoch élevé au rang d'archange",
+      "description": "Selon la tradition juive mystique, il siège tout près du trône divin et sert de scribe céleste consignant les actions de l'humanité.",
       "clue": "Ancien prophète Hénoch élevé au rang d'archange",
       "difficulty": 3
     },
@@ -4737,6 +5068,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de l'harmonie, veille à l'ordre parmi les anges",
+      "description": "Mentionné dans des textes apocryphes plutôt que dans le canon biblique, il est chargé de superviser la conduite des autres êtres célestes.",
       "clue": "Veille à l'ordre parmi les anges",
       "difficulty": 3
     },
@@ -4746,6 +5078,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange qui transmet les prières des hommes à Dieu, frère jumeau de Métatron",
+      "description": "Selon certaines traditions, il serait le frère jumeau céleste d'un autre grand archange, et sa taille serait si immense qu'elle dépasse l'entendement humain.",
       "clue": "Transmet les prières des hommes à Dieu",
       "difficulty": 3
     },
@@ -4755,6 +5088,7 @@
       "mythology": "Abrahamique",
       "race": "Archangels",
       "role": "Archange de la miséricorde et du réconfort divin",
+      "description": "Il est traditionnellement associé à l'épisode biblique où un patriarche fut empêché de sacrifier son fils.",
       "clue": "Miséricorde et réconfort divin",
       "difficulty": 3
     },
@@ -4765,6 +5099,7 @@
       "race": "Arthurian_Knight",
       "story": "Roi légendaire de Bretagne, fondateur de la Table Ronde et porteur de l'épée Excalibur",
       "death": "Blessé mortellement à la bataille de Camlann par Mordred, son corps est emmené sur l'île mythique d'Avalon.",
+      "description": "Conçu grâce à un enchantement transformant son père en sosie d'un autre homme, il prouve sa légitimité royale en retirant seul une arme fichée dans la pierre.",
       "clue": "Roi légendaire de Bretagne porteur de l'épée Excalibur",
       "difficulty": 1,
       "fatherName": "Uther Pendragon"
@@ -4776,6 +5111,7 @@
       "race": "Arthurian_Knight",
       "story": "Le meilleur chevalier de la Table Ronde, élevé par la Dame du Lac, célèbre pour son amour coupable avec Guenièvre.",
       "death": "Finit sa vie comme ermite et se laisse mourir de chagrin après le décès de Guenièvre.",
+      "description": "Élevé par une fée dans un royaume aquatique caché, son amour interdit pour la reine de son propre roi précipite la chute du royaume qu'il sert.",
       "clue": "Le meilleur chevalier de la Table Ronde",
       "difficulty": 1
     },
@@ -4786,6 +5122,7 @@
       "race": "Arthurian_Knight",
       "story": "Mage, prophète et conseiller du roi Arthur. Fils d'un démon et d'une mortelle.",
       "death": "Il ne meurt pas vraiment, mais finit enfermé (souvent vivant dans une grotte, un arbre ou une prison de verre) par la fée Viviane/Morgane.",
+      "description": "Né d'une union entre un démon et une mortelle, il met sa magie et ses prophéties au service d'un royaume qu'il contribue à fonder, avant d'être piégé par sa propre magie transmise à une élève.",
       "clue": "Mage, prophète et conseiller du roi Arthur",
       "difficulty": 1
     },
@@ -4796,6 +5133,7 @@
       "race": "Arthurian_Knight",
       "story": "Père d'Arthur, roi brutal aidé par Merlin pour séduire Ygraine.",
       "death": "Empoisonné par des assassins Saxons via une source d'eau.",
+      "description": "Transformé par magie en sosie d'un duc rival pour séduire son épouse, il engendre ainsi un fils qui grandira loin de la cour avant de révéler sa véritable identité royale.",
       "clue": "Père d'Arthur",
       "difficulty": 1
     },
@@ -4806,6 +5144,7 @@
       "race": "Arthurian_Knight",
       "story": "Héros gallois, chevalier de la Table Ronde au bras court.",
       "death": "Mort variable selon les récits (souvent au combat).",
+      "description": "Victime d'une malédiction lancée par un rival éconduit, il doit affronter un serpent enroulé autour de son bras pour retrouver sa forme normale.",
       "clue": "Héros gallois, chevalier de la Table Ronde au bras court.",
       "difficulty": 2
     },
@@ -4816,6 +5155,7 @@
       "race": "Arthurian_Knight",
       "story": "Fils de Lancelot, le chevalier ultime et le plus pur.",
       "death": "Monte directement au ciel après avoir regardé dans le Graal.",
+      "description": "Fils illégitime d'un grand chevalier, sa pureté absolue lui permet seul de s'asseoir sur le siège périlleux et d'atteindre la quête ultime de la Table Ronde.",
       "clue": "Chevalier ultime et le plus pur.",
       "difficulty": 2
     },
@@ -4826,6 +5166,7 @@
       "race": "Arthurian_Knight",
       "story": "Neveu d'Arthur, sa force liée au soleil (invincible à midi).",
       "death": "Succombe à une blessure à la tête rouverte par Mordred.",
+      "description": "Sa force augmente et diminue selon la position du soleil dans le ciel, et il accepte un défi d'un chevalier vert capable de survivre à sa propre décapitation.",
       "clue": "Chevalié dont la force liée au soleil",
       "difficulty": 2
     },
@@ -4836,6 +5177,7 @@
       "race": "Arthurian_Knight",
       "story": "Reine de Camelot, femme d’Arthur, amante secrète de Lancelot.",
       "death": "Finit sa vie comme religieuse dans un couvent, repentie.",
+      "description": "Son amour interdit pour le meilleur chevalier du royaume précipite la chute de la Table Ronde et la guerre civile qui s'ensuit.",
       "clue": "Reine de Camelot",
       "difficulty": 2
     },
@@ -4846,6 +5188,7 @@
       "race": "Arthurian_Knight",
       "story": "Sénéchal râleur et frère nourricier d'Arthur.",
       "death": "Tué au combat (souvent dans la guerre contre les Romains).",
+      "description": "Frère de lait du roi, il est réputé pour sa langue acérée et ses moqueries envers les autres chevaliers, malgré une loyauté sans faille envers son souverain.",
       "clue": "Sénéchal râleur",
       "difficulty": 2
     },
@@ -4856,6 +5199,7 @@
       "race": "Arthurian_Knight",
       "story": "Fils illégitime (souvent incestueux) d'Arthur et de sa demi-soeur, il usurpe le trône pendant l'absence du roi.",
       "death": "Tué de la main du roi Arthur lors de la bataille de Camlann.",
+      "description": "Né d'une liaison incestueuse prédite par un prophète comme la cause de la chute du royaume, il finit par s'opposer à son propre père dans une bataille fatale aux deux.",
       "clue": "Fils illégitime d'Arthur",
       "difficulty": 2,
       "fatherName": "Arthur Pendragon",
@@ -4868,6 +5212,7 @@
       "race": "Arthurian_Knight",
       "story": "Fée, magicienne maudite et demi-soeur d'Arthur (souvent antagoniste).",
       "death": "Immortelle, elle emmène Arthur mourant sur l'île d'Avalon.",
+      "description": "Demi-sœur du roi et formée à la magie par un enchanteur, sa rivalité avec la cour la pousse à orchestrer plusieurs complots.",
       "clue": "Fée, magicienne maudite",
       "difficulty": 2
     },
@@ -4878,6 +5223,7 @@
       "race": "Arthurian_Knight",
       "story": "Chevalier naïf élevé dans la forêt par sa mère, il est l'un des rares à trouver le Saint Graal grâce à sa pureté.",
       "death": "Meurt paisiblement après avoir accompli la quête du Graal (ou devient le Roi Pêcheur selon les versions).",
+      "description": "Élevé loin de toute chevalerie pour le protéger, sa naïveté initiale l'empêche de poser la question rituelle qui aurait pu guérir un roi blessé lors de sa première visite au château du Graal.",
       "clue": "Chevalier naïf élevé dans la forêt par sa mère",
       "difficulty": 2
     },
@@ -4888,6 +5234,7 @@
       "race": "Arthurian_Knight",
       "story": "Chevalier au Lion, fils du roi Urien et de Morgane.",
       "death": "Meurt de vieillesse, souvent aux côtés de son lion fidèle.",
+      "description": "Après avoir épousé la dame d'une fontaine magique gagnée en combat singulier, il l'abandonne trop longtemps et doit reconquérir sa confiance, aidé d'un lion reconnaissant qu'il a sauvé.",
       "clue": "Chevalier au Lion",
       "difficulty": 2
     },
@@ -4898,6 +5245,7 @@
       "race": "Arthurian_Knight",
       "story": "Cousin de Lancelot, l'un des trois purs à trouver le Graal.",
       "death": "Survit à la quête, finit ermite ou meurt en Terre Sainte.",
+      "description": "Roi breton et cousin d'un chevalier célèbre, il est le seul des trois élus du Graal à survivre et à retourner raconter l'aventure à la cour.",
       "clue": "Cousin de Lancelot, l'un des trois purs à trouver le Graal.",
       "difficulty": 3
     },
@@ -4908,6 +5256,7 @@
       "race": "Arthurian_Knight",
       "story": "Princesse d'Irlande, boit un philtre d'amour avec Tristan.",
       "death": "Meurt de chagrin en découvrant le cadavre de Tristan.",
+      "description": "Promise à un roi de Cornouailles, elle boit par erreur avec l'émissaire chargé de l'escorter un philtre destiné à assurer la fidélité conjugale, déclenchant une passion interdite.",
       "clue": "Princesse d'Irlande",
       "difficulty": 3
     },
@@ -4918,6 +5267,7 @@
       "race": "Arthurian_Knight",
       "story": "Fée (Viviane/Nimue), donne Excalibur et élève Lancelot.",
       "death": "Ne meurt pas (entité magique/immortelle).",
+      "description": "Elle retient le magicien de la cour dans une prison magique après avoir appris tous ses secrets, et règne sur un royaume caché sous les eaux.",
       "clue": "Fée (Viviane/Nimue), élève Lancelot.",
       "difficulty": 3
     },
@@ -4928,6 +5278,7 @@
       "race": "Arthurian_Knight",
       "story": "Roi de Carmélide, père de Guenièvre, donne la Table Ronde à Arthur.",
       "death": "Meurt de vieillesse dans son royaume.",
+      "description": "Père d'une future reine, il devient un allié fidèle après avoir bénéficié d'un soutien militaire décisif lors d'une bataille contre des envahisseurs.",
       "clue": "Roi de Carmélide",
       "difficulty": 3
     },
@@ -4938,6 +5289,7 @@
       "race": "Arthurian_Knight",
       "story": "Chevalier félon de Gorre, ravisseur de la reine Guenièvre.",
       "death": "Décapité par Lancelot lors d'un duel à mort.",
+      "description": "Fils du roi d'un royaume dont nul ne revient normalement vivant, il enlève une reine et provoque une quête périlleuse pour la délivrer.",
       "clue": "Chevalier félon de Gorre",
       "difficulty": 3
     },
@@ -4948,6 +5300,7 @@
       "race": "Arthurian_Knight",
       "story": "Neveu du roi Marc de Cornouailles, preux chevalier, s'eprend d'Iseult",
       "death": "Meurt d'une blessure empoisonnée en croyant qu'Iseult l'a abandonné.",
+      "description": "Envoyé chercher une princesse irlandaise pour le compte de son oncle, il tombe amoureux d'elle après avoir bu par erreur un philtre qui leur était destiné.",
       "clue": "Neveu du roi Marc de Cornouailles",
       "difficulty": 3
     }
