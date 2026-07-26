@@ -6,6 +6,48 @@
 
 ### Changes since the first version
 
+#### V2.0.7
+
+- Enriched the 353 remaining entity descriptions, completing the work started in V2.0.6: every entity now has a description distinct from the quiz clue
+
+#### V2.0.6
+
+- Full spelling and grammar review of entities, places and artifacts (accents, agreement, typography) and removal of leading articles from names, propagated to the fields that reference them
+- Enriched the 54 entity descriptions that were until then identical to the quiz clue
+- Adjusted Olorun's difficulty (1 → 2)
+- Entity:
+  - Iapetus, ex-Lapetus (Updated)
+  - Poissons, ex-Poisson (Updated)
+  - Dvalin, ex-Dwalin (Updated)
+  - Cottos, ex-Cotos (Updated)
+  - Goibniu, ex-Goibnu (Updated)
+  - Érèbe, ex-Erèbe (Updated)
+  - Érinyes, ex-Erinyes (Updated)
+  - Éros, ex-Eros (Updated)
+  - Éphialtès, ex-Ephialtès (Updated)
+  - Ériu, ex-Eriu (Updated)
+  - Étain, ex-Etain (Updated)
+  - Sanglier d'Érymanthe, ex-Sanglier d'Erymanthe (Updated)
+  - Astréos, ex-Astreos (Updated)
+  - Coéos, ex-Coeos (Updated)
+  - Eurymédon, ex-Eurymedon (Updated)
+  - Océanos, ex-Oceanos (Updated)
+  - Lélaps, ex-Lelaps (Updated)
+  - 9 Muses, ex-9 muses (Updated)
+  - Susanoo, ex-Susano (Updated)
+  - Dame du Lac, ex-La dame du Lac (Updated)
+  - Qilin, ex-Kirin (Updated)
+  - Ogma, ex-Ogmios (Updated)
+  - Pele, ex-Pélé (Updated)
+  - Bouddha, ex-Buddha (Updated)
+  - Rê, ex-Ré (Updated)
+  - Mélinoé (Added)
+- Place:
+  - Vanaheim, ex-Vanneheim (Updated)
+  - Jotunheim, ex-Jotunnheim (Updated)
+- Artifact:
+  - Mjölnir, ex-Mjolnir (Updated)
+
 #### V2.0.5
 
 - Normalised non-Latin letters (attached oe ligature, Norse thorn/eth) into Latin equivalents
@@ -44,11 +86,32 @@
 
 #### V2.0.2
 
-- Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Added)
+- Real names for the artifacts and 8 new ones added:
+  - Andvaranaut (Updated)
+  - Keraunos (Added)
+  - Kunée (Added)
+  - Talaria (Added)
+  - Harpé (Added)
+  - Yata no Kagami (Added)
+  - Yasakani no Magatama (Added)
+  - Gleipnir (Added)
+  - Muramasa (Added)
 
 #### V2.0.1
 
-- Ajout des artéfacts initiaux en base : Excalibur, Mjolnir, Anneau d'Andvari, Gungnir, Égide, Trident de Poséidon, Toison d'or, Brísingamen, Gáe Bulg, Kusanagi-no-Tsurugi, Sudarshana Chakra, Saint Graal (Added)
+- Added the initial artifacts to the database:
+  - Excalibur (Added)
+  - Mjolnir (Added)
+  - Anneau d'Andvari (Added)
+  - Gungnir (Added)
+  - Égide (Added)
+  - Trident de Poséidon (Added)
+  - Toison d'or (Added)
+  - Brísingamen (Added)
+  - Gáe Bulg (Added)
+  - Kusanagi-no-Tsurugi (Added)
+  - Sudarshana Chakra (Added)
+  - Saint Graal (Added)
 
 #### V2.0.0
 
@@ -152,6 +215,48 @@
 
 ### Nouveautés depuis la première version
 
+#### V2.0.7
+
+- Enrichissement des 353 descriptions d'entités restantes, complétant le travail débuté en V2.0.6 : toutes les entités disposent désormais d'une description distincte de l'indice du quiz
+
+#### V2.0.6
+
+- Audit orthographique et grammatical complet des entités, lieux et artéfacts (accents, accords, typographie) et suppression des articles en début de nom, avec propagation aux champs qui les référencent
+- Enrichissement des 54 descriptions d'entités jusque-là identiques à l'indice du quiz
+- Ajustement de la difficulté d'Olorun (1 → 2)
+- Entité :
+  - Iapetus, ex-Lapetus (Mise à jour)
+  - Poissons, ex-Poisson (Mise à jour)
+  - Dvalin, ex-Dwalin (Mise à jour)
+  - Cottos, ex-Cotos (Mise à jour)
+  - Goibniu, ex-Goibnu (Mise à jour)
+  - Érèbe, ex-Erèbe (Mise à jour)
+  - Érinyes, ex-Erinyes (Mise à jour)
+  - Éros, ex-Eros (Mise à jour)
+  - Éphialtès, ex-Ephialtès (Mise à jour)
+  - Ériu, ex-Eriu (Mise à jour)
+  - Étain, ex-Etain (Mise à jour)
+  - Sanglier d'Érymanthe, ex-Sanglier d'Erymanthe (Mise à jour)
+  - Astréos, ex-Astreos (Mise à jour)
+  - Coéos, ex-Coeos (Mise à jour)
+  - Eurymédon, ex-Eurymedon (Mise à jour)
+  - Océanos, ex-Oceanos (Mise à jour)
+  - Lélaps, ex-Lelaps (Mise à jour)
+  - 9 Muses, ex-9 muses (Mise à jour)
+  - Susanoo, ex-Susano (Mise à jour)
+  - Dame du Lac, ex-La dame du Lac (Mise à jour)
+  - Qilin, ex-Kirin (Mise à jour)
+  - Ogma, ex-Ogmios (Mise à jour)
+  - Pele, ex-Pélé (Mise à jour)
+  - Bouddha, ex-Buddha (Mise à jour)
+  - Rê, ex-Ré (Mise à jour)
+  - Mélinoé (Ajout)
+- Lieu :
+  - Vanaheim, ex-Vanneheim (Mise à jour)
+  - Jotunheim, ex-Jotunnheim (Mise à jour)
+- Artefact :
+  - Mjölnir, ex-Mjolnir (Mise à jour)
+
 #### V2.0.5
 
 - Normalisation des lettres non-latines (ligature oe attachée, thorn/eth norrois) en équivalents latins
@@ -190,11 +295,32 @@
 
 #### V2.0.2
 
-- Vrais noms des artéfacts et ajout de 8 nouveaux : Andvaranaut (Mise à jour), Keraunos (Ajout), Kunée (Ajout), Talaria (Ajout), Harpé (Ajout), Yata no Kagami (Ajout), Yasakani no Magatama (Ajout), Gleipnir (Ajout), Muramasa (Ajout)
+- Vrais noms des artéfacts et ajout de 8 nouveaux :
+  - Andvaranaut (Mise à jour)
+  - Keraunos (Ajout)
+  - Kunée (Ajout)
+  - Talaria (Ajout)
+  - Harpé (Ajout)
+  - Yata no Kagami (Ajout)
+  - Yasakani no Magatama (Ajout)
+  - Gleipnir (Ajout)
+  - Muramasa (Ajout)
 
 #### V2.0.1
 
-- Ajout des artéfacts initiaux en base : Excalibur, Mjolnir, Anneau d'Andvari, Gungnir, Égide, Trident de Poséidon, Toison d'or, Brísingamen, Gáe Bulg, Kusanagi-no-Tsurugi, Sudarshana Chakra, Saint Graal (Ajout)
+- Ajout des artéfacts initiaux en base :
+  - Excalibur (Ajout)
+  - Mjolnir (Ajout)
+  - Anneau d'Andvari (Ajout)
+  - Gungnir (Ajout)
+  - Égide (Ajout)
+  - Trident de Poséidon (Ajout)
+  - Toison d'or (Ajout)
+  - Brísingamen (Ajout)
+  - Gáe Bulg (Ajout)
+  - Kusanagi-no-Tsurugi (Ajout)
+  - Sudarshana Chakra (Ajout)
+  - Saint Graal (Ajout)
 
 #### V2.0.0
 
