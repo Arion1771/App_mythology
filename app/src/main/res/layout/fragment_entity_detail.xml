@@ -188,5 +188,15 @@
                 android:textSize="13sp" android:textColor="#FFEAEAEA"/>
         </LinearLayout>
 
+        <LinearLayout android:id="@+id/row_popularculture"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingVertical="6dp" android:visibility="gone">
+            <TextView android:layout_width="130dp" android:layout_height="wrap_content"
+                android:text="Culture populaire" android:textStyle="bold" android:textSize="13sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:id="@+id/tv_detail_popularculture"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="13sp" android:textColor="#FFEAEAEA"/>
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>
