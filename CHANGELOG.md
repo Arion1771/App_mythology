@@ -3,6 +3,11 @@
 ## V2
 
 
+### V2.1.0
+
+- Suppression des doublons d'information à l'étape 2 du quiz (entités et artéfacts) : race/type, mythologie et indice, déjà affichés en permanence depuis le début de la question, ne sont plus répétés dans le bloc d'informations complémentaires
+
+
 #### V2.0.7
 
 - Enrichissement des 353 descriptions d'entités restantes, complétant le travail débuté en V2.0.6 : toutes les entités disposent désormais d'une description distincte de l'indice du quiz

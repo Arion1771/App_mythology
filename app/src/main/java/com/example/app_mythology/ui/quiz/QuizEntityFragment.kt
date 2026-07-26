@@ -163,9 +163,6 @@ class QuizEntityFragment : Fragment() {
         else String.format("%.1f", v)
 
     private fun buildAllInfo(e: EntiteEntity) = buildString {
-        appendLine("Race : ${translateRace(e.race)}")
-        appendLine("Mythologie : ${e.mythology}")
-        e.clue?.let          { appendLine("Indice : $it") }
         e.domain?.let        { appendLine("Domaine : $it") }
         e.godType?.let       { appendLine("Type divin : ${translateGodType(it)}") }
         e.fatherName?.let    { appendLine("Père : $it") }
