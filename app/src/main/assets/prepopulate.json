@@ -10,7 +10,7 @@
       "equivalentName": "3 Parques",
       "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux de l'Olympe doivent se soumettre.",
       "clue": "Déesse du destin",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "name": "9 Muses",
@@ -22,7 +22,7 @@
       "id": 2,
       "description": "Filles du roi des dieux et d'une Titanide de la mémoire, elles président chacune à un art différent et inspirent poètes et artistes depuis leur montagne sacrée.",
       "clue": "Déesses mineures des arts",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       "monsterType": "Aigle",
       "description": "Envoyé par Zeus pour dévorer chaque jour le foie de Prométhée enchaîné au Caucase",
       "clue": "Dévore chaque jour le foie de Prométhée",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 5,
@@ -329,7 +329,7 @@
       "equivalentName": "Erebus",
       "description": "Personnification des ténèbres primordiales, il s'unit à sa propre sœur pour engendrer le jour et l'éther lumineux.",
       "clue": "Dieu des Ténèbres et de l'Obscurité",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Chaos"
     },
     {
@@ -2174,7 +2174,7 @@
       "equivalentName": "3 Moires",
       "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux doivent se soumettre.",
       "clue": "Déesses du destin",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "name": "9 Camènes",
@@ -2186,7 +2186,7 @@
       "id": 190,
       "description": "Ces neuf déesses inspiratrices président chacune à un art différent et sont associées à une source sacrée proche de Rome.",
       "clue": "Équivalent romain des 9 Muses grecques",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 191,
@@ -2415,7 +2415,7 @@
       "equivalentName": "Polyphème",
       "description": "Fils d'un dieu marin, il est aveuglé par un rusé voyageur qui s'était présenté sous un faux nom pour échapper à sa vengeance ensuite.",
       "clue": "Cyclope de l'île de Sicile",
-      "difficulty": 1
+      "difficulty": 2
     },
     {
       "id": 209,
@@ -3040,7 +3040,7 @@
     },
     {
       "id": 261,
-      "name": "Freya",
+      "name": "Freyja",
       "mythology": "Nordique",
       "race": "God",
       "godType": "Vane",
@@ -3146,16 +3146,16 @@
       "description": "Il sacrifie sa main droite dans la gueule d'un loup monstrueux pour permettre aux autres dieux de l'enchaîner par la ruse.",
       "popularCulture": "Dieu jouable aux côtés de Kratos dans God of War Ragnarök.",
       "clue": "Dieu de la justice",
-      "difficulty": 1,
+      "difficulty": 2,
       "fatherName": "Odin"
     },
     {
       "id": 270,
-      "name": "Valkyries",
+      "name": "Valkyrie",
       "mythology": "Nordique",
       "race": "God",
       "godType": "Autre",
-      "domain": "Guerrières divines d'Odin choisissant les morts au combat pour le Valhalla",
+      "domain": "Guerrière divine d'Odin choisissant les morts au combat pour le Valhalla",
       "description": "Chevauchant à travers le ciel, elles choisissent parmi les guerriers tombés au combat ceux qui rejoindront la grande salle du roi des dieux.",
       "popularCulture": "Combattues comme boss optionnels dans God of War (2018) et Ragnarök.",
       "clue": "Guerrières d'Odin choisissant les morts au combat",
@@ -3568,7 +3568,7 @@
     },
     {
       "id": 309,
-      "name": "Nephthys",
+      "name": "Nephtys",
       "mythology": "Égyptienne",
       "race": "God",
       "domain": "Déesse funéraire et protectrice des morts, épouse de Seth",
@@ -5083,26 +5083,6 @@
     },
     {
       "id": 456,
-      "name": "Chamuel",
-      "mythology": "Abrahamique",
-      "race": "Archangels",
-      "role": "Archange de l'amour et des relations, guide vers l'âme soeur",
-      "description": "Il est traditionnellement invoqué pour apaiser les conflits et retrouver des objets ou des relations perdues.",
-      "clue": "Amour et relations",
-      "difficulty": 3
-    },
-    {
-      "id": 457,
-      "name": "Haniel",
-      "mythology": "Abrahamique",
-      "race": "Archangels",
-      "role": "Archange de la grâce divine et de l'intuition",
-      "description": "Associé à la planète Vénus dans certaines traditions ésotériques, il est lié à l'intuition et à la beauté spirituelle.",
-      "clue": "Grâce divine et intuition",
-      "difficulty": 3
-    },
-    {
-      "id": 458,
       "name": "Jérémiel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -5112,17 +5092,7 @@
       "difficulty": 3
     },
     {
-      "id": 459,
-      "name": "Jophiel",
-      "mythology": "Abrahamique",
-      "race": "Archangels",
-      "role": "Archange de la beauté intérieure et de la sagesse",
-      "description": "Son nom signifie 'beauté de Dieu', et la tradition lui attribue le rôle de gardien du jardin d'Éden après l'expulsion des premiers humains.",
-      "clue": "Beauté intérieure et sagesse",
-      "difficulty": 3
-    },
-    {
-      "id": 460,
+      "id": 457,
       "name": "Mammon",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -5132,17 +5102,7 @@
       "difficulty": 3
     },
     {
-      "id": 461,
-      "name": "Métatron",
-      "mythology": "Abrahamique",
-      "race": "Archangels",
-      "role": "Archange scribe céleste, ancien prophète Hénoch élevé au rang d'archange",
-      "description": "Selon la tradition juive mystique, il siège tout près du trône divin et sert de scribe céleste consignant les actions de l'humanité.",
-      "clue": "Ancien prophète Hénoch élevé au rang d'archange",
-      "difficulty": 3
-    },
-    {
-      "id": 462,
+      "id": 458,
       "name": "Raguel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -5152,27 +5112,17 @@
       "difficulty": 3
     },
     {
-      "id": 463,
-      "name": "Sandalphon",
+      "id": 459,
+      "name": "Sariel",
       "mythology": "Abrahamique",
       "race": "Archangels",
-      "role": "Archange qui transmet les prières des hommes à Dieu, frère jumeau de Métatron",
-      "description": "Selon certaines traditions, il serait le frère jumeau céleste d'un autre grand archange, et sa taille serait si immense qu'elle dépasse l'entendement humain.",
-      "clue": "Transmet les prières des hommes à Dieu",
+      "role": "Archange qui veille sur les esprits égarés",
+      "description": "Cité dans le Livre d'Hénoch comme l'un des sept archanges originels, il est chargé de superviser les esprits ayant fauté par la pensée plutôt que par l'acte.",
+      "clue": "Veille sur les esprits égarés",
       "difficulty": 3
     },
     {
-      "id": 464,
-      "name": "Zadkiel",
-      "mythology": "Abrahamique",
-      "race": "Archangels",
-      "role": "Archange de la miséricorde et du réconfort divin",
-      "description": "Il est traditionnellement associé à l'épisode biblique où un patriarche fut empêché de sacrifier son fils.",
-      "clue": "Miséricorde et réconfort divin",
-      "difficulty": 3
-    },
-    {
-      "id": 465,
+      "id": 460,
       "name": "Arthur Pendragon",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5185,7 +5135,7 @@
       "fatherName": "Uther Pendragon"
     },
     {
-      "id": 466,
+      "id": 461,
       "name": "Lancelot",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5197,7 +5147,7 @@
       "difficulty": 1
     },
     {
-      "id": 467,
+      "id": 462,
       "name": "Merlin",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5209,7 +5159,7 @@
       "difficulty": 1
     },
     {
-      "id": 468,
+      "id": 463,
       "name": "Uther Pendragon",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5220,7 +5170,7 @@
       "difficulty": 1
     },
     {
-      "id": 469,
+      "id": 464,
       "name": "Caradoc",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5231,7 +5181,7 @@
       "difficulty": 2
     },
     {
-      "id": 470,
+      "id": 465,
       "name": "Galahad",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5242,7 +5192,7 @@
       "difficulty": 2
     },
     {
-      "id": 471,
+      "id": 466,
       "name": "Gauvain",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5253,7 +5203,7 @@
       "difficulty": 2
     },
     {
-      "id": 472,
+      "id": 467,
       "name": "Guenièvre",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5265,7 +5215,7 @@
       "difficulty": 2
     },
     {
-      "id": 473,
+      "id": 468,
       "name": "Keu",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5276,7 +5226,7 @@
       "difficulty": 2
     },
     {
-      "id": 474,
+      "id": 469,
       "name": "Mordred",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5289,7 +5239,7 @@
       "motherName": "Morgane"
     },
     {
-      "id": 475,
+      "id": 470,
       "name": "Morgane",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5301,7 +5251,7 @@
       "difficulty": 2
     },
     {
-      "id": 476,
+      "id": 471,
       "name": "Perceval",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5313,7 +5263,7 @@
       "difficulty": 2
     },
     {
-      "id": 477,
+      "id": 472,
       "name": "Yvain",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5324,7 +5274,7 @@
       "difficulty": 2
     },
     {
-      "id": 478,
+      "id": 473,
       "name": "Bohort",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5335,7 +5285,7 @@
       "difficulty": 3
     },
     {
-      "id": 479,
+      "id": 474,
       "name": "Iseult",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5346,7 +5296,7 @@
       "difficulty": 3
     },
     {
-      "id": 480,
+      "id": 475,
       "name": "Dame du Lac",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5357,7 +5307,7 @@
       "difficulty": 3
     },
     {
-      "id": 481,
+      "id": 476,
       "name": "Léodagan",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5368,7 +5318,7 @@
       "difficulty": 3
     },
     {
-      "id": 482,
+      "id": 477,
       "name": "Méléagant",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -5379,7 +5329,7 @@
       "difficulty": 3
     },
     {
-      "id": 483,
+      "id": 478,
       "name": "Tristan",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
