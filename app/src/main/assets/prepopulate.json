@@ -9,6 +9,7 @@
       "domain": "Déesse du destin",
       "equivalentName": "3 Parques",
       "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux de l'Olympe doivent se soumettre.",
+      "popularCulture": "Hercule (Disney)",
       "clue": "Déesse du destin",
       "difficulty": 2
     },
@@ -21,6 +22,7 @@
       "equivalentName": "9 Camènes",
       "id": 2,
       "description": "Filles du roi des dieux et d'une Titanide de la mémoire, elles président chacune à un art différent et inspirent poètes et artistes depuis leur montagne sacrée.",
+      "popularCulture": "Hercule (Disney)",
       "clue": "Déesses mineures des arts",
       "difficulty": 2
     },
@@ -32,6 +34,7 @@
       "ascendantName": "Thétis",
       "story": "Héros à l'invulnérabilité totale à l'exception du talon, par là où sa mère Thétis l'a tenu en le plongeant dans le Styx",
       "description": "Trempé enfant dans un fleuve infernal par sa mère pour le rendre invulnérable, il meurt finalement d'une flèche à l'unique endroit resté vulnérable.",
+      "popularCulture": "Troie, A Total War Saga: Troy",
       "clue": "Héros presque invulnérable",
       "difficulty": 1
     },
@@ -54,7 +57,7 @@
       "godType": "Olympien",
       "equivalentName": "Vénus",
       "description": "Née de l'écume marine après la castration d'un dieu primordial, elle possède une ceinture magique rendant irrésistible quiconque la porte.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Percy Jackson",
       "clue": "Déesse de la beauté",
       "difficulty": 1
     },
@@ -67,7 +70,7 @@
       "godType": "Olympien",
       "equivalentName": "Apollon",
       "description": "Jumeau d'une déesse chasseresse, il rend ses oracles à travers une prêtresse inspirée par des vapeurs mystérieuses s'échappant d'une faille rocheuse.",
-      "popularCulture": "Personnage jouable dans Smite ; combattu dans God of War III ; apparaît dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, God of War III, Percy Jackson",
       "clue": "Dieu de la lumière",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -81,7 +84,7 @@
       "godType": "Olympien",
       "equivalentName": "Mars",
       "description": "Détesté par la plupart des autres Olympiens malgré son rang divin, il est associé à la violence brutale des champs de bataille plutôt qu'à la stratégie militaire.",
-      "popularCulture": "Personnage jouable dans Smite ; antagoniste principal du premier God of War (2005) ; figure récurrente des comics et films Wonder Woman.",
+      "popularCulture": "Smite, God of War, Wonder Woman",
       "clue": "Dieu de la guerre",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -96,7 +99,7 @@
       "godType": "Olympien",
       "equivalentName": "Diane",
       "description": "Jumelle d'un dieu archer, elle obtient de son père le vœu de rester éternellement vierge et parcourt les forêts avec un cortège de nymphes.",
-      "popularCulture": "Personnage jouable dans Smite ; dirige les 'Chasseresses d'Artémis' dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Percy Jackson",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -122,7 +125,7 @@
       "godType": "Olympien",
       "equivalentName": "Minerve",
       "description": "Née directement du crâne de son père après qu'il eut avalé sa mère enceinte, elle jaillit déjà adulte et armée de pied en cap.",
-      "popularCulture": "Personnage jouable dans Smite ; alliée récurrente de Kratos dans la saga God of War ; source des pouvoirs de Wonder Woman dans les comics DC.",
+      "popularCulture": "Smite, God of War, Wonder Woman",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -135,7 +138,7 @@
       "domain": "Titan portant la voûte céleste",
       "equivalentName": null,
       "description": "Condamné en punition d'une guerre contre les dieux olympiens à porter un fardeau écrasant pour l'éternité, il tente une fois de s'en débarrasser en confiant la tâche à un héros de passage.",
-      "popularCulture": "Porte le monde sur ses épaules dans God of War ; condamné à porter le ciel dans la saga littéraire Percy Jackson.",
+      "popularCulture": "God of War, Percy Jackson",
       "clue": "Titan portant la voûte céleste",
       "difficulty": 1,
       "fatherName": "Japet"
@@ -159,6 +162,7 @@
       "race": "Monster",
       "monsterType": "Mi-Homme Mi-Cheval",
       "description": "Race née de l'union entre Ixion et un nuage façonné à l'image d'Héra, réputée pour son penchant pour le vin et les excès lors des banquets.",
+      "popularCulture": "Harry Potter, Fantasia, Percy Jackson",
       "clue": "Créature à corps de cheval et buste d'homme",
       "difficulty": 1
     },
@@ -169,7 +173,7 @@
       "race": "Monster",
       "monsterType": "Chien",
       "description": "Sa naissance est attribuée à Typhon et Échidna ; il ne laisse jamais une âme quitter le royaume qu'il surveille.",
-      "popularCulture": "Inspire directement le chien à trois têtes 'Touffu' dans Harry Potter à l'école des sorciers ; combattu dans God of War et Hades.",
+      "popularCulture": "Harry Potter, God of War, Hadès",
       "clue": "Possède Trois têtes, garde les Enfers",
       "difficulty": 1
     },
@@ -194,6 +198,7 @@
       "equivalentName": "Charon",
       "id": 16,
       "description": "Il exige une pièce de monnaie placée dans la bouche des défunts pour accepter de les transporter à travers le fleuve séparant le monde des vivants de celui des morts.",
+      "popularCulture": "Hadès, Percy Jackson",
       "clue": "Dieu des passages et passeur des âmes vers les Enfers",
       "difficulty": 1,
       "fatherName": "Érèbe",
@@ -216,6 +221,7 @@
       "race": "Monster",
       "monsterType": "Centaure",
       "description": "Contrairement aux autres membres de son espèce, il est réputé pour sa sagesse et sa maîtrise de la médecine, de la musique et du tir à l'arc ; il forma plusieurs grands héros grecs.",
+      "popularCulture": "Percy Jackson",
       "clue": "Premier Centaure, fils de Chronos et Formateur de Héros",
       "difficulty": 1
     },
@@ -227,6 +233,7 @@
       "ascendantName": "Helios/Hécate",
       "story": "Magicienne divine, fille d'Hélios, métamorphoses les compagnons d'Ulysse en porcs",
       "description": "Elle vit recluse sur une île où elle transforme les marins imprudents en animaux à l'aide de potions et d'un bâton magique.",
+      "popularCulture": "Circé (Madeline Miller)",
       "clue": "Magicienne divine, fille d'Hélios",
       "difficulty": 2
     },
@@ -251,7 +258,7 @@
       "domain": "Roi des titan et titan du temps",
       "equivalentName": "Saturne",
       "description": "Après avoir mutilé et détrôné son propre père à l'aide d'une faucille, il dévore chacun de ses enfants par crainte d'une prophétie annonçant sa propre chute.",
-      "popularCulture": "Antagoniste principal de God of War II et III ; antagoniste majeur de la fin de la saga littéraire Percy Jackson.",
+      "popularCulture": "God of War, Percy Jackson",
       "clue": "Roi des titan et titan du temps",
       "difficulty": 1,
       "fatherName": "Ouranos",
@@ -277,7 +284,7 @@
       "godType": "Olympien",
       "equivalentName": "Cérès",
       "description": "Le deuil qu'elle porte après l'enlèvement de sa fille plonge la terre entière dans un hiver stérile jusqu'à ce qu'un compromis soit trouvé avec le ravisseur.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Percy Jackson",
       "clue": "Déesse de l'agriculture",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -292,7 +299,7 @@
       "godType": "Olympien",
       "equivalentName": "Bacchus",
       "description": "Né une seconde fois de la cuisse de son père après la mort de sa mère mortelle, il enseigne aux hommes l'art de la viticulture et déchaîne des cortèges de fidèles en transe.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît sous le nom 'Mr. D' dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Percy Jackson",
       "clue": "Dieu du vin et de la fête",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -340,6 +347,7 @@
       "godType": "Autre",
       "domain": "Déesses chthoniennes de la vengeance",
       "description": "Nées du sang versé lors de la mutilation du ciel primordial, elles remontent des Enfers pour tourmenter les criminels que la justice humaine laisse impunis.",
+      "popularCulture": "Hadès, Percy Jackson",
       "clue": "Déesses chthoniennes de la vengeance",
       "equivalentName": "Furies",
       "difficulty": 2
@@ -365,7 +373,7 @@
       "godType": "Primordial",
       "equivalentName": "Terra",
       "description": "Surgie du vide primordial, elle engendre seule le ciel étoilé pour qu'il la recouvre entièrement, puis s'unit à lui pour donner naissance aux premières générations divines.",
-      "popularCulture": "Personnage jouable dans Smite ; antagoniste majeure des derniers tomes de la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Percy Jackson",
       "clue": "Déesse de la Terre",
       "difficulty": 1,
       "fatherName": "Chaos"
@@ -387,7 +395,7 @@
       "race": "Monster",
       "monsterType": "Mi-Aigle Mi-Lion",
       "description": "Corps de lion et tête-ailes d'aigle, gardien de trésors et de mines d'or",
-      "popularCulture": "Créature récurrente des jeux de fantasy (World of Warcraft, The Witcher 3) ; a inspiré l'hippogriffe Buck dans Harry Potter.",
+      "popularCulture": "Harry Potter, World of Warcraft, The Witcher 3",
       "clue": "Corps de lion et tête-ailes d'aigle, gardien de trésors",
       "difficulty": 1
     },
@@ -400,7 +408,7 @@
       "domain": "Dieu de la richesse et du monde souterrain",
       "equivalentName": "Pluton",
       "description": "Bien que redouté, il ne quitte que rarement son royaume souterrain et se montre étonnamment juste envers les âmes qu'il gouverne, contrairement à l'image qu'on lui prête souvent.",
-      "popularCulture": "Protagoniste jouable du roguelike Hades (Supergiant Games, 2020) ; antagoniste du film d'animation Hercule (Disney, 1997) et de God of War II/III.",
+      "popularCulture": "Hadès, Hercule (Disney), God of War",
       "clue": "Dieu de la richesse et du monde souterrain",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -414,6 +422,7 @@
       "ascendantName": null,
       "story": "Héros Troyen, Frère de Paris et fils de Priam, Tueur de Patrocle",
       "description": "Meilleur défenseur de sa cité assiégée, il est traîné derrière un char autour des murailles après sa défaite face à son adversaire le plus acharné.",
+      "popularCulture": "Troie, A Total War Saga: Troy",
       "clue": "Héros Troyen, Tueur de Patrocle",
       "difficulty": 1
     },
@@ -452,7 +461,7 @@
       "godType": "Olympien",
       "equivalentName": "Vulcain",
       "description": "Rejeté par sa propre mère à sa naissance en raison de sa difformité, il devient malgré tout le forgeron le plus talentueux de l'Olympe et se venge par un piège astucieux.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans le film d'animation Hercule (Disney, 1997).",
+      "popularCulture": "Smite, Hercule (Disney)",
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -467,7 +476,7 @@
       "godType": "Olympien",
       "equivalentName": "Junon",
       "description": "Épouse et sœur du roi des dieux, elle poursuit sans relâche de sa jalousie les nombreuses conquêtes et enfants illégitimes de son mari volage.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans God of War et dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, God of War, Percy Jackson",
       "clue": "Déesse de la famille",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -482,7 +491,7 @@
       "story": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "equivalentName": "Hercule",
       "description": "Rendu fou par une déesse jalouse, il tue sa propre famille dans un accès de démence, et doit accomplir une série d'épreuves impossibles pour expier ce crime.",
-      "popularCulture": "Héros du film d'animation Disney Hercule (1997) et du film Hercules (2014, avec Dwayne Johnson) ; personnage jouable dans Smite.",
+      "popularCulture": "Hercule (Disney), Hercules",
       "clue": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "difficulty": 1
     },
@@ -495,7 +504,7 @@
       "godType": "Olympien",
       "equivalentName": "Mercure",
       "description": "À peine né, il vole déjà le troupeau d'un dieu et invente la lyre à partir d'une carapace de tortue pour se faire pardonner.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans le film d'animation Hercule (Disney, 1997) et dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, Hercule (Disney), Percy Jackson",
       "clue": "Messager des dieux",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -509,7 +518,7 @@
       "domain": "Déesse du foyer",
       "equivalentName": "Vesta",
       "description": "Première née puis dernière recrachée par son père, elle cède sa place parmi les douze grandes divinités olympiennes pour préserver la paix, préférant veiller sur le feu sacré.",
-      "popularCulture": "Mentionnée comme gardienne du foyer de l'Olympe dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Percy Jackson",
       "clue": "Déesse du foyer",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -522,7 +531,7 @@
       "race": "Monster",
       "monsterType": "Serpent",
       "description": "Lorsqu'on lui coupe une tête, deux repoussent, tuée par Héraclès",
-      "popularCulture": "L'un des travaux d'Héraclès, combattue dans God of War: Chains of Olympus et dans le film Hercule (Disney, 1997).",
+      "popularCulture": "God of War, Hercule (Disney)",
       "clue": "Lorsqu'on lui coupe une tête, deux repoussent",
       "difficulty": 1
     },
@@ -534,7 +543,7 @@
       "ascendantName": null,
       "story": "Fils de Dédale, s'envole trop près du soleil et tombe dans la mer",
       "description": "Enfermé avec son père dans une tour, il s'envole grâce à des ailes de plumes et de cire, mais périt pour avoir désobéi à l'avertissement de ne pas trop s'approcher du soleil.",
-      "popularCulture": "Sujet du tableau La Chute d'Icare de Bruegel et référence récurrente en littérature et en musique populaire (notamment chez Kavinsky, chanson « Nightcall »).",
+      "popularCulture": "La Chute d'Icare (Bruegel), Nightcall (Kavinsky)",
       "clue": "Fils de Dédale",
       "difficulty": 1
     },
@@ -546,7 +555,7 @@
       "ascendantName": "Éole",
       "story": "Chef des Argonautes, Retrouve la Toison d'Or",
       "description": "Envoyé par un oncle usurpateur récupérer une toison dorée gardée par un dragon, il rassemble un équipage de héros pour l'accompagner dans cette quête périlleuse.",
-      "popularCulture": "Héros du film Jason et les Argonautes (1963), célèbre pour les effets spéciaux en stop-motion de Ray Harryhausen.",
+      "popularCulture": "Jason et les Argonautes",
       "clue": "Chef des Argonautes",
       "difficulty": 1
     },
@@ -570,6 +579,7 @@
       "ascendantName": null,
       "story": "Béni par le touché d'or",
       "description": "Ayant reçu l'exaucement d'un vœu imprudent, il se retrouve incapable de manger ou de boire, transformant même sa propre fille au moindre contact.",
+      "popularCulture": "Fortnite",
       "clue": "Béni par le touché d'or",
       "difficulty": 1
     },
@@ -582,6 +592,7 @@
       "domain": "Dieu des Rêves, on s'endort dans ses bras",
       "equivalentName": "Morpheus",
       "description": "Fils du dieu du sommeil, il a le pouvoir de prendre l'apparence de n'importe quel humain dans les rêves des dormeurs.",
+      "popularCulture": "Percy Jackson",
       "clue": "Dieu des Rêves",
       "difficulty": 2,
       "fatherName": "Hypnos"
@@ -605,6 +616,7 @@
       "godType": "Primordial",
       "equivalentName": "Nox",
       "description": "Si redoutable que même le roi des dieux hésite à s'aventurer dans sa demeure, elle engendre seule une descendance nombreuse de divinités funestes.",
+      "popularCulture": "Hadès",
       "clue": "Déesse de la nuit",
       "difficulty": 1,
       "fatherName": "Chaos"
@@ -617,6 +629,7 @@
       "ascendantName": "Calliope",
       "story": "Pars chercher sa femme au enfer mais échoue, connnu pour ses talents à la lyre",
       "description": "Musicien légendaire capable de charmer arbres et bêtes sauvages par son chant, il perd son épouse une seconde fois pour s'être retourné trop tôt.",
+      "popularCulture": "Hadès",
       "clue": "Pars chercher sa femme au enfer mais échoue",
       "difficulty": 2
     },
@@ -642,6 +655,7 @@
       "domain": "Dieu de la nature",
       "equivalentName": "Faunus",
       "description": "Mi-homme mi-bouc dès la naissance, il effraie sa propre mère et donne son nom au sentiment de terreur irraisonnée qu'il peut provoquer chez les voyageurs égarés.",
+      "popularCulture": "Percy Jackson",
       "clue": "Dieu de la nature",
       "difficulty": 1
     },
@@ -652,7 +666,7 @@
       "race": "Monster",
       "monsterType": "Cheval",
       "description": "Cheval Ailé, Compagnon de Bélérophon",
-      "popularCulture": "Monture ailée des films Le Choc des Titans (1981 et 2010) ; incarné par le chevalier Seiya dans le manga/anime Saint Seiya.",
+      "popularCulture": "Le Choc des Titans, Saint Seiya",
       "clue": "Cheval Ailé",
       "difficulty": 1,
       "fatherName": "Poséidon"
@@ -665,7 +679,7 @@
       "ascendantName": "Zeus",
       "story": "Tueur de la méduse",
       "description": "Envoyé chercher la tête d'une gorgone dont le regard pétrifie quiconque le croise, il utilise un bouclier poli comme miroir pour l'affronter sans jamais la regarder directement.",
-      "popularCulture": "Héros des films Le Choc des Titans (1981 et son remake de 2010) et de sa suite La Colère des Titans (2012).",
+      "popularCulture": "Le Choc des Titans",
       "clue": "Tueur de la méduse",
       "difficulty": 1
     },
@@ -678,6 +692,7 @@
       "domain": "Déesse du printemps, enfermée au enfer 6 mois de l'année",
       "equivalentName": "Proserpine",
       "description": "Enlevée par le souverain des Enfers alors qu'elle cueillait des fleurs, elle doit désormais partager son année entre le monde souterrain et la surface après avoir goûté quelques grains de grenade.",
+      "popularCulture": "Hadès",
       "clue": "Déesse du printemps",
       "difficulty": 1,
       "fatherName": "Zeus",
@@ -704,6 +719,7 @@
       "primordial": false,
       "equivalentName": "Polyphemus",
       "description": "Fils d'un dieu marin, il est aveuglé par un rusé voyageur qui s'était présenté sous un faux nom pour échapper à sa vengeance ensuite.",
+      "popularCulture": "Assassin's Creed Odyssey",
       "clue": "Cyclope de l'île de Sicile",
       "difficulty": 1,
       "fatherName": "Poséidon"
@@ -717,7 +733,7 @@
       "godType": "Olympien",
       "equivalentName": "Neptune",
       "description": "Armé d'une arme à trois pointes capable de déclencher des séismes et des raz-de-marée, il dispute sans succès plusieurs villes grecques à d'autres divinités olympiennes.",
-      "popularCulture": "Personnage jouable dans Smite ; père du héros dans la saga littéraire et télévisée Percy Jackson ; affronté dans l'extension Le Destin de l'Atlantide d'Assassin's Creed Odyssey.",
+      "popularCulture": "Smite, Percy Jackson, Assassin's Creed Odyssey",
       "clue": "Dieu des océans",
       "difficulty": 1,
       "fatherName": "Cronos",
@@ -731,7 +747,7 @@
       "domain": "Titan de la prévoyance, offre le feu aux Hommes",
       "equivalentName": null,
       "description": "Il déroba le feu sacré pour le donner aux hommes, un acte de défi qui lui vaut d'être enchaîné à un rocher où un rapace dévore son foie chaque jour.",
-      "popularCulture": "Combattu, enchaîné et suppliant, dans God of War (2005) ; inspiration libre du film Prometheus (Ridley Scott, 2012).",
+      "popularCulture": "God of War, Prometheus",
       "clue": "Titan de la prévoyance",
       "difficulty": 2,
       "fatherName": "Japet"
@@ -799,6 +815,7 @@
       "race": "Monster",
       "monsterType": "Femme Oiseau",
       "description": "Filles du dieu-fleuve Achéloos, elles attirent les marins vers les récifs grâce à leur chant.",
+      "popularCulture": "Percy Jackson",
       "clue": "Mi-Femme Mi-Oiseau anthropophage à la voix ensorcelante",
       "difficulty": 1
     },
@@ -810,7 +827,7 @@
       "ascendantName": "Éole",
       "story": "Enchaîne Thanatos pour eviter la mort, Condamné a pousser un rocher pour l'éternité",
       "description": "Ayant tenté de déjouer la mort à plusieurs reprises par la ruse, il est condamné pour l'éternité à répéter un effort toujours recommencé et jamais achevé.",
-      "popularCulture": "Sujet de l'essai philosophique Le Mythe de Sisyphe d'Albert Camus (1942).",
+      "popularCulture": "Le Mythe de Sisyphe (Camus)",
       "clue": "Condamné a pousser un rocher pour l'éternité",
       "difficulty": 1
     },
@@ -821,7 +838,7 @@
       "race": "Monster",
       "monsterType": "Mi-Femme Mi-Lion",
       "description": "Fille d'Échidna et Typhon, elle dévore quiconque échoue à répondre à son énigme.",
-      "popularCulture": "Énigme et combat emblématiques de God of War III ; apparaît dans Assassin's Creed Origins et Smite.",
+      "popularCulture": "God of War III, Assassin's Creed Origins, Smite",
       "clue": "Pose des énigmes à l'entrée de Thèbes",
       "difficulty": 1
     },
@@ -845,6 +862,7 @@
       "ascendantName": "Poséidon",
       "story": "Tueur du Minotaure, Roi mythique d'Athène, Fils d'Egée",
       "description": "Après avoir suivi un fil déroulé pour retrouver son chemin dans un dédale, il oublie de hisser une voile blanche annonçant sa victoire, provoquant le suicide de son père par désespoir.",
+      "popularCulture": "Hadès",
       "clue": "Tueur du Minotaure",
       "difficulty": 1
     },
@@ -856,7 +874,7 @@
       "ascendantName": "Hermès ( Arrière-grand-père )",
       "story": "Héros de l'Iliade et de l'Odyssée, époux de Pénélope, père de Télémaque",
       "description": "Rusé stratège à l'origine d'un cheval de bois décisif, il met dix années supplémentaires à rentrer chez lui, affrontant monstres et tentations en chemin.",
-      "popularCulture": "Héros de la série d'animation culte Ulysse 31 (1981) qui transpose son odyssée dans l'espace.",
+      "popularCulture": "Ulysse 31",
       "clue": "Héros de l'Iliade et de l'Odyssée",
       "difficulty": 1
     },
@@ -869,7 +887,7 @@
       "godType": "Olympien",
       "equivalentName": "Jupiter",
       "description": "Caché à sa naissance pour échapper à un père dévorant ses propres enfants, il finit par le renverser et se partage ensuite le règne du monde avec ses frères.",
-      "popularCulture": "Personnage jouable dans Smite ; antagoniste des films Le Choc des Titans (1981 et son remake de 2010) et La Colère des Titans (2012) ; figure centrale de God of War III.",
+      "popularCulture": "Smite, Le Choc des Titans, God of War III",
       "clue": "Dieux du ciel et roi des dieux",
       "difficulty": 1
     },
@@ -904,6 +922,7 @@
       "ascendantName": "Zeus ( Arrière-grand-père )",
       "story": "Second meilleur guerrier grec lors de la guerre de Troie",
       "description": "Après avoir été privé des armes d'un héros défunt au profit d'un rival plus rusé, il sombre dans la folie et se donne la mort par honte.",
+      "popularCulture": "A Total War Saga: Troy",
       "clue": "Second meilleur guerrier grec lors de la guerre de Troie",
       "difficulty": 2
     },
@@ -971,7 +990,7 @@
       "race": "Monster",
       "monsterType": "Géant aux Cent Yeux",
       "description": "Géant aux cent yeux chargé par Héra de surveiller Io, tué par Hermès",
-      "popularCulture": "A inspiré le nom du gardien Argus Rusard (Argus Filch) dans Harry Potter.",
+      "popularCulture": "Harry Potter",
       "clue": "Géant aux cent yeux, gardien d'Io",
       "difficulty": 2
     },
@@ -1162,6 +1181,7 @@
       "domain": "Dieu de la Terreur et de l'effroi",
       "equivalentName": "Formido",
       "description": "Fils du dieu de la guerre, il accompagne son père au combat aux côtés de son frère jumeau incarnant une peur différente.",
+      "popularCulture": "Assassin's Creed Odyssey",
       "clue": "Dieu de la Terreur et de l'effroi",
       "difficulty": 2
     },
@@ -1278,6 +1298,7 @@
       "race": "Monster",
       "monsterType": "Géant à Trois Corps",
       "description": "Géant à trois corps dont Héraclès doit voler le troupeau lors de son dixième travail",
+      "popularCulture": "La Divine Comédie (Dante)",
       "clue": "Géant à trois corps, dixième travail d'Héraclès",
       "difficulty": 2
     },
@@ -1299,6 +1320,7 @@
       "race": "Monster",
       "monsterType": "Femme Oiseau",
       "description": "Elles enlèvent leurs victimes ou souillent leur nourriture, et furent notamment envoyées tourmenter un roi aveugle.",
+      "popularCulture": "Percy Jackson",
       "clue": "corps de femmes sans bras avec ailes d'oiseau, à grande mémoire",
       "difficulty": 2
     },
@@ -1325,6 +1347,7 @@
       "domain": "Déesse de la magie",
       "equivalentName": "Trivia",
       "description": "Associée aux carrefours et à la lune, elle est invoquée par les magiciennes et accompagnée de chiens fantomatiques lors de ses apparitions nocturnes.",
+      "popularCulture": "Hadès",
       "clue": "Déesse de la magie",
       "difficulty": 2
     },
@@ -1335,6 +1358,7 @@
       "race": "Giant",
       "giantType": "Geant",
       "description": "Terrassé lors de la Gigantomachie, son adversaire portait la peau d'un lion légendaire en guise d'armure durant le combat.",
+      "popularCulture": "Wonder Woman",
       "clue": "Géant s'opposant à Hermès",
       "difficulty": 2
     },
@@ -1359,6 +1383,7 @@
       "domain": "Titan de l'Est, du soleil et de la lumière",
       "equivalentName": null,
       "description": "Titan associé à la lumière céleste, il est le père d'une triade de divinités régnant respectivement sur le soleil, la lune et l'aurore.",
+      "popularCulture": "Hyperion Cantos (Dan Simmons)",
       "clue": "Titan de l'Est, du soleil et de la lumière",
       "difficulty": 2,
       "fatherName": "Ouranos",
@@ -1373,6 +1398,7 @@
       "domain": "Dieu du sommeil",
       "equivalentName": "Somnus",
       "description": "Il vit dans une caverne où ne pénètrent jamais les rayons du soleil, et son simple toucher plonge dieux et mortels dans un sommeil profond.",
+      "popularCulture": "Hadès",
       "clue": "Dieu du sommeil",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1386,6 +1412,7 @@
       "domain": "Déesse des arc en ciel",
       "equivalentName": "Arcus",
       "description": "Messagère rapide des dieux, elle relie le ciel à la terre et à la mer par le chemin coloré qu'elle emprunte.",
+      "popularCulture": "Percy Jackson",
       "clue": "Déesse des arc en ciel",
       "difficulty": 2
     },
@@ -1419,6 +1446,7 @@
       "race": "Monster",
       "monsterType": "Serpent-Dragon",
       "description": "Dragon aux cent têtes gardien des pommes d'or du jardin des Hespérides",
+      "popularCulture": "Hadès",
       "clue": "Dragon aux cent têtes gardien des pommes d'or",
       "difficulty": 2
     },
@@ -1505,6 +1533,7 @@
       "domain": "Déesse de la vengeance et de l'équilibre",
       "equivalentName": "Invidia",
       "description": "Elle punit l'excès et l'orgueil démesuré, notamment celui d'un jeune homme tombé amoureux de son propre reflet.",
+      "popularCulture": "Resident Evil 3",
       "clue": "Déesse de la vengeance et de l'équilibre",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1604,6 +1633,7 @@
       "ascendantName": null,
       "story": "Arbitre de la pomme de la discorde, fils de Priam et frère d'Hector, il tue Achille d'une flèche dans le talon",
       "description": "Berger élevé loin de la cour après une prophétie annonçant qu'il causerait la perte de sa cité, son choix entre trois déesses déclenche un conflit majeur.",
+      "popularCulture": "Troie",
       "clue": "Arbitre de la pomme de la discorde",
       "difficulty": 2
     },
@@ -1637,6 +1667,7 @@
       "race": "Giant",
       "giantType": "Geant",
       "description": "Géant s'opposant à Poséidon, l'eau qui le touche se transforme en poison",
+      "popularCulture": "Percy Jackson",
       "clue": "Géant s'opposant à Poséidon",
       "difficulty": 2
     },
@@ -1647,6 +1678,7 @@
       "race": "Giant",
       "giantType": "Geant",
       "description": "Considéré comme un chef parmi les siens, il s'en prit à Héra avant d'être frappé par la foudre puis achevé par une flèche.",
+      "popularCulture": "Percy Jackson",
       "clue": "Géant s'opposant à Zeus",
       "difficulty": 2
     },
@@ -1745,6 +1777,7 @@
       "domain": "Dieu de la mort",
       "equivalentName": "Mors",
       "description": "Frère jumeau du dieu du sommeil, il est parfois trompé ou enchaîné par des mortels rusés cherchant à échapper temporairement à son emprise.",
+      "popularCulture": "Smite",
       "clue": "Dieu de la mort",
       "difficulty": 2,
       "fatherName": "Nyx"
@@ -1779,6 +1812,7 @@
       "race": "Monster",
       "monsterType": "Homme-Poisson",
       "description": "Serviteur marin de Poséidon, mi-homme mi-poisson soufflant dans une conque",
+      "popularCulture": "La Petite Sirène (Disney)",
       "clue": "Serviteur marin de Poséidon, mi-homme mi-poisson",
       "difficulty": 2
     },
@@ -1802,6 +1836,7 @@
       "domain": "Titan des cataclysmes, des vents forts et des tempètes",
       "equivalentName": null,
       "description": "Monstre primordial, père des monstres, adversaire de Zeus",
+      "popularCulture": "Percy Jackson",
       "clue": "Titan des cataclysmes, des vents forts et des tempètes",
       "difficulty": 2,
       "fatherName": "Tartare",
@@ -1836,6 +1871,7 @@
       "race": "Erinyes",
       "domain": "Colère implacable",
       "description": "L'une des trois sœurs vengeresses nées du sang d'Ouranos mutilé, elle poursuit sans relâche les coupables de crimes impunis.",
+      "popularCulture": "Hadès",
       "clue": "Colère implacable",
       "difficulty": 3
     },
@@ -1986,6 +2022,7 @@
       "race": "Erinyes",
       "domain": "Jalousie vengeresse",
       "description": "L'une des trois sœurs vengeresses, son nom est resté dans le langage courant pour désigner une femme acariâtre.",
+      "popularCulture": "Hadès",
       "clue": "Jalousie vengeresse",
       "difficulty": 3
     },
@@ -2010,6 +2047,7 @@
       "fatherName": "Hadès",
       "motherName": "Perséphone",
       "description": "Elle hante les tombes et provoque des visions terrifiantes chez les mortels endormis, semant la folie sur son passage.",
+      "popularCulture": "Hadès II",
       "clue": "Déesse chthonienne des fantômes et des cauchemars",
       "difficulty": 3
     },
@@ -2138,6 +2176,7 @@
       "race": "Erinyes",
       "domain": "Vengeance du meurtre",
       "description": "L'une des trois sœurs vengeresses, elle punit spécifiquement les meurtriers, en particulier ceux qui ont tué un membre de leur propre famille.",
+      "popularCulture": "Hadès",
       "clue": "Vengeance du meurtre",
       "difficulty": 3
     },
@@ -2209,7 +2248,7 @@
       "godType": "Olympien",
       "equivalentName": "Apollon",
       "description": "Rendant ses oracles à travers une prêtresse inspirée, il partage avec sa sœur jumelle la maîtrise de l'arc et de la lumière.",
-      "popularCulture": "Personnage jouable dans Smite ; combattu dans God of War III ; apparaît dans la saga littéraire Percy Jackson.",
+      "popularCulture": "Smite, God of War III, Percy Jackson",
       "clue": "Dieu de la lumière et des arts",
       "difficulty": 1,
       "fatherName": "Zeus"
@@ -2262,6 +2301,7 @@
       "godType": "Olympien",
       "domain": "Déesse de la chasteté, de l'innocence et de la chasse",
       "description": "Jumelle d'un dieu archer, elle obtient de son père le vœu de rester éternellement vierge et parcourt les forêts avec un cortège de nymphes.",
+      "popularCulture": "Wonder Woman",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2375,6 +2415,7 @@
       "godType": "Olympien",
       "domain": "Déesse de la sagesse et de la stratégie et de l'artisanat",
       "description": "Née directement du crâne de son père après qu'il eut avalé sa mère enceinte, elle jaillit déjà adulte et armée de pied en cap.",
+      "popularCulture": "Harry Potter",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
       "fatherName": "Jupiter"
@@ -2534,6 +2575,7 @@
       "godType": "Olympien",
       "domain": "Dieu de la forge et du feu",
       "description": "Rejeté par sa propre mère à sa naissance en raison de sa difformité, il devient malgré tout le forgeron le plus talentueux, son atelier situé sous un volcan en activité.",
+      "popularCulture": "Star Trek",
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Jupiter",
@@ -2632,6 +2674,7 @@
       "ascendantName": "Vénus",
       "story": "Héros troyen fondateur de Rome, fils de Vénus, sujet de l'Énéide de Virgile",
       "description": "Après une fuite depuis une cité en flammes, il erre plusieurs années en Méditerranée avant de fonder en Italie la lignée qui donnera naissance à une grande cité.",
+      "popularCulture": "L'Énéide (Virgile)",
       "clue": "Héros troyen fondateur de Rome",
       "difficulty": 2
     },
@@ -2750,6 +2793,7 @@
       "domain": "Dieu des Rêves",
       "equivalentName": "Morphée",
       "description": "Fils du dieu du sommeil, il façonne les rêves en empruntant l'apparence de n'importe quel être humain qu'il visite.",
+      "popularCulture": "Matrix",
       "clue": "Dieu des Rêves",
       "difficulty": 2
     },
@@ -3033,7 +3077,7 @@
       "monsterType": "Loup",
       "id": 260,
       "description": "Les dieux, redoutant sa force grandissante, le ligotèrent avec un lien magique forgé par des nains, non sans qu'il n'arrache le bras du dieu qui accepta de placer sa main dans sa gueule en gage de confiance.",
-      "popularCulture": "Antagoniste majeur de God of War (2018) ; combattu dans Assassin's Creed Valhalla.",
+      "popularCulture": "God of War, Assassin's Creed Valhalla",
       "clue": "Loup géant fils de Loki, enchaîné par les dieux",
       "difficulty": 1,
       "fatherName": "Loki"
@@ -3046,7 +3090,7 @@
       "godType": "Vane",
       "domain": "Déesse de la fertilité,de l'amour et de la beauté",
       "description": "Elle possède une moitié des guerriers tombés au combat, l'autre moitié revenant au roi des dieux, et pleure des larmes d'or lorsqu'elle est séparée de son époux disparu.",
-      "popularCulture": "Personnage central de God of War (2018) et Ragnarök ; personnage jouable dans Smite.",
+      "popularCulture": "God of War, Smite",
       "clue": "Déesse de la fertilité",
       "difficulty": 1,
       "fatherName": "Njord"
@@ -3059,7 +3103,7 @@
       "godType": "Ase",
       "domain": "Gardien du Bifröst",
       "description": "Doté d'une ouïe si fine qu'il entend l'herbe pousser, il veille sans jamais dormir à l'entrée du royaume des dieux et sonnera son cor à l'annonce du crépuscule final.",
-      "popularCulture": "Personnage récurrent de l'Univers Cinématographique Marvel (interprété par Idris Elba) ; boss de God of War Ragnarök.",
+      "popularCulture": "Marvel, God of War Ragnarök",
       "clue": "Gardien du Bifröst",
       "difficulty": 1
     },
@@ -3071,7 +3115,7 @@
       "godType": "Autre",
       "domain": "Déesse la mort",
       "description": "Mi-vivante mi-cadavre d'apparence, elle règne sur ceux qui ne sont pas morts au combat, dans un royaume froid et brumeux distinct de la grande salle des guerriers.",
-      "popularCulture": "Antagoniste principale du film Thor: Ragnarok (2017, sous le nom Hela, interprétée par Cate Blanchett).",
+      "popularCulture": "Thor: Ragnarok",
       "clue": "Déesse la mort",
       "difficulty": 1,
       "fatherName": "Loki"
@@ -3083,7 +3127,7 @@
       "monsterType": "Serpent",
       "id": 264,
       "description": "Sa taille est si grande qu'il encercle le monde des hommes en se mordant la queue.",
-      "popularCulture": "Le Serpent-Monde affronté lors de l'affrontement final de God of War Ragnarök.",
+      "popularCulture": "God of War Ragnarök",
       "clue": "Serpent monde, fils de Loki, encercle Midgard",
       "difficulty": 1,
       "fatherName": "Loki"
@@ -3095,7 +3139,7 @@
       "race": "Monster",
       "monsterType": "Créature Marine Géante",
       "description": "Gigantesque créature des profondeurs capable d'engloutir des navires entiers",
-      "popularCulture": "Rendu célèbre par la réplique « Release the Kraken » du film Le Choc des Titans (2010) ; apparaît dans Pirates des Caraïbes : Le Coffre du mort (2006).",
+      "popularCulture": "Le Choc des Titans, Pirates des Caraïbes",
       "clue": "Gigantesque créature des profondeurs engloutissant les navires",
       "difficulty": 1
     },
@@ -3107,7 +3151,7 @@
       "giantType": "Géant Jotunns",
       "domain": "Dieu de la sournoiserie et de la duperie",
       "description": "Géant Jotunn adopté par les Ases, dieu de la ruse et de la sournoiserie",
-      "popularCulture": "Personnage central de l'Univers Cinématographique Marvel (Tom Hiddleston) et de sa série Disney+ Loki ; personnage jouable dans Smite.",
+      "popularCulture": "Marvel, Loki, Smite",
       "clue": "Dieu de la sournoiserie et de la duperie",
       "difficulty": 1
     },
@@ -3119,7 +3163,7 @@
       "godType": "Ase",
       "domain": "Roi des dieux",
       "description": "Il sacrifie un œil pour obtenir la sagesse d'une source mystique et se pend volontairement à l'arbre-monde pendant neuf jours pour percer le secret des runes.",
-      "popularCulture": "Figure clé de God of War (2018) et Ragnarök ; apparaît dans les films Marvel Thor et dans Assassin's Creed Valhalla.",
+      "popularCulture": "God of War, Marvel, Assassin's Creed Valhalla",
       "clue": "Dieu de l’Éternité, de l'Intemporel et roi des dieux",
       "difficulty": 1
     },
@@ -3131,7 +3175,7 @@
       "godType": "Ase",
       "domain": "Dieu de la foudre, du tonerre et de la force",
       "description": "Protecteur des dieux contre les géants, il doit parfois se déguiser en mariée pour récupérer son arme dérobée, au grand embarras des autres divinités.",
-      "popularCulture": "Super-héros central de l'Univers Cinématographique Marvel (Chris Hemsworth) ; protagoniste des jeux vidéo God of War (2018) et Ragnarök.",
+      "popularCulture": "Marvel, God of War",
       "clue": "Dieu de la foudre et du tonerre",
       "difficulty": 1,
       "fatherName": "Odin"
@@ -3144,7 +3188,7 @@
       "godType": "Ase",
       "domain": "Dieu de la justice",
       "description": "Il sacrifie sa main droite dans la gueule d'un loup monstrueux pour permettre aux autres dieux de l'enchaîner par la ruse.",
-      "popularCulture": "Dieu jouable aux côtés de Kratos dans God of War Ragnarök.",
+      "popularCulture": "God of War Ragnarök",
       "clue": "Dieu de la justice",
       "difficulty": 2,
       "fatherName": "Odin"
@@ -3157,7 +3201,7 @@
       "godType": "Autre",
       "domain": "Guerrière divine d'Odin choisissant les morts au combat pour le Valhalla",
       "description": "Chevauchant à travers le ciel, elles choisissent parmi les guerriers tombés au combat ceux qui rejoindront la grande salle du roi des dieux.",
-      "popularCulture": "Combattues comme boss optionnels dans God of War (2018) et Ragnarök.",
+      "popularCulture": "God of War",
       "clue": "Guerrières d'Odin choisissant les morts au combat",
       "difficulty": 1
     },
@@ -3180,6 +3224,7 @@
       "godType": "Ase",
       "domain": "Dieu de la lumière",
       "description": "Le plus aimé des dieux, sa mort provoquée par une ruse et un seul objet oublié dans un serment universel est perçue comme un présage du crépuscule des dieux.",
+      "popularCulture": "God of War",
       "clue": "Dieu de la lumière",
       "difficulty": 2,
       "fatherName": "Odin",
@@ -3192,6 +3237,7 @@
       "race": "Monster",
       "monsterType": "Mort-Vivant",
       "description": "Mort-vivant nordique à force surhumaine, gardien acharné du trésor de sa tombe",
+      "popularCulture": "The Elder Scrolls V: Skyrim",
       "clue": "Mort-vivant nordique gardien de trésor",
       "difficulty": 2
     },
@@ -3212,6 +3258,7 @@
       "race": "Monster",
       "monsterType": "Dragon",
       "description": "Nain transformé en dragon par la convoitise de l'or maudit d'Andvari, tué par Sigurd",
+      "popularCulture": "L'Anneau du Nibelung (Wagner)",
       "clue": "Nain transformé en dragon, tué par Sigurd",
       "difficulty": 2
     },
@@ -3223,6 +3270,7 @@
       "godType": "Vane",
       "domain": "Dieu de l'agriculture, de la prospérité et de la paix",
       "description": "Il possède un sanglier doré et un navire pliable pouvant tenir dans une poche, et renonce à son épée magique par amour pour une géante.",
+      "popularCulture": "God of War Ragnarök",
       "clue": "Dieu de l'agriculture",
       "difficulty": 2,
       "fatherName": "Njord"
@@ -3265,6 +3313,7 @@
       "monsterType": "Corbeau",
       "id": 280,
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
+      "popularCulture": "God of War",
       "clue": "Corbeau d'Odin représentant la pensée",
       "difficulty": 2
     },
@@ -3298,6 +3347,7 @@
       "godType": "Ase",
       "domain": "Connaissance et Sagesse",
       "description": "Décapité lors d'un conflit entre deux clans divins, sa tête préservée par magie continue de délivrer des conseils au roi des dieux.",
+      "popularCulture": "God of War",
       "clue": "Connaissance et Sagesse",
       "difficulty": 2
     },
@@ -3308,6 +3358,7 @@
       "monsterType": "Corbeau",
       "id": 284,
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
+      "popularCulture": "God of War",
       "clue": "Corbeau d'Odin représentant la mémoire",
       "difficulty": 2
     },
@@ -3318,6 +3369,7 @@
       "monsterType": "Dragon",
       "id": 285,
       "description": "Il se nourrit des cadavres des damnés et échange des insultes avec un aigle perché au sommet de l'arbre-monde, par l'intermédiaire d'un messager.",
+      "popularCulture": "Nidhogg",
       "clue": "Dragon qui ronge les racines de l'Yggdrasil",
       "difficulty": 2
     },
@@ -3339,6 +3391,7 @@
       "monsterType": "Écureuil",
       "id": 287,
       "description": "Il fait la navette entre la cime et les racines de l'arbre-monde, portant des insultes entre un aigle et un serpent qui se détestent.",
+      "popularCulture": "God of War",
       "clue": "Écureuil messager de l'Yggdrasil",
       "difficulty": 2
     },
@@ -3350,6 +3403,7 @@
       "godType": "Ase",
       "domain": "Déesse de la terre et des moissons, épouse de Thor à la chevelure d'or",
       "description": "Sa chevelure dorée, coupée par malice par un dieu rusé, doit être remplacée par une parure forgée par des nains talentueux.",
+      "popularCulture": "Marvel",
       "clue": "Déesse de la terre et des moissons",
       "difficulty": 2
     },
@@ -3361,6 +3415,7 @@
       "godType": "Ase",
       "domain": "Déesse de l'Hiver et de la Montagne",
       "description": "Skieuse et chasseresse redoutable, elle choisit son époux parmi les dieux uniquement en regardant leurs pieds, provoquant un mariage malheureux.",
+      "popularCulture": "Smite",
       "clue": "Déesse de l'Hiver et de la Montagne",
       "difficulty": 2
     },
@@ -3381,7 +3436,7 @@
       "monsterType": "Cheval",
       "id": 291,
       "description": "Le plus rapide de tous les chevaux, il est capable de voyager entre les mondes, y compris jusqu'au royaume des morts.",
-      "popularCulture": "Monture à huit pattes d'Odin, présente dans God of War Ragnarök et dans Assassin's Creed Valhalla.",
+      "popularCulture": "God of War Ragnarök, Assassin's Creed Valhalla",
       "clue": "Cheval à huit pattes d'Odin, fils de Loki",
       "difficulty": 2,
       "fatherName": "Loki"
@@ -3394,6 +3449,7 @@
       "giantType": "GeantDeFeu",
       "domain": "Géant du feu dévastateur et roi du Muspelheim",
       "description": "Géant du feu dévastateur et roi du Muspelheim",
+      "popularCulture": "God of War Ragnarök",
       "clue": "Roi du Muspelheim",
       "difficulty": 2
     },
@@ -3425,6 +3481,7 @@
       "race": "Valkyrie",
       "domain": "La plus célèbre des Valkyries, liée au héros Sigurd",
       "description": "Punie et plongée dans un sommeil magique entouré de flammes, elle n'est réveillée que par un héros suffisamment brave pour traverser le brasier.",
+      "popularCulture": "L'Anneau du Nibelung (Wagner)",
       "clue": "La plus célèbre des Valkyries",
       "difficulty": 3
     },
@@ -3495,6 +3552,7 @@
       "monsterType": "Aigle",
       "id": 302,
       "description": "Le battement de ses ailes est à l'origine des vents qui soufflent sur le monde des hommes.",
+      "popularCulture": "Final Fantasy XIV",
       "clue": "Aigle géant perché au sommet de l'Yggdrasil",
       "difficulty": 3
     },
@@ -3535,7 +3593,7 @@
       "race": "God",
       "domain": "Dieu Chacal de l’embaumement",
       "description": "Représenté avec une tête de chacal, il pèse le cœur des défunts face à une plume symbolisant la vérité pour déterminer leur sort dans l'au-delà.",
-      "popularCulture": "Personnage jouable dans Smite ; antagoniste de la franchise La Momie (1999-2008) ; apparaît dans Assassin's Creed Origins.",
+      "popularCulture": "Smite, La Momie, Assassin's Creed Origins",
       "clue": "Dieu de l’embaumement",
       "difficulty": 1,
       "fatherName": "Osiris"
@@ -3547,7 +3605,7 @@
       "race": "God",
       "domain": "Dieu faucon du courage et Roi des dieux",
       "description": "Son œil, perdu au combat contre le meurtrier de son père puis restauré par magie, devient un puissant symbole de protection dans toute l'Égypte antique.",
-      "popularCulture": "Personnage jouable dans Smite ; présent dans Assassin's Creed Origins et dans le film Gods of Egypt (2016).",
+      "popularCulture": "Smite, Assassin's Creed Origins, Gods of Egypt",
       "clue": "Roi des dieux",
       "difficulty": 1,
       "fatherName": "Osiris",
@@ -3560,7 +3618,7 @@
       "race": "God",
       "domain": "Déesse de la Magie et de la loyauté, femme d'Osiris",
       "description": "Après avoir rassemblé les morceaux du corps démembré de son époux assassiné, elle utilise ses pouvoirs magiques pour le ranimer suffisamment afin de concevoir un fils.",
-      "popularCulture": "Personnage jouable dans Smite ; présente dans Assassin's Creed Origins.",
+      "popularCulture": "Smite, Assassin's Creed Origins",
       "clue": "Déesse de la Magie",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3585,7 +3643,7 @@
       "race": "God",
       "domain": "Dieu régnant sur les morts",
       "description": "Assassiné et démembré par son propre frère jaloux, il est ramené suffisamment à la vie par les pouvoirs magiques de son épouse pour engendrer un fils vengeur.",
-      "popularCulture": "Personnage jouable dans Smite ; figure centrale d'Assassin's Creed Origins.",
+      "popularCulture": "Smite, Assassin's Creed Origins",
       "clue": "Dieu régnant sur les morts",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3598,7 +3656,7 @@
       "race": "God",
       "domain": "Dieu du soleil au zénith",
       "description": "Il traverse le ciel le jour sur une barque solaire et affronte chaque nuit un serpent du chaos lors de sa traversée du monde souterrain.",
-      "popularCulture": "Dieu solaire dont le protagoniste incarne l'avatar dans Assassin's Creed Origins ; personnage jouable dans Smite.",
+      "popularCulture": "Assassin's Creed Origins, Smite",
       "clue": "Dieu du soleil au zénith",
       "difficulty": 1
     },
@@ -3609,7 +3667,7 @@
       "race": "God",
       "domain": "Dieu du mal",
       "description": "Jaloux de son frère, il l'assassine et démembre son corps pour l'empêcher de revenir à la vie, avant de s'opposer ensuite à son neveu vengeur dans une lutte pour le trône.",
-      "popularCulture": "Antagoniste dans Assassin's Creed Origins et dans le film Gods of Egypt (2016) ; personnage jouable dans Smite.",
+      "popularCulture": "Assassin's Creed Origins, Gods of Egypt, Smite",
       "clue": "Dieu du mal",
       "difficulty": 1,
       "fatherName": "Geb",
@@ -3622,7 +3680,7 @@
       "race": "God",
       "domain": "Dieu ibis de la sagesse, de l'ecriture",
       "description": "Représenté avec une tête d'ibis, il consigne le verdict de la pesée du cœur des défunts et aurait inventé l'écriture hiéroglyphique.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans Assassin's Creed Origins.",
+      "popularCulture": "Smite, Assassin's Creed Origins",
       "clue": "Dieu de la sagesse, de l'ecriture",
       "difficulty": 1
     },
@@ -3633,6 +3691,7 @@
       "race": "God",
       "domain": "Serpent du chaos, affronte Ré toutes les nuits",
       "description": "Ce gigantesque serpent tente chaque nuit d'empêcher la barque solaire de traverser le monde souterrain, dans un combat recommencé sans fin.",
+      "popularCulture": "Stargate SG-1",
       "clue": "Serpent du chaos",
       "difficulty": 2
     },
@@ -3643,7 +3702,7 @@
       "race": "God",
       "domain": "Déesse des chats, Garde de Ré sur la barque solaire lors de la nuit",
       "description": "Autrefois représentée sous les traits d'une lionne guerrière, son iconographie s'adoucit avec le temps pour devenir protectrice du foyer et des femmes enceintes.",
-      "popularCulture": "Personnage jouable dans Smite ; présente dans Assassin's Creed Origins.",
+      "popularCulture": "Smite, Assassin's Creed Origins",
       "clue": "Déesse des chats",
       "difficulty": 2
     },
@@ -3684,6 +3743,7 @@
       "race": "God",
       "domain": "Dieu de la lune, de la guérison et du temps",
       "description": "Fils du roi des dieux thébain et de la déesse mère, il complète une triade divine vénérée dans le grand temple de Thèbes.",
+      "popularCulture": "Moon Knight",
       "clue": "Dieu de la lune",
       "difficulty": 2
     },
@@ -3744,6 +3804,7 @@
       "race": "God",
       "domain": "Dieu crocodile de la fertilité et de l'eau",
       "description": "Représenté avec une tête de crocodile, il est associé à la puissance du Nil et à la protection contre les dangers aquatiques.",
+      "popularCulture": "Smite",
       "clue": "Dieu de la fertilité et de l'eau",
       "difficulty": 2
     },
@@ -3754,6 +3815,7 @@
       "race": "God",
       "domain": "Dieu de l'invisible, de l'air et divinité créatrice transcendante",
       "description": "Fusionné avec le dieu solaire pour former une figure suprême du panthéon thébain, il devient le patron du plus grand temple d'Égypte antique.",
+      "popularCulture": "Avatar : La Légende de Korra",
       "clue": "Dieu de l'invisible, de l'air et divinité créatrice transcendante",
       "difficulty": 3
     },
@@ -3804,6 +3866,7 @@
       "race": "God",
       "domain": "Déesse de la Création, du Tissage et de la Guerre",
       "description": "Déesse guerrière et tisserande associée à la ville de Saïs, elle est parfois considérée comme la mère du dieu-soleil.",
+      "popularCulture": "Smite",
       "clue": "Déesse de la Création",
       "difficulty": 3
     },
@@ -3814,7 +3877,7 @@
       "race": "God",
       "domain": "Déesse Lionne du combat",
       "description": "Représentée avec une tête de lionne, son souffle est dit provoquer les vents du désert et les épidémies lorsqu'elle est en colère.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Déesse du combat",
       "difficulty": 3
     },
@@ -3825,6 +3888,7 @@
       "race": "God",
       "domain": "Déesse des Scorpions et du Venin (Protectrice des hommes)",
       "description": "Associée à la respiration et à la guérison des piqûres venimeuses, elle figure parmi les quatre déesses protectrices des vases canopes.",
+      "popularCulture": "Smite",
       "clue": "Déesse des Scorpions et du Venin (Protectrice des hommes)",
       "difficulty": 3
     },
@@ -3835,6 +3899,7 @@
       "race": "God",
       "domain": "Déesse de la féminité et de l'accouchement",
       "description": "Représentée sous une forme d'hippopotame debout au ventre gonflé, elle est invoquée pour protéger les femmes enceintes des forces maléfiques.",
+      "popularCulture": "Moon Knight",
       "clue": "Déesse de la féminité et de l'accouchement",
       "difficulty": 3
     },
@@ -3925,7 +3990,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Oiseau de feu qui renaît de ses cendres",
-      "popularCulture": "Personnage central du manga/anime Saint Seiya (Ikki, le chevalier Phénix) ; Fumseck, le phénix de Dumbledore, dans Harry Potter.",
+      "popularCulture": "Saint Seiya, Harry Potter",
       "clue": "Oiseau de feu",
       "difficulty": 1
     },
@@ -3986,7 +4051,7 @@
       "race": "God",
       "domain": "Dieux guerrier de la Jeunesse et de la Rébellion",
       "description": "Enfant prodige né d'une grossesse de trois ans, il se rebelle contre son propre père après un conflit avec un roi-dragon et se bat monté sur des roues de feu.",
-      "popularCulture": "Héros des films d'animation chinois à très large succès Ne Zha (2019) et Ne Zha 2 (2025) ; personnage jouable dans Smite.",
+      "popularCulture": "Ne Zha, Ne Zha 2, Smite",
       "clue": "Dieux guerrier de la Jeunesse et de la Rébellion",
       "difficulty": 2
     },
@@ -3997,6 +4062,7 @@
       "race": "God",
       "domain": "Déesse de la création",
       "description": "Elle façonne les premiers humains à partir d'argile et répare plus tard une brèche dans le ciel avec des pierres de cinq couleurs fondues.",
+      "popularCulture": "Smite",
       "clue": "Déesse de la création",
       "difficulty": 2
     },
@@ -4007,6 +4073,7 @@
       "race": "Monster",
       "domain": null,
       "description": "L'un des quatre souverains des mers, associé à l'élément de l'eau et souvent représenté vivant dans un palais sous-marin.",
+      "popularCulture": "Ne Zha",
       "clue": "Roi Dragon de la mer de l'Est",
       "difficulty": 3
     },
@@ -4017,6 +4084,7 @@
       "race": "God",
       "domain": "Dieu de la Pudeur et de la Décence",
       "description": "Doté d'un troisième œil au milieu du front, il est accompagné d'un chien céleste et réputé pour sa force face aux démons.",
+      "popularCulture": "Smite",
       "clue": "Dieu de la Pudeur",
       "difficulty": 3
     },
@@ -4047,6 +4115,7 @@
       "race": "God",
       "domain": "Dieu de l'Esprit Indomptable, de la Résistance et des Épreuve",
       "description": "Décapité après avoir défié le souverain céleste, il continue le combat en utilisant son nombril comme bouche et ses mamelons comme yeux.",
+      "popularCulture": "Smite",
       "clue": "Dieu de l'Esprit Indomptable",
       "difficulty": 3
     },
@@ -4057,7 +4126,7 @@
       "race": "God",
       "domain": "Dannan sacerdotale du Sacré, de la Science, des Contrats, du Temps, de l’Éternité et des Éléments. Dieu druide,",
       "description": "Possédant un chaudron d'abondance inépuisable et une massue capable de tuer neuf hommes d'un coup ou de les ressusciter de l'autre, il est un père tutélaire pour son peuple.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Dannan sacerdotale du Sacré",
       "difficulty": 2
     },
@@ -4068,7 +4137,7 @@
       "race": "God",
       "domain": "Dannane guerrière du Massacre, de la Violence, de l'Aurore et des Héros.",
       "description": "Souvent présentée comme une triple déesse annonçant la mort par ses cris, elle apparaît parfois sous la forme d'une corneille planant au-dessus des champs de bataille.",
-      "popularCulture": "Personnage jouable dans Smite ; a inspiré Morrigan Aensland dans Darkstalkers (Capcom) et le personnage de Morrigan dans Dragon Age.",
+      "popularCulture": "Smite, Darkstalkers, Dragon Age",
       "clue": "Dannane guerrière du Massacre",
       "difficulty": 2
     },
@@ -4079,6 +4148,7 @@
       "race": "Monster",
       "monsterType": "Esprit Annonciateur de Mort",
       "description": "Femme fantomatique dont les pleurs annoncent la mort prochaine d'un proche",
+      "popularCulture": "X-Men",
       "clue": "Ses pleurs annoncent une mort prochaine",
       "difficulty": 3
     },
@@ -4139,7 +4209,7 @@
       "race": "God",
       "domain": "Dannan de la Guerre à distance, des Invention, du Savoir, du Soleil et de Lumière.",
       "description": "Il est au cœur d'un célèbre triangle amoureux impliquant une mortelle qu'il tente de reconquérir après qu'elle a oublié son amour passé sous forme d'esprit.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Dannan de la Guerre à distance",
       "difficulty": 3
     },
@@ -4160,6 +4230,7 @@
       "race": "God",
       "domain": "Dannan guerrier de la Royauté et des richesses",
       "description": "Ayant perdu un bras au combat, il dut céder temporairement son trône avant qu'un bras articulé en argent ne lui permette de régner à nouveau.",
+      "popularCulture": "Hellboy II : Les Légions d'or maudites",
       "clue": "Dannan guerrier de la Royauté",
       "difficulty": 3
     },
@@ -4200,6 +4271,7 @@
       "race": "God",
       "domain": "Dieu Serpent des Vents",
       "description": "Son ombre serpentine descend visiblement les marches d'une célèbre pyramide lors des équinoxes, phénomène toujours observé aujourd'hui.",
+      "popularCulture": "Smite",
       "clue": "Dieu Serpent des Vents",
       "difficulty": 2
     },
@@ -4280,7 +4352,7 @@
       "race": "God",
       "domain": "Déesse du soleil",
       "description": "Offensée par le comportement destructeur de son frère, elle se retire dans une grotte et plonge le monde dans l'obscurité, jusqu'à ce qu'une danse comique et un miroir la fassent ressortir.",
-      "popularCulture": "Incarnée sous forme de loup dans le jeu vidéo Ōkami (2006) ; personnage jouable dans Smite.",
+      "popularCulture": "Ōkami, Smite",
       "clue": "Déesse du soleil",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -4292,7 +4364,7 @@
       "race": "God",
       "domain": "Dieu de la création et de la vie",
       "description": "Avec son épouse, il brasse les eaux primordiales avec une lance ornée de joyaux pour créer les premières îles du Japon.",
-      "popularCulture": "Nom d'une technique de Genjutsu de Kakashi et d'Obito dans Naruto Shippuden.",
+      "popularCulture": "Naruto Shippuden",
       "clue": "Dieu de la création et de la vie",
       "difficulty": 1
     },
@@ -4303,7 +4375,7 @@
       "race": "God",
       "domain": "Déesse de la création et de la mort",
       "description": "Elle meurt en donnant naissance au dieu du feu, puis se transforme en une créature putréfiée régnant sur le monde souterrain après que son époux l'a suivie et regardée contre sa promesse.",
-      "popularCulture": "Nom d'une technique de Genjutsu d'Obito dans Naruto Shippuden.",
+      "popularCulture": "Naruto Shippuden",
       "clue": "Déesse de la création et de la mort",
       "difficulty": 1
     },
@@ -4314,7 +4386,7 @@
       "race": "God",
       "domain": "Dieu de la mer",
       "description": "Banni du ciel pour son comportement destructeur, il se rachète en tuant un dragon à huit têtes et en découvrant une épée sacrée cachée dans sa queue.",
-      "popularCulture": "Nom de la technique ultime de plusieurs personnages du clan Uchiha (dont Sasuke et Itachi) dans le manga/anime Naruto.",
+      "popularCulture": "Naruto",
       "clue": "Dieu de la mer",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -4326,7 +4398,7 @@
       "race": "God",
       "domain": "Dieu de la nuit et de la lune",
       "description": "Il s'attire la colère de sa sœur en tuant la déesse de la nourriture lors d'un banquet, provoquant une séparation définitive entre le jour et la nuit.",
-      "popularCulture": "Nom d'une technique de Genjutsu emblématique d'Itachi Uchiha dans Naruto.",
+      "popularCulture": "Naruto",
       "clue": "Dieu de la nuit et de la lune",
       "difficulty": 1,
       "fatherName": "Izanagi"
@@ -4338,6 +4410,7 @@
       "race": "God",
       "domain": "Dieu du vent",
       "description": "Représenté portant un grand sac sur les épaules, il en libère les vents à sa guise, parfois de façon destructrice.",
+      "popularCulture": "Mortal Kombat",
       "clue": "Dieu du vent",
       "difficulty": 2
     },
@@ -4358,6 +4431,7 @@
       "race": "God",
       "domain": "Dieu des tempête",
       "description": "Entouré d'un cercle de tambours qu'il frappe pour produire le tonnerre, il est souvent représenté avec un compagnon incarnant le vent.",
+      "popularCulture": "Mortal Kombat",
       "clue": "Dieu des tempête",
       "difficulty": 2
     },
@@ -4388,7 +4462,7 @@
       "race": "God",
       "domain": "Dieu du feu, des sacrifice et du foyer",
       "description": "Messager entre les hommes et les dieux, il transporte les offrandes sacrificielles vers le ciel à travers les flammes du rituel.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Dieu du feu, des sacrifice et du foyer",
       "difficulty": 2
     },
@@ -4399,6 +4473,7 @@
       "race": "God",
       "domain": "Roi des Dieu et Dieu de la Création et de l'éveil Divin",
       "description": "Souvent représenté avec quatre visages regardant chaque point cardinal, il naît d'un lotus poussant du nombril d'une autre grande divinité.",
+      "popularCulture": "Asura's Wrath",
       "clue": "Roi des Dieu et Dieu de la Création et de l'éveil Divin",
       "difficulty": 2
     },
@@ -4409,7 +4484,7 @@
       "race": "God",
       "domain": "Dieu de la sagesse de l’éducation et intelligence, possède une tête d'éléphant",
       "description": "Reconnaissable à sa tête d'éléphant, il doit cette apparence à un malentendu tragique avec son propre père, et il est invoqué avant toute nouvelle entreprise.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Dieu de la sagesse",
       "difficulty": 2,
       "fatherName": "Shiva"
@@ -4421,7 +4496,7 @@
       "race": "God",
       "domain": "Roi de Dieux et Dieu du Ciel",
       "description": "Armé d'une arme façonnée à partir des ossements d'un sage, il combat un démon serpent responsable d'une grande sécheresse.",
-      "popularCulture": "Personnage jouable dans Smite ; figure centrale du jeu vidéo Asura's Wrath.",
+      "popularCulture": "Smite, Asura's Wrath",
       "clue": "Roi de Dieux et Dieu du Ciel",
       "difficulty": 2
     },
@@ -4432,7 +4507,7 @@
       "race": "God",
       "domain": "Déesse de la Préservation, Transformation et Destruction",
       "description": "Représentée avec une guirlande de crânes et la langue tirée, elle incarne la destruction nécessaire du temps et de l'ego avant de se calmer sous le pied de son époux.",
-      "popularCulture": "Culte fictif dédié à Kali au cœur du film Indiana Jones et le Temple maudit (1984) ; personnage jouable dans Smite.",
+      "popularCulture": "Indiana Jones et le Temple maudit, Smite",
       "clue": "Déesse de la Destruction",
       "difficulty": 2
     },
@@ -4443,7 +4518,7 @@
       "race": "God",
       "domain": "Dieu du Yoga et de la Destruction",
       "description": "Sa danse cosmique rythme à la fois la création et la destruction de l'univers, et un troisième œil sur son front peut réduire toute chose en cendres.",
-      "popularCulture": "Personnage jouable dans Smite ; référencé dans le jeu Asura's Wrath.",
+      "popularCulture": "Smite, Final Fantasy, Asura's Wrath",
       "clue": "Dieu du Yoga et de la Destruction",
       "difficulty": 2
     },
@@ -4454,7 +4529,7 @@
       "race": "God",
       "domain": "Dieu protecteur du monde",
       "description": "Il descend sur terre sous diverses incarnations chaque fois que l'équilibre du monde est menacé par le chaos.",
-      "popularCulture": "Personnage jouable dans Smite.",
+      "popularCulture": "Smite",
       "clue": "Dieu protecteur du monde",
       "difficulty": 2
     },
@@ -4465,6 +4540,7 @@
       "race": "God",
       "domain": "Déesse de l'Amour et de la Guerre",
       "description": "Elle descend au royaume des morts pour tenter d'en reprendre le contrôle et doit se dépouiller d'un vêtement à chacune des sept portes qu'elle franchit.",
+      "popularCulture": "Smite",
       "clue": "Déesse de l'Amour et de la Guerre",
       "difficulty": 2
     },
@@ -4476,6 +4552,7 @@
       "domain": "Dragon Divin des Eau Primordial et du Chaos",
       "monsterType": "Dragon Primordial",
       "description": "Dragon Divin qui possède 5 têtes",
+      "popularCulture": "Donjons & Dragons",
       "clue": "Dragon Divin",
       "difficulty": 2
     },
@@ -4486,6 +4563,7 @@
       "race": "God",
       "domain": "Dieu de l'Exorcisme, de Babylone et de la Création",
       "description": "Devenu le dieu suprême de Babylone en récompense d'avoir vaincu la déesse primordiale du chaos marin, il façonne ensuite le monde et l'humanité à partir des restes de son adversaire.",
+      "popularCulture": "Smite",
       "clue": "Dieu de l'Exorcisme, de Babylone et de la Création",
       "difficulty": 3
     },
@@ -4526,6 +4604,7 @@
       "race": "God",
       "domain": "Dieu Serpent des Vents",
       "description": "Ce serpent à plumes descend aux Enfers pour y récupérer les ossements des générations passées et créer une nouvelle humanité en y versant son propre sang.",
+      "popularCulture": "Smite",
       "clue": "Dieu Serpent des Vents",
       "difficulty": 2
     },
@@ -4536,6 +4615,7 @@
       "race": "God",
       "domain": "Dieu de l'eau",
       "description": "Il réside dans un paradis pluvieux réservé aux victimes de noyade et de foudre, et exige des offrandes pour garantir la pluie.",
+      "popularCulture": "Smite",
       "clue": "Dieu de l'eau",
       "difficulty": 2
     },
@@ -4556,7 +4636,7 @@
       "race": "God",
       "domain": "Déesse de la Guerre et de la Destruction",
       "description": "Figure de la guerre et de la souveraineté, elle peut prédire l'issue des batailles et apparaît parfois sous une forme animale annonciatrice de mort.",
-      "popularCulture": "Personnage jouable dans Smite ; a inspiré Morrigan Aensland dans Darkstalkers (Capcom) et le personnage de Morrigan dans Dragon Age.",
+      "popularCulture": "Smite, Darkstalkers, Dragon Age",
       "clue": "Déesse de la Guerre et de la Destruction",
       "difficulty": 2
     },
@@ -4567,7 +4647,7 @@
       "race": "God",
       "domain": "Dieu de la Nature et des Cycles",
       "description": "Représenté assis en tailleur et coiffé de bois de cerf, il est associé à la faune sauvage, à l'abondance et au cycle des saisons.",
-      "popularCulture": "Personnage jouable dans Smite ; apparaît dans Assassin's Creed Valhalla.",
+      "popularCulture": "Smite, Assassin's Creed Valhalla",
       "clue": "Dieu de la Nature",
       "difficulty": 2
     },
@@ -4588,6 +4668,7 @@
       "race": "God",
       "domain": "Déesse de la Sorcellerie et de la Chasse",
       "description": "Elle vit dans une hutte montée sur des pattes de poulet, au fond d'une forêt, et se déplace dans un mortier qu'elle propulse à l'aide d'un pilon.",
+      "popularCulture": "John Wick, Smite",
       "clue": "Déesse de la Sorcellerie et de la Chasse",
       "difficulty": 3
     },
@@ -4598,6 +4679,7 @@
       "race": "God",
       "domain": "Dieu de la Nuit et de l'Obscurité",
       "description": "Son nom signifie littéralement 'dieu noir', et il est traditionnellement opposé à une divinité solaire incarnant les forces bénéfiques et lumineuses.",
+      "popularCulture": "Fantasia (Disney)",
       "clue": "Dieu de la Nuit et de l'Obscurité",
       "difficulty": 3
     },
@@ -4608,6 +4690,7 @@
       "race": "God",
       "domain": "Iwa (Dieu) de la Vie et de la Mort",
       "description": "Reconnaissable à son haut-de-forme, ses lunettes noires et son visage peint en crâne, il se tient au carrefour entre le monde des vivants et celui des morts.",
+      "popularCulture": "Vivre et laisser mourir",
       "clue": "Iwa (Dieu) de la Vie et de la Mort",
       "difficulty": 2
     },
@@ -4698,7 +4781,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Réputée insaisissable, seule une personne pure serait capable de l'approcher sans qu'elle prenne la fuite.",
-      "popularCulture": "Figure récurrente de la culture populaire fantastique et enfantine (Harry Potter, My Little Pony).",
+      "popularCulture": "Harry Potter, My Little Pony",
       "clue": "Cheval à une corne légendaire",
       "difficulty": 1
     },
@@ -4779,7 +4862,7 @@
       "race": "Monster",
       "monsterType": "Serpent",
       "description": "Naît d'un œuf pondu par un coq et couvé par un serpent ou un crapaud ; sa seule faiblesse connue serait le chant du coq ou son propre reflet.",
-      "popularCulture": "Créature centrale de Harry Potter et la Chambre des secrets (1998/2002).",
+      "popularCulture": "Harry Potter",
       "clue": "Roi des serpents dont le regard ou le souffle tue instantanément",
       "difficulty": 1
     },
@@ -4790,6 +4873,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Dragon à 4 pattes et2 ailes",
+      "popularCulture": "Game of Thrones, The Elder Scrolls V: Skyrim, Dragon Ball",
       "clue": "Dragon à 4 pattes et 2 ailes",
       "difficulty": 1
     },
@@ -4810,7 +4894,7 @@
       "race": "Monster",
       "monsterType": "Mi-Homme Mi-Lion",
       "description": "Corps de lion, visage humain et queue de scorpion venimeuse",
-      "popularCulture": "Apparaît dans God of War: Chains of Olympus et comme créature classique des jeux de rôle Donjons & Dragons.",
+      "popularCulture": "Donjons & Dragons, God of War",
       "clue": "Corps de lion, visage humain et queue de scorpion",
       "difficulty": 1
     },
@@ -4821,7 +4905,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Contrairement à d'autres créatures similaires, elle ne possède que deux pattes, sa queue se terminant souvent par un aiguillon venimeux.",
-      "popularCulture": "Créature récurrente des jeux de fantasy (The Elder Scrolls V: Skyrim, Dragon's Dogma, Monster Hunter).",
+      "popularCulture": "The Elder Scrolls V: Skyrim, Monster Hunter, Dragon's Dogma",
       "clue": "Dragon à deux ailes et deux pattes",
       "difficulty": 1
     },
@@ -4842,6 +4926,7 @@
       "race": "Monster",
       "monsterType": "Dragon-Coq",
       "description": "Créature à corps de dragon et tête de coq, proche parente du basilic",
+      "popularCulture": "Donjons & Dragons",
       "clue": "Corps de dragon et tête de coq, parent du basilic",
       "difficulty": 2
     },
@@ -4852,6 +4937,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Plus son âge avance, plus il gagne de queues, jusqu'à neuf, signe de sagesse et de pouvoirs grandissants ; il peut prendre forme humaine pour tromper les voyageurs.",
+      "popularCulture": "Naruto, Pokémon",
       "clue": "Renard à neuf queues (Yokai)",
       "difficulty": 1
     },
@@ -4862,6 +4948,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Terme regroupant une grande variété d'esprits, de démons et de phénomènes surnaturels du folklore, aux formes et intentions très diverses.",
+      "popularCulture": "Yo-kai Watch",
       "clue": "Esprits divers",
       "difficulty": 1
     },
@@ -4882,6 +4969,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Connu pour sa gourmandise et son goût des farces, il est souvent représenté sous une apparence bonhomme et rondouillarde dans l'art traditionnel.",
+      "popularCulture": "Super Mario Bros. 3, Pom Poko",
       "clue": "Chien viverrin farceur et métamorphe (Yokai)",
       "difficulty": 2
     },
@@ -4892,6 +4980,7 @@
       "race": "Monster",
       "monsterType": "Serpent à Huit Têtes",
       "description": "Serpent géant à huit têtes et huit queues, terrassé par Susanoo qui découvre l'épée Kusanagi dans sa queue",
+      "popularCulture": "Ōkami, Warriors Orochi",
       "clue": "Serpent à huit têtes terrassé par Susanoo",
       "difficulty": 2
     },
@@ -4912,6 +5001,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Terrorisant la région du Rhône, elle fut apaisée non par la force mais par la douceur d'une sainte qui la conduisit docilement jusqu'au village.",
+      "popularCulture": "Donjons & Dragons",
       "clue": "Dragon à tête de lion et carapace de Tortue",
       "difficulty": 2
     },
@@ -4932,6 +5022,7 @@
       "race": "Monster",
       "domain": null,
       "description": "Un humain peut se transformer en cette créature après avoir cédé au cannibalisme, notamment en période de famine extrême ; sa faim ne peut jamais être rassasiée.",
+      "popularCulture": "Supernatural, Until Dawn",
       "clue": "Hybride Humain cerf Anthropophage",
       "difficulty": 2
     },
@@ -4952,6 +5043,7 @@
       "race": "Monster",
       "monsterType": "Oiseau Géant",
       "description": "Oiseau fabuleux assez puissant pour soulever un éléphant, rencontré par Sindbad le Marin",
+      "popularCulture": "Sinbad",
       "clue": "Oiseau géant assez puissant pour soulever un éléphant",
       "difficulty": 3
     },
@@ -4963,6 +5055,7 @@
       "domain": null,
       "story": "Héros légendaire de Sumer, recherche l'immortalité après la mort d'Enkidou",
       "description": "Roi aux deux tiers divin, il part en quête d'une plante d'immortalité après avoir perdu son compagnon le plus proche, avant de se résigner à sa condition mortelle.",
+      "popularCulture": "Final Fantasy, Fate",
       "clue": "Héros légendaire de Sumer, recherche l'immortalité après la mort d'Enkidou",
       "difficulty": 2
     },
@@ -4973,7 +5066,7 @@
       "race": "Demon_Prince",
       "domain": "Luxure",
       "description": "Selon certaines traditions rabbiniques tardives, elle aurait été la toute première femme, refusant de se soumettre à son compagnon avant de le quitter et de devenir une figure démoniaque nocturne.",
-      "popularCulture": "Personnage récurrent des séries télévisées Supernatural et True Blood, et antagoniste principale de Diablo IV.",
+      "popularCulture": "Supernatural, True Blood, Diablo IV",
       "clue": "Luxure",
       "difficulty": 1
     },
@@ -4984,7 +5077,7 @@
       "race": "Demon_Prince",
       "domain": "Orgueil",
       "description": "Son nom signifie littéralement 'porteur de lumière', et il est traditionnellement identifié à un ange déchu pour s'être rebellé contre l'autorité divine par orgueil.",
-      "popularCulture": "Personnage principal de la série télévisée Lucifer (2016-2021) et de la bande dessinée éponyme de Mike Carey, spin-off de Sandman.",
+      "popularCulture": "Lucifer, Sandman",
       "clue": "Orgueil",
       "difficulty": 1
     },
@@ -4995,7 +5088,7 @@
       "race": "Demon_Prince",
       "domain": "Colère et Cruauté",
       "description": "Son nom signifie 'l'adversaire' ou 'l'accusateur' en hébreu, et il apparaît dans le livre de Job comme un accusateur testant la fidélité d'un homme juste avant de devenir la figure du mal absolu.",
-      "popularCulture": "Figure centrale du poème épique Le Paradis perdu de John Milton (1667).",
+      "popularCulture": "Le Paradis perdu (Milton)",
       "clue": "Colère et Cruauté",
       "difficulty": 1
     },
@@ -5006,6 +5099,7 @@
       "race": "Demon_Prince",
       "domain": "Luxure",
       "description": "Démon associé à la luxure, il est mentionné dans un livre deutérocanonique où il tue sept maris successifs avant d'être chassé par une odeur de poisson brûlé.",
+      "popularCulture": "Donjons & Dragons",
       "clue": "Luxure",
       "difficulty": 2
     },
@@ -5026,7 +5120,7 @@
       "race": "Archangels",
       "role": "Archange messager de Dieu",
       "description": "Il annonce les naissances les plus importantes des grandes religions abrahamiques et souffle dans la trompette annonçant le jugement final.",
-      "popularCulture": "Personnage récurrent de la série télévisée Supernatural.",
+      "popularCulture": "Supernatural",
       "clue": "Messager de Dieu",
       "difficulty": 2
     },
@@ -5037,6 +5131,7 @@
       "race": "Demon_Prince",
       "domain": "Envie",
       "description": "Créature marine monstrueuse mentionnée dans les textes bibliques, sa force est telle que seul le créateur lui-même est capable de la maîtriser.",
+      "popularCulture": "Supernatural",
       "clue": "Envie",
       "difficulty": 2
     },
@@ -5047,7 +5142,7 @@
       "race": "Archangels",
       "role": "Archange protecteur, chef des armées célestes",
       "description": "Il mène les armées célestes contre les forces rebelles et pèse les âmes lors du jugement dans certaines traditions.",
-      "popularCulture": "Archange guerrier apparaissant dans la série télévisée Supernatural et dans le film Legion (2010).",
+      "popularCulture": "Supernatural, Legion",
       "clue": "Chef des armées célestes",
       "difficulty": 2
     },
@@ -5058,6 +5153,7 @@
       "race": "Archangels",
       "role": "Archange guérisseur, protecteur des voyageurs",
       "description": "Son nom signifie 'Dieu guérit', et il accompagne un jeune homme lors d'un voyage périlleux dans un livre deutérocanonique.",
+      "popularCulture": "Supernatural",
       "clue": "Guérisseur, protecteur des voyageurs",
       "difficulty": 2
     },
@@ -5068,6 +5164,7 @@
       "race": "Archangels",
       "role": "Archange de la sagesse et de la lumière divine",
       "description": "Son nom signifie 'lumière de Dieu', et il est associé dans les textes apocryphes aux avertissements adressés à l'humanité avant de grands cataclysmes.",
+      "popularCulture": "Supernatural",
       "clue": "Sagesse et lumière divine",
       "difficulty": 2
     },
@@ -5078,6 +5175,7 @@
       "race": "Demon_Prince",
       "domain": "Paresse",
       "description": "Associé à la paresse, il est parfois représenté assis sur des toilettes, une image satirique héritée de sa vénération originelle liée à un dieu moabite.",
+      "popularCulture": "Helltaker",
       "clue": "Paresse",
       "difficulty": 3
     },
@@ -5098,6 +5196,7 @@
       "race": "Demon_Prince",
       "domain": "Avarice et Cupidité",
       "description": "Son nom, d'origine araméenne, désigne à l'origine simplement la richesse matérielle avant de devenir la personnification de l'avidité.",
+      "popularCulture": "Obey Me!",
       "clue": "Avarice et Cupidité",
       "difficulty": 3
     },
@@ -5129,7 +5228,7 @@
       "story": "Roi légendaire de Bretagne, fondateur de la Table Ronde et porteur de l'épée Excalibur",
       "death": "Blessé mortellement à la bataille de Camlann par Mordred, son corps est emmené sur l'île mythique d'Avalon.",
       "description": "Conçu grâce à un enchantement transformant son père en sosie d'un autre homme, il prouve sa légitimité royale en retirant seul une arme fichée dans la pierre.",
-      "popularCulture": "Sujet d'innombrables adaptations : la série Kaamelott, le film Le Roi Arthur : La Légende d'Excalibur (2017) et Sacré Graal des Monty Python (1975) ; classe de Servant récurrente dans la franchise Fate.",
+      "popularCulture": "Kaamelott, Le Roi Arthur : La Légende d'Excalibur, Sacré Graal, Fate",
       "clue": "Roi légendaire de Bretagne porteur de l'épée Excalibur",
       "difficulty": 1,
       "fatherName": "Uther Pendragon"
@@ -5142,7 +5241,7 @@
       "story": "Le meilleur chevalier de la Table Ronde, élevé par la Dame du Lac, célèbre pour son amour coupable avec Guenièvre.",
       "death": "Finit sa vie comme ermite et se laisse mourir de chagrin après le décès de Guenièvre.",
       "description": "Élevé par une fée dans un royaume aquatique caché, son amour interdit pour la reine de son propre roi précipite la chute du royaume qu'il sert.",
-      "popularCulture": "Personnage central de la série télévisée Kaamelott (Alexandre Astier) ; Servant récurrent de la franchise de jeux vidéo Fate.",
+      "popularCulture": "Kaamelott, Fate",
       "clue": "Le meilleur chevalier de la Table Ronde",
       "difficulty": 1
     },
@@ -5154,7 +5253,7 @@
       "story": "Mage, prophète et conseiller du roi Arthur. Fils d'un démon et d'une mortelle.",
       "death": "Il ne meurt pas vraiment, mais finit enfermé (souvent vivant dans une grotte, un arbre ou une prison de verre) par la fée Viviane/Morgane.",
       "description": "Né d'une union entre un démon et une mortelle, il met sa magie et ses prophéties au service d'un royaume qu'il contribue à fonder, avant d'être piégé par sa propre magie transmise à une élève.",
-      "popularCulture": "Protagoniste de la série télévisée Merlin (BBC, 2008-2012) et personnage central de la série Kaamelott.",
+      "popularCulture": "Merlin, Kaamelott",
       "clue": "Mage, prophète et conseiller du roi Arthur",
       "difficulty": 1
     },
@@ -5166,6 +5265,7 @@
       "story": "Père d'Arthur, roi brutal aidé par Merlin pour séduire Ygraine.",
       "death": "Empoisonné par des assassins Saxons via une source d'eau.",
       "description": "Transformé par magie en sosie d'un duc rival pour séduire son épouse, il engendre ainsi un fils qui grandira loin de la cour avant de révéler sa véritable identité royale.",
+      "popularCulture": "Merlin",
       "clue": "Père d'Arthur",
       "difficulty": 1
     },
@@ -5188,6 +5288,7 @@
       "story": "Fils de Lancelot, le chevalier ultime et le plus pur.",
       "death": "Monte directement au ciel après avoir regardé dans le Graal.",
       "description": "Fils illégitime d'un grand chevalier, sa pureté absolue lui permet seul de s'asseoir sur le siège périlleux et d'atteindre la quête ultime de la Table Ronde.",
+      "popularCulture": "Kingsman",
       "clue": "Chevalier ultime et le plus pur.",
       "difficulty": 2
     },
@@ -5199,6 +5300,7 @@
       "story": "Neveu d'Arthur, sa force liée au soleil (invincible à midi).",
       "death": "Succombe à une blessure à la tête rouverte par Mordred.",
       "description": "Sa force augmente et diminue selon la position du soleil dans le ciel, et il accepte un défi d'un chevalier vert capable de survivre à sa propre décapitation.",
+      "popularCulture": "The Green Knight",
       "clue": "Chevalié dont la force liée au soleil",
       "difficulty": 2
     },
@@ -5210,7 +5312,7 @@
       "story": "Reine de Camelot, femme d’Arthur, amante secrète de Lancelot.",
       "death": "Finit sa vie comme religieuse dans un couvent, repentie.",
       "description": "Son amour interdit pour le meilleur chevalier du royaume précipite la chute de la Table Ronde et la guerre civile qui s'ensuit.",
-      "popularCulture": "Personnage central de la série Kaamelott et de nombreuses adaptations arthuriennes.",
+      "popularCulture": "Kaamelott",
       "clue": "Reine de Camelot",
       "difficulty": 2
     },
@@ -5222,6 +5324,7 @@
       "story": "Sénéchal râleur et frère nourricier d'Arthur.",
       "death": "Tué au combat (souvent dans la guerre contre les Romains).",
       "description": "Frère de lait du roi, il est réputé pour sa langue acérée et ses moqueries envers les autres chevaliers, malgré une loyauté sans faille envers son souverain.",
+      "popularCulture": "Kaamelott",
       "clue": "Sénéchal râleur",
       "difficulty": 2
     },
@@ -5233,6 +5336,7 @@
       "story": "Fils illégitime (souvent incestueux) d'Arthur et de sa demi-soeur, il usurpe le trône pendant l'absence du roi.",
       "death": "Tué de la main du roi Arthur lors de la bataille de Camlann.",
       "description": "Né d'une liaison incestueuse prédite par un prophète comme la cause de la chute du royaume, il finit par s'opposer à son propre père dans une bataille fatale aux deux.",
+      "popularCulture": "Kaamelott, Fate",
       "clue": "Fils illégitime d'Arthur",
       "difficulty": 2,
       "fatherName": "Arthur Pendragon",
@@ -5246,7 +5350,7 @@
       "story": "Fée, magicienne maudite et demi-soeur d'Arthur (souvent antagoniste).",
       "death": "Immortelle, elle emmène Arthur mourant sur l'île d'Avalon.",
       "description": "Demi-sœur du roi et formée à la magie par un enchanteur, sa rivalité avec la cour la pousse à orchestrer plusieurs complots.",
-      "popularCulture": "Antagoniste récurrente de la série Kaamelott et du film Excalibur (1981).",
+      "popularCulture": "Kaamelott, Excalibur",
       "clue": "Fée, magicienne maudite",
       "difficulty": 2
     },
@@ -5258,7 +5362,7 @@
       "story": "Chevalier naïf élevé dans la forêt par sa mère, il est l'un des rares à trouver le Saint Graal grâce à sa pureté.",
       "death": "Meurt paisiblement après avoir accompli la quête du Graal (ou devient le Roi Pêcheur selon les versions).",
       "description": "Élevé loin de toute chevalerie pour le protéger, sa naïveté initiale l'empêche de poser la question rituelle qui aurait pu guérir un roi blessé lors de sa première visite au château du Graal.",
-      "popularCulture": "Personnage comique emblématique de la série Kaamelott (interprété par Franck Pitiot).",
+      "popularCulture": "Kaamelott",
       "clue": "Chevalier naïf élevé dans la forêt par sa mère",
       "difficulty": 2
     },
@@ -5281,6 +5385,7 @@
       "story": "Cousin de Lancelot, l'un des trois purs à trouver le Graal.",
       "death": "Survit à la quête, finit ermite ou meurt en Terre Sainte.",
       "description": "Roi breton et cousin d'un chevalier célèbre, il est le seul des trois élus du Graal à survivre et à retourner raconter l'aventure à la cour.",
+      "popularCulture": "Kaamelott",
       "clue": "Cousin de Lancelot, l'un des trois purs à trouver le Graal.",
       "difficulty": 3
     },
@@ -5292,6 +5397,7 @@
       "story": "Princesse d'Irlande, boit un philtre d'amour avec Tristan.",
       "death": "Meurt de chagrin en découvrant le cadavre de Tristan.",
       "description": "Promise à un roi de Cornouailles, elle boit par erreur avec l'émissaire chargé de l'escorter un philtre destiné à assurer la fidélité conjugale, déclenchant une passion interdite.",
+      "popularCulture": "Tristan und Isolde (Wagner)",
       "clue": "Princesse d'Irlande",
       "difficulty": 3
     },
@@ -5303,6 +5409,7 @@
       "story": "Fée (Viviane/Nimue), donne Excalibur et élève Lancelot.",
       "death": "Ne meurt pas (entité magique/immortelle).",
       "description": "Elle retient le magicien de la cour dans une prison magique après avoir appris tous ses secrets, et règne sur un royaume caché sous les eaux.",
+      "popularCulture": "Kaamelott",
       "clue": "Fée (Viviane/Nimue), élève Lancelot.",
       "difficulty": 3
     },
@@ -5314,6 +5421,7 @@
       "story": "Roi de Carmélide, père de Guenièvre, donne la Table Ronde à Arthur.",
       "death": "Meurt de vieillesse dans son royaume.",
       "description": "Père d'une future reine, il devient un allié fidèle après avoir bénéficié d'un soutien militaire décisif lors d'une bataille contre des envahisseurs.",
+      "popularCulture": "Kaamelott",
       "clue": "Roi de Carmélide",
       "difficulty": 3
     },
@@ -5336,6 +5444,7 @@
       "story": "Neveu du roi Marc de Cornouailles, preux chevalier, s'eprend d'Iseult",
       "death": "Meurt d'une blessure empoisonnée en croyant qu'Iseult l'a abandonné.",
       "description": "Envoyé chercher une princesse irlandaise pour le compte de son oncle, il tombe amoureux d'elle après avoir bu par erreur un philtre qui leur était destiné.",
+      "popularCulture": "Tristan und Isolde (Wagner)",
       "clue": "Neveu du roi Marc de Cornouailles",
       "difficulty": 3
     }
