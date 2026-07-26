@@ -44,6 +44,17 @@
         <Spinner android:id="@+id/spinner_race"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Culture populaire (commun à toutes les races) -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Culture populaire" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_popularculture"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ex : Jouable dans God of War, Smite…" android:textColor="@color/on_surface"
+            android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+            android:minLines="2" android:gravity="top"
             android:layout_marginBottom="20dp"/>
 
         <!-- ══ GOD ══════════════════════════════════════════════════ -->

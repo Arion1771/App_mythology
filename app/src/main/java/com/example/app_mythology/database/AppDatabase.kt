@@ -9,7 +9,7 @@ import org.json.JSONObject
 
 @Database(
     entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -84,7 +84,8 @@ abstract class AppDatabase : RoomDatabase() {
                     role              = o.ns("role"),
                     death             = o.ns("death"),
                     zodiacType        = o.ns("zodiacType"),
-                    chineseEquivalent = o.ns("chineseEquivalent")
+                    chineseEquivalent = o.ns("chineseEquivalent"),
+                    popularCulture    = o.ns("popularCulture")
                 ))
             }
             Log.d("AppDatabase", "✓ ${entites.length()} entités insérées")
