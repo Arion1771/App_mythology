@@ -157,9 +157,6 @@ class QuizArtifactFragment : Fragment() {
         else String.format("%.1f", v)
 
     private fun buildAllInfo(a: ArtifactEntity) = buildString {
-        appendLine("Type : ${a.artifactType}")
-        appendLine("Mythologie : ${a.mythology}")
-        a.clue?.let        { appendLine("Indice : $it") }
         a.ownerName?.let   { appendLine("Propriétaire : $it") }
         a.creatorName?.let { appendLine("Créateur : $it") }
         a.power?.let       { appendLine("Pouvoir : $it") }
