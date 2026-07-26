@@ -3,30 +3,25 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **483 entités**, **22 lieux**, **43 artéfacts**.
+Total : **478 entités**, **22 lieux**, **43 artéfacts**.
 
 ---
 
 ## Entités
 
-483 entités, groupées par mythologie puis par race.
+478 entités, groupées par mythologie puis par race.
 
-### Abrahamique (20)
+### Abrahamique (15)
 
-#### Archange (12)
+#### Archange (7)
 
-- Chamuel
 - Gabriel
-- Haniel
-- Jophiel
 - Jérémiel
 - Michaël
-- Métatron
 - Raguel
 - Raphaël
-- Sandalphon
+- Sariel
 - Uriel
-- Zadkiel
 
 #### Démon (8)
 
@@ -455,7 +450,7 @@ Total : **483 entités**, **22 lieux**, **43 artéfacts**.
 
 - 3 Nornes
 - Balder
-- Freya
+- Freyja
 - Freyr
 - Frigg
 - Heimdall
@@ -469,7 +464,7 @@ Total : **483 entités**, **22 lieux**, **43 artéfacts**.
 - Skadi
 - Thor
 - Tyr
-- Valkyries
+- Valkyrie
 
 #### Géant (3)
 
@@ -692,7 +687,7 @@ Total : **483 entités**, **22 lieux**, **43 artéfacts**.
 - Maat
 - Mout
 - Neith
-- Nephthys
+- Nephtys
 - Nout
 - Osiris
 - Ptah

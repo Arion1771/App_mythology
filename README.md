@@ -6,6 +6,17 @@
 
 ### Changes since the first version
 
+#### V2.3.2
+
+- Archangels: aligned with the Book of Enoch (1 Enoch 20), removed Chamuel, Haniel, Jophiel, Métatron, Sandalphon and Zadkiel (a separate esoteric tradition) and added Sariel, keeping only the 7 original archangels
+- Name fixes: Freyja (formerly Freya), Valkyrie (formerly Valkyries), Nephtys (formerly Nephthys)
+- Rebalanced the difficulty (1 → 2) of 8 entities: 3 Moires, 9 Muses, Aigle du Caucase, Érèbe, 3 Parques, 9 Camènes, Polyphemus, Tyr
+- Entity:
+  - Sariel (Added)
+  - Freyja, ex-Freya (Updated)
+  - Valkyrie, ex-Valkyries (Updated)
+  - Nephtys, ex-Nephthys (Updated)
+
 #### V2.3.1
 
 - Added `Base.md`, a complete inventory of the entities, places and artifacts in the database (bullet lists by mythology then by race/artifact type/quiz grouping), to be kept up to date with every database change
@@ -230,6 +241,17 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.3.2
+
+- Archanges : conformité au Livre d'Hénoch (1 Hénoch 20), suppression de Chamuel, Haniel, Jophiel, Métatron, Sandalphon et Zadkiel (tradition ésotérique distincte) et ajout de Sariel, pour ne conserver que les 7 archanges originels
+- Corrections de noms : Freyja (ex-Freya), Valkyrie (ex-Valkyries), Nephtys (ex-Nephthys)
+- Rééquilibrage de la difficulté (1 → 2) de 8 entités : 3 Moires, 9 Muses, Aigle du Caucase, Érèbe, 3 Parques, 9 Camènes, Polyphemus, Tyr
+- Entité :
+  - Sariel (Ajout)
+  - Freyja, ex-Freya (Mise à jour)
+  - Valkyrie, ex-Valkyries (Mise à jour)
+  - Nephtys, ex-Nephthys (Mise à jour)
 
 #### V2.3.1
 

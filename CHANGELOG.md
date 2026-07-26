@@ -3,6 +3,18 @@
 ## V2
 
 
+#### V2.3.2
+
+- Archanges : conformité au Livre d'Hénoch (1 Hénoch 20), suppression de Chamuel, Haniel, Jophiel, Métatron, Sandalphon et Zadkiel (tradition ésotérique distincte) et ajout de Sariel, pour ne conserver que les 7 archanges originels
+- Corrections de noms : Freyja (ex-Freya), Valkyrie (ex-Valkyries), Nephtys (ex-Nephthys)
+- Rééquilibrage de la difficulté (1 → 2) de 8 entités : 3 Moires, 9 Muses, Aigle du Caucase, Érèbe, 3 Parques, 9 Camènes, Polyphemus, Tyr
+- Entité :
+  - Sariel (Ajout)
+  - Freyja, ex-Freya (Mise à jour)
+  - Valkyrie, ex-Valkyries (Mise à jour)
+  - Nephtys, ex-Nephthys (Mise à jour)
+
+
 #### V2.3.1
 
 - Ajout de `Base.md`, inventaire complet des entités, lieux et artéfacts de la base (listes à puces par mythologie puis par race/type d'artéfact/regroupement de quiz), à tenir à jour à chaque changement touchant la base
