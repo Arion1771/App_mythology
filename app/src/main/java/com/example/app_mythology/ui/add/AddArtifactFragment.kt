@@ -85,7 +85,8 @@ open class AddArtifactFragment : Fragment() {
                 creatorName  = view.getText(R.id.et_creator),
                 power        = view.getText(R.id.et_power),
                 story        = view.getText(R.id.et_artifact_story),
-                description  = view.getText(R.id.et_artifact_description)
+                description  = view.getText(R.id.et_artifact_description),
+                tags         = view.getText(R.id.et_artifact_tags)
             )
             if (editMode) viewModel.update(artifact) else viewModel.insert(artifact)
             findNavController().navigateUp()
@@ -107,6 +108,7 @@ open class AddArtifactFragment : Fragment() {
         view.findEt(R.id.et_power)?.setText(a.power)
         view.findEt(R.id.et_artifact_story)?.setText(a.story)
         view.findEt(R.id.et_artifact_description)?.setText(a.description)
+        view.findEt(R.id.et_artifact_tags)?.setText(a.tags)
     }
 
     private fun View.getText(id: Int): String? =
