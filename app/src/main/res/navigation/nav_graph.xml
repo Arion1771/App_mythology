@@ -162,7 +162,15 @@
             app:destination="@id/quizPlaceChoiceFragment" />
         <action android:id="@+id/action_quizChoice_to_quizArtifactChoice"
             app:destination="@id/quizArtifactChoiceFragment" />
+        <action android:id="@+id/action_quizChoice_to_quizHelp"
+            app:destination="@id/quizHelpFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/quizHelpFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizHelpFragment"
+        android:label="Aide — Quiz"
+        tools:layout="@layout/fragment_quiz_help" />
 
     <fragment
         android:id="@+id/quizEntityChoiceFragment"
