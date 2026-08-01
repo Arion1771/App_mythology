@@ -57,6 +57,11 @@ class QuizPlaceFragment : Fragment() {
 
         var places = listOf<PlaceEntity>()
 
+        fun updateFoundCount() {
+            val found = viewModel.foundIds.value ?: emptySet()
+            tvFoundCount.text = "${found.size} / ${places.size} trouvés"
+        }
+
         placesLiveData.observe(viewLifecycleOwner) { list ->
             places = list
             container.removeAllViews()
@@ -88,6 +93,11 @@ class QuizPlaceFragment : Fragment() {
                 }
                 container.addView(card)
             }
+
+            // Le nombre total de lieux n'est connu qu'une fois cette liste chargée :
+            // sans cet appel, le compteur reste bloqué sur "0 / 0" tant qu'aucun lieu
+            // n'a encore été trouvé (foundIds ne se met à jour qu'à la première trouvaille).
+            updateFoundCount()
         }
 
         // Observer les cartes trouvées pour les retourner
@@ -105,7 +115,7 @@ class QuizPlaceFragment : Fragment() {
                     card.setBackgroundResource(R.drawable.card_found_bg)
                 }
             }
-            tvFoundCount.text = "${found.size} / ${places.size} trouvés"
+            updateFoundCount()
         }
 
         btnValidate.setOnClickListener {
