@@ -12,6 +12,7 @@ class EntiteRepository(private val dao: EntiteDao) {
     val races: LiveData<List<String>> = dao.getDistinctRaces()
 
     suspend fun getById(id: Int): EntiteEntity? = dao.getById(id)
+    suspend fun getAllSync(): List<EntiteEntity> = dao.getAllSync()
 
     fun getByMythology(mythology: String) = dao.getByMythology(mythology)
     fun getByRace(race: String) = dao.getByRace(race)

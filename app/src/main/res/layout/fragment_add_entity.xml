@@ -55,6 +55,26 @@
             android:hint="Ex : Jouable dans God of War, Smite…" android:textColor="@color/on_surface"
             android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
             android:minLines="2" android:gravity="top"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tags (leurres du QCM) -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tags" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_tags"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ex : Feu, Guerre, Animal…" android:textColor="@color/on_surface"
+            android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Thèmes du mode Liste (uniquement les thèmes curés, non déductibles d'un champ) -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Thèmes du mode Liste" android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/et_listthemes"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ex : Argonautes, Guerriers grecs devant Troie…" android:textColor="@color/on_surface"
+            android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
             android:layout_marginBottom="20dp"/>
 
         <!-- ══ GOD ══════════════════════════════════════════════════ -->

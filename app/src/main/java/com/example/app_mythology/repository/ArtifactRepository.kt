@@ -12,6 +12,7 @@ class ArtifactRepository(private val dao: ArtifactDao) {
     val types: LiveData<List<String>> = dao.getDistinctTypes()
 
     suspend fun getById(id: Int): ArtifactEntity? = dao.getById(id)
+    suspend fun getAllSync(): List<ArtifactEntity> = dao.getAllSync()
 
     fun getByMythology(mythology: String) = dao.getByMythology(mythology)
     fun getByType(artifactType: String) = dao.getByType(artifactType)
