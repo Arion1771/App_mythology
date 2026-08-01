@@ -17,18 +17,24 @@ class QuizHelpFragment : Fragment() {
 
     private val pages = listOf(
         HelpPage(
-            "Trois quiz, trois façons de jouer",
-            "MythoBase propose trois quiz indépendants, chacun avec ses propres règles :\n\n" +
-            "• Entités — devinez des dieux, héros, monstres et autres figures mythologiques.\n" +
-            "• Lieux — retrouvez des royaumes, fleuves infernaux et autres lieux emblématiques.\n" +
-            "• Artéfacts — identifiez des armes et objets magiques.\n\n" +
+            "Trois types de quiz",
+            "MythoBase propose trois types de quiz :\n\n" +
+            "• Classique — un indice, à vous de deviner le nom (entités et artéfacts).\n" +
+            "• QCM — la même question, mais avec 4 noms proposés à choisir (entités et artéfacts).\n" +
+            "• Liste — retrouvez toutes les entrées d'un thème choisi, façon quiz Lieux (entités, artéfacts et lieux).\n\n" +
             "Faites défiler cet écran pour découvrir comment fonctionne chacun d'eux."
         ),
         HelpPage(
-            "Quiz Entités et Artéfacts",
-            "Ces deux quiz partagent le même principe : un indice s'affiche, à vous de deviner le nom exact.\n\n" +
+            "Mode Classique (Entités et Artéfacts)",
+            "Un indice s'affiche, à vous de deviner le nom exact.\n\n" +
             "Si votre première réponse est fausse, vous disposez d'un second essai — les informations complémentaires (mythologie, description, histoire…) apparaissent alors pour vous aider.\n\n" +
             "Une fois la question résolue (bonne réponse, ou deux essais épuisés), un écran dédié s'affiche : le nom apparaît en vert si trouvé du premier coup, en jaune du second coup, ou en rouge si les deux essais ont échoué, suivi de toutes les informations disponibles. Un bouton permet ensuite de passer à la question suivante."
+        ),
+        HelpPage(
+            "Mode QCM (Entités et Artéfacts)",
+            "Même question que le mode Classique (même indice, mêmes informations affichées), mais la réponse se donne en un seul coup, en touchant l'un des 4 noms proposés.\n\n" +
+            "Les 3 noms erronés (les leurres) sont choisis pour ressembler à la bonne réponse : mythologie proche, thématique commune, équivalent dans une autre mythologie…\n\n" +
+            "Un seul essai est possible : la question suivante s'enchaîne aussitôt après un bref retour visuel (vert si correct, rouge sinon), qu'elle soit juste ou fausse. Un écran de score final s'affiche à la fin, sans seconde chance par question."
         ),
         HelpPage(
             "Quiz Lieux",
@@ -38,17 +44,24 @@ class QuizHelpFragment : Fragment() {
             "Le quiz se termine dès que tous les lieux sont trouvés, ou après la 5ᵉ erreur : toutes les cartes sont alors révélées, en vert si trouvées, en rouge sinon, suivies d'un écran de score indiquant le nombre de lieux trouvés sur le total."
         ),
         HelpPage(
+            "Mode Liste",
+            "Choisissez d'abord un thème (mythologie, famille de créatures, groupe légendaire…) : une grille de cartes grisées s'affiche, une par entrée à trouver — certains thèmes regroupent leurs cartes sous plusieurs sous-titres (ex. Muses classiques / béotiennes).\n\n" +
+            "Touchez une carte non trouvée pour ouvrir un écran complet listant toutes ses informations sauf le nom (comme le second essai du mode Classique) ; un retour vous ramène à la grille sans rien perdre de votre progression. Saisissez ensuite votre réponse dans le champ prévu, comme pour le quiz Lieux.\n\n" +
+            "Le nombre d'essais autorisés dépend de la taille du thème : 3 pour les thèmes de moins de 20 entrées, 5 pour ceux de moins de 50, 10 au-delà. Le quiz se termine dès que tout est trouvé ou une fois les essais épuisés : toutes les cartes sont alors révélées (vert si trouvée, rouge sinon), suivies d'un score sur le total de la liste."
+        ),
+        HelpPage(
             "Difficulté et score",
-            "Avant de lancer un quiz d'entités ou d'artéfacts, choisissez un niveau :\n\n" +
+            "Avant de lancer un quiz d'entités ou d'artéfacts (Classique ou QCM), choisissez un niveau :\n\n" +
             "• Facile — 10 questions de difficulté 1\n" +
             "• Moyen — 20 questions (difficultés 1 et 2)\n" +
             "• Difficile — 30 questions (difficultés 1, 2 et 3)\n\n" +
             "Pendant le quiz, une pastille colorée indique la difficulté de la question en cours : vert (facile), jaune (moyen), rouge (difficile) — à ne pas confondre avec les couleurs de l'écran de résultat, qui indiquent elles votre performance sur la question.\n\n" +
-            "Une bonne réponse du premier coup rapporte autant de points que le niveau de difficulté de la question ; du second coup, seulement la moitié. Le score final s'affiche sur le total de points possible."
+            "En mode Classique, une bonne réponse du premier coup rapporte autant de points que le niveau de difficulté de la question ; du second coup, seulement la moitié. En mode QCM, une bonne réponse rapporte tous les points de la question (un seul essai possible), une mauvaise n'en rapporte aucun. Le score final s'affiche sur le total de points possible.\n\n" +
+            "Le mode Liste et le quiz Lieux n'ont pas de niveau de difficulté ni de score par points : le résultat final indique simplement le nombre d'entrées trouvées sur le total."
         ),
         HelpPage(
             "Conventions de réponse",
-            "Quelques règles simplifient la saisie de vos réponses :\n\n" +
+            "Quelques règles simplifient la saisie de vos réponses (modes Classique, Lieux et Liste — le mode QCM se joue en touchant directement une proposition) :\n\n" +
             "• La casse n'a aucune importance (« zeus » et « ZEUS » sont acceptés).\n" +
             "• Les accents ne sont pas pris en compte (« Zéus » est accepté pour « Zeus »).\n" +
             "• Aucun nom de la base ne commence par un article (« le », « la », « les », « l' ») : inutile d'en ajouter un dans votre réponse.\n\n" +

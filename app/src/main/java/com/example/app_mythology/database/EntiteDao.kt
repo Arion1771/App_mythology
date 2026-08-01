@@ -12,6 +12,10 @@ interface EntiteDao {
     @Query("SELECT * FROM entites ORDER BY name ASC")
     fun getAll(): LiveData<List<EntiteEntity>>
 
+    /** Chargement ponctuel (non observé) de toutes les entités, pour le mode Liste et les leurres du QCM. */
+    @Query("SELECT * FROM entites")
+    suspend fun getAllSync(): List<EntiteEntity>
+
     @Query("SELECT * FROM entites WHERE id = :id")
     suspend fun getById(id: Int): EntiteEntity?
 
