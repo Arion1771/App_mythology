@@ -1,6 +1,5 @@
 package com.example.app_mythology.ui.quiz
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,30 +9,18 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.viewmodel.QuizViewModel
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 
-/**
- * Quiz QCM (entités ou artéfacts) : 4 choix, un seul essai, passage immédiat
- * à la question suivante quel que soit le résultat. Arguments "quizType", "level".
- */
-class QuizQcmFragment : Fragment() {
+/** Quiz QCM Entités : 4 choix, un seul essai, écran de résultat par question. */
+class QuizEntityQcmFragment : Fragment() {
 
-    private val viewModel: QuizViewModel by viewModels()
+    private val viewModel: QuizViewModel by navGraphViewModels(R.id.quiz_entity_qcm_graph)
     private val dots = mutableListOf<View>()
-    private lateinit var quizType: String
-    private var answering = true
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        quizType = arguments?.getString("quizType") ?: "entity"
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,12 +36,12 @@ class QuizQcmFragment : Fragment() {
             else     -> QuizViewModel.QuizLevel.EASY
         }
 
-        val tvBadge      = view.findViewById<TextView>(R.id.tv_difficulty_badge)
-        val tvProgress   = view.findViewById<TextView>(R.id.tv_quiz_progress)
-        val tvMythology  = view.findViewById<TextView>(R.id.tv_quiz_mythology)
-        val tvRace       = view.findViewById<TextView>(R.id.tv_quiz_race)
-        val tvClue       = view.findViewById<TextView>(R.id.tv_quiz_clue)
-        val dotsContainer= view.findViewById<LinearLayout>(R.id.dots_container)
+        val tvBadge       = view.findViewById<TextView>(R.id.tv_difficulty_badge)
+        val tvProgress    = view.findViewById<TextView>(R.id.tv_quiz_progress)
+        val tvMythology   = view.findViewById<TextView>(R.id.tv_quiz_mythology)
+        val tvRace        = view.findViewById<TextView>(R.id.tv_quiz_race)
+        val tvClue        = view.findViewById<TextView>(R.id.tv_quiz_clue)
+        val dotsContainer = view.findViewById<LinearLayout>(R.id.dots_container)
         val choiceButtons = listOf(
             view.findViewById<Button>(R.id.btn_qcm_choice_0),
             view.findViewById<Button>(R.id.btn_qcm_choice_1),
@@ -62,10 +49,10 @@ class QuizQcmFragment : Fragment() {
             view.findViewById<Button>(R.id.btn_qcm_choice_3)
         )
         val layoutResult = view.findViewById<View>(R.id.layout_result)
-        val tvScore      = view.findViewById<TextView>(R.id.tv_score)
-        val btnRestart   = view.findViewById<Button>(R.id.btn_restart)
+        val tvScore       = view.findViewById<TextView>(R.id.tv_score)
+        val btnRestart    = view.findViewById<Button>(R.id.btn_restart)
 
-        if (quizType == "artifact") viewModel.loadArtifactQcm(level) else viewModel.loadEntityQcm(level)
+        viewModel.loadEntityQcm(level)
 
         fun rebuildDots(count: Int) {
             dots.clear()
@@ -80,46 +67,31 @@ class QuizQcmFragment : Fragment() {
             }
         }
 
-        fun resetButtonColors() {
-            choiceButtons.forEach {
-                it.setBackgroundColor(Color.parseColor("#FFB36A"))
-                it.isEnabled = true
-            }
+        fun bindQuestion(entites: List<EntiteEntity>, index: Int) {
+            val e = entites.getOrNull(index) ?: return
+            tvProgress.text  = "Question ${index + 1} / ${entites.size}"
+            tvMythology.text = "Mythologie : ${e.mythology}"
+            tvRace.text      = "Race : ${translateRace(e.race)}"
+            tvClue.text      = e.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
+            tvBadge.text     = e.difficulty.toString()
+            tvBadge.setBackgroundResource(difficultyBadgeRes(e.difficulty))
         }
 
-        fun bindQuestion(index: Int) {
-            val artifacts = viewModel.qcmArtifacts.value
-            val name: String; val mythology: String; val race: String?; val clue: String?; val difficulty: Int
-            if (quizType == "artifact" && !artifacts.isNullOrEmpty()) {
-                val a = artifacts.getOrNull(index) ?: return
-                name = a.name; mythology = a.mythology; race = a.artifactType
-                clue = a.clue; difficulty = a.difficulty
-                tvProgress.text = "Question ${index + 1} / ${artifacts.size}"
-            } else {
-                val entites = viewModel.qcmEntites.value ?: return
-                val e = entites.getOrNull(index) ?: return
-                name = e.name; mythology = e.mythology; race = translateRace(e.race)
-                clue = e.clue; difficulty = e.difficulty
-                tvProgress.text = "Question ${index + 1} / ${entites.size}"
+        viewModel.qcmEntites.observe(viewLifecycleOwner) { entites ->
+            rebuildDots(entites.size)
+            viewModel.qcmIndex.observe(viewLifecycleOwner) { index ->
+                if (viewModel.qcmFinished.value != true) bindQuestion(entites, index)
             }
-            tvMythology.text = "Mythologie : $mythology"
-            tvRace.text = "Race : ${race ?: "—"}"
-            tvClue.text = clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
-            tvBadge.text = difficulty.toString()
-            tvBadge.setBackgroundResource(difficultyBadgeRes(difficulty))
         }
 
         viewModel.qcmChoices.observe(viewLifecycleOwner) { choices ->
             if (choices.size < 4) return@observe
-            answering = true
-            resetButtonColors()
-            choiceButtons.forEachIndexed { i, btn -> btn.text = choices[i] }
-            val index = viewModel.qcmIndex.value ?: 0
-            bindQuestion(index)
+            choiceButtons.forEachIndexed { i, btn ->
+                btn.text = choices[i]
+                btn.isEnabled = true
+                btn.isVisible = true
+            }
         }
-
-        viewModel.qcmEntites.observe(viewLifecycleOwner) { list -> rebuildDots(list.size) }
-        viewModel.qcmArtifacts.observe(viewLifecycleOwner) { list -> if (list.isNotEmpty()) rebuildDots(list.size) }
 
         viewModel.qcmResults.observe(viewLifecycleOwner) { results ->
             results.forEachIndexed { i, result ->
@@ -135,25 +107,14 @@ class QuizQcmFragment : Fragment() {
 
         choiceButtons.forEach { btn ->
             btn.setOnClickListener {
-                if (!answering) return@setOnClickListener
-                answering = false
                 choiceButtons.forEach { it.isEnabled = false }
                 viewModel.submitQcmAnswer(btn.text.toString())
             }
         }
 
-        viewModel.qcmFeedback.observe(viewLifecycleOwner) { feedback ->
-            if (feedback == null) return@observe
-            val (selected, correct) = feedback
-            choiceButtons.forEach { btn ->
-                when {
-                    btn.text.toString() == selected && correct -> btn.setBackgroundColor(Color.parseColor("#FF4CAF50"))
-                    btn.text.toString() == selected && !correct -> btn.setBackgroundColor(Color.parseColor("#FFFF5252"))
-                }
-            }
-            viewLifecycleOwner.lifecycleScope.launch {
-                delay(900)
-                if (viewModel.qcmFeedback.value != null) viewModel.advanceQcm()
+        viewModel.qcmAnswerRevealed.observe(viewLifecycleOwner) { revealed ->
+            if (revealed) {
+                findNavController().navigate(R.id.action_qcmEntity_to_qcmEntityResult)
             }
         }
 

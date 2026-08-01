@@ -4,19 +4,24 @@
     android:orientation="vertical" android:gravity="center" android:padding="32dp"
     android:background="@color/surface">
 
-    <TextView android:id="@+id/tv_mode_choice_title"
+    <TextView android:id="@+id/tv_domain_choice_title"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textSize="22sp" android:textStyle="bold"
         android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
 
-    <Button android:id="@+id/btn_mode_classic"
+    <Button android:id="@+id/btn_domain_entity"
         android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
         android:layout_width="240dp" android:layout_height="56dp"
-        android:text="Classique" android:layout_marginBottom="20dp"/>
+        android:text="Entités" android:layout_marginBottom="20dp"/>
 
-    <Button android:id="@+id/btn_mode_qcm"
+    <Button android:id="@+id/btn_domain_artifact"
         android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
         android:layout_width="240dp" android:layout_height="56dp"
-        android:text="QCM"/>
+        android:text="Artéfacts" android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btn_domain_place"
+        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
+        android:layout_width="240dp" android:layout_height="56dp"
+        android:text="Lieux"/>
 
 </LinearLayout>
