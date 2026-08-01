@@ -34,7 +34,8 @@ class QuizHelpFragment : Fragment() {
             "Quiz Lieux",
             "Le quiz Lieux fonctionne différemment : une grille de cartes grisées s'affiche, une par lieu à trouver.\n\n" +
             "Touchez une carte pour révéler un indice sans dévoiler son nom, puis saisissez votre réponse dans le champ prévu. Une carte correctement devinée se retourne et affiche définitivement le nom du lieu.\n\n" +
-            "Aucune limite d'essais ni de temps : prenez le temps de retrouver tous les lieux de la grille."
+            "Vous disposez de 5 essais au total : seule une réponse fausse en consomme un (4 erreurs sont tolérées, la 5ᵉ termine le quiz). Le nombre d'erreurs est affiché en permanence.\n\n" +
+            "Le quiz se termine dès que tous les lieux sont trouvés, ou après la 5ᵉ erreur : toutes les cartes sont alors révélées, en vert si trouvées, en rouge sinon, suivies d'un écran de score indiquant le nombre de lieux trouvés sur le total."
         ),
         HelpPage(
             "Difficulté et score",
