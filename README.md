@@ -8,9 +8,9 @@ The built-in database catalogs mythological entities (gods, heroes, monsters…)
 
 Three independent quizzes let you test your knowledge: an entity quiz, a place quiz and an artifact quiz, each with several difficulty levels. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
-### Latest addition — V2.5.0
+### Latest addition — V2.5.1
 
-Added a multi-page quiz help screen (reachable via a "?" icon on the quiz selection screen), covering how each of the three quizzes works, difficulty levels and scoring, and answer-matching conventions (case, accents, no articles). The app is now also locked to portrait orientation.
+Fixed the place quiz's found-count display, which showed "0 / 0 found" instead of "0 / n" until the first place was found.
 
 ### Getting started
 
@@ -45,9 +45,9 @@ La base de données intégrée recense des entités mythologiques (dieux, héros
 
 Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
-### Dernier ajout — V2.5.0
+### Dernier ajout — V2.5.1
 
-Ajout d'un écran d'aide du quiz sur plusieurs pages défilantes (accessible via une icône « ? » sur l'écran de choix du quiz), qui explique le fonctionnement des trois quiz, la difficulté et le calcul des points, ainsi que les conventions de réponse (casse, accents, absence d'article). L'application est désormais également verrouillée en orientation portrait.
+Correction du compteur du quiz Lieux, qui affichait « 0 / 0 trouvés » au lieu de « 0 / n » tant qu'aucun lieu n'avait encore été trouvé.
 
 ### Démarrage
 

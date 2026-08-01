@@ -3,6 +3,11 @@
 ## V2
 
 
+#### V2.5.1
+
+- Correction du compteur « 0 / 0 trouvés » du quiz Lieux : le total n'était mis à jour qu'à la première trouvaille au lieu de s'afficher dès le chargement de la grille
+
+
 ### V2.5.0
 
 - Écran d'aide du quiz sur plusieurs pages défilantes (`QuizHelpFragment`, ViewPager2), accessible via une icône « ? » sur l'écran de choix du quiz : fonctionnement des trois quiz, difficulté et calcul des points, conventions de réponse (casse, accents, absence d'article)
