@@ -1,6 +1,7 @@
 package com.example.app_mythology
 
 import android.app.Application
+import com.example.app_mythology.achievements.AchievementManager
 import com.example.app_mythology.database.AppDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -10,6 +11,7 @@ class MythosApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        AchievementManager.init(applicationContext)
         // Peupler la base au démarrage si elle est vide
         CoroutineScope(Dispatchers.IO).launch {
             AppDatabase.populateIfEmpty(applicationContext)

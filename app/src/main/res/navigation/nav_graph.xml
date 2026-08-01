@@ -17,7 +17,15 @@
             app:destination="@id/addChoiceFragment" />
         <action android:id="@+id/action_home_to_quizChoice"
             app:destination="@id/quizChoiceFragment" />
+        <action android:id="@+id/action_home_to_achievements"
+            app:destination="@id/achievementsFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.app_mythology.ui.achievements.AchievementsFragment"
+        android:label="Succès"
+        tools:layout="@layout/fragment_achievements" />
 
     <!-- ── Parcourir ──────────────────────────────────────────────── -->
     <fragment
