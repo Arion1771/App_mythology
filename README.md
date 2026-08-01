@@ -2,9 +2,43 @@
 
 ## English
 
-**Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more). Browse, search, add and edit mythological entities, places and artifacts, then test your knowledge with three-difficulty quizzes.
+**Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more).
+
+The built-in database catalogs mythological entities (gods, heroes, monsters…), places and artifacts. You can browse and search it freely, open the detailed sheet for any entry, and add or edit entries directly from the app.
+
+Three quiz modes let you test your knowledge — Classic (a clue, guess the name), Multiple-choice (same clue, pick the right name among 4), and List (find every entry matching a chosen theme) — available across entities, places and artifacts depending on the mode, each with several difficulty levels or size-based attempt limits. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
+
+Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
 ### Changes since the first version
+
+#### V3.0.0
+
+- Complete overhaul of the quizzes: two new modes join Classic mode
+- New Multiple-choice mode (entities and artifacts): same clue as Classic mode, but answered in a single attempt among 4 suggested names; the 3 decoys are chosen by thematic proximity (tags, mythology, race, equivalent) rather than at random; immediate move to the next question whatever the result, final score screen with no second chance
+- New List mode: 27 selectable themes (mythologies, creature families, legendary groups...), card grid like the Places quiz, tapping a card not yet found → full screen showing all the information except the name, attempts limited by theme size (3/5/10), final reveal and score out of the theme total; some themes show their cards split under several subheadings (Muses, Enfants de Gaïa et Ouranos, Archanges et démons, Zodiaque)
+- New `tags` (entities and artifacts) and `listThemes` (entities only) fields serving these two modes: Room schema v6, destructive migration, add/edit forms
+- Thematic tags assigned to the 486 entities and 43 artifacts (wind, sky, love, animal, principal, human, earth, fire, water, war, death, wisdom, magic, cunning, hunting, craftsmanship, fertility, sun, day, night, lightning, guardian, prophecy, arts, justice, royalty, healing, messenger, fate)
+- Attached 61 entities to the 7 curated List themes that cannot be derived from an existing field (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+- Quiz help screen updated with the new modes
+
+#### V2.6.1
+
+- Updated the "Quiz Lieux" page of the help screen, which still claimed there was no attempt limit, contradicting the 5-attempt limit introduced in V2.6.0
+
+#### V2.6.0
+
+- The Places quiz is now limited to 5 attempts in total: each wrong answer uses one (4 mistakes allowed, the 5th ends the quiz), shown in real time ("Erreurs : X / 5")
+- At the end of the quiz (all cards found, or 5th mistake), every card is revealed: green if found, red otherwise, followed by a dedicated score screen ("Score : X / N lieux trouvés")
+
+#### V2.5.1
+
+- Fixed the "0 / 0 found" counter of the Places quiz: the total was only updated on the first find instead of showing as soon as the grid loaded
+
+#### V2.5.0
+
+- Quiz help screen over several swipeable pages (`QuizHelpFragment`, ViewPager2), reachable through a "?" icon on the quiz selection screen: how the three quizzes work, difficulty and scoring, answer conventions (case, accents, no article)
+- App locked in portrait orientation (`android:screenOrientation="portrait"`)
 
 #### V2.4.2
 
@@ -258,17 +292,68 @@
 
 ### Getting started
 
-1. Clone the repository.
-2. Open the project in Android Studio.
-3. Sync Gradle, then run the app on an emulator or device.
+The app isn't published on the Play Store — it has to be built and installed manually, either of two ways.
+
+#### Method 1 — USB debugging from Android Studio
+
+1. On your Android phone: enable Developer options (Settings → About phone → tap "Build number" 7 times), then enable USB debugging under Settings → Developer options.
+2. Connect the phone to your computer via USB and allow debugging when prompted on the phone's screen.
+3. Clone this repository, then open the folder in Android Studio.
+4. Let Android Studio sync Gradle (progress bar at the bottom of the window).
+5. Select your device from the target device dropdown (top of the window), then click ▶ Run.
+6. The app builds, installs and launches automatically on your phone.
+
+#### Method 2 — Build and install the debug APK
+
+1. Clone this repository, then open the folder in Android Studio.
+2. Let Android Studio sync Gradle.
+3. From the menu: Build → Build Bundle(s) / APK(s) → Build APK(s).
+4. Once the build finishes, click "locate" in the notification (or find the file at `app/build/outputs/apk/debug/app-debug.apk`).
+5. Transfer that `.apk` file to your phone (USB cable, email, cloud storage…).
+6. On the phone, allow installing apps from this source if prompted, then open the `.apk` file to install it.
+7. Launch the app from the app drawer.
 
 ---
 
 ## Français
 
-**Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
+**Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres).
+
+La base de données intégrée recense des entités mythologiques (dieux, héros, monstres…), des lieux et des artéfacts. Vous pouvez la parcourir et la rechercher librement, consulter la fiche détaillée de chaque élément, et ajouter ou modifier des entrées directement depuis l'application.
+
+Trois types de quiz permettent de tester vos connaissances — Classique (un indice, devinez le nom), QCM (même indice, choisissez le bon nom parmi 4) et Liste (retrouvez toutes les entrées correspondant à un thème choisi) — disponibles selon le mode sur les entités, les lieux et les artéfacts, chacun avec plusieurs niveaux de difficulté ou des paliers d'essais selon la taille du thème. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
+
+Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la première version
+
+#### V3.0.0
+
+- Refonte complète des quiz : deux nouveaux modes s'ajoutent au mode Classique
+- Nouveau mode QCM (entités et artéfacts) : même indice que le mode Classique, mais réponse en un seul essai parmi 4 noms proposés ; les 3 leurres sont choisis par proximité thématique (tags, mythologie, race, équivalent) plutôt qu'au hasard ; passage immédiat à la question suivante quel que soit le résultat, écran de score final sans seconde chance
+- Nouveau mode Liste : 27 thèmes sélectionnables (mythologies, familles de créatures, groupes légendaires...), grille de cartes façon quiz Lieux, clic sur une carte non trouvée → écran plein affichant toutes les informations sauf le nom, essais limités selon la taille du thème (3/5/10), révélation finale et score sur le total du thème ; certains thèmes affichent leurs cartes réparties sous plusieurs sous-titres (Muses, Enfants de Gaïa et Ouranos, Archanges et démons, Zodiaque)
+- Nouveaux champs `tags` (entités et artéfacts) et `listThemes` (entités uniquement) au service de ces deux modes : schéma Room v6, migration destructive, formulaires d'ajout/édition
+- Tags thématiques assignés aux 486 entités et 43 artéfacts (vent, ciel, amour, animal, principal, humain, terre, feu, eau, guerre, mort, sagesse, magie, ruse, chasse, artisanat, fertilité, soleil, jour, nuit, foudre, gardien, prophétie, arts, justice, royauté, guérison, messager, destin)
+- Rattachement de 61 entités aux 7 thèmes curés du mode Liste non déductibles d'un champ existant (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+- Écran d'aide du quiz mis à jour avec les nouveaux modes
+
+#### V2.6.1
+
+- Mise à jour de la page « Quiz Lieux » de l'écran d'aide, qui affirmait encore l'absence de limite d'essais, contredisant la limite de 5 essais introduite en V2.6.0
+
+#### V2.6.0
+
+- Le quiz Lieux est désormais limité à 5 essais au total : chaque réponse fausse en consomme un (4 erreurs tolérées, la 5e termine le quiz), affiché en temps réel (« Erreurs : X / 5 »)
+- À la fin du quiz (toutes les cartes trouvées, ou 5e erreur), toutes les cartes sont révélées : en vert si trouvée, en rouge sinon, suivies d'un écran de score dédié (« Score : X / N lieux trouvés »)
+
+#### V2.5.1
+
+- Correction du compteur « 0 / 0 trouvés » du quiz Lieux : le total n'était mis à jour qu'à la première trouvaille au lieu de s'afficher dès le chargement de la grille
+
+#### V2.5.0
+
+- Écran d'aide du quiz sur plusieurs pages défilantes (`QuizHelpFragment`, ViewPager2), accessible via une icône « ? » sur l'écran de choix du quiz : fonctionnement des trois quiz, difficulté et calcul des points, conventions de réponse (casse, accents, absence d'article)
+- Application verrouillée en orientation portrait (`android:screenOrientation="portrait"`)
 
 #### V2.4.2
 
@@ -522,6 +607,23 @@
 
 ### Démarrage
 
-1. Cloner le dépôt.
-2. Ouvrir le projet dans Android Studio.
-3. Synchroniser Gradle, puis lancer l'application sur un émulateur ou un appareil.
+L'application n'est pas publiée sur le Play Store ; il faut la compiler et l'installer manuellement, de deux façons possibles.
+
+#### Méthode 1 — Débogage USB depuis Android Studio
+
+1. Sur votre téléphone Android : activez les options développeur (Paramètres → À propos du téléphone → appuyez 7 fois sur « Numéro de build »), puis activez le débogage USB dans Paramètres → Options pour les développeurs.
+2. Connectez le téléphone à l'ordinateur par USB et autorisez le débogage lorsque la demande apparaît sur l'écran du téléphone.
+3. Clonez ce dépôt, puis ouvrez le dossier dans Android Studio.
+4. Laissez Android Studio synchroniser Gradle (barre de progression en bas de la fenêtre).
+5. Sélectionnez votre appareil dans la liste déroulante des appareils cibles (en haut de la fenêtre), puis cliquez sur ▶ Run.
+6. L'application se compile, s'installe et se lance automatiquement sur votre téléphone.
+
+#### Méthode 2 — Générer et installer l'APK de débogage
+
+1. Clonez ce dépôt, puis ouvrez le dossier dans Android Studio.
+2. Laissez Android Studio synchroniser Gradle.
+3. Dans le menu : Build → Build Bundle(s) / APK(s) → Build APK(s).
+4. Une fois la compilation terminée, cliquez sur le lien « locate » dans la notification (ou trouvez le fichier dans `app/build/outputs/apk/debug/app-debug.apk`).
+5. Transférez ce fichier `.apk` sur votre téléphone (câble USB, e-mail, cloud…).
+6. Sur le téléphone, autorisez l'installation d'applications depuis cette source si demandé, puis ouvrez le fichier `.apk` pour l'installer.
+7. Lancez l'application depuis le tiroir d'applications.

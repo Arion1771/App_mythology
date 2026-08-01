@@ -157,7 +157,9 @@ open class AddEntityFragment : Fragment() {
             death             = view.getText(R.id.et_death),
             zodiacType        = view.getText(R.id.et_zodiactype),
             chineseEquivalent = view.getText(R.id.et_chinese),
-            popularCulture    = view.getText(R.id.et_popularculture)
+            popularCulture    = view.getText(R.id.et_popularculture),
+            tags              = view.getText(R.id.et_tags),
+            listThemes        = view.getText(R.id.et_listthemes)
         )
     }
 

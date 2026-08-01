@@ -9,7 +9,7 @@ import org.json.JSONObject
 
 @Database(
     entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class],
-    version = 5,
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -85,7 +85,9 @@ abstract class AppDatabase : RoomDatabase() {
                     death             = o.ns("death"),
                     zodiacType        = o.ns("zodiacType"),
                     chineseEquivalent = o.ns("chineseEquivalent"),
-                    popularCulture    = o.ns("popularCulture")
+                    popularCulture    = o.ns("popularCulture"),
+                    tags              = o.ns("tags"),
+                    listThemes        = o.ns("listThemes")
                 ))
             }
             Log.d("AppDatabase", "✓ ${entites.length()} entités insérées")
@@ -119,7 +121,8 @@ abstract class AppDatabase : RoomDatabase() {
                     description  = o.ns("description"),
                     clue         = o.ns("clue"),
                     difficulty   = if (o.has("difficulty") && !o.isNull("difficulty"))
-                                        o.getInt("difficulty") else 1
+                                        o.getInt("difficulty") else 1,
+                    tags         = o.ns("tags")
                 ))
             }
             Log.d("AppDatabase", "✓ ${artifacts.length()} artéfacts insérés")
