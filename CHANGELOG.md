@@ -2,6 +2,25 @@
 
 ## V3
 
+#### V3.0.2
+
+- Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag Principal lors de l'assignation heuristique de V3.0.0, faute de correspondance repérée avec un mot-clé
+  - Entité :
+    - Poséidon (Mise à jour)
+    - Cymopolée (Mise à jour)
+    - Mélinoé (Mise à jour)
+    - Discordia (Mise à jour)
+    - Janus (Mise à jour)
+    - Silvanus (Mise à jour)
+    - Ptah (Mise à jour)
+    - Hâpy (Mise à jour)
+    - Taouret (Mise à jour)
+    - Ériu (Mise à jour)
+    - Ah-Muzen-Cab (Mise à jour)
+    - Camazotz (Mise à jour)
+    - Kali (Mise à jour)
+
+
 #### V3.0.1
 
 - L'écran de choix des quiz propose désormais directement les trois types (QCM, Classique, Liste, dans cet ordre) ; le domaine (Entités, Artéfacts, Lieux selon ce qui existe pour le type choisi) se sélectionne ensuite sur un écran dédié, inversant l'ordre précédent (domaine puis mode)
