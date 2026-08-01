@@ -897,3 +897,43 @@ Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 #### Véhicule (1)
 
 - Barque solaire de Rê
+
+---
+
+## Thèmes du mode Liste
+
+27 thèmes proposés par le quiz Liste. Ceux marqués « (champ) » se déduisent
+automatiquement d'un ou plusieurs champs existants (mythologie, race,
+godType…) ; les autres reposent sur le champ `listThemes`, renseigné à la
+main sur les entités concernées et modifiable depuis le formulaire
+d'ajout/édition.
+
+| Thème | Taille | Essais autorisés | Source |
+|---|---|---|---|
+| Mythologie grecque | 194 | 10 | champ |
+| Mythologie romaine | 71 | 10 | champ |
+| Mythologie hindoue | 8 | 3 | champ |
+| Mythologie chinoise | 21 | 5 | champ |
+| Mythologie shinto | 9 | 3 | champ |
+| Mythologie d'Amérique du Sud | 12 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
+| Dieux | 214 | 10 | champ |
+| Monstres | 102 | 10 | champ |
+| Héros | 40 | 5 | champ |
+| Artefacts | 43 | 5 | tous les artéfacts |
+| Entités | 486 | 10 | toutes les entités |
+| Muses | 12 | 3 | champ (Classiques / Béotiennes) |
+| Olympiens grecs | 14 | 3 | champ |
+| Olympiens romains | 14 | 3 | champ |
+| Géants grecs | 14 | 3 | champ |
+| Enfants de Gaïa et Ouranos | 22 | 5 | champ (Titans / Cyclopes / Hécatonchires, grecs uniquement) |
+| Monstres des 12 travaux | 8 | 3 | `listThemes` |
+| Guerriers grecs devant Troie | 9 | 3 | `listThemes` |
+| Archanges et démons | 15 | 3 | champ (Archanges / Démons) |
+| Signes du zodiaque | 24 | 5 | champ (Classiques / Chinois) |
+| Grées | 3 | 3 | champ |
+| Érinyes | 3 | 3 | champ |
+| Yokais | 5 | 3 | `listThemes` |
+| Argonautes | 9 | 3 | `listThemes` |
+| Chevaliers de la table ronde | 10 | 3 | `listThemes` |
+| Grands dieux d'Égypte | 12 | 3 | `listThemes` |
+| Monstres de l'arbre monde | 8 | 3 | `listThemes` |
