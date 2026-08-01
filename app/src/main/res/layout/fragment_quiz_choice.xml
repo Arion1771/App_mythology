@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:gravity="center" android:padding="32dp"
     android:background="@color/surface">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Choisissez un quiz" android:textSize="20sp" android:textStyle="bold"
-        android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center" android:padding="32dp">
 
-    <Button android:id="@+id/btn_quiz_entity"
-        android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-        android:layout_width="220dp" android:layout_height="56dp"
-        android:text="Entités" android:layout_marginBottom="24dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Choisissez un quiz" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
 
-    <Button android:id="@+id/btn_quiz_place"
-        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-        android:layout_width="220dp" android:layout_height="56dp"
-        android:text="Lieux" android:layout_marginBottom="24dp"/>
+        <Button android:id="@+id/btn_quiz_entity"
+            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+            android:layout_width="220dp" android:layout_height="56dp"
+            android:text="Entités" android:layout_marginBottom="24dp"/>
 
-    <Button android:id="@+id/btn_quiz_artifact"
-        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-        android:layout_width="220dp" android:layout_height="56dp"
-        android:text="Artéfacts"/>
+        <Button android:id="@+id/btn_quiz_place"
+            android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
+            android:layout_width="220dp" android:layout_height="56dp"
+            android:text="Lieux" android:layout_marginBottom="24dp"/>
 
-</LinearLayout>
+        <Button android:id="@+id/btn_quiz_artifact"
+            android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
+            android:layout_width="220dp" android:layout_height="56dp"
+            android:text="Artéfacts"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/btn_quiz_help"
+        android:layout_width="40dp" android:layout_height="40dp"
+        android:layout_gravity="top|end" android:layout_margin="16dp"
+        android:background="@drawable/bg_help_button"
+        android:gravity="center"
+        android:text="?" android:textSize="18sp" android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:contentDescription="Aide sur les quiz"
+        android:clickable="true" android:focusable="true"/>
+
+</FrameLayout>

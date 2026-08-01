@@ -8,6 +8,7 @@ import android.widget.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.viewmodel.QuizViewModel
@@ -39,6 +40,11 @@ class QuizPlaceFragment : Fragment() {
         val etInput = view.findViewById<EditText>(R.id.et_place_answer)
         val btnValidate = view.findViewById<Button>(R.id.btn_place_validate)
         val tvFoundCount = view.findViewById<TextView>(R.id.tv_found_count)
+        val tvAttempts = view.findViewById<TextView>(R.id.tv_place_attempts)
+        val layoutInput = view.findViewById<View>(R.id.layout_place_input)
+        val layoutResult = view.findViewById<View>(R.id.layout_place_result)
+        val tvScore = view.findViewById<TextView>(R.id.tv_place_score)
+        val btnRestart = view.findViewById<Button>(R.id.btn_place_restart)
 
         tvTitle.text = when (quizType) {
             "yggdrasil" -> "Arbre Monde"
@@ -56,6 +62,32 @@ class QuizPlaceFragment : Fragment() {
         }
 
         var places = listOf<PlaceEntity>()
+
+        fun updateFoundCount() {
+            val found = viewModel.foundIds.value ?: emptySet()
+            tvFoundCount.text = "${found.size} / ${places.size} trouvés"
+        }
+
+        fun updateAttempts() {
+            val wrong = viewModel.placeWrongAttempts.value ?: 0
+            tvAttempts.text = "Erreurs : $wrong / ${QuizViewModel.MAX_PLACE_ATTEMPTS}"
+        }
+
+        fun revealAllCards(found: Set<Int>) {
+            for (i in 0 until container.childCount) {
+                val card = container.getChildAt(i)
+                val id = card.tag as? Int ?: continue
+                val place = places.firstOrNull { it.id == id } ?: continue
+                card.findViewById<TextView>(R.id.tv_card_info).isVisible = false
+                card.findViewById<TextView>(R.id.tv_card_name).apply {
+                    text = place.name
+                    isVisible = true
+                }
+                card.setBackgroundResource(
+                    if (id in found) R.drawable.card_found_final_bg else R.drawable.card_notfound_bg
+                )
+            }
+        }
 
         placesLiveData.observe(viewLifecycleOwner) { list ->
             places = list
@@ -88,6 +120,14 @@ class QuizPlaceFragment : Fragment() {
                 }
                 container.addView(card)
             }
+
+            // Le nombre total de lieux n'est connu qu'une fois cette liste chargée :
+            // sans cet appel, le compteur reste bloqué sur "0 / 0" tant qu'aucun lieu
+            // n'a encore été trouvé (foundIds ne se met à jour qu'à la première trouvaille).
+            updateFoundCount()
+            if (viewModel.placeQuizFinished.value == true) {
+                revealAllCards(viewModel.foundIds.value ?: emptySet())
+            }
         }
 
         // Observer les cartes trouvées pour les retourner
@@ -105,19 +145,40 @@ class QuizPlaceFragment : Fragment() {
                     card.setBackgroundResource(R.drawable.card_found_bg)
                 }
             }
-            tvFoundCount.text = "${found.size} / ${places.size} trouvés"
+            updateFoundCount()
+        }
+
+        viewModel.placeWrongAttempts.observe(viewLifecycleOwner) { updateAttempts() }
+
+        viewModel.placeQuizFinished.observe(viewLifecycleOwner) { finished ->
+            if (finished) {
+                val found = viewModel.foundIds.value ?: emptySet()
+                revealAllCards(found)
+                layoutInput.isVisible = false
+                layoutResult.isVisible = true
+                tvScore.text = "Score : ${found.size} / ${places.size} lieux trouvés"
+            }
         }
 
         btnValidate.setOnClickListener {
             val input = etInput.text.toString()
             val found = viewModel.checkPlaceAnswer(input, places)
             if (found != null) {
-                viewModel.markPlaceFound(found.id)
+                viewModel.markPlaceFound(found.id, places.size)
                 etInput.text.clear()
                 Toast.makeText(requireContext(), "✓ ${found.name}", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(requireContext(), "Pas trouvé…", Toast.LENGTH_SHORT).show()
+                viewModel.registerWrongPlaceAttempt()
+                val remaining = QuizViewModel.MAX_PLACE_ATTEMPTS - (viewModel.placeWrongAttempts.value ?: 0)
+                val message = when {
+                    remaining <= 0 -> "Pas trouvé…"
+                    remaining == 1 -> "Pas trouvé… (1 essai restant)"
+                    else -> "Pas trouvé… ($remaining essais restants)"
+                }
+                Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
             }
         }
+
+        btnRestart.setOnClickListener { findNavController().navigateUp() }
     }
 }

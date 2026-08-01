@@ -189,6 +189,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _foundIds = MutableLiveData<Set<Int>>(emptySet())
     val foundIds: LiveData<Set<Int>> = _foundIds
 
+    private val _placeWrongAttempts = MutableLiveData(0)
+    val placeWrongAttempts: LiveData<Int> = _placeWrongAttempts
+
+    private val _placeQuizFinished = MutableLiveData(false)
+    val placeQuizFinished: LiveData<Boolean> = _placeQuizFinished
+
     private var placeQuizLoaded = false
 
     fun loadPlaceQuizzes() {
@@ -197,6 +203,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         if (placeQuizLoaded) return
         placeQuizLoaded = true
         _foundIds.value = emptySet()
+        _placeWrongAttempts.value = 0
+        _placeQuizFinished.value = false
     }
 
     fun checkPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceEntity? {
@@ -204,8 +212,29 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         return places.firstOrNull { p -> p.id !in found && normalize(input) == normalize(p.name) }
     }
 
-    fun markPlaceFound(id: Int) {
-        _foundIds.value = (_foundIds.value ?: emptySet()) + id
+    /** Marque un lieu trouvé et termine le quiz si tous les lieux ont été trouvés. */
+    fun markPlaceFound(id: Int, totalCount: Int) {
+        val updated = (_foundIds.value ?: emptySet()) + id
+        _foundIds.value = updated
+        if (updated.size >= totalCount) {
+            _placeQuizFinished.value = true
+        }
+    }
+
+    /**
+     * Une réponse fausse consomme un essai parmi les [MAX_PLACE_ATTEMPTS] autorisés ;
+     * le quiz se termine dès que ce nombre est atteint.
+     */
+    fun registerWrongPlaceAttempt() {
+        val attempts = (_placeWrongAttempts.value ?: 0) + 1
+        _placeWrongAttempts.value = attempts
+        if (attempts >= MAX_PLACE_ATTEMPTS) {
+            _placeQuizFinished.value = true
+        }
+    }
+
+    companion object {
+        const val MAX_PLACE_ATTEMPTS = 5
     }
 
     private fun normalize(s: String): String =

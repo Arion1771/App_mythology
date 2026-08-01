@@ -3,6 +3,28 @@
 ## V2
 
 
+#### V2.6.1
+
+- Mise à jour de la page « Quiz Lieux » de l'écran d'aide, qui affirmait encore l'absence de limite d'essais, contredisant la limite de 5 essais introduite en V2.6.0
+
+
+### V2.6.0
+
+- Le quiz Lieux est désormais limité à 5 essais au total : chaque réponse fausse en consomme un (4 erreurs tolérées, la 5e termine le quiz), affiché en temps réel (« Erreurs : X / 5 »)
+- À la fin du quiz (toutes les cartes trouvées, ou 5e erreur), toutes les cartes sont révélées : en vert si trouvée, en rouge sinon, suivies d'un écran de score dédié (« Score : X / N lieux trouvés »)
+
+
+#### V2.5.1
+
+- Correction du compteur « 0 / 0 trouvés » du quiz Lieux : le total n'était mis à jour qu'à la première trouvaille au lieu de s'afficher dès le chargement de la grille
+
+
+### V2.5.0
+
+- Écran d'aide du quiz sur plusieurs pages défilantes (`QuizHelpFragment`, ViewPager2), accessible via une icône « ? » sur l'écran de choix du quiz : fonctionnement des trois quiz, difficulté et calcul des points, conventions de réponse (casse, accents, absence d'article)
+- Application verrouillée en orientation portrait (`android:screenOrientation="portrait"`)
+
+
 #### V2.4.2
 
 - Culture populaire : mise à jour de 108 entités selon les rosters exacts de Smite et Smite 2 (« Smite », « Smite 2 » ou les deux selon présence dans chaque jeu) ; le « Sol » nordique de Smite n'a volontairement pas été rapproché de l'entité romaine homonyme (panthéons distincts)
