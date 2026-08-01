@@ -10,10 +10,32 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V3.0.1
+### Changes since the last release (V3.0.1)
 
-- The quiz selection screen now directly offers the three types (Multiple-choice, Classic, List, in that order); the domain (Entities, Artifacts, Places depending on what exists for the chosen type) is then picked on a dedicated screen, reversing the previous order (domain then mode)
-- Multiple-choice mode now shows, like Classic mode, a dedicated screen after each answer (right or wrong) with the name coloured (green/red) and all the information, followed by a button to the next question — instead of a brief visual feedback followed by an immediate move on
+#### V3.1.0
+
+- Added an achievement system: about fifty hidden goals (answer a specific entity, finish a Classic/Multiple-choice quiz with no mistake or entirely wrong, complete a list theme or a Places quiz with fewer than 3 mistakes...) unlock once and are kept across app updates (stored separately from the database, unaffected by its purge on each update)
+- A golden banner shows for 3 seconds at the top of the screen when an achievement is unlocked
+- New "Succès" screen reachable from the home screen (trophy icon): each achievement shows its name and emblem (grey rectangle if not obtained), plus how to obtain it once unlocked (golden rectangle)
+- Emblem image folder ready to use (one default generic emblem, to be replaced individually per achievement)
+
+#### V3.0.2
+
+- Filled in missing thematic tags for entities that had only inherited the Principal tag during the heuristic assignment of V3.0.0, for lack of a matching keyword
+  - Entity:
+    - Poséidon (Updated)
+    - Cymopolée (Updated)
+    - Mélinoé (Updated)
+    - Discordia (Updated)
+    - Janus (Updated)
+    - Silvanus (Updated)
+    - Ptah (Updated)
+    - Hâpy (Updated)
+    - Taouret (Updated)
+    - Ériu (Updated)
+    - Ah-Muzen-Cab (Updated)
+    - Camazotz (Updated)
+    - Kali (Updated)
 
 ### Getting started
 
@@ -50,10 +72,32 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V3.0.1
+### Nouveautés depuis la dernière release (V3.0.1)
 
-- L'écran de choix des quiz propose désormais directement les trois types (QCM, Classique, Liste, dans cet ordre) ; le domaine (Entités, Artéfacts, Lieux selon ce qui existe pour le type choisi) se sélectionne ensuite sur un écran dédié, inversant l'ordre précédent (domaine puis mode)
-- Le mode QCM affiche désormais, comme le mode Classique, un écran dédié après chaque réponse (juste ou fausse) avec le nom coloré (vert/rouge) et toutes les informations, suivi d'un bouton vers la question suivante — au lieu d'un simple retour visuel bref suivi d'un enchaînement immédiat
+#### V3.1.0
+
+- Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application (stockage séparé de la base, non affecté par sa purge à chaque mise à jour)
+- Un bandeau doré s'affiche 3 secondes en haut de l'écran lors du déblocage d'un succès
+- Nouvel écran « Succès » accessible depuis l'accueil (icône trophée) : chaque succès affiche son nom et son emblème (rectangle gris si non obtenu), et sa méthode d'obtention en plus une fois débloqué (rectangle doré)
+- Dossier d'images d'emblèmes prêt à l'emploi (un blason générique par défaut, à remplacer individuellement par succès)
+
+#### V3.0.2
+
+- Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag Principal lors de l'assignation heuristique de V3.0.0, faute de correspondance repérée avec un mot-clé
+  - Entité :
+    - Poséidon (Mise à jour)
+    - Cymopolée (Mise à jour)
+    - Mélinoé (Mise à jour)
+    - Discordia (Mise à jour)
+    - Janus (Mise à jour)
+    - Silvanus (Mise à jour)
+    - Ptah (Mise à jour)
+    - Hâpy (Mise à jour)
+    - Taouret (Mise à jour)
+    - Ériu (Mise à jour)
+    - Ah-Muzen-Cab (Mise à jour)
+    - Camazotz (Mise à jour)
+    - Kali (Mise à jour)
 
 ### Démarrage
 
