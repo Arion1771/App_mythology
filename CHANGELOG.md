@@ -3,6 +3,21 @@
 ## V2
 
 
+#### V2.4.2
+
+- Culture populaire : mise à jour de 108 entités selon les rosters exacts de Smite et Smite 2 (« Smite », « Smite 2 » ou les deux selon présence dans chaque jeu) ; le « Sol » nordique de Smite n'a volontairement pas été rapproché de l'entité romaine homonyme (panthéons distincts)
+- Entité :
+  - Agamemnon (Ajout)
+  - Ajax le Petit (Ajout)
+  - Ajax le Grand, ex-Ajax (Mise à jour)
+  - Diomède (Ajout)
+  - Ménélas (Ajout)
+  - Nestor (Ajout)
+  - Patrocle (Ajout)
+  - Bake Kujira (Ajout)
+  - Moritasgus (Ajout)
+
+
 #### V2.4.1
 
 - Correction de l'import `navGraphViewModels` (déclaré dans `androidx.navigation`, pas `androidx.navigation.fragment`) qui empêchait la compilation des écrans de quiz et de résultat introduits en V2.4.0

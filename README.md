@@ -6,6 +6,20 @@
 
 ### Changes since the first version
 
+#### V2.4.2
+
+- Pop culture: updated 108 entities according to the exact rosters of Smite and Smite 2 ("Smite", "Smite 2" or both depending on presence in each game); Smite's Norse "Sol" was deliberately not matched with the Roman entity of the same name (separate pantheons)
+- Entity:
+  - Agamemnon (Added)
+  - Ajax le Petit (Added)
+  - Ajax le Grand, ex-Ajax (Updated)
+  - Diomède (Added)
+  - Ménélas (Added)
+  - Nestor (Added)
+  - Patrocle (Added)
+  - Bake Kujira (Added)
+  - Moritasgus (Added)
+
 #### V2.4.1
 
 - Fixed the `navGraphViewModels` import (declared in `androidx.navigation`, not `androidx.navigation.fragment`), which prevented the quiz and result screens introduced in V2.4.0 from compiling
@@ -255,6 +269,20 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.4.2
+
+- Culture populaire : mise à jour de 108 entités selon les rosters exacts de Smite et Smite 2 (« Smite », « Smite 2 » ou les deux selon présence dans chaque jeu) ; le « Sol » nordique de Smite n'a volontairement pas été rapproché de l'entité romaine homonyme (panthéons distincts)
+- Entité :
+  - Agamemnon (Ajout)
+  - Ajax le Petit (Ajout)
+  - Ajax le Grand, ex-Ajax (Mise à jour)
+  - Diomède (Ajout)
+  - Ménélas (Ajout)
+  - Nestor (Ajout)
+  - Patrocle (Ajout)
+  - Bake Kujira (Ajout)
+  - Moritasgus (Ajout)
 
 #### V2.4.1
 
