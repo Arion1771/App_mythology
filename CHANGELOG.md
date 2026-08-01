@@ -2,6 +2,33 @@
 
 ## V3
 
+### V3.1.0
+
+- Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application (stockage séparé de la base, non affecté par sa purge à chaque mise à jour)
+- Un bandeau doré s'affiche 3 secondes en haut de l'écran lors du déblocage d'un succès
+- Nouvel écran « Succès » accessible depuis l'accueil (icône trophée) : chaque succès affiche son nom et son emblème (rectangle gris si non obtenu), et sa méthode d'obtention en plus une fois débloqué (rectangle doré)
+- Dossier d'images d'emblèmes prêt à l'emploi (un blason générique par défaut, à remplacer individuellement par succès)
+
+
+#### V3.0.2
+
+- Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag Principal lors de l'assignation heuristique de V3.0.0, faute de correspondance repérée avec un mot-clé
+  - Entité :
+    - Poséidon (Mise à jour)
+    - Cymopolée (Mise à jour)
+    - Mélinoé (Mise à jour)
+    - Discordia (Mise à jour)
+    - Janus (Mise à jour)
+    - Silvanus (Mise à jour)
+    - Ptah (Mise à jour)
+    - Hâpy (Mise à jour)
+    - Taouret (Mise à jour)
+    - Ériu (Mise à jour)
+    - Ah-Muzen-Cab (Mise à jour)
+    - Camazotz (Mise à jour)
+    - Kali (Mise à jour)
+
+
 #### V3.0.1
 
 - L'écran de choix des quiz propose désormais directement les trois types (QCM, Classique, Liste, dans cet ordre) ; le domaine (Entités, Artéfacts, Lieux selon ce qui existe pour le type choisi) se sélectionne ensuite sur un écran dédié, inversant l'ordre précédent (domaine puis mode)

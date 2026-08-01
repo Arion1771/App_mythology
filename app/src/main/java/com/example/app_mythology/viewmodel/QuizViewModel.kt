@@ -2,6 +2,7 @@ package com.example.app_mythology.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.*
+import com.example.app_mythology.achievements.AchievementManager
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.database.EntiteEntity
@@ -149,6 +150,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             updateResult(index, if (step == 1) "green" else "yellow")
             _answerRevealed.value = true
             _waitingForNext.value = true
+            checkNamedEntityAchievement(currentQuizName(index))
         } else {
             if (step == 1) {
                 _currentStep.value = 2
@@ -178,9 +180,42 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val next = (_currentIndex.value ?: 0) + 1
         if (next >= poolSize) {
             _quizFinished.value = true
+            checkScoreAchievements(isArtifact = _quizArtifacts.value?.isNotEmpty() == true, isQcm = false)
         } else {
             _currentIndex.value = next
             _currentStep.value  = 1
+        }
+    }
+
+    /** Les 5 entités déclenchant un succès individuel à la première bonne réponse. */
+    private fun checkNamedEntityAchievement(name: String?) {
+        val id = when (name) {
+            "Heimdall" -> "entity_heimdall"
+            "Olorun" -> "entity_olorun"
+            "Bake Kujira" -> "entity_bakekujira"
+            "Ganesh" -> "entity_ganesh"
+            "Moritasgus" -> "entity_moritasgus"
+            else -> null
+        }
+        if (id != null) AchievementManager.unlock(id)
+    }
+
+    /** Sans-faute (score == maxScore) sur 10/30/60 points, ou 0 bonne réponse (tout faux). */
+    private fun checkScoreAchievements(isArtifact: Boolean, isQcm: Boolean) {
+        val score = if (isQcm) _qcmScore.value ?: 0.0 else _score.value ?: 0.0
+        val max = if (isQcm) _qcmMaxScore.value ?: 0.0 else _maxScore.value ?: 0.0
+        val prefix = (if (isQcm) "qcm" else "classic") + "_" + (if (isArtifact) "artifact" else "entity")
+
+        if (score == 0.0) {
+            AchievementManager.unlock("all_wrong")
+        } else if (score == max) {
+            val tier = when (max) {
+                10.0 -> "10"
+                30.0 -> "30"
+                60.0 -> "60"
+                else -> null
+            }
+            if (tier != null) AchievementManager.unlock("${prefix}_$tier")
         }
     }
 
@@ -200,12 +235,14 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     val placeQuizFinished: LiveData<Boolean> = _placeQuizFinished
 
     private var placeQuizLoaded = false
+    private var placeQuizType: String? = null
 
-    fun loadPlaceQuizzes() {
+    fun loadPlaceQuizzes(type: String) {
         // Comme pour le quiz d'entités : on préserve les lieux déjà trouvés
         // lors d'une rotation de l'écran.
         if (placeQuizLoaded) return
         placeQuizLoaded = true
+        placeQuizType = type
         _foundIds.value = emptySet()
         _placeWrongAttempts.value = 0
         _placeQuizFinished.value = false
@@ -222,7 +259,23 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _foundIds.value = updated
         if (updated.size >= totalCount) {
             _placeQuizFinished.value = true
+            checkPlaceAchievement()
         }
+    }
+
+    /** Succès de lieu : complétion totale (pas d'arrêt sur limite d'essais) avec moins de 3 erreurs. */
+    private fun checkPlaceAchievement() {
+        if ((_placeWrongAttempts.value ?: 0) >= 3) return
+        val id = when (placeQuizType) {
+            "underworld" -> "place_underworld"
+            "rivers" -> "place_rivers"
+            "yggdrasil" -> "place_yggdrasil"
+            else -> null
+        } ?: return
+        AchievementManager.unlock(id)
+        AchievementManager.unlockGroupMeta(
+            listOf("place_underworld", "place_rivers", "place_yggdrasil"), "place_all"
+        )
     }
 
     /**
@@ -369,6 +422,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val correct = normalize(selected) == normalize(name)
         if (correct) {
             _qcmScore.value = (_qcmScore.value ?: 0.0) + currentQcmDifficulty(index)
+            checkNamedEntityAchievement(name)
         }
         val results = (_qcmResults.value ?: emptyList()).toMutableList()
         if (index < results.size) results[index] = if (correct) "green" else "red"
@@ -383,6 +437,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val next = (_qcmIndex.value ?: 0) + 1
         if (next >= poolSize) {
             _qcmFinished.value = true
+            checkScoreAchievements(isArtifact = _qcmArtifacts.value?.isNotEmpty() == true, isQcm = true)
         } else {
             _qcmIndex.value = next
             buildQcmChoices(next)
@@ -437,7 +492,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _listFoundIds.value = updated
         if (updated.size >= allListItems().size) {
             _listFinished.value = true
+            checkListAchievement()
         }
+    }
+
+    /** Succès de thème : complétion totale (pas d'arrêt sur limite d'essais). */
+    private fun checkListAchievement() {
+        val themeId = listQuizThemeId ?: return
+        AchievementManager.unlock("list_$themeId")
+        AchievementManager.unlockGroupMeta(ListThemeCatalog.all.map { "list_${it.id}" }, "list_all")
     }
 
     fun registerWrongListAttempt() {

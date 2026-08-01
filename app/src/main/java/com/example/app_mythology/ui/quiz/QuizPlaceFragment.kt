@@ -52,7 +52,7 @@ class QuizPlaceFragment : Fragment() {
             else -> "Le Royaume des Morts"
         }
 
-        viewModel.loadPlaceQuizzes()
+        viewModel.loadPlaceQuizzes(quizType)
 
         // Choisir la bonne liste selon le quiz
         val placesLiveData = when (quizType) {

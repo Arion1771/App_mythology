@@ -804,7 +804,7 @@
       "difficulty": 1,
       "fatherName": "Cronos",
       "motherName": "Rhéa",
-      "tags": "Principal"
+      "tags": "Principal, Eau"
     },
     {
       "id": 59,
@@ -2191,7 +2191,7 @@
       "description": "Fille de Poséidon, elle fut donnée en mariage à l'un des Hécatonchires pour sceller une alliance après la Titanomachie.",
       "clue": "Déesse des tempêtes marine",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Eau"
     },
     {
       "id": 170,
@@ -2324,7 +2324,7 @@
       "popularCulture": "Hadès II",
       "clue": "Déesse chthonienne des fantômes et des cauchemars",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Mort"
     },
     {
       "id": 181,
@@ -2996,7 +2996,7 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de la Discorde",
       "difficulty": 2,
-      "tags": "Principal"
+      "tags": "Principal, Guerre"
     },
     {
       "id": 232,
@@ -3086,7 +3086,7 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des choix et des portes",
       "difficulty": 2,
-      "tags": "Principal"
+      "tags": "Principal, Gardien"
     },
     {
       "id": 239,
@@ -3207,7 +3207,7 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des Forêts",
       "difficulty": 2,
-      "tags": "Principal"
+      "tags": "Principal, Gardien"
     },
     {
       "id": 248,
@@ -4239,7 +4239,7 @@
       "description": "Selon la théologie de Memphis, il crée le monde par la seule puissance de sa pensée et de sa parole, sans avoir besoin d'action physique.",
       "clue": "Dieu des artisans et créateur de la pensée et du verbe",
       "difficulty": 2,
-      "tags": "Principal",
+      "tags": "Principal, Artisanat",
       "listThemes": "Grands dieux d'Égypte"
     },
     {
@@ -4299,7 +4299,7 @@
       "description": "Représenté avec un ventre rebondi, il incarne la crue annuelle qui fertilise les terres agricoles.",
       "clue": "Dieu du Nil",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Eau, Fertilité"
     },
     {
       "id": 335,
@@ -4370,7 +4370,7 @@
       "popularCulture": "Moon Knight",
       "clue": "Déesse de la féminité et de l'accouchement",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Fertilité"
     },
     {
       "id": 341,
@@ -4677,7 +4677,7 @@
       "description": "Elle donna son nom à l'île qu'elle incarne, après avoir promis aux nouveaux envahisseurs qu'elle y resterait associée à jamais.",
       "clue": "Déesse souveraine",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Royauté, Terre"
     },
     {
       "id": 368,
@@ -4757,7 +4757,7 @@
       "popularCulture": "Smite",
       "clue": "Dieu des abeilles et du miel",
       "difficulty": 2,
-      "tags": "Principal"
+      "tags": "Principal, Animal"
     },
     {
       "id": 375,
@@ -4829,7 +4829,7 @@
       "popularCulture": "Smite",
       "clue": "Dieu des Chauve-Souris",
       "difficulty": 3,
-      "tags": "Principal"
+      "tags": "Principal, Animal"
     },
     {
       "id": 381,
@@ -5046,7 +5046,7 @@
       "popularCulture": "Smite, Smite 2, Indiana Jones et le Temple maudit",
       "clue": "Déesse de la Destruction",
       "difficulty": 2,
-      "tags": "Principal"
+      "tags": "Principal, Mort"
     },
     {
       "id": 399,
