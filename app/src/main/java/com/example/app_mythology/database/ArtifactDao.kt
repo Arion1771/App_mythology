@@ -9,6 +9,10 @@ interface ArtifactDao {
     @Query("SELECT * FROM artifacts ORDER BY name ASC")
     fun getAll(): LiveData<List<ArtifactEntity>>
 
+    /** Chargement ponctuel (non observé) de tous les artéfacts, pour le mode Liste et les leurres du QCM. */
+    @Query("SELECT * FROM artifacts")
+    suspend fun getAllSync(): List<ArtifactEntity>
+
     @Query("SELECT * FROM artifacts WHERE id = :id")
     suspend fun getById(id: Int): ArtifactEntity?
 

@@ -6,11 +6,21 @@
 
 The built-in database catalogs mythological entities (gods, heroes, monsters…), places and artifacts. You can browse and search it freely, open the detailed sheet for any entry, and add or edit entries directly from the app.
 
-Three independent quizzes let you test your knowledge: an entity quiz, a place quiz and an artifact quiz, each with several difficulty levels. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
+Three quiz modes let you test your knowledge — Classic (a clue, guess the name), Multiple-choice (same clue, pick the right name among 4), and List (find every entry matching a chosen theme) — available across entities, places and artifacts depending on the mode, each with several difficulty levels or size-based attempt limits. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
-Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database.
+Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
 ### Changes since the first version
+
+#### V3.0.0
+
+- Complete overhaul of the quizzes: two new modes join Classic mode
+- New Multiple-choice mode (entities and artifacts): same clue as Classic mode, but answered in a single attempt among 4 suggested names; the 3 decoys are chosen by thematic proximity (tags, mythology, race, equivalent) rather than at random; immediate move to the next question whatever the result, final score screen with no second chance
+- New List mode: 27 selectable themes (mythologies, creature families, legendary groups...), card grid like the Places quiz, tapping a card not yet found → full screen showing all the information except the name, attempts limited by theme size (3/5/10), final reveal and score out of the theme total; some themes show their cards split under several subheadings (Muses, Enfants de Gaïa et Ouranos, Archanges et démons, Zodiaque)
+- New `tags` (entities and artifacts) and `listThemes` (entities only) fields serving these two modes: Room schema v6, destructive migration, add/edit forms
+- Thematic tags assigned to the 486 entities and 43 artifacts (wind, sky, love, animal, principal, human, earth, fire, water, war, death, wisdom, magic, cunning, hunting, craftsmanship, fertility, sun, day, night, lightning, guardian, prophecy, arts, justice, royalty, healing, messenger, fate)
+- Attached 61 entities to the 7 curated List themes that cannot be derived from an existing field (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+- Quiz help screen updated with the new modes
 
 #### V2.6.1
 
@@ -311,11 +321,21 @@ The app isn't published on the Play Store — it has to be built and installed m
 
 La base de données intégrée recense des entités mythologiques (dieux, héros, monstres…), des lieux et des artéfacts. Vous pouvez la parcourir et la rechercher librement, consulter la fiche détaillée de chaque élément, et ajouter ou modifier des entrées directement depuis l'application.
 
-Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
+Trois types de quiz permettent de tester vos connaissances — Classique (un indice, devinez le nom), QCM (même indice, choisissez le bon nom parmi 4) et Liste (retrouvez toutes les entrées correspondant à un thème choisi) — disponibles selon le mode sur les entités, les lieux et les artéfacts, chacun avec plusieurs niveaux de difficulté ou des paliers d'essais selon la taille du thème. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
-Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base.
+Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la première version
+
+#### V3.0.0
+
+- Refonte complète des quiz : deux nouveaux modes s'ajoutent au mode Classique
+- Nouveau mode QCM (entités et artéfacts) : même indice que le mode Classique, mais réponse en un seul essai parmi 4 noms proposés ; les 3 leurres sont choisis par proximité thématique (tags, mythologie, race, équivalent) plutôt qu'au hasard ; passage immédiat à la question suivante quel que soit le résultat, écran de score final sans seconde chance
+- Nouveau mode Liste : 27 thèmes sélectionnables (mythologies, familles de créatures, groupes légendaires...), grille de cartes façon quiz Lieux, clic sur une carte non trouvée → écran plein affichant toutes les informations sauf le nom, essais limités selon la taille du thème (3/5/10), révélation finale et score sur le total du thème ; certains thèmes affichent leurs cartes réparties sous plusieurs sous-titres (Muses, Enfants de Gaïa et Ouranos, Archanges et démons, Zodiaque)
+- Nouveaux champs `tags` (entités et artéfacts) et `listThemes` (entités uniquement) au service de ces deux modes : schéma Room v6, migration destructive, formulaires d'ajout/édition
+- Tags thématiques assignés aux 486 entités et 43 artéfacts (vent, ciel, amour, animal, principal, humain, terre, feu, eau, guerre, mort, sagesse, magie, ruse, chasse, artisanat, fertilité, soleil, jour, nuit, foudre, gardien, prophétie, arts, justice, royauté, guérison, messager, destin)
+- Rattachement de 61 entités aux 7 thèmes curés du mode Liste non déductibles d'un champ existant (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+- Écran d'aide du quiz mis à jour avec les nouveaux modes
 
 #### V2.6.1
 
