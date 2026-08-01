@@ -11,7 +11,8 @@
       "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux de l'Olympe doivent se soumettre.",
       "popularCulture": "Hercule (Disney)",
       "clue": "Déesse du destin",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Principal"
     },
     {
       "name": "9 Muses",
@@ -24,7 +25,8 @@
       "description": "Filles du roi des dieux et d'une Titanide de la mémoire, elles président chacune à un art différent et inspirent poètes et artistes depuis leur montagne sacrée.",
       "popularCulture": "Hercule (Disney)",
       "clue": "Déesses mineures des arts",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Principal, Royauté, Terre"
     },
     {
       "id": 3,
@@ -36,7 +38,9 @@
       "description": "Trempé enfant dans un fleuve infernal par sa mère pour le rendre invulnérable, il meurt finalement d'une flèche à l'unique endroit resté vulnérable.",
       "popularCulture": "Smite, Smite 2, Troie, A Total War Saga: Troy",
       "clue": "Héros presque invulnérable",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Humain",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 4,
@@ -46,7 +50,8 @@
       "monsterType": "Aigle",
       "description": "Envoyé par Zeus pour dévorer chaque jour le foie de Prométhée enchaîné au Caucase",
       "clue": "Dévore chaque jour le foie de Prométhée",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Jour, Messager"
     },
     {
       "id": 5,
@@ -59,7 +64,8 @@
       "description": "Née de l'écume marine après la castration d'un dieu primordial, elle possède une ceinture magique rendant irrésistible quiconque la porte.",
       "popularCulture": "Smite, Smite 2, Percy Jackson",
       "clue": "Déesse de la beauté",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Amour, Magie, Principal"
     },
     {
       "id": 6,
@@ -73,7 +79,8 @@
       "popularCulture": "Smite, Smite 2, God of War III, Percy Jackson",
       "clue": "Dieu de la lumière",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Arts, Chasse, Principal"
     },
     {
       "id": 7,
@@ -88,7 +95,8 @@
       "clue": "Dieu de la guerre",
       "difficulty": 1,
       "fatherName": "Zeus",
-      "motherName": "Héra"
+      "motherName": "Héra",
+      "tags": "Guerre, Principal"
     },
     {
       "id": 8,
@@ -102,7 +110,8 @@
       "popularCulture": "Smite, Smite 2, Percy Jackson",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Chasse, Principal"
     },
     {
       "id": 9,
@@ -114,7 +123,8 @@
       "description": "Titan associé aux astres, il est l'époux d'une déesse de l'aurore et le père de nombreuses divinités stellaires et des vents cardinaux.",
       "clue": "Titan des corps célestes",
       "difficulty": 2,
-      "fatherName": "Crios"
+      "fatherName": "Crios",
+      "tags": "Jour, Terre, Vent"
     },
     {
       "id": 10,
@@ -128,7 +138,8 @@
       "popularCulture": "Smite, Smite 2, God of War, Wonder Woman",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Principal, Sagesse"
     },
     {
       "id": 11,
@@ -141,7 +152,8 @@
       "popularCulture": "Smite, Smite 2, God of War, Percy Jackson",
       "clue": "Titan portant la voûte céleste",
       "difficulty": 1,
-      "fatherName": "Japet"
+      "fatherName": "Japet",
+      "tags": "Ciel, Guerre, Terre"
     },
     {
       "id": 12,
@@ -153,7 +165,9 @@
       "description": "Frère jumeau né d'un père mortel, il partage l'immortalité de son frère divin après sa propre mort, les deux passant l'éternité un jour sur deux entre Enfers et Olympe.",
       "clue": "Argonautes, frère mortel de Pollux",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Humain, Jour, Mort",
+      "listThemes": "Argonautes"
     },
     {
       "id": 13,
@@ -164,7 +178,8 @@
       "description": "Race née de l'union entre Ixion et un nuage façonné à l'image d'Héra, réputée pour son penchant pour le vin et les excès lors des banquets.",
       "popularCulture": "Harry Potter, Fantasia, Percy Jackson",
       "clue": "Créature à corps de cheval et buste d'homme",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 14,
@@ -175,7 +190,9 @@
       "description": "Sa naissance est attribuée à Typhon et Échidna ; il ne laisse jamais une âme quitter le royaume qu'il surveille.",
       "popularCulture": "Smite, Smite 2, Harry Potter, God of War, Hadès",
       "clue": "Possède Trois têtes, garde les Enfers",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Gardien, Mort, Royauté",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 15,
@@ -187,7 +204,8 @@
       "equivalentName": "Chaos",
       "description": "Premier état de l'univers avant toute forme organisée, il engendre à lui seul les toutes premières divinités primordiales sans union avec quiconque.",
       "clue": "Vide Primordial",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Principal"
     },
     {
       "name": "Charon",
@@ -202,7 +220,8 @@
       "clue": "Dieu des passages et passeur des âmes vers les Enfers",
       "difficulty": 1,
       "fatherName": "Érèbe",
-      "motherName": "Nyx"
+      "motherName": "Nyx",
+      "tags": "Eau, Mort, Principal"
     },
     {
       "id": 17,
@@ -213,7 +232,8 @@
       "description": "Autrefois nymphe punie par Zeus pour avoir volé du bétail, elle fut transformée en gouffre marin situé face à un monstre à six têtes.",
       "popularCulture": "Smite",
       "clue": "Avale trois fois et recrache trois fois la mer par jour",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Jour"
     },
     {
       "id": 18,
@@ -224,7 +244,8 @@
       "description": "Contrairement aux autres membres de son espèce, il est réputé pour sa sagesse et sa maîtrise de la médecine, de la musique et du tir à l'arc ; il forma plusieurs grands héros grecs.",
       "popularCulture": "Smite, Smite 2, Percy Jackson",
       "clue": "Premier Centaure, fils de Chronos et Formateur de Héros",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Arts, Guérison, Sagesse"
     },
     {
       "id": 19,
@@ -236,7 +257,8 @@
       "description": "Elle vit recluse sur une île où elle transforme les marins imprudents en animaux à l'aide de potions et d'un bâton magique.",
       "popularCulture": "Circé (Madeline Miller)",
       "clue": "Magicienne divine, fille d'Hélios",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Magie"
     },
     {
       "id": 20,
@@ -249,7 +271,8 @@
       "clue": "Titan du Nord, des solutions et de l'intelligence",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Terre"
     },
     {
       "id": 21,
@@ -263,7 +286,8 @@
       "clue": "Roi des titan et titan du temps",
       "difficulty": 1,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Prophétie, Royauté, Terre"
     },
     {
       "id": 22,
@@ -274,7 +298,8 @@
       "story": "Créateur du labyrinthe, père d'Icare et oncle de Perdrix",
       "description": "Architecte et inventeur de génie, il conçoit une structure si complexe que même son créateur peine à en retrouver la sortie.",
       "clue": "Créateur du labyrinthe",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain"
     },
     {
       "id": 23,
@@ -289,7 +314,8 @@
       "clue": "Déesse de l'agriculture",
       "difficulty": 1,
       "fatherName": "Cronos",
-      "motherName": "Rhéa"
+      "motherName": "Rhéa",
+      "tags": "Fertilité, Principal, Terre"
     },
     {
       "id": 24,
@@ -303,7 +329,8 @@
       "popularCulture": "Smite, Percy Jackson",
       "clue": "Dieu du vin et de la fête",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Arts, Mort, Principal"
     },
     {
       "id": 25,
@@ -313,7 +340,8 @@
       "monsterType": "Nymphe de la Foret",
       "description": "Leur existence est liée à celle de l'arbre qu'elles habitent : si celui-ci meurt, elles meurent avec lui.",
       "clue": "Habitent chaque arbre ou plante",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 26,
@@ -325,7 +353,8 @@
       "equivalentName": "Aeolus",
       "description": "Gardien mortel élevé au rang de maître des vents, il les enferme dans une outre qu'il offre à un héros de passage, avec l'ordre de ne l'ouvrir qu'une fois arrivé chez lui.",
       "clue": "Dieu des vents",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Gardien, Justice, Principal, Vent"
     },
     {
       "id": 27,
@@ -338,7 +367,8 @@
       "description": "Personnification des ténèbres primordiales, il s'unit à sa propre sœur pour engendrer le jour et l'éther lumineux.",
       "clue": "Dieu des Ténèbres et de l'Obscurité",
       "difficulty": 2,
-      "fatherName": "Chaos"
+      "fatherName": "Chaos",
+      "tags": "Jour, Nuit, Principal"
     },
     {
       "id": 28,
@@ -351,7 +381,8 @@
       "popularCulture": "Hadès, Percy Jackson",
       "clue": "Déesses chthoniennes de la vengeance",
       "equivalentName": "Furies",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Justice, Mort, Principal"
     },
     {
       "id": 29,
@@ -363,7 +394,8 @@
       "equivalentName": "Cupidon",
       "description": "Ses flèches, les unes en or suscitant l'amour, les autres en plomb provoquant l'aversion, décident du sort amoureux des dieux comme des mortels.",
       "clue": "Dieu de l'amour",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Amour, Destin, Principal"
     },
     {
       "id": 30,
@@ -377,7 +409,8 @@
       "popularCulture": "Smite, Percy Jackson",
       "clue": "Déesse de la Terre",
       "difficulty": 1,
-      "fatherName": "Chaos"
+      "fatherName": "Chaos",
+      "tags": "Ciel, Principal, Terre"
     },
     {
       "id": 31,
@@ -387,7 +420,8 @@
       "monsterType": "Divinité Marine Primordiale",
       "description": "Trois soeurs partageant un seul oeil et une seule dent, gardiennes d'un secret convoité par Persée",
       "clue": "Trois soeurs partageant un seul oeil et une seule dent",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 32,
@@ -398,7 +432,8 @@
       "description": "Corps de lion et tête-ailes d'aigle, gardien de trésors et de mines d'or",
       "popularCulture": "Harry Potter, World of Warcraft, The Witcher 3",
       "clue": "Corps de lion et tête-ailes d'aigle, gardien de trésors",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Gardien"
     },
     {
       "id": 33,
@@ -413,7 +448,8 @@
       "clue": "Dieu de la richesse et du monde souterrain",
       "difficulty": 1,
       "fatherName": "Cronos",
-      "motherName": "Rhéa"
+      "motherName": "Rhéa",
+      "tags": "Principal, Royauté, Terre"
     },
     {
       "id": 34,
@@ -425,7 +461,8 @@
       "description": "Meilleur défenseur de sa cité assiégée, il est traîné derrière un char autour des murailles après sa défaite face à son adversaire le plus acharné.",
       "popularCulture": "Troie, A Total War Saga: Troy",
       "clue": "Héros Troyen, Tueur de Patrocle",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain"
     },
     {
       "id": 35,
@@ -437,7 +474,8 @@
       "description": "Il traverse le ciel chaque jour sur un char tiré par des chevaux flamboyants, observant tout ce qui se passe sur terre depuis les hauteurs.",
       "clue": "Titan du soleil",
       "difficulty": 1,
-      "fatherName": "Hypérion"
+      "fatherName": "Hypérion",
+      "tags": "Ciel, Jour, Soleil, Terre"
     },
     {
       "id": 36,
@@ -451,7 +489,8 @@
       "clue": "Déesse du Jour",
       "difficulty": 2,
       "fatherName": "Érèbe",
-      "motherName": "Nyx"
+      "motherName": "Nyx",
+      "tags": "Jour, Mort, Nuit, Principal"
     },
     {
       "id": 37,
@@ -466,7 +505,8 @@
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Zeus",
-      "motherName": "Héra"
+      "motherName": "Héra",
+      "tags": "Artisanat, Feu, Principal, Ruse"
     },
     {
       "id": 38,
@@ -481,7 +521,8 @@
       "clue": "Déesse de la famille",
       "difficulty": 1,
       "fatherName": "Cronos",
-      "motherName": "Rhéa"
+      "motherName": "Rhéa",
+      "tags": "Principal, Royauté"
     },
     {
       "id": 39,
@@ -494,7 +535,9 @@
       "description": "Rendu fou par une déesse jalouse, il tue sa propre famille dans un accès de démence, et doit accomplir une série d'épreuves impossibles pour expier ce crime.",
       "popularCulture": "Hercule (Disney), Hercules",
       "clue": "Réalise 12 Travaux pour expier le meurtre de sa famille",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain",
+      "listThemes": "Argonautes"
     },
     {
       "id": 40,
@@ -508,7 +551,8 @@
       "popularCulture": "Smite, Hercule (Disney), Percy Jackson",
       "clue": "Messager des dieux",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Messager, Principal"
     },
     {
       "id": 41,
@@ -523,7 +567,8 @@
       "clue": "Déesse du foyer",
       "difficulty": 1,
       "fatherName": "Cronos",
-      "motherName": "Rhéa"
+      "motherName": "Rhéa",
+      "tags": "Feu, Principal"
     },
     {
       "id": 42,
@@ -534,7 +579,9 @@
       "description": "Lorsqu'on lui coupe une tête, deux repoussent, tuée par Héraclès",
       "popularCulture": "God of War, Hercule (Disney)",
       "clue": "Lorsqu'on lui coupe une tête, deux repoussent",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 43,
@@ -546,7 +593,8 @@
       "description": "Enfermé avec son père dans une tour, il s'envole grâce à des ailes de plumes et de cire, mais périt pour avoir désobéi à l'avertissement de ne pas trop s'approcher du soleil.",
       "popularCulture": "La Chute d'Icare (Bruegel), Nightcall (Kavinsky)",
       "clue": "Fils de Dédale",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Humain, Mort, Soleil"
     },
     {
       "id": 44,
@@ -558,7 +606,9 @@
       "description": "Envoyé par un oncle usurpateur récupérer une toison dorée gardée par un dragon, il rassemble un équipage de héros pour l'accompagner dans cette quête périlleuse.",
       "popularCulture": "Jason et les Argonautes",
       "clue": "Chef des Argonautes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Humain, Messager",
+      "listThemes": "Argonautes"
     },
     {
       "id": 45,
@@ -570,7 +620,8 @@
       "description": "Après avoir trahi sa propre famille par amour, elle se venge d'un époux infidèle par un acte d'une cruauté extrême envers leurs propres enfants.",
       "clue": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
       "difficulty": 2,
-      "fatherName": "Hélios"
+      "fatherName": "Hélios",
+      "tags": "Amour, Humain"
     },
     {
       "id": 46,
@@ -582,7 +633,8 @@
       "description": "Ayant reçu l'exaucement d'un vœu imprudent, il se retrouve incapable de manger ou de boire, transformant même sa propre fille au moindre contact.",
       "popularCulture": "Fortnite",
       "clue": "Béni par le touché d'or",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain"
     },
     {
       "id": 47,
@@ -596,7 +648,8 @@
       "popularCulture": "Percy Jackson",
       "clue": "Dieu des Rêves",
       "difficulty": 2,
-      "fatherName": "Hypnos"
+      "fatherName": "Hypnos",
+      "tags": "Principal"
     },
     {
       "id": 48,
@@ -606,7 +659,8 @@
       "monsterType": "Nymphe des Eaux",
       "description": "Filles de divinités fluviales, elles étaient honorées par des offrandes et considérées comme bienveillantes envers les mortels qui respectaient leur cours d'eau.",
       "clue": "Habite les rivières, les lacs et les fontaines",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau"
     },
     {
       "id": 49,
@@ -620,7 +674,8 @@
       "popularCulture": "Hadès",
       "clue": "Déesse de la nuit",
       "difficulty": 1,
-      "fatherName": "Chaos"
+      "fatherName": "Chaos",
+      "tags": "Nuit, Principal, Royauté"
     },
     {
       "id": 50,
@@ -632,7 +687,9 @@
       "description": "Musicien légendaire capable de charmer arbres et bêtes sauvages par son chant, il perd son épouse une seconde fois pour s'être retourné trop tôt.",
       "popularCulture": "Hadès",
       "clue": "Pars chercher sa femme au enfer mais échoue",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Humain",
+      "listThemes": "Argonautes"
     },
     {
       "id": 51,
@@ -645,7 +702,8 @@
       "description": "Il s'unit chaque nuit à son épouse en l'écrasant de tout son poids, l'empêchant de mettre au monde leurs enfants, jusqu'à ce que l'un d'eux se rebelle armé d'une faucille.",
       "clue": "Dieu de la voûte céleste",
       "difficulty": 1,
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Ciel, Nuit, Principal"
     },
     {
       "id": 52,
@@ -658,7 +716,8 @@
       "description": "Mi-homme mi-bouc dès la naissance, il effraie sa propre mère et donne son nom au sentiment de terreur irraisonnée qu'il peut provoquer chez les voyageurs égarés.",
       "popularCulture": "Percy Jackson",
       "clue": "Dieu de la nature",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Principal"
     },
     {
       "id": 53,
@@ -670,7 +729,8 @@
       "popularCulture": "Le Choc des Titans, Saint Seiya",
       "clue": "Cheval Ailé",
       "difficulty": 1,
-      "fatherName": "Poséidon"
+      "fatherName": "Poséidon",
+      "tags": "Animal"
     },
     {
       "id": 54,
@@ -682,7 +742,8 @@
       "description": "Envoyé chercher la tête d'une gorgone dont le regard pétrifie quiconque le croise, il utilise un bouclier poli comme miroir pour l'affronter sans jamais la regarder directement.",
       "popularCulture": "Le Choc des Titans",
       "clue": "Tueur de la méduse",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain, Messager"
     },
     {
       "id": 55,
@@ -697,7 +758,8 @@
       "clue": "Déesse du printemps",
       "difficulty": 1,
       "fatherName": "Zeus",
-      "motherName": "Déméter"
+      "motherName": "Déméter",
+      "tags": "Mort, Principal, Royauté, Terre"
     },
     {
       "id": 56,
@@ -709,7 +771,9 @@
       "description": "Fils divin d'un père immortel, il partage son immortalité avec son frère jumeau mortel après la mort de ce dernier, les deux passant l'éternité un jour sur deux entre Enfers et Olympe.",
       "clue": "Argonautes, frère immortel de Castor",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Humain, Jour, Mort",
+      "listThemes": "Argonautes"
     },
     {
       "id": 57,
@@ -723,7 +787,8 @@
       "popularCulture": "Assassin's Creed Odyssey",
       "clue": "Cyclope de l'île de Sicile",
       "difficulty": 1,
-      "fatherName": "Poséidon"
+      "fatherName": "Poséidon",
+      "tags": "Eau, Ruse, Terre"
     },
     {
       "id": 58,
@@ -738,7 +803,8 @@
       "clue": "Dieu des océans",
       "difficulty": 1,
       "fatherName": "Cronos",
-      "motherName": "Rhéa"
+      "motherName": "Rhéa",
+      "tags": "Principal"
     },
     {
       "id": 59,
@@ -751,7 +817,8 @@
       "popularCulture": "God of War, Prometheus",
       "clue": "Titan de la prévoyance",
       "difficulty": 2,
-      "fatherName": "Japet"
+      "fatherName": "Japet",
+      "tags": "Feu, Jour, Terre"
     },
     {
       "id": 60,
@@ -764,7 +831,8 @@
       "clue": "Reine des titan et titanide de la maternité",
       "difficulty": 1,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Royauté, Ruse, Terre"
     },
     {
       "id": 61,
@@ -774,7 +842,9 @@
       "monsterType": "Sanglier",
       "description": "Bète Immense, terrifiant le mont Érymanthe, tué par Héraclès",
       "clue": "Bète Immense, tué par Héraclès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 62,
@@ -785,7 +855,8 @@
       "description": "Compagnon de Dionysos, réputé pour son goût du vin, de la musique et des plaisirs.",
       "clue": "Homme à jambes de bouc",
       "difficulty": 1,
-      "equivalentName": "Faune"
+      "equivalentName": "Faune",
+      "tags": "Animal, Arts"
     },
     {
       "id": 63,
@@ -796,7 +867,8 @@
       "description": "Autrefois nymphe transformée par jalousie, elle vit désormais dans un détroit qu'elle partage avec un tourbillon dévorant les navires.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dragon aux multiples têtes présenté comme immortel",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Eau"
     },
     {
       "id": 64,
@@ -808,7 +880,8 @@
       "description": "Elle traverse le ciel nocturne sur un char et tombe amoureuse d'un berger mortel qu'elle visite chaque nuit pendant son sommeil éternel.",
       "clue": "Titanide de la lune",
       "difficulty": 2,
-      "fatherName": "Hypérion"
+      "fatherName": "Hypérion",
+      "tags": "Amour, Ciel, Mort, Nuit, Terre"
     },
     {
       "id": 65,
@@ -819,7 +892,8 @@
       "description": "Filles du dieu-fleuve Achéloos, elles attirent les marins vers les récifs grâce à leur chant.",
       "popularCulture": "Percy Jackson",
       "clue": "Mi-Femme Mi-Oiseau anthropophage à la voix ensorcelante",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Arts, Eau"
     },
     {
       "id": 66,
@@ -831,7 +905,8 @@
       "description": "Ayant tenté de déjouer la mort à plusieurs reprises par la ruse, il est condamné pour l'éternité à répéter un effort toujours recommencé et jamais achevé.",
       "popularCulture": "Le Mythe de Sisyphe (Camus)",
       "clue": "Condamné a pousser un rocher pour l'éternité",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain, Mort, Ruse"
     },
     {
       "id": 67,
@@ -842,7 +917,8 @@
       "description": "Fille d'Échidna et Typhon, elle dévore quiconque échoue à répondre à son énigme.",
       "popularCulture": "God of War III, Assassin's Creed Origins, Smite",
       "clue": "Pose des énigmes à l'entrée de Thèbes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 68,
@@ -854,7 +930,8 @@
       "equivalentName": "Tartarus",
       "description": "Aussi profond sous la terre que le ciel est haut au-dessus d'elle, cet abîme sert de prison aux ennemis vaincus des dieux olympiens.",
       "clue": "personnification de l’abîme éponyme, parfois vu comme père des géants",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Principal, Terre"
     },
     {
       "id": 69,
@@ -866,7 +943,8 @@
       "description": "Après avoir suivi un fil déroulé pour retrouver son chemin dans un dédale, il oublie de hisser une voile blanche annonçant sa victoire, provoquant le suicide de son père par désespoir.",
       "popularCulture": "Hadès",
       "clue": "Tueur du Minotaure",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain, Royauté"
     },
     {
       "id": 70,
@@ -878,7 +956,9 @@
       "description": "Rusé stratège à l'origine d'un cheval de bois décisif, il met dix années supplémentaires à rentrer chez lui, affrontant monstres et tentations en chemin.",
       "popularCulture": "Ulysse 31",
       "clue": "Héros de l'Iliade et de l'Odyssée",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Humain, Ruse",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 71,
@@ -891,7 +971,8 @@
       "description": "Caché à sa naissance pour échapper à un père dévorant ses propres enfants, il finit par le renverser et se partage ensuite le règne du monde avec ses frères.",
       "popularCulture": "Smite, Smite 2, Le Choc des Titans, God of War III",
       "clue": "Dieux du ciel et roi des dieux",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Principal, Royauté"
     },
     {
       "id": 72,
@@ -902,7 +983,8 @@
       "story": "Tueur du Sphinx, il tue son père et épouse sa mère",
       "description": "Abandonné à sa naissance à cause d'une prophétie funeste, il finit par l'accomplir sans le savoir en tuant un inconnu sur une route et en épousant une femme qui se révèle être un membre proche de sa famille.",
       "clue": "Tueur du Sphinx",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Humain, Prophétie, Sagesse"
     },
     {
       "id": 73,
@@ -914,7 +996,8 @@
       "equivalentName": "Caligo",
       "description": "Personnification de la tristesse et de la misère éternelle, elle est décrite ornant le bouclier d'un grand héros, pâle et décharnée.",
       "clue": "Déesse de la Misère",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Mort, Principal"
     },
     {
       "id": 74,
@@ -925,7 +1008,9 @@
       "description": "Contraint de sacrifier sa propre fille pour obtenir des vents favorables au départ de la flotte, il rentre victorieux de la guerre avant d'être assassiné à son retour.",
       "popularCulture": "Troie, A Total War Saga: Troy",
       "clue": "Roi de Mycènes, chef des armées grecques à Troie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Humain, Royauté, Vent",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 75,
@@ -937,7 +1022,9 @@
       "description": "Après avoir été privé des armes d'un héros défunt au profit d'un rival plus rusé, il sombre dans la folie et se donne la mort par honte.",
       "popularCulture": "A Total War Saga: Troy",
       "clue": "Second meilleur guerrier grec lors de la guerre de Troie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Humain, Mort, Ruse",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 76,
@@ -947,7 +1034,9 @@
       "story": "Chef du contingent locrien à Troie, réputé pour sa rapidité à la course.",
       "description": "Il outrage une prêtresse dans le temple d'Athéna après la prise de Troie, provoquant sa propre mort par la colère divine lors du retour.",
       "clue": "Chef du contingent locrien à Troie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Mort",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 77,
@@ -957,7 +1046,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant à Hadès, immortel sur sa terre natale",
       "clue": "Géant s'opposant à Hadès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 78,
@@ -967,7 +1057,8 @@
       "monsterType": "Chèvre",
       "description": "Chèvre nourricière du jeune Zeus, dont la corne devint la Corne d'Abondance",
       "clue": "Chèvre nourricière de Zeus, corne d'abondance",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Fertilité"
     },
     {
       "id": 79,
@@ -978,7 +1069,8 @@
       "equivalentName": "Venti",
       "description": "Chacun d'eux correspond à un point cardinal et possède son propre tempérament, du plus doux au plus violent.",
       "clue": "Esprits des vents déchaînés, fils des quatre vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Vent"
     },
     {
       "id": 80,
@@ -990,7 +1082,8 @@
       "clue": "Géant invincible tant qu'il touche le sol",
       "fatherName": "Poséidon",
       "motherName": "Gaïa",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 81,
@@ -1004,7 +1097,8 @@
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueur pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "id": 82,
@@ -1015,7 +1109,8 @@
       "description": "Géant aux cent yeux chargé par Héra de surveiller Io, tué par Hermès",
       "popularCulture": "Harry Potter",
       "clue": "Géant aux cent yeux, gardien d'Io",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien"
     },
     {
       "id": 83,
@@ -1025,7 +1120,8 @@
       "monsterType": "Cheval",
       "description": "Cheval né d'une union entre Poséidon et Déméter, il porta Héraclès puis Adraste au combat.",
       "clue": "Extrêmement rapide et se nourrit d'or",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre"
     },
     {
       "id": 84,
@@ -1038,7 +1134,8 @@
       "description": "Sa maîtrise de la guérison est si grande qu'il parvient à ressusciter les morts, un pouvoir qui inquiète tant le souverain des Enfers qu'il en réclame la punition.",
       "clue": "Dieu de la médecine",
       "difficulty": 2,
-      "fatherName": "Apollon"
+      "fatherName": "Apollon",
+      "tags": "Guérison, Mort, Principal, Royauté"
     },
     {
       "id": 85,
@@ -1049,7 +1146,9 @@
       "story": "Seule femme Argonaute, Entraînée par Artémis",
       "description": "Abandonnée à la naissance et élevée par une ourse, elle jure de ne se marier qu'à l'homme capable de la battre à la course.",
       "clue": "Seule femme Argonaute, Entraînée par Artémis",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain",
+      "listThemes": "Argonautes"
     },
     {
       "id": 86,
@@ -1060,7 +1159,8 @@
       "story": "Tueur de la chimère, Cavalier de Pégase",
       "description": "Monté sur un cheval ailé prêté par les dieux, il tente ensuite de s'élever jusqu'à l'Olympe et est précipité au sol pour son arrogance.",
       "clue": "Tueur de la chimère",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Humain"
     },
     {
       "id": 87,
@@ -1070,7 +1170,9 @@
       "monsterType": "Biche",
       "description": "Biche sacrée aux bois d'or et sabots d'airain, capturée vivante par Héraclès",
       "clue": "Biche sacrée aux bois d'or capturée par Héraclès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 88,
@@ -1082,7 +1184,8 @@
       "equivalentName": "Aquilon",
       "description": "Le plus violent des quatre vents cardinaux, il enlève une princesse athénienne dont il aura des fils capables de voler.",
       "clue": "Dieu du vent du nord",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 89,
@@ -1093,7 +1196,8 @@
       "clue": "Frère de Cottos et Gygès",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Royauté, Terre"
     },
     {
       "id": 90,
@@ -1107,7 +1211,8 @@
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "id": 91,
@@ -1118,7 +1223,9 @@
       "story": "Argonautes, Boréades, frère de Zétés",
       "description": "Fils ailé du vent du nord, il participe avec son frère jumeau à la chasse de créatures ailées qui tourmentent un roi aveugle.",
       "clue": "Argonautes, Boréades, frère de Zétés",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Chasse, Humain, Royauté, Vent",
+      "listThemes": "Argonautes"
     },
     {
       "id": 92,
@@ -1128,7 +1235,8 @@
       "monsterType": "Mi-Femme Mi-Dragon",
       "description": "Gardienne chargée d'enfermer certains enfants d'Ouranos et de Gaïa dans le Tartare, avant d'être vaincue par Zeus.",
       "clue": "buste de Femme et corps de Dragon, Bourreau des Hecatonchires",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Gardien"
     },
     {
       "id": 93,
@@ -1139,7 +1247,8 @@
       "story": "Connaît l'avenir mais personne ne la crois, princesse troyenne",
       "description": "Ayant repoussé les avances d'un dieu après avoir reçu le don de prophétie, elle est punie par une malédiction qui rend ses prédictions toujours vraies mais jamais crues.",
       "clue": "Connaît l'avenir mais personne ne la crois",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Prophétie"
     },
     {
       "id": 94,
@@ -1151,7 +1260,8 @@
       "equivalentName": "Chione",
       "description": "Fille du vent du nord, elle donne naissance à un fils messager après une idylle avec le dieu porteur du caducée.",
       "clue": "Déesse de la neige",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Messager, Principal, Vent"
     },
     {
       "id": 95,
@@ -1161,7 +1271,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant à Hécate, faible au feu",
       "clue": "Géant s'opposant à Hécate",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Feu, Terre"
     },
     {
       "id": 96,
@@ -1170,7 +1281,8 @@
       "race": "Hecatoncheires",
       "description": "Doté de cent bras et cinquante têtes comme ses frères, il participe à la victoire finale contre les Titans après avoir été libéré du Tartare.",
       "clue": "Frère de Briarée et Gygès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 97,
@@ -1183,7 +1295,8 @@
       "clue": "Titan du Sud et des constellations",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Terre"
     },
     {
       "id": 98,
@@ -1193,7 +1306,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant à Ares, géant pacifique",
       "clue": "Géant s'opposant à Ares",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 99,
@@ -1206,7 +1320,8 @@
       "description": "Fils du dieu de la guerre, il accompagne son père au combat aux côtés de son frère jumeau incarnant une peur différente.",
       "popularCulture": "Assassin's Creed Odyssey",
       "clue": "Dieu de la Terreur et de l'effroi",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 100,
@@ -1217,7 +1332,9 @@
       "description": "Sous la protection d'une déesse lui permettant de voir à travers le brouillard de guerre, il blesse même des divinités au combat.",
       "popularCulture": "A Total War Saga: Troy",
       "clue": "Roi d'Argos, guerrier valeureux protégé par Athéna",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Guerre, Humain, Royauté",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 101,
@@ -1227,7 +1344,8 @@
       "monsterType": "Femme-Dragon",
       "description": "Terme désignant les dragonnes de la mythologie grecque, mi-femme mi-serpent",
       "clue": "Dragonne grecque, mi-femme mi-serpent",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 102,
@@ -1237,7 +1355,8 @@
       "monsterType": "Serpent-Dragon",
       "description": "Terme grec désignant les grands serpents-dragons gardiens de trésors ou de lieux sacrés",
       "clue": "Grand serpent-dragon gardien d'un trésor ou d'un lieu sacré",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Gardien"
     },
     {
       "name": "Échidna",
@@ -1248,7 +1367,8 @@
       "description": "Moitié femme, moitié serpent, elle vit recluse dans une caverne et donne naissance à la plupart des grands monstres de la mythologie grecque.",
       "clue": "Mère des Monstres, mi-femme mi-serpent",
       "difficulty": 2,
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Animal"
     },
     {
       "id": 104,
@@ -1258,7 +1378,8 @@
       "monsterType": "Esprit/Fantôme",
       "description": "Double spectral ou image fantomatique d'une personne ou d'un dieu",
       "clue": "Double spectral ou image fantomatique",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 105,
@@ -1268,7 +1389,8 @@
       "monsterType": "Vampire",
       "description": "Servante d'Hécate capable de changer d'apparence, elle séduit les voyageurs avant de se nourrir de leur sang.",
       "clue": "Femme à la jambe de bronze, vampire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 106,
@@ -1280,7 +1402,8 @@
       "clue": "Géant à cent bras s'opposant à Athéna",
       "difficulty": 2,
       "fatherName": "Tartare",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Terre"
     },
     {
       "id": 107,
@@ -1290,7 +1413,8 @@
       "giantType": "Geant",
       "description": "Avec son frère jumeau, il tenta d'empiler des montagnes pour atteindre l'Olympe, avant d'être vaincu grâce à une ruse d'Artémis.",
       "clue": "Géant s'opposant à Dionysos, frère d'Otos",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ruse, Terre"
     },
     {
       "id": 108,
@@ -1303,7 +1427,8 @@
       "description": "Non invitée à un mariage divin, elle se venge en jetant parmi les convives un objet doré destiné à la plus belle, déclenchant une rivalité qui mènera à une grande guerre.",
       "clue": "Déesse de la Discorde",
       "difficulty": 2,
-      "fatherName": "Nyx"
+      "fatherName": "Nyx",
+      "tags": "Guerre, Principal"
     },
     {
       "id": 109,
@@ -1313,7 +1438,8 @@
       "monsterType": "Gorgone",
       "description": "L'une des trois Gorgones, soeur immortelle de Méduse",
       "clue": "Gorgone, soeur immortelle de Méduse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 110,
@@ -1323,7 +1449,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant à Héra, père de Prométhée",
       "clue": "Géant s'opposant à Héra",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 111,
@@ -1334,7 +1461,9 @@
       "description": "Géant à trois corps dont Héraclès doit voler le troupeau lors de son dixième travail",
       "popularCulture": "La Divine Comédie (Dante)",
       "clue": "Géant à trois corps, dixième travail d'Héraclès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 112,
@@ -1345,7 +1474,8 @@
       "clue": "Frère de Briarée et Cottos",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Terre"
     },
     {
       "id": 113,
@@ -1356,7 +1486,8 @@
       "description": "Elles enlèvent leurs victimes ou souillent leur nourriture, et furent notamment envoyées tourmenter un roi aveugle.",
       "popularCulture": "Percy Jackson",
       "clue": "corps de femmes sans bras avec ailes d'oiseau, à grande mémoire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Royauté"
     },
     {
       "id": 114,
@@ -1370,7 +1501,8 @@
       "clue": "Déesse de la Jeunesse",
       "difficulty": 2,
       "fatherName": "Zeus",
-      "motherName": "Héra"
+      "motherName": "Héra",
+      "tags": "Principal"
     },
     {
       "id": 115,
@@ -1383,7 +1515,8 @@
       "description": "Associée aux carrefours et à la lune, elle est invoquée par les magiciennes et accompagnée de chiens fantomatiques lors de ses apparitions nocturnes.",
       "popularCulture": "Smite 2, Hadès",
       "clue": "Déesse de la magie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie, Nuit, Principal"
     },
     {
       "id": 116,
@@ -1394,7 +1527,8 @@
       "description": "Terrassé lors de la Gigantomachie, son adversaire portait la peau d'un lion légendaire en guise d'armure durant le combat.",
       "popularCulture": "Wonder Woman",
       "clue": "Géant s'opposant à Hermès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre, Terre"
     },
     {
       "id": 117,
@@ -1407,7 +1541,8 @@
       "description": "Fille du dieu de la médecine, elle est associée à la prévention et à l'hygiène plutôt qu'à la guérison elle-même, et donne son nom à un concept médical moderne.",
       "clue": "Déesse de la Santé",
       "difficulty": 2,
-      "fatherName": "Asclépios"
+      "fatherName": "Asclépios",
+      "tags": "Guérison, Principal"
     },
     {
       "id": 118,
@@ -1421,7 +1556,8 @@
       "clue": "Titan de l'Est, du soleil et de la lumière",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Ciel, Jour, Nuit, Soleil, Terre"
     },
     {
       "id": 119,
@@ -1435,7 +1571,8 @@
       "popularCulture": "Hadès",
       "clue": "Dieu du sommeil",
       "difficulty": 2,
-      "fatherName": "Nyx"
+      "fatherName": "Nyx",
+      "tags": "Principal, Soleil"
     },
     {
       "id": 120,
@@ -1448,7 +1585,8 @@
       "description": "Messagère rapide des dieux, elle relie le ciel à la terre et à la mer par le chemin coloré qu'elle emprunte.",
       "popularCulture": "Percy Jackson",
       "clue": "Déesse des arc en ciel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Eau, Principal, Terre"
     },
     {
       "id": 121,
@@ -1461,7 +1599,8 @@
       "clue": "Titan de l'Ouest et de la réflexion",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Destin, Ruse, Terre"
     },
     {
       "id": 122,
@@ -1471,7 +1610,8 @@
       "monsterType": "Esprit des Récoltes",
       "description": "Esprit mineur personnifiant les fruits et les récoltes, compagnon de Déméter",
       "clue": "Esprit personnifiant les fruits et les récoltes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 123,
@@ -1482,7 +1622,9 @@
       "description": "Dragon aux cent têtes gardien des pommes d'or du jardin des Hespérides",
       "popularCulture": "Hadès",
       "clue": "Dragon aux cent têtes gardien des pommes d'or",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Gardien",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 124,
@@ -1492,7 +1634,8 @@
       "monsterType": "Géant Cannibale",
       "description": "Peuple de géants anthropophages rencontrés par Ulysse",
       "clue": "Géant anthropophage rencontré par Ulysse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 125,
@@ -1502,7 +1645,9 @@
       "monsterType": "Lion",
       "description": "Sa peau est extrêmement dur, tué par Heracles a Némée",
       "clue": "Sa peau est extrêmement dur",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 126,
@@ -1513,7 +1658,8 @@
       "story": "Changé en loup par Zeus après lui avoir servi de la chair humaine",
       "description": "Roi impie qui voulut tester l'omniscience divine par un acte abominable, sa punition est parfois vue comme l'origine mythologique de la transformation en loup-garou.",
       "clue": "Changé en loup par Zeus après lui avoir servi de la chair humaine",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Humain, Royauté"
     },
     {
       "id": 127,
@@ -1523,7 +1669,8 @@
       "monsterType": "Satyre",
       "description": "Fils ou petit-fils de Dionysos, il offrit à Ulysse le vin puissant qui permit de vaincre un cyclope.",
       "clue": "Compagnon de Dionysos",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 128,
@@ -1533,7 +1680,9 @@
       "story": "Héros meneur de la chasse au sanglier de Calydon, sa vie liée à un tison magique",
       "description": "Sa vie est liée à un tison magique que sa mère conserve précieusement, jusqu'à ce qu'elle le jette au feu par vengeance après qu'il a tué ses propres oncles.",
       "clue": "Meneur de la chasse au sanglier de Calydon",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Chasse, Feu, Humain, Magie",
+      "listThemes": "Argonautes"
     },
     {
       "id": 129,
@@ -1544,7 +1693,9 @@
       "description": "L'enlèvement de son épouse par un prince troyen déclenche la coalition grecque et le siège de dix ans qui s'ensuit.",
       "popularCulture": "Troie, A Total War Saga: Troy",
       "clue": "Roi de Sparte, frère d'Agamemnon",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Royauté",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 130,
@@ -1554,7 +1705,8 @@
       "giantType": "Geant",
       "description": "Enseveli sous un volcan après la Gigantomachie, sa défaite est parfois attribuée à des projectiles de métal en fusion.",
       "clue": "Géant s'opposant à Héphaïstos",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Feu, Terre"
     },
     {
       "id": 131,
@@ -1567,7 +1719,8 @@
       "clue": "Titanide de la mémoire",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Arts, Royauté, Terre"
     },
     {
       "id": 132,
@@ -1581,7 +1734,8 @@
       "popularCulture": "Smite, Smite 2, Resident Evil 3",
       "clue": "Déesse de la vengeance et de l'équilibre",
       "difficulty": 2,
-      "fatherName": "Nyx"
+      "fatherName": "Nyx",
+      "tags": "Amour, Mort, Principal"
     },
     {
       "id": 133,
@@ -1593,7 +1747,8 @@
       "equivalentName": "Nereus",
       "description": "Réputé pour sa sagesse et sa capacité à changer de forme, il est le père de cinquante filles marines bienveillantes envers les marins.",
       "clue": "Vieux dieu de la mer et de l'écume",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Principal, Sagesse"
     },
     {
       "id": 134,
@@ -1603,7 +1758,8 @@
       "monsterType": "Centaure",
       "description": "Centaure passeur de rivière tué par Héraclès, dont le sang empoisonné causera la mort du héros",
       "clue": "Centaure passeur tué par Héraclès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Mort"
     },
     {
       "id": 135,
@@ -1614,7 +1770,9 @@
       "description": "Réputé pour sa sagesse et son expérience, il conseille les autres chefs grecs tout au long du siège.",
       "popularCulture": "Troie",
       "clue": "Roi de Pylos, le plus sage des chefs grecs",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Royauté, Sagesse",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 136,
@@ -1627,7 +1785,8 @@
       "description": "Représentée avec des ailes, elle accompagne les grandes divinités et les héros triomphants sur les champs de bataille comme dans les compétitions sportives.",
       "popularCulture": "Smite",
       "clue": "Déesse de la Victoire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 137,
@@ -1640,7 +1799,8 @@
       "clue": "Titan des mers et des océans",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Eau, Terre"
     },
     {
       "id": 138,
@@ -1650,7 +1810,9 @@
       "monsterType": "Oiseaux",
       "description": "Anthropophage a bec et plume de bronze, vivant dans le lac de Stymphale, tués par Héraclès",
       "clue": "Anthropophage a bec et plume de bronze, tués par Héraclès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau",
+      "listThemes": "Monstres des 12 travaux"
     },
     {
       "id": 139,
@@ -1660,7 +1822,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant à Artémis, chasseur géant et ancien compagnon d'Artémis",
       "clue": "Géant s'opposant à Artémis",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Chasse, Terre"
     },
     {
       "id": 140,
@@ -1670,7 +1833,8 @@
       "giantType": "Geant",
       "description": "Avec son frère jumeau, il tenta d'empiler des montagnes pour atteindre l'Olympe, avant d'être vaincu grâce à une ruse d'Artémis.",
       "clue": "Géant s'opposant à Dionysos, frère d'Éphialtès",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ruse, Terre"
     },
     {
       "id": 141,
@@ -1680,7 +1844,8 @@
       "giantType": "Geant",
       "description": "Après sa défaite lors de la Gigantomachie, son adversaire aurait utilisé sa peau écorchée pour se confectionner une armure.",
       "clue": "Géant s'opposant à Athéna",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 142,
@@ -1692,7 +1857,8 @@
       "description": "Berger élevé loin de la cour après une prophétie annonçant qu'il causerait la perte de sa cité, son choix entre trois déesses déclenche un conflit majeur.",
       "popularCulture": "Troie",
       "clue": "Arbitre de la pomme de la discorde",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Prophétie"
     },
     {
       "id": 143,
@@ -1704,7 +1870,9 @@
       "description": "Il revêt l'armure de son compagnon pour repousser les Troyens, avant d'être tué par leur meilleur défenseur.",
       "popularCulture": "Troie",
       "clue": "Compagnon le plus proche d'Achille",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Humain",
+      "listThemes": "Guerriers grecs devant Troie"
     },
     {
       "id": 144,
@@ -1715,7 +1883,8 @@
       "equivalentName": null,
       "description": "Titanide associée à l'oracle de Delphes avant que celui-ci ne passe sous la tutelle d'un dieu olympien, elle est la grand-mère de deux jumeaux divins.",
       "clue": "Titanide de l'intellect et des prophéties",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Prophétie, Terre"
     },
     {
       "id": 145,
@@ -1727,7 +1896,8 @@
       "equivalentName": "Pavor",
       "description": "Fils du dieu de la guerre, il accompagne son père au combat aux côtés de son frère jumeau incarnant la terreur.",
       "clue": "Dieu de la Peur, la Panique et de la Déroute",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 146,
@@ -1738,7 +1908,8 @@
       "description": "Géant s'opposant à Poséidon, l'eau qui le touche se transforme en poison",
       "popularCulture": "Percy Jackson",
       "clue": "Géant s'opposant à Poséidon",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Terre"
     },
     {
       "id": 147,
@@ -1749,7 +1920,8 @@
       "description": "Considéré comme un chef parmi les siens, il s'en prit à Héra avant d'être frappé par la foudre puis achevé par une flèche.",
       "popularCulture": "Percy Jackson",
       "clue": "Géant s'opposant à Zeus",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Foudre, Terre"
     },
     {
       "name": "Potamoi",
@@ -1760,7 +1932,8 @@
       "id": 148,
       "description": "Ce sont les trois mille fils du grand fleuve primordial, chacun personnifiant un cours d'eau différent du monde connu des Grecs.",
       "clue": "Divinité des Fleuves",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Principal"
     },
     {
       "id": 149,
@@ -1770,7 +1943,8 @@
       "monsterType": "Serpent",
       "description": "Serpent géant qui garde l'oracle de Delphes, Ennemi d'Apollon",
       "clue": "Ennemi d'Apollon",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Gardien, Prophétie"
     },
     {
       "id": 150,
@@ -1780,7 +1954,8 @@
       "monsterType": "Renard",
       "description": "Renard destiné à ne jamais être rattrapé, envoyé par les dieux pour punir Thèbes",
       "clue": "Renard destiné à ne jamais être rattrapé",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Messager"
     },
     {
       "id": 151,
@@ -1790,7 +1965,8 @@
       "monsterType": "Satyre",
       "description": "Toujours ivre, il possède le don de prophétie lorsqu'on parvient à le capturer et à le maintenir éveillé.",
       "clue": "Père adoptif et Précepteur de Dionysos",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Prophétie"
     },
     {
       "id": 152,
@@ -1804,7 +1980,8 @@
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "id": 153,
@@ -1814,7 +1991,8 @@
       "monsterType": "Gorgone",
       "description": "L'une des trois Gorgones, soeur immortelle de Méduse",
       "clue": "Gorgone, soeur immortelle de Méduse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 154,
@@ -1825,7 +2003,8 @@
       "story": "Donne son fils à manger aux Olympiens, condamné à une faim et soif sans fin",
       "description": "Sa punition consiste à rester éternellement immergé jusqu'au menton dans l'eau, sous un arbre fruitier, sans jamais pouvoir boire ni manger.",
       "clue": "Donne son fils à manger aux Olympiens",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Humain"
     },
     {
       "id": 155,
@@ -1835,7 +2014,8 @@
       "monsterType": "Esprit Forgeron Marin",
       "description": "Forgerons magiques de Rhodes aux mains palmées, créateurs d'objets enchantés",
       "clue": "Forgerons magiques de Rhodes aux mains palmées",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Artisanat, Eau"
     },
     {
       "id": 156,
@@ -1849,7 +2029,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la mort",
       "difficulty": 2,
-      "fatherName": "Nyx"
+      "fatherName": "Nyx",
+      "tags": "Mort, Principal"
     },
     {
       "id": 157,
@@ -1862,7 +2043,8 @@
       "clue": "Titanide de la justice",
       "difficulty": 2,
       "fatherName": "Ouranos",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Justice, Prophétie, Terre"
     },
     {
       "id": 158,
@@ -1872,7 +2054,8 @@
       "giantType": "Geant",
       "description": "Géant s'opposant au Moires, censé stopper les prophécies",
       "clue": "Géant s'opposant au Moires",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 159,
@@ -1883,7 +2066,8 @@
       "description": "Serviteur marin de Poséidon, mi-homme mi-poisson soufflant dans une conque",
       "popularCulture": "La Petite Sirène (Disney)",
       "clue": "Serviteur marin de Poséidon, mi-homme mi-poisson",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Eau"
     },
     {
       "id": 160,
@@ -1895,7 +2079,8 @@
       "equivalentName": "Fortuna",
       "description": "Représentée tenant une corne d'abondance et un gouvernail, elle symbolise l'imprévisibilité du destin, tantôt favorable, tantôt funeste.",
       "clue": "Déesse de la chance",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Fertilité, Principal"
     },
     {
       "id": 161,
@@ -1909,7 +2094,8 @@
       "clue": "Titan des cataclysmes, des vents forts et des tempètes",
       "difficulty": 2,
       "fatherName": "Tartare",
-      "motherName": "Gaïa"
+      "motherName": "Gaïa",
+      "tags": "Vent"
     },
     {
       "id": 162,
@@ -1920,7 +2106,9 @@
       "story": "Argonautes, Boréades, frère de Calais",
       "description": "Fils ailé du vent du nord, il participe avec son frère jumeau à la chasse de créatures ailées qui tourmentent un roi aveugle.",
       "clue": "Argonautes, Boréades, frère de Calais",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Chasse, Humain, Royauté, Vent",
+      "listThemes": "Argonautes"
     },
     {
       "id": 163,
@@ -1931,7 +2119,8 @@
       "museType": "Beotienne",
       "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Chant",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 164,
@@ -1942,7 +2131,8 @@
       "description": "L'une des trois sœurs vengeresses nées du sang d'Ouranos mutilé, elle poursuit sans relâche les coupables de crimes impunis.",
       "popularCulture": "Hadès",
       "clue": "Colère implacable",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Justice"
     },
     {
       "id": 165,
@@ -1952,7 +2142,8 @@
       "monsterType": "Nymphe des Vents",
       "description": "Connue pour sa rapidité et sa virginité farouche, elle fut pourchassée par Dionysos malgré sa résistance.",
       "clue": "Assistante d'Éole, Brise",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Vent"
     },
     {
       "id": 166,
@@ -1963,7 +2154,8 @@
       "museType": "Grecque",
       "description": "Considérée comme la plus éminente des neuf sœurs, elle est traditionnellement présentée comme la mère d'un célèbre musicien thrace.",
       "clue": "Poésie Épique",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 167,
@@ -1973,7 +2165,8 @@
       "monsterType": "Singes ou nains",
       "description": "Punis par Zeus pour leurs farces et leur malhonnêteté, ils s'en prennent aux voyageurs avant d'être capturés par Héraclès.",
       "clue": "Singes ou nains voleurs selon les textes",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal"
     },
     {
       "id": 168,
@@ -1984,7 +2177,8 @@
       "museType": "Grecque",
       "description": "Elle est souvent représentée tenant un rouleau ou un coffret de manuscrits, symbole de la mémoire des exploits passés.",
       "clue": "Histoire",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 169,
@@ -1996,7 +2190,8 @@
       "equivalentName": "Tempestas",
       "description": "Fille de Poséidon, elle fut donnée en mariage à l'un des Hécatonchires pour sceller une alliance après la Titanomachie.",
       "clue": "Déesse des tempêtes marine",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 170,
@@ -2006,7 +2201,8 @@
       "domain": "La Terrifiante",
       "description": "Elle fait partie d'un trio de sœurs nées vieilles, qui ne partagent qu'un œil et une dent uniques entre elles.",
       "clue": "La Terrifiante",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien"
     },
     {
       "id": 171,
@@ -2018,7 +2214,8 @@
       "equivalentName": "Bellone",
       "description": "Compagne du dieu de la guerre, elle sème le chaos sur les champs de bataille et se réjouit du massacre.",
       "clue": "Déesse de guerre et de la stratégie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 172,
@@ -2028,7 +2225,8 @@
       "domain": "L'Horrible",
       "description": "Avec ses sœurs, elle garde le secret menant au repaire des Gorgones et ne possède, comme elles, qu'un œil et une dent en commun.",
       "clue": "L'Horrible",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien"
     },
     {
       "id": 173,
@@ -2039,7 +2237,8 @@
       "museType": "Grecque",
       "description": "Représentée avec une lyre, elle inspire les poèmes consacrés à l'amour et à la séduction.",
       "clue": "Poésie Lyrique et érotique",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Arts"
     },
     {
       "id": 174,
@@ -2051,7 +2250,8 @@
       "equivalentName": "Vulturnus",
       "description": "Contrairement à ses frères associés à des saisons précises, son caractère reste plus ambigu et changeant dans les textes anciens.",
       "clue": "Dieu du vent de l'Est",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 175,
@@ -2062,7 +2262,8 @@
       "museType": "Grecque",
       "description": "Associée à la flûte double, elle est parfois créditée de l'invention de cet instrument.",
       "clue": "Musique",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 176,
@@ -2072,7 +2273,8 @@
       "monsterType": "Laie",
       "description": "Laie sauvage semant la terreur près de Crommyon, tuée par Thésée",
       "clue": "Laie sauvage tuée par Thésée",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal"
     },
     {
       "id": 177,
@@ -2082,7 +2284,8 @@
       "monsterType": "Chien",
       "description": "Chien destiné à toujours rattraper sa proie, envoyé pour chasser le Renard de Teumesse",
       "clue": "Chien destiné à toujours rattraper sa proie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Messager"
     },
     {
       "id": 178,
@@ -2093,7 +2296,8 @@
       "description": "L'une des trois sœurs vengeresses, son nom est resté dans le langage courant pour désigner une femme acariâtre.",
       "popularCulture": "Hadès",
       "clue": "Jalousie vengeresse",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Justice"
     },
     {
       "id": 179,
@@ -2104,7 +2308,8 @@
       "museType": "Beotienne",
       "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Méditation et soin",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 180,
@@ -2118,7 +2323,8 @@
       "description": "Elle hante les tombes et provoque des visions terrifiantes chez les mortels endormis, semant la folie sur son passage.",
       "popularCulture": "Hadès II",
       "clue": "Déesse chthonienne des fantômes et des cauchemars",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 181,
@@ -2129,7 +2335,8 @@
       "museType": "Grecque",
       "description": "Représentée avec un masque tragique, elle deviendra plus tard la muse patronne du théâtre tragique dans son ensemble.",
       "clue": "Chant et Tragédie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 182,
@@ -2140,7 +2347,8 @@
       "museType": "Beotienne",
       "description": "Elle fait partie du trio de Muses les plus anciennes, vénérées en Béotie avant l'établissement du groupe canonique des neuf sœurs.",
       "clue": "Mémoire",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 183,
@@ -2150,7 +2358,8 @@
       "monsterType": "Nymphe des Nuages",
       "description": "Créée par Zeus à l'image d'Héra pour tromper un mortel présomptueux, son union avec celui-ci donna naissance à une nouvelle race.",
       "clue": "Habite les nuages",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 184,
@@ -2162,7 +2371,8 @@
       "equivalentName": "Auster",
       "description": "Associé à la fin de l'été et à l'automne, il apporte les brumes et les orages redoutés pour les récoltes.",
       "clue": "Dieu du vent du sud",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 185,
@@ -2172,7 +2382,8 @@
       "monsterType": "Chien à Deux Têtes",
       "description": "Chien à deux têtes gardien des troupeaux de Géryon, tué par Héraclès",
       "clue": "Chien à deux têtes, gardien du troupeau de Géryon",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Gardien"
     },
     {
       "id": 186,
@@ -2182,7 +2393,8 @@
       "domain": "L'Alarmante",
       "description": "Elle appartient au même trio de gardiennes âgées que ses sœurs, et un héros célèbre leur déroba leur œil unique pour les forcer à l'aider.",
       "clue": "L'Alarmante",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien"
     },
     {
       "id": 187,
@@ -2193,7 +2405,8 @@
       "story": "Neveu et apprenti de Dédale, tué par ce dernier par jalousie, parfois nommé Talos",
       "description": "Neveu et apprenti d'un grand inventeur, il est jeté du haut d'une colline par jalousie après avoir conçu des outils ingénieux, mais une déesse le transforme en oiseau avant qu'il ne touche le sol.",
       "clue": "Neveu et apprenti de Dédale",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Humain"
     },
     {
       "id": 188,
@@ -2204,7 +2417,8 @@
       "museType": "Grecque",
       "description": "Souvent représentée pensive et voilée, elle est associée aux hymnes sacrés autant qu'à l'art oratoire.",
       "clue": "Rhétorique et Éloquence",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 189,
@@ -2214,7 +2428,8 @@
       "monsterType": "Sanglier",
       "description": "Sanglier monstrueux envoyé par Artémis ravager Calydon, cible de la grande chasse menée par Méléagre",
       "clue": "Sanglier monstrueux envoyé par Artémis sur Calydon",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Chasse, Messager"
     },
     {
       "id": 190,
@@ -2225,7 +2440,8 @@
       "museType": "Grecque",
       "description": "Représentée une lyre à la main, elle est également associée à l'art de la danse chorale grecque.",
       "clue": "Danse",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts"
     },
     {
       "id": 191,
@@ -2236,7 +2452,8 @@
       "museType": "Grecque",
       "description": "Représentée avec un masque souriant et une couronne de lierre, elle protège également les fêtes et les banquets.",
       "clue": "Comédie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Gardien, Royauté"
     },
     {
       "id": 192,
@@ -2247,7 +2464,8 @@
       "description": "L'une des trois sœurs vengeresses, elle punit spécifiquement les meurtriers, en particulier ceux qui ont tué un membre de leur propre famille.",
       "popularCulture": "Hadès",
       "clue": "Vengeance du meurtre",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Justice"
     },
     {
       "id": 193,
@@ -2258,7 +2476,8 @@
       "museType": "Grecque",
       "description": "Représentée avec un globe céleste et un compas, elle est invoquée par les astronomes et les poètes traitant de sujets cosmiques.",
       "clue": "Astronomie et Astrologie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Ciel"
     },
     {
       "id": 194,
@@ -2270,7 +2489,8 @@
       "equivalentName": "Favonius",
       "description": "Le plus doux des quatre vents cardinaux, il est associé au printemps et épouse une nymphe des fleurs.",
       "clue": "Dieu du vent de l'ouest",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal, Vent"
     },
     {
       "id": 195,
@@ -2282,7 +2502,8 @@
       "equivalentName": "3 Moires",
       "description": "Ces trois sœurs filent, mesurent et tranchent le fil de la vie de chaque mortel, une puissance à laquelle même les dieux doivent se soumettre.",
       "clue": "Déesses du destin",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Principal"
     },
     {
       "name": "9 Camènes",
@@ -2294,7 +2515,8 @@
       "id": 196,
       "description": "Ces neuf déesses inspiratrices président chacune à un art différent et sont associées à une source sacrée proche de Rome.",
       "clue": "Équivalent romain des 9 Muses grecques",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Eau"
     },
     {
       "id": 197,
@@ -2306,7 +2528,8 @@
       "equivalentName": "Éole",
       "description": "Gardien des vents qu'il enferme dans une outre ou une caverne, il les libère ou les retient selon la volonté des dieux ou les faveurs qu'on lui demande.",
       "clue": "Dieu des vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Principal, Vent"
     },
     {
       "id": 198,
@@ -2320,7 +2543,8 @@
       "popularCulture": "Smite, Smite 2, God of War III, Percy Jackson",
       "clue": "Dieu de la lumière et des arts",
       "difficulty": 1,
-      "fatherName": "Zeus"
+      "fatherName": "Zeus",
+      "tags": "Arts, Principal"
     },
     {
       "id": 199,
@@ -2334,7 +2558,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu du vin et de la fête",
       "difficulty": 1,
-      "fatherName": "Jupiter"
+      "fatherName": "Jupiter",
+      "tags": "Arts, Principal"
     },
     {
       "id": 200,
@@ -2347,7 +2572,8 @@
       "description": "Le deuil qu'elle porte après l'enlèvement de sa fille plonge la terre entière dans un hiver stérile jusqu'à ce qu'un compromis soit trouvé avec le ravisseur.",
       "clue": "Déesse de l'agriculture",
       "difficulty": 1,
-      "fatherName": "Saturne"
+      "fatherName": "Saturne",
+      "tags": "Fertilité, Principal, Terre"
     },
     {
       "id": 201,
@@ -2361,7 +2587,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de l'amour",
       "difficulty": 1,
-      "motherName": "Vénus"
+      "motherName": "Vénus",
+      "tags": "Amour, Destin, Principal"
     },
     {
       "id": 202,
@@ -2375,7 +2602,8 @@
       "popularCulture": "Wonder Woman",
       "clue": "Déesse de la chasse",
       "difficulty": 1,
-      "fatherName": "Jupiter"
+      "fatherName": "Jupiter",
+      "tags": "Chasse, Principal"
     },
     {
       "id": 203,
@@ -2387,7 +2615,8 @@
       "equivalentName": "Pan",
       "description": "Il rend des oracles à travers le bruissement des feuilles de la forêt sacrée et protège les troupeaux et les récoltes.",
       "clue": "Dieu de la nature",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Principal"
     },
     {
       "id": 204,
@@ -2399,7 +2628,8 @@
       "description": "Ce trio de déesses vengeresses châtie les crimes que la justice humaine laisse impunis, en particulier ceux commis envers la famille.",
       "clue": "Équivalent romain des Érinyes",
       "equivalentName": "Érinyes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Principal"
     },
     {
       "id": 205,
@@ -2413,7 +2643,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "difficulty": 1,
-      "fatherName": "Jupiter"
+      "fatherName": "Jupiter",
+      "tags": "Humain"
     },
     {
       "id": 206,
@@ -2426,7 +2657,8 @@
       "description": "Épouse et sœur du roi des dieux, elle poursuit sans relâche de sa jalousie les nombreuses conquêtes et enfants illégitimes de son mari volage.",
       "clue": "Déesse de la famille",
       "difficulty": 1,
-      "fatherName": "Saturne"
+      "fatherName": "Saturne",
+      "tags": "Principal, Royauté"
     },
     {
       "id": 207,
@@ -2438,7 +2670,8 @@
       "domain": "Dieux du ciel et roi des dieux",
       "description": "Caché à sa naissance pour échapper à un père dévorant ses propres enfants, il finit par le renverser et se partage ensuite le règne du monde avec ses frères.",
       "clue": "Roi des dieux",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Principal, Royauté"
     },
     {
       "id": 208,
@@ -2449,7 +2682,8 @@
       "equivalentName": "Séléné",
       "description": "Elle conduit un char argenté à travers le ciel nocturne et tombe amoureuse d'un berger mortel qu'elle visite pendant son sommeil éternel.",
       "clue": "Titanide de la lune",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Amour, Ciel, Mort, Nuit, Terre"
     },
     {
       "id": 209,
@@ -2463,7 +2697,8 @@
       "clue": "Dieu de la guerre",
       "difficulty": 1,
       "fatherName": "Jupiter",
-      "motherName": "Junon"
+      "motherName": "Junon",
+      "tags": "Gardien, Guerre, Principal"
     },
     {
       "id": 210,
@@ -2477,7 +2712,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Messager des dieux",
       "difficulty": 1,
-      "fatherName": "Jupiter"
+      "fatherName": "Jupiter",
+      "tags": "Gardien, Messager, Principal"
     },
     {
       "id": 211,
@@ -2491,7 +2727,8 @@
       "popularCulture": "Harry Potter",
       "clue": "Déesse de la sagesse",
       "difficulty": 1,
-      "fatherName": "Jupiter"
+      "fatherName": "Jupiter",
+      "tags": "Principal, Sagesse"
     },
     {
       "id": 212,
@@ -2504,7 +2741,8 @@
       "description": "Armé d'une arme à trois pointes capable de déclencher des séismes et des raz-de-marée, il règne sur toutes les étendues d'eau du monde connu.",
       "clue": "Dieu des océans",
       "difficulty": 1,
-      "fatherName": "Saturne"
+      "fatherName": "Saturne",
+      "tags": "Eau, Principal"
     },
     {
       "id": 213,
@@ -2517,7 +2755,8 @@
       "description": "Bien que redouté, il ne quitte que rarement son royaume souterrain et se montre étonnamment juste envers les âmes qu'il gouverne, contrairement à l'image qu'on lui prête souvent.",
       "clue": "Dieu de la richesse et du monde souterrain",
       "difficulty": 1,
-      "fatherName": "Saturne"
+      "fatherName": "Saturne",
+      "tags": "Principal, Royauté, Terre"
     },
     {
       "id": 214,
@@ -2529,7 +2768,8 @@
       "equivalentName": "Polyphème",
       "description": "Fils d'un dieu marin, il est aveuglé par un rusé voyageur qui s'était présenté sous un faux nom pour échapper à sa vengeance ensuite.",
       "clue": "Cyclope de l'île de Sicile",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Ruse, Terre"
     },
     {
       "id": 215,
@@ -2541,7 +2781,8 @@
       "description": "Abandonné avec son frère jumeau sur les rives d'un fleuve et allaité par une louve, il meurt de la main de son propre frère lors d'une dispute sur l'emplacement d'une nouvelle cité.",
       "clue": "Créateur de Rome, Frère de Romulus",
       "difficulty": 1,
-      "fatherName": "Mars"
+      "fatherName": "Mars",
+      "tags": "Animal, Eau, Humain"
     },
     {
       "id": 216,
@@ -2553,7 +2794,8 @@
       "description": "Abandonné avec son frère jumeau sur les rives d'un fleuve et allaité par une louve, il fonde une cité après avoir tué son propre frère lors d'une dispute sur son emplacement.",
       "clue": "Créateur de Rome, Frère de Rémus",
       "difficulty": 1,
-      "fatherName": "Mars"
+      "fatherName": "Mars",
+      "tags": "Animal, Eau, Humain"
     },
     {
       "id": 217,
@@ -2565,7 +2807,8 @@
       "description": "Après avoir mutilé et détrôné son propre père, il dévore chacun de ses enfants par crainte d'une prophétie annonçant sa propre chute, jusqu'à ce que l'un d'eux échappe à ce sort grâce à une ruse.",
       "clue": "Roi des Titan",
       "difficulty": 1,
-      "fatherName": "Uranus"
+      "fatherName": "Uranus",
+      "tags": "Destin, Prophétie, Royauté, Ruse, Terre"
     },
     {
       "id": 218,
@@ -2576,7 +2819,8 @@
       "equivalentName": "Hélios",
       "description": "Il traverse le ciel chaque jour sur un char tiré par des chevaux flamboyants, illuminant le monde de son passage.",
       "clue": "Titan du soleil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Jour, Soleil, Terre"
     },
     {
       "id": 219,
@@ -2588,7 +2832,8 @@
       "domain": "personnification de l'abîme éponyme",
       "description": "Aussi profond sous la terre que le ciel est haut au-dessus d'elle, cet abîme sert de prison aux ennemis vaincus des dieux.",
       "clue": "personnification de l'abîme éponyme",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Principal, Terre"
     },
     {
       "id": 220,
@@ -2601,7 +2846,8 @@
       "description": "Surgie du vide primordial, elle engendre seule le ciel étoilé pour qu'il la recouvre entièrement, puis s'unit à lui pour donner naissance aux premières générations divines.",
       "popularCulture": "Smite",
       "clue": "Déesse de la Terre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Principal, Terre"
     },
     {
       "id": 221,
@@ -2613,7 +2859,8 @@
       "domain": "Dieu de la voûte céleste",
       "description": "Il s'unit chaque nuit à son épouse en l'écrasant de tout son poids, l'empêchant de mettre au monde leurs enfants, jusqu'à ce que l'un d'eux se rebelle armé d'une faucille.",
       "clue": "Dieu de la voûte céleste",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Nuit, Principal"
     },
     {
       "id": 222,
@@ -2625,7 +2872,8 @@
       "domain": "Déesse de la beauté",
       "description": "Née de l'écume marine, elle possède une ceinture magique rendant irrésistible quiconque la porte, et est revendiquée comme ancêtre par les fondateurs légendaires de Rome.",
       "clue": "Déesse de la beauté",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Amour, Magie, Principal"
     },
     {
       "id": 223,
@@ -2638,7 +2886,8 @@
       "description": "Première née puis dernière recrachée par son père, elle cède sa place parmi les grandes divinités pour préserver la paix, préférant veiller sur le feu sacré entretenu par des prêtresses vouées à la chasteté.",
       "clue": "Déesse du foyer",
       "difficulty": 1,
-      "fatherName": "Saturne"
+      "fatherName": "Saturne",
+      "tags": "Feu, Principal"
     },
     {
       "id": 224,
@@ -2653,7 +2902,8 @@
       "clue": "Dieu de la forge",
       "difficulty": 1,
       "fatherName": "Jupiter",
-      "motherName": "Junon"
+      "motherName": "Junon",
+      "tags": "Artisanat, Feu, Principal"
     },
     {
       "id": 225,
@@ -2665,7 +2915,8 @@
       "primordial": true,
       "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclat lumineux lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute la lueure pour la foudre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "id": 226,
@@ -2677,7 +2928,8 @@
       "primordial": true,
       "description": "L'un des trois frères forgerons à l'œil unique, il apporte le grondement du tonnerre lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute l'orage pour la foudre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "id": 227,
@@ -2689,7 +2941,8 @@
       "equivalentName": "Achlys",
       "description": "Personnification latine du brouillard et de l'obscurité originelle, associée à la tristesse et à la confusion primordiale.",
       "clue": "Déesse de la Misère",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Nuit, Principal"
     },
     {
       "id": 228,
@@ -2701,7 +2954,8 @@
       "equivalentName": "Chioné",
       "description": "Fille d'un dieu du vent, elle donne naissance à un fils messager après une idylle avec un dieu ailé porteur d'un caducée.",
       "clue": "Déesse de la neige",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Messager, Principal, Vent"
     },
     {
       "id": 229,
@@ -2714,7 +2968,8 @@
       "clue": "Titan du Sud et des constellations",
       "difficulty": 2,
       "fatherName": "Uranus",
-      "motherName": "Terra"
+      "motherName": "Terra",
+      "tags": "Terre"
     },
     {
       "id": 230,
@@ -2726,7 +2981,8 @@
       "domain": "Déesse du Jour et de la Lumière Terrestre",
       "description": "Personnification latine de la clarté diurne, elle succède chaque matin à sa mère qui règne sur l'obscurité nocturne.",
       "clue": "Déesse du Jour",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Jour, Nuit, Principal"
     },
     {
       "id": 231,
@@ -2739,7 +2995,8 @@
       "description": "Elle sème la zizanie parmi mortels et divinités, célèbre pour avoir jeté lors d'un banquet un objet doré destiné à la plus belle, déclenchant une rivalité qui mènera à un grand conflit.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de la Discorde",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 232,
@@ -2751,7 +3008,8 @@
       "description": "Après une fuite depuis une cité en flammes, il erre plusieurs années en Méditerranée avant de fonder en Italie la lignée qui donnera naissance à une grande cité.",
       "popularCulture": "L'Énéide (Virgile)",
       "clue": "Héros troyen fondateur de Rome",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain"
     },
     {
       "id": 233,
@@ -2763,7 +3021,8 @@
       "domain": "Dieu des Ténèbres et de l'Obscurité",
       "description": "Personnification latine des ténèbres primordiales, il engendre avec la déesse de la nuit plusieurs entités funestes comme la mort et le sommeil.",
       "clue": "Dieu des Ténèbres",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Mort, Nuit, Principal"
     },
     {
       "id": 234,
@@ -2775,7 +3034,8 @@
       "equivalentName": "Asclépios",
       "description": "Sa maîtrise de la guérison est telle qu'il ressuscite les morts, un pouvoir qui alarme tant le souverain des Enfers qu'il en réclame la punition.",
       "clue": "Dieu de la médecine",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guérison, Mort, Principal, Royauté"
     },
     {
       "id": 235,
@@ -2786,7 +3046,8 @@
       "description": "Esprit romain des bois et des champs, équivalent du satyre grec",
       "clue": "Esprit romain des bois, équivalent du satyre",
       "equivalentName": "Satyre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 236,
@@ -2798,7 +3059,8 @@
       "equivalentName": "Deimos",
       "description": "Fils du dieu de la guerre, il sème l'effroi sur les champs de bataille aux côtés d'un frère jumeau incarnant une peur différente.",
       "clue": "Dieu de la Terreur et de l'effroi",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 237,
@@ -2810,7 +3072,8 @@
       "equivalentName": "Tyché",
       "description": "Représentée les yeux bandés sur une roue ou une sphère instable, elle symbolise l'instabilité du sort qui élève ou abaisse les puissants sans prévenir.",
       "clue": "Déesse de la chance",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Principal"
     },
     {
       "name": "Janus",
@@ -2822,7 +3085,8 @@
       "description": "Doté de deux visages tournés en sens opposés, il observe simultanément le passé et l'avenir et préside à tous les commencements.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des choix et des portes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 239,
@@ -2833,7 +3097,8 @@
       "equivalentName": "Thémis",
       "description": "Représentée avec une balance et un bandeau sur les yeux, elle inspirera plus tard le symbole universel de la justice impartiale.",
       "clue": "Titanide de la justice",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Terre"
     },
     {
       "id": 240,
@@ -2845,7 +3110,8 @@
       "equivalentName": "Hébé",
       "description": "Elle veille sur le passage rituel des jeunes Romains à l'âge adulte et sur leur aptitude à porter les armes.",
       "clue": "Déesse de la Jeunesse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Principal"
     },
     {
       "id": 241,
@@ -2858,7 +3124,8 @@
       "clue": "Titan de l'Ouest et de la réflexion",
       "difficulty": 2,
       "fatherName": "Uranus",
-      "motherName": "Terra"
+      "motherName": "Terra",
+      "tags": "Destin, Ruse, Terre"
     },
     {
       "id": 242,
@@ -2871,7 +3138,8 @@
       "description": "Fils du dieu du sommeil, il façonne les rêves en empruntant l'apparence de n'importe quel être humain qu'il visite.",
       "popularCulture": "Matrix",
       "clue": "Dieu des Rêves",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 243,
@@ -2883,7 +3151,8 @@
       "equivalentName": "Thanatos",
       "description": "Frère jumeau du dieu du sommeil dans la tradition latine, il est craint mais parfois trompé par des mortels rusés.",
       "clue": "Dieu de la mort",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Mort, Principal"
     },
     {
       "id": 244,
@@ -2895,7 +3164,8 @@
       "equivalentName": "Nérée",
       "description": "Réputé pour sa sagesse et sa capacité à changer de forme dans la tradition latine, il est le père de nombreuses filles marines bienveillantes envers les marins.",
       "clue": "Vieux dieu de la mer",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Principal, Sagesse"
     },
     {
       "id": 245,
@@ -2908,7 +3178,8 @@
       "description": "Personnification latine de la nuit, si redoutable que même le roi des dieux hésite à s'aventurer dans sa demeure.",
       "popularCulture": "Smite",
       "clue": "Déesse de la nuit",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Nuit, Principal, Royauté"
     },
     {
       "id": 246,
@@ -2922,7 +3193,8 @@
       "clue": "Déesse du printemps",
       "difficulty": 2,
       "fatherName": "Jupiter",
-      "motherName": "Cérès"
+      "motherName": "Cérès",
+      "tags": "Mort, Principal, Royauté, Terre"
     },
     {
       "name": "Silvanus",
@@ -2934,7 +3206,8 @@
       "description": "Divinité rustique protégeant les frontières entre terres cultivées et forêts sauvages, il est honoré par les paysans et les bûcherons.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des Forêts",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 248,
@@ -2946,7 +3219,8 @@
       "equivalentName": "Hypnos",
       "description": "Il vit dans une demeure où ne pénètre jamais la lumière du jour, et son simple toucher plonge dieux et mortels dans un sommeil profond.",
       "clue": "Dieu du sommeil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Jour, Principal"
     },
     {
       "id": 249,
@@ -2958,7 +3232,8 @@
       "primordial": true,
       "description": "L'un des trois frères forgerons à l'œil unique, il apporte l'éclair proprement dit lors de la fabrication d'armes destinées au roi des dieux.",
       "clue": "Créateurs de la Foudre, de la Kunée et du Trident, ajoute les eclairs pour la foudre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
       "name": "Terminus",
@@ -2969,7 +3244,8 @@
       "id": 250,
       "description": "Représenté par une simple borne de pierre, il refuse traditionnellement de céder sa place, même face au roi des dieux, selon une légende fondatrice.",
       "clue": "Dieu des Frontières",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Royauté"
     },
     {
       "id": 251,
@@ -2981,7 +3257,8 @@
       "equivalentName": "Hécate",
       "description": "Son nom latin évoque les carrefours à trois chemins où on lui rendait un culte nocturne, en compagnie de chiens fantomatiques.",
       "clue": "Déesse de la magie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie, Nuit, Principal"
     },
     {
       "id": 252,
@@ -2992,7 +3269,8 @@
       "monsterType": "Esprit",
       "description": "Chacun d'eux correspond à un point cardinal et possède son propre tempérament, du plus doux au plus violent.",
       "clue": "Esprits des vents déchaînés, fils des quatre vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Vent"
     },
     {
       "id": 253,
@@ -3004,7 +3282,8 @@
       "equivalentName": "Niké",
       "description": "Représentée avec des ailes, elle couronne les généraux triomphants et orne le sommet de nombreux monuments commémoratifs romains.",
       "clue": "Déesse de la Victoire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Royauté"
     },
     {
       "id": 254,
@@ -3016,7 +3295,8 @@
       "equivalentName": "Borée",
       "description": "Le plus violent des vents cardinaux dans la tradition latine, il est associé aux tempêtes hivernales les plus redoutées des marins.",
       "clue": "Dieu du vent du nord",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 255,
@@ -3028,7 +3308,8 @@
       "equivalentName": "Iris",
       "description": "Messagère rapide des dieux dans la tradition latine, elle relie le ciel à la terre par le chemin coloré qu'elle emprunte.",
       "clue": "Déesse des arc en ciel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal, Terre"
     },
     {
       "id": 256,
@@ -3040,7 +3321,8 @@
       "equivalentName": "Notos",
       "description": "Associé à la fin de l'été, il apporte dans la tradition latine les brumes chaudes et humides redoutées pour les récoltes.",
       "clue": "Dieu du vent du sud",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 257,
@@ -3053,7 +3335,8 @@
       "description": "Souvent associée au dieu de la guerre comme épouse ou sœur, elle conduit son char sur les champs de bataille et incarne la fureur guerrière romaine.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de guerre et de la stratégie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 258,
@@ -3065,7 +3348,8 @@
       "equivalentName": "Euros",
       "description": "Vent cardinal moins documenté que ses homologues dans la tradition romaine, associé au lever du soleil.",
       "clue": "Dieu du vent de l'Est",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Soleil, Vent"
     },
     {
       "id": 259,
@@ -3077,7 +3361,8 @@
       "equivalentName": "Zéphyr",
       "description": "Le plus doux des vents cardinaux dans la tradition latine, il annonce traditionnellement l'arrivée du printemps.",
       "clue": "Dieu du vent de l'ouest",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 260,
@@ -3089,7 +3374,8 @@
       "equivalentName": "Némésis",
       "description": "Personnification latine de l'envie, elle est décrite se nourrissant de chair de vipère et dépérissant à la vue du bonheur d'autrui.",
       "clue": "Déesse de la vengeance",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 261,
@@ -3100,7 +3386,8 @@
       "equivalentName": "Mnémosyne",
       "description": "Son nom latin est à l'origine du mot désignant la monnaie, car un temple qui lui était dédié abritait l'atelier de frappe des pièces de Rome.",
       "clue": "Titanide de la mémoire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "id": 262,
@@ -3112,7 +3399,8 @@
       "equivalentName": "Phobos",
       "description": "Fils du dieu de la guerre dans la tradition latine, il sème la panique sur les champs de bataille aux côtés d'un frère jumeau.",
       "clue": "Dieu de la Peur",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Principal"
     },
     {
       "id": 263,
@@ -3124,7 +3412,8 @@
       "equivalentName": "Hygie",
       "description": "Elle incarne le bien-être et la sécurité publique autant que la santé individuelle, et donne son nom à une formule de salutation latine.",
       "clue": "Déesse de la Santé",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guérison, Principal"
     },
     {
       "id": 264,
@@ -3136,7 +3425,8 @@
       "equivalentName": "Cymopolée",
       "description": "Personnification latine des tempêtes soudaines, elle est invoquée par les marins romains pour apaiser les eaux avant une traversée.",
       "clue": "Déesse des tempêtes marine",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Principal"
     },
     {
       "name": "Coelus",
@@ -3147,7 +3437,8 @@
       "id": 265,
       "description": "Personnification de la voûte céleste, il est le père de nombreuses divinités primordiales selon certaines généalogies latines.",
       "clue": "Dieu du ciel romain, équivalent d'Ouranos",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ciel, Principal"
     },
     {
       "name": "Fenrir",
@@ -3159,7 +3450,8 @@
       "popularCulture": "Smite, Smite 2, God of War, Assassin's Creed Valhalla",
       "clue": "Loup géant fils de Loki, enchaîné par les dieux",
       "difficulty": 1,
-      "fatherName": "Loki"
+      "fatherName": "Loki",
+      "tags": "Animal, Artisanat, Magie"
     },
     {
       "id": 267,
@@ -3172,7 +3464,8 @@
       "popularCulture": "Smite, God of War",
       "clue": "Déesse de la fertilité",
       "difficulty": 1,
-      "fatherName": "Njord"
+      "fatherName": "Njord",
+      "tags": "Amour, Fertilité, Guerre, Principal, Royauté"
     },
     {
       "id": 268,
@@ -3184,7 +3477,8 @@
       "description": "Doté d'une ouïe si fine qu'il entend l'herbe pousser, il veille sans jamais dormir à l'entrée du royaume des dieux et sonnera son cor à l'annonce du crépuscule final.",
       "popularCulture": "Smite, Marvel, God of War Ragnarök",
       "clue": "Gardien du Bifröst",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Gardien, Principal, Royauté"
     },
     {
       "id": 269,
@@ -3197,7 +3491,8 @@
       "popularCulture": "Smite, Thor: Ragnarok",
       "clue": "Déesse la mort",
       "difficulty": 1,
-      "fatherName": "Loki"
+      "fatherName": "Loki",
+      "tags": "Guerre, Mort, Principal, Royauté"
     },
     {
       "name": "Jormungandr",
@@ -3209,7 +3504,8 @@
       "popularCulture": "Smite, Smite 2, God of War Ragnarök",
       "clue": "Serpent monde, fils de Loki, encercle Midgard",
       "difficulty": 1,
-      "fatherName": "Loki"
+      "fatherName": "Loki",
+      "tags": "Animal"
     },
     {
       "id": 271,
@@ -3220,7 +3516,8 @@
       "description": "Gigantesque créature des profondeurs capable d'engloutir des navires entiers",
       "popularCulture": "Le Choc des Titans, Pirates des Caraïbes",
       "clue": "Gigantesque créature des profondeurs engloutissant les navires",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 272,
@@ -3232,7 +3529,8 @@
       "description": "Géant Jotunn adopté par les Ases, dieu de la ruse et de la sournoiserie",
       "popularCulture": "Smite, Smite 2, Marvel, Loki",
       "clue": "Dieu de la sournoiserie et de la duperie",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ruse, Terre"
     },
     {
       "id": 273,
@@ -3244,7 +3542,8 @@
       "description": "Il sacrifie un œil pour obtenir la sagesse d'une source mystique et se pend volontairement à l'arbre-monde pendant neuf jours pour percer le secret des runes.",
       "popularCulture": "Smite, Smite 2, God of War, Marvel, Assassin's Creed Valhalla",
       "clue": "Dieu de l’Éternité, de l'Intemporel et roi des dieux",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Principal, Royauté, Sagesse"
     },
     {
       "id": 274,
@@ -3257,7 +3556,8 @@
       "popularCulture": "Smite, Smite 2, Marvel, God of War",
       "clue": "Dieu de la foudre et du tonerre",
       "difficulty": 1,
-      "fatherName": "Odin"
+      "fatherName": "Odin",
+      "tags": "Foudre, Gardien, Principal"
     },
     {
       "id": 275,
@@ -3270,7 +3570,8 @@
       "popularCulture": "Smite, God of War Ragnarök",
       "clue": "Dieu de la justice",
       "difficulty": 2,
-      "fatherName": "Odin"
+      "fatherName": "Odin",
+      "tags": "Animal, Justice, Principal, Ruse"
     },
     {
       "id": 276,
@@ -3282,7 +3583,8 @@
       "description": "Chevauchant à travers le ciel, elles choisissent parmi les guerriers tombés au combat ceux qui rejoindront la grande salle du roi des dieux.",
       "popularCulture": "God of War",
       "clue": "Guerrières d'Odin choisissant les morts au combat",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ciel, Guerre, Mort, Principal, Royauté"
     },
     {
       "id": 277,
@@ -3293,7 +3595,8 @@
       "domain": "Déesses du destins",
       "description": "Ces trois sœurs tissent, mesurent et coupent le fil du destin de chaque être vivant au pied de l'arbre-monde.",
       "clue": "Déesses du destins",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Principal"
     },
     {
       "id": 278,
@@ -3307,7 +3610,8 @@
       "clue": "Dieu de la lumière",
       "difficulty": 2,
       "fatherName": "Odin",
-      "motherName": "Frigg"
+      "motherName": "Frigg",
+      "tags": "Mort, Principal, Ruse"
     },
     {
       "id": 279,
@@ -3318,7 +3622,8 @@
       "description": "Mort-vivant nordique à force surhumaine, gardien acharné du trésor de sa tombe",
       "popularCulture": "The Elder Scrolls V: Skyrim",
       "clue": "Mort-vivant nordique gardien de trésor",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Mort"
     },
     {
       "name": "Eikthyrnir",
@@ -3328,7 +3633,8 @@
       "id": 280,
       "description": "Il broute le feuillage de l'arbre-monde, et l'eau qui s'écoule de ses bois alimente l'une des sources souterraines.",
       "clue": "Cerf au sommet de l'Yggdrasil, ses cornes ruissellent d'eau",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Eau"
     },
     {
       "id": 281,
@@ -3339,7 +3645,8 @@
       "description": "Nain transformé en dragon par la convoitise de l'or maudit d'Andvari, tué par Sigurd",
       "popularCulture": "Smite, L'Anneau du Nibelung (Wagner)",
       "clue": "Nain transformé en dragon, tué par Sigurd",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 282,
@@ -3352,7 +3659,8 @@
       "popularCulture": "God of War Ragnarök",
       "clue": "Dieu de l'agriculture",
       "difficulty": 2,
-      "fatherName": "Njord"
+      "fatherName": "Njord",
+      "tags": "Amour, Animal, Fertilité, Magie, Principal"
     },
     {
       "id": 283,
@@ -3363,7 +3671,8 @@
       "domain": "Déesse du foyer, épouse d'Odin",
       "description": "Épouse du roi des dieux, elle connaît le destin de tous mais ne le révèle jamais, et fait jurer à toute chose de ne pas blesser son fils.",
       "clue": "Déesse du foyer",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Principal, Royauté"
     },
     {
       "name": "Garm",
@@ -3373,7 +3682,8 @@
       "id": 284,
       "description": "Il est destiné à s'affronter avec un dieu lors du crépuscule des dieux, un combat où les deux adversaires périront.",
       "clue": "Chien gardien de Helheim",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Gardien, Guerre"
     },
     {
       "name": "Hati",
@@ -3383,7 +3693,8 @@
       "id": 285,
       "description": "Il est destiné à rattraper sa proie céleste au moment du crépuscule des dieux.",
       "clue": "Loup fils de Fenrir, pourchasse la lune",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Ciel, Nuit"
     },
     {
       "name": "Huginn",
@@ -3394,7 +3705,8 @@
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
       "popularCulture": "God of War",
       "clue": "Corbeau d'Odin représentant la pensée",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Jour"
     },
     {
       "id": 287,
@@ -3405,7 +3717,8 @@
       "domain": "Déesse de la jeunesse et de l'immortalité",
       "description": "Elle garde les pommes qui préservent la jeunesse éternelle des dieux, et son enlèvement par un géant provoque leur vieillissement soudain.",
       "clue": "Déesse de l'immortalité",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Principal"
     },
     {
       "id": 288,
@@ -3416,7 +3729,8 @@
       "domain": "Dieu des arts et de la poésie",
       "description": "Né de la salive mêlée de deux clans divins réconciliés, sa sagesse est si grande que des nains le tuent pour transformer son sang en un hydromel offrant le don de poésie.",
       "clue": "Dieu des arts",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Principal, Sagesse"
     },
     {
       "id": 289,
@@ -3428,7 +3742,8 @@
       "description": "Décapité lors d'un conflit entre deux clans divins, sa tête préservée par magie continue de délivrer des conseils au roi des dieux.",
       "popularCulture": "God of War",
       "clue": "Connaissance et Sagesse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie, Principal, Royauté, Sagesse"
     },
     {
       "name": "Muninn",
@@ -3439,7 +3754,8 @@
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
       "popularCulture": "God of War",
       "clue": "Corbeau d'Odin représentant la mémoire",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Jour"
     },
     {
       "name": "Nidhogg",
@@ -3450,7 +3766,9 @@
       "description": "Il se nourrit des cadavres des damnés et échange des insultes avec un aigle perché au sommet de l'arbre-monde, par l'intermédiaire d'un messager.",
       "popularCulture": "Nidhogg",
       "clue": "Dragon qui ronge les racines de l'Yggdrasil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Messager",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "id": 292,
@@ -3461,7 +3779,8 @@
       "domain": "Dieu de la mer et des vents",
       "description": "Son mariage avec une géante des montagnes échoue rapidement, ni l'un ni l'autre ne supportant l'environnement de son conjoint.",
       "clue": "Dieu de la mer et des vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Principal, Vent"
     },
     {
       "name": "Ratatoskr",
@@ -3472,7 +3791,9 @@
       "description": "Il fait la navette entre la cime et les racines de l'arbre-monde, portant des insultes entre un aigle et un serpent qui se détestent.",
       "popularCulture": "Smite, Smite 2, God of War",
       "clue": "Écureuil messager de l'Yggdrasil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Messager",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "id": 294,
@@ -3484,7 +3805,8 @@
       "description": "Sa chevelure dorée, coupée par malice par un dieu rusé, doit être remplacée par une parure forgée par des nains talentueux.",
       "popularCulture": "Marvel",
       "clue": "Déesse de la terre et des moissons",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Ruse, Terre"
     },
     {
       "id": 295,
@@ -3496,7 +3818,8 @@
       "description": "Skieuse et chasseresse redoutable, elle choisit son époux parmi les dieux uniquement en regardant leurs pieds, provoquant un mariage malheureux.",
       "popularCulture": "Smite",
       "clue": "Déesse de l'Hiver et de la Montagne",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Chasse, Principal, Terre"
     },
     {
       "name": "Skoll",
@@ -3506,7 +3829,8 @@
       "id": 296,
       "description": "Il est destiné à rattraper sa proie céleste au moment du crépuscule des dieux.",
       "clue": "Loup fils de Fenrir, pourchasse le soleil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Ciel, Soleil"
     },
     {
       "name": "Sleipnir",
@@ -3518,7 +3842,8 @@
       "popularCulture": "God of War Ragnarök, Assassin's Creed Valhalla",
       "clue": "Cheval à huit pattes d'Odin, fils de Loki",
       "difficulty": 2,
-      "fatherName": "Loki"
+      "fatherName": "Loki",
+      "tags": "Animal, Mort, Royauté"
     },
     {
       "id": 298,
@@ -3530,7 +3855,8 @@
       "description": "Géant du feu dévastateur et roi du Muspelheim",
       "popularCulture": "Smite, God of War Ragnarök",
       "clue": "Roi du Muspelheim",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Feu, Royauté, Terre"
     },
     {
       "id": 299,
@@ -3541,7 +3867,8 @@
       "domain": "Géant de la malice",
       "description": "Maître d'illusions dans une forteresse géante, il humilie des dieux venus lui rendre visite par des défis truqués avant de révéler la supercherie.",
       "clue": "Géant de la malice",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Terre"
     },
     {
       "name": "Vidofnir",
@@ -3551,7 +3878,9 @@
       "id": 300,
       "description": "Il se dresse au sommet de l'arbre-monde, au-dessus d'un aigle qui y a également élu domicile.",
       "clue": "Faucon perché au sommet de l'Yggdrasil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "id": 301,
@@ -3562,7 +3891,8 @@
       "description": "Punie et plongée dans un sommeil magique entouré de flammes, elle n'est réveillée que par un héros suffisamment brave pour traverser le brasier.",
       "popularCulture": "L'Anneau du Nibelung (Wagner)",
       "clue": "La plus célèbre des Valkyries",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Magie"
     },
     {
       "name": "Dain",
@@ -3572,7 +3902,9 @@
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui est mort'",
       "id": 302,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Mort",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "name": "Duneyr",
@@ -3582,7 +3914,9 @@
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui a les oreilles recouvertes de duvet'",
       "id": 303,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "name": "Durathror",
@@ -3592,7 +3926,9 @@
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui a sommeil'",
       "id": 304,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "name": "Dvalin",
@@ -3602,7 +3938,9 @@
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui est lent'",
       "id": 305,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "id": 306,
@@ -3612,7 +3950,8 @@
       "story": "Guerriers valeureux morts au combat, choisis par les Valkyries pour rejoindre le Valhalla et combattre aux côtés d'Odin lors du Ragnarök",
       "description": "Ils s'entraînent au combat chaque jour dans la grande salle et se préparent ainsi à la bataille finale annoncée par les prophéties.",
       "clue": "Guerriers du Valhalla choisis par les Valkyries",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Humain, Jour, Mort"
     },
     {
       "id": 307,
@@ -3622,7 +3961,8 @@
       "domain": "Valkyrie choisissant les guerriers destinés au Valhalla",
       "description": "Elle apparaît notamment dans des poèmes scaldiques où elle intervient directement dans l'issue de batailles historiques.",
       "clue": "Choisit les guerriers destinés au Valhalla",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre"
     },
     {
       "name": "Hraesvelgr",
@@ -3633,7 +3973,9 @@
       "description": "Le battement de ses ailes est à l'origine des vents qui soufflent sur le monde des hommes.",
       "popularCulture": "Final Fantasy XIV",
       "clue": "Aigle géant perché au sommet de l'Yggdrasil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Vent",
+      "listThemes": "Monstres de l'arbre monde"
     },
     {
       "id": 309,
@@ -3643,7 +3985,8 @@
       "domain": "Valkyrie éprise du héros mortel Helgi",
       "description": "Son histoire d'amour, contrariée par un mariage arrangé et une vengeance familiale, inspire l'un des grands poèmes héroïques nordiques.",
       "clue": "Éprise du héros mortel Helgi",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Guerre"
     },
     {
       "name": "Tanngnjóstr",
@@ -3653,7 +3996,8 @@
       "description": "Bouc de Thor, 'celui qui fait grincer ses dents'",
       "id": 310,
       "clue": "Bouc de Thor",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal"
     },
     {
       "name": "Tanngrisnir",
@@ -3663,7 +4007,8 @@
       "description": "Bouc de Thor, 'celui qui grogne'",
       "id": 311,
       "clue": "Bouc de Thor",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal"
     },
     {
       "id": 312,
@@ -3675,7 +4020,9 @@
       "popularCulture": "Smite, Smite 2, La Momie, Assassin's Creed Origins",
       "clue": "Dieu de l’embaumement",
       "difficulty": 1,
-      "fatherName": "Osiris"
+      "fatherName": "Osiris",
+      "tags": "Destin, Principal",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 313,
@@ -3688,7 +4035,9 @@
       "clue": "Roi des dieux",
       "difficulty": 1,
       "fatherName": "Osiris",
-      "motherName": "Isis"
+      "motherName": "Isis",
+      "tags": "Animal, Guerre, Magie, Principal, Royauté",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 314,
@@ -3701,7 +4050,9 @@
       "clue": "Déesse de la Magie",
       "difficulty": 1,
       "fatherName": "Geb",
-      "motherName": "Nout"
+      "motherName": "Nout",
+      "tags": "Magie, Principal",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 315,
@@ -3713,7 +4064,8 @@
       "clue": "Déesse funéraire et protectrice des morts",
       "difficulty": 1,
       "fatherName": "Geb",
-      "motherName": "Nout"
+      "motherName": "Nout",
+      "tags": "Mort, Principal"
     },
     {
       "id": 316,
@@ -3726,7 +4078,9 @@
       "clue": "Dieu régnant sur les morts",
       "difficulty": 1,
       "fatherName": "Geb",
-      "motherName": "Nout"
+      "motherName": "Nout",
+      "tags": "Mort, Principal",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 317,
@@ -3737,7 +4091,9 @@
       "description": "Il traverse le ciel le jour sur une barque solaire et affronte chaque nuit un serpent du chaos lors de sa traversée du monde souterrain.",
       "popularCulture": "Smite, Smite 2, Assassin's Creed Origins",
       "clue": "Dieu du soleil au zénith",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Ciel, Jour, Nuit, Principal, Soleil, Terre",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 318,
@@ -3750,7 +4106,9 @@
       "clue": "Dieu du mal",
       "difficulty": 1,
       "fatherName": "Geb",
-      "motherName": "Nout"
+      "motherName": "Nout",
+      "tags": "Principal, Royauté",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 319,
@@ -3761,7 +4119,9 @@
       "description": "Représenté avec une tête d'ibis, il consigne le verdict de la pesée du cœur des défunts et aurait inventé l'écriture hiéroglyphique.",
       "popularCulture": "Smite, Assassin's Creed Origins",
       "clue": "Dieu de la sagesse, de l'ecriture",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Principal, Sagesse",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 320,
@@ -3772,7 +4132,8 @@
       "description": "Ce gigantesque serpent tente chaque nuit d'empêcher la barque solaire de traverser le monde souterrain, dans un combat recommencé sans fin.",
       "popularCulture": "Stargate SG-1",
       "clue": "Serpent du chaos",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre, Nuit, Principal, Soleil, Terre"
     },
     {
       "id": 321,
@@ -3783,7 +4144,8 @@
       "description": "Autrefois représentée sous les traits d'une lionne guerrière, son iconographie s'adoucit avec le temps pour devenir protectrice du foyer et des femmes enceintes.",
       "popularCulture": "Smite, Smite 2, Assassin's Creed Origins",
       "clue": "Déesse des chats",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Nuit, Principal, Soleil"
     },
     {
       "id": 322,
@@ -3793,7 +4155,8 @@
       "domain": "Dieu des nains",
       "description": "Malgré son apparence difforme et grimaçante destinée à effrayer les esprits malveillants, il est un protecteur bienveillant du foyer, des femmes enceintes et des enfants.",
       "clue": "Dieu des nains",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Destin, Gardien, Principal"
     },
     {
       "id": 323,
@@ -3804,7 +4167,9 @@
       "description": "Allongé sous le corps arqué de son épouse céleste, il forme avec elle un couple séparé de force par leur propre père.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la terre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal, Terre",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 324,
@@ -3815,7 +4180,8 @@
       "description": "Représenté sous forme de scarabée, il pousse le disque solaire naissant comme cet insecte pousse une boule de fumier, symbole du renouveau quotidien.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu du soleil levant",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Principal, Soleil"
     },
     {
       "id": 325,
@@ -3826,7 +4192,8 @@
       "description": "Fils du roi des dieux thébain et de la déesse mère, il complète une triade divine vénérée dans le grand temple de Thèbes.",
       "popularCulture": "Moon Knight",
       "clue": "Dieu de la lune",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guérison, Nuit, Principal, Royauté"
     },
     {
       "id": 326,
@@ -3836,7 +4203,8 @@
       "domain": "Déesse de l'ordre",
       "description": "Son plumage d'autruche sert à peser le cœur des défunts lors du jugement final, déterminant leur accès à l'au-delà.",
       "clue": "Déesse de l'ordre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Principal"
     },
     {
       "id": 327,
@@ -3847,7 +4215,9 @@
       "description": "Son corps étoilé arqué au-dessus de la terre avale le soleil chaque soir pour lui donner naissance à nouveau chaque matin.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse du ciel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal, Soleil, Terre",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 328,
@@ -3857,7 +4227,8 @@
       "monsterType": "Statuette Funéraire Animée",
       "description": "Statuette placée dans les tombes pour servir le défunt à sa place dans l'au-delà",
       "clue": "Statuette funéraire au service du défunt",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Mort"
     },
     {
       "id": 329,
@@ -3867,7 +4238,9 @@
       "domain": "Dieu des artisans et créateur de la pensée et du verbe",
       "description": "Selon la théologie de Memphis, il crée le monde par la seule puissance de sa pensée et de sa parole, sans avoir besoin d'action physique.",
       "clue": "Dieu des artisans et créateur de la pensée et du verbe",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 330,
@@ -3877,7 +4250,8 @@
       "domain": "Dieu du vent et de l'air",
       "description": "Il sépare de ses bras levés le ciel de la terre, maintenant l'espace vital où circule l'air qu'il personnifie.",
       "clue": "Dieu du vent et de l'air",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal, Terre, Vent"
     },
     {
       "id": 331,
@@ -3888,7 +4262,8 @@
       "description": "Représenté avec une tête de crocodile, il est associé à la puissance du Nil et à la protection contre les dangers aquatiques.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la fertilité et de l'eau",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Eau, Fertilité, Principal"
     },
     {
       "id": 332,
@@ -3899,7 +4274,9 @@
       "description": "Fusionné avec le dieu solaire pour former une figure suprême du panthéon thébain, il devient le patron du plus grand temple d'Égypte antique.",
       "popularCulture": "Avatar : La Légende de Korra",
       "clue": "Dieu de l'invisible, de l'air et divinité créatrice transcendante",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal, Soleil",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 333,
@@ -3910,7 +4287,8 @@
       "description": "Chasseur céleste armé d'une lance, il est associé au mythe de l'œil du soleil parti se réfugier en Nubie avant d'être ramené en Égypte.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu étranger de la guerre",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Chasse, Ciel, Guerre, Principal, Soleil"
     },
     {
       "id": 334,
@@ -3920,7 +4298,8 @@
       "domain": "Dieu du Nil",
       "description": "Représenté avec un ventre rebondi, il incarne la crue annuelle qui fertilise les terres agricoles.",
       "clue": "Dieu du Nil",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 335,
@@ -3930,7 +4309,9 @@
       "domain": "Déesse de l'amour, de la joie et de la maternité",
       "description": "Souvent représentée sous forme de vache ou coiffée de cornes encadrant un disque solaire, elle est aussi associée à la musique et à la joie.",
       "clue": "Déesse de la maternité",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Animal, Arts, Principal, Soleil",
+      "listThemes": "Grands dieux d'Égypte"
     },
     {
       "id": 336,
@@ -3940,7 +4321,8 @@
       "domain": "Déesse mère, reine des dieux et épouse d'Amon",
       "description": "Souvent coiffée de la double couronne d'Égypte, elle forme avec son époux et leur fils une triade divine vénérée à Thèbes.",
       "clue": "Déesse mère, reine des dieux et épouse d'Amon",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal, Royauté"
     },
     {
       "id": 337,
@@ -3951,7 +4333,8 @@
       "description": "Déesse guerrière et tisserande associée à la ville de Saïs, elle est parfois considérée comme la mère du dieu-soleil.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de la Création",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Principal, Soleil"
     },
     {
       "id": 338,
@@ -3962,7 +4345,8 @@
       "description": "Représentée avec une tête de lionne, son souffle est dit provoquer les vents du désert et les épidémies lorsqu'elle est en colère.",
       "popularCulture": "Smite",
       "clue": "Déesse du combat",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Principal, Vent"
     },
     {
       "id": 339,
@@ -3973,7 +4357,8 @@
       "description": "Associée à la respiration et à la guérison des piqûres venimeuses, elle figure parmi les quatre déesses protectrices des vases canopes.",
       "popularCulture": "Smite",
       "clue": "Déesse des Scorpions et du Venin (Protectrice des hommes)",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guérison, Principal"
     },
     {
       "id": 340,
@@ -3984,7 +4369,8 @@
       "description": "Représentée sous une forme d'hippopotame debout au ventre gonflé, elle est invoquée pour protéger les femmes enceintes des forces maléfiques.",
       "popularCulture": "Moon Knight",
       "clue": "Déesse de la féminité et de l'accouchement",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 341,
@@ -3994,7 +4380,8 @@
       "zodiacType": "Chinois",
       "description": "Dixième signe du zodiaque chinois (aussi appelé Boeuf), associé aux années 2009, 2021, 2033... Symbole de force tranquille, de persévérance et de travail.",
       "clue": "Dixième signe du zodiaque chinois (années 2009, 2021, 2033...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 342,
@@ -4004,7 +4391,8 @@
       "zodiacType": "Chinois",
       "description": "Troisième signe du zodiaque chinois, associé aux années 2002, 2014, 2026... Symbole d'énergie, de liberté et d'endurance.",
       "clue": "Troisième signe du zodiaque chinois (années 2002, 2014, 2026...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 343,
@@ -4014,7 +4402,8 @@
       "zodiacType": "Chinois",
       "description": "Quatrième signe du zodiaque chinois (aussi appelé Mouton), associé aux années 2003, 2015, 2027... Symbole de douceur, de créativité et de compassion.",
       "clue": "Quatrième signe du zodiaque chinois (années 2003, 2015, 2027...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 344,
@@ -4024,7 +4413,8 @@
       "zodiacType": "Chinois",
       "description": "Septième signe du zodiaque chinois, associé aux années 2006, 2018, 2030... Symbole de loyauté, de justice et de fidélité.",
       "clue": "Septième signe du zodiaque chinois (années 2006, 2018, 2030...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Justice"
     },
     {
       "id": 345,
@@ -4034,7 +4424,8 @@
       "zodiacType": "Chinois",
       "description": "Huitième signe du zodiaque chinois (aussi appelé Sanglier), associé aux années 2007, 2019, 2031... Symbole de générosité, d'honnêteté et de joie de vivre.",
       "clue": "Huitième signe du zodiaque chinois (années 2007, 2019, 2031...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Destin"
     },
     {
       "id": 346,
@@ -4044,7 +4435,8 @@
       "zodiacType": "Chinois",
       "description": "Sixième signe du zodiaque chinois, associé aux années 2005, 2017, 2029... Symbole de fierté, d'honnêteté et de ponctualité.",
       "clue": "Sixième signe du zodiaque chinois (années 2005, 2017, 2029...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 347,
@@ -4054,7 +4446,8 @@
       "zodiacType": "Chinois",
       "description": "Premier signe du zodiaque chinois, associé aux années 2000, 2012, 2024... Seule créature mythique du cycle, il symbolise la puissance, la chance et la noblesse.",
       "clue": "Premier signe du zodiaque chinois (années 2000, 2012, 2024...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 348,
@@ -4064,7 +4457,8 @@
       "zodiacType": "Chinois",
       "description": "Douzième signe du zodiaque chinois, associé aux années 2011, 2023, 2035... Symbole de douceur, de prudence et de diplomatie.",
       "clue": "Douzième signe du zodiaque chinois (années 2011, 2023, 2035...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 349,
@@ -4075,7 +4469,8 @@
       "description": "Oiseau de feu qui renaît de ses cendres",
       "popularCulture": "Saint Seiya, Harry Potter",
       "clue": "Oiseau de feu",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Feu"
     },
     {
       "id": 350,
@@ -4085,7 +4480,8 @@
       "zodiacType": "Chinois",
       "description": "Neuvième signe du zodiaque chinois, associé aux années 2008, 2020, 2032... Selon la légende, il devança tous les autres animaux à la course organisée par l'Empereur de Jade grâce à sa ruse. Symbole d'ingéniosité et d'adaptabilité.",
       "clue": "Neuvième signe du zodiaque chinois (années 2008, 2020, 2032...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Ruse"
     },
     {
       "id": 351,
@@ -4095,7 +4491,8 @@
       "zodiacType": "Chinois",
       "description": "Deuxième signe du zodiaque chinois, associé aux années 2001, 2013, 2025... Symbole de sagesse, de mystère et d'intuition.",
       "clue": "Deuxième signe du zodiaque chinois (années 2001, 2013, 2025...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Sagesse"
     },
     {
       "id": 352,
@@ -4105,7 +4502,8 @@
       "zodiacType": "Chinois",
       "description": "Cinquième signe du zodiaque chinois, associé aux années 2004, 2016, 2028... Symbole d'intelligence, de ruse et de malice.",
       "clue": "Cinquième signe du zodiaque chinois (années 2004, 2016, 2028...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Ruse"
     },
     {
       "id": 353,
@@ -4115,7 +4513,8 @@
       "zodiacType": "Chinois",
       "description": "Onzième signe du zodiaque chinois, associé aux années 2010, 2022, 2034... Symbole de courage, de puissance et d'audace.",
       "clue": "Onzième signe du zodiaque chinois (années 2010, 2022, 2034...)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 354,
@@ -4125,7 +4524,8 @@
       "domain": null,
       "description": "Son apparition est considérée comme un signe annonçant la naissance ou la mort d'un grand sage, et il évite de marcher sur les êtres vivants.",
       "clue": "Cheval cornu lié à la foudre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Foudre, Mort, Sagesse"
     },
     {
       "id": 355,
@@ -4136,7 +4536,8 @@
       "description": "Enfant prodige né d'une grossesse de trois ans, il se rebelle contre son propre père après un conflit avec un roi-dragon et se bat monté sur des roues de feu.",
       "popularCulture": "Smite, Smite 2, Ne Zha, Ne Zha 2",
       "clue": "Dieux guerrier de la Jeunesse et de la Rébellion",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Feu, Guerre, Principal, Royauté"
     },
     {
       "id": 356,
@@ -4147,7 +4548,8 @@
       "description": "Elle façonne les premiers humains à partir d'argile et répare plus tard une brèche dans le ciel avec des pierres de cinq couleurs fondues.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de la création",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal"
     },
     {
       "id": 357,
@@ -4158,7 +4560,8 @@
       "description": "L'un des quatre souverains des mers, associé à l'élément de l'eau et souvent représenté vivant dans un palais sous-marin.",
       "popularCulture": "Smite, Ne Zha",
       "clue": "Roi Dragon de la mer de l'Est",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Eau, Royauté"
     },
     {
       "id": 358,
@@ -4169,7 +4572,8 @@
       "description": "Doté d'un troisième œil au milieu du front, il est accompagné d'un chien céleste et réputé pour sa force face aux démons.",
       "popularCulture": "Smite",
       "clue": "Dieu de la Pudeur",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Ciel, Principal"
     },
     {
       "id": 359,
@@ -4180,7 +4584,8 @@
       "description": "Ce dieu-fleuve est réputé avoir autrefois exigé des mariages sacrificiels de jeunes femmes, avant qu'un magistrat ne mette fin à la pratique.",
       "popularCulture": "Smite",
       "clue": "Dieu du Fleuve Jaune",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Eau, Principal"
     },
     {
       "id": 360,
@@ -4190,7 +4595,8 @@
       "domain": "Dieu du chaos",
       "description": "Selon la légende, son corps se sépara en mourant pour former les différents éléments du monde : montagnes, fleuves et ciel étoilé.",
       "clue": "Dieu du chaos",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ciel, Principal"
     },
     {
       "id": 361,
@@ -4201,7 +4607,8 @@
       "description": "Décapité après avoir défié le souverain céleste, il continue le combat en utilisant son nombril comme bouche et ses mamelons comme yeux.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de l'Esprit Indomptable",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ciel, Guerre, Principal, Royauté"
     },
     {
       "id": 362,
@@ -4212,7 +4619,8 @@
       "description": "Possédant un chaudron d'abondance inépuisable et une massue capable de tuer neuf hommes d'un coup ou de les ressusciter de l'autre, il est un père tutélaire pour son peuple.",
       "popularCulture": "Smite",
       "clue": "Dannan sacerdotale du Sacré",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Fertilité, Principal"
     },
     {
       "id": 363,
@@ -4223,7 +4631,8 @@
       "description": "Souvent présentée comme une triple déesse annonçant la mort par ses cris, elle apparaît parfois sous la forme d'une corneille planant au-dessus des champs de bataille.",
       "popularCulture": "Smite, Smite 2, Darkstalkers, Dragon Age",
       "clue": "Dannane guerrière du Massacre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Jour, Mort, Principal"
     },
     {
       "id": 364,
@@ -4234,7 +4643,8 @@
       "description": "Femme fantomatique dont les pleurs annoncent la mort prochaine d'un proche",
       "popularCulture": "X-Men",
       "clue": "Ses pleurs annoncent une mort prochaine",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Mort"
     },
     {
       "id": 365,
@@ -4244,7 +4654,8 @@
       "domain": "Dannane guerrière des Arts, de la Magie et de la Médecine",
       "description": "Fille du dieu bon, elle est vénérée comme patronne des poètes, des guérisseurs et des forgerons.",
       "clue": "Dannane guerrière des Arts, de la Magie et de la Médecine",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Guérison, Magie, Principal"
     },
     {
       "id": 366,
@@ -4254,7 +4665,8 @@
       "domain": "Mère de tous les Dannans",
       "description": "Elle est notamment connue comme la mère d'un héros guerrier maîtrisant tous les arts, enfermée par son père pour empêcher une prophétie de se réaliser.",
       "clue": "Mère de tous les Dannans",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Guerre, Principal, Prophétie"
     },
     {
       "id": 367,
@@ -4264,7 +4676,8 @@
       "domain": "Déesse souveraine, personnification mythologique de l'Irlande",
       "description": "Elle donna son nom à l'île qu'elle incarne, après avoir promis aux nouveaux envahisseurs qu'elle y resterait associée à jamais.",
       "clue": "Déesse souveraine",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 368,
@@ -4274,7 +4687,8 @@
       "domain": "'Aos sì' anciennement humaine. Règne sur le Pouvoir Légitime et ses Dangers.",
       "description": "Transformée en flaque d'eau puis en papillon par une épouse jalouse, elle finit par se réincarner sous forme humaine après une longue série de métamorphoses.",
       "clue": "'Aos sì' anciennement humaine",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Eau, Principal"
     },
     {
       "id": 369,
@@ -4284,7 +4698,8 @@
       "domain": "Dannan artisan de la Forge",
       "description": "Forgeron divin, il fabrique des armes increvables pour les siens et brasse une bière garantissant l'immortalité à quiconque la boit.",
       "clue": "Dannan artisan de la Forge",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Artisanat, Principal"
     },
     {
       "id": 370,
@@ -4295,7 +4710,8 @@
       "description": "Il est au cœur d'un célèbre triangle amoureux impliquant une mortelle qu'il tente de reconquérir après qu'elle a oublié son amour passé sous forme d'esprit.",
       "popularCulture": "Smite",
       "clue": "Dannan de la Guerre à distance",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Guerre, Principal, Sagesse, Soleil"
     },
     {
       "id": 371,
@@ -4305,7 +4721,8 @@
       "domain": "Dieu Souverain de l'Autre-monde (Sidh) où sont cachés les Dannans",
       "description": "Maître de tous les savoirs et arts à la fois, il rejoint la cour royale après avoir prouvé qu'il excellait dans chaque domaine où les autres n'excellaient que dans un seul.",
       "clue": "Dieu Souverain de l'Autre-monde",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Principal, Royauté"
     },
     {
       "id": 372,
@@ -4316,7 +4733,8 @@
       "description": "Ayant perdu un bras au combat, il dut céder temporairement son trône avant qu'un bras articulé en argent ne lui permette de régner à nouveau.",
       "popularCulture": "Hellboy II : Les Légions d'or maudites",
       "clue": "Dannan guerrier de la Royauté",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Principal, Royauté"
     },
     {
       "id": 373,
@@ -4326,7 +4744,8 @@
       "domain": "Dannan guerrier de la Magie, du Ciel nocturne, de l’Écriture, de la Poésie et de la Force.",
       "description": "Réputé pour sa force et son éloquence, il est traditionnellement crédité de l'invention d'un système d'écriture utilisant des encoches sur la pierre ou le bois.",
       "clue": "Dannan guerrier de la Magie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Ciel, Guerre, Magie, Nuit, Principal"
     },
     {
       "id": 374,
@@ -4337,7 +4756,8 @@
       "description": "Vénéré notamment par les apiculteurs de la péninsule du Yucatán, il est associé à l'abeille sans dard sacrée de la région.",
       "popularCulture": "Smite",
       "clue": "Dieu des abeilles et du miel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 375,
@@ -4348,7 +4768,8 @@
       "description": "Souvent représenté avec un long nez recourbé et portant une hache, il est invoqué lors de cérémonies agricoles pour assurer des récoltes abondantes.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la Pluie et de la Foudre",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Foudre, Principal"
     },
     {
       "id": 376,
@@ -4359,7 +4780,8 @@
       "description": "Son ombre serpentine descend visiblement les marches d'une célèbre pyramide lors des équinoxes, phénomène toujours observé aujourd'hui.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu Serpent des Vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Principal, Vent"
     },
     {
       "id": 377,
@@ -4370,7 +4792,8 @@
       "description": "Souvent représenté avec un corps squelettique ou en décomposition, il règne sur le niveau le plus bas du monde souterrain.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la mort et des enfers",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Mort, Principal, Terre"
     },
     {
       "id": 378,
@@ -4381,7 +4804,8 @@
       "description": "Associée à une chauve-souris et à une montagne sacrée, elle est vénérée par un lignage royal comme protectrice tutélaire.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de la Lune et de la Nuit",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Nuit, Principal, Royauté, Terre"
     },
     {
       "id": 379,
@@ -4392,7 +4816,8 @@
       "description": "Réputé capable de renverser n'importe quelle montagne d'un coup de pied, il fut vaincu par la ruse de deux frères jumeaux qui le poussèrent à trop manger avant un défi.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des Montagne et des Séisme",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal, Ruse, Terre"
     },
     {
       "id": 380,
@@ -4403,7 +4828,8 @@
       "description": "Transformé en singe par ses demi-frères jaloux de son talent, il devient avec son jumeau le saint patron des artistes et des artisans.",
       "popularCulture": "Smite",
       "clue": "Dieu des Chauve-Souris",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Principal"
     },
     {
       "id": 381,
@@ -4414,7 +4840,8 @@
       "description": "Comme son frère jumeau, il fut changé en singe par leurs demi-frères et partage avec lui le patronage des arts et de l'artisanat.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Principal"
     },
     {
       "id": 382,
@@ -4424,7 +4851,8 @@
       "domain": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
       "description": "Il est parfois vénéré comme saint patron des scribes et de l'écriture, en complément du domaine artistique partagé avec son frère jumeau.",
       "clue": "Dieu singe jumeaux des Artisans, Musicien et Danseur",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Arts, Principal"
     },
     {
       "id": 383,
@@ -4435,7 +4863,8 @@
       "description": "Associée à la lune, à la médecine et à l'accouchement, elle est souvent représentée en compagnie d'un lapin ou tenant un serpent.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de l'eau",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Eau, Guérison, Nuit, Principal"
     },
     {
       "id": 384,
@@ -4447,7 +4876,8 @@
       "popularCulture": "Smite, Smite 2, Ōkami",
       "clue": "Déesse du soleil",
       "difficulty": 1,
-      "fatherName": "Izanagi"
+      "fatherName": "Izanagi",
+      "tags": "Arts, Nuit, Principal, Soleil"
     },
     {
       "id": 385,
@@ -4458,7 +4888,8 @@
       "description": "Avec son épouse, il brasse les eaux primordiales avec une lance ornée de joyaux pour créer les premières îles du Japon.",
       "popularCulture": "Naruto Shippuden",
       "clue": "Dieu de la création et de la vie",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Principal"
     },
     {
       "id": 386,
@@ -4469,7 +4900,8 @@
       "description": "Elle meurt en donnant naissance au dieu du feu, puis se transforme en une créature putréfiée régnant sur le monde souterrain après que son époux l'a suivie et regardée contre sa promesse.",
       "popularCulture": "Smite, Smite 2, Naruto Shippuden",
       "clue": "Déesse de la création et de la mort",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Feu, Mort, Principal, Terre"
     },
     {
       "id": 387,
@@ -4481,7 +4913,8 @@
       "popularCulture": "Smite, Smite 2, Naruto",
       "clue": "Dieu de la mer",
       "difficulty": 1,
-      "fatherName": "Izanagi"
+      "fatherName": "Izanagi",
+      "tags": "Animal, Ciel, Eau, Principal"
     },
     {
       "id": 388,
@@ -4493,7 +4926,8 @@
       "popularCulture": "Smite, Smite 2, Naruto",
       "clue": "Dieu de la nuit et de la lune",
       "difficulty": 1,
-      "fatherName": "Izanagi"
+      "fatherName": "Izanagi",
+      "tags": "Jour, Nuit, Principal"
     },
     {
       "id": 389,
@@ -4504,7 +4938,8 @@
       "description": "Représenté portant un grand sac sur les épaules, il en libère les vents à sa guise, parfois de façon destructrice.",
       "popularCulture": "Mortal Kombat",
       "clue": "Dieu du vent",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Vent"
     },
     {
       "id": 390,
@@ -4514,7 +4949,8 @@
       "domain": "Dieu de l'agriculture",
       "description": "Vénéré aussi bien comme divinité masculine que féminine selon les sanctuaires, il est associé au riz et escorté par des renards messagers.",
       "clue": "Dieu de l'agriculture",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Fertilité, Principal"
     },
     {
       "id": 391,
@@ -4525,7 +4961,8 @@
       "description": "Entouré d'un cercle de tambours qu'il frappe pour produire le tonnerre, il est souvent représenté avec un compagnon incarnant le vent.",
       "popularCulture": "Smite, Mortal Kombat",
       "clue": "Dieu des tempête",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Foudre, Principal, Vent"
     },
     {
       "id": 392,
@@ -4536,7 +4973,8 @@
       "description": "Vénéré comme protecteur des guerriers et des archers, il est aussi considéré comme la déification d'un empereur légendaire.",
       "popularCulture": "Smite",
       "clue": "Dieu de la Guerre",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien, Guerre, Principal"
     },
     {
       "id": 393,
@@ -4546,7 +4984,8 @@
       "domain": "9e avatar du dieu Vishnou descendu sur Terre",
       "description": "Prince né dans le luxe et protégé de toute souffrance, il renonce à sa vie princière après avoir découvert la maladie, la vieillesse et la mort, pour atteindre l'éveil sous un arbre.",
       "clue": "9e avatar du dieu Vishnou descendu sur Terre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Gardien, Mort, Principal, Terre"
     },
     {
       "id": 394,
@@ -4557,7 +4996,8 @@
       "description": "Messager entre les hommes et les dieux, il transporte les offrandes sacrificielles vers le ciel à travers les flammes du rituel.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu du feu, des sacrifice et du foyer",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Feu, Messager, Principal"
     },
     {
       "id": 395,
@@ -4568,7 +5008,8 @@
       "description": "Souvent représenté avec quatre visages regardant chaque point cardinal, il naît d'un lotus poussant du nombril d'une autre grande divinité.",
       "popularCulture": "Asura's Wrath",
       "clue": "Roi des Dieu et Dieu de la Création et de l'éveil Divin",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal, Royauté"
     },
     {
       "id": 396,
@@ -4580,7 +5021,8 @@
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu de la sagesse",
       "difficulty": 2,
-      "fatherName": "Shiva"
+      "fatherName": "Shiva",
+      "tags": "Principal, Sagesse"
     },
     {
       "id": 397,
@@ -4591,7 +5033,8 @@
       "description": "Armé d'une arme façonnée à partir des ossements d'un sage, il combat un démon serpent responsable d'une grande sécheresse.",
       "popularCulture": "Smite, Asura's Wrath",
       "clue": "Roi de Dieux et Dieu du Ciel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Ciel, Guerre, Principal, Royauté, Sagesse"
     },
     {
       "id": 398,
@@ -4602,7 +5045,8 @@
       "description": "Représentée avec une guirlande de crânes et la langue tirée, elle incarne la destruction nécessaire du temps et de l'ego avant de se calmer sous le pied de son époux.",
       "popularCulture": "Smite, Smite 2, Indiana Jones et le Temple maudit",
       "clue": "Déesse de la Destruction",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Principal"
     },
     {
       "id": 399,
@@ -4613,7 +5057,8 @@
       "description": "Sa danse cosmique rythme à la fois la création et la destruction de l'univers, et un troisième œil sur son front peut réduire toute chose en cendres.",
       "popularCulture": "Smite, Final Fantasy, Asura's Wrath",
       "clue": "Dieu du Yoga et de la Destruction",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Principal"
     },
     {
       "id": 400,
@@ -4624,7 +5069,8 @@
       "description": "Il descend sur terre sous diverses incarnations chaque fois que l'équilibre du monde est menacé par le chaos.",
       "popularCulture": "Smite",
       "clue": "Dieu protecteur du monde",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Principal, Terre"
     },
     {
       "id": 401,
@@ -4635,7 +5081,8 @@
       "description": "Elle descend au royaume des morts pour tenter d'en reprendre le contrôle et doit se dépouiller d'un vêtement à chacune des sept portes qu'elle franchit.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse de l'Amour et de la Guerre",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Amour, Guerre, Mort, Principal, Royauté"
     },
     {
       "id": 402,
@@ -4647,7 +5094,8 @@
       "description": "Dragon Divin qui possède 5 têtes",
       "popularCulture": "Smite, Donjons & Dragons",
       "clue": "Dragon Divin",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Eau"
     },
     {
       "id": 403,
@@ -4658,7 +5106,8 @@
       "description": "Devenu le dieu suprême de Babylone en récompense d'avoir vaincu la déesse primordiale du chaos marin, il façonne ensuite le monde et l'humanité à partir des restes de son adversaire.",
       "popularCulture": "Smite",
       "clue": "Dieu de l'Exorcisme, de Babylone et de la Création",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Eau, Principal"
     },
     {
       "id": 404,
@@ -4669,7 +5118,8 @@
       "description": "Considéré comme trop distant et abstrait pour recevoir un culte direct, il délègue la gestion du monde à des divinités intermédiaires plus accessibles.",
       "popularCulture": "Smite",
       "clue": "Dieu de la Création de l'univers et du Ciel",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Principal"
     },
     {
       "id": 405,
@@ -4679,7 +5129,8 @@
       "domain": "Dieu Créateur des Hommes et de la Justice",
       "description": "Chargé de façonner les corps humains dans l'argile, il se laisse une fois griser par le vin de palme, ce qui expliquerait l'origine des handicaps physiques selon la tradition.",
       "clue": "Dieu Créateur des Hommes et de la Justice",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Principal"
     },
     {
       "id": 406,
@@ -4690,7 +5141,8 @@
       "description": "Mère protectrice associée à l'eau et à la maternité, elle est aujourd'hui encore vénérée dans plusieurs traditions afro-américaines issues de la diaspora.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse des Rivières, des Esprit et de la Fertilité",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Fertilité, Principal"
     },
     {
       "id": 407,
@@ -4701,7 +5153,8 @@
       "description": "Ce serpent à plumes descend aux Enfers pour y récupérer les ossements des générations passées et créer une nouvelle humanité en y versant son propre sang.",
       "popularCulture": "Smite",
       "clue": "Dieu Serpent des Vents",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Mort, Principal, Vent"
     },
     {
       "id": 408,
@@ -4712,7 +5165,8 @@
       "description": "Il réside dans un paradis pluvieux réservé aux victimes de noyade et de foudre, et exige des offrandes pour garantir la pluie.",
       "popularCulture": "Smite",
       "clue": "Dieu de l'eau",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Eau, Foudre, Principal"
     },
     {
       "id": 409,
@@ -4723,7 +5177,8 @@
       "description": "Associée à l'ours, elle est particulièrement vénérée dans les régions alpines et helvètes du monde celtique continental.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse des Animaux et de la Chasse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Chasse, Principal"
     },
     {
       "id": 410,
@@ -4734,7 +5189,8 @@
       "description": "Figure de la guerre et de la souveraineté, elle peut prédire l'issue des batailles et apparaît parfois sous une forme animale annonciatrice de mort.",
       "popularCulture": "Smite, Smite 2, Darkstalkers, Dragon Age",
       "clue": "Déesse de la Guerre et de la Destruction",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Mort, Principal"
     },
     {
       "id": 411,
@@ -4745,7 +5201,8 @@
       "description": "Représenté assis en tailleur et coiffé de bois de cerf, il est associé à la faune sauvage, à l'abondance et au cycle des saisons.",
       "popularCulture": "Smite, Smite 2, Assassin's Creed Valhalla",
       "clue": "Dieu de la Nature",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Fertilité, Principal"
     },
     {
       "id": 412,
@@ -4756,7 +5213,8 @@
       "equivalentName": "Apollon",
       "description": "Vénéré notamment sur le site d'Alésia où lui était associé un vaste sanctuaire de guérison, il est syncrétisé à l'époque gallo-romaine avec un dieu de la lumière et de la médecine.",
       "clue": "Dieu gaulois de la guérison",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guérison, Principal"
     },
     {
       "id": 413,
@@ -4766,7 +5224,8 @@
       "domain": "Dieu de la Guerre, Juge des Morts",
       "description": "Dieu tutélaire de la tribu, il aurait été honoré par des sacrifices humains selon certaines sources antiques, bien que ce point reste débattu par les historiens.",
       "clue": "Dieu de la Guerre, Juge des Morts",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Justice, Mort, Principal"
     },
     {
       "id": 414,
@@ -4777,7 +5236,8 @@
       "description": "Elle vit dans une hutte montée sur des pattes de poulet, au fond d'une forêt, et se déplace dans un mortier qu'elle propulse à l'aide d'un pilon.",
       "popularCulture": "Smite, John Wick",
       "clue": "Déesse de la Sorcellerie et de la Chasse",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Chasse, Magie, Principal"
     },
     {
       "id": 415,
@@ -4788,7 +5248,8 @@
       "description": "Son nom signifie littéralement 'dieu noir', et il est traditionnellement opposé à une divinité solaire incarnant les forces bénéfiques et lumineuses.",
       "popularCulture": "Smite, Fantasia (Disney)",
       "clue": "Dieu de la Nuit et de l'Obscurité",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Nuit, Principal, Soleil"
     },
     {
       "id": 416,
@@ -4799,7 +5260,8 @@
       "description": "Reconnaissable à son haut-de-forme, ses lunettes noires et son visage peint en crâne, il se tient au carrefour entre le monde des vivants et celui des morts.",
       "popularCulture": "Smite, Smite 2, Vivre et laisser mourir",
       "clue": "Iwa (Dieu) de la Vie et de la Mort",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Mort, Principal"
     },
     {
       "id": 417,
@@ -4810,7 +5272,8 @@
       "description": "Épouse du gardien des cimetières, elle est honorée par une offrande de rhum poivré versée sur la première tombe féminine d'un cimetière consacré.",
       "popularCulture": "Smite",
       "clue": "Iwa (Déesse) des Morts et du passage à l’au-delà",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien, Mort, Principal"
     },
     {
       "id": 418,
@@ -4821,7 +5284,8 @@
       "description": "Reine légendaire de l'Autre-monde associée à un promontoire rocheux, elle est parfois annoncée par trois oiseaux enchanteurs dont le chant guérit les malades.",
       "popularCulture": "Smite",
       "clue": "Banshee Déesse de la Beauté et de l'Amour",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Arts, Principal, Royauté"
     },
     {
       "id": 419,
@@ -4832,7 +5296,8 @@
       "description": "Elle façonne les îles depuis sa demeure au sommet d'un volcan actif, et sa colère se manifeste par des éruptions et des coulées de lave.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Déesse du Feu, des Éclairs, de la Danse, des Volcans et de la Violence",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Arts, Feu, Principal"
     },
     {
       "id": 420,
@@ -4842,7 +5307,8 @@
       "zodiacType": "Classique",
       "description": "Signe d'air représenté par une paire de plateaux, il est associé à la recherche d'équilibre et d'harmonie, sous la tutelle de la planète Vénus.",
       "clue": "Signe des gens nés entre le 23 septembre et le 22 octobre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 421,
@@ -4852,7 +5318,8 @@
       "zodiacType": "Classique",
       "description": "Premier signe du zodiaque, associé à l'élément feu et à la planète Mars, il est représenté par un animal aux cornes recourbées.",
       "clue": "Signe des gens nés entre le 21 mars et le 20 avril",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Feu"
     },
     {
       "id": 422,
@@ -4862,7 +5329,8 @@
       "zodiacType": "Classique",
       "description": "Signe d'eau placé sous la tutelle de la Lune, il est représenté par un crustacé à carapace, symbole de protection et de sensibilité.",
       "clue": "Signe des gens nés entre le 20 juin et le 22 Juillet",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Eau, Nuit"
     },
     {
       "id": 423,
@@ -4872,7 +5340,8 @@
       "zodiacType": "Classique",
       "description": "Signe de terre gouverné par Saturne, il est représenté par une créature hybride à corps de chèvre et queue de poisson.",
       "clue": "Signe des gens nés entre le 22 décembre et le 20 janvier",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Destin, Terre"
     },
     {
       "id": 424,
@@ -4882,7 +5351,8 @@
       "zodiacType": "Classique",
       "description": "Signe d'air placé sous la tutelle de Mercure, il est représenté par une paire de jumeaux symbolisant la dualité et la communication.",
       "clue": "Signe des gens nés entre le 21 mai et le 21 juin",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin"
     },
     {
       "id": 425,
@@ -4893,7 +5363,8 @@
       "description": "Réputée insaisissable, seule une personne pure serait capable de l'approcher sans qu'elle prenne la fuite.",
       "popularCulture": "Harry Potter, My Little Pony",
       "clue": "Cheval à une corne légendaire",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 426,
@@ -4903,7 +5374,8 @@
       "zodiacType": "Classique",
       "description": "Signe de feu gouverné par le Soleil, il est représenté par le roi des animaux, symbole de fierté et de rayonnement.",
       "clue": "Signe des gens nés entre le 23 juillet et le 22 août",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Feu, Royauté, Soleil"
     },
     {
       "id": 427,
@@ -4913,7 +5385,8 @@
       "zodiacType": "Classique",
       "description": "Dernier signe du zodiaque, associé à l'élément eau et à la planète Neptune, il est représenté par une paire de créatures aquatiques nageant en sens opposés.",
       "clue": "Signe des gens nés entre le 19 fevrier et le 20 mars",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Eau"
     },
     {
       "id": 428,
@@ -4923,7 +5396,8 @@
       "zodiacType": "Classique",
       "description": "Signe de feu gouverné par Jupiter, il est représenté par un archer mi-homme mi-cheval visant vers les étoiles.",
       "clue": "Signe des gens nés entre le 23 novembre et le 21 décembre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Destin, Feu"
     },
     {
       "id": 429,
@@ -4933,7 +5407,8 @@
       "zodiacType": "Classique",
       "description": "Signe d'eau associé à Mars et Pluton, il est représenté par un arthropode venimeux, symbole d'intensité et de transformation.",
       "clue": "Signe des gens nés entre le 23 octobre et le 22 novembre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Eau"
     },
     {
       "id": 430,
@@ -4943,7 +5418,8 @@
       "zodiacType": "Classique",
       "description": "Signe de terre gouverné par Vénus, il est représenté par un animal aux cornes puissantes, symbole de patience et d'obstination.",
       "clue": "Signe des gens nés entre le 21 avril et le 20 mai",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Terre"
     },
     {
       "id": 431,
@@ -4953,7 +5429,8 @@
       "zodiacType": "Classique",
       "description": "Signe d'air gouverné par Uranus, il est représenté par un porteur d'eau versant le contenu d'une jarre, symbole d'originalité et d'innovation.",
       "clue": "Signe des gens nés entre le 21 janvier et le 18 fevrier",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Eau"
     },
     {
       "id": 432,
@@ -4963,7 +5440,8 @@
       "zodiacType": "Classique",
       "description": "Signe de terre placé sous la tutelle de Mercure, il est représenté par une jeune femme tenant un épi de blé, symbole de méthode et de perfectionnisme.",
       "clue": "Signe des gens nés entre le 23 août et le 22 septembre",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Destin, Terre"
     },
     {
       "id": 433,
@@ -4974,7 +5452,8 @@
       "description": "Naît d'un œuf pondu par un coq et couvé par un serpent ou un crapaud ; sa seule faiblesse connue serait le chant du coq ou son propre reflet.",
       "popularCulture": "Harry Potter",
       "clue": "Roi des serpents dont le regard ou le souffle tue instantanément",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Arts, Royauté, Vent"
     },
     {
       "id": 434,
@@ -4985,7 +5464,8 @@
       "description": "Dragon à 4 pattes et2 ailes",
       "popularCulture": "Game of Thrones, The Elder Scrolls V: Skyrim, Dragon Ball",
       "clue": "Dragon à 4 pattes et 2 ailes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 435,
@@ -4995,7 +5475,8 @@
       "domain": null,
       "description": "Terme désignant une variété de dragon plus petite et souvent territoriale, parfois gardienne de trésors.",
       "clue": "Dragon à quatre pattes sans ailes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Gardien"
     },
     {
       "id": 436,
@@ -5006,7 +5487,8 @@
       "description": "Corps de lion, visage humain et queue de scorpion venimeuse",
       "popularCulture": "Smite, Donjons & Dragons, God of War",
       "clue": "Corps de lion, visage humain et queue de scorpion",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 437,
@@ -5017,7 +5499,8 @@
       "description": "Contrairement à d'autres créatures similaires, elle ne possède que deux pattes, sa queue se terminant souvent par un aiguillon venimeux.",
       "popularCulture": "The Elder Scrolls V: Skyrim, Monster Hunter, Dragon's Dogma",
       "clue": "Dragon à deux ailes et deux pattes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 438,
@@ -5027,7 +5510,8 @@
       "domain": null,
       "description": "Représentée sans pattes, elle est parfois associée à des symboles de sagesse ou de pouvoir royal selon les cultures qui l'ont adoptée.",
       "clue": "Dragon à 2 ailes, pas de pattes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Royauté, Sagesse"
     },
     {
       "id": 439,
@@ -5038,7 +5522,8 @@
       "description": "Créature à corps de dragon et tête de coq, proche parente du basilic",
       "popularCulture": "Donjons & Dragons",
       "clue": "Corps de dragon et tête de coq, parent du basilic",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 440,
@@ -5049,7 +5534,9 @@
       "description": "Plus son âge avance, plus il gagne de queues, jusqu'à neuf, signe de sagesse et de pouvoirs grandissants ; il peut prendre forme humaine pour tromper les voyageurs.",
       "popularCulture": "Naruto, Pokémon",
       "clue": "Renard à neuf queues (Yokai)",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Sagesse",
+      "listThemes": "Yokais"
     },
     {
       "id": 441,
@@ -5060,7 +5547,8 @@
       "description": "Terme regroupant une grande variété d'esprits, de démons et de phénomènes surnaturels du folklore, aux formes et intentions très diverses.",
       "popularCulture": "Yo-kai Watch",
       "clue": "Esprits divers",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal"
     },
     {
       "id": 442,
@@ -5071,7 +5559,9 @@
       "description": "Squelette spectral de baleine géante accompagné d'oiseaux et de poissons fantomatiques, présage de malheur pour les pêcheurs qui le croisent.",
       "popularCulture": "Smite",
       "clue": "Squelette spectral de baleine géante (Yokai)",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Yokais"
     },
     {
       "id": 443,
@@ -5081,7 +5571,9 @@
       "domain": null,
       "description": "Yokai tortue anthropomorphe, agressif, vie dans les rivère",
       "clue": "tortue anthropomorphe agressive",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Yokais"
     },
     {
       "id": 444,
@@ -5092,7 +5584,9 @@
       "description": "Connu pour sa gourmandise et son goût des farces, il est souvent représenté sous une apparence bonhomme et rondouillarde dans l'art traditionnel.",
       "popularCulture": "Super Mario Bros. 3, Pom Poko",
       "clue": "Chien viverrin farceur et métamorphe (Yokai)",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Arts, Ruse",
+      "listThemes": "Yokais"
     },
     {
       "id": 445,
@@ -5103,7 +5597,9 @@
       "description": "Serpent géant à huit têtes et huit queues, terrassé par Susanoo qui découvre l'épée Kusanagi dans sa queue",
       "popularCulture": "Ōkami, Warriors Orochi",
       "clue": "Serpent à huit têtes terrassé par Susanoo",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal",
+      "listThemes": "Yokais"
     },
     {
       "id": 446,
@@ -5113,7 +5609,8 @@
       "domain": null,
       "description": "Esprit des morts sous la forme d'une petite flamme",
       "clue": "Esprit des morts",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Feu, Mort"
     },
     {
       "id": 447,
@@ -5124,7 +5621,8 @@
       "description": "Terrorisant la région du Rhône, elle fut apaisée non par la force mais par la douceur d'une sainte qui la conduisit docilement jusqu'au village.",
       "popularCulture": "Donjons & Dragons",
       "clue": "Dragon à tête de lion et carapace de Tortue",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 448,
@@ -5134,7 +5632,8 @@
       "domain": null,
       "description": "Dragon cracheur de Venin, effrayé par la nudité, connu en loraine",
       "clue": "Dragon cracheur de Venin, effrayé par la nudité",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 449,
@@ -5145,7 +5644,8 @@
       "description": "Un humain peut se transformer en cette créature après avoir cédé au cannibalisme, notamment en période de famine extrême ; sa faim ne peut jamais être rassasiée.",
       "popularCulture": "Supernatural, Until Dawn",
       "clue": "Hybride Humain cerf Anthropophage",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 450,
@@ -5155,7 +5655,8 @@
       "domain": null,
       "description": "Créature du folklore alpin, réputée insaisissable et servant souvent de canular aux touristes crédules.",
       "clue": "Chimère de petits animaux",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal"
     },
     {
       "id": 451,
@@ -5166,7 +5667,8 @@
       "description": "Oiseau fabuleux assez puissant pour soulever un éléphant, rencontré par Sindbad le Marin",
       "popularCulture": "Sinbad",
       "clue": "Oiseau géant assez puissant pour soulever un éléphant",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Eau"
     },
     {
       "id": 452,
@@ -5178,7 +5680,8 @@
       "description": "Roi aux deux tiers divin, il part en quête d'une plante d'immortalité après avoir perdu son compagnon le plus proche, avant de se résigner à sa condition mortelle.",
       "popularCulture": "Smite, Smite 2, Final Fantasy, Fate",
       "clue": "Héros légendaire de Sumer, recherche l'immortalité après la mort d'Enkidou",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Humain, Mort, Royauté"
     },
     {
       "id": 453,
@@ -5189,7 +5692,8 @@
       "description": "Selon certaines traditions rabbiniques tardives, elle aurait été la toute première femme, refusant de se soumettre à son compagnon avant de le quitter et de devenir une figure démoniaque nocturne.",
       "popularCulture": "Supernatural, True Blood, Diablo IV",
       "clue": "Luxure",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Nuit, Ruse"
     },
     {
       "id": 454,
@@ -5200,7 +5704,8 @@
       "description": "Son nom signifie littéralement 'porteur de lumière', et il est traditionnellement identifié à un ange déchu pour s'être rebellé contre l'autorité divine par orgueil.",
       "popularCulture": "Lucifer, Sandman",
       "clue": "Orgueil",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ruse"
     },
     {
       "id": 455,
@@ -5211,7 +5716,8 @@
       "description": "Son nom signifie 'l'adversaire' ou 'l'accusateur' en hébreu, et il apparaît dans le livre de Job comme un accusateur testant la fidélité d'un homme juste avant de devenir la figure du mal absolu.",
       "popularCulture": "Le Paradis perdu (Milton)",
       "clue": "Colère et Cruauté",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Ruse"
     },
     {
       "id": 456,
@@ -5222,7 +5728,8 @@
       "description": "Démon associé à la luxure, il est mentionné dans un livre deutérocanonique où il tue sept maris successifs avant d'être chassé par une odeur de poisson brûlé.",
       "popularCulture": "Donjons & Dragons",
       "clue": "Luxure",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Chasse, Feu, Ruse"
     },
     {
       "id": 457,
@@ -5232,7 +5739,8 @@
       "domain": "Gourmandise",
       "description": "Son nom hébreu signifie 'sans valeur' ou 'sans maître', et il est associé dans certains textes à la tromperie et à l'absence totale de loi divine.",
       "clue": "Gourmandise",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Ruse"
     },
     {
       "id": 458,
@@ -5243,7 +5751,8 @@
       "description": "Il annonce les naissances les plus importantes des grandes religions abrahamiques et souffle dans la trompette annonçant le jugement final.",
       "popularCulture": "Supernatural",
       "clue": "Messager de Dieu",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Justice, Messager, Vent"
     },
     {
       "id": 459,
@@ -5254,7 +5763,8 @@
       "description": "Créature marine monstrueuse mentionnée dans les textes bibliques, sa force est telle que seul le créateur lui-même est capable de la maîtriser.",
       "popularCulture": "Supernatural",
       "clue": "Envie",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ruse"
     },
     {
       "id": 460,
@@ -5265,7 +5775,8 @@
       "description": "Il mène les armées célestes contre les forces rebelles et pèse les âmes lors du jugement dans certaines traditions.",
       "popularCulture": "Supernatural, Legion",
       "clue": "Chef des armées célestes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Justice, Messager"
     },
     {
       "id": 461,
@@ -5276,7 +5787,8 @@
       "description": "Son nom signifie 'Dieu guérit', et il accompagne un jeune homme lors d'un voyage périlleux dans un livre deutérocanonique.",
       "popularCulture": "Supernatural",
       "clue": "Guérisseur, protecteur des voyageurs",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Gardien, Messager"
     },
     {
       "id": 462,
@@ -5287,7 +5799,8 @@
       "description": "Son nom signifie 'lumière de Dieu', et il est associé dans les textes apocryphes aux avertissements adressés à l'humanité avant de grands cataclysmes.",
       "popularCulture": "Supernatural",
       "clue": "Sagesse et lumière divine",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Messager, Sagesse"
     },
     {
       "id": 463,
@@ -5298,7 +5811,8 @@
       "description": "Associé à la paresse, il est parfois représenté assis sur des toilettes, une image satirique héritée de sa vénération originelle liée à un dieu moabite.",
       "popularCulture": "Helltaker",
       "clue": "Paresse",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ruse"
     },
     {
       "id": 464,
@@ -5308,7 +5822,8 @@
       "role": "Archange qui aide à faire le bilan de sa vie et à se réorienter",
       "description": "Son nom signifie 'miséricorde de Dieu', et il est traditionnellement associé aux visions prophétiques et à l'au-delà.",
       "clue": "Aide à faire le bilan de sa vie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Messager"
     },
     {
       "id": 465,
@@ -5319,7 +5834,8 @@
       "description": "Son nom, d'origine araméenne, désigne à l'origine simplement la richesse matérielle avant de devenir la personnification de l'avidité.",
       "popularCulture": "Obey Me!",
       "clue": "Avarice et Cupidité",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ruse"
     },
     {
       "id": 466,
@@ -5329,7 +5845,8 @@
       "role": "Archange de l'harmonie, veille à l'ordre parmi les anges",
       "description": "Mentionné dans des textes apocryphes plutôt que dans le canon biblique, il est chargé de superviser la conduite des autres êtres célestes.",
       "clue": "Veille à l'ordre parmi les anges",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien, Justice, Messager"
     },
     {
       "id": 467,
@@ -5339,7 +5856,8 @@
       "role": "Archange qui veille sur les esprits égarés",
       "description": "Cité dans le Livre d'Hénoch comme l'un des sept archanges originels, il est chargé de superviser les esprits ayant fauté par la pensée plutôt que par l'acte.",
       "clue": "Veille sur les esprits égarés",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Gardien, Messager"
     },
     {
       "id": 468,
@@ -5352,7 +5870,9 @@
       "popularCulture": "Smite, Kaamelott, Le Roi Arthur : La Légende d'Excalibur, Sacré Graal, Fate",
       "clue": "Roi légendaire de Bretagne porteur de l'épée Excalibur",
       "difficulty": 1,
-      "fatherName": "Uther Pendragon"
+      "fatherName": "Uther Pendragon",
+      "tags": "Guerre, Magie, Royauté",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 469,
@@ -5364,7 +5884,9 @@
       "description": "Élevé par une fée dans un royaume aquatique caché, son amour interdit pour la reine de son propre roi précipite la chute du royaume qu'il sert.",
       "popularCulture": "Smite, Kaamelott, Fate",
       "clue": "Le meilleur chevalier de la Table Ronde",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Amour, Eau, Guerre, Royauté",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 470,
@@ -5376,7 +5898,8 @@
       "description": "Né d'une union entre un démon et une mortelle, il met sa magie et ses prophéties au service d'un royaume qu'il contribue à fonder, avant d'être piégé par sa propre magie transmise à une élève.",
       "popularCulture": "Smite, Smite 2, Merlin, Kaamelott",
       "clue": "Mage, prophète et conseiller du roi Arthur",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guerre, Magie, Royauté, Ruse"
     },
     {
       "id": 471,
@@ -5388,7 +5911,8 @@
       "description": "Transformé par magie en sosie d'un duc rival pour séduire son épouse, il engendre ainsi un fils qui grandira loin de la cour avant de révéler sa véritable identité royale.",
       "popularCulture": "Merlin",
       "clue": "Père d'Arthur",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Guerre, Magie, Royauté"
     },
     {
       "id": 472,
@@ -5399,7 +5923,9 @@
       "death": "Mort variable selon les récits (souvent au combat).",
       "description": "Victime d'une malédiction lancée par un rival éconduit, il doit affronter un serpent enroulé autour de son bras pour retrouver sa forme normale.",
       "clue": "Héros gallois, chevalier de la Table Ronde au bras court.",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre, Mort",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 473,
@@ -5411,7 +5937,9 @@
       "description": "Fils illégitime d'un grand chevalier, sa pureté absolue lui permet seul de s'asseoir sur le siège périlleux et d'atteindre la quête ultime de la Table Ronde.",
       "popularCulture": "Kingsman",
       "clue": "Chevalier ultime et le plus pur.",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Guerre",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 474,
@@ -5423,7 +5951,9 @@
       "description": "Sa force augmente et diminue selon la position du soleil dans le ciel, et il accepte un défi d'un chevalier vert capable de survivre à sa propre décapitation.",
       "popularCulture": "The Green Knight",
       "clue": "Chevalié dont la force liée au soleil",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Guerre, Soleil",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 475,
@@ -5435,7 +5965,8 @@
       "description": "Son amour interdit pour le meilleur chevalier du royaume précipite la chute de la Table Ronde et la guerre civile qui s'ensuit.",
       "popularCulture": "Kaamelott",
       "clue": "Reine de Camelot",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Amour, Guerre, Royauté"
     },
     {
       "id": 476,
@@ -5447,7 +5978,9 @@
       "description": "Frère de lait du roi, il est réputé pour sa langue acérée et ses moqueries envers les autres chevaliers, malgré une loyauté sans faille envers son souverain.",
       "popularCulture": "Kaamelott",
       "clue": "Sénéchal râleur",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Royauté",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 477,
@@ -5461,7 +5994,8 @@
       "clue": "Fils illégitime d'Arthur",
       "difficulty": 2,
       "fatherName": "Arthur Pendragon",
-      "motherName": "Morgane"
+      "motherName": "Morgane",
+      "tags": "Guerre, Royauté"
     },
     {
       "id": 478,
@@ -5473,7 +6007,8 @@
       "description": "Demi-sœur du roi et formée à la magie par un enchanteur, sa rivalité avec la cour la pousse à orchestrer plusieurs complots.",
       "popularCulture": "Smite, Smite 2, Kaamelott, Excalibur",
       "clue": "Fée, magicienne maudite",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Magie, Royauté"
     },
     {
       "id": 479,
@@ -5485,7 +6020,9 @@
       "description": "Élevé loin de toute chevalerie pour le protéger, sa naïveté initiale l'empêche de poser la question rituelle qui aurait pu guérir un roi blessé lors de sa première visite au château du Graal.",
       "popularCulture": "Kaamelott",
       "clue": "Chevalier naïf élevé dans la forêt par sa mère",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Royauté",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 480,
@@ -5496,7 +6033,9 @@
       "death": "Meurt de vieillesse, souvent aux côtés de son lion fidèle.",
       "description": "Après avoir épousé la dame d'une fontaine magique gagnée en combat singulier, il l'abandonne trop longtemps et doit reconquérir sa confiance, aidé d'un lion reconnaissant qu'il a sauvé.",
       "clue": "Chevalier au Lion",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre, Magie, Royauté",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 481,
@@ -5508,7 +6047,9 @@
       "description": "Roi breton et cousin d'un chevalier célèbre, il est le seul des trois élus du Graal à survivre et à retourner raconter l'aventure à la cour.",
       "popularCulture": "Kaamelott",
       "clue": "Cousin de Lancelot, l'un des trois purs à trouver le Graal.",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Royauté, Terre",
+      "listThemes": "Chevaliers de la table ronde"
     },
     {
       "id": 482,
@@ -5520,7 +6061,8 @@
       "description": "Promise à un roi de Cornouailles, elle boit par erreur avec l'émissaire chargé de l'escorter un philtre destiné à assurer la fidélité conjugale, déclenchant une passion interdite.",
       "popularCulture": "Tristan und Isolde (Wagner)",
       "clue": "Princesse d'Irlande",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Guerre, Mort, Royauté"
     },
     {
       "id": 483,
@@ -5532,7 +6074,8 @@
       "description": "Elle retient le magicien de la cour dans une prison magique après avoir appris tous ses secrets, et règne sur un royaume caché sous les eaux.",
       "popularCulture": "Kaamelott",
       "clue": "Fée (Viviane/Nimue), élève Lancelot.",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Eau, Guerre, Magie, Royauté"
     },
     {
       "id": 484,
@@ -5544,7 +6087,8 @@
       "description": "Père d'une future reine, il devient un allié fidèle après avoir bénéficié d'un soutien militaire décisif lors d'une bataille contre des envahisseurs.",
       "popularCulture": "Kaamelott",
       "clue": "Roi de Carmélide",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Royauté"
     },
     {
       "id": 485,
@@ -5555,7 +6099,8 @@
       "death": "Décapité par Lancelot lors d'un duel à mort.",
       "description": "Fils du roi d'un royaume dont nul ne revient normalement vivant, il enlève une reine et provoque une quête périlleuse pour la délivrer.",
       "clue": "Chevalier félon de Gorre",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Mort, Royauté"
     },
     {
       "id": 486,
@@ -5567,7 +6112,9 @@
       "description": "Envoyé chercher une princesse irlandaise pour le compte de son oncle, il tombe amoureux d'elle après avoir bu par erreur un philtre qui leur était destiné.",
       "popularCulture": "Tristan und Isolde (Wagner)",
       "clue": "Neveu du roi Marc de Cornouailles",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Royauté, Amour",
+      "listThemes": "Chevaliers de la table ronde"
     }
   ],
   "places": [
@@ -5758,7 +6305,8 @@
       "power": "Rend son porteur invincible au combat",
       "story": "Offerte à Arthur par la Dame du Lac après que sa première épée se soit brisée",
       "clue": "Épée légendaire du roi Arthur",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guerre, Royauté"
     },
     {
       "name": "Mjölnir",
@@ -5769,7 +6317,8 @@
       "power": "Marteau qui revient toujours dans la main de son porteur ; seuls les dignes peuvent le soulever",
       "story": "Forgé lors d'un pari entre Loki et les nains, malgré un manche un peu court à cause d'un sabotage de Loki",
       "clue": "Marteau du dieu du tonnerre nordique",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guerre"
     },
     {
       "name": "Trident de Poséidon",
@@ -5780,7 +6329,8 @@
       "power": "Contrôle les mers, provoque tempêtes et séismes",
       "story": "Offert à Poséidon par les Cyclopes lors de la guerre contre les Titans",
       "clue": "Arme à trois pointes du dieu des mers",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Eau, Foudre, Guerre"
     },
     {
       "name": "Saint Graal",
@@ -5790,7 +6340,8 @@
       "power": "Offrirait la vie éternelle ou la guérison à qui le trouve",
       "story": "Coupe utilisée lors de la Cène, quête ultime des chevaliers de la Table Ronde",
       "clue": "Coupe sacrée recherchée par les chevaliers de la Table Ronde",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guérison"
     },
     {
       "name": "Andvaranaut",
@@ -5801,7 +6352,8 @@
       "power": "Anneau qui multiplie l'or de son possesseur, mais porte une malédiction mortelle",
       "story": "Volé au nain Andvari par Loki pour payer une dette ; maudit, il cause la mort de tous ses possesseurs, dont Fáfnir",
       "clue": "Anneau maudit convoité par le dragon Fáfnir",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Guerre, Magie, Mort"
     },
     {
       "name": "Gungnir",
@@ -5812,7 +6364,8 @@
       "power": "Lance qui ne manque jamais sa cible",
       "story": "Forgée par des nains puis offerte à Odin par Loki",
       "clue": "Lance d'Odin qui ne rate jamais sa cible",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre"
     },
     {
       "name": "Égide",
@@ -5823,7 +6376,8 @@
       "power": "Bouclier semant la terreur chez l'ennemi, orné de la tête de Méduse",
       "story": "Forgée par Héphaïstos pour Zeus, souvent représentée portée par Athéna",
       "clue": "Bouclier terrifiant orné de la tête de Méduse",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Magie"
     },
     {
       "name": "Toison d'or",
@@ -5833,7 +6387,8 @@
       "power": "Symbole de royauté et d'autorité légitime",
       "story": "Provient d'un bélier ailé envoyé par Zeus ; quête de Jason et des Argonautes pour la récupérer",
       "clue": "Objet convoité par Jason et les Argonautes",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Justice, Royauté"
     },
     {
       "name": "Brísingamen",
@@ -5844,7 +6399,8 @@
       "power": "Collier d'une beauté extraordinaire, symbole de fertilité",
       "story": "Freyja l'obtient en échange d'une nuit passée avec chacun des quatre nains qui l'ont forgé",
       "clue": "Collier convoité de la déesse Freyja",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Amour, Fertilité, Magie, Nuit"
     },
     {
       "name": "Gáe Bulg",
@@ -5855,7 +6411,8 @@
       "power": "Lance barbelée qui se multiplie en pénétrant le corps de l'adversaire, mortelle à coup sûr",
       "story": "Offerte par Scáthach à son élève Cúchulainn, utilisée tragiquement contre son ami Ferdiad",
       "clue": "Lance barbelée du héros Cúchulainn",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre"
     },
     {
       "name": "Kusanagi-no-Tsurugi",
@@ -5865,7 +6422,8 @@
       "power": "Une des trois insignes impériales du Japon, associée au contrôle du vent",
       "story": "Trouvée par le dieu Susanoo dans la queue du dragon Yamata no Orochi après l'avoir vaincu",
       "clue": "Épée trouvée dans la queue d'un dragon à huit têtes",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Guerre, Royauté, Vent"
     },
     {
       "name": "Sudarshana Chakra",
@@ -5876,7 +6434,8 @@
       "power": "Disque tranchant qui revient toujours à la main de son porteur, détruit le mal",
       "story": "Utilisé par Vishnou pour vaincre de nombreux démons dans la mythologie hindoue",
       "clue": "Disque tournoyant du dieu Vishnou",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre"
     },
     {
       "name": "Keraunos",
@@ -5887,7 +6446,8 @@
       "power": "Foudre destructrice qui ne manque jamais sa cible, symbole de l'autorité suprême de Zeus",
       "story": "Offerte à Zeus par les Cyclopes lors de la Titanomachie, tout comme le trident de Poséidon et la Kunée d'Hadès",
       "clue": "Foudre du roi des dieux grecs",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Foudre, Guerre, Justice, Royauté"
     },
     {
       "name": "Kunée",
@@ -5898,7 +6458,8 @@
       "power": "Casque qui rend invisible celui qui le porte",
       "story": "Offerte à Hadès par les Cyclopes lors de la Titanomachie, aux côtés du trident de Poséidon et de la foudre de Zeus",
       "clue": "Casque d'invisibilité du dieu des Enfers",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Foudre, Magie"
     },
     {
       "name": "Talaria",
@@ -5909,7 +6470,8 @@
       "power": "Sandales ailées permettant de voler à une vitesse fulgurante",
       "story": "Portées par Hermès, messager des dieux, pour parcourir le monde et les Enfers à toute vitesse",
       "clue": "Sandales ailées du messager des dieux",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie"
     },
     {
       "name": "Harpé",
@@ -5919,7 +6481,8 @@
       "power": "Serpe tranchante capable de trancher la chair des immortels",
       "story": "Utilisée par Cronos pour émasculer son père Ouranos, puis prêtée par Hermès à Persée pour trancher la tête de la Gorgone Méduse",
       "clue": "Serpe utilisée par Cronos contre son propre père",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre"
     },
     {
       "name": "Yata no Kagami",
@@ -5929,7 +6492,8 @@
       "power": "Miroir sacré symbolisant la sagesse et la vérité, une des trois insignes impériales",
       "story": "Utilisé par les dieux pour attirer la déesse du soleil Amaterasu hors de sa grotte en lui reflétant sa propre lumière",
       "clue": "Miroir sacré utilisé pour attirer la déesse du soleil hors de sa grotte",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie, Royauté, Sagesse, Soleil"
     },
     {
       "name": "Yasakani no Magatama",
@@ -5939,7 +6503,8 @@
       "power": "Bijou de jade en forme de virgule, symbole de bienveillance et de prospérité",
       "story": "Une des trois insignes impériales du Japon, aux côtés du miroir Yata no Kagami et de l'épée Kusanagi-no-Tsurugi",
       "clue": "Bijou de jade parmi les trésors impériaux du Japon",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Fertilité, Magie, Royauté"
     },
     {
       "name": "Gleipnir",
@@ -5950,7 +6515,8 @@
       "power": "Ruban fin et souple en apparence, mais incassable, capable de retenir le loup Fenrir",
       "story": "Fabriqué à partir de six ingrédients impossibles : le bruit des pas d'un chat, la barbe d'une femme, les racines d'une montagne, les tendons d'un ours, le souffle d'un poisson et la salive d'un oiseau",
       "clue": "Ruban magique forgé pour enchaîner le loup Fenrir",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Magie, Vent"
     },
     {
       "name": "Muramasa",
@@ -5960,7 +6526,8 @@
       "power": "Lame assoiffée de sang, réputée maudite et poussant son porteur à la violence",
       "story": "Katanas forgés par le maître Muramasa, rival légendaire de Masamune ; leur réputation maléfique en a fait des armes redoutées",
       "clue": "Katana maudit assoiffé de sang",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guerre, Magie, Mort"
     },
     {
       "name": "Ambroisie",
@@ -5970,7 +6537,8 @@
       "power": "Nourriture des dieux qui confère l'immortalité à qui la consomme",
       "story": "Réservée aux dieux ; sa consommation par un mortel provoquerait l'immortalité, comme dans le mythe de Tantale",
       "clue": "Nourriture des dieux grecs, source d'immortalité",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guérison"
     },
     {
       "name": "Nectar",
@@ -5980,7 +6548,8 @@
       "power": "Boisson des dieux qui confère l'immortalité",
       "story": "Souvent associé à l'ambroisie comme breuvage exclusif des dieux de l'Olympe",
       "clue": "Boisson des dieux grecs, associée à l'ambroisie",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Guérison"
     },
     {
       "name": "Pommes d'Idunn",
@@ -5990,7 +6559,8 @@
       "power": "Pommes magiques qui préservent la jeunesse éternelle des dieux",
       "story": "Gardées par la déesse Idunn ; leur vol temporaire par le géant Thjazi menace les Ases de vieillissement",
       "clue": "Pommes qui gardent les dieux nordiques éternellement jeunes",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Guérison"
     },
     {
       "name": "Pêches d'immortalité",
@@ -6000,7 +6570,8 @@
       "power": "Pêches qui confèrent l'immortalité à qui les mange",
       "story": "Poussent dans le jardin céleste de Xiwangmu et ne mûrissent qu'une fois tous les trois mille ans",
       "clue": "Fruits d'immortalité de la Reine Mère d'Occident",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Ciel, Guérison"
     },
     {
       "name": "Amrita",
@@ -6010,7 +6581,8 @@
       "power": "Nectar d'immortalité",
       "story": "Obtenu en barattant l'océan de lait (Samudra Manthan) par les dévas et les asuras",
       "clue": "Nectar d'immortalité issu du barattage de l'océan de lait",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Eau, Guérison"
     },
     {
       "name": "Ódroerir",
@@ -6020,7 +6592,8 @@
       "power": "Hydromel qui confère le don de la poésie et la sagesse à qui le boit",
       "story": "Créé à partir du sang de Kvasir mêlé à du miel ; Odin le dérobe au géant Suttungr sous la forme d'un aigle",
       "clue": "Hydromel qui confère le don de la poésie",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Guérison, Mort, Sagesse"
     },
     {
       "name": "Char d'Hélios",
@@ -6030,7 +6603,8 @@
       "power": "Char tiré par des chevaux flamboyants qui traverse le ciel chaque jour, portant le soleil",
       "story": "Phaéton, fils d'Hélios, perd le contrôle du char en tentant de le conduire, manquant d'embraser la Terre",
       "clue": "Char qui porte le soleil à travers le ciel",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Ciel, Soleil"
     },
     {
       "name": "Skidbladnir",
@@ -6041,7 +6615,8 @@
       "power": "Navire toujours favorisé par le vent, qui se replie comme un tissu pour tenir dans une poche",
       "story": "Un des cadeaux forgés par les nains pour les dieux, offert à Freyr",
       "clue": "Navire magique qui se replie comme un tissu",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ciel, Magie, Vent"
     },
     {
       "name": "Barque solaire de Rê",
@@ -6051,7 +6626,8 @@
       "power": "Bateau qui transporte le dieu-soleil à travers le ciel le jour et le monde souterrain la nuit",
       "story": "Chaque nuit, Rê affronte le serpent Apophis à bord de cette barque pour renaître au matin",
       "clue": "Bateau du dieu-soleil égyptien, traverse le monde souterrain la nuit",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Animal, Ciel, Nuit, Soleil"
     },
     {
       "name": "Pushpaka Vimana",
@@ -6062,7 +6638,8 @@
       "power": "Char volant capable de se déplacer à volonté et de s'agrandir pour accueillir des passagers",
       "story": "Volé à Kubera par son demi-frère Ravana, roi démon de Lanka, puis utilisé par Rama pour rentrer chez lui dans le Ramayana",
       "clue": "Char volant dérobé par le roi démon Ravana",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Ciel, Royauté"
     },
     {
       "name": "Draupnir",
@@ -6073,7 +6650,8 @@
       "power": "Anneau en or qui se duplique en huit nouveaux anneaux identiques toutes les neuf nuits",
       "story": "Forgé lors du même pari que Mjölnir ; Odin le dépose sur le bûcher funéraire de Baldr",
       "clue": "Anneau d'Odin qui se multiplie tous les neuf jours",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Magie"
     },
     {
       "name": "Caducée",
@@ -6083,7 +6661,8 @@
       "power": "Bâton entouré de deux serpents, symbole du commerce et des messages, capable d'endormir ou de réveiller",
       "story": "Souvent confondu avec le bâton d'Asclépios, qui ne porte qu'un seul serpent et symbolise la médecine",
       "clue": "Bâton d'Hermès entouré de deux serpents",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Animal, Magie"
     },
     {
       "name": "Oeil d'Horus",
@@ -6093,7 +6672,8 @@
       "power": "Amulette de protection, de santé et de pouvoir royal",
       "story": "Horus perd son oeil lors d'un combat contre Seth ; Thot le restaure, en faisant un symbole de guérison",
       "clue": "Amulette de protection en forme d'oeil, liée au dieu-faucon",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Gardien, Guérison, Guerre, Magie, Royauté"
     },
     {
       "name": "Lance de Lugh",
@@ -6103,7 +6683,8 @@
       "power": "Lance invincible qui garantit la victoire à celui qui la brandit",
       "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Gorias",
       "clue": "Lance invincible, un des Quatre Trésors irlandais",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre"
     },
     {
       "name": "Claíomh Solais",
@@ -6113,7 +6694,8 @@
       "power": "Épée de lumière dont nul ne peut échapper une fois dégainée",
       "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Findias",
       "clue": "Épée de lumière, un des Quatre Trésors irlandais",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre"
     },
     {
       "name": "Lia Fáil",
@@ -6122,7 +6704,8 @@
       "power": "Pierre de couronnement qui pousse un cri lorsqu'un roi légitime d'Irlande la touche",
       "story": "Un des Quatre Trésors des Tuatha Dé Danann, apportée de la cité mythique de Falias",
       "clue": "Pierre qui crie pour reconnaître le vrai roi d'Irlande",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Justice, Royauté"
     },
     {
       "name": "Chaudron du Dagda",
@@ -6132,7 +6715,8 @@
       "power": "Chaudron inépuisable qui rassasie toujours ceux qui y puisent",
       "story": "Un des Quatre Trésors des Tuatha Dé Danann, apporté de la cité mythique de Murias",
       "clue": "Chaudron inépuisable, un des Quatre Trésors irlandais",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guérison, Magie"
     },
     {
       "name": "Tablette des Destinées",
@@ -6142,7 +6726,8 @@
       "power": "Confère l'autorité suprême et le contrôle des destins de l'univers à son détenteur",
       "story": "Volée par le démon-oiseau Anzu, puis récupérée après un combat divin",
       "clue": "Tablette qui confère le contrôle des destins de l'univers",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Guerre, Justice, Royauté"
     },
     {
       "name": "Ruyi Jingu Bang",
@@ -6152,7 +6737,8 @@
       "power": "Bâton capable de changer de taille à volonté, du plus petit au plus immense",
       "story": "Trouvé par Sun Wukong au fond de l'océan, où il était gardé par le Roi-Dragon de la mer de l'Est",
       "clue": "Bâton du Roi Singe qui change de taille à volonté",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Eau, Gardien, Guerre, Royauté"
     },
     {
       "name": "Totsuka-no-Tsurugi",
@@ -6162,7 +6748,8 @@
       "power": "Épée à dix empans utilisée pour trancher un dragon à huit têtes",
       "story": "Utilisée par Susanoo pour tuer le dragon Yamata no Orochi ; c'est en fendant sa queue qu'il découvre Kusanagi-no-Tsurugi",
       "clue": "Épée utilisée par Susanoo pour vaincre un dragon à huit têtes",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Animal, Guerre"
     },
     {
       "name": "Fourreau d'Excalibur",
@@ -6173,7 +6760,8 @@
       "power": "Empêche son porteur de perdre du sang, quelle que soit la blessure",
       "story": "Selon Merlin, le fourreau vaut plus que l'épée elle-même ; il est volé par Morgane pour affaiblir Arthur",
       "clue": "Objet plus précieux qu'Excalibur elle-même selon Merlin",
-      "difficulty": 3
+      "difficulty": 3,
+      "tags": "Magie, Mort"
     },
     {
       "name": "Boîte de Pandore",
@@ -6183,7 +6771,8 @@
       "power": "Contient tous les maux de l'humanité, avec l'espoir tout au fond",
       "story": "Offerte à Pandore par les dieux avec l'interdiction de l'ouvrir ; sa curiosité libère les maux sur le monde",
       "clue": "Récipient qui libère tous les maux de l'humanité",
-      "difficulty": 1
+      "difficulty": 1,
+      "tags": "Magie"
     },
     {
       "name": "Pommes d'or des Hespérides",
@@ -6193,7 +6782,8 @@
       "power": "Pommes d'or symbole d'amour et de mariage, offertes par Gaïa à Héra",
       "story": "Onzième travail d'Héraclès : les dérober au jardin des Hespérides, gardé par le dragon Ladon",
       "clue": "Pommes d'or dérobées par Héraclès dans un jardin gardé par un dragon",
-      "difficulty": 2
+      "difficulty": 2,
+      "tags": "Amour, Animal, Gardien"
     }
   ]
 }
