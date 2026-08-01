@@ -1,5 +1,14 @@
 # Changelog
 
+## V3
+
+### V3.0.0
+
+- Nouveaux champs `tags` (entités et artéfacts) et `listThemes` (entités uniquement) : schéma Room v6, migration destructive, formulaires d'ajout/édition
+- Tags thématiques assignés aux 486 entités et 43 artéfacts (vent, ciel, amour, animal, principal, humain, terre, feu, eau, guerre, mort, sagesse, magie, ruse, chasse, artisanat, fertilité, soleil, jour, nuit, foudre, gardien, prophétie, arts, justice, royauté, guérison, messager, destin)
+- Rattachement de 61 entités aux 7 thèmes curés du mode Liste non déductibles d'un champ existant (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+
+
 ## V2
 
 

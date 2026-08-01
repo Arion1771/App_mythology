@@ -84,6 +84,8 @@ class EditEntityFragment : AddEntityFragment() {
         setText(view, R.id.et_zodiactype,      e.zodiacType)
         setText(view, R.id.et_chinese,         e.chineseEquivalent)
         setText(view, R.id.et_popularculture,  e.popularCulture)
+        setText(view, R.id.et_tags,            e.tags)
+        setText(view, R.id.et_listthemes,      e.listThemes)
 
         e.primordial?.let {
             view.findViewById<CheckBox>(R.id.cb_primordial)?.isChecked = it

@@ -6,13 +6,13 @@
 
 The built-in database catalogs mythological entities (gods, heroes, monsters…), places and artifacts. You can browse and search it freely, open the detailed sheet for any entry, and add or edit entries directly from the app.
 
-Three independent quizzes let you test your knowledge: an entity quiz, a place quiz and an artifact quiz, each with several difficulty levels. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
+Three quiz modes let you test your knowledge — Classic (a clue, guess the name), Multiple-choice (same clue, pick the right name among 4), and List (find every entry matching a chosen theme) — available across entities, places and artifacts depending on the mode, each with several difficulty levels or size-based attempt limits. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
-Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database.
+Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V2.6.1
+### Latest addition — V3.0.0
 
-The place quiz's help page was out of date after V2.6.0 introduced a 5-attempt limit; the help screen now accurately describes it.
+Complete quiz overhaul: a new Multiple-choice mode (entities and artifacts) answers the same clue in a single attempt among 4 proposed names, with decoys chosen by thematic proximity (shared tags, mythology, race, mythological equivalent) rather than at random; a new List mode lets you pick from 27 themes (mythologies, creature families, legendary groups…) and find every matching entry in a card grid, with attempt limits scaled to theme size. Two new fields support this — `tags` (entities and artifacts) and `listThemes` (entities) — populated across the whole database.
 
 ### Getting started
 
@@ -45,13 +45,13 @@ The app isn't published on the Play Store — it has to be built and installed m
 
 La base de données intégrée recense des entités mythologiques (dieux, héros, monstres…), des lieux et des artéfacts. Vous pouvez la parcourir et la rechercher librement, consulter la fiche détaillée de chaque élément, et ajouter ou modifier des entrées directement depuis l'application.
 
-Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
+Trois types de quiz permettent de tester vos connaissances — Classique (un indice, devinez le nom), QCM (même indice, choisissez le bon nom parmi 4) et Liste (retrouvez toutes les entrées correspondant à un thème choisi) — disponibles selon le mode sur les entités, les lieux et les artéfacts, chacun avec plusieurs niveaux de difficulté ou des paliers d'essais selon la taille du thème. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
-Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base.
+Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V2.6.1
+### Dernier ajout — V3.0.0
 
-La page d'aide du quiz Lieux n'était plus à jour depuis l'ajout de la limite de 5 essais en V2.6.0 ; l'écran d'aide décrit désormais fidèlement cette règle.
+Refonte complète des quiz : un nouveau mode QCM (entités et artéfacts) répond au même indice en un seul essai parmi 4 noms proposés, avec des leurres choisis par proximité thématique (tags partagés, mythologie, race, équivalent mythologique) plutôt qu'au hasard ; un nouveau mode Liste permet de choisir parmi 27 thèmes (mythologies, familles de créatures, groupes légendaires…) et de retrouver toutes les entrées correspondantes dans une grille de cartes, avec des paliers d'essais proportionnés à la taille du thème. Deux nouveaux champs soutiennent cette refonte — `tags` (entités et artéfacts) et `listThemes` (entités) — renseignés sur l'ensemble de la base.
 
 ### Démarrage
 
