@@ -6,6 +6,10 @@
 
 ### Changes since the first version
 
+#### V2.4.1
+
+- Fixed the `navGraphViewModels` import (declared in `androidx.navigation`, not `androidx.navigation.fragment`), which prevented the quiz and result screens introduced in V2.4.0 from compiling
+
 #### V2.4.0
 
 - Dedicated result screen for the entity and artifact quizzes (`QuizEntityResultFragment` / `QuizArtifactResultFragment`), shown only once the current question can no longer be answered (found, or two wrong attempts): name coloured (green/yellow/red) according to the result, all the additional information (pop culture included), and a button to go to the next question or see the score
@@ -251,6 +255,10 @@
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres). Parcourez, recherchez, ajoutez et modifiez des entités mythologiques, des lieux et des artéfacts, puis testez vos connaissances via des quiz à trois niveaux de difficulté.
 
 ### Nouveautés depuis la première version
+
+#### V2.4.1
+
+- Correction de l'import `navGraphViewModels` (déclaré dans `androidx.navigation`, pas `androidx.navigation.fragment`) qui empêchait la compilation des écrans de quiz et de résultat introduits en V2.4.0
 
 #### V2.4.0
 
