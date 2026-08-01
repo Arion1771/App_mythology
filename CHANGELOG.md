@@ -3,6 +3,12 @@
 ## V2
 
 
+### V2.5.0
+
+- Écran d'aide du quiz sur plusieurs pages défilantes (`QuizHelpFragment`, ViewPager2), accessible via une icône « ? » sur l'écran de choix du quiz : fonctionnement des trois quiz, difficulté et calcul des points, conventions de réponse (casse, accents, absence d'article)
+- Application verrouillée en orientation portrait (`android:screenOrientation="portrait"`)
+
+
 #### V2.4.2
 
 - Culture populaire : mise à jour de 108 entités selon les rosters exacts de Smite et Smite 2 (« Smite », « Smite 2 » ou les deux selon présence dans chaque jeu) ; le « Sol » nordique de Smite n'a volontairement pas été rapproché de l'entité romaine homonyme (panthéons distincts)
