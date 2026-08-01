@@ -8,7 +8,7 @@ import android.widget.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navGraphViewModels
+import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.viewmodel.QuizViewModel

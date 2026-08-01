@@ -3,6 +3,11 @@
 ## V2
 
 
+#### V2.4.1
+
+- Correction de l'import `navGraphViewModels` (déclaré dans `androidx.navigation`, pas `androidx.navigation.fragment`) qui empêchait la compilation des écrans de quiz et de résultat introduits en V2.4.0
+
+
 ### V2.4.0
 
 - Écran de résultat dédié pour les quiz d'entités et d'artéfacts (`QuizEntityResultFragment` / `QuizArtifactResultFragment`), affiché uniquement lorsqu'on ne peut plus répondre à la question en cours (trouvé, ou deux essais faux) : nom coloré (vert/jaune/rouge) selon le résultat, toutes les informations complémentaires (dont la culture populaire), et bouton pour passer à la question suivante ou voir le score
