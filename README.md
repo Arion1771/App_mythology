@@ -12,6 +12,13 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.0.1)
 
+#### V3.1.0
+
+- Added an achievement system: about fifty hidden goals (answer a specific entity, finish a Classic/Multiple-choice quiz with no mistake or entirely wrong, complete a list theme or a Places quiz with fewer than 3 mistakes...) unlock once and are kept across app updates (stored separately from the database, unaffected by its purge on each update)
+- A golden banner shows for 3 seconds at the top of the screen when an achievement is unlocked
+- New "Succès" screen reachable from the home screen (trophy icon): each achievement shows its name and emblem (grey rectangle if not obtained), plus how to obtain it once unlocked (golden rectangle)
+- Emblem image folder ready to use (one default generic emblem, to be replaced individually per achievement)
+
 #### V3.0.2
 
 - Filled in missing thematic tags for entities that had only inherited the Principal tag during the heuristic assignment of V3.0.0, for lack of a matching keyword
@@ -66,6 +73,13 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.0.1)
+
+#### V3.1.0
+
+- Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application (stockage séparé de la base, non affecté par sa purge à chaque mise à jour)
+- Un bandeau doré s'affiche 3 secondes en haut de l'écran lors du déblocage d'un succès
+- Nouvel écran « Succès » accessible depuis l'accueil (icône trophée) : chaque succès affiche son nom et son emblème (rectangle gris si non obtenu), et sa méthode d'obtention en plus une fois débloqué (rectangle doré)
+- Dossier d'images d'emblèmes prêt à l'emploi (un blason générique par défaut, à remplacer individuellement par succès)
 
 #### V3.0.2
 

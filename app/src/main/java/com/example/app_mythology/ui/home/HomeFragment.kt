@@ -30,5 +30,9 @@ class HomeFragment : Fragment() {
         view.findViewById<Button>(R.id.btn_quiz).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_quizChoice)
         }
+
+        view.findViewById<View>(R.id.btn_trophy).setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_achievements)
+        }
     }
 }
