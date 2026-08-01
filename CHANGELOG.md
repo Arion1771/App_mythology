@@ -4,9 +4,13 @@
 
 ### V3.0.0
 
-- Nouveaux champs `tags` (entités et artéfacts) et `listThemes` (entités uniquement) : schéma Room v6, migration destructive, formulaires d'ajout/édition
+- Refonte complète des quiz : deux nouveaux modes s'ajoutent au mode Classique
+- Nouveau mode QCM (entités et artéfacts) : même indice que le mode Classique, mais réponse en un seul essai parmi 4 noms proposés ; les 3 leurres sont choisis par proximité thématique (tags, mythologie, race, équivalent) plutôt qu'au hasard ; passage immédiat à la question suivante quel que soit le résultat, écran de score final sans seconde chance
+- Nouveau mode Liste : 27 thèmes sélectionnables (mythologies, familles de créatures, groupes légendaires...), grille de cartes façon quiz Lieux, clic sur une carte non trouvée → écran plein affichant toutes les informations sauf le nom, essais limités selon la taille du thème (3/5/10), révélation finale et score sur le total du thème ; certains thèmes affichent leurs cartes réparties sous plusieurs sous-titres (Muses, Enfants de Gaïa et Ouranos, Archanges et démons, Zodiaque)
+- Nouveaux champs `tags` (entités et artéfacts) et `listThemes` (entités uniquement) au service de ces deux modes : schéma Room v6, migration destructive, formulaires d'ajout/édition
 - Tags thématiques assignés aux 486 entités et 43 artéfacts (vent, ciel, amour, animal, principal, humain, terre, feu, eau, guerre, mort, sagesse, magie, ruse, chasse, artisanat, fertilité, soleil, jour, nuit, foudre, gardien, prophétie, arts, justice, royauté, guérison, messager, destin)
 - Rattachement de 61 entités aux 7 thèmes curés du mode Liste non déductibles d'un champ existant (Guerriers grecs devant Troie, Argonautes, Chevaliers de la table ronde, Grands dieux d'Égypte, Monstres de l'arbre monde, Monstres des 12 travaux, Yokais)
+- Écran d'aide du quiz mis à jour avec les nouveaux modes
 
 
 ## V2
