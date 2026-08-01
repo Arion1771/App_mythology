@@ -2,6 +2,14 @@
 
 ## V3
 
+### V3.1.0
+
+- Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application (stockage séparé de la base, non affecté par sa purge à chaque mise à jour)
+- Un bandeau doré s'affiche 3 secondes en haut de l'écran lors du déblocage d'un succès
+- Nouvel écran « Succès » accessible depuis l'accueil (icône trophée) : chaque succès affiche son nom et son emblème (rectangle gris si non obtenu), et sa méthode d'obtention en plus une fois débloqué (rectangle doré)
+- Dossier d'images d'emblèmes prêt à l'emploi (un blason générique par défaut, à remplacer individuellement par succès)
+
+
 #### V3.0.2
 
 - Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag Principal lors de l'assignation heuristique de V3.0.0, faute de correspondance repérée avec un mot-clé

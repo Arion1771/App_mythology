@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.0.2
+### Latest addition — V3.1.0
 
-Filled in missing thematic tags for entities that had only inherited the "Principal" tag from V3.0.0's heuristic keyword assignment: Poséidon, Cymopolée, Mélinoé, Discordia, Janus, Silvanus, Ptah, Hâpy, Taouret, Ériu, Ah-Muzen-Cab, Camazotz and Kali (all updated).
+Added an achievements system: about fifty hidden objectives (answering a specific entity, finishing a Classic/QCM quiz flawlessly or entirely wrong, completing a list theme or a Places quiz with fewer than 3 mistakes...) unlock once and persist across app updates. A gold banner appears for 3 seconds when one unlocks, and a new "Achievements" screen (trophy icon on the home screen) lists them all — locked ones show just their name and emblem, unlocked ones also show how they were earned.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.0.2
+### Dernier ajout — V3.1.0
 
-Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag « Principal » lors de l'assignation heuristique de V3.0.0 : Poséidon, Cymopolée, Mélinoé, Discordia, Janus, Silvanus, Ptah, Hâpy, Taouret, Ériu, Ah-Muzen-Cab, Camazotz et Kali (toutes mises à jour).
+Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application. Un bandeau doré s'affiche 3 secondes lors d'un déblocage, et un nouvel écran « Succès » (icône trophée sur l'accueil) les liste tous — les non obtenus n'affichent que leur nom et leur emblème, les obtenus affichent en plus leur méthode d'obtention.
 
 ### Démarrage
 
