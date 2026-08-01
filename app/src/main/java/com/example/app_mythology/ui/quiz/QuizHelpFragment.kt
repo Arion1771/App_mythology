@@ -34,7 +34,7 @@ class QuizHelpFragment : Fragment() {
             "Mode QCM (Entités et Artéfacts)",
             "Même question que le mode Classique (même indice, mêmes informations affichées), mais la réponse se donne en un seul coup, en touchant l'un des 4 noms proposés.\n\n" +
             "Les 3 noms erronés (les leurres) sont choisis pour ressembler à la bonne réponse : mythologie proche, thématique commune, équivalent dans une autre mythologie…\n\n" +
-            "Un seul essai est possible : la question suivante s'enchaîne aussitôt après un bref retour visuel (vert si correct, rouge sinon), qu'elle soit juste ou fausse. Un écran de score final s'affiche à la fin, sans seconde chance par question."
+            "Un seul essai est possible : que la réponse soit juste ou fausse, un écran dédié s'affiche aussitôt avec le nom en vert (correct) ou en rouge (faux) et toutes les informations disponibles, suivi d'un bouton pour passer à la question suivante — sans second essai, contrairement au mode Classique. Un écran de score final s'affiche à la fin."
         ),
         HelpPage(
             "Quiz Lieux",

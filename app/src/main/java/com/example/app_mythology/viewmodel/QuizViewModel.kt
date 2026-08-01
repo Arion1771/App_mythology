@@ -264,9 +264,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _qcmResults = MutableLiveData<List<String?>>(emptyList())
     val qcmResults: LiveData<List<String?>> = _qcmResults
 
-    // Réponse sélectionnée + verdict, affichés brièvement avant de passer à la question suivante
-    private val _qcmFeedback = MutableLiveData<Pair<String, Boolean>?>(null)
-    val qcmFeedback: LiveData<Pair<String, Boolean>?> = _qcmFeedback
+    // true dès qu'une réponse a été donnée pour la question courante (bascule vers l'écran de résultat)
+    private val _qcmAnswerRevealed = MutableLiveData(false)
+    val qcmAnswerRevealed: LiveData<Boolean> = _qcmAnswerRevealed
 
     private val _qcmFinished = MutableLiveData(false)
     val qcmFinished: LiveData<Boolean> = _qcmFinished
@@ -314,7 +314,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _qcmMaxScore.value = maxScore
         _qcmResults.value = MutableList(poolSize) { null }
         _qcmFinished.value = false
-        _qcmFeedback.value = null
+        _qcmAnswerRevealed.value = false
     }
 
     private fun tagsOf(raw: String?): Set<String> = raw?.split(",")?.map { it.trim() }?.toSet() ?: emptySet()
@@ -362,7 +362,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         (_qcmArtifacts.value?.getOrNull(index)?.difficulty
             ?: _qcmEntites.value?.getOrNull(index)?.difficulty ?: 1).toDouble()
 
-    /** Un seul essai : point plein si correct, 0 sinon ; passage immédiat à la question suivante. */
+    /** Un seul essai : point plein si correct, 0 sinon ; bascule vers l'écran de résultat de la question. */
     fun submitQcmAnswer(selected: String) {
         val index = _qcmIndex.value ?: 0
         val name = currentQcmName(index) ?: return
@@ -373,11 +373,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val results = (_qcmResults.value ?: emptyList()).toMutableList()
         if (index < results.size) results[index] = if (correct) "green" else "red"
         _qcmResults.value = results
-        _qcmFeedback.value = selected to correct
+        _qcmAnswerRevealed.value = true
     }
 
-    fun advanceQcm() {
-        _qcmFeedback.value = null
+    /** Depuis l'écran de résultat de la question : passe à la suivante, ou termine le quiz. */
+    fun nextQcmQuestion() {
+        _qcmAnswerRevealed.value = false
         val poolSize = _qcmArtifacts.value?.takeIf { it.isNotEmpty() }?.size ?: _qcmEntites.value?.size ?: 0
         val next = (_qcmIndex.value ?: 0) + 1
         if (next >= poolSize) {
