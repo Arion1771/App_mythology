@@ -8,9 +8,11 @@ The built-in database catalogs mythological entities (gods, heroes, monsters…)
 
 Three independent quizzes let you test your knowledge: an entity quiz, a place quiz and an artifact quiz, each with several difficulty levels. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
-### Latest addition — V2.5.1
+Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database.
 
-Fixed the place quiz's found-count display, which showed "0 / 0 found" instead of "0 / n" until the first place was found.
+### Latest addition — V2.6.1
+
+The place quiz's help page was out of date after V2.6.0 introduced a 5-attempt limit; the help screen now accurately describes it.
 
 ### Getting started
 
@@ -45,9 +47,11 @@ La base de données intégrée recense des entités mythologiques (dieux, héros
 
 Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
-### Dernier ajout — V2.5.1
+Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base.
 
-Correction du compteur du quiz Lieux, qui affichait « 0 / 0 trouvés » au lieu de « 0 / n » tant qu'aucun lieu n'avait encore été trouvé.
+### Dernier ajout — V2.6.1
+
+La page d'aide du quiz Lieux n'était plus à jour depuis l'ajout de la limite de 5 essais en V2.6.0 ; l'écran d'aide décrit désormais fidèlement cette règle.
 
 ### Démarrage
 
