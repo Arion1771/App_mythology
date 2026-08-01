@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
@@ -29,6 +30,10 @@ class QuizChoiceFragment : Fragment() {
 
         view.findViewById<Button>(R.id.btn_quiz_artifact).setOnClickListener {
             findNavController().navigate(R.id.action_quizChoice_to_quizArtifactChoice)
+        }
+
+        view.findViewById<TextView>(R.id.btn_quiz_help).setOnClickListener {
+            findNavController().navigate(R.id.action_quizChoice_to_quizHelp)
         }
     }
 }
