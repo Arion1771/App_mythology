@@ -3,13 +3,13 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **478 entités**, **22 lieux**, **43 artéfacts**.
+Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 
 ---
 
 ## Entités
 
-478 entités, groupées par mythologie puis par race.
+486 entités, groupées par mythologie puis par race.
 
 ### Abrahamique (15)
 
@@ -162,14 +162,15 @@ Total : **478 entités**, **22 lieux**, **43 artéfacts**.
 - Tarasque
 - Vouivre
 
-### Gaulois (2)
+### Gaulois (3)
 
-#### Dieu (2)
+#### Dieu (3)
 
 - Cernunnos
+- Moritasgus
 - Teutatès
 
-### Grecque (188)
+### Grecque (194)
 
 #### Cyclope (4)
 
@@ -264,16 +265,19 @@ Total : **478 entités**, **22 lieux**, **43 artéfacts**.
 - Cottos
 - Gygès
 
-#### Héros (28)
+#### Héros (34)
 
 - Achille
-- Ajax
+- Agamemnon
+- Ajax le Grand
+- Ajax le Petit
 - Atalante
 - Bellérophon
 - Calaïs
 - Cassandre
 - Castor
 - Circé
+- Diomède
 - Dédale
 - Hector
 - Héraclès
@@ -283,9 +287,12 @@ Total : **478 entités**, **22 lieux**, **43 artéfacts**.
 - Midas
 - Médée
 - Méléagre
+- Ménélas
+- Nestor
 - Oedipe
 - Orphée
 - Paris
+- Patrocle
 - Perdix
 - Persée
 - Pollux
@@ -408,10 +415,11 @@ Total : **478 entités**, **22 lieux**, **43 artéfacts**.
 - Shiva
 - Vishnou
 
-### Japonaise (5)
+### Japonaise (6)
 
-#### Monstre (5)
+#### Monstre (6)
 
+- Bake Kujira
 - Kappa
 - Kitsune
 - Tanuki
