@@ -54,5 +54,9 @@ data class EntiteEntity(
     val chineseEquivalent: String? = null,
 
     // ─── Culture populaire ─────────────────────────────────────────────────
-    val popularCulture: String? = null   // Apparitions notables dans jeux/films/séries/animés
+    val popularCulture: String? = null,  // Apparitions notables dans jeux/films/séries/animés
+
+    // ─── Mode Liste et QCM ─────────────────────────────────────────────────
+    val tags: String? = null,        // Tags thématiques séparés par virgule (leurres du QCM)
+    val listThemes: String? = null   // Thèmes curés du mode Liste séparés par virgule (quand non déductibles d'un champ existant)
 )

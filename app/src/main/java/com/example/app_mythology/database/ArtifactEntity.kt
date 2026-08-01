@@ -23,5 +23,8 @@ data class ArtifactEntity(
 
     // ─── Quiz ──────────────────────────────────────────────────────────────
     val clue: String? = null,
-    val difficulty: Int = 1
+    val difficulty: Int = 1,
+
+    // ─── Mode QCM ──────────────────────────────────────────────────────────
+    val tags: String? = null   // Tags thématiques séparés par virgule (leurres du QCM)
 )
