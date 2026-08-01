@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.0.0
+### Latest addition — V3.0.1
 
-Complete quiz overhaul: a new Multiple-choice mode (entities and artifacts) answers the same clue in a single attempt among 4 proposed names, with decoys chosen by thematic proximity (shared tags, mythology, race, mythological equivalent) rather than at random; a new List mode lets you pick from 27 themes (mythologies, creature families, legendary groups…) and find every matching entry in a card grid, with attempt limits scaled to theme size. Two new fields support this — `tags` (entities and artifacts) and `listThemes` (entities) — populated across the whole database.
+The quiz selection screen now leads with the three quiz types (Multiple-choice, Classic, List, in that order); the domain (Entities, Artifacts, Places — whichever applies to that type) is chosen on the next screen instead of the other way around. The Multiple-choice mode now shows a dedicated result screen after each answer, right or wrong, with the colored name and full details plus a "next question" button, matching the Classic mode instead of auto-advancing after a brief flash.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.0.0
+### Dernier ajout — V3.0.1
 
-Refonte complète des quiz : un nouveau mode QCM (entités et artéfacts) répond au même indice en un seul essai parmi 4 noms proposés, avec des leurres choisis par proximité thématique (tags partagés, mythologie, race, équivalent mythologique) plutôt qu'au hasard ; un nouveau mode Liste permet de choisir parmi 27 thèmes (mythologies, familles de créatures, groupes légendaires…) et de retrouver toutes les entrées correspondantes dans une grille de cartes, avec des paliers d'essais proportionnés à la taille du thème. Deux nouveaux champs soutiennent cette refonte — `tags` (entités et artéfacts) et `listThemes` (entités) — renseignés sur l'ensemble de la base.
+L'écran de choix des quiz propose désormais d'abord les trois types de quiz (QCM, Classique, Liste, dans cet ordre) ; le domaine (Entités, Artéfacts, Lieux selon ce qui existe pour le type choisi) se sélectionne ensuite, plutôt que l'inverse. Le mode QCM affiche désormais un écran de résultat dédié après chaque réponse, juste ou fausse, avec le nom coloré et toutes les informations, ainsi qu'un bouton « question suivante » — comme le mode Classique, au lieu d'un enchaînement automatique après un bref retour visuel.
 
 ### Démarrage
 

@@ -2,6 +2,12 @@
 
 ## V3
 
+#### V3.0.1
+
+- L'écran de choix des quiz propose désormais directement les trois types (QCM, Classique, Liste, dans cet ordre) ; le domaine (Entités, Artéfacts, Lieux selon ce qui existe pour le type choisi) se sélectionne ensuite sur un écran dédié, inversant l'ordre précédent (domaine puis mode)
+- Le mode QCM affiche désormais, comme le mode Classique, un écran dédié après chaque réponse (juste ou fausse) avec le nom coloré (vert/rouge) et toutes les informations, suivi d'un bouton vers la question suivante — au lieu d'un simple retour visuel bref suivi d'un enchaînement immédiat
+
+
 ### V3.0.0
 
 - Refonte complète des quiz : deux nouveaux modes s'ajoutent au mode Classique
