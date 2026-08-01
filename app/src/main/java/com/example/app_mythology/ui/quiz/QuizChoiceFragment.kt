@@ -21,7 +21,7 @@ class QuizChoiceFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btn_quiz_entity).setOnClickListener {
-            findNavController().navigate(R.id.action_quizChoice_to_quizEntity)
+            findNavController().navigate(R.id.action_quizChoice_to_quizEntityMode)
         }
 
         view.findViewById<Button>(R.id.btn_quiz_place).setOnClickListener {
@@ -29,7 +29,11 @@ class QuizChoiceFragment : Fragment() {
         }
 
         view.findViewById<Button>(R.id.btn_quiz_artifact).setOnClickListener {
-            findNavController().navigate(R.id.action_quizChoice_to_quizArtifactChoice)
+            findNavController().navigate(R.id.action_quizChoice_to_quizArtifactMode)
+        }
+
+        view.findViewById<Button>(R.id.btn_quiz_list).setOnClickListener {
+            findNavController().navigate(R.id.action_quizChoice_to_quizListChoice)
         }
 
         view.findViewById<TextView>(R.id.btn_quiz_help).setOnClickListener {
