@@ -8,7 +8,18 @@ The built-in database catalogs mythological entities (gods, heroes, monsters…)
 
 Three independent quizzes let you test your knowledge: an entity quiz, a place quiz and an artifact quiz, each with several difficulty levels. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
+Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database.
+
 ### Changes since the first version
+
+#### V2.6.1
+
+- Updated the "Quiz Lieux" page of the help screen, which still claimed there was no attempt limit, contradicting the 5-attempt limit introduced in V2.6.0
+
+#### V2.6.0
+
+- The Places quiz is now limited to 5 attempts in total: each wrong answer uses one (4 mistakes allowed, the 5th ends the quiz), shown in real time ("Erreurs : X / 5")
+- At the end of the quiz (all cards found, or 5th mistake), every card is revealed: green if found, red otherwise, followed by a dedicated score screen ("Score : X / N lieux trouvés")
 
 #### V2.5.1
 
@@ -302,7 +313,18 @@ La base de données intégrée recense des entités mythologiques (dieux, héros
 
 Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
+Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base.
+
 ### Nouveautés depuis la première version
+
+#### V2.6.1
+
+- Mise à jour de la page « Quiz Lieux » de l'écran d'aide, qui affirmait encore l'absence de limite d'essais, contredisant la limite de 5 essais introduite en V2.6.0
+
+#### V2.6.0
+
+- Le quiz Lieux est désormais limité à 5 essais au total : chaque réponse fausse en consomme un (4 erreurs tolérées, la 5e termine le quiz), affiché en temps réel (« Erreurs : X / 5 »)
+- À la fin du quiz (toutes les cartes trouvées, ou 5e erreur), toutes les cartes sont révélées : en vert si trouvée, en rouge sinon, suivies d'un écran de score dédié (« Score : X / N lieux trouvés »)
 
 #### V2.5.1
 
