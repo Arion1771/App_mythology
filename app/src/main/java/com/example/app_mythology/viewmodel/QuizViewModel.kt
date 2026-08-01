@@ -6,6 +6,10 @@ import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.database.PlaceEntity
+import com.example.app_mythology.quiz.ListItem
+import com.example.app_mythology.quiz.ListThemeCatalog
+import com.example.app_mythology.quiz.ThemeGroup
+import com.example.app_mythology.quiz.resolveGroups
 import com.example.app_mythology.repository.ArtifactRepository
 import com.example.app_mythology.repository.EntiteRepository
 import com.example.app_mythology.repository.PlaceRepository
@@ -235,6 +239,212 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     companion object {
         const val MAX_PLACE_ATTEMPTS = 5
+    }
+
+    // ── Quiz QCM (Entités / Artéfacts, un seul essai, 4 choix) ──────────────
+
+    private val _qcmEntites = MutableLiveData<List<EntiteEntity>>()
+    val qcmEntites: LiveData<List<EntiteEntity>> = _qcmEntites
+
+    private val _qcmArtifacts = MutableLiveData<List<ArtifactEntity>>()
+    val qcmArtifacts: LiveData<List<ArtifactEntity>> = _qcmArtifacts
+
+    private val _qcmIndex = MutableLiveData(0)
+    val qcmIndex: LiveData<Int> = _qcmIndex
+
+    private val _qcmChoices = MutableLiveData<List<String>>(emptyList())
+    val qcmChoices: LiveData<List<String>> = _qcmChoices
+
+    private val _qcmScore = MutableLiveData(0.0)
+    val qcmScore: LiveData<Double> = _qcmScore
+
+    private val _qcmMaxScore = MutableLiveData(0.0)
+    val qcmMaxScore: LiveData<Double> = _qcmMaxScore
+
+    private val _qcmResults = MutableLiveData<List<String?>>(emptyList())
+    val qcmResults: LiveData<List<String?>> = _qcmResults
+
+    // Réponse sélectionnée + verdict, affichés brièvement avant de passer à la question suivante
+    private val _qcmFeedback = MutableLiveData<Pair<String, Boolean>?>(null)
+    val qcmFeedback: LiveData<Pair<String, Boolean>?> = _qcmFeedback
+
+    private val _qcmFinished = MutableLiveData(false)
+    val qcmFinished: LiveData<Boolean> = _qcmFinished
+
+    private var qcmEntityQuizLoaded = false
+    private var qcmArtifactQuizLoaded = false
+    private var qcmAllEntites: List<EntiteEntity> = emptyList()
+    private var qcmAllArtifacts: List<ArtifactEntity> = emptyList()
+
+    fun loadEntityQcm(level: QuizLevel = QuizLevel.EASY) {
+        if (qcmEntityQuizLoaded) return
+        qcmEntityQuizLoaded = true
+        viewModelScope.launch {
+            qcmAllEntites = entiteRepo.getAllSync()
+            val pool = mutableListOf<EntiteEntity>()
+            pool += entiteRepo.getRandomByDifficulty(1, 10)
+            if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) pool += entiteRepo.getRandomByDifficulty(2, 10)
+            if (level == QuizLevel.HARD) pool += entiteRepo.getRandomByDifficulty(3, 10)
+            pool.shuffle()
+            _qcmEntites.value = pool
+            resetQcmState(pool.sumOf { it.difficulty.toDouble() }, pool.size)
+            buildQcmChoices(0)
+        }
+    }
+
+    fun loadArtifactQcm(level: QuizLevel = QuizLevel.EASY) {
+        if (qcmArtifactQuizLoaded) return
+        qcmArtifactQuizLoaded = true
+        viewModelScope.launch {
+            qcmAllArtifacts = artifactRepo.getAllSync()
+            val pool = mutableListOf<ArtifactEntity>()
+            pool += artifactRepo.getRandomByDifficulty(1, 10)
+            if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) pool += artifactRepo.getRandomByDifficulty(2, 10)
+            if (level == QuizLevel.HARD) pool += artifactRepo.getRandomByDifficulty(3, 10)
+            pool.shuffle()
+            _qcmArtifacts.value = pool
+            resetQcmState(pool.sumOf { it.difficulty.toDouble() }, pool.size)
+            buildQcmChoices(0)
+        }
+    }
+
+    private fun resetQcmState(maxScore: Double, poolSize: Int) {
+        _qcmIndex.value = 0
+        _qcmScore.value = 0.0
+        _qcmMaxScore.value = maxScore
+        _qcmResults.value = MutableList(poolSize) { null }
+        _qcmFinished.value = false
+        _qcmFeedback.value = null
+    }
+
+    private fun tagsOf(raw: String?): Set<String> = raw?.split(",")?.map { it.trim() }?.toSet() ?: emptySet()
+
+    /** Score de proximité thématique entre deux entités, pour choisir des leurres plausibles. */
+    private fun similarityScore(correct: EntiteEntity, other: EntiteEntity): Int {
+        var s = (tagsOf(correct.tags) intersect tagsOf(other.tags)).size * 3
+        if (other.mythology == correct.mythology) s += 2
+        if (other.race == correct.race) s += 2
+        if (correct.godType != null && correct.godType == other.godType) s += 1
+        if (correct.monsterType != null && correct.monsterType == other.monsterType) s += 1
+        if (correct.equivalentName == other.name || other.equivalentName == correct.name) s += 4
+        return s
+    }
+
+    private fun similarityScore(correct: ArtifactEntity, other: ArtifactEntity): Int {
+        var s = (tagsOf(correct.tags) intersect tagsOf(other.tags)).size * 3
+        if (other.mythology == correct.mythology) s += 2
+        if (other.artifactType == correct.artifactType) s += 2
+        return s
+    }
+
+    private fun buildQcmChoices(index: Int) {
+        val artifacts = _qcmArtifacts.value
+        if (!artifacts.isNullOrEmpty()) {
+            val correct = artifacts.getOrNull(index) ?: return
+            val decoys = qcmAllArtifacts.filter { it.id != correct.id }
+                .sortedByDescending { similarityScore(correct, it) }
+                .take(12).shuffled().take(3)
+            _qcmChoices.value = (listOf(correct.name) + decoys.map { it.name }).shuffled()
+            return
+        }
+        val entites = _qcmEntites.value ?: return
+        val correct = entites.getOrNull(index) ?: return
+        val decoys = qcmAllEntites.filter { it.id != correct.id }
+            .sortedByDescending { similarityScore(correct, it) }
+            .take(12).shuffled().take(3)
+        _qcmChoices.value = (listOf(correct.name) + decoys.map { it.name }).shuffled()
+    }
+
+    private fun currentQcmName(index: Int): String? =
+        _qcmArtifacts.value?.getOrNull(index)?.name ?: _qcmEntites.value?.getOrNull(index)?.name
+
+    private fun currentQcmDifficulty(index: Int): Double =
+        (_qcmArtifacts.value?.getOrNull(index)?.difficulty
+            ?: _qcmEntites.value?.getOrNull(index)?.difficulty ?: 1).toDouble()
+
+    /** Un seul essai : point plein si correct, 0 sinon ; passage immédiat à la question suivante. */
+    fun submitQcmAnswer(selected: String) {
+        val index = _qcmIndex.value ?: 0
+        val name = currentQcmName(index) ?: return
+        val correct = normalize(selected) == normalize(name)
+        if (correct) {
+            _qcmScore.value = (_qcmScore.value ?: 0.0) + currentQcmDifficulty(index)
+        }
+        val results = (_qcmResults.value ?: emptyList()).toMutableList()
+        if (index < results.size) results[index] = if (correct) "green" else "red"
+        _qcmResults.value = results
+        _qcmFeedback.value = selected to correct
+    }
+
+    fun advanceQcm() {
+        _qcmFeedback.value = null
+        val poolSize = _qcmArtifacts.value?.takeIf { it.isNotEmpty() }?.size ?: _qcmEntites.value?.size ?: 0
+        val next = (_qcmIndex.value ?: 0) + 1
+        if (next >= poolSize) {
+            _qcmFinished.value = true
+        } else {
+            _qcmIndex.value = next
+            buildQcmChoices(next)
+        }
+    }
+
+    // ── Quiz Liste (thème choisi, trouver toutes les entrées) ───────────────
+
+    private val _listGroups = MutableLiveData<List<ThemeGroup<ListItem>>>(emptyList())
+    val listGroups: LiveData<List<ThemeGroup<ListItem>>> = _listGroups
+
+    private val _listFoundIds = MutableLiveData<Set<Int>>(emptySet())
+    val listFoundIds: LiveData<Set<Int>> = _listFoundIds
+
+    private val _listWrongAttempts = MutableLiveData(0)
+    val listWrongAttempts: LiveData<Int> = _listWrongAttempts
+
+    private val _listFinished = MutableLiveData(false)
+    val listFinished: LiveData<Boolean> = _listFinished
+
+    private var listMaxErrors = 3
+    fun currentListMaxErrors() = listMaxErrors
+
+    private var listQuizThemeId: String? = null
+
+    fun loadListQuiz(themeId: String) {
+        // Comme les autres quiz : ne recharge pas si déjà chargé pour ce thème
+        // (préserve la progression lors d'une rotation d'écran).
+        if (listQuizThemeId == themeId) return
+        listQuizThemeId = themeId
+        viewModelScope.launch {
+            val theme = ListThemeCatalog.byId(themeId) ?: return@launch
+            val entites = entiteRepo.getAllSync()
+            val artifacts = artifactRepo.getAllSync()
+            _listGroups.value = theme.resolveGroups(entites, artifacts)
+            _listFoundIds.value = emptySet()
+            _listWrongAttempts.value = 0
+            _listFinished.value = false
+            listMaxErrors = theme.maxErrors
+        }
+    }
+
+    fun allListItems(): List<ListItem> = _listGroups.value?.flatMap { it.items } ?: emptyList()
+
+    fun checkListAnswer(input: String): ListItem? {
+        val found = _listFoundIds.value ?: emptySet()
+        return allListItems().firstOrNull { it.id !in found && normalize(input) == normalize(it.name) }
+    }
+
+    fun markListFound(id: Int) {
+        val updated = (_listFoundIds.value ?: emptySet()) + id
+        _listFoundIds.value = updated
+        if (updated.size >= allListItems().size) {
+            _listFinished.value = true
+        }
+    }
+
+    fun registerWrongListAttempt() {
+        val attempts = (_listWrongAttempts.value ?: 0) + 1
+        _listWrongAttempts.value = attempts
+        if (attempts >= listMaxErrors) {
+            _listFinished.value = true
+        }
     }
 
     private fun normalize(s: String): String =
