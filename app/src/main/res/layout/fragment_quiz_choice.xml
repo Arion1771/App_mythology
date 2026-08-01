@@ -11,20 +11,15 @@
             android:text="Choisissez un quiz" android:textSize="20sp" android:textStyle="bold"
             android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
 
-        <Button android:id="@+id/btn_quiz_entity"
+        <Button android:id="@+id/btn_quiz_qcm"
             android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Entités" android:layout_marginBottom="24dp"/>
+            android:text="QCM" android:layout_marginBottom="24dp"/>
 
-        <Button android:id="@+id/btn_quiz_place"
+        <Button android:id="@+id/btn_quiz_classic"
             android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
             android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Lieux" android:layout_marginBottom="24dp"/>
-
-        <Button android:id="@+id/btn_quiz_artifact"
-            android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-            android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Artéfacts" android:layout_marginBottom="24dp"/>
+            android:text="Classique" android:layout_marginBottom="24dp"/>
 
         <Button android:id="@+id/btn_quiz_list"
             android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"

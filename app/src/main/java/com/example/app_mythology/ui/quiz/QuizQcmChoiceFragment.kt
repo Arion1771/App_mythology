@@ -31,7 +31,7 @@ class QuizQcmChoiceFragment : Fragment() {
         fun go(level: String) {
             findNavController().navigate(
                 R.id.action_qcmChoice_to_qcm,
-                bundleOf("level" to level, "quizType" to quizType)
+                bundleOf("level" to level)
             )
         }
         view.findViewById<Button>(R.id.btn_level_easy).setOnClickListener { go("easy") }

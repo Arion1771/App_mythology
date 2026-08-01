@@ -156,41 +156,41 @@
         android:name="com.example.app_mythology.ui.quiz.QuizChoiceFragment"
         android:label="Quiz"
         tools:layout="@layout/fragment_quiz_choice">
-        <action android:id="@+id/action_quizChoice_to_quizEntityMode"
-            app:destination="@id/quizEntityModeChoiceFragment" />
-        <action android:id="@+id/action_quizChoice_to_quizPlaceChoice"
-            app:destination="@id/quizPlaceChoiceFragment" />
-        <action android:id="@+id/action_quizChoice_to_quizArtifactMode"
-            app:destination="@id/quizArtifactModeChoiceFragment" />
+        <action android:id="@+id/action_quizChoice_to_qcmDomain"
+            app:destination="@id/qcmDomainChoiceFragment" />
+        <action android:id="@+id/action_quizChoice_to_classicDomain"
+            app:destination="@id/classicDomainChoiceFragment" />
         <action android:id="@+id/action_quizChoice_to_quizListChoice"
             app:destination="@id/quizListChoiceFragment" />
         <action android:id="@+id/action_quizChoice_to_quizHelp"
             app:destination="@id/quizHelpFragment" />
     </fragment>
 
-    <!-- ── Choix du mode (Classique / QCM) — entités et artéfacts ────── -->
+    <!-- ── Choix du domaine (Entités / Artéfacts / Lieux) — par type de quiz ── -->
     <fragment
-        android:id="@+id/quizEntityModeChoiceFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizModeChoiceFragment"
-        android:label="Quiz Entités"
-        tools:layout="@layout/fragment_quiz_mode_choice">
-        <argument android:name="quizType" app:argType="string" android:defaultValue="entity" />
-        <action android:id="@+id/action_mode_to_classic"
-            app:destination="@id/quizEntityChoiceFragment" />
-        <action android:id="@+id/action_mode_to_qcmChoice"
+        android:id="@+id/qcmDomainChoiceFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizDomainChoiceFragment"
+        android:label="QCM"
+        tools:layout="@layout/fragment_quiz_domain_choice">
+        <argument android:name="quizMode" app:argType="string" android:defaultValue="qcm" />
+        <action android:id="@+id/action_domain_to_entity"
             app:destination="@id/quizEntityQcmChoiceFragment" />
+        <action android:id="@+id/action_domain_to_artifact"
+            app:destination="@id/quizArtifactQcmChoiceFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/quizArtifactModeChoiceFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizModeChoiceFragment"
-        android:label="Quiz Artéfacts"
-        tools:layout="@layout/fragment_quiz_mode_choice">
-        <argument android:name="quizType" app:argType="string" android:defaultValue="artifact" />
-        <action android:id="@+id/action_mode_to_classic"
+        android:id="@+id/classicDomainChoiceFragment"
+        android:name="com.example.app_mythology.ui.quiz.QuizDomainChoiceFragment"
+        android:label="Classique"
+        tools:layout="@layout/fragment_quiz_domain_choice">
+        <argument android:name="quizMode" app:argType="string" android:defaultValue="classic" />
+        <action android:id="@+id/action_domain_to_entity"
+            app:destination="@id/quizEntityChoiceFragment" />
+        <action android:id="@+id/action_domain_to_artifact"
             app:destination="@id/quizArtifactChoiceFragment" />
-        <action android:id="@+id/action_mode_to_qcmChoice"
-            app:destination="@id/quizArtifactQcmChoiceFragment" />
+        <action android:id="@+id/action_domain_to_place"
+            app:destination="@id/quizPlaceChoiceFragment" />
     </fragment>
 
     <!-- ── QCM — entités et artéfacts ─────────────────────────────────── -->
@@ -201,17 +201,29 @@
         tools:layout="@layout/fragment_quiz_entity_choice">
         <argument android:name="quizType" app:argType="string" android:defaultValue="entity" />
         <action android:id="@+id/action_qcmChoice_to_qcm"
-            app:destination="@id/quizEntityQcmFragment" />
+            app:destination="@id/quiz_entity_qcm_graph" />
     </fragment>
 
-    <fragment
-        android:id="@+id/quizEntityQcmFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizQcmFragment"
-        android:label="QCM Entités"
-        tools:layout="@layout/fragment_quiz_qcm">
-        <argument android:name="quizType" app:argType="string" android:defaultValue="entity" />
-        <argument android:name="level" app:argType="string" android:defaultValue="easy" />
-    </fragment>
+    <navigation android:id="@+id/quiz_entity_qcm_graph"
+        app:startDestination="@id/quizEntityQcmFragment">
+
+        <fragment
+            android:id="@+id/quizEntityQcmFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizEntityQcmFragment"
+            android:label="QCM Entités"
+            tools:layout="@layout/fragment_quiz_qcm">
+            <argument android:name="level" app:argType="string" android:defaultValue="easy" />
+            <action android:id="@+id/action_qcmEntity_to_qcmEntityResult"
+                app:destination="@id/quizEntityQcmResultFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/quizEntityQcmResultFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizEntityQcmResultFragment"
+            android:label="Résultat"
+            tools:layout="@layout/fragment_quiz_result" />
+
+    </navigation>
 
     <fragment
         android:id="@+id/quizArtifactQcmChoiceFragment"
@@ -220,17 +232,29 @@
         tools:layout="@layout/fragment_quiz_entity_choice">
         <argument android:name="quizType" app:argType="string" android:defaultValue="artifact" />
         <action android:id="@+id/action_qcmChoice_to_qcm"
-            app:destination="@id/quizArtifactQcmFragment" />
+            app:destination="@id/quiz_artifact_qcm_graph" />
     </fragment>
 
-    <fragment
-        android:id="@+id/quizArtifactQcmFragment"
-        android:name="com.example.app_mythology.ui.quiz.QuizQcmFragment"
-        android:label="QCM Artéfacts"
-        tools:layout="@layout/fragment_quiz_qcm">
-        <argument android:name="quizType" app:argType="string" android:defaultValue="artifact" />
-        <argument android:name="level" app:argType="string" android:defaultValue="easy" />
-    </fragment>
+    <navigation android:id="@+id/quiz_artifact_qcm_graph"
+        app:startDestination="@id/quizArtifactQcmFragment">
+
+        <fragment
+            android:id="@+id/quizArtifactQcmFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizArtifactQcmFragment"
+            android:label="QCM Artéfacts"
+            tools:layout="@layout/fragment_quiz_qcm">
+            <argument android:name="level" app:argType="string" android:defaultValue="easy" />
+            <action android:id="@+id/action_qcmArtifact_to_qcmArtifactResult"
+                app:destination="@id/quizArtifactQcmResultFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/quizArtifactQcmResultFragment"
+            android:name="com.example.app_mythology.ui.quiz.QuizArtifactQcmResultFragment"
+            android:label="Résultat"
+            tools:layout="@layout/fragment_quiz_result" />
+
+    </navigation>
 
     <!-- ── Liste — thème choisi ───────────────────────────────────────── -->
     <fragment
