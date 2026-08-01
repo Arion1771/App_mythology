@@ -10,6 +10,10 @@ Three independent quizzes let you test your knowledge: an entity quiz, a place q
 
 ### Changes since the first version
 
+#### V2.5.1
+
+- Fixed the "0 / 0 found" counter of the Places quiz: the total was only updated on the first find instead of showing as soon as the grid loaded
+
 #### V2.5.0
 
 - Quiz help screen over several swipeable pages (`QuizHelpFragment`, ViewPager2), reachable through a "?" icon on the quiz selection screen: how the three quizzes work, difficulty and scoring, answer conventions (case, accents, no article)
@@ -299,6 +303,10 @@ La base de données intégrée recense des entités mythologiques (dieux, héros
 Trois quiz indépendants permettent de tester vos connaissances : un quiz d'entités, un quiz de lieux et un quiz d'artéfacts, chacun avec plusieurs niveaux de difficulté. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
 ### Nouveautés depuis la première version
+
+#### V2.5.1
+
+- Correction du compteur « 0 / 0 trouvés » du quiz Lieux : le total n'était mis à jour qu'à la première trouvaille au lieu de s'afficher dès le chargement de la grille
 
 #### V2.5.0
 
