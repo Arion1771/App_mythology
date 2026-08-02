@@ -19,6 +19,8 @@
             app:destination="@id/quizChoiceFragment" />
         <action android:id="@+id/action_home_to_achievements"
             app:destination="@id/achievementsFragment" />
+        <action android:id="@+id/action_home_to_duel"
+            app:destination="@id/duel_graph" />
     </fragment>
 
     <fragment
@@ -26,6 +28,110 @@
         android:name="com.example.app_mythology.ui.achievements.AchievementsFragment"
         android:label="Succès"
         tools:layout="@layout/fragment_achievements" />
+
+    <!-- ── Duel (multijoueur local) ───────────────────────────────────── -->
+    <navigation android:id="@+id/duel_graph"
+        app:startDestination="@id/duelPlayerCountFragment">
+
+        <fragment
+            android:id="@+id/duelPlayerCountFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelPlayerCountFragment"
+            android:label="Duel"
+            tools:layout="@layout/fragment_duel_player_count">
+            <action android:id="@+id/action_duelPlayerCount_to_duelPlayerNames"
+                app:destination="@id/duelPlayerNamesFragment" />
+            <action android:id="@+id/action_duelPlayerCount_to_duelHelp"
+                app:destination="@id/duelHelpFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelPlayerNamesFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelPlayerNamesFragment"
+            android:label="Duel — Joueurs"
+            tools:layout="@layout/fragment_duel_player_names">
+            <argument android:name="playerCount" app:argType="integer" android:defaultValue="2" />
+            <action android:id="@+id/action_duelPlayerNames_to_duelModeChoice"
+                app:destination="@id/duelModeChoiceFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelModeChoiceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelModeChoiceFragment"
+            android:label="Duel — Type"
+            tools:layout="@layout/fragment_duel_mode_choice">
+            <action android:id="@+id/action_duelModeChoice_to_duelDifficultyChoice"
+                app:destination="@id/duelDifficultyChoiceFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelDifficultyChoiceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelDifficultyChoiceFragment"
+            android:label="Duel — Difficulté"
+            tools:layout="@layout/fragment_quiz_entity_choice">
+            <action android:id="@+id/action_duelDifficultyChoice_to_duelPoolChoice"
+                app:destination="@id/duelPoolChoiceFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelPoolChoiceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelPoolChoiceFragment"
+            android:label="Duel — Questions"
+            tools:layout="@layout/fragment_duel_pool_choice">
+            <action android:id="@+id/action_duelPoolChoice_to_duelAnnounce"
+                app:destination="@id/duelAnnounceFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelAnnounceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelAnnounceFragment"
+            android:label="Duel"
+            tools:layout="@layout/fragment_duel_announce">
+            <action android:id="@+id/action_duelAnnounce_to_duelQuestionClassic"
+                app:destination="@id/duelQuestionClassicFragment" />
+            <action android:id="@+id/action_duelAnnounce_to_duelQuestionQcm"
+                app:destination="@id/duelQuestionQcmFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelQuestionClassicFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelQuestionClassicFragment"
+            android:label="Duel"
+            tools:layout="@layout/fragment_duel_question_classic">
+            <action android:id="@+id/action_duelQuestionClassic_to_duelRecap"
+                app:destination="@id/duelRecapFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelQuestionQcmFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelQuestionQcmFragment"
+            android:label="Duel"
+            tools:layout="@layout/fragment_duel_question_qcm">
+            <action android:id="@+id/action_duelQuestionQcm_to_duelRecap"
+                app:destination="@id/duelRecapFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelRecapFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelRecapFragment"
+            android:label="Duel — Résultat"
+            tools:layout="@layout/fragment_quiz_result">
+            <action android:id="@+id/action_duelRecap_to_duelResult"
+                app:destination="@id/duelResultFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelResultFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelResultFragment"
+            android:label="Duel — Classement"
+            tools:layout="@layout/fragment_duel_result" />
+
+        <fragment
+            android:id="@+id/duelHelpFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelHelpFragment"
+            android:label="Aide — Duel"
+            tools:layout="@layout/fragment_duel_help" />
+
+    </navigation>
 
     <!-- ── Parcourir ──────────────────────────────────────────────── -->
     <fragment
