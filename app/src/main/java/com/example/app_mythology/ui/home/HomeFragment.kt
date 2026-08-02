@@ -34,5 +34,9 @@ class HomeFragment : Fragment() {
         view.findViewById<View>(R.id.btn_trophy).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_achievements)
         }
+
+        view.findViewById<View>(R.id.btn_duel).setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_duel)
+        }
     }
 }

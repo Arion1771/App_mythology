@@ -53,4 +53,13 @@
         android:contentDescription="Succès"
         android:clickable="true" android:focusable="true"/>
 
+    <TextView android:id="@+id/btn_duel"
+        android:layout_width="40dp" android:layout_height="40dp"
+        android:layout_gravity="top|start" android:layout_margin="16dp"
+        android:background="@drawable/bg_help_button"
+        android:gravity="center"
+        android:text="⚔️" android:textSize="18sp"
+        android:contentDescription="Duel"
+        android:clickable="true" android:focusable="true"/>
+
 </FrameLayout>
