@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Noms des joueurs" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/on_surface" android:layout_marginBottom="24dp"/>
+
+        <LinearLayout android:id="@+id/container_names"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <Button android:id="@+id/btn_duel_names_next"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Suivant" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
