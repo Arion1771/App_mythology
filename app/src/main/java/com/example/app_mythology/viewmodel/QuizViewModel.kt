@@ -10,6 +10,7 @@ import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.quiz.ListItem
 import com.example.app_mythology.quiz.ListThemeCatalog
 import com.example.app_mythology.quiz.ThemeGroup
+import com.example.app_mythology.quiz.pickQcmChoices
 import com.example.app_mythology.quiz.resolveGroups
 import com.example.app_mythology.repository.ArtifactRepository
 import com.example.app_mythology.repository.EntiteRepository
@@ -370,42 +371,16 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _qcmAnswerRevealed.value = false
     }
 
-    private fun tagsOf(raw: String?): Set<String> = raw?.split(",")?.map { it.trim() }?.toSet() ?: emptySet()
-
-    /** Score de proximité thématique entre deux entités, pour choisir des leurres plausibles. */
-    private fun similarityScore(correct: EntiteEntity, other: EntiteEntity): Int {
-        var s = (tagsOf(correct.tags) intersect tagsOf(other.tags)).size * 3
-        if (other.mythology == correct.mythology) s += 2
-        if (other.race == correct.race) s += 2
-        if (correct.godType != null && correct.godType == other.godType) s += 1
-        if (correct.monsterType != null && correct.monsterType == other.monsterType) s += 1
-        if (correct.equivalentName == other.name || other.equivalentName == correct.name) s += 4
-        return s
-    }
-
-    private fun similarityScore(correct: ArtifactEntity, other: ArtifactEntity): Int {
-        var s = (tagsOf(correct.tags) intersect tagsOf(other.tags)).size * 3
-        if (other.mythology == correct.mythology) s += 2
-        if (other.artifactType == correct.artifactType) s += 2
-        return s
-    }
-
     private fun buildQcmChoices(index: Int) {
         val artifacts = _qcmArtifacts.value
         if (!artifacts.isNullOrEmpty()) {
             val correct = artifacts.getOrNull(index) ?: return
-            val decoys = qcmAllArtifacts.filter { it.id != correct.id }
-                .sortedByDescending { similarityScore(correct, it) }
-                .take(12).shuffled().take(3)
-            _qcmChoices.value = (listOf(correct.name) + decoys.map { it.name }).shuffled()
+            _qcmChoices.value = pickQcmChoices(correct, qcmAllArtifacts)
             return
         }
         val entites = _qcmEntites.value ?: return
         val correct = entites.getOrNull(index) ?: return
-        val decoys = qcmAllEntites.filter { it.id != correct.id }
-            .sortedByDescending { similarityScore(correct, it) }
-            .take(12).shuffled().take(3)
-        _qcmChoices.value = (listOf(correct.name) + decoys.map { it.name }).shuffled()
+        _qcmChoices.value = pickQcmChoices(correct, qcmAllEntites)
     }
 
     private fun currentQcmName(index: Int): String? =

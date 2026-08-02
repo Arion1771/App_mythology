@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="32dp"
+    android:background="@color/surface">
+
+    <TextView android:id="@+id/tv_duel_announce_player"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="26sp" android:textStyle="bold"
+        android:textColor="@color/primary" android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/tv_duel_announce_score"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/on_surface" android:gravity="center"
+        android:layout_marginBottom="48dp"/>
+
+    <Button android:id="@+id/btn_duel_announce_start"
+        android:layout_width="240dp" android:layout_height="56dp"
+        android:text="Lancer la question" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+
+</LinearLayout>
