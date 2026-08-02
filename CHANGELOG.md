@@ -2,6 +2,15 @@
 
 ## V3
 
+### V3.2.0
+
+- Ajout du mode Duel : quiz multijoueur local en pass-and-play, de 2 à 12 joueurs sur le même appareil, accessible depuis une icône dédiée sur l'accueil
+- Mise en place : nombre de joueurs, noms, type de question au choix (Classique ou QCM), difficulté commune (Facile/Moyen/Difficile = 10/20/30 questions par joueur), questions identiques pour tous ou différentes selon le choix
+- Déroulé en tours : chaque joueur répond à une question à son tour, sur 3 écrans successifs (annonce du joueur et de son score, question, récapitulatif), jusqu'à ce que tout le monde ait répondu à toutes ses questions ; classement final trié par score à l'issue de la partie
+- Nouvel écran d'aide dédié au mode Duel
+- Volontairement indépendant du système de succès (V3.1.0)
+
+
 ### V3.1.0
 
 - Ajout d'un système de succès : une cinquantaine d'objectifs cachés (répondre à une entité précise, terminer un quiz Classique/QCM sans faute ou totalement à côté, compléter un thème de liste ou un quiz Lieux à moins de 3 fautes...) se débloquent une seule fois et restent acquis lors des mises à jour de l'application (stockage séparé de la base, non affecté par sa purge à chaque mise à jour)
