@@ -39,6 +39,7 @@ class EntityDetailFragment : Fragment() {
         view.findViewById<TextView>(R.id.tv_detail_name).text = e.name
         view.findViewById<TextView>(R.id.tv_detail_mythology).text = "Mythologie : ${e.mythology}"
         view.findViewById<TextView>(R.id.tv_detail_race).text = "Race : ${translateRace(e.race)}"
+        view.findViewById<TextView>(R.id.tv_detail_difficulty).text = "Niveau : ${translateDifficulty(e.difficulty)}"
 
         bind(view, R.id.tv_detail_domain,      R.id.row_domain,      e.domain)
         bind(view, R.id.tv_detail_godtype,     R.id.row_godtype,     e.godType?.let { translateGodType(it) })
@@ -116,6 +117,11 @@ class EntityDetailFragment : Fragment() {
         "Demon_Prince"     -> "Démon"
         "Zodiacal_Sign"    -> "Signe du Zodiaque"
         else               -> race
+    }
+
+    private fun translateDifficulty(d: Int) = when (d) {
+        1 -> "Facile"; 2 -> "Moyen"; 3 -> "Difficile"
+        else -> d.toString()
     }
 
     private fun translateGodType(t: String) = when (t) {

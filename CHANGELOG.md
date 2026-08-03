@@ -2,6 +2,52 @@
 
 ## V3
 
+#### V3.2.7
+
+- L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble
+
+
+#### V3.2.6
+
+- Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition (jusque-là inaccessible depuis l'interface ; une entité éditée retombait silencieusement à Facile)
+
+
+#### V3.2.5
+
+- Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (Arion) et « Nono le Robot est fière de toi » (Ulysse ou Télémaque), en quiz Classique ou QCM
+
+
+#### V3.2.4
+
+- Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
+- Retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes
+  - Entité :
+    - Arthur, ex-Arthur Pendragon (Mise à jour)
+    - Uther, ex-Uther Pendragon (Mise à jour)
+    - Camazotz (Mise à jour)
+
+
+#### V3.2.3
+
+- Retrait du tag Principal (fourre-tout hérité du repérage heuristique de V3.0.0, sans valeur thématique) sur les 214 entités qui le portaient
+- Ajout de 7 nouveaux tags thématiques sur les entités concernées : Sentiments, Ombres, Lune, Création, Richesse, Troyens et Achéens (ces deux derniers pour les deux camps de la guerre de Troie)
+
+
+#### V3.2.2
+
+- Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
+  - Entité :
+    - Néoptolème (Ajout)
+    - Philoctète (Ajout)
+    - Télémaque (Ajout)
+
+
+#### V3.2.1
+
+- Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées
+- Ajout d'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
+
+
 ### V3.2.0
 
 - Ajout du mode Duel : quiz multijoueur local en pass-and-play, de 2 à 12 joueurs sur le même appareil, accessible depuis une icône dédiée sur l'accueil
