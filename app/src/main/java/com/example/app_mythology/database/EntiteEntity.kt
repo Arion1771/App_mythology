@@ -58,5 +58,9 @@ data class EntiteEntity(
 
     // ─── Mode Liste et QCM ─────────────────────────────────────────────────
     val tags: String? = null,        // Tags thématiques séparés par virgule (leurres du QCM)
-    val listThemes: String? = null   // Thèmes curés du mode Liste séparés par virgule (quand non déductibles d'un champ existant)
+    val listThemes: String? = null,  // Thèmes curés du mode Liste séparés par virgule (quand non déductibles d'un champ existant)
+
+    // Faux uniquement pour les lignes issues telles quelles de prepopulate.json : protège les
+    // créations/éditions de l'utilisateur d'un écrasement lors d'une resynchronisation du contenu.
+    val userModified: Boolean = true
 )
