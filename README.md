@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.0)
 
+#### V3.2.5
+
+- Added two new achievements: "Très Beau Pseudonyme" (Arion) and "Nono le Robot est fière de toi" (Ulysse or Télémaque), in a Classic or Multiple-choice quiz
+
 #### V3.2.4
 
 - Fixed Camazotz's description, which mistakenly repeated Hun Batz's (the transformed monkey, patron saint of craftsmen) instead of describing the bat god associated with night and sacrifice
@@ -75,6 +79,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.0)
+
+#### V3.2.5
+
+- Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (Arion) et « Nono le Robot est fière de toi » (Ulysse ou Télémaque), en quiz Classique ou QCM
 
 #### V3.2.4
 
