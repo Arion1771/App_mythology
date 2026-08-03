@@ -2,6 +2,11 @@
 
 ## V3
 
+#### V3.2.7
+
+- L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble
+
+
 #### V3.2.6
 
 - Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition (jusque-là inaccessible depuis l'interface ; une entité éditée retombait silencieusement à Facile)

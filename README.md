@@ -10,42 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Changes since the last release (V3.2.0)
+### Latest version — V3.2.7
 
-#### V3.2.6
-
-- An entity's level (difficulty) is now shown on its detail sheet, and is set with an Easy/Medium/Hard selector in the add/edit form (previously unreachable from the interface; an edited entity silently fell back to Easy)
-
-#### V3.2.5
-
-- Added two new achievements: "Très Beau Pseudonyme" (Arion) and "Nono le Robot est fière de toi" (Ulysse or Télémaque), in a Classic or Multiple-choice quiz
-
-#### V3.2.4
-
-- Fixed Camazotz's description, which mistakenly repeated Hun Batz's (the transformed monkey, patron saint of craftsmen) instead of describing the bat god associated with night and sacrifice
-- Removed "Pendragon" from Arthur's and Uther's names, a late surname absent from the oldest Arthurian sources
-  - Entity:
-    - Arthur, ex-Arthur Pendragon (Updated)
-    - Uther, ex-Uther Pendragon (Updated)
-    - Camazotz (Updated)
-
-#### V3.2.3
-
-- Removed the Principal tag (a catch-all inherited from the heuristic tagging of V3.0.0, with no thematic value) from the 214 entities that had it
-- Added 7 new thematic tags on the relevant entities: Sentiments, Ombres, Lune, Création, Richesse, Troyens and Achéens (the last two for the two sides of the Trojan War)
-
-#### V3.2.2
-
-- Added Néoptolème and Philoctète, attached to the "Guerriers grecs devant Troie" List theme, as well as Télémaque
-  - Entity:
-    - Néoptolème (Added)
-    - Philoctète (Added)
-    - Télémaque (Added)
-
-#### V3.2.1
-
-- Added new pop-culture references (Odyssey, Iliad, Ulysses 31, Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles, One Piece, Seven Deadly Sins) on the relevant entities
-- Added an "Astronomie" marker on entities matching an official constellation (the 12 classical zodiac signs, and figures placed among the stars: Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
+- The full screen shown when tapping a card not yet found in List mode now displays every field of the entity/artifact (race, level, primordial, Chinese equivalent, clue, tags, list themes as applicable) instead of a subset
 
 ### Getting started
 
@@ -82,42 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Nouveautés depuis la dernière release (V3.2.0)
+### Dernière version — V3.2.7
 
-#### V3.2.6
-
-- Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition (jusque-là inaccessible depuis l'interface ; une entité éditée retombait silencieusement à Facile)
-
-#### V3.2.5
-
-- Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (Arion) et « Nono le Robot est fière de toi » (Ulysse ou Télémaque), en quiz Classique ou QCM
-
-#### V3.2.4
-
-- Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
-- Retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes
-  - Entité :
-    - Arthur, ex-Arthur Pendragon (Mise à jour)
-    - Uther, ex-Uther Pendragon (Mise à jour)
-    - Camazotz (Mise à jour)
-
-#### V3.2.3
-
-- Retrait du tag Principal (fourre-tout hérité du repérage heuristique de V3.0.0, sans valeur thématique) sur les 214 entités qui le portaient
-- Ajout de 7 nouveaux tags thématiques sur les entités concernées : Sentiments, Ombres, Lune, Création, Richesse, Troyens et Achéens (ces deux derniers pour les deux camps de la guerre de Troie)
-
-#### V3.2.2
-
-- Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
-  - Entité :
-    - Néoptolème (Ajout)
-    - Philoctète (Ajout)
-    - Télémaque (Ajout)
-
-#### V3.2.1
-
-- Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées
-- Ajout d'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
+- L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble
 
 ### Démarrage
 

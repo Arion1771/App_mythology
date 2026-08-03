@@ -150,8 +150,34 @@ object ListThemeCatalog {
 /** Représentation unifiée d'une carte du mode Liste, qu'elle vienne d'une entité ou d'un artéfact. */
 data class ListItem(val id: Int, val name: String, val detailText: String)
 
+private fun translateDifficulty(d: Int) = when (d) {
+    1 -> "Facile"; 2 -> "Moyen"; 3 -> "Difficile"
+    else -> d.toString()
+}
+
+private fun translateRace(race: String) = when (race) {
+    "God"              -> "Dieu"
+    "Titan"            -> "Titan"
+    "Giant"            -> "Géant"
+    "Heroes"           -> "Héros"
+    "Monster"          -> "Monstre"
+    "Cyclope"          -> "Cyclope"
+    "Hecatoncheires"   -> "Hécatonchire"
+    "Muses"            -> "Muse"
+    "Erinyes"          -> "Érinye"
+    "Grées"            -> "Grée"
+    "Valkyrie"         -> "Valkyrie"
+    "Archangels"       -> "Archange"
+    "Arthurian_Knight" -> "Chevalier Arthurien"
+    "Demon_Prince"     -> "Démon"
+    "Zodiacal_Sign"    -> "Signe du Zodiaque"
+    else               -> race
+}
+
 private fun entityDetailText(e: EntiteEntity) = buildString {
     appendLine("Mythologie : ${e.mythology}")
+    appendLine("Race : ${translateRace(e.race)}")
+    appendLine("Niveau : ${translateDifficulty(e.difficulty)}")
     e.domain?.let { appendLine("Domaine : $it") }
     e.godType?.let { appendLine("Type divin : $it") }
     e.fatherName?.let { appendLine("Père : $it") }
@@ -164,21 +190,29 @@ private fun entityDetailText(e: EntiteEntity) = buildString {
     e.ascendantName?.let { appendLine("Ascendant : $it") }
     e.monsterType?.let { appendLine("Type : $it") }
     e.description?.let { appendLine("Description : $it") }
+    e.primordial?.let { appendLine("Primordial : ${if (it) "Oui" else "Non"}") }
     e.museType?.let { appendLine("Type de muse : $it") }
     e.role?.let { appendLine("Rôle : $it") }
     e.death?.let { appendLine("Mort : $it") }
     e.zodiacType?.let { appendLine("Zodiaque : $it") }
+    e.chineseEquivalent?.let { appendLine("Équivalent chinois : $it") }
     e.popularCulture?.let { appendLine("Culture populaire : $it") }
+    e.clue?.let { appendLine("Indice : $it") }
+    e.tags?.let { appendLine("Tags : $it") }
+    e.listThemes?.let { appendLine("Thèmes : $it") }
 }.trimEnd()
 
 private fun artifactDetailText(a: ArtifactEntity) = buildString {
     appendLine("Mythologie : ${a.mythology}")
     appendLine("Type : ${a.artifactType}")
+    appendLine("Niveau : ${translateDifficulty(a.difficulty)}")
     a.ownerName?.let { appendLine("Propriétaire : $it") }
     a.creatorName?.let { appendLine("Créateur : $it") }
     a.power?.let { appendLine("Pouvoir : $it") }
     a.story?.let { appendLine("Histoire : $it") }
     a.description?.let { appendLine("Description : $it") }
+    a.clue?.let { appendLine("Indice : $it") }
+    a.tags?.let { appendLine("Tags : $it") }
 }.trimEnd()
 
 /** Résout un thème en groupes de [ListItem], quelle que soit sa source (entités ou artéfacts). */
