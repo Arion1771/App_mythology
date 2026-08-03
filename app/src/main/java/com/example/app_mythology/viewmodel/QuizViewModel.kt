@@ -188,7 +188,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Les 5 entités déclenchant un succès individuel à la première bonne réponse. */
+    /** Entités déclenchant un succès individuel à la première bonne réponse. */
     private fun checkNamedEntityAchievement(name: String?) {
         val id = when (name) {
             "Heimdall" -> "entity_heimdall"
@@ -196,6 +196,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             "Bake Kujira" -> "entity_bakekujira"
             "Ganesh" -> "entity_ganesh"
             "Moritasgus" -> "entity_moritasgus"
+            "Arion" -> "entity_arion"
+            "Ulysse", "Télémaque" -> "entity_ulysse_telemaque"
             else -> null
         }
         if (id != null) AchievementManager.unlock(id)

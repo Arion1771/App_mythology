@@ -54,6 +54,8 @@ object AchievementCatalog {
         add(Achievement("entity_bakekujira", "T'appelles ça un soutien ?", "Répondez correctement à Bake Kujira dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("entity_ganesh", "Éléphant en ballon", "Répondez correctement à Ganesh dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("entity_moritasgus", "Blaireau Divin", "Répondez correctement à Moritasgus dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("entity_arion", "Très Beau Pseudonyme", "Répondez correctement à Arion dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("entity_ulysse_telemaque", "Nono le Robot est fière de toi", "Répondez correctement à Ulysse ou Télémaque dans un quiz Classique ou QCM", "Entités"))
 
         // ── Entités — paliers de score parfait ───────────────────────────
         add(Achievement("classic_entity_10", "Mortel du classique", "Terminez un quiz Classique Entités niveau Facile sans faute (score 10/10)", "Entités"))
