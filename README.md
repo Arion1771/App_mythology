@@ -12,6 +12,14 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.0)
 
+#### V3.2.2
+
+- Added Néoptolème and Philoctète, attached to the "Guerriers grecs devant Troie" List theme, as well as Télémaque
+  - Entity:
+    - Néoptolème (Added)
+    - Philoctète (Added)
+    - Télémaque (Added)
+
 #### V3.2.1
 
 - Added new pop-culture references (Odyssey, Iliad, Ulysses 31, Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles, One Piece, Seven Deadly Sins) on the relevant entities
@@ -53,6 +61,14 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.0)
+
+#### V3.2.2
+
+- Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
+  - Entité :
+    - Néoptolème (Ajout)
+    - Philoctète (Ajout)
+    - Télémaque (Ajout)
 
 #### V3.2.1
 

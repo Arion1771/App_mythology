@@ -2,6 +2,15 @@
 
 ## V3
 
+#### V3.2.2
+
+- Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
+  - Entité :
+    - Néoptolème (Ajout)
+    - Philoctète (Ajout)
+    - Télémaque (Ajout)
+
+
 #### V3.2.1
 
 - Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées
