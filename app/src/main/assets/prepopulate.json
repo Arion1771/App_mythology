@@ -966,6 +966,19 @@
       "listThemes": "Guerriers grecs devant Troie"
     },
     {
+      "name": "Télémaque",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "fatherName": "Ulysse",
+      "motherName": "Pénélope",
+      "story": "Part à la recherche de son père disparu depuis vingt ans, guidé par la déesse Athéna déguisée en mentor.",
+      "description": "Élevé sans son père parti combattre à Troie, il doit tenir tête seul aux prétendants envahissant le palais avant de l'aider à les vaincre à son retour.",
+      "popularCulture": "Ulysse 31, Odyssée",
+      "clue": "Fils d'Ulysse parti à sa recherche",
+      "difficulty": 2,
+      "tags": "Humain"
+    },
+    {
       "id": 71,
       "name": "Zeus",
       "mythology": "Grecque",
@@ -1887,6 +1900,30 @@
       "popularCulture": "Troie, Iliade",
       "clue": "Compagnon le plus proche d'Achille",
       "difficulty": 2,
+      "tags": "Guerre, Humain",
+      "listThemes": "Guerriers grecs devant Troie"
+    },
+    {
+      "name": "Néoptolème",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "fatherName": "Achille",
+      "story": "Appelé à Troie après la mort de son père car une prophétie annonce que la ville ne peut tomber sans lui, il se cache dans le cheval de bois.",
+      "description": "Élevé loin du champ de bataille, il rejoint la guerre après la mort de son père et se montre impitoyable lors du sac de la ville, tuant le vieux roi Priam.",
+      "death": "Tué à Delphes, selon certaines traditions par Oreste.",
+      "clue": "Fils d'Achille, participe au cheval de Troie",
+      "difficulty": 3,
+      "tags": "Guerre, Humain",
+      "listThemes": "Guerriers grecs devant Troie"
+    },
+    {
+      "name": "Philoctète",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "story": "Abandonné blessé sur l'île de Lemnos à cause d'une plaie nauséabonde, il est rappelé dix ans plus tard car une prophétie annonce que Troie ne peut tomber sans son arc.",
+      "description": "Héritier de l'arc et des flèches empoisonnées d'Héraclès, il est délaissé par les Grecs en chemin vers Troie avant d'être rappelé pour tuer Paris.",
+      "clue": "Hérite de l'arc d'Héraclès, abandonné sur Lemnos",
+      "difficulty": 3,
       "tags": "Guerre, Humain",
       "listThemes": "Guerriers grecs devant Troie"
     },
