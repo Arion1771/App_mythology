@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.2.4
+### Latest addition — V3.2.5
 
-Fixed Camazotz's description (it wrongly repeated Hun Batz's), and dropped "Pendragon" from Arthur's and Uther's names — a late surname absent from the oldest Arthurian sources.
+Added two new achievements: "Très Beau Pseudonyme" (answer Arion correctly) and "Nono le Robot est fière de toi" (answer Ulysses or Telemachus correctly), in Classic or Multiple-choice quizzes.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.2.4
+### Dernier ajout — V3.2.5
 
-Correction de la description de Camazotz (qui reprenait par erreur celle de Hun Batz), et retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes.
+Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (répondre correctement à Arion) et « Nono le Robot est fière de toi » (répondre correctement à Ulysse ou Télémaque), en quiz Classique ou QCM.
 
 ### Démarrage
 

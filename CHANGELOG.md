@@ -2,6 +2,11 @@
 
 ## V3
 
+#### V3.2.5
+
+- Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (Arion) et « Nono le Robot est fière de toi » (Ulysse ou Télémaque), en quiz Classique ou QCM
+
+
 #### V3.2.4
 
 - Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
