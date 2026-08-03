@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.2.0
+### Latest addition — V3.2.1
 
-Added a local multiplayer "Duel" quiz mode: 2 to 12 players pass the same device around, each answering questions in turn (Classic or Multiple-choice, whichever is picked at setup) at a shared difficulty, either on identical questions or on a distinct set per player. Each turn shows who's up and their score, then the question, then a recap, looping until everyone has answered all their questions — ending on a final ranked leaderboard. Reachable from a new crossed-swords icon on the home screen, with its own help screen.
+Added new pop culture references (Odyssey, Iliad, Ulysse 31, The Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles, One Piece, Seven Deadly Sins) to the relevant entities, plus an "Astronomy" tag on entities matching an official constellation (the 12 classic zodiac signs, and mythological figures turned into stars: Orion, Perseus, Pegasus, Hydra, Hercules, Chiron, Ladon, the Caucasian Eagle, the Unicorn, the Phoenix, the Nemean Lion).
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.2.0
+### Dernier ajout — V3.2.1
 
-Ajout du mode Duel : quiz multijoueur local en pass-and-play, de 2 à 12 joueurs sur le même appareil, chacun répondant à son tour à des questions (Classique ou QCM au choix, difficulté commune). Les joueurs affrontent soit les mêmes questions, soit des questions différentes selon le choix fait à la mise en place. Chaque tour affiche le joueur concerné et son score, puis la question, puis un récapitulatif, jusqu'à ce que tout le monde ait répondu à toutes ses questions — la partie se termine sur un classement final. Accessible depuis une nouvelle icône (épées croisées) sur l'accueil, avec son propre écran d'aide.
+Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées, ainsi qu'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée).
 
 ### Démarrage
 
