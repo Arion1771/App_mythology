@@ -2,6 +2,12 @@
 
 ## V3
 
+#### V3.2.3
+
+- Retrait du tag Principal (fourre-tout hérité du repérage heuristique de V3.0.0, sans valeur thématique) sur les 214 entités qui le portaient
+- Ajout de 7 nouveaux tags thématiques sur les entités concernées : Sentiments, Ombres, Lune, Création, Richesse, Troyens et Achéens (ces deux derniers pour les deux camps de la guerre de Troie)
+
+
 #### V3.2.2
 
 - Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
