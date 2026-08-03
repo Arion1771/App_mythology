@@ -23,5 +23,9 @@ data class PlaceEntity(
     val inhabitants: String? = null,
 
     // Enfers — âmes qui y séjournent
-    val souls: String? = null
+    val souls: String? = null,
+
+    // Faux uniquement pour les lignes issues telles quelles de prepopulate.json : protège les
+    // créations/éditions de l'utilisateur d'un écrasement lors d'une resynchronisation du contenu.
+    val userModified: Boolean = true
 )

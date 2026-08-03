@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.2.7
+### Latest addition — V3.2.8
 
-The full-screen reveal shown when tapping an unfound List quiz card now exposes every field of the entity/artifact (race, level, primordial status, Chinese equivalent, clue, tags, list themes as applicable) instead of a subset.
+prepopulate.json used to be read only on the very first launch (empty database), so content fixes and additions shipped in later updates never reached installs that had already run once. The database now resyncs with prepopulate.json whenever its content changes (hash comparison), without ever overwriting an entry the user created or edited (new `userModified` field, Room v7, non-destructive migration). Rows already in the database before this update start out protected by default, so already-published fixes (V3.2.1–V3.2.7) won't retroactively reach existing installs — only future content will sync normally.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.2.7
+### Dernier ajout — V3.2.8
 
-L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble.
+prepopulate.json n'était lu qu'au tout premier lancement (base vide), si bien que les correctifs et ajouts de contenu publiés dans les mises à jour suivantes n'atteignaient jamais les installations déjà lancées une fois. La base se resynchronise désormais avec prepopulate.json à chaque changement détecté de son contenu (comparaison par hash), sans jamais écraser une entrée créée ou éditée par l'utilisateur (nouveau champ `userModified`, Room v7, migration non destructive). Les lignes déjà en base avant cette mise à jour démarrent protégées par défaut, donc les correctifs déjà publiés (V3.2.1 à V3.2.7) ne rattraperont pas automatiquement les installations existantes — seuls les contenus futurs se resynchroniseront normalement.
 
 ### Démarrage
 
