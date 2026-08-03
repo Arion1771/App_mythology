@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.2.6
+### Latest addition — V3.2.7
 
-An entity's level (difficulty) now shows on its detail sheet when browsing the database, and can be set via an Easy/Medium/Hard picker in the add/edit form — previously unreachable from the UI entirely, silently resetting to Easy on every edit.
+The full-screen reveal shown when tapping an unfound List quiz card now exposes every field of the entity/artifact (race, level, primordial status, Chinese equivalent, clue, tags, list themes as applicable) instead of a subset.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.2.6
+### Dernier ajout — V3.2.7
 
-Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition — jusque-là inaccessible depuis l'interface, une entité éditée retombait silencieusement à Facile.
+L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble.
 
 ### Démarrage
 
