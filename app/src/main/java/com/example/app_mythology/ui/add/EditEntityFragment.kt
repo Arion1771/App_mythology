@@ -59,6 +59,7 @@ class EditEntityFragment : AddEntityFragment() {
 
         val racePos = races.indexOf(e.race).takeIf { it >= 0 } ?: 0
         view.findViewById<Spinner>(R.id.spinner_race).setSelection(racePos)
+        view.findViewById<Spinner>(R.id.spinner_difficulty).setSelection(e.difficulty - 1)
 
         setText(view, R.id.et_domain,          e.domain)
         setText(view, R.id.et_domain_titan,    e.domain)

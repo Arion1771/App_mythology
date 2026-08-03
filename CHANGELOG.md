@@ -2,6 +2,11 @@
 
 ## V3
 
+#### V3.2.6
+
+- Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition (jusque-là inaccessible depuis l'interface ; une entité éditée retombait silencieusement à Facile)
+
+
 #### V3.2.5
 
 - Ajout de deux nouveaux succès : « Très Beau Pseudonyme » (Arion) et « Nono le Robot est fière de toi » (Ulysse ou Télémaque), en quiz Classique ou QCM

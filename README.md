@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.0)
 
+#### V3.2.6
+
+- An entity's level (difficulty) is now shown on its detail sheet, and is set with an Easy/Medium/Hard selector in the add/edit form (previously unreachable from the interface; an edited entity silently fell back to Easy)
+
 #### V3.2.5
 
 - Added two new achievements: "Très Beau Pseudonyme" (Arion) and "Nono le Robot est fière de toi" (Ulysse or Télémaque), in a Classic or Multiple-choice quiz
@@ -79,6 +83,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.0)
+
+#### V3.2.6
+
+- Le niveau (difficulté) d'une entité s'affiche désormais sur sa fiche de détail en base, et se règle via un sélecteur Facile/Moyen/Difficile dans le formulaire d'ajout/édition (jusque-là inaccessible depuis l'interface ; une entité éditée retombait silencieusement à Facile)
 
 #### V3.2.5
 
