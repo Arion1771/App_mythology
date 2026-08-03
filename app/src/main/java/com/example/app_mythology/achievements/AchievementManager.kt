@@ -5,8 +5,9 @@ import android.content.SharedPreferences
 
 /**
  * Persiste les succès débloqués dans des SharedPreferences dédiées, distinctes
- * de la base Room (purgée à chaque mise à jour via fallbackToDestructiveMigration)
- * afin que les succès survivent aux mises à jour de l'application.
+ * de la base Room (dont le contenu par défaut peut être resynchronisé, voire
+ * purgée en dernier recours par fallbackToDestructiveMigration en l'absence de
+ * migration explicite) afin que les succès survivent aux mises à jour de l'application.
  */
 object AchievementManager {
 

@@ -9,6 +9,10 @@ interface PlaceDao {
     @Query("SELECT * FROM places ORDER BY name ASC")
     fun getAll(): LiveData<List<PlaceEntity>>
 
+    /** Chargement ponctuel (non observé), utilisé pour la resynchronisation depuis prepopulate.json. */
+    @Query("SELECT * FROM places")
+    suspend fun getAllSync(): List<PlaceEntity>
+
     @Query("SELECT * FROM places WHERE id = :id")
     suspend fun getById(id: Int): PlaceEntity?
 
