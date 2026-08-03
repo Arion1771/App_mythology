@@ -44,7 +44,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 
 #### Chevalier Arthurien (19)
 
-- Arthur Pendragon
+- Arthur
 - Bohort
 - Caradoc
 - Dame du Lac
@@ -61,7 +61,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Méléagant
 - Perceval
 - Tristan
-- Uther Pendragon
+- Uther
 - Yvain
 
 ### Aztèque (2)
