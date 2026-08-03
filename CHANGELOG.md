@@ -2,6 +2,12 @@
 
 ## V3
 
+#### V3.2.1
+
+- Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées
+- Ajout d'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
+
+
 ### V3.2.0
 
 - Ajout du mode Duel : quiz multijoueur local en pass-and-play, de 2 à 12 joueurs sur le même appareil, accessible depuis une icône dédiée sur l'accueil

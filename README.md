@@ -10,13 +10,12 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V3.2.0
+### Changes since the last release (V3.2.0)
 
-- Added Duel mode: local pass-and-play multiplayer quiz, for 2 to 12 players on the same device, reachable from a dedicated icon on the home screen
-- Setup: number of players, names, question type of choice (Classic or Multiple-choice), shared difficulty (Easy/Medium/Hard = 10/20/30 questions per player), identical questions for everyone or different ones, as chosen
-- Turn-based flow: each player answers one question in turn, over 3 successive screens (player and score announcement, question, recap), until everyone has answered all their questions; final ranking sorted by score at the end of the game
-- New help screen dedicated to Duel mode
-- Deliberately independent of the achievement system (V3.1.0)
+#### V3.2.1
+
+- Added new pop-culture references (Odyssey, Iliad, Ulysses 31, Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles, One Piece, Seven Deadly Sins) on the relevant entities
+- Added an "Astronomie" marker on entities matching an official constellation (the 12 classical zodiac signs, and figures placed among the stars: Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
 
 ### Getting started
 
@@ -53,13 +52,12 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V3.2.0
+### Nouveautés depuis la dernière release (V3.2.0)
 
-- Ajout du mode Duel : quiz multijoueur local en pass-and-play, de 2 à 12 joueurs sur le même appareil, accessible depuis une icône dédiée sur l'accueil
-- Mise en place : nombre de joueurs, noms, type de question au choix (Classique ou QCM), difficulté commune (Facile/Moyen/Difficile = 10/20/30 questions par joueur), questions identiques pour tous ou différentes selon le choix
-- Déroulé en tours : chaque joueur répond à une question à son tour, sur 3 écrans successifs (annonce du joueur et de son score, question, récapitulatif), jusqu'à ce que tout le monde ait répondu à toutes ses questions ; classement final trié par score à l'issue de la partie
-- Nouvel écran d'aide dédié au mode Duel
-- Volontairement indépendant du système de succès (V3.1.0)
+#### V3.2.1
+
+- Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées
+- Ajout d'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée)
 
 ### Démarrage
 
