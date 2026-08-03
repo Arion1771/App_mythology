@@ -12,6 +12,11 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.0)
 
+#### V3.2.3
+
+- Removed the Principal tag (a catch-all inherited from the heuristic tagging of V3.0.0, with no thematic value) from the 214 entities that had it
+- Added 7 new thematic tags on the relevant entities: Sentiments, Ombres, Lune, Création, Richesse, Troyens and Achéens (the last two for the two sides of the Trojan War)
+
 #### V3.2.2
 
 - Added Néoptolème and Philoctète, attached to the "Guerriers grecs devant Troie" List theme, as well as Télémaque
@@ -61,6 +66,11 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.0)
+
+#### V3.2.3
+
+- Retrait du tag Principal (fourre-tout hérité du repérage heuristique de V3.0.0, sans valeur thématique) sur les 214 entités qui le portaient
+- Ajout de 7 nouveaux tags thématiques sur les entités concernées : Sentiments, Ombres, Lune, Création, Richesse, Troyens et Achéens (ces deux derniers pour les deux camps de la guerre de Troie)
 
 #### V3.2.2
 
