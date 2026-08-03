@@ -12,6 +12,15 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.0)
 
+#### V3.2.4
+
+- Fixed Camazotz's description, which mistakenly repeated Hun Batz's (the transformed monkey, patron saint of craftsmen) instead of describing the bat god associated with night and sacrifice
+- Removed "Pendragon" from Arthur's and Uther's names, a late surname absent from the oldest Arthurian sources
+  - Entity:
+    - Arthur, ex-Arthur Pendragon (Updated)
+    - Uther, ex-Uther Pendragon (Updated)
+    - Camazotz (Updated)
+
 #### V3.2.3
 
 - Removed the Principal tag (a catch-all inherited from the heuristic tagging of V3.0.0, with no thematic value) from the 214 entities that had it
@@ -66,6 +75,15 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.0)
+
+#### V3.2.4
+
+- Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
+- Retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes
+  - Entité :
+    - Arthur, ex-Arthur Pendragon (Mise à jour)
+    - Uther, ex-Uther Pendragon (Mise à jour)
+    - Camazotz (Mise à jour)
 
 #### V3.2.3
 

@@ -2,6 +2,16 @@
 
 ## V3
 
+#### V3.2.4
+
+- Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
+- Retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes
+  - Entité :
+    - Arthur, ex-Arthur Pendragon (Mise à jour)
+    - Uther, ex-Uther Pendragon (Mise à jour)
+    - Camazotz (Mise à jour)
+
+
 #### V3.2.3
 
 - Retrait du tag Principal (fourre-tout hérité du repérage heuristique de V3.0.0, sans valeur thématique) sur les 214 entités qui le portaient
