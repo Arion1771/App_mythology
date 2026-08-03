@@ -2,6 +2,12 @@
 
 ## V3
 
+#### V3.2.8
+
+- prepopulate.json n'était lu qu'au premier lancement (base vide) ; les corrections et ajouts de contenu publiés dans les mises à jour n'atteignaient donc jamais les installations déjà lancées une fois. La base se resynchronise désormais avec prepopulate.json à chaque changement détecté de son contenu (comparaison par hash), sans jamais écraser une entrée créée ou éditée par l'utilisateur (nouveau champ `userModified`, Room v7, migration non destructive)
+- Limite transitoire assumée : les lignes déjà en base avant cette mise à jour démarrent protégées par défaut, donc les correctifs déjà publiés (V3.2.1 à V3.2.7) ne rattraperont pas automatiquement les installations existantes ; seuls les contenus futurs se resynchroniseront normalement
+
+
 #### V3.2.7
 
 - L'écran plein affiché au clic sur une carte non trouvée du mode Liste expose désormais tous les champs de l'entité/de l'artéfact (race, niveau, primordial, équivalent chinois, indice, tags, thèmes de liste selon le cas) au lieu d'un sous-ensemble
