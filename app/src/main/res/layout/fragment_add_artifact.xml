@@ -51,7 +51,7 @@
             android:text="Propriétaire" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginBottom="4dp"/>
         <EditText android:id="@+id/et_owner"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:hint="Ex : Arthur Pendragon" android:textColor="@color/on_surface"
+            android:hint="Ex : Arthur" android:textColor="@color/on_surface"
             android:textColorHint="@color/on_surface_variant" android:backgroundTint="@color/primary"
             android:layout_marginBottom="12dp"/>
 
