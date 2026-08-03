@@ -25,6 +25,11 @@
         <TextView android:id="@+id/tv_detail_race"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:textSize="14sp" android:textColor="#FF9E9E9E"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView android:id="@+id/tv_detail_difficulty"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="14sp" android:textColor="#FF9E9E9E"
             android:layout_marginBottom="16dp"/>
 
         <!-- Champs optionnels : chaque row est un LinearLayout autonome -->
