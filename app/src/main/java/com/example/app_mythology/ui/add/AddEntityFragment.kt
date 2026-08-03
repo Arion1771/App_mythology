@@ -25,6 +25,7 @@ open class AddEntityFragment : Fragment() {
         "Cyclope", "Hécatonchire", "Muse", "Érinye", "Grée", "Valkyrie",
         "Archange", "Chevalier Arthurien", "Démon", "Signe du Zodiaque"
     )
+    private val difficulties = listOf("Facile", "Moyen", "Difficile")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -88,6 +89,11 @@ open class AddEntityFragment : Fragment() {
             android.R.layout.simple_spinner_item, racesDisplay)
             .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
 
+        // Spinner niveau (difficulté)
+        view.findViewById<Spinner>(R.id.spinner_difficulty).adapter = ArrayAdapter(requireContext(),
+            android.R.layout.simple_spinner_item, difficulties)
+            .apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+
         // Afficher le bon groupe selon la race
         spinnerRace.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p: AdapterView<*>, v: View?, pos: Int, id: Long) {
@@ -134,11 +140,13 @@ open class AddEntityFragment : Fragment() {
             "Titan" -> view.getText(R.id.et_equivalent_titan)
             else    -> null
         }
+        val difficulty = view.findViewById<Spinner>(R.id.spinner_difficulty).selectedItemPosition + 1
         return EntiteEntity(
             id                = existingId,
             name              = name,
             mythology         = mythology,
             race              = race,
+            difficulty        = difficulty,
             domain            = domain,
             godType           = view.getText(R.id.et_godtype),
             equivalentName    = equivalent,
