@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.2.1
+### Latest addition — V3.2.2
 
-Added new pop culture references (Odyssey, Iliad, Ulysse 31, The Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles, One Piece, Seven Deadly Sins) to the relevant entities, plus an "Astronomy" tag on entities matching an official constellation (the 12 classic zodiac signs, and mythological figures turned into stars: Orion, Perseus, Pegasus, Hydra, Hercules, Chiron, Ladon, the Caucasian Eagle, the Unicorn, the Phoenix, the Nemean Lion).
+Added Neoptolemus and Philoctetes, two Greek warriors of the Trojan War, joining the existing 9 in the "Greek warriors before Troy" List quiz theme, plus Telemachus (Ulysses' son).
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.2.1
+### Dernier ajout — V3.2.2
 
-Ajout de nouvelles références de culture populaire (Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane, One Piece, Seven Deadly Sins) sur les entités concernées, ainsi qu'un repère « Astronomie » sur les entités correspondant à une constellation officielle (les 12 signes du zodiaque classiques, et des figures catastérisées : Orion, Persée, Pégase, Hydre, Hercule, Chiron, Ladon, Aigle du Caucase, Licorne, Phénix, Lion de Némée).
+Ajout de Néoptolème et Philoctète, deux guerriers grecs de la guerre de Troie, qui rejoignent les 9 déjà présents dans le thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque (fils d'Ulysse).
 
 ### Démarrage
 

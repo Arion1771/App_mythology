@@ -3,7 +3,7 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **486 entités**, **22 lieux**, **43 artéfacts**.
+Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 
 ---
 
@@ -170,7 +170,7 @@ Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 - Moritasgus
 - Teutatès
 
-### Grecque (194)
+### Grecque (197)
 
 #### Cyclope (4)
 
@@ -265,7 +265,7 @@ Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 - Cottos
 - Gygès
 
-#### Héros (34)
+#### Héros (37)
 
 - Achille
 - Agamemnon
@@ -288,6 +288,7 @@ Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 - Médée
 - Méléagre
 - Ménélas
+- Néoptolème
 - Nestor
 - Oedipe
 - Orphée
@@ -295,9 +296,11 @@ Total : **486 entités**, **22 lieux**, **43 artéfacts**.
 - Patrocle
 - Perdix
 - Persée
+- Philoctète
 - Pollux
 - Sisyphe
 - Tantale
+- Télémaque
 - Thésée
 - Ulysse
 - Zétés
@@ -918,16 +921,16 @@ d'ajout/édition.
 | Mythologie d'Amérique du Sud | 12 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
 | Dieux | 214 | 10 | champ |
 | Monstres | 102 | 10 | champ |
-| Héros | 40 | 5 | champ |
+| Héros | 43 | 5 | champ |
 | Artefacts | 43 | 5 | tous les artéfacts |
-| Entités | 486 | 10 | toutes les entités |
+| Entités | 489 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
 | Géants grecs | 14 | 3 | champ |
 | Enfants de Gaïa et Ouranos | 22 | 5 | champ (Titans / Cyclopes / Hécatonchires, grecs uniquement) |
 | Monstres des 12 travaux | 8 | 3 | `listThemes` |
-| Guerriers grecs devant Troie | 9 | 3 | `listThemes` |
+| Guerriers grecs devant Troie | 11 | 3 | `listThemes` |
 | Archanges et démons | 15 | 3 | champ (Archanges / Démons) |
 | Signes du zodiaque | 24 | 5 | champ (Classiques / Chinois) |
 | Grées | 3 | 3 | champ |
