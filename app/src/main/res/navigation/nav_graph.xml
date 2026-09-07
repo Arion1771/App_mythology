@@ -13,8 +13,6 @@
         tools:layout="@layout/fragment_home">
         <action android:id="@+id/action_home_to_browseChoice"
             app:destination="@id/browseChoiceFragment" />
-        <action android:id="@+id/action_home_to_addChoice"
-            app:destination="@id/addChoiceFragment" />
         <action android:id="@+id/action_home_to_quizChoice"
             app:destination="@id/quizChoiceFragment" />
         <action android:id="@+id/action_home_to_achievements"
@@ -166,16 +164,6 @@
             app:destination="@id/entityDetailFragment"
             app:popUpTo="@id/entityListFragment"
             app:popUpToInclusive="false"/>
-        <action android:id="@+id/action_entityDetail_to_editEntity"
-            app:destination="@id/editEntityFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/editEntityFragment"
-        android:name="com.example.app_mythology.ui.add.EditEntityFragment"
-        android:label="Modifier"
-        tools:layout="@layout/fragment_add_entity">
-        <argument android:name="entityId" app:argType="integer" android:defaultValue="-1" />
     </fragment>
 
     <fragment
@@ -192,16 +180,6 @@
         android:name="com.example.app_mythology.ui.browse.PlaceDetailFragment"
         android:label="Lieu — Détail"
         tools:layout="@layout/fragment_place_detail">
-        <argument android:name="placeId" app:argType="integer" android:defaultValue="-1" />
-        <action android:id="@+id/action_placeDetail_to_editPlace"
-            app:destination="@id/editPlaceFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/editPlaceFragment"
-        android:name="com.example.app_mythology.ui.add.EditPlaceFragment"
-        android:label="Modifier lieu"
-        tools:layout="@layout/fragment_add_place">
         <argument android:name="placeId" app:argType="integer" android:defaultValue="-1" />
     </fragment>
 
@@ -220,49 +198,7 @@
         android:label="Artéfact — Détail"
         tools:layout="@layout/fragment_artifact_detail">
         <argument android:name="artifactId" app:argType="integer" android:defaultValue="-1" />
-        <action android:id="@+id/action_artifactDetail_to_editArtifact"
-            app:destination="@id/editArtifactFragment" />
     </fragment>
-
-    <fragment
-        android:id="@+id/editArtifactFragment"
-        android:name="com.example.app_mythology.ui.add.EditArtifactFragment"
-        android:label="Modifier artéfact"
-        tools:layout="@layout/fragment_add_artifact">
-        <argument android:name="artifactId" app:argType="integer" android:defaultValue="-1" />
-    </fragment>
-
-    <!-- ── Ajouter ────────────────────────────────────────────────── -->
-    <fragment
-        android:id="@+id/addChoiceFragment"
-        android:name="com.example.app_mythology.ui.add.AddChoiceFragment"
-        android:label="Ajouter"
-        tools:layout="@layout/fragment_add_choice">
-        <action android:id="@+id/action_addChoice_to_addEntity"
-            app:destination="@id/addEntityFragment" />
-        <action android:id="@+id/action_addChoice_to_addPlace"
-            app:destination="@id/addPlaceFragment" />
-        <action android:id="@+id/action_addChoice_to_addArtifact"
-            app:destination="@id/addArtifactFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/addEntityFragment"
-        android:name="com.example.app_mythology.ui.add.AddEntityFragment"
-        android:label="Nouvelle entité"
-        tools:layout="@layout/fragment_add_entity" />
-
-    <fragment
-        android:id="@+id/addPlaceFragment"
-        android:name="com.example.app_mythology.ui.add.AddPlaceFragment"
-        android:label="Nouveau lieu"
-        tools:layout="@layout/fragment_add_place" />
-
-    <fragment
-        android:id="@+id/addArtifactFragment"
-        android:name="com.example.app_mythology.ui.add.AddArtifactFragment"
-        android:label="Nouvel artéfact"
-        tools:layout="@layout/fragment_add_artifact" />
 
     <!-- ── Quiz ───────────────────────────────────────────────────── -->
     <fragment

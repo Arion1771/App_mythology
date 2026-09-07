@@ -24,12 +24,6 @@ class EntiteRepository(private val dao: EntiteDao) {
     suspend fun getRandomByDifficulty(difficulty: Int, limit: Int) =
         dao.getRandomByDifficulty(difficulty, limit)
 
-    suspend fun insert(entite: EntiteEntity): Long = dao.insert(entite)
-    suspend fun insertAll(entites: List<EntiteEntity>) = dao.insertAll(entites)
-    suspend fun update(entite: EntiteEntity) = dao.update(entite)
-    suspend fun delete(entite: EntiteEntity) = dao.delete(entite)
-    suspend fun deleteById(id: Int) = dao.deleteById(id)
-
     companion object {
         @Volatile private var INSTANCE: EntiteRepository? = null
         fun getInstance(db: AppDatabase): EntiteRepository {

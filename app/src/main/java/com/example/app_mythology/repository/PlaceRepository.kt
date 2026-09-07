@@ -18,12 +18,6 @@ class PlaceRepository(private val dao: PlaceDao) {
     fun getByMythology(mythology: String) = dao.getByMythology(mythology)
     fun search(query: String) = dao.search(query)
 
-    suspend fun insert(place: PlaceEntity): Long = dao.insert(place)
-    suspend fun insertAll(places: List<PlaceEntity>) = dao.insertAll(places)
-    suspend fun update(place: PlaceEntity) = dao.update(place)
-    suspend fun delete(place: PlaceEntity) = dao.delete(place)
-    suspend fun deleteById(id: Int) = dao.deleteById(id)
-
     companion object {
         @Volatile
         private var INSTANCE: PlaceRepository? = null
