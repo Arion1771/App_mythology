@@ -2,6 +2,12 @@
 
 ## V3
 
+#### V3.4.4
+
+- Dans le quiz Liste, les thèmes de mythologie complète (grecque, romaine, hindoue, chinoise, shinto, Amérique du Sud) affichent désormais leurs cartes sous-groupées par race (ordre alphabétique), et les thèmes de race complète (Dieux, Monstres, Héros) ainsi que le thème global (Entités) sous-groupées par mythologie
+- Nouvel ordre canonique des mythologies, par nombre total d'entités décroissant (remplace l'ordre alphabétique) : appliqué à ces regroupements du quiz Liste, au menu déroulant de filtre par mythologie en mode Parcourir (entités et artéfacts), et à l'ensemble de Base.md (sections Entités, Lieux, Artéfacts)
+- Correction incidente dans Base.md d'une mention obsolète du formulaire d'ajout/édition (retiré en V3.3.0)
+
 #### V3.4.3
 
 - Ajout de deux succès de collection, débloqués dès que toutes les entités d'une catégorie ont été obtenues au moins une fois en quiz Classique ou QCM, toutes sessions confondues : « C'est bien, bon toutou » (toutes les entités de type Chien) et « Très bizarre ton Zoo » (toutes les entités portant le tag Animal)

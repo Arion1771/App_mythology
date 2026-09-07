@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.4.3
+### Latest addition — V3.4.4
 
-Two new collection achievements, unlocked once every entity in a category has been obtained at least once across Classic or Multiple-choice quizzes: "Good Boy" (every Dog-type entity) and "Your Zoo Is Pretty Weird" (every entity tagged Animal).
+The List quiz now sub-groups entities by race within full-mythology themes and by mythology within full-race and global themes, and mythologies are now ordered by total entity count (descending) everywhere they're sorted in the app — List quiz grouping, the Browse mythology filter dropdowns, and Base.md — instead of alphabetically.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.4.3
+### Dernier ajout — V3.4.4
 
-Deux nouveaux succès de collection, débloqués dès que toutes les entités d'une catégorie ont été obtenues au moins une fois en quiz Classique ou QCM : « C'est bien, bon toutou » (toutes les entités de type Chien) et « Très bizarre ton Zoo » (toutes les entités portant le tag Animal).
+Le quiz Liste sous-groupe désormais les entités par race dans les thèmes de mythologie complète, et par mythologie dans les thèmes de race complète et le thème global ; les mythologies sont maintenant triées par nombre d'entités décroissant partout où l'application les trie — regroupements du quiz Liste, menus déroulants de filtre en mode Parcourir, et Base.md — au lieu d'un tri alphabétique.
 
 ### Démarrage
 
