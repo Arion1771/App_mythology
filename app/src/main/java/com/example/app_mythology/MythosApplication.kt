@@ -12,7 +12,7 @@ class MythosApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         AchievementManager.init(applicationContext)
-        // Peupler la base au premier démarrage, la resynchroniser avec prepopulate.json ensuite
+        // Recharger intégralement la base depuis prepopulate.json si son contenu a changé
         CoroutineScope(Dispatchers.IO).launch {
             AppDatabase.syncDatabase(applicationContext)
         }
