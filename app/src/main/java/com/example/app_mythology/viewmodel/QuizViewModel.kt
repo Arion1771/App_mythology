@@ -152,6 +152,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             _answerRevealed.value = true
             _waitingForNext.value = true
             checkNamedEntityAchievement(currentQuizName(index))
+            checkCollectionAchievements(_quizEntites.value?.getOrNull(index))
         } else {
             if (step == 1) {
                 _currentStep.value = 2
@@ -201,6 +202,32 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             else -> null
         }
         if (id != null) AchievementManager.unlock(id)
+    }
+
+    /**
+     * Succès de collection : mémorise l'entité obtenue, puis débloque le succès
+     * correspondant si toutes les entités de type Chien (resp. tag Animal) ont
+     * désormais été obtenues au moins une fois, toutes sessions confondues.
+     */
+    private fun checkCollectionAchievements(entity: EntiteEntity?) {
+        if (entity == null) return
+        AchievementManager.markEntityObtained(entity.name)
+        val isDog = entity.monsterType == "Chien"
+        val isAnimal = entity.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
+        if (!isDog && !isAnimal) return
+        viewModelScope.launch {
+            val all = entiteRepo.getAllSync()
+            if (isDog) {
+                val target = all.filter { it.monsterType == "Chien" }.map { it.name }.toSet()
+                AchievementManager.unlockIfAllObtained(target, "collection_dogs")
+            }
+            if (isAnimal) {
+                val target = all.filter { e ->
+                    e.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
+                }.map { it.name }.toSet()
+                AchievementManager.unlockIfAllObtained(target, "collection_animals")
+            }
+        }
     }
 
     /** Sans-faute (score == maxScore) sur 10/30/60 points, ou 0 bonne réponse (tout faux). */
@@ -400,6 +427,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         if (correct) {
             _qcmScore.value = (_qcmScore.value ?: 0.0) + currentQcmDifficulty(index)
             checkNamedEntityAchievement(name)
+            checkCollectionAchievements(_qcmEntites.value?.getOrNull(index))
         }
         val results = (_qcmResults.value ?: emptyList()).toMutableList()
         if (index < results.size) results[index] = if (correct) "green" else "red"
