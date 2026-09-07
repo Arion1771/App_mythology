@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.7)
 
+#### V3.4.3
+
+- Added two collection achievements, unlocked once every entity of a category has been obtained at least once in a Classic or Multiple-choice quiz, across all sessions: "C'est bien, bon toutou" (every Dog-type entity) and "Très bizarre ton Zoo" (every entity with the Animal tag)
+
 #### V3.4.2
 
 - Orthos joins the "Chien" monster type (previously "Chien à Deux Têtes"), shared with Cerbère, Lélaps and Garm
@@ -73,6 +77,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.7)
+
+#### V3.4.3
+
+- Ajout de deux succès de collection, débloqués dès que toutes les entités d'une catégorie ont été obtenues au moins une fois en quiz Classique ou QCM, toutes sessions confondues : « C'est bien, bon toutou » (toutes les entités de type Chien) et « Très bizarre ton Zoo » (toutes les entités portant le tag Animal)
 
 #### V3.4.2
 
