@@ -31,8 +31,25 @@ object ListThemeCatalog {
     private fun hasListTheme(e: EntiteEntity, theme: String): Boolean =
         e.listThemes?.split(",")?.map { it.trim() }?.contains(theme) == true
 
-    private fun byMythology(entites: List<EntiteEntity>, vararg mythologies: String) =
-        entites.filter { it.mythology in mythologies }.asSingleGroup()
+    /** Ordre canonique des mythologies sur [all] : nombre total d'entités décroissant, alphabétique à égalité. */
+    private fun mythologyRank(all: List<EntiteEntity>): List<String> =
+        all.groupingBy { it.mythology }.eachCount().entries
+            .sortedWith(compareByDescending<Map.Entry<String, Int>> { it.value }.thenBy { it.key })
+            .map { it.key }
+
+    /** Sous-groupes par mythologie (sous-titre = nom de la mythologie), triés selon [mythologyRank] sur [all]. */
+    private fun groupByMythologyRanked(all: List<EntiteEntity>, subset: List<EntiteEntity>): List<ThemeGroup<EntiteEntity>> {
+        val order = mythologyRank(all)
+        return subset.groupBy { it.mythology }
+            .entries.sortedBy { order.indexOf(it.key) }
+            .map { ThemeGroup(it.key, it.value) }
+    }
+
+    /** Sous-groupes par race (sous-titre = nom de race traduit), triés alphabétiquement. */
+    private fun groupByRaceAlpha(subset: List<EntiteEntity>): List<ThemeGroup<EntiteEntity>> =
+        subset.groupBy { it.race }
+            .entries.sortedBy { translateRace(it.key) }
+            .map { ThemeGroup(translateRace(it.key), it.value) }
 
     private fun byRace(entites: List<EntiteEntity>, race: String) =
         entites.filter { it.race == race }.asSingleGroup()
@@ -48,37 +65,37 @@ object ListThemeCatalog {
 
     val all: List<ListTheme> = listOf(
         ListTheme.EntityTheme("mythologie_grecque", "Mythologie grecque", 10) {
-            byMythology(it, "Grecque")
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Grecque" })
         },
         ListTheme.EntityTheme("mythologie_romaine", "Mythologie romaine", 10) {
-            byMythology(it, "Romaine")
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Romaine" })
         },
         ListTheme.EntityTheme("mythologie_hindoue", "Mythologie hindoue", 3) {
-            byMythology(it, "Hindouisme")
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Hindouisme" })
         },
         ListTheme.EntityTheme("mythologie_chinoise", "Mythologie chinoise", 5) {
-            byMythology(it, "Chinoise")
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Chinoise" })
         },
         ListTheme.EntityTheme("mythologie_shinto", "Mythologie shinto", 3) {
-            byMythology(it, "Shinto")
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Shinto" })
         },
         ListTheme.EntityTheme("mythologie_amerique_sud", "Mythologie d'Amérique du Sud", 3) {
-            byMythology(it, "Maya", "Aztèque")
+            groupByRaceAlpha(it.filter { e -> e.mythology in listOf("Maya", "Aztèque") })
         },
         ListTheme.EntityTheme("dieux", "Dieux", 10) {
-            byRace(it, "God")
+            groupByMythologyRanked(it, it.filter { e -> e.race == "God" })
         },
         ListTheme.EntityTheme("monstres", "Monstres", 10) {
-            byRace(it, "Monster")
+            groupByMythologyRanked(it, it.filter { e -> e.race == "Monster" })
         },
         ListTheme.EntityTheme("heros", "Héros", 5) {
-            byRace(it, "Heroes")
+            groupByMythologyRanked(it, it.filter { e -> e.race == "Heroes" })
         },
         ListTheme.ArtifactTheme("artefacts", "Artefacts", 5) { artifacts ->
             artifacts.asSingleGroup()
         },
         ListTheme.EntityTheme("entites", "Entités", 10) {
-            it.asSingleGroup()
+            groupByMythologyRanked(it, it)
         },
         ListTheme.EntityTheme("muses", "Muses", 3) { entites ->
             listOf(

@@ -11,182 +11,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 
 515 entités, groupées par mythologie puis par race.
 
-### Abrahamique (15)
-
-#### Archange (7)
-
-- Gabriel
-- Jérémiel
-- Michaël
-- Raguel
-- Raphaël
-- Sariel
-- Uriel
-
-#### Démon (8)
-
-- Asmodée
-- Belphégor
-- Bélial
-- Lilith
-- Lucifer
-- Léviathan
-- Mammon
-- Satan
-
-### Amérindienne (1)
-
-#### Monstre (1)
-
-- Wendigo
-
-### Arthurienne (19)
-
-#### Chevalier Arthurien (19)
-
-- Arthur
-- Bohort
-- Caradoc
-- Dame du Lac
-- Galahad
-- Gauvain
-- Guenièvre
-- Iseult
-- Keu
-- Lancelot
-- Léodagan
-- Merlin
-- Mordred
-- Morgane
-- Méléagant
-- Perceval
-- Tristan
-- Uther
-- Yvain
-
-### Aztèque (2)
-
-#### Dieu (2)
-
-- Quetzalcóatl
-- Tlaloc
-
-### Bavaroise (1)
-
-#### Monstre (1)
-
-- Wolpertinger
-
-### Celte (1)
-
-#### Dieu (1)
-
-- Cliodhna
-
-### Celtique (2)
-
-#### Dieu (2)
-
-- Artio
-- Morrigan
-
-### Celtique Irlandaise (13)
-
-#### Dieu (11)
-
-- Brigit
-- Dagda
-- Eithne
-- Goibniu
-- Lugh
-- Midir
-- Morrigan
-- Nuada
-- Ogma
-- Ériu
-- Étain
-
-#### Héros (1)
-
-- Cu Chulainn
-
-#### Monstre (1)
-
-- Banshee
-
-### Chinoise (31)
-
-#### Dieu (12)
-
-- Chang'e
-- Erlang Shen
-- Guan Yu
-- Hebo
-- Hou Yi
-- Nezha
-- Nuwa
-- Pangu
-- Sun Wukong
-- Xingtian
-- Yu Huang
-- Zhong Kui
-
-#### Héros (2)
-
-- Hua Mulan
-- Jing Wei
-
-#### Monstre (5)
-
-- Ao Guang
-- Da Ji
-- Huoshu
-- Phénix
-- Qilin
-
-#### Signe du Zodiaque (12)
-
-- Buffle
-- Cheval
-- Chien
-- Chèvre
-- Cochon
-- Coq
-- Dragon
-- Lapin
-- Rat
-- Serpent
-- Singe
-- Tigre
-
-### Européenne (7)
-
-#### Monstre (7)
-
-- Amphiptère
-- Basilic
-- Cocatrix
-- Dragon
-- Drake
-- Manticore
-- Wyvern
-
-### Française (3)
-
-#### Monstre (3)
-
-- Feu Follet
-- Tarasque
-- Vouivre
-
-### Gaulois (3)
-
-#### Dieu (3)
-
-- Cernunnos
-- Moritasgus
-- Teutatès
-
 ### Grecque (199)
 
 #### Cyclope (4)
@@ -306,8 +130,8 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Médée
 - Méléagre
 - Ménélas
-- Néoptolème
 - Nestor
+- Néoptolème
 - Oedipe
 - Orphée
 - Paris
@@ -318,8 +142,8 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Pollux
 - Sisyphe
 - Tantale
-- Télémaque
 - Thésée
+- Télémaque
 - Ulysse
 - Zétés
 
@@ -418,155 +242,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Mégère
 - Tisiphone
 
-### Hawaïenne (1)
-
-#### Dieu (1)
-
-- Pele
-
-### Hindouisme (13)
-
-#### Dieu (10)
-
-- Agni
-- Bouddha
-- Brahma
-- Ganesh
-- Indra
-- Kali
-- Rama
-- Shiva
-- Vamana
-- Vishnou
-
-#### Géant (1)
-
-- Kumbhakarna
-
-#### Héros (1)
-
-- Ravana
-
-#### Monstre (1)
-
-- Bakasura
-
-### Japonaise (9)
-
-#### Monstre (9)
-
-- Bake Kujira
-- Danzaburou
-- Hinezumi
-- Kappa
-- Kitsune
-- Kuzenbo
-- Tanuki
-- Yamata no Orochi
-- Yokai
-
-### Maya (11)
-
-#### Dieu (10)
-
-- Ah Puch
-- Ah-Muzen-Cab
-- Awilix
-- Cabrakan
-- Camazotz
-- Chac
-- Hun Batz
-- Hun Chouen
-- Ixchel
-- Kukulkan
-
-#### Héros (1)
-
-- Xbalanque
-
-### Mésopotamienne (3)
-
-#### Dieu (2)
-
-- Ishtar
-- Marduk
-
-#### Monstre (1)
-
-- Tiamat
-
-### Nordique (49)
-
-#### Dieu (19)
-
-- 3 Nornes
-- Balder
-- Freyja
-- Freyr
-- Frigg
-- Heimdall
-- Hel
-- Idunn
-- Kvasir
-- Mimir
-- Njord
-- Odin
-- Sif
-- Skadi
-- Sol
-- Thor
-- Tyr
-- Ullr
-- Valkyrie
-
-#### Géant (4)
-
-- Loki
-- Surtr
-- Utgard-Loki
-- Ymir
-
-#### Héros (1)
-
-- Einherjar
-
-#### Monstre (22)
-
-- Dain
-- Draugr
-- Duneyr
-- Durathror
-- Dvalin
-- Eikthyrnir
-- Fafnir
-- Fenrir
-- Garm
-- Hati
-- Hraesvelgr
-- Huginn
-- Jormungandr
-- Kraken
-- Muninn
-- Nidhogg
-- Ratatoskr
-- Skoll
-- Sleipnir
-- Tanngnjóstr
-- Tanngrisnir
-- Vidofnir
-
-#### Valkyrie (3)
-
-- Brynhild
-- Göndul
-- Sigrún
-
-### Perse (1)
-
-#### Monstre (1)
-
-- Rokh
-
 ### Romaine (71)
 
 #### Cyclope (4)
@@ -658,69 +333,116 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Saturne
 - Sol
 
-### Shinto (9)
+### Nordique (49)
 
-#### Dieu (9)
+#### Dieu (19)
 
-- Amaterasu
-- Fujin
-- Hachiman
-- Inari
-- Izanagi
-- Izanami
-- Raijin
-- Susanoo
-- Tsukuyomi
+- 3 Nornes
+- Balder
+- Freyja
+- Freyr
+- Frigg
+- Heimdall
+- Hel
+- Idunn
+- Kvasir
+- Mimir
+- Njord
+- Odin
+- Sif
+- Skadi
+- Sol
+- Thor
+- Tyr
+- Ullr
+- Valkyrie
 
-### Slave (2)
+#### Géant (4)
 
-#### Dieu (2)
-
-- Baba Yaga
-- Tchernobog
-
-### Sumérienne (1)
+- Loki
+- Surtr
+- Utgard-Loki
+- Ymir
 
 #### Héros (1)
 
-- Gilgamesh
+- Einherjar
 
-### Universelle (13)
+#### Monstre (22)
 
-#### Monstre (1)
+- Dain
+- Draugr
+- Duneyr
+- Durathror
+- Dvalin
+- Eikthyrnir
+- Fafnir
+- Fenrir
+- Garm
+- Hati
+- Hraesvelgr
+- Huginn
+- Jormungandr
+- Kraken
+- Muninn
+- Nidhogg
+- Ratatoskr
+- Skoll
+- Sleipnir
+- Tanngnjóstr
+- Tanngrisnir
+- Vidofnir
 
-- Licorne
+#### Valkyrie (3)
+
+- Brynhild
+- Göndul
+- Sigrún
+
+### Chinoise (31)
+
+#### Dieu (12)
+
+- Chang'e
+- Erlang Shen
+- Guan Yu
+- Hebo
+- Hou Yi
+- Nezha
+- Nuwa
+- Pangu
+- Sun Wukong
+- Xingtian
+- Yu Huang
+- Zhong Kui
+
+#### Héros (2)
+
+- Hua Mulan
+- Jing Wei
+
+#### Monstre (5)
+
+- Ao Guang
+- Da Ji
+- Huoshu
+- Phénix
+- Qilin
 
 #### Signe du Zodiaque (12)
 
-- Balance
-- Bélier
-- Cancer
-- Capricorne
-- Gémeaux
-- Lion
-- Poissons
-- Sagittaire
-- Scorpion
-- Taureau
-- Verseau
-- Vierge
-
-### Vaudou (2)
-
-#### Dieu (2)
-
-- Baron Samedi
-- Maman Brigitte
-
-### Yoruba (4)
-
-#### Dieu (4)
-
-- Obatala
-- Olorun
-- Shango
-- Yemoja
+- Buffle
+- Cheval
+- Chien
+- Chèvre
+- Cochon
+- Coq
+- Dragon
+- Lapin
+- Rat
+- Serpent
+- Singe
+- Tigre
 
 ### Égyptienne (29)
 
@@ -758,6 +480,284 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 #### Monstre (1)
 
 - Ouchebti
+
+### Arthurienne (19)
+
+#### Chevalier Arthurien (19)
+
+- Arthur
+- Bohort
+- Caradoc
+- Dame du Lac
+- Galahad
+- Gauvain
+- Guenièvre
+- Iseult
+- Keu
+- Lancelot
+- Léodagan
+- Merlin
+- Mordred
+- Morgane
+- Méléagant
+- Perceval
+- Tristan
+- Uther
+- Yvain
+
+### Abrahamique (15)
+
+#### Archange (7)
+
+- Gabriel
+- Jérémiel
+- Michaël
+- Raguel
+- Raphaël
+- Sariel
+- Uriel
+
+#### Démon (8)
+
+- Asmodée
+- Belphégor
+- Bélial
+- Lilith
+- Lucifer
+- Léviathan
+- Mammon
+- Satan
+
+### Celtique Irlandaise (13)
+
+#### Dieu (11)
+
+- Brigit
+- Dagda
+- Eithne
+- Goibniu
+- Lugh
+- Midir
+- Morrigan
+- Nuada
+- Ogma
+- Ériu
+- Étain
+
+#### Héros (1)
+
+- Cu Chulainn
+
+#### Monstre (1)
+
+- Banshee
+
+### Hindouisme (13)
+
+#### Dieu (10)
+
+- Agni
+- Bouddha
+- Brahma
+- Ganesh
+- Indra
+- Kali
+- Rama
+- Shiva
+- Vamana
+- Vishnou
+
+#### Géant (1)
+
+- Kumbhakarna
+
+#### Héros (1)
+
+- Ravana
+
+#### Monstre (1)
+
+- Bakasura
+
+### Universelle (13)
+
+#### Monstre (1)
+
+- Licorne
+
+#### Signe du Zodiaque (12)
+
+- Balance
+- Bélier
+- Cancer
+- Capricorne
+- Gémeaux
+- Lion
+- Poissons
+- Sagittaire
+- Scorpion
+- Taureau
+- Verseau
+- Vierge
+
+### Maya (11)
+
+#### Dieu (10)
+
+- Ah Puch
+- Ah-Muzen-Cab
+- Awilix
+- Cabrakan
+- Camazotz
+- Chac
+- Hun Batz
+- Hun Chouen
+- Ixchel
+- Kukulkan
+
+#### Héros (1)
+
+- Xbalanque
+
+### Japonaise (9)
+
+#### Monstre (9)
+
+- Bake Kujira
+- Danzaburou
+- Hinezumi
+- Kappa
+- Kitsune
+- Kuzenbo
+- Tanuki
+- Yamata no Orochi
+- Yokai
+
+### Shinto (9)
+
+#### Dieu (9)
+
+- Amaterasu
+- Fujin
+- Hachiman
+- Inari
+- Izanagi
+- Izanami
+- Raijin
+- Susanoo
+- Tsukuyomi
+
+### Européenne (7)
+
+#### Monstre (7)
+
+- Amphiptère
+- Basilic
+- Cocatrix
+- Dragon
+- Drake
+- Manticore
+- Wyvern
+
+### Yoruba (4)
+
+#### Dieu (4)
+
+- Obatala
+- Olorun
+- Shango
+- Yemoja
+
+### Française (3)
+
+#### Monstre (3)
+
+- Feu Follet
+- Tarasque
+- Vouivre
+
+### Gaulois (3)
+
+#### Dieu (3)
+
+- Cernunnos
+- Moritasgus
+- Teutatès
+
+### Mésopotamienne (3)
+
+#### Dieu (2)
+
+- Ishtar
+- Marduk
+
+#### Monstre (1)
+
+- Tiamat
+
+### Aztèque (2)
+
+#### Dieu (2)
+
+- Quetzalcóatl
+- Tlaloc
+
+### Celtique (2)
+
+#### Dieu (2)
+
+- Artio
+- Morrigan
+
+### Slave (2)
+
+#### Dieu (2)
+
+- Baba Yaga
+- Tchernobog
+
+### Vaudou (2)
+
+#### Dieu (2)
+
+- Baron Samedi
+- Maman Brigitte
+
+### Amérindienne (1)
+
+#### Monstre (1)
+
+- Wendigo
+
+### Bavaroise (1)
+
+#### Monstre (1)
+
+- Wolpertinger
+
+### Celte (1)
+
+#### Dieu (1)
+
+- Cliodhna
+
+### Hawaïenne (1)
+
+#### Dieu (1)
+
+- Pele
+
+### Perse (1)
+
+#### Monstre (1)
+
+- Rokh
+
+### Sumérienne (1)
+
+#### Héros (1)
+
+- Gilgamesh
 
 ---
 
@@ -806,46 +806,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 
 43 artéfacts, groupés par mythologie puis par type d'artéfact.
 
-### Arthurienne (3)
-
-#### Arme (1)
-
-- Excalibur
-
-#### Artefact (1)
-
-- Saint Graal
-
-#### Objet magique (1)
-
-- Fourreau d'Excalibur
-
-### Celtique Irlandaise (5)
-
-#### Arme (3)
-
-- Claíomh Solais
-- Gáe Bulg
-- Lance de Lugh
-
-#### Artefact (1)
-
-- Lia Fáil
-
-#### Objet magique (1)
-
-- Chaudron du Dagda
-
-### Chinoise (2)
-
-#### Arme (1)
-
-- Ruyi Jingu Bang
-
-#### Nourriture (1)
-
-- Pêches d'immortalité
-
 ### Grecque (13)
 
 #### Arme (3)
@@ -875,6 +835,82 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 #### Véhicule (1)
 
 - Char d'Hélios
+
+### Nordique (9)
+
+#### Arme (2)
+
+- Gungnir
+- Mjölnir
+
+#### Artefact (3)
+
+- Andvaranaut
+- Draupnir
+- Gleipnir
+
+#### Nourriture (2)
+
+- Pommes d'Idunn
+- Ódroerir
+
+#### Objet magique (1)
+
+- Brísingamen
+
+#### Véhicule (1)
+
+- Skidbladnir
+
+### Chinoise (2)
+
+#### Arme (1)
+
+- Ruyi Jingu Bang
+
+#### Nourriture (1)
+
+- Pêches d'immortalité
+
+### Égyptienne (2)
+
+#### Objet magique (1)
+
+- Oeil d'Horus
+
+#### Véhicule (1)
+
+- Barque solaire de Rê
+
+### Arthurienne (3)
+
+#### Arme (1)
+
+- Excalibur
+
+#### Artefact (1)
+
+- Saint Graal
+
+#### Objet magique (1)
+
+- Fourreau d'Excalibur
+
+### Celtique Irlandaise (5)
+
+#### Arme (3)
+
+- Claíomh Solais
+- Gáe Bulg
+- Lance de Lugh
+
+#### Artefact (1)
+
+- Lia Fáil
+
+#### Objet magique (1)
+
+- Chaudron du Dagda
 
 ### Hindouisme (3)
 
@@ -909,42 +945,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 
 - Tablette des Destinées
 
-### Nordique (9)
-
-#### Arme (2)
-
-- Gungnir
-- Mjölnir
-
-#### Artefact (3)
-
-- Andvaranaut
-- Draupnir
-- Gleipnir
-
-#### Nourriture (2)
-
-- Pommes d'Idunn
-- Ódroerir
-
-#### Objet magique (1)
-
-- Brísingamen
-
-#### Véhicule (1)
-
-- Skidbladnir
-
-### Égyptienne (2)
-
-#### Objet magique (1)
-
-- Oeil d'Horus
-
-#### Véhicule (1)
-
-- Barque solaire de Rê
-
 ---
 
 ## Thèmes du mode Liste
@@ -952,8 +952,7 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 27 thèmes proposés par le quiz Liste. Ceux marqués « (champ) » se déduisent
 automatiquement d'un ou plusieurs champs existants (mythologie, race,
 godType…) ; les autres reposent sur le champ `listThemes`, renseigné à la
-main sur les entités concernées et modifiable depuis le formulaire
-d'ajout/édition.
+main sur les entités concernées dans `prepopulate.json`.
 
 | Thème | Taille | Essais autorisés | Source |
 |---|---|---|---|
