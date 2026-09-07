@@ -2,6 +2,11 @@
 
 ## V3
 
+#### V3.4.2
+
+- Orthos rejoint le type de monstre « Chien » (auparavant « Chien à Deux Têtes »), commun à Cerbère, Lélaps et Garm
+  - Entité (Mise à jour) : Orthos
+
 #### V3.4.1
 
 - Ajout de 3 nouvelles entités niveau 3 : Shango (Yoruba), Hinezumi (Japonaise), Huoshu (Chinoise)

@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.4.1
+### Latest addition — V3.4.2
 
-26 new level-3 entities: Shango, Hinezumi, Huoshu, and 23 gods/monsters/heroes from Smite and/or Smite 2 that were still missing — Medusa, Arachne, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo and Cu Chulainn.
+Orthos now shares the "Dog" monster type with Cerberus, Lelaps and Garm (previously its own distinct "Two-Headed Dog" type).
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.4.1
+### Dernier ajout — V3.4.2
 
-26 nouvelles entités niveau 3 : Shango, Hinezumi, Huoshu, ainsi que 23 dieux/monstres/héros présents dans Smite et/ou Smite 2 encore absents de la base — Méduse, Arachné, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo et Cu Chulainn.
+Orthos rejoint le type de monstre « Chien », commun à Cerbère, Lélaps et Garm (auparavant un type distinct « Chien à Deux Têtes »).
 
 ### Démarrage
 
