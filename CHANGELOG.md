@@ -2,6 +2,11 @@
 
 ## V3
 
+### V3.3.0
+
+- Retrait complet de la fonctionnalité d'ajout, de modification et de suppression manuelle d'une entité, d'un lieu ou d'un artéfact depuis l'application (écrans « Ajouter »/« Modifier », 7 fragments et leurs layouts, actions de navigation associées) : un tel changement aurait de toute façon été écrasé au prochain rechargement de la base depuis prepopulate.json
+
+
 #### V3.2.8
 
 - prepopulate.json n'était lu qu'au premier lancement (base vide) ; les corrections et ajouts de contenu publiés dans les mises à jour n'atteignaient donc jamais les installations déjà lancées une fois. La base se resynchronise désormais avec prepopulate.json à chaque changement détecté de son contenu (comparaison par hash), sans jamais écraser une entrée créée ou éditée par l'utilisateur (nouveau champ `userModified`, Room v7, migration non destructive)

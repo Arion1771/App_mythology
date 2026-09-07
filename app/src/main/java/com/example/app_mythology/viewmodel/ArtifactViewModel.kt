@@ -5,7 +5,6 @@ import androidx.lifecycle.*
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.repository.ArtifactRepository
-import kotlinx.coroutines.launch
 
 class ArtifactViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -44,8 +43,4 @@ class ArtifactViewModel(application: Application) : AndroidViewModel(application
     fun filterByType(type: String) { _filterMode.value = FilterMode.BY_TYPE; _filterValue.value = type }
     fun filterByMythology(mythology: String) { _filterMode.value = FilterMode.BY_MYTHOLOGY; _filterValue.value = mythology }
     fun search(query: String) { _filterMode.value = FilterMode.SEARCH; _filterValue.value = query }
-
-    fun insert(artifact: ArtifactEntity) = viewModelScope.launch { repository.insert(artifact) }
-    fun update(artifact: ArtifactEntity) = viewModelScope.launch { repository.update(artifact) }
-    fun delete(artifact: ArtifactEntity) = viewModelScope.launch { repository.delete(artifact) }
 }
