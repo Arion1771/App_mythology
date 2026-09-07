@@ -2,6 +2,11 @@
 
 ## V3
 
+### V3.4.0
+
+- prepopulate.json devient la base complète dans sa forme finale : au lancement, dès que son contenu change (comparaison par hash), la base locale est intégralement vidée puis rechargée à l'identique du JSON, remplaçant la resynchronisation protectrice de V3.2.8
+- Champ `userModified` (V3.2.8) retiré ; Room passe en version 8
+
 ### V3.3.0
 
 - Retrait complet de la fonctionnalité d'ajout, de modification et de suppression manuelle d'une entité, d'un lieu ou d'un artéfact depuis l'application (écrans « Ajouter »/« Modifier », 7 fragments et leurs layouts, actions de navigation associées) : un tel changement aurait de toute façon été écrasé au prochain rechargement de la base depuis prepopulate.json

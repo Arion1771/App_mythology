@@ -9,10 +9,6 @@ interface PlaceDao {
     @Query("SELECT * FROM places ORDER BY name ASC")
     fun getAll(): LiveData<List<PlaceEntity>>
 
-    /** Chargement ponctuel (non observé), utilisé pour la resynchronisation depuis prepopulate.json. */
-    @Query("SELECT * FROM places")
-    suspend fun getAllSync(): List<PlaceEntity>
-
     @Query("SELECT * FROM places WHERE id = :id")
     suspend fun getById(id: Int): PlaceEntity?
 
@@ -38,17 +34,9 @@ interface PlaceDao {
     fun search(query: String): LiveData<List<PlaceEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(place: PlaceEntity): Long
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(places: List<PlaceEntity>)
 
-    @Update
-    suspend fun update(place: PlaceEntity)
-
-    @Delete
-    suspend fun delete(place: PlaceEntity)
-
-    @Query("DELETE FROM places WHERE id = :id")
-    suspend fun deleteById(id: Int)
+    /** Base entièrement pilotée par prepopulate.json : vidée avant chaque rechargement complet. */
+    @Query("DELETE FROM places")
+    suspend fun deleteAll()
 }
