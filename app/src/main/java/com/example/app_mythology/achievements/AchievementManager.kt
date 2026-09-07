@@ -13,6 +13,7 @@ object AchievementManager {
 
     private const val PREFS_NAME = "achievements"
     private const val KEY_UNLOCKED = "unlocked_ids"
+    private const val KEY_OBTAINED_ENTITIES = "obtained_entity_names"
 
     private lateinit var prefs: SharedPreferences
 
@@ -45,6 +46,25 @@ object AchievementManager {
         val current = unlockedIds()
         if (memberIds.all { it in current }) {
             unlock(metaId)
+        }
+    }
+
+    private fun obtainedEntityNames(): Set<String> =
+        prefs.getStringSet(KEY_OBTAINED_ENTITIES, emptySet()) ?: emptySet()
+
+    /** Mémorise qu'une entité a été répondue correctement au moins une fois, pour les succès de collection. */
+    fun markEntityObtained(name: String) {
+        val current = obtainedEntityNames()
+        if (name in current) return
+        val updated = HashSet(current)
+        updated.add(name)
+        prefs.edit().putStringSet(KEY_OBTAINED_ENTITIES, updated).apply()
+    }
+
+    /** Débloque [achievementId] si toutes les entités de [targetNames] ont déjà été obtenues au moins une fois. */
+    fun unlockIfAllObtained(targetNames: Set<String>, achievementId: String) {
+        if (targetNames.isNotEmpty() && obtainedEntityNames().containsAll(targetNames)) {
+            unlock(achievementId)
         }
     }
 }

@@ -2,6 +2,10 @@
 
 ## V3
 
+#### V3.4.3
+
+- Ajout de deux succès de collection, débloqués dès que toutes les entités d'une catégorie ont été obtenues au moins une fois en quiz Classique ou QCM, toutes sessions confondues : « C'est bien, bon toutou » (toutes les entités de type Chien) et « Très bizarre ton Zoo » (toutes les entités portant le tag Animal)
+
 #### V3.4.2
 
 - Orthos rejoint le type de monstre « Chien » (auparavant « Chien à Deux Têtes »), commun à Cerbère, Lélaps et Garm
