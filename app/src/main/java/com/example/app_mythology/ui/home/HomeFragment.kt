@@ -23,10 +23,6 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_home_to_browseChoice)
         }
 
-        view.findViewById<Button>(R.id.btn_add).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_addChoice)
-        }
-
         view.findViewById<Button>(R.id.btn_quiz).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_quizChoice)
         }

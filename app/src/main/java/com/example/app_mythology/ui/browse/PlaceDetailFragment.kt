@@ -3,11 +3,9 @@ package com.example.app_mythology.ui.browse
 import android.os.Bundle
 import android.view.*
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.viewmodel.PlaceViewModel
@@ -20,7 +18,6 @@ class PlaceDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         placeId = arguments?.getInt("placeId") ?: -1
-        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -60,22 +57,5 @@ class PlaceDetailFragment : Fragment() {
         val row = view.findViewById<View>(rowId)
         if (value.isNullOrBlank()) { row.isVisible = false }
         else { row.isVisible = true; view.findViewById<TextView>(tvId).text = value }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_entity_detail, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_edit -> {
-                findNavController().navigate(
-                    R.id.action_placeDetail_to_editPlace,
-                    bundleOf("placeId" to placeId)
-                )
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

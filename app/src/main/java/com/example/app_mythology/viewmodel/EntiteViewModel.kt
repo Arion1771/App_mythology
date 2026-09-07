@@ -5,7 +5,6 @@ import androidx.lifecycle.*
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.repository.EntiteRepository
-import kotlinx.coroutines.launch
 
 class EntiteViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -52,8 +51,4 @@ class EntiteViewModel(application: Application) : AndroidViewModel(application) 
         _filterMode.value = FilterMode.BY_MYTHOLOGY_AND_RACE; _filterValue.value = "$mythology|$race"
     }
     fun search(query: String) { _filterMode.value = FilterMode.SEARCH; _filterValue.value = query }
-
-    fun insert(entite: EntiteEntity) = viewModelScope.launch { repository.insert(entite) }
-    fun update(entite: EntiteEntity) = viewModelScope.launch { repository.update(entite) }
-    fun delete(entite: EntiteEntity) = viewModelScope.launch { repository.delete(entite) }
 }
