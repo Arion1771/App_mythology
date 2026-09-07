@@ -4,13 +4,17 @@
 
 **Mythos** is an offline Android reference and quiz app about world mythologies (Greek, Norse, Egyptian, Arthurian, and more).
 
-The built-in database catalogs mythological entities (gods, heroes, monsters…), places and artifacts. You can browse and search it freely, open the detailed sheet for any entry, and add or edit entries directly from the app.
+The built-in database catalogs mythological entities (gods, heroes, monsters…), places and artifacts. You can browse and search it freely and open the detailed sheet for any entry.
 
 Three quiz modes let you test your knowledge — Classic (a clue, guess the name), Multiple-choice (same clue, pick the right name among 4), and List (find every entry matching a chosen theme) — available across entities, places and artifacts depending on the mode, each with several difficulty levels or size-based attempt limits. A dedicated help screen (the "?" icon on the quiz selection screen) explains exactly how each one works.
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
 ### Changes since the last release (V3.2.7)
+
+#### V3.3.0
+
+- Fully removed the in-app feature to manually add, edit and delete an entity, place or artifact ("Ajouter"/"Modifier" screens, 7 fragments and their layouts, related navigation actions): such a change would have been overwritten at the next database reload from prepopulate.json anyway
 
 #### V3.2.8
 
@@ -46,13 +50,17 @@ The app isn't published on the Play Store — it has to be built and installed m
 
 **Mythos** est une application Android de référence et de quiz hors-ligne sur les mythologies du monde (grecque, nordique, égyptienne, arthurienne, et bien d'autres).
 
-La base de données intégrée recense des entités mythologiques (dieux, héros, monstres…), des lieux et des artéfacts. Vous pouvez la parcourir et la rechercher librement, consulter la fiche détaillée de chaque élément, et ajouter ou modifier des entrées directement depuis l'application.
+La base de données intégrée recense des entités mythologiques (dieux, héros, monstres…), des lieux et des artéfacts. Vous pouvez la parcourir et la rechercher librement, et consulter la fiche détaillée de chaque élément.
 
 Trois types de quiz permettent de tester vos connaissances — Classique (un indice, devinez le nom), QCM (même indice, choisissez le bon nom parmi 4) et Liste (retrouvez toutes les entrées correspondant à un thème choisi) — disponibles selon le mode sur les entités, les lieux et les artéfacts, chacun avec plusieurs niveaux de difficulté ou des paliers d'essais selon la taille du thème. Un écran d'aide dédié (icône « ? » sur l'écran de choix du quiz) explique en détail le fonctionnement de chacun.
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.7)
+
+#### V3.3.0
+
+- Retrait complet de la fonctionnalité d'ajout, de modification et de suppression manuelle d'une entité, d'un lieu ou d'un artéfact depuis l'application (écrans « Ajouter »/« Modifier », 7 fragments et leurs layouts, actions de navigation associées) : un tel changement aurait de toute façon été écrasé au prochain rechargement de la base depuis prepopulate.json
 
 #### V3.2.8
 
