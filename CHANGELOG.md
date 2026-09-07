@@ -2,6 +2,27 @@
 
 ## V3
 
+#### V3.4.4
+
+- Dans le quiz Liste, les thèmes de mythologie complète (grecque, romaine, hindoue, chinoise, shinto, Amérique du Sud) affichent désormais leurs cartes sous-groupées par race (ordre alphabétique), et les thèmes de race complète (Dieux, Monstres, Héros) ainsi que le thème global (Entités) sous-groupées par mythologie
+- Nouvel ordre canonique des mythologies, par nombre total d'entités décroissant (remplace l'ordre alphabétique) : appliqué à ces regroupements du quiz Liste, au menu déroulant de filtre par mythologie en mode Parcourir (entités et artéfacts), et à l'ensemble de Base.md (sections Entités, Lieux, Artéfacts)
+- Correction incidente dans Base.md d'une mention obsolète du formulaire d'ajout/édition (retiré en V3.3.0)
+
+#### V3.4.3
+
+- Ajout de deux succès de collection, débloqués dès que toutes les entités d'une catégorie ont été obtenues au moins une fois en quiz Classique ou QCM, toutes sessions confondues : « C'est bien, bon toutou » (toutes les entités de type Chien) et « Très bizarre ton Zoo » (toutes les entités portant le tag Animal)
+
+#### V3.4.2
+
+- Orthos rejoint le type de monstre « Chien » (auparavant « Chien à Deux Têtes »), commun à Cerbère, Lélaps et Garm
+  - Entité (Mise à jour) : Orthos
+
+#### V3.4.1
+
+- Ajout de 3 nouvelles entités niveau 3 : Shango (Yoruba), Hinezumi (Japonaise), Huoshu (Chinoise)
+- Ajout des 23 dieux/monstres/héros présents dans Smite et/ou Smite 2 encore absents de la base, tous niveau 3 : Méduse et Arachné (Grecque), Bakasura, Kumbhakarna, Rama, Ravana et Vamana (Hindouisme), Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang et Zhong Kui (Chinoise), Xbalanque (Maya), Sol, Ullr et Ymir (Nordique), Danzaburou et Kuzenbo (Japonaise), Cu Chulainn (Celtique Irlandaise)
+  - Entité (Ajout) : Shango, Hinezumi, Huoshu, Méduse, Arachné, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo, Cu Chulainn
+
 ### V3.4.0
 
 - prepopulate.json devient la base complète dans sa forme finale : au lancement, dès que son contenu change (comparaison par hash), la base locale est intégralement vidée puis rechargée à l'identique du JSON, remplaçant la resynchronisation protectrice de V3.2.8

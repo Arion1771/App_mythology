@@ -5,12 +5,17 @@ import androidx.lifecycle.*
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.repository.ArtifactRepository
+import com.example.app_mythology.repository.EntiteRepository
 
 class ArtifactViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = ArtifactRepository.getInstance(
         AppDatabase.getInstance(application)
     )
+
+    // Sert uniquement à récupérer l'ordre canonique des mythologies (par nombre d'entités
+    // décroissant), pour trier la liste des mythologies ayant des artéfacts de la même façon.
+    private val entiteRepository = EntiteRepository.getInstance(AppDatabase.getInstance(application))
 
     private val _filterMode = MutableLiveData<FilterMode>(FilterMode.ALL)
     private val _filterValue = MutableLiveData<String>("")
@@ -36,7 +41,18 @@ class ArtifactViewModel(application: Application) : AndroidViewModel(application
         addSource(_filterValue) { refresh() }
     }
 
-    val mythologies: LiveData<List<String>> = repository.mythologies
+    // Mythologies ayant des artéfacts, triées selon l'ordre canonique (nombre d'entités
+    // décroissant) fourni par EntiteRepository plutôt que par ordre alphabétique.
+    val mythologies: MediatorLiveData<List<String>> = MediatorLiveData<List<String>>().apply {
+        var ranked: List<String> = emptyList()
+        var raw: List<String> = emptyList()
+        fun refresh() {
+            val rankIndex = ranked.withIndex().associate { (i, m) -> m to i }
+            value = raw.sortedWith(compareBy({ rankIndex[it] ?: Int.MAX_VALUE }, { it }))
+        }
+        addSource(entiteRepository.mythologies) { ranked = it; refresh() }
+        addSource(repository.mythologies) { raw = it; refresh() }
+    }
     val types: LiveData<List<String>> = repository.types
 
     fun showAll() { _filterMode.value = FilterMode.ALL; _filterValue.value = "" }

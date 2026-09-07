@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.4.0
+### Latest addition — V3.4.4
 
-prepopulate.json is now the complete database in its final form: on launch, whenever its content changes, the local database is fully wiped and reloaded to match it exactly, replacing the protective resync introduced in V3.2.8.
+The List quiz now sub-groups entities by race within full-mythology themes and by mythology within full-race and global themes, and mythologies are now ordered by total entity count (descending) everywhere they're sorted in the app — List quiz grouping, the Browse mythology filter dropdowns, and Base.md — instead of alphabetically.
 
 ### Getting started
 
@@ -49,9 +49,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.4.0
+### Dernier ajout — V3.4.4
 
-prepopulate.json est désormais la base complète dans sa forme finale : au lancement, dès que son contenu change, la base locale est intégralement vidée puis rechargée à l'identique, remplaçant la resynchronisation protectrice introduite en V3.2.8.
+Le quiz Liste sous-groupe désormais les entités par race dans les thèmes de mythologie complète, et par mythologie dans les thèmes de race complète et le thème global ; les mythologies sont maintenant triées par nombre d'entités décroissant partout où l'application les trie — regroupements du quiz Liste, menus déroulants de filtre en mode Parcourir, et Base.md — au lieu d'un tri alphabétique.
 
 ### Démarrage
 
