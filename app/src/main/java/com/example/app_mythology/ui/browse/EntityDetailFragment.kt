@@ -20,7 +20,6 @@ class EntityDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         entityId = arguments?.getInt("entityId") ?: -1
-        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -132,22 +131,5 @@ class EntityDetailFragment : Fragment() {
         "Asura" -> "Asura"; "Naga" -> "Naga"; "Rakshasa" -> "Rakshasa"
         "Humain" -> "Humain"; "Autre" -> "Autre"
         else -> t
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_entity_detail, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_edit -> {
-                findNavController().navigate(
-                    R.id.action_entityDetail_to_editEntity,
-                    bundleOf("entityId" to entityId)
-                )
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

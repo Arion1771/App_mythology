@@ -21,12 +21,6 @@ class ArtifactRepository(private val dao: ArtifactDao) {
     suspend fun getRandomByDifficulty(difficulty: Int, limit: Int) =
         dao.getRandomByDifficulty(difficulty, limit)
 
-    suspend fun insert(artifact: ArtifactEntity): Long = dao.insert(artifact)
-    suspend fun insertAll(artifacts: List<ArtifactEntity>) = dao.insertAll(artifacts)
-    suspend fun update(artifact: ArtifactEntity) = dao.update(artifact)
-    suspend fun delete(artifact: ArtifactEntity) = dao.delete(artifact)
-    suspend fun deleteById(id: Int) = dao.deleteById(id)
-
     companion object {
         @Volatile private var INSTANCE: ArtifactRepository? = null
         fun getInstance(db: AppDatabase): ArtifactRepository {
