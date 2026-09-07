@@ -36,17 +36,9 @@ interface ArtifactDao {
     fun getDistinctTypes(): LiveData<List<String>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(artifact: ArtifactEntity): Long
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(artifacts: List<ArtifactEntity>)
 
-    @Update
-    suspend fun update(artifact: ArtifactEntity)
-
-    @Delete
-    suspend fun delete(artifact: ArtifactEntity)
-
-    @Query("DELETE FROM artifacts WHERE id = :id")
-    suspend fun deleteById(id: Int)
+    /** Base entièrement pilotée par prepopulate.json : vidée avant chaque rechargement complet. */
+    @Query("DELETE FROM artifacts")
+    suspend fun deleteAll()
 }

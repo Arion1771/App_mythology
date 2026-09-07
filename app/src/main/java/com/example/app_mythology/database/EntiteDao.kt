@@ -45,17 +45,9 @@ interface EntiteDao {
     fun getDistinctRaces(): LiveData<List<String>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(entite: EntiteEntity): Long
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(entites: List<EntiteEntity>)
 
-    @Update
-    suspend fun update(entite: EntiteEntity)
-
-    @Delete
-    suspend fun delete(entite: EntiteEntity)
-
-    @Query("DELETE FROM entites WHERE id = :id")
-    suspend fun deleteById(id: Int)
+    /** Base entièrement pilotée par prepopulate.json : vidée avant chaque rechargement complet. */
+    @Query("DELETE FROM entites")
+    suspend fun deleteAll()
 }
