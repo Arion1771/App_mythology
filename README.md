@@ -12,6 +12,12 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V3.2.7)
 
+#### V3.4.1
+
+- Added 3 new level-3 entities: Shango (Yoruba), Hinezumi (Japanese), Huoshu (Chinese)
+- Added the 23 gods/monsters/heroes featured in Smite and/or Smite 2 that were still missing from the database, all level 3: Méduse and Arachné (Greek), Bakasura, Kumbhakarna, Rama, Ravana and Vamana (Hindu), Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang and Zhong Kui (Chinese), Xbalanque (Maya), Sol, Ullr and Ymir (Norse), Danzaburou and Kuzenbo (Japanese), Cu Chulainn (Irish Celtic)
+  - Entity (Added): Shango, Hinezumi, Huoshu, Méduse, Arachné, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo, Cu Chulainn
+
 #### V3.4.0
 
 - prepopulate.json becomes the complete database in its final form: at launch, as soon as its content changes (hash comparison), the local database is fully emptied then reloaded exactly as in the JSON, replacing the protective resync of V3.2.8
@@ -62,6 +68,12 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V3.2.7)
+
+#### V3.4.1
+
+- Ajout de 3 nouvelles entités niveau 3 : Shango (Yoruba), Hinezumi (Japonaise), Huoshu (Chinoise)
+- Ajout des 23 dieux/monstres/héros présents dans Smite et/ou Smite 2 encore absents de la base, tous niveau 3 : Méduse et Arachné (Grecque), Bakasura, Kumbhakarna, Rama, Ravana et Vamana (Hindouisme), Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang et Zhong Kui (Chinoise), Xbalanque (Maya), Sol, Ullr et Ymir (Nordique), Danzaburou et Kuzenbo (Japonaise), Cu Chulainn (Celtique Irlandaise)
+  - Entité (Ajout) : Shango, Hinezumi, Huoshu, Méduse, Arachné, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo, Cu Chulainn
 
 #### V3.4.0
 

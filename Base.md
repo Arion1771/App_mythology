@@ -3,13 +3,13 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **489 entités**, **22 lieux**, **43 artéfacts**.
+Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 
 ---
 
 ## Entités
 
-486 entités, groupées par mythologie puis par race.
+515 entités, groupées par mythologie puis par race.
 
 ### Abrahamique (15)
 
@@ -90,7 +90,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Artio
 - Morrigan
 
-### Celtique Irlandaise (12)
+### Celtique Irlandaise (13)
 
 #### Dieu (11)
 
@@ -106,24 +106,41 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Ériu
 - Étain
 
+#### Héros (1)
+
+- Cu Chulainn
+
 #### Monstre (1)
 
 - Banshee
 
-### Chinoise (21)
+### Chinoise (31)
 
-#### Dieu (6)
+#### Dieu (12)
 
+- Chang'e
 - Erlang Shen
+- Guan Yu
 - Hebo
+- Hou Yi
 - Nezha
 - Nuwa
 - Pangu
+- Sun Wukong
 - Xingtian
+- Yu Huang
+- Zhong Kui
 
-#### Monstre (3)
+#### Héros (2)
+
+- Hua Mulan
+- Jing Wei
+
+#### Monstre (5)
 
 - Ao Guang
+- Da Ji
+- Huoshu
 - Phénix
 - Qilin
 
@@ -170,7 +187,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Moritasgus
 - Teutatès
 
-### Grecque (197)
+### Grecque (199)
 
 #### Cyclope (4)
 
@@ -265,12 +282,13 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Cottos
 - Gygès
 
-#### Héros (37)
+#### Héros (38)
 
 - Achille
 - Agamemnon
 - Ajax le Grand
 - Ajax le Petit
+- Arachné
 - Atalante
 - Bellérophon
 - Calaïs
@@ -305,7 +323,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Ulysse
 - Zétés
 
-#### Monstre (52)
+#### Monstre (53)
 
 - Aigle du Caucase
 - Amalthée
@@ -339,6 +357,7 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Lion de Némée
 - Lélaps
 - Maron
+- Méduse
 - Naïade
 - Nessos
 - Néphélée
@@ -405,9 +424,9 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 
 - Pele
 
-### Hindouisme (8)
+### Hindouisme (13)
 
-#### Dieu (8)
+#### Dieu (10)
 
 - Agni
 - Bouddha
@@ -415,21 +434,38 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Ganesh
 - Indra
 - Kali
+- Rama
 - Shiva
+- Vamana
 - Vishnou
 
-### Japonaise (6)
+#### Géant (1)
 
-#### Monstre (6)
+- Kumbhakarna
+
+#### Héros (1)
+
+- Ravana
+
+#### Monstre (1)
+
+- Bakasura
+
+### Japonaise (9)
+
+#### Monstre (9)
 
 - Bake Kujira
+- Danzaburou
+- Hinezumi
 - Kappa
 - Kitsune
+- Kuzenbo
 - Tanuki
 - Yamata no Orochi
 - Yokai
 
-### Maya (10)
+### Maya (11)
 
 #### Dieu (10)
 
@@ -444,6 +480,10 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Ixchel
 - Kukulkan
 
+#### Héros (1)
+
+- Xbalanque
+
 ### Mésopotamienne (3)
 
 #### Dieu (2)
@@ -455,9 +495,9 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 
 - Tiamat
 
-### Nordique (46)
+### Nordique (49)
 
-#### Dieu (17)
+#### Dieu (19)
 
 - 3 Nornes
 - Balder
@@ -473,15 +513,18 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Odin
 - Sif
 - Skadi
+- Sol
 - Thor
 - Tyr
+- Ullr
 - Valkyrie
 
-#### Géant (3)
+#### Géant (4)
 
 - Loki
 - Surtr
 - Utgard-Loki
+- Ymir
 
 #### Héros (1)
 
@@ -670,12 +713,13 @@ Total : **489 entités**, **22 lieux**, **43 artéfacts**.
 - Baron Samedi
 - Maman Brigitte
 
-### Yoruba (3)
+### Yoruba (4)
 
-#### Dieu (3)
+#### Dieu (4)
 
 - Obatala
 - Olorun
+- Shango
 - Yemoja
 
 ### Égyptienne (29)
@@ -913,17 +957,17 @@ d'ajout/édition.
 
 | Thème | Taille | Essais autorisés | Source |
 |---|---|---|---|
-| Mythologie grecque | 194 | 10 | champ |
+| Mythologie grecque | 199 | 10 | champ |
 | Mythologie romaine | 71 | 10 | champ |
-| Mythologie hindoue | 8 | 3 | champ |
-| Mythologie chinoise | 21 | 5 | champ |
+| Mythologie hindoue | 13 | 3 | champ |
+| Mythologie chinoise | 31 | 5 | champ |
 | Mythologie shinto | 9 | 3 | champ |
-| Mythologie d'Amérique du Sud | 12 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
-| Dieux | 214 | 10 | champ |
-| Monstres | 102 | 10 | champ |
-| Héros | 43 | 5 | champ |
+| Mythologie d'Amérique du Sud | 13 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
+| Dieux | 225 | 10 | champ |
+| Monstres | 109 | 10 | champ |
+| Héros | 49 | 5 | champ |
 | Artefacts | 43 | 5 | tous les artéfacts |
-| Entités | 489 | 10 | toutes les entités |
+| Entités | 515 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
@@ -935,7 +979,7 @@ d'ajout/édition.
 | Signes du zodiaque | 24 | 5 | champ (Classiques / Chinois) |
 | Grées | 3 | 3 | champ |
 | Érinyes | 3 | 3 | champ |
-| Yokais | 5 | 3 | `listThemes` |
+| Yokais | 8 | 3 | `listThemes` |
 | Argonautes | 9 | 3 | `listThemes` |
 | Chevaliers de la table ronde | 10 | 3 | `listThemes` |
 | Grands dieux d'Égypte | 12 | 3 | `listThemes` |
