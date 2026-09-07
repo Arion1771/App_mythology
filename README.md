@@ -10,21 +10,11 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Changes since the last release (V3.2.7)
+### Latest version — V3.4.4
 
-#### V3.4.0
-
-- prepopulate.json becomes the complete database in its final form: at launch, as soon as its content changes (hash comparison), the local database is fully emptied then reloaded exactly as in the JSON, replacing the protective resync of V3.2.8
-- `userModified` field (V3.2.8) removed; Room moves to version 8
-
-#### V3.3.0
-
-- Fully removed the in-app feature to manually add, edit and delete an entity, place or artifact ("Ajouter"/"Modifier" screens, 7 fragments and their layouts, related navigation actions): such a change would have been overwritten at the next database reload from prepopulate.json anyway
-
-#### V3.2.8
-
-- prepopulate.json was only read on first launch (empty database), so content fixes and additions published in updates never reached installs already launched once. The database now resyncs with prepopulate.json whenever a change in its content is detected (hash comparison), without ever overwriting an entry created or edited by the user (new `userModified` field, Room v7, non-destructive migration)
-- Accepted transitional limitation: rows already in the database before this update start out protected by default, so the fixes already published (V3.2.1 to V3.2.7) will not automatically reach existing installs; only future content will resync normally
+- In the List quiz, the full-mythology themes (Greek, Roman, Hindu, Chinese, Shinto, South America) now show their cards sub-grouped by race (alphabetical order), and the full-race themes (Dieux, Monstres, Héros) and the global theme (Entités) sub-grouped by mythology
+- New canonical order of mythologies, by decreasing total number of entities (replaces alphabetical order): applied to these List quiz groupings, to the mythology filter drop-down in Browse mode (entities and artifacts), and to the whole of Base.md (Entities, Places, Artifacts sections)
+- Incidental fix in Base.md of an outdated mention of the add/edit form (removed in V3.3.0)
 
 ### Getting started
 
@@ -61,21 +51,11 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Nouveautés depuis la dernière release (V3.2.7)
+### Dernière version — V3.4.4
 
-#### V3.4.0
-
-- prepopulate.json devient la base complète dans sa forme finale : au lancement, dès que son contenu change (comparaison par hash), la base locale est intégralement vidée puis rechargée à l'identique du JSON, remplaçant la resynchronisation protectrice de V3.2.8
-- Champ `userModified` (V3.2.8) retiré ; Room passe en version 8
-
-#### V3.3.0
-
-- Retrait complet de la fonctionnalité d'ajout, de modification et de suppression manuelle d'une entité, d'un lieu ou d'un artéfact depuis l'application (écrans « Ajouter »/« Modifier », 7 fragments et leurs layouts, actions de navigation associées) : un tel changement aurait de toute façon été écrasé au prochain rechargement de la base depuis prepopulate.json
-
-#### V3.2.8
-
-- prepopulate.json n'était lu qu'au premier lancement (base vide) ; les corrections et ajouts de contenu publiés dans les mises à jour n'atteignaient donc jamais les installations déjà lancées une fois. La base se resynchronise désormais avec prepopulate.json à chaque changement détecté de son contenu (comparaison par hash), sans jamais écraser une entrée créée ou éditée par l'utilisateur (nouveau champ `userModified`, Room v7, migration non destructive)
-- Limite transitoire assumée : les lignes déjà en base avant cette mise à jour démarrent protégées par défaut, donc les correctifs déjà publiés (V3.2.1 à V3.2.7) ne rattraperont pas automatiquement les installations existantes ; seuls les contenus futurs se resynchroniseront normalement
+- Dans le quiz Liste, les thèmes de mythologie complète (grecque, romaine, hindoue, chinoise, shinto, Amérique du Sud) affichent désormais leurs cartes sous-groupées par race (ordre alphabétique), et les thèmes de race complète (Dieux, Monstres, Héros) ainsi que le thème global (Entités) sous-groupées par mythologie
+- Nouvel ordre canonique des mythologies, par nombre total d'entités décroissant (remplace l'ordre alphabétique) : appliqué à ces regroupements du quiz Liste, au menu déroulant de filtre par mythologie en mode Parcourir (entités et artéfacts), et à l'ensemble de Base.md (sections Entités, Lieux, Artéfacts)
+- Correction incidente dans Base.md d'une mention obsolète du formulaire d'ajout/édition (retiré en V3.3.0)
 
 ### Démarrage
 

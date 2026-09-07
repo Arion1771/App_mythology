@@ -2432,7 +2432,7 @@
       "name": "Orthos",
       "mythology": "Grecque",
       "race": "Monster",
-      "monsterType": "Chien à Deux Têtes",
+      "monsterType": "Chien",
       "description": "Chien à deux têtes gardien des troupeaux de Géryon, tué par Héraclès",
       "clue": "Chien à deux têtes, gardien du troupeau de Géryon",
       "difficulty": 3,
@@ -2544,6 +2544,29 @@
       "clue": "Dieu du vent de l'ouest",
       "difficulty": 3,
       "tags": "Vent"
+    },
+    {
+      "name": "Méduse",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Gorgone",
+      "description": "Autrefois prêtresse mortelle punie par Athéna pour avoir été profanée dans son temple, ses cheveux sont changés en serpents et son regard pétrifie quiconque le croise.",
+      "popularCulture": "Smite, Smite 2, Percy Jackson, Le Choc des Titans, God of War, Astronomie",
+      "clue": "Gorgone dont le regard pétrifie",
+      "difficulty": 3,
+      "tags": "Animal, Ombres"
+    },
+    {
+      "name": "Arachné",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Changée en araignée par Athéna après l'avoir défiée dans un concours de tissage",
+      "description": "Tisserande d'un talent inégalé, elle défie Athéna en tissant les frasques amoureuses des dieux et, humiliée par la déesse, tente de se pendre avant d'être transformée en araignée.",
+      "popularCulture": "Smite, Percy Jackson",
+      "clue": "Changée en araignée par Athéna après un concours de tissage",
+      "difficulty": 3,
+      "tags": "Animal, Artisanat, Humain"
     },
     {
       "id": 195,
@@ -4076,6 +4099,43 @@
       "tags": "Animal"
     },
     {
+      "name": "Sol",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Autre",
+      "domain": "Déesse du Soleil, poursuivie éternellement par le loup Skoll",
+      "description": "Déesse qui conduit le char du soleil à travers le ciel, éternellement pourchassée par le loup Skoll qui finira par l'engloutir au Ragnarök.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Déesse du Soleil pourchassée par un loup",
+      "difficulty": 3,
+      "tags": "Soleil, Ciel"
+    },
+    {
+      "name": "Ullr",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu du tir à l'arc, du ski et des duels",
+      "motherName": "Sif",
+      "description": "Dieu skieur et archer invoqué lors des duels et des serments, son nom apparaît sur d'anciennes amulettes bien que peu de récits le concernant aient survécu.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Dieu du tir à l'arc et du ski",
+      "difficulty": 3,
+      "tags": "Chasse"
+    },
+    {
+      "name": "Ymir",
+      "mythology": "Nordique",
+      "race": "Giant",
+      "giantType": "Géant Jotunns",
+      "domain": "Géant primordial, ancêtre de tous les géants",
+      "description": "Premier être vivant né de la rencontre du feu et de la glace, les dieux le tuent et façonnent le monde à partir de son corps démembré : sa chair devient la terre, son sang les océans, son crâne le ciel.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Géant primordial dont le corps forme le monde",
+      "difficulty": 3,
+      "tags": "Création, Eau, Terre"
+    },
+    {
       "id": 312,
       "name": "Anubis",
       "mythology": "Égyptienne",
@@ -4685,6 +4745,116 @@
       "tags": "Ciel, Guerre, Royauté"
     },
     {
+      "name": "Huoshu",
+      "mythology": "Chinoise",
+      "race": "Monster",
+      "description": "Rongeur légendaire des montagnes volcaniques du sud, sa fourrure tissée donne un tissu ignifuge qui se nettoie en le jetant au feu plutôt qu'en le lavant.",
+      "popularCulture": "Wo Long: Fallen Dynasty",
+      "clue": "Rongeur des volcans à la fourrure ignifuge",
+      "difficulty": 3,
+      "tags": "Feu, Animal"
+    },
+    {
+      "name": "Chang'e",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Déesse de la Lune",
+      "description": "Épouse de l'archer Hou Yi, elle boit seule l'élixir d'immortalité pour l'empêcher de tomber en de mauvaises mains et s'envole jusqu'à la Lune, où elle réside depuis avec un lapin pour seule compagnie.",
+      "popularCulture": "Smite, Over the Moon",
+      "clue": "Déesse de la Lune",
+      "difficulty": 3,
+      "tags": "Lune"
+    },
+    {
+      "name": "Da Ji",
+      "mythology": "Chinoise",
+      "race": "Monster",
+      "monsterType": "Esprit-Renard",
+      "description": "Esprit-renard qui possède le corps d'une concubine pour corrompre un roi tyrannique, elle est présentée comme responsable de sa chute et de la fin de la dynastie Shang.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Esprit-renard corruptrice d'un roi tyrannique",
+      "difficulty": 3,
+      "tags": "Animal, Ruse"
+    },
+    {
+      "name": "Guan Yu",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Dieu de la Guerre, de la Loyauté et de la Fraternité",
+      "description": "Général historique loué pour sa loyauté sans faille, il est déifié après sa mort et devient le protecteur des marchands, des soldats et des sociétés secrètes.",
+      "popularCulture": "Smite, Smite 2, Dynasty Warriors",
+      "clue": "Dieu de la Guerre et de la Loyauté",
+      "difficulty": 3,
+      "tags": "Guerre"
+    },
+    {
+      "name": "Hou Yi",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Dieu archer, sauveur du monde du soleil",
+      "description": "Archer d'exception, il abat neuf des dix soleils qui menaçaient de calciner la terre, avant que son épouse Chang'e ne s'envole vers la Lune avec l'élixir d'immortalité qu'il avait obtenu.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Archer qui abattit neuf soleils",
+      "difficulty": 3,
+      "tags": "Soleil, Chasse"
+    },
+    {
+      "name": "Jing Wei",
+      "mythology": "Chinoise",
+      "race": "Heroes",
+      "ascendantName": "Yandi",
+      "story": "Changée en oiseau après s'être noyée en mer, elle tente inlassablement de combler l'océan de cailloux",
+      "description": "Fille de l'empereur mythique Yandi, elle se noie en mer et renaît sous la forme d'un oiseau acharné à combler l'océan, pierre après pierre, par vengeance envers les flots.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Changée en oiseau après s'être noyée en mer",
+      "difficulty": 3,
+      "tags": "Animal, Eau"
+    },
+    {
+      "name": "Hua Mulan",
+      "mythology": "Chinoise",
+      "race": "Heroes",
+      "story": "Guerrière qui se fait passer pour un homme afin de prendre la place de son père âgé dans l'armée impériale",
+      "description": "Pour épargner à son père infirme la conscription, elle se déguise en homme et part au combat sous une fausse identité, qu'elle dissimule pendant des années de guerre.",
+      "popularCulture": "Smite, Smite 2, Mulan (Disney)",
+      "clue": "Guerrière déguisée en homme pour remplacer son père",
+      "difficulty": 3,
+      "tags": "Guerre, Humain"
+    },
+    {
+      "name": "Sun Wukong",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Roi des Singes, immortel rebelle du Ciel",
+      "description": "Né d'un œuf de pierre, il acquiert l'immortalité et des pouvoirs prodigieux avant de semer le chaos au Palais Céleste, armé d'un bâton capable de changer de taille à volonté.",
+      "popularCulture": "Smite, Smite 2, Dragon Ball, League of Legends, Black Myth: Wukong",
+      "clue": "Roi des Singes armé d'un bâton magique",
+      "difficulty": 3,
+      "tags": "Animal, Magie"
+    },
+    {
+      "name": "Yu Huang",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Empereur de Jade, souverain du Ciel et des dieux",
+      "description": "Souverain suprême du panthéon céleste, il gouverne les dieux depuis son palais céleste et décide du destin des mortels et des immortels selon un ordre bureaucratique strict.",
+      "popularCulture": "Smite",
+      "clue": "Empereur de Jade, souverain du Ciel",
+      "difficulty": 3,
+      "tags": "Ciel, Royauté"
+    },
+    {
+      "name": "Zhong Kui",
+      "mythology": "Chinoise",
+      "race": "God",
+      "domain": "Dieu Pourfendeur des démons et des fantômes",
+      "description": "Érudit qui se suicide après avoir été injustement privé du premier rang à l'examen impérial, il devient dans l'au-delà le roi des fantômes chargé de pourchasser les démons.",
+      "popularCulture": "Smite",
+      "clue": "Pourfendeur des démons et des fantômes",
+      "difficulty": 3,
+      "tags": "Ombres, Mort"
+    },
+    {
       "id": 362,
       "name": "Dagda",
       "mythology": "Celtique Irlandaise",
@@ -4822,6 +4992,18 @@
       "tags": "Arts, Ciel, Guerre, Magie, Nuit"
     },
     {
+      "name": "Cu Chulainn",
+      "mythology": "Celtique Irlandaise",
+      "race": "Heroes",
+      "ascendantName": "Lugh",
+      "story": "Guerrier de l'Ulster doté d'une force surhumaine, pris de fureur guerrière au combat au point de se déformer physiquement",
+      "description": "Fils du dieu Lugh, il défend seul l'Ulster envahi grâce à un pacte lui interdisant tout adversaire autre qu'un seul à la fois, entrant dans des transes guerrières qui le déforment physiquement.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Héros de l'Ulster pris de transes guerrières déformantes",
+      "difficulty": 3,
+      "tags": "Guerre, Humain"
+    },
+    {
       "id": 374,
       "name": "Ah-Muzen-Cab",
       "mythology": "Maya",
@@ -4939,6 +5121,18 @@
       "clue": "Déesse de l'eau",
       "difficulty": 3,
       "tags": "Animal, Eau, Guérison, Nuit, Lune"
+    },
+    {
+      "name": "Xbalanque",
+      "mythology": "Maya",
+      "race": "Heroes",
+      "ascendantName": "Hun Hunahpu",
+      "story": "L'un des Jumeaux Héros du Popol Vuh, il affronte avec son frère Hunahpu les seigneurs de Xibalba dans un jeu de balle rituel",
+      "description": "Avec son frère jumeau Hunahpu, il descend dans le monde souterrain de Xibalba pour venger leur père et déjoue les pièges mortels des seigneurs des enfers lors d'un jeu de balle rituel.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Jumeau héros affrontant les seigneurs de Xibalba",
+      "difficulty": 3,
+      "tags": "Mort, Ombres"
     },
     {
       "id": 384,
@@ -5147,6 +5341,65 @@
       "tags": "Gardien, Terre"
     },
     {
+      "name": "Bakasura",
+      "mythology": "Hindouisme",
+      "race": "Monster",
+      "monsterType": "Asura",
+      "description": "Démon en forme de gigantesque grue envoyé pour terroriser un village, il est vaincu par le jeune Krishna qui se laisse avaler avant de le déchirer de l'intérieur.",
+      "popularCulture": "Smite",
+      "clue": "Démon-grue vaincu par le jeune Krishna",
+      "difficulty": 3,
+      "tags": "Animal"
+    },
+    {
+      "name": "Kumbhakarna",
+      "mythology": "Hindouisme",
+      "race": "Giant",
+      "giantType": "Geant",
+      "description": "Frère de Ravana réputé pour dormir six mois par an et engloutir tout ce qu'il trouve à son réveil, il combat à ses côtés contre Rama avant d'être abattu.",
+      "popularCulture": "Smite",
+      "clue": "Géant réputé pour ses six mois de sommeil annuels",
+      "difficulty": 3,
+      "fatherName": "Vishrava",
+      "tags": "Guerre"
+    },
+    {
+      "name": "Rama",
+      "mythology": "Hindouisme",
+      "race": "God",
+      "domain": "Septième avatar de Vishnou, roi d'Ayodhya",
+      "fatherName": "Dasharatha",
+      "description": "Septième avatar de Vishnou exilé quatorze ans en forêt, il rassemble une armée de singes menée par Hanuman pour délivrer son épouse Sita, enlevée par le roi-démon Ravana.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Avatar de Vishnou, héros du Ramayana",
+      "difficulty": 3,
+      "tags": "Guerre, Royauté"
+    },
+    {
+      "name": "Ravana",
+      "mythology": "Hindouisme",
+      "race": "Heroes",
+      "ascendantName": "Vishrava",
+      "story": "Roi-démon aux dix têtes qui enlève Sita, l'épouse de Rama, déclenchant la guerre relatée dans le Ramayana",
+      "killer": "Rama",
+      "description": "Souverain rakshasa aux dix têtes et vingt bras, aussi savant que puissant, il précipite sa propre chute en enlevant Sita, l'épouse de Rama, provoquant une guerre qui s'achève par sa mort.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Roi-démon aux dix têtes, ravisseur de Sita",
+      "difficulty": 3,
+      "tags": "Guerre, Royauté"
+    },
+    {
+      "name": "Vamana",
+      "mythology": "Hindouisme",
+      "race": "God",
+      "domain": "Cinquième avatar de Vishnou, le nain brahmane",
+      "description": "Cinquième avatar de Vishnou sous la forme d'un nain brahmane, il demande au roi-démon Bali l'aumône de trois pas de terrain puis grandit démesurément pour couvrir la terre et le ciel en deux enjambées.",
+      "popularCulture": "Smite",
+      "clue": "Avatar nain de Vishnou aux trois enjambées cosmiques",
+      "difficulty": 3,
+      "tags": "Terre, Ciel"
+    },
+    {
       "id": 401,
       "name": "Ishtar",
       "mythology": "Mésopotamienne",
@@ -5217,6 +5470,17 @@
       "clue": "Déesse des Rivières, des Esprit et de la Fertilité",
       "difficulty": 2,
       "tags": "Eau, Fertilité"
+    },
+    {
+      "name": "Shango",
+      "mythology": "Yoruba",
+      "race": "God",
+      "domain": "Dieu du tonnerre, de la foudre et de la justice",
+      "description": "Ancien roi mortel de l'empire d'Oyo déifié après sa mort, il exprime son jugement à travers la foudre et brandit une hache à double tranchant symbole de justice.",
+      "popularCulture": "DC Comics",
+      "clue": "Dieu du tonnerre et de la justice, ancien roi d'Oyo",
+      "difficulty": 3,
+      "tags": "Foudre, Justice, Royauté"
     },
     {
       "id": 407,
@@ -5685,6 +5949,39 @@
       "clue": "Serpent à huit têtes terrassé par Susanoo",
       "difficulty": 2,
       "tags": "Animal",
+      "listThemes": "Yokais"
+    },
+    {
+      "name": "Hinezumi",
+      "mythology": "Japonaise",
+      "race": "Monster",
+      "description": "Créature légendaire vivant dans le feu dont la fourrure ignifuge sert à tisser un vêtement immunisé aux flammes, réclamé comme épreuve impossible dans le Conte du Coupeur de Bambous.",
+      "popularCulture": "InuYasha",
+      "clue": "Créature vivant dans le feu à la fourrure ignifuge (Yokai)",
+      "difficulty": 3,
+      "tags": "Feu, Animal",
+      "listThemes": "Yokais"
+    },
+    {
+      "name": "Danzaburou",
+      "mythology": "Japonaise",
+      "race": "Monster",
+      "description": "Tanuki légendaire de l'île de Sado réputé pour ses métamorphoses illusoires si convaincantes qu'il aurait un temps dupé des humains en se faisant passer pour un temple entier.",
+      "popularCulture": "Smite, Smite 2",
+      "clue": "Tanuki métamorphe légendaire de l'île de Sado (Yokai)",
+      "difficulty": 3,
+      "tags": "Animal, Ruse",
+      "listThemes": "Yokais"
+    },
+    {
+      "name": "Kuzenbo",
+      "mythology": "Japonaise",
+      "race": "Monster",
+      "description": "Chef légendaire des kappas de Kyūshū, il règne sur les cours d'eau et serait, selon certains récits, celui qui enseigna aux autres kappas leurs pratiques rituelles.",
+      "popularCulture": "Smite",
+      "clue": "Roi légendaire des kappas (Yokai)",
+      "difficulty": 3,
+      "tags": "Animal, Eau",
       "listThemes": "Yokais"
     },
     {
