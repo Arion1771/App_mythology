@@ -1,5 +1,14 @@
 # Changelog
 
+## V4
+
+### V4.0.0
+
+- Refonte des menus : l'écran d'accueil expose désormais trois boutons principaux — « Données » (consulter la base), « Quizz » (lancer les quiz) et « Duel » (lancer le mode duel multijoueur local) — au lieu de deux boutons plus deux icônes de coin
+- L'icône Duel du coin supérieur gauche disparaît (Duel devient un bouton principal) et laisse place à l'affichage du numéro de version de l'application (Vn.n.n), renseigné automatiquement depuis `versionName` et mis à jour à chaque nouvelle version
+- L'icône Succès (🏆) reste accessible dans le coin supérieur droit
+- Objectif d'ergonomie retenu pour la suite : trois boutons principaux par écran, et une refonte ultérieure du fond et du style des boutons sur l'ensemble des écrans
+
 ## V3
 
 #### V3.4.4
