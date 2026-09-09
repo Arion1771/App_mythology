@@ -10,13 +10,15 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V3.4.4
+### Latest addition — V4.0.0
 
-The List quiz now sub-groups entities by race within full-mythology themes and by mythology within full-race and global themes, and mythologies are now ordered by total entity count (descending) everywhere they're sorted in the app — List quiz grouping, the Browse mythology filter dropdowns, and Base.md — instead of alphabetically.
+The home screen menu has been reworked around three main buttons — **Données** (browse the database), **Quizz** (take the quizzes) and **Duel** (start the local multiplayer duel mode). The former top-left Duel icon is gone, replaced by the app version number (Vn.n.n), filled in automatically from `versionName`; the achievements icon (🏆) stays in the top-right corner. A later version will restyle the background and the buttons across every screen.
 
 ### Getting started
 
-The app isn't published on the Play Store — it has to be built and installed manually, either of two ways.
+A stable release of the app is published as an `.apk` file in this repository's **Releases** section — download and install that one for a stable experience. The build methods below are only useful to get the very latest version, which may not be 100% stable.
+
+The app isn't published on the Play Store, so building it yourself is done either of two ways.
 
 #### Method 1 — USB debugging from Android Studio
 
@@ -49,13 +51,15 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V3.4.4
+### Dernier ajout — V4.0.0
 
-Le quiz Liste sous-groupe désormais les entités par race dans les thèmes de mythologie complète, et par mythologie dans les thèmes de race complète et le thème global ; les mythologies sont maintenant triées par nombre d'entités décroissant partout où l'application les trie — regroupements du quiz Liste, menus déroulants de filtre en mode Parcourir, et Base.md — au lieu d'un tri alphabétique.
+Refonte des menus : l'écran d'accueil s'organise autour de trois boutons principaux — **Données** (consulter la base), **Quizz** (lancer les quiz) et **Duel** (lancer le mode duel multijoueur local). L'ancienne icône Duel du coin supérieur gauche disparaît et laisse place au numéro de version de l'application (Vn.n.n), renseigné automatiquement depuis `versionName` ; l'icône Succès (🏆) reste dans le coin supérieur droit. Une version ultérieure retravaillera le fond et le style des boutons sur l'ensemble des écrans.
 
 ### Démarrage
 
-L'application n'est pas publiée sur le Play Store ; il faut la compiler et l'installer manuellement, de deux façons possibles.
+Une version stable de l'application est publiée au format `.apk` dans la section **Releases** de ce dépôt — téléchargez-la et installez-la pour une expérience stable. Les méthodes de compilation ci-dessous ne servent qu'à obtenir la toute dernière version, qui peut ne pas être 100 % stable.
+
+L'application n'est pas publiée sur le Play Store ; pour la compiler soi-même, deux façons possibles.
 
 #### Méthode 1 — Débogage USB depuis Android Studio
 

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
@@ -27,12 +28,17 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_home_to_quizChoice)
         }
 
+        view.findViewById<Button>(R.id.btn_duel).setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_duel)
+        }
+
         view.findViewById<View>(R.id.btn_trophy).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_achievements)
         }
 
-        view.findViewById<View>(R.id.btn_duel).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_duel)
-        }
+        // Version affichée en haut à gauche, toujours issue de versionName (jamais codée en dur).
+        val versionName = requireContext().packageManager
+            .getPackageInfo(requireContext().packageName, 0).versionName
+        view.findViewById<TextView>(R.id.tv_version).text = "V$versionName"
     }
 }
