@@ -24,17 +24,34 @@
             android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_width="240dp"
             android:layout_height="56dp"
-            android:text="📖  Parcourir la base"
+            android:text="📖  Données"
             android:layout_marginBottom="24dp"/>
 
         <Button
             android:id="@+id/btn_quiz"
-            android:backgroundTint="#FF2A2A2A" android:textColor="@color/primary"
+            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_width="240dp"
             android:layout_height="56dp"
-            android:text="🎯  Quiz"/>
+            android:text="🎯  Quizz"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_duel"
+            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+            android:layout_width="240dp"
+            android:layout_height="56dp"
+            android:text="⚔️  Duel"/>
 
     </LinearLayout>
+
+    <!-- Version de l'application, coin supérieur gauche (renseignée à l'exécution
+         depuis versionName, jamais codée en dur). Remplace l'ancienne icône Duel. -->
+    <TextView android:id="@+id/tv_version"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|start" android:layout_margin="16dp"
+        android:textColor="@color/on_surface_variant"
+        android:textSize="13sp"
+        android:contentDescription="Version de l'application"/>
 
     <TextView android:id="@+id/btn_trophy"
         android:layout_width="40dp" android:layout_height="40dp"
@@ -43,15 +60,6 @@
         android:gravity="center"
         android:text="🏆" android:textSize="18sp"
         android:contentDescription="Succès"
-        android:clickable="true" android:focusable="true"/>
-
-    <TextView android:id="@+id/btn_duel"
-        android:layout_width="40dp" android:layout_height="40dp"
-        android:layout_gravity="top|start" android:layout_margin="16dp"
-        android:background="@drawable/bg_help_button"
-        android:gravity="center"
-        android:text="⚔️" android:textSize="18sp"
-        android:contentDescription="Duel"
         android:clickable="true" android:focusable="true"/>
 
 </FrameLayout>
