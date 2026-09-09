@@ -12,8 +12,8 @@ android {
         applicationId = "com.example.app_mythology"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 40000
+        versionName = "4.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -57,6 +57,9 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
     testImplementation("junit:junit:4.13.2")
+    // Analyse de prepopulate.json par les tests de non-régression (implémentation
+    // réelle d'org.json, la version d'android.jar renvoyant des stubs en test JVM)
+    testImplementation("org.json:json:20231013")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
