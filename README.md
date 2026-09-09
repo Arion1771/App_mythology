@@ -10,15 +10,18 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V3.4.4
+### Latest version — V4.0.0
 
-- In the List quiz, the full-mythology themes (Greek, Roman, Hindu, Chinese, Shinto, South America) now show their cards sub-grouped by race (alphabetical order), and the full-race themes (Dieux, Monstres, Héros) and the global theme (Entités) sub-grouped by mythology
-- New canonical order of mythologies, by decreasing total number of entities (replaces alphabetical order): applied to these List quiz groupings, to the mythology filter drop-down in Browse mode (entities and artifacts), and to the whole of Base.md (Entities, Places, Artifacts sections)
-- Incidental fix in Base.md of an outdated mention of the add/edit form (removed in V3.3.0)
+- Menu overhaul: the home screen now shows three main buttons — "Données" (browse the database), "Quizz" (start the quizzes) and "Duel" (start the local multiplayer duel mode) — instead of two buttons plus two corner icons
+- The Duel icon in the top-left corner disappears (Duel becomes a main button) and makes way for the app version number (Vn.n.n), filled in automatically from `versionName` and updated with each new version
+- The Achievements icon (🏆) remains available in the top-right corner
+- Usability goal adopted for what follows: three main buttons per screen, and a later overhaul of the background and button style across all screens
 
 ### Getting started
 
-The app isn't published on the Play Store — it has to be built and installed manually, either of two ways.
+A stable release of the app is published as an `.apk` file in this repository's **Releases** section — download and install that one for a stable experience. The build methods below are only useful to get the very latest version, which may not be 100% stable.
+
+The app isn't published on the Play Store, so building it yourself is done either of two ways.
 
 #### Method 1 — USB debugging from Android Studio
 
@@ -51,15 +54,18 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V3.4.4
+### Dernière version — V4.0.0
 
-- Dans le quiz Liste, les thèmes de mythologie complète (grecque, romaine, hindoue, chinoise, shinto, Amérique du Sud) affichent désormais leurs cartes sous-groupées par race (ordre alphabétique), et les thèmes de race complète (Dieux, Monstres, Héros) ainsi que le thème global (Entités) sous-groupées par mythologie
-- Nouvel ordre canonique des mythologies, par nombre total d'entités décroissant (remplace l'ordre alphabétique) : appliqué à ces regroupements du quiz Liste, au menu déroulant de filtre par mythologie en mode Parcourir (entités et artéfacts), et à l'ensemble de Base.md (sections Entités, Lieux, Artéfacts)
-- Correction incidente dans Base.md d'une mention obsolète du formulaire d'ajout/édition (retiré en V3.3.0)
+- Refonte des menus : l'écran d'accueil expose désormais trois boutons principaux — « Données » (consulter la base), « Quizz » (lancer les quiz) et « Duel » (lancer le mode duel multijoueur local) — au lieu de deux boutons plus deux icônes de coin
+- L'icône Duel du coin supérieur gauche disparaît (Duel devient un bouton principal) et laisse place à l'affichage du numéro de version de l'application (Vn.n.n), renseigné automatiquement depuis `versionName` et mis à jour à chaque nouvelle version
+- L'icône Succès (🏆) reste accessible dans le coin supérieur droit
+- Objectif d'ergonomie retenu pour la suite : trois boutons principaux par écran, et une refonte ultérieure du fond et du style des boutons sur l'ensemble des écrans
 
 ### Démarrage
 
-L'application n'est pas publiée sur le Play Store ; il faut la compiler et l'installer manuellement, de deux façons possibles.
+Une version stable de l'application est publiée au format `.apk` dans la section **Releases** de ce dépôt — téléchargez-la et installez-la pour une expérience stable. Les méthodes de compilation ci-dessous ne servent qu'à obtenir la toute dernière version, qui peut ne pas être 100 % stable.
+
+L'application n'est pas publiée sur le Play Store ; pour la compiler soi-même, deux façons possibles.
 
 #### Méthode 1 — Débogage USB depuis Android Studio
 
