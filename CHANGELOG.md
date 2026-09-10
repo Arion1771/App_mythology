@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.1.1
+
+- Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
+
 ### V4.1.0
 
 - Refonte du skin des boutons : tous les écrans de menu à trois boutons principaux (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine) utilisent désormais des boutons-images (plaques de bois gravées) chargés depuis `assets/button/`, au lieu de boutons texte
