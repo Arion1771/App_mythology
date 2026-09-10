@@ -4,9 +4,9 @@
   comptent trois (accueil, Parcourir, choix du quiz, quiz Lieux, choix du
   domaine). Incluse toujours de la même façon (layout_gravity="center", sans
   marge), afin que les trois boutons tombent au même pixel d'un écran à
-  l'autre. Les trois ImageButton ont des dimensions strictement identiques ;
-  fitCenter + adjustViewBounds font dériver leur hauteur de l'image (toutes au
-  format 1280x720), donc rigoureusement la même pour les trois.
+  l'autre. Les trois ImageButton ont une hauteur fixe identique (les images
+  sont détourées au ras de la plaque) ; fitCenter + adjustViewBounds font
+  dériver la largeur de l'image, donc rigoureusement la même pour les trois.
   Cohérence verrouillée par PrimaryButtonPlacementTest (branche Test-Unit).
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,14 +14,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp">
+    android:gravity="center_horizontal">
 
     <ImageButton
         android:id="@+id/btn_primary_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
@@ -29,9 +28,9 @@
 
     <ImageButton
         android:id="@+id/btn_primary_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
@@ -39,9 +38,9 @@
 
     <ImageButton
         android:id="@+id/btn_primary_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
