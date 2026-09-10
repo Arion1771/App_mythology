@@ -3,30 +3,20 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/surface">
 
-    <LinearLayout
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:orientation="vertical" android:gravity="center" android:padding="32dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="72dp"
+        android:text="Choisissez un quiz"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/on_surface"/>
 
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Choisissez un quiz" android:textSize="20sp" android:textStyle="bold"
-            android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
-
-        <Button android:id="@+id/btn_quiz_qcm"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-            android:layout_width="220dp" android:layout_height="56dp"
-            android:text="QCM" android:layout_marginBottom="24dp"/>
-
-        <Button android:id="@+id/btn_quiz_classic"
-            android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-            android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Classique" android:layout_marginBottom="24dp"/>
-
-        <Button android:id="@+id/btn_quiz_list"
-            android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-            android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Liste"/>
-
-    </LinearLayout>
+    <include layout="@layout/view_primary_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
     <TextView android:id="@+id/btn_quiz_help"
         android:layout_width="40dp" android:layout_height="40dp"
