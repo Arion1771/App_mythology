@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/surface">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="72dp"
         android:text="Que souhaitez-vous parcourir ?"
         android:textSize="18sp"
-        android:textColor="@color/on_surface"
-        android:layout_marginBottom="48dp"/>
+        android:textColor="@color/on_surface"/>
 
-    <Button
-        android:id="@+id/btn_browse_entity"
-        android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-        android:layout_width="220dp"
-        android:layout_height="56dp"
-        android:text="Entités"
-        android:layout_marginBottom="24dp"/>
+    <include layout="@layout/view_primary_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
-    <Button
-        android:id="@+id/btn_browse_place"
-        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-        android:layout_width="220dp"
-        android:layout_height="56dp"
-        android:text="Lieux"
-        android:layout_marginBottom="24dp"/>
-
-    <Button
-        android:id="@+id/btn_browse_artifact"
-        android:backgroundTint="@android:color/transparent" android:textColor="@color/primary"
-        android:layout_width="220dp"
-        android:layout_height="56dp"
-        android:text="Artéfacts"/>
-
-</LinearLayout>
+</FrameLayout>

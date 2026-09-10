@@ -2,6 +2,17 @@
 
 ## V4
 
+#### V4.1.1
+
+- Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
+
+### V4.1.0
+
+- Refonte du skin des boutons : tous les écrans de menu à trois boutons principaux (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine) utilisent désormais des boutons-images (plaques de bois gravées) chargés depuis `assets/button/`, au lieu de boutons texte
+- Les 6 plaques manquantes (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) ont été générées dans le même style que les 6 fournies ; les 12 plaques sont normalisées au même cadrage et allégées (8 bits, 1280×720)
+- Nouveau gabarit partagé `view_primary_buttons` : la colonne des trois boutons est toujours centrée à l'écran, sans marge, donc placée au pixel près de façon identique d'un écran à l'autre
+- Le placement identique des trois boutons est verrouillé par un test automatique (`PrimaryButtonPlacementTest`, branche Test-Unit)
+
 ### V4.0.0
 
 - Refonte des menus : l'écran d'accueil expose désormais trois boutons principaux — « Données » (consulter la base), « Quizz » (lancer les quiz) et « Duel » (lancer le mode duel multijoueur local) — au lieu de deux boutons plus deux icônes de coin
