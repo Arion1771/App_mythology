@@ -12,8 +12,8 @@ android {
         applicationId = "com.example.app_mythology"
         minSdk = 26
         targetSdk = 34
-        versionCode = 40000
-        versionName = "4.0.0"
+        versionCode = 40101
+        versionName = "4.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
