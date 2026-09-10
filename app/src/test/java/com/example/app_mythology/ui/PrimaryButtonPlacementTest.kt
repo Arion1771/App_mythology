@@ -82,11 +82,12 @@ class PrimaryButtonPlacementTest {
         }
         assertEquals("les 3 boutons doivent avoir des attributs de forme identiques", 1, shape.toSet().size)
         val s = shape.first()
-        assertEquals("match_parent", s[0])
-        assertEquals("wrap_content", s[1])
+        assertEquals("largeur dérivée de l'image", "wrap_content", s[0])
+        assertTrue("hauteur fixe en dp (taille compacte)", s[1].matches(Regex("\\d+dp")))
         assertEquals("fitCenter", s[2])
         assertEquals("true", s[3])
         assertEquals("0dp", s[4])
+        assertTrue("espacement vertical fixe et identique", s[5].matches(Regex("\\d+dp")))
     }
 
     // ── Chaque écran inclut la colonne de la même façon ────────────────────
