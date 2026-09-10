@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.PrimaryButton
+import com.example.app_mythology.ui.common.bindPrimaryButtons
 
 class HomeFragment : Fragment() {
 
@@ -20,17 +21,19 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.btn_browse).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_browseChoice)
-        }
-
-        view.findViewById<Button>(R.id.btn_quiz).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_quizChoice)
-        }
-
-        view.findViewById<Button>(R.id.btn_duel).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_duel)
-        }
+        view.bindPrimaryButtons(
+            listOf(
+                PrimaryButton("data", "Données") {
+                    findNavController().navigate(R.id.action_home_to_browseChoice)
+                },
+                PrimaryButton("quizz", "Quizz") {
+                    findNavController().navigate(R.id.action_home_to_quizChoice)
+                },
+                PrimaryButton("duel", "Duel") {
+                    findNavController().navigate(R.id.action_home_to_duel)
+                },
+            )
+        )
 
         view.findViewById<View>(R.id.btn_trophy).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_achievements)
