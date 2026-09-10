@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.1.1
+
+- Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
+
 ### V4.0.0
 
 - Refonte des menus : l'écran d'accueil expose désormais trois boutons principaux — « Données » (consulter la base), « Quizz » (lancer les quiz) et « Duel » (lancer le mode duel multijoueur local) — au lieu de deux boutons plus deux icônes de coin

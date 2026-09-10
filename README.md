@@ -10,12 +10,11 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V4.0.0
+### Changes since the last release (V4.0.0)
 
-- Menu overhaul: the home screen now shows three main buttons — "Données" (browse the database), "Quizz" (start the quizzes) and "Duel" (start the local multiplayer duel mode) — instead of two buttons plus two corner icons
-- The Duel icon in the top-left corner disappears (Duel becomes a main button) and makes way for the app version number (Vn.n.n), filled in automatically from `versionName` and updated with each new version
-- The Achievements icon (🏆) remains available in the top-right corner
-- Usability goal adopted for what follows: three main buttons per screen, and a later overhaul of the background and button style across all screens
+#### V4.1.1
+
+- Added the 4 missing achievement emblems in `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`): these achievements used to show the fallback generic emblem. A default generic emblem is provided for each, to be replaced individually.
 
 ### Getting started
 
@@ -54,12 +53,11 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V4.0.0
+### Nouveautés depuis la dernière release (V4.0.0)
 
-- Refonte des menus : l'écran d'accueil expose désormais trois boutons principaux — « Données » (consulter la base), « Quizz » (lancer les quiz) et « Duel » (lancer le mode duel multijoueur local) — au lieu de deux boutons plus deux icônes de coin
-- L'icône Duel du coin supérieur gauche disparaît (Duel devient un bouton principal) et laisse place à l'affichage du numéro de version de l'application (Vn.n.n), renseigné automatiquement depuis `versionName` et mis à jour à chaque nouvelle version
-- L'icône Succès (🏆) reste accessible dans le coin supérieur droit
-- Objectif d'ergonomie retenu pour la suite : trois boutons principaux par écran, et une refonte ultérieure du fond et du style des boutons sur l'ensemble des écrans
+#### V4.1.1
+
+- Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
 
 ### Démarrage
 
