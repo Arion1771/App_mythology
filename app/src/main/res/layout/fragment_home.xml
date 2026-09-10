@@ -3,49 +3,25 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/surface">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="Mythos"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/on_surface"/>
+
+    <!-- Colonne des 3 boutons principaux : toujours incluse centrée, sans
+         marge, pour un placement identique au pixel sur tous les écrans. -->
+    <include layout="@layout/view_primary_buttons"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="32dp">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mythos"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="@color/on_surface"
-            android:layout_marginBottom="64dp"/>
-
-        <Button
-            android:id="@+id/btn_browse"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-            android:layout_width="240dp"
-            android:layout_height="56dp"
-            android:text="📖  Données"
-            android:layout_marginBottom="24dp"/>
-
-        <Button
-            android:id="@+id/btn_quiz"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-            android:layout_width="240dp"
-            android:layout_height="56dp"
-            android:text="🎯  Quizz"
-            android:layout_marginBottom="24dp"/>
-
-        <Button
-            android:id="@+id/btn_duel"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-            android:layout_width="240dp"
-            android:layout_height="56dp"
-            android:text="⚔️  Duel"/>
-
-    </LinearLayout>
-
-    <!-- Version de l'application, coin supérieur gauche (renseignée à l'exécution
-         depuis versionName, jamais codée en dur). Remplace l'ancienne icône Duel. -->
+    <!-- Version de l'application, coin supérieur gauche (renseignée à
+         l'exécution depuis versionName, jamais codée en dur). -->
     <TextView android:id="@+id/tv_version"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_gravity="top|start" android:layout_margin="16dp"
