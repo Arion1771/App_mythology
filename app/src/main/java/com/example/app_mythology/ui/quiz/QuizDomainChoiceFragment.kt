@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.PrimaryButton
+import com.example.app_mythology.ui.common.bindPrimaryButtons
 
 /**
  * Écran de choix du domaine (Entités / Artéfacts / Lieux) une fois le type de
@@ -36,17 +36,19 @@ class QuizDomainChoiceFragment : Fragment() {
         view.findViewById<TextView>(R.id.tv_domain_choice_title).text =
             if (quizMode == "qcm") "QCM" else "Classique"
 
-        val btnPlace = view.findViewById<Button>(R.id.btn_domain_place)
-        btnPlace.isVisible = quizMode != "qcm"
-
-        view.findViewById<Button>(R.id.btn_domain_entity).setOnClickListener {
-            findNavController().navigate(R.id.action_domain_to_entity)
+        val buttons = mutableListOf(
+            PrimaryButton("entities", "Entités") {
+                findNavController().navigate(R.id.action_domain_to_entity)
+            },
+            PrimaryButton("artifacts", "Artéfacts") {
+                findNavController().navigate(R.id.action_domain_to_artifact)
+            },
+        )
+        if (quizMode != "qcm") {
+            buttons += PrimaryButton("places", "Lieux") {
+                findNavController().navigate(R.id.action_domain_to_place)
+            }
         }
-        view.findViewById<Button>(R.id.btn_domain_artifact).setOnClickListener {
-            findNavController().navigate(R.id.action_domain_to_artifact)
-        }
-        btnPlace.setOnClickListener {
-            findNavController().navigate(R.id.action_domain_to_place)
-        }
+        view.bindPrimaryButtons(buttons)
     }
 }
