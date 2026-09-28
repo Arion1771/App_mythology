@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.2.0
+### Latest addition — V4.2.2
 
-Every screen now goes through a background theme system: only one theme is available for now (a subtle dark radial glow close to the previous plain background), but the underlying architecture (`BackgroundTheme`, `BackgroundThemeManager`, persisted via SharedPreferences) is ready for more, applied once to the root container so a future theme picker only needs to update one place. This follows V4.1.1, which added the four missing achievement emblems (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) to `assets/achievements/`; they previously fell back to the generic crest.
+Added the `assets/background/` folder (empty for now) where future background theme images belong. This follows V4.2.1, which switched background themes to load from `assets/background/<asset>.png` instead of a static drawable per theme, the same way buttons (`assets/button/`) and achievement emblems (`assets/achievements/`) already do — adding a new background theme is now just a matter of dropping in the image.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.2.0
+### Dernier ajout — V4.2.2
 
-Tous les écrans passent désormais par un système de thèmes de fond : un seul thème est disponible pour l'instant (un léger halo radial sombre, proche de l'ancien fond uni), mais l'architecture sous-jacente (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres, appliquée en un seul point (le conteneur racine) pour qu'un futur sélecteur de thème n'ait qu'un seul endroit à mettre à jour. Cela fait suite à la V4.1.1, qui a ajouté les quatre emblèmes de succès manquants (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) dans `assets/achievements/` ; ils affichaient jusqu'ici le blason générique de secours.
+Ajout du dossier `assets/background/` (vide pour l'instant), où déposer les images des futurs thèmes de fond. Cela fait suite à la V4.2.1, qui a fait passer les thèmes de fond sur un chargement depuis `assets/background/<asset>.png` au lieu d'un drawable statique par thème, comme les boutons (`assets/button/`) et les emblèmes de succès (`assets/achievements/`) — ajouter un nouveau thème de fond ne demande désormais plus que de déposer l'image correspondante.
 
 ### Démarrage
 
