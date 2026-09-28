@@ -12,6 +12,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.app_mythology.R
 import com.example.app_mythology.achievements.Achievement
 import com.example.app_mythology.achievements.AchievementManager
+import com.example.app_mythology.background.BackgroundThemeManager
 import java.util.LinkedList
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Fond appliqué une seule fois ici pour tous les écrans (les fragments
+        // restent transparents) : seul point à mettre à jour pour un futur
+        // sélecteur de thème.
+        findViewById<View>(R.id.main_root)
+            .setBackgroundResource(BackgroundThemeManager.getSelected().drawableRes)
 
         val navHost = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
