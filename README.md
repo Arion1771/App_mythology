@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.0.0)
 
+#### V4.2.0
+
+- Set up a background theme system for every screen of the app: only one theme available for now ("Sombre (défaut)", a subtle radial halo close to the former plain `@color/surface` background), but the architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistence through SharedPreferences) is ready to host more. The background is applied once to the root container of `MainActivity`, all screens staying transparent; no selection screen yet, coming later
+
 #### V4.1.1
 
 - Added the 4 missing achievement emblems in `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`): these achievements used to show the fallback generic emblem. A default generic emblem is provided for each, to be replaced individually.
@@ -61,6 +65,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.0.0)
+
+#### V4.2.0
+
+- Mise en place d'un système de thèmes de fond pour l'ensemble des écrans de l'application : un seul thème disponible pour l'instant (« Sombre (défaut) », un halo radial discret proche de l'ancien fond uni `@color/surface`), mais l'architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres. Le fond est appliqué une seule fois au conteneur racine de `MainActivity`, tous les écrans restant transparents ; pas encore d'écran de sélection, à venir
 
 #### V4.1.1
 
