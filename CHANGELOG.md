@@ -2,6 +2,10 @@
 
 ## V4
 
+### V4.2.0
+
+- Mise en place d'un système de thèmes de fond pour l'ensemble des écrans de l'application : un seul thème disponible pour l'instant (« Sombre (défaut) », un halo radial discret proche de l'ancien fond uni `@color/surface`), mais l'architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres. Le fond est appliqué une seule fois au conteneur racine de `MainActivity`, tous les écrans restant transparents ; pas encore d'écran de sélection, à venir
+
 #### V4.1.1
 
 - Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
