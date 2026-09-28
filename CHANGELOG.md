@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.2.2
+
+- Ajout du dossier `assets/background/` (vide pour l'instant, avec un `.gitkeep`), prêt à recevoir les images des futurs thèmes de fond
+
 #### V4.2.1
 
 - Les thèmes de fond se chargent désormais depuis `assets/background/<asset>.png` (`BackgroundAssets`), au lieu d'un drawable statique par thème, à la manière des boutons (`assets/button/`) et des succès (`assets/achievements/`) : ajouter un nouveau thème de fond ne demande plus que de déposer l'image correspondante. Tant qu'aucune image n'est fournie, le thème « Sombre (défaut) » se rabat sur `bg_theme_default` (même halo discret qu'en V4.2.0)
