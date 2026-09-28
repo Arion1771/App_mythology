@@ -2,6 +2,14 @@
 
 ## V4
 
+#### V4.2.2
+
+- Ajout du dossier `assets/background/` (vide pour l'instant, avec un `.gitkeep`), prêt à recevoir les images des futurs thèmes de fond
+
+#### V4.2.1
+
+- Les thèmes de fond se chargent désormais depuis `assets/background/<asset>.png` (`BackgroundAssets`), au lieu d'un drawable statique par thème, à la manière des boutons (`assets/button/`) et des succès (`assets/achievements/`) : ajouter un nouveau thème de fond ne demande plus que de déposer l'image correspondante. Tant qu'aucune image n'est fournie, le thème « Sombre (défaut) » se rabat sur `bg_theme_default` (même halo discret qu'en V4.2.0)
+
 ### V4.2.0
 
 - Mise en place d'un système de thèmes de fond pour l'ensemble des écrans de l'application : un seul thème disponible pour l'instant (« Sombre (défaut) », un halo radial discret proche de l'ancien fond uni `@color/surface`), mais l'architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres. Le fond est appliqué une seule fois au conteneur racine de `MainActivity`, tous les écrans restant transparents ; pas encore d'écran de sélection, à venir

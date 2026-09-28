@@ -12,6 +12,14 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.0.0)
 
+#### V4.2.2
+
+- Added the `assets/background/` folder (empty for now, with a `.gitkeep`), ready to receive the images of future background themes
+
+#### V4.2.1
+
+- Background themes are now loaded from `assets/background/<asset>.png` (`BackgroundAssets`), instead of one static drawable per theme, like the buttons (`assets/button/`) and achievements (`assets/achievements/`): adding a new background theme now only requires dropping in the matching image. As long as no image is provided, the "Sombre (défaut)" theme falls back to `bg_theme_default` (same subtle halo as in V4.2.0)
+
 #### V4.2.0
 
 - Set up a background theme system for every screen of the app: only one theme available for now ("Sombre (défaut)", a subtle radial halo close to the former plain `@color/surface` background), but the architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistence through SharedPreferences) is ready to host more. The background is applied once to the root container of `MainActivity`, all screens staying transparent; no selection screen yet, coming later
@@ -65,6 +73,14 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.0.0)
+
+#### V4.2.2
+
+- Ajout du dossier `assets/background/` (vide pour l'instant, avec un `.gitkeep`), prêt à recevoir les images des futurs thèmes de fond
+
+#### V4.2.1
+
+- Les thèmes de fond se chargent désormais depuis `assets/background/<asset>.png` (`BackgroundAssets`), au lieu d'un drawable statique par thème, à la manière des boutons (`assets/button/`) et des succès (`assets/achievements/`) : ajouter un nouveau thème de fond ne demande plus que de déposer l'image correspondante. Tant qu'aucune image n'est fournie, le thème « Sombre (défaut) » se rabat sur `bg_theme_default` (même halo discret qu'en V4.2.0)
 
 #### V4.2.0
 

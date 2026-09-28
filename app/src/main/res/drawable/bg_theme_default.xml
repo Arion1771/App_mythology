@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Thème de fond « Sombre (défaut) » : léger halo radial au-dessus de la
-     teinte @color/surface actuelle, pour rester proche du fond uni existant
-     tout en amorçant le système de thèmes de fond. -->
+<!-- Fond de secours tant qu'aucune image n'est déposée dans
+     assets/background/<asset>.png (voir BackgroundAssets), à la manière du
+     blason générique de secours des succès : léger halo radial au-dessus de
+     la teinte @color/surface actuelle, proche du fond uni existant. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <gradient
