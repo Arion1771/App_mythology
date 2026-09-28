@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thème de fond « Sombre (défaut) » : léger halo radial au-dessus de la
+     teinte @color/surface actuelle, pour rester proche du fond uni existant
+     tout en amorçant le système de thèmes de fond. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="480dp"
+        android:centerX="0.5"
+        android:centerY="0.3"
+        android:startColor="@color/background_theme_default_glow"
+        android:endColor="@color/surface"/>
+</shape>
