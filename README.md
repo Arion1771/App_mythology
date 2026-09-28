@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.1.1
+### Latest addition — V4.2.0
 
-The four missing achievement emblems (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) were added to `assets/achievements/`; they previously fell back to the generic crest. This follows V4.1.0, which reskinned every three-main-button menu screen (home, Browse, quiz choice, Places quiz, domain choice) with carved wooden-plaque image buttons loaded from `assets/button/` — the six missing plaques generated to match the six supplied, all twelve normalised to the same framing (8-bit, 1280×720) — and added a shared `view_primary_buttons` template that keeps the three-button column screen-centred with no margin, so the buttons land on the exact same pixels from one screen to the next (locked in by an automated test).
+Every screen now goes through a background theme system: only one theme is available for now (a subtle dark radial glow close to the previous plain background), but the underlying architecture (`BackgroundTheme`, `BackgroundThemeManager`, persisted via SharedPreferences) is ready for more, applied once to the root container so a future theme picker only needs to update one place. This follows V4.1.1, which added the four missing achievement emblems (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) to `assets/achievements/`; they previously fell back to the generic crest.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.1.1
+### Dernier ajout — V4.2.0
 
-Les quatre emblèmes de succès manquants (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) ont été ajoutés dans `assets/achievements/` ; ils affichaient jusqu'ici le blason générique de secours. Cela fait suite à la V4.1.0, qui a resthétisé tous les écrans de menu à trois boutons principaux (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine) avec des boutons-images (plaques de bois gravées) chargés depuis `assets/button/` — les six plaques manquantes générées dans le style des six fournies, les douze normalisées au même cadrage (8 bits, 1280×720) — et a introduit un gabarit partagé `view_primary_buttons` qui garde la colonne des trois boutons centrée à l'écran sans marge, pour un placement identique au pixel d'un écran à l'autre (vérifié par un test automatique).
+Tous les écrans passent désormais par un système de thèmes de fond : un seul thème est disponible pour l'instant (un léger halo radial sombre, proche de l'ancien fond uni), mais l'architecture sous-jacente (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres, appliquée en un seul point (le conteneur racine) pour qu'un futur sélecteur de thème n'ait qu'un seul endroit à mettre à jour. Cela fait suite à la V4.1.1, qui a ajouté les quatre emblèmes de succès manquants (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) dans `assets/achievements/` ; ils affichaient jusqu'ici le blason générique de secours.
 
 ### Démarrage
 
