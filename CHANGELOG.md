@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.2.3
+
+- Nouvelles versions des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : recadrées au ras de la plaque et allégées en 8 bits (1226×422, comme les 6 autres boutons), après un premier dépôt en 1920×1080/16 bits avec une grosse marge vide qui les aurait fait apparaître nettement plus petites que les autres boutons à l'écran
+
 #### V4.2.2
 
 - Ajout du dossier `assets/background/` (vide pour l'instant, avec un `.gitkeep`), prêt à recevoir les images des futurs thèmes de fond
