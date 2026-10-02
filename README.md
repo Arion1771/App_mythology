@@ -10,30 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Changes since the last release (V4.0.0)
+### Latest version — V4.2.3
 
-#### V4.2.2
-
-- Added the `assets/background/` folder (empty for now, with a `.gitkeep`), ready to receive the images of future background themes
-
-#### V4.2.1
-
-- Background themes are now loaded from `assets/background/<asset>.png` (`BackgroundAssets`), instead of one static drawable per theme, like the buttons (`assets/button/`) and achievements (`assets/achievements/`): adding a new background theme now only requires dropping in the matching image. As long as no image is provided, the "Sombre (défaut)" theme falls back to `bg_theme_default` (same subtle halo as in V4.2.0)
-
-#### V4.2.0
-
-- Set up a background theme system for every screen of the app: only one theme available for now ("Sombre (défaut)", a subtle radial halo close to the former plain `@color/surface` background), but the architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistence through SharedPreferences) is ready to host more. The background is applied once to the root container of `MainActivity`, all screens staying transparent; no selection screen yet, coming later
-
-#### V4.1.1
-
-- Added the 4 missing achievement emblems in `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`): these achievements used to show the fallback generic emblem. A default generic emblem is provided for each, to be replaced individually.
-
-#### V4.1.0
-
-- Button skin overhaul: every menu screen with three main buttons (home, Browse, quiz choice, Places quiz, domain choice) now uses image buttons (engraved wooden plates) loaded from `assets/button/`, instead of text buttons
-- The 6 missing plates (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) were generated in the same style as the 6 provided ones; the 12 plates are normalised to the same framing and lightened (8 bits, 1280×720)
-- New shared `view_primary_buttons` layout: the column of three buttons is always centred on screen, with no margin, so it is placed identically to the pixel from one screen to the next
-- The identical placement of the three buttons is locked by an automated test (`PrimaryButtonPlacementTest`, Test-Unit branch)
+- New versions of the 6 plates generated in V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts): cropped tight to the plate and lightened to 8 bits (1226×422, like the other 6 buttons), after a first upload in 1920×1080/16 bits with a large empty margin that would have made them look much smaller than the other buttons on screen
 
 ### Getting started
 
@@ -72,30 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Nouveautés depuis la dernière release (V4.0.0)
+### Dernière version — V4.2.3
 
-#### V4.2.2
-
-- Ajout du dossier `assets/background/` (vide pour l'instant, avec un `.gitkeep`), prêt à recevoir les images des futurs thèmes de fond
-
-#### V4.2.1
-
-- Les thèmes de fond se chargent désormais depuis `assets/background/<asset>.png` (`BackgroundAssets`), au lieu d'un drawable statique par thème, à la manière des boutons (`assets/button/`) et des succès (`assets/achievements/`) : ajouter un nouveau thème de fond ne demande plus que de déposer l'image correspondante. Tant qu'aucune image n'est fournie, le thème « Sombre (défaut) » se rabat sur `bg_theme_default` (même halo discret qu'en V4.2.0)
-
-#### V4.2.0
-
-- Mise en place d'un système de thèmes de fond pour l'ensemble des écrans de l'application : un seul thème disponible pour l'instant (« Sombre (défaut) », un halo radial discret proche de l'ancien fond uni `@color/surface`), mais l'architecture (`BackgroundTheme`, `BackgroundThemeManager`, persistance par SharedPreferences) est prête à en accueillir d'autres. Le fond est appliqué une seule fois au conteneur racine de `MainActivity`, tous les écrans restant transparents ; pas encore d'écran de sélection, à venir
-
-#### V4.1.1
-
-- Ajout des 4 emblèmes de succès manquants dans `assets/achievements/` (`entity_arion`, `entity_ulysse_telemaque`, `collection_dogs`, `collection_animals`) : ces succès affichaient jusqu'ici le blason générique de secours. Blason générique par défaut fourni pour chacun, à remplacer individuellement.
-
-#### V4.1.0
-
-- Refonte du skin des boutons : tous les écrans de menu à trois boutons principaux (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine) utilisent désormais des boutons-images (plaques de bois gravées) chargés depuis `assets/button/`, au lieu de boutons texte
-- Les 6 plaques manquantes (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) ont été générées dans le même style que les 6 fournies ; les 12 plaques sont normalisées au même cadrage et allégées (8 bits, 1280×720)
-- Nouveau gabarit partagé `view_primary_buttons` : la colonne des trois boutons est toujours centrée à l'écran, sans marge, donc placée au pixel près de façon identique d'un écran à l'autre
-- Le placement identique des trois boutons est verrouillé par un test automatique (`PrimaryButtonPlacementTest`, branche Test-Unit)
+- Nouvelles versions des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : recadrées au ras de la plaque et allégées en 8 bits (1226×422, comme les 6 autres boutons), après un premier dépôt en 1920×1080/16 bits avec une grosse marge vide qui les aurait fait apparaître nettement plus petites que les autres boutons à l'écran
 
 ### Démarrage
 
