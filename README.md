@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.2.2
+### Latest addition — V4.2.3
 
-Added the `assets/background/` folder (empty for now) where future background theme images belong. This follows V4.2.1, which switched background themes to load from `assets/background/<asset>.png` instead of a static drawable per theme, the same way buttons (`assets/button/`) and achievement emblems (`assets/achievements/`) already do — adding a new background theme is now just a matter of dropping in the image.
+Re-cropped and re-compressed the 6 button plaques generated in V4.1.0 (QCM, Classic, List, World Tree, Rivers of Hell, Kingdom of the Dead): a first pass had been dropped in at 1920×1080/16-bit with a large empty margin, which would have rendered them noticeably smaller than the other buttons on screen — they're now back to the shared 1226×422/8-bit frame, cropped flush to the plaque. This follows V4.2.2, which added the empty `assets/background/` folder where future background theme images belong.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.2.2
+### Dernier ajout — V4.2.3
 
-Ajout du dossier `assets/background/` (vide pour l'instant), où déposer les images des futurs thèmes de fond. Cela fait suite à la V4.2.1, qui a fait passer les thèmes de fond sur un chargement depuis `assets/background/<asset>.png` au lieu d'un drawable statique par thème, comme les boutons (`assets/button/`) et les emblèmes de succès (`assets/achievements/`) — ajouter un nouveau thème de fond ne demande désormais plus que de déposer l'image correspondante.
+Recadrage et recompression des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : un premier dépôt en 1920×1080/16 bits avec une grosse marge vide les aurait fait apparaître nettement plus petites que les autres boutons à l'écran ; elles reviennent au gabarit commun 1226×422/8 bits, détourées au ras de la plaque. Cela fait suite à la V4.2.2, qui a ajouté le dossier `assets/background/` (vide pour l'instant), où déposer les images des futurs thèmes de fond.
 
 ### Démarrage
 
