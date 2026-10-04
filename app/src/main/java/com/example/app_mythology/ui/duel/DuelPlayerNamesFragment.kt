@@ -5,14 +5,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 
 /** Génère un champ de nom par joueur (nombre déjà choisi sur l'écran précédent). */
@@ -43,12 +44,15 @@ class DuelPlayerNamesFragment : Fragment() {
             }.also { container.addView(it) }
         }
 
-        view.findViewById<Button>(R.id.btn_duel_names_next).setOnClickListener {
-            val names = fields.mapIndexed { i, field ->
-                field.text.toString().trim().ifBlank { "Joueur ${i + 1}" }
+        view.findViewById<ImageButton>(R.id.btn_duel_names_next).apply {
+            setButtonAsset("suivant", "Suivant")
+            setOnClickListener {
+                val names = fields.mapIndexed { i, field ->
+                    field.text.toString().trim().ifBlank { "Joueur ${i + 1}" }
+                }
+                viewModel.setPlayerNames(names)
+                findNavController().navigate(R.id.action_duelPlayerNames_to_duelModeChoice)
             }
-            viewModel.setPlayerNames(names)
-            findNavController().navigate(R.id.action_duelPlayerNames_to_duelModeChoice)
         }
     }
 

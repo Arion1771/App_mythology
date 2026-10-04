@@ -4,12 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 import kotlin.math.roundToInt
 
@@ -32,7 +33,9 @@ class DuelAnnounceFragment : Fragment() {
 
         val tvPlayer = view.findViewById<TextView>(R.id.tv_duel_announce_player)
         val tvScore  = view.findViewById<TextView>(R.id.tv_duel_announce_score)
-        val btnStart = view.findViewById<Button>(R.id.btn_duel_announce_start)
+        val btnStart = view.findViewById<ImageButton>(R.id.btn_duel_announce_start).apply {
+            setButtonAsset("lancer_question", "Lancer la question")
+        }
 
         fun refresh() {
             val player = viewModel.currentPlayer() ?: return

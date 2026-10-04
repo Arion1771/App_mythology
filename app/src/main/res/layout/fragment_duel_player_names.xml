@@ -15,9 +15,11 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical"/>
 
-        <Button android:id="@+id/btn_duel_names_next"
-            android:layout_width="match_parent" android:layout_height="56dp"
-            android:text="Suivant" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+        <ImageButton android:id="@+id/btn_duel_names_next"
+            android:layout_width="wrap_content" android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"
+            android:background="@null" android:padding="0dp"
             android:layout_marginTop="16dp"/>
 
     </LinearLayout>

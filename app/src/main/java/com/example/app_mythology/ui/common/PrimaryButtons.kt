@@ -1,6 +1,5 @@
 package com.example.app_mythology.ui.common
 
-import android.graphics.drawable.Drawable
 import android.view.View
 import android.widget.ImageButton
 import com.example.app_mythology.R
@@ -32,15 +31,8 @@ fun View.bindPrimaryButtons(buttons: List<PrimaryButton>) {
             continue
         }
         slot.visibility = View.VISIBLE
-        slot.setImageDrawable(loadButtonAsset(spec.asset))
+        slot.setImageDrawable(ButtonAssets.load(context, spec.asset))
         slot.contentDescription = spec.contentDescription
         slot.setOnClickListener { spec.onClick() }
     }
 }
-
-private fun View.loadButtonAsset(name: String): Drawable? =
-    try {
-        context.assets.open("button/$name.png").use { Drawable.createFromStream(it, name) }
-    } catch (e: Exception) {
-        null
-    }

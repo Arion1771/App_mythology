@@ -16,9 +16,11 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical" android:layout_marginBottom="24dp"/>
 
-        <Button android:id="@+id/btn_duel_result_home"
-            android:layout_width="match_parent" android:layout_height="56dp"
-            android:text="Retour à l'accueil" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+        <ImageButton android:id="@+id/btn_duel_result_home"
+            android:layout_width="wrap_content" android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"
+            android:background="@null" android:padding="0dp"/>
 
     </LinearLayout>
 </ScrollView>

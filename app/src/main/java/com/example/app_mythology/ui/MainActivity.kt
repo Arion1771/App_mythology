@@ -14,6 +14,7 @@ import com.example.app_mythology.achievements.Achievement
 import com.example.app_mythology.achievements.AchievementManager
 import com.example.app_mythology.background.BackgroundAssets
 import com.example.app_mythology.background.BackgroundThemeManager
+import com.example.app_mythology.ui.common.ButtonAssets
 import java.util.LinkedList
 
 class MainActivity : AppCompatActivity() {
@@ -40,6 +41,9 @@ class MainActivity : AppCompatActivity() {
         // setupActionBarWithNavController nécessite une ActionBar native,
         // pas une Toolbar manuelle. On utilise NavigationUI directement.
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
+        // Flèche « retour » de la barre d'action : plaque assets/button/retour.png
+        // au lieu de la flèche système par défaut.
+        supportActionBar?.setHomeAsUpIndicator(ButtonAssets.load(this, "retour"))
 
         AchievementManager.bannerListener = { achievement -> enqueueBanner(achievement) }
     }

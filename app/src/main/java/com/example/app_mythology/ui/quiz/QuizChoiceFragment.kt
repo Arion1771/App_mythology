@@ -4,12 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.ui.common.PrimaryButton
 import com.example.app_mythology.ui.common.bindPrimaryButtons
+import com.example.app_mythology.ui.common.setButtonAsset
 
 class QuizChoiceFragment : Fragment() {
 
@@ -35,8 +36,11 @@ class QuizChoiceFragment : Fragment() {
             )
         )
 
-        view.findViewById<TextView>(R.id.btn_quiz_help).setOnClickListener {
-            findNavController().navigate(R.id.action_quizChoice_to_quizHelp)
+        view.findViewById<ImageButton>(R.id.btn_quiz_help).apply {
+            setButtonAsset("aide", "Aide sur les quiz")
+            setOnClickListener {
+                findNavController().navigate(R.id.action_quizChoice_to_quizHelp)
+            }
         }
     }
 }

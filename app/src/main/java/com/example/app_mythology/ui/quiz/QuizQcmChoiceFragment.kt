@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 
 /** Choix de la difficulté du QCM, réutilisé pour entités et artéfacts. Argument "quizType". */
 class QuizQcmChoiceFragment : Fragment() {
@@ -34,8 +35,17 @@ class QuizQcmChoiceFragment : Fragment() {
                 bundleOf("level" to level)
             )
         }
-        view.findViewById<Button>(R.id.btn_level_easy).setOnClickListener { go("easy") }
-        view.findViewById<Button>(R.id.btn_level_medium).setOnClickListener { go("medium") }
-        view.findViewById<Button>(R.id.btn_level_hard).setOnClickListener { go("hard") }
+        view.findViewById<ImageButton>(R.id.btn_level_easy).apply {
+            setButtonAsset("facile", "Facile (10 questions)")
+            setOnClickListener { go("easy") }
+        }
+        view.findViewById<ImageButton>(R.id.btn_level_medium).apply {
+            setButtonAsset("moyen", "Moyen (20 questions)")
+            setOnClickListener { go("medium") }
+        }
+        view.findViewById<ImageButton>(R.id.btn_level_hard).apply {
+            setButtonAsset("difficile", "Difficile (30 questions)")
+            setOnClickListener { go("hard") }
+        }
     }
 }
