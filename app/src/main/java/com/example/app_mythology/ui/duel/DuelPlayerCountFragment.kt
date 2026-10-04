@@ -4,12 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.NumberPicker
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 
 /** Écran d'entrée du mode Duel : choix du nombre de joueurs (2 à 12), avec l'aide dédiée. */
 class DuelPlayerCountFragment : Fragment() {
@@ -29,15 +30,21 @@ class DuelPlayerCountFragment : Fragment() {
             wrapSelectorWheel = false
         }
 
-        view.findViewById<Button>(R.id.btn_duel_players_next).setOnClickListener {
-            findNavController().navigate(
-                R.id.action_duelPlayerCount_to_duelPlayerNames,
-                bundleOf("playerCount" to picker.value)
-            )
+        view.findViewById<ImageButton>(R.id.btn_duel_players_next).apply {
+            setButtonAsset("suivant", "Suivant")
+            setOnClickListener {
+                findNavController().navigate(
+                    R.id.action_duelPlayerCount_to_duelPlayerNames,
+                    bundleOf("playerCount" to picker.value)
+                )
+            }
         }
 
-        view.findViewById<View>(R.id.btn_duel_help).setOnClickListener {
-            findNavController().navigate(R.id.action_duelPlayerCount_to_duelHelp)
+        view.findViewById<ImageButton>(R.id.btn_duel_help).apply {
+            setButtonAsset("aide", "Aide sur le duel")
+            setOnClickListener {
+                findNavController().navigate(R.id.action_duelPlayerCount_to_duelHelp)
+            }
         }
     }
 }

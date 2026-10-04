@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.ArtifactEntity
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.QuizViewModel
 import kotlin.math.roundToInt
 
@@ -41,10 +42,14 @@ class QuizArtifactFragment : Fragment() {
         val tvAllInfo     = view.findViewById<TextView>(R.id.tv_quiz_all_info)
         val groupAllInfo  = view.findViewById<View>(R.id.group_all_info)
         val etAnswer      = view.findViewById<EditText>(R.id.et_answer)
-        val btnValidate   = view.findViewById<Button>(R.id.btn_validate)
+        val btnValidate   = view.findViewById<ImageButton>(R.id.btn_validate).apply {
+            setButtonAsset("valider", "Valider")
+        }
         val tvScore       = view.findViewById<TextView>(R.id.tv_score)
         val layoutResult  = view.findViewById<View>(R.id.layout_result)
-        val btnRestart    = view.findViewById<Button>(R.id.btn_restart)
+        val btnRestart    = view.findViewById<ImageButton>(R.id.btn_restart).apply {
+            setButtonAsset("retour_quiz", "Retour aux quiz")
+        }
         val dotsContainer = view.findViewById<LinearLayout>(R.id.dots_container)
 
         viewModel.loadArtifactQuiz(level)

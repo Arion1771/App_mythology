@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.quiz.ListItem
 import com.example.app_mythology.quiz.ListThemeCatalog
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.QuizViewModel
 
 /** Quiz Liste : retrouver toutes les entrées d'un thème choisi. Argument "themeId". */
@@ -40,13 +41,17 @@ class QuizListFragment : Fragment() {
         val tvTitle       = view.findViewById<TextView>(R.id.tv_list_quiz_title)
         val groupsContainer = view.findViewById<LinearLayout>(R.id.container_list_groups)
         val etInput       = view.findViewById<EditText>(R.id.et_list_answer)
-        val btnValidate   = view.findViewById<Button>(R.id.btn_list_validate)
+        val btnValidate   = view.findViewById<ImageButton>(R.id.btn_list_validate).apply {
+            setButtonAsset("ok", "Valider")
+        }
         val tvFoundCount  = view.findViewById<TextView>(R.id.tv_list_found_count)
         val tvAttempts    = view.findViewById<TextView>(R.id.tv_list_attempts)
         val layoutInput   = view.findViewById<View>(R.id.layout_list_input)
         val layoutResult  = view.findViewById<View>(R.id.layout_list_result)
         val tvScore       = view.findViewById<TextView>(R.id.tv_list_score)
-        val btnRestart    = view.findViewById<Button>(R.id.btn_list_restart)
+        val btnRestart    = view.findViewById<ImageButton>(R.id.btn_list_restart).apply {
+            setButtonAsset("retour_quiz", "Retour aux quiz")
+        }
 
         tvTitle.text = theme?.title ?: "Liste"
 
@@ -65,7 +70,7 @@ class QuizListFragment : Fragment() {
         fun cardBg(found: Boolean, revealedFinal: Boolean, isCorrectFinal: Boolean) = when {
             revealedFinal && isCorrectFinal  -> R.drawable.card_found_final_bg
             revealedFinal && !isCorrectFinal -> R.drawable.card_notfound_bg
-            found                             -> R.drawable.card_found_bg
+            found                             -> R.drawable.card_found_empty
             else                              -> R.drawable.card_hidden_bg
         }
 
@@ -134,7 +139,7 @@ class QuizListFragment : Fragment() {
                         text = item.name
                         isVisible = true
                     }
-                    card.setBackgroundResource(R.drawable.card_found_bg)
+                    card.setBackgroundResource(R.drawable.card_found_empty)
                 }
             }
             updateFoundCount()

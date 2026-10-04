@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 import kotlin.math.roundToInt
 
@@ -40,8 +41,11 @@ class DuelResultFragment : Fragment() {
             container.addView(row)
         }
 
-        view.findViewById<Button>(R.id.btn_duel_result_home).setOnClickListener {
-            findNavController().popBackStack(R.id.homeFragment, false)
+        view.findViewById<ImageButton>(R.id.btn_duel_result_home).apply {
+            setButtonAsset("retour_accueil", "Retour à l'accueil")
+            setOnClickListener {
+                findNavController().popBackStack(R.id.homeFragment, false)
+            }
         }
     }
 

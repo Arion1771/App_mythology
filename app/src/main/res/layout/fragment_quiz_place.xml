@@ -38,10 +38,10 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:imeOptions="actionDone"/>
         </com.google.android.material.textfield.TextInputLayout>
-        <Button android:id="@+id/btn_place_validate"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="OK"/>
+        <ImageButton android:id="@+id/btn_place_validate"
+            android:layout_width="wrap_content" android:layout_height="48dp"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"
+            android:background="@null" android:padding="0dp"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/layout_place_result"
@@ -52,9 +52,10 @@
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textSize="20sp" android:textStyle="bold" android:textColor="@color/primary"
             android:layout_marginBottom="16dp"/>
-        <Button android:id="@+id/btn_place_restart"
-            android:layout_width="220dp" android:layout_height="56dp"
-            android:text="Retour aux quiz" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+        <ImageButton android:id="@+id/btn_place_restart"
+            android:layout_width="wrap_content" android:layout_height="56dp"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"
+            android:background="@null" android:padding="0dp"/>
     </LinearLayout>
 
 </LinearLayout>

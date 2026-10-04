@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 
 class DuelPoolChoiceFragment : Fragment() {
@@ -28,7 +29,13 @@ class DuelPoolChoiceFragment : Fragment() {
             viewModel.startDuel()
             findNavController().navigate(R.id.action_duelPoolChoice_to_duelAnnounce)
         }
-        view.findViewById<Button>(R.id.btn_duel_pool_same).setOnClickListener { start(true) }
-        view.findViewById<Button>(R.id.btn_duel_pool_different).setOnClickListener { start(false) }
+        view.findViewById<ImageButton>(R.id.btn_duel_pool_same).apply {
+            setButtonAsset("memes_questions", "Mêmes questions pour tous")
+            setOnClickListener { start(true) }
+        }
+        view.findViewById<ImageButton>(R.id.btn_duel_pool_different).apply {
+            setButtonAsset("questions_differentes", "Questions différentes pour chacun")
+            setOnClickListener { start(false) }
+        }
     }
 }

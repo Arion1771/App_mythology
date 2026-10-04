@@ -16,8 +16,9 @@
         android:textColor="@color/on_surface" android:gravity="center"
         android:layout_marginBottom="48dp"/>
 
-    <Button android:id="@+id/btn_duel_announce_start"
-        android:layout_width="240dp" android:layout_height="56dp"
-        android:text="Lancer la question" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+    <ImageButton android:id="@+id/btn_duel_announce_start"
+        android:layout_width="wrap_content" android:layout_height="56dp"
+        android:adjustViewBounds="true" android:scaleType="fitCenter"
+        android:background="@null" android:padding="0dp"/>
 
 </LinearLayout>

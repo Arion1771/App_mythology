@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.ui.common.PrimaryButton
 import com.example.app_mythology.ui.common.bindPrimaryButtons
+import com.example.app_mythology.ui.common.setButtonAsset
 
 class HomeFragment : Fragment() {
 
@@ -35,8 +37,11 @@ class HomeFragment : Fragment() {
             )
         )
 
-        view.findViewById<View>(R.id.btn_trophy).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_achievements)
+        view.findViewById<ImageButton>(R.id.btn_trophy).apply {
+            setButtonAsset("succes", "Succès")
+            setOnClickListener {
+                findNavController().navigate(R.id.action_home_to_achievements)
+            }
         }
 
         // Version affichée en haut à gauche, toujours issue de versionName (jamais codée en dur).

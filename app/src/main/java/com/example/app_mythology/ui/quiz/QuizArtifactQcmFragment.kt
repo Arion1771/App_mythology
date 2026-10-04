@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.ArtifactEntity
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.QuizViewModel
 import kotlin.math.roundToInt
 
@@ -50,7 +51,9 @@ class QuizArtifactQcmFragment : Fragment() {
         )
         val layoutResult = view.findViewById<View>(R.id.layout_result)
         val tvScore       = view.findViewById<TextView>(R.id.tv_score)
-        val btnRestart    = view.findViewById<Button>(R.id.btn_restart)
+        val btnRestart    = view.findViewById<ImageButton>(R.id.btn_restart).apply {
+            setButtonAsset("retour_quiz", "Retour aux quiz")
+        }
 
         viewModel.loadArtifactQcm(level)
 

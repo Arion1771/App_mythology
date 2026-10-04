@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.EntiteEntity
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 
 /** Question du duel en mode Classique : indice, 2 essais, infos révélées après le 1er essai faux. */
@@ -36,7 +37,9 @@ class DuelQuestionClassicFragment : Fragment() {
         val tvAllInfo    = view.findViewById<TextView>(R.id.tv_quiz_all_info)
         val groupAllInfo = view.findViewById<View>(R.id.group_all_info)
         val etAnswer     = view.findViewById<EditText>(R.id.et_answer)
-        val btnValidate  = view.findViewById<Button>(R.id.btn_validate)
+        val btnValidate  = view.findViewById<ImageButton>(R.id.btn_validate).apply {
+            setButtonAsset("valider", "Valider")
+        }
 
         fun bind(e: EntiteEntity, step: Int) {
             val player = viewModel.currentPlayer()

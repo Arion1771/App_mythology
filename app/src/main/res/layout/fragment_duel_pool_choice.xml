@@ -8,13 +8,15 @@
         android:text="Questions" android:textSize="20sp" android:textStyle="bold"
         android:textColor="@color/on_surface" android:layout_marginBottom="48dp"/>
 
-    <Button android:id="@+id/btn_duel_pool_same"
-        android:layout_width="260dp" android:layout_height="56dp"
-        android:text="Mêmes questions pour tous" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
+    <ImageButton android:id="@+id/btn_duel_pool_same"
+        android:layout_width="wrap_content" android:layout_height="56dp"
+        android:adjustViewBounds="true" android:scaleType="fitCenter"
+        android:background="@null" android:padding="0dp"
         android:layout_marginBottom="20dp"/>
 
-    <Button android:id="@+id/btn_duel_pool_different"
-        android:layout_width="260dp" android:layout_height="56dp"
-        android:text="Questions différentes pour chacun" android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+    <ImageButton android:id="@+id/btn_duel_pool_different"
+        android:layout_width="wrap_content" android:layout_height="56dp"
+        android:adjustViewBounds="true" android:scaleType="fitCenter"
+        android:background="@null" android:padding="0dp"/>
 
 </LinearLayout>

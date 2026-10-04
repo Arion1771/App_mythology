@@ -11,6 +11,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.database.PlaceEntity
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.QuizViewModel
 
 /**
@@ -38,13 +39,17 @@ class QuizPlaceFragment : Fragment() {
         val tvTitle = view.findViewById<TextView>(R.id.tv_place_quiz_title)
         val container = view.findViewById<GridLayout>(R.id.grid_places)
         val etInput = view.findViewById<EditText>(R.id.et_place_answer)
-        val btnValidate = view.findViewById<Button>(R.id.btn_place_validate)
+        val btnValidate = view.findViewById<ImageButton>(R.id.btn_place_validate).apply {
+            setButtonAsset("ok", "Valider")
+        }
         val tvFoundCount = view.findViewById<TextView>(R.id.tv_found_count)
         val tvAttempts = view.findViewById<TextView>(R.id.tv_place_attempts)
         val layoutInput = view.findViewById<View>(R.id.layout_place_input)
         val layoutResult = view.findViewById<View>(R.id.layout_place_result)
         val tvScore = view.findViewById<TextView>(R.id.tv_place_score)
-        val btnRestart = view.findViewById<Button>(R.id.btn_place_restart)
+        val btnRestart = view.findViewById<ImageButton>(R.id.btn_place_restart).apply {
+            setButtonAsset("retour_quiz", "Retour aux quiz")
+        }
 
         tvTitle.text = when (quizType) {
             "yggdrasil" -> "Arbre Monde"
@@ -142,7 +147,7 @@ class QuizPlaceFragment : Fragment() {
                         isVisible = true
                     }
                     card.findViewById<TextView>(R.id.tv_card_info).isVisible = false
-                    card.setBackgroundResource(R.drawable.card_found_bg)
+                    card.setBackgroundResource(R.drawable.card_found_empty)
                 }
             }
             updateFoundCount()

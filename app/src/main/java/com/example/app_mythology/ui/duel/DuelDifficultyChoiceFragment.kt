@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setButtonAsset
 import com.example.app_mythology.viewmodel.DuelViewModel
 import com.example.app_mythology.viewmodel.QuizViewModel
 
@@ -29,8 +30,17 @@ class DuelDifficultyChoiceFragment : Fragment() {
             viewModel.level = level
             findNavController().navigate(R.id.action_duelDifficultyChoice_to_duelPoolChoice)
         }
-        view.findViewById<Button>(R.id.btn_level_easy).setOnClickListener { go(QuizViewModel.QuizLevel.EASY) }
-        view.findViewById<Button>(R.id.btn_level_medium).setOnClickListener { go(QuizViewModel.QuizLevel.MEDIUM) }
-        view.findViewById<Button>(R.id.btn_level_hard).setOnClickListener { go(QuizViewModel.QuizLevel.HARD) }
+        view.findViewById<ImageButton>(R.id.btn_level_easy).apply {
+            setButtonAsset("facile", "Facile (10 questions)")
+            setOnClickListener { go(QuizViewModel.QuizLevel.EASY) }
+        }
+        view.findViewById<ImageButton>(R.id.btn_level_medium).apply {
+            setButtonAsset("moyen", "Moyen (20 questions)")
+            setOnClickListener { go(QuizViewModel.QuizLevel.MEDIUM) }
+        }
+        view.findViewById<ImageButton>(R.id.btn_level_hard).apply {
+            setButtonAsset("difficile", "Difficile (30 questions)")
+            setOnClickListener { go(QuizViewModel.QuizLevel.HARD) }
+        }
     }
 }
