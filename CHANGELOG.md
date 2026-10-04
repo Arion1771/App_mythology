@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.2.4
+
+- Écran de choix du mode en Duel (Classique/QCM) passé aux plaques-images `assets/button/classique.png` et `assets/button/qcm.png`, déjà utilisées par l'écran de choix du quiz solo pour la même notion, au lieu de deux boutons texte unis
+
 #### V4.2.3
 
 - Nouvelles versions des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : recadrées au ras de la plaque et allégées en 8 bits (1226×422, comme les 6 autres boutons), après un premier dépôt en 1920×1080/16 bits avec une grosse marge vide qui les aurait fait apparaître nettement plus petites que les autres boutons à l'écran
