@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.2.3
+### Latest addition — V4.2.4
 
-Re-cropped and re-compressed the 6 button plaques generated in V4.1.0 (QCM, Classic, List, World Tree, Rivers of Hell, Kingdom of the Dead): a first pass had been dropped in at 1920×1080/16-bit with a large empty margin, which would have rendered them noticeably smaller than the other buttons on screen — they're now back to the shared 1226×422/8-bit frame, cropped flush to the plaque. This follows V4.2.2, which added the empty `assets/background/` folder where future background theme images belong.
+The Duel mode-choice screen (Classic/MCQ) now uses the `classique.png`/`qcm.png` button plaques already used by the solo quiz mode picker for the same choice, instead of two plain text buttons. This follows V4.2.3, which re-cropped and re-compressed the 6 button plaques generated in V4.1.0 (QCM, Classic, List, World Tree, Rivers of Hell, Kingdom of the Dead) back to the shared 1226×422/8-bit frame after a first pass had been dropped in oversized.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.2.3
+### Dernier ajout — V4.2.4
 
-Recadrage et recompression des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : un premier dépôt en 1920×1080/16 bits avec une grosse marge vide les aurait fait apparaître nettement plus petites que les autres boutons à l'écran ; elles reviennent au gabarit commun 1226×422/8 bits, détourées au ras de la plaque. Cela fait suite à la V4.2.2, qui a ajouté le dossier `assets/background/` (vide pour l'instant), où déposer les images des futurs thèmes de fond.
+L'écran de choix du mode en Duel (Classique/QCM) utilise désormais les plaques-images `classique.png`/`qcm.png` déjà utilisées par le choix du mode de quiz solo pour le même choix, au lieu de deux boutons texte unis. Cela fait suite à la V4.2.3, qui a recadré et recompressé les 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) après un premier dépôt en format trop grand.
 
 ### Démarrage
 
