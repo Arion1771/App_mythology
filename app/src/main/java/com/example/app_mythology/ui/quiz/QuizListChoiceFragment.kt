@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.app_mythology.R
 import com.example.app_mythology.quiz.ListThemeCatalog
+import com.example.app_mythology.ui.common.setWoodBackground
 
 class QuizListChoiceFragment : Fragment() {
 
@@ -27,8 +27,7 @@ class QuizListChoiceFragment : Fragment() {
         ListThemeCatalog.all.forEach { theme ->
             val btn = Button(requireContext()).apply {
                 text = theme.title
-                setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.primary))
-                setTextColor(ContextCompat.getColor(requireContext(), R.color.on_primary))
+                setWoodBackground()
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, dpToPx(52)
                 ).also { it.bottomMargin = dpToPx(12) }

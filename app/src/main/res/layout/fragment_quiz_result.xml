@@ -21,7 +21,7 @@
         <LinearLayout android:id="@+id/group_result_info"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/card_bg"
+            android:background="@drawable/card_empty"
             android:padding="12dp" android:layout_marginBottom="20dp">
             <TextView android:id="@+id/tv_result_info"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -29,8 +29,7 @@
         </LinearLayout>
 
         <Button android:id="@+id/btn_result_next"
-            android:layout_width="match_parent" android:layout_height="56dp"
-            android:text="Question suivante →" android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"/>
+            android:layout_width="match_parent" android:layout_height="56dp"/>
 
     </LinearLayout>
 </ScrollView>

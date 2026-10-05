@@ -7,6 +7,9 @@
     <!-- Thème de fond « Sombre (défaut) », voir bg_theme_default.xml -->
     <color name="background_theme_default_glow">#FF1B1B1B</color>
     <color name="on_surface_variant">#FF9E9E9E</color>
+    <!-- Texte sur fond plaque de bois (assets/button/vide.png) : boutons à
+         contenu rempli dynamiquement (choix QCM, thèmes liste, suivant). -->
+    <color name="on_wood">#FFF5E2BA</color>
     <!-- Requis par MaterialComponents -->
     <color name="colorAccent">#FFB36A</color>
     <color name="colorPrimaryDark">#FF0A0A0A</color>

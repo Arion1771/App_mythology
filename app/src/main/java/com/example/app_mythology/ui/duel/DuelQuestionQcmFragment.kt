@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
+import com.example.app_mythology.ui.common.setWoodBackground
 import com.example.app_mythology.viewmodel.DuelViewModel
 
 /** Question du duel en mode QCM : indice, 4 choix, un seul essai. */
@@ -35,7 +36,7 @@ class DuelQuestionQcmFragment : Fragment() {
             view.findViewById<Button>(R.id.btn_qcm_choice_1),
             view.findViewById<Button>(R.id.btn_qcm_choice_2),
             view.findViewById<Button>(R.id.btn_qcm_choice_3)
-        )
+        ).onEach { it.setWoodBackground() }
 
         val question = viewModel.currentQuestion()
         val player = viewModel.currentPlayer()

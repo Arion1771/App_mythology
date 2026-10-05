@@ -15,6 +15,7 @@ import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.ui.common.setButtonAsset
+import com.example.app_mythology.ui.common.setWoodBackground
 import com.example.app_mythology.viewmodel.QuizViewModel
 import kotlin.math.roundToInt
 
@@ -49,7 +50,7 @@ class QuizEntityQcmFragment : Fragment() {
             view.findViewById<Button>(R.id.btn_qcm_choice_1),
             view.findViewById<Button>(R.id.btn_qcm_choice_2),
             view.findViewById<Button>(R.id.btn_qcm_choice_3)
-        )
+        ).onEach { it.setWoodBackground() }
         val layoutResult = view.findViewById<View>(R.id.layout_result)
         val tvScore       = view.findViewById<TextView>(R.id.tv_score)
         val btnRestart    = view.findViewById<ImageButton>(R.id.btn_restart).apply {
