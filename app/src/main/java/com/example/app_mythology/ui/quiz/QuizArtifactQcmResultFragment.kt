@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.app_mythology.R
 import com.example.app_mythology.database.ArtifactEntity
+import com.example.app_mythology.ui.common.setWoodBackground
 import com.example.app_mythology.viewmodel.QuizViewModel
 
 class QuizArtifactQcmResultFragment : Fragment() {
@@ -29,7 +30,7 @@ class QuizArtifactQcmResultFragment : Fragment() {
         val tvStatus = view.findViewById<TextView>(R.id.tv_result_status)
         val tvName   = view.findViewById<TextView>(R.id.tv_result_name)
         val tvInfo   = view.findViewById<TextView>(R.id.tv_result_info)
-        val btnNext  = view.findViewById<Button>(R.id.btn_result_next)
+        val btnNext  = view.findViewById<Button>(R.id.btn_result_next).apply { setWoodBackground() }
 
         val artifacts = viewModel.qcmArtifacts.value ?: emptyList()
         val index     = viewModel.qcmIndex.value ?: 0

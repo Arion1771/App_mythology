@@ -36,19 +36,15 @@
 
         <Button android:id="@+id/btn_qcm_choice_0"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_1"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_2"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_3"
-            android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="@color/primary" android:textColor="@color/on_primary"/>
+            android:layout_width="match_parent" android:layout_height="56dp"/>
 
     </LinearLayout>
 </ScrollView>

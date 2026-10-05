@@ -43,19 +43,15 @@
 
         <Button android:id="@+id/btn_qcm_choice_0"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_1"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_2"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"
             android:layout_marginBottom="10dp"/>
         <Button android:id="@+id/btn_qcm_choice_3"
             android:layout_width="match_parent" android:layout_height="56dp"
-            android:backgroundTint="#FFB36A" android:textColor="#FF1A1A1A"
             android:layout_marginBottom="10dp"/>
 
         <LinearLayout android:id="@+id/layout_result"
