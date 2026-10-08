@@ -12,6 +12,30 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.2
+
+- Added an automated test suite (Test-Non-Regression branch): navigation of every screen with main buttons and of their standalone buttons (back included), runs of the Classic/Multiple-choice quizzes (Entities and Artifacts), the List quiz and the Places quiz, run of Duel mode (Classic and Multiple-choice) up to the first question, instrumented tests of the Room database (round-trip of the 5 tables, replacement strategy of `entity_levels`, window of `entity_encounters`, uniqueness of the name+mythology+race key on the real data), and a check that each List theme includes exactly all matching entities/artifacts from `prepopulate.json`, no more, no less
+- Added `PlaceDao.getAllSync()` (missing, unlike `EntiteDao`/`ArtifactDao`) to allow this last test
+
+#### V4.3.1
+
+- Added 4 new entities, and fully renumbered the internal ids of every entity so that they exactly match their position in `prepopulate.json` (no entity without an id any more, now a permanent convention); entities whose only change is their id because of this shift are not listed below
+- Merged the generic "Celte"/"Celtique" mythologies into two specific categories, "Celtique Irlandaise" and "Celtique Gauloise" (renamed from "Gaulois"); the entities concerned were moved to the right place in the file according to the grouping convention by mythology then by race
+- Added 3 new achievements: "Le ciel nous tombe sur la tête" (answer Teutatès correctly), "Ça va Immotep, ça va" (answer Ptah correctly) and "Astrologie de trottoir" (get each of the 12 classical zodiac signs at least once) — generic emblem until a final illustration, as for the other achievements not yet illustrated
+- Minor graphical adjustment
+- Entities added/modified:
+  - Taranis (added)
+  - Esus (added)
+  - Enlil (added)
+  - Nergal (added)
+  - Gilgamesh : Sumérienne -> Mésopotamienne (mythology modified)
+  - Artio : Celtique -> Celtique Gauloise (mythology modified)
+  - Morrigan : Celtique -> Celtique Gauloise (mythology modified)
+  - Cliodhna : Celte -> Celtique Irlandaise (mythology modified)
+  - Cernunnos : Gaulois -> Celtique Gauloise (mythology modified)
+  - Moritasgus : Gaulois -> Celtique Gauloise (mythology modified)
+  - Teutatès : Gaulois -> Celtique Gauloise (mythology modified)
+
 #### V4.3.0
 
 - Entities quiz (Classic and Multiple-choice only — Artifacts and Duel unchanged) redesigned with a two-tier adaptive difficulty: on top of the chosen canonical level (Easy/Medium/Hard), each entity gets an internal level (1 to 3) based on the player's own results on it, set for good once it has been met 10 times (mistakes over its last 10 encounters: ≤3 → level 1, ≥8 → level 3, otherwise 2; a mistake counts 1 if never found, 0.5 if found on the second attempt in Classic, 0 otherwise)
@@ -62,6 +86,30 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.2
+
+- Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons principaux et de leurs boutons isolés (retour inclus), déroulé des quiz Classique/QCM (Entités et Artéfacts), du quiz Liste et du quiz Lieux, déroulé du mode Duel (Classique et QCM) jusqu'à la première question, tests instrumentés de la base Room (round-trip des 5 tables, stratégie de remplacement de `entity_levels`, fenêtre de `entity_encounters`, unicité de la clé nom+mythologie+race sur les vraies données), et vérification que chaque thème du mode Liste prend en compte toutes les entités/artéfacts correspondants de `prepopulate.json`, ni plus ni moins
+- Ajout de `PlaceDao.getAllSync()` (manquant, contrairement à `EntiteDao`/`ArtifactDao`) pour permettre ce dernier test
+
+#### V4.3.1
+
+- Ajout de 4 nouvelles entités, et renumérotation complète des identifiants internes de toutes les entités pour qu'ils correspondent exactement à leur position dans `prepopulate.json` (plus aucune entité sans identifiant, convention désormais permanente) ; les entités dont seul l'identifiant a changé à cause de ce décalage n'apparaissent pas ci-dessous
+- Fusion des mythologies génériques « Celte »/« Celtique » dans deux catégories précises, « Celtique Irlandaise » et « Celtique Gauloise » (renommée depuis « Gaulois ») ; les entités concernées ont été replacées au bon endroit du fichier selon la convention de regroupement par mythologie puis par race
+- Ajout de 3 nouveaux succès : « Le ciel nous tombe sur la tête » (répondre correctement à Teutatès), « Ça va Immotep, ça va » (répondre correctement à Ptah) et « Astrologie de trottoir » (obtenir au moins une fois chacun des 12 signes du zodiaque classique) — blason générique en attendant une illustration définitive, comme pour les autres succès non encore illustrés
+- Changement d'adaptation graphique mineure
+- Ajout/Modification d'entités :
+  - Taranis (ajout)
+  - Esus (ajout)
+  - Enlil (ajout)
+  - Nergal (ajout)
+  - Gilgamesh : Sumérienne -> Mésopotamienne (mythologie modifiée)
+  - Artio : Celtique -> Celtique Gauloise (mythologie modifiée)
+  - Morrigan : Celtique -> Celtique Gauloise (mythologie modifiée)
+  - Cliodhna : Celte -> Celtique Irlandaise (mythologie modifiée)
+  - Cernunnos : Gaulois -> Celtique Gauloise (mythologie modifiée)
+  - Moritasgus : Gaulois -> Celtique Gauloise (mythologie modifiée)
+  - Teutatès : Gaulois -> Celtique Gauloise (mythologie modifiée)
 
 #### V4.3.0
 
