@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.3
+
+- Three-button menu screens (home, Browse, quiz choice, Places quiz, domain choice, Duel mode choice): the column of main buttons is moved down so that the bottom of the first button falls in the middle of the screen, and the screen title/text is now centred in the upper third (two thirds of the way up from the bottom) instead of sticking to the top
+
 #### V4.3.1
 
 - Added 4 new entities, and fully renumbered the internal ids of every entity so that they exactly match their position in `prepopulate.json` (no entity without an id any more, now a permanent convention); entities whose only change is their id because of this shift are not listed below
@@ -81,6 +85,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
 
 #### V4.3.1
 
