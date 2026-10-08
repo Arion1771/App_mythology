@@ -2,6 +2,14 @@
 
 ## V4
 
+### V4.3.0
+
+- Quiz Entités (Classique et QCM uniquement — Artéfacts et Duel inchangés) repensé avec une difficulté adaptative à deux niveaux : en plus du niveau canonique choisi (Facile/Moyen/Difficile), chaque entité acquiert un niveau interne (1 à 3) propre aux performances du joueur sur elle, établi définitivement dès qu'elle a été rencontrée 10 fois (fautes sur ses 10 dernières rencontres : ≤3 → niveau 1, ≥8 → niveau 3, sinon 2 ; une faute vaut 1 si jamais trouvée, 0,5 si trouvée au second essai en Classique, 0 sinon)
+- Les trois niveaux (Facile/Moyen/Difficile) proposent désormais chacun 15 questions puisées uniquement parmi les entités du niveau canonique choisi, au lieu de 10/20/30 questions cumulées sur les niveaux inférieurs ; une fois le niveau interne établi pour toutes les entités du niveau canonique, le tirage se fait à 5 questions par niveau interne (1/2/3, avec repli sur les niveaux voisins si l'un d'eux manque d'entités)
+- Les points d'une question et la pastille de difficulté affichée utilisent ce niveau interne plutôt que la seule difficulté canonique, une fois celui-ci établi
+- Le niveau interne et l'historique de rencontres d'une entité sont conservés lors des mises à jour de `prepopulate.json`, sauf si son nom, sa mythologie, sa race, son domaine, son indice ou sa difficulté changent
+- Écran d'aide du quiz mis à jour en conséquence
+
 #### V4.2.4
 
 - Écran de choix du mode en Duel (Classique/QCM) passé aux plaques-images `assets/button/classique.png` et `assets/button/qcm.png`, déjà utilisées par l'écran de choix du quiz solo pour la même notion, au lieu de deux boutons texte unis
