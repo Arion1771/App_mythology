@@ -2,6 +2,11 @@
 
 ## V4
 
+#### V4.3.2
+
+- Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons principaux et de leurs boutons isolés (retour inclus), déroulé des quiz Classique/QCM (Entités et Artéfacts), du quiz Liste et du quiz Lieux, déroulé du mode Duel (Classique et QCM) jusqu'à la première question, tests instrumentés de la base Room (round-trip des 5 tables, stratégie de remplacement de `entity_levels`, fenêtre de `entity_encounters`, unicité de la clé nom+mythologie+race sur les vraies données), et vérification que chaque thème du mode Liste prend en compte toutes les entités/artéfacts correspondants de `prepopulate.json`, ni plus ni moins
+- Ajout de `PlaceDao.getAllSync()` (manquant, contrairement à `EntiteDao`/`ArtifactDao`) pour permettre ce dernier test
+
 #### V4.3.1
 
 - Ajout de 4 nouvelles entités, et renumérotation complète des identifiants internes de toutes les entités pour qu'ils correspondent exactement à leur position dans `prepopulate.json` (plus aucune entité sans identifiant, convention désormais permanente) ; les entités dont seul l'identifiant a changé à cause de ce décalage n'apparaissent pas ci-dessous
