@@ -12,6 +12,11 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.2
+
+- Added an automated test suite (Test-Non-Regression branch): navigation of every screen with main buttons and of their standalone buttons (back included), runs of the Classic/Multiple-choice quizzes (Entities and Artifacts), the List quiz and the Places quiz, run of Duel mode (Classic and Multiple-choice) up to the first question, instrumented tests of the Room database (round-trip of the 5 tables, replacement strategy of `entity_levels`, window of `entity_encounters`, uniqueness of the name+mythology+race key on the real data), and a check that each List theme includes exactly all matching entities/artifacts from `prepopulate.json`, no more, no less
+- Added `PlaceDao.getAllSync()` (missing, unlike `EntiteDao`/`ArtifactDao`) to allow this last test
+
 #### V4.3.1
 
 - Added 4 new entities, and fully renumbered the internal ids of every entity so that they exactly match their position in `prepopulate.json` (no entity without an id any more, now a permanent convention); entities whose only change is their id because of this shift are not listed below
@@ -81,6 +86,11 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.2
+
+- Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons principaux et de leurs boutons isolés (retour inclus), déroulé des quiz Classique/QCM (Entités et Artéfacts), du quiz Liste et du quiz Lieux, déroulé du mode Duel (Classique et QCM) jusqu'à la première question, tests instrumentés de la base Room (round-trip des 5 tables, stratégie de remplacement de `entity_levels`, fenêtre de `entity_encounters`, unicité de la clé nom+mythologie+race sur les vraies données), et vérification que chaque thème du mode Liste prend en compte toutes les entités/artéfacts correspondants de `prepopulate.json`, ni plus ni moins
+- Ajout de `PlaceDao.getAllSync()` (manquant, contrairement à `EntiteDao`/`ArtifactDao`) pour permettre ce dernier test
 
 #### V4.3.1
 
