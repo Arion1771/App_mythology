@@ -10,9 +10,19 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V4.2.3
+### Changes since the last release (V4.2.3)
 
-- New versions of the 6 plates generated in V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts): cropped tight to the plate and lightened to 8 bits (1226×422, like the other 6 buttons), after a first upload in 1920×1080/16 bits with a large empty margin that would have made them look much smaller than the other buttons on screen
+#### V4.3.0
+
+- Entities quiz (Classic and Multiple-choice only — Artifacts and Duel unchanged) redesigned with a two-tier adaptive difficulty: on top of the chosen canonical level (Easy/Medium/Hard), each entity gets an internal level (1 to 3) based on the player's own results on it, set for good once it has been met 10 times (mistakes over its last 10 encounters: ≤3 → level 1, ≥8 → level 3, otherwise 2; a mistake counts 1 if never found, 0.5 if found on the second attempt in Classic, 0 otherwise)
+- The three levels (Easy/Medium/Hard) now each offer 15 questions drawn only from entities of the chosen canonical level, instead of 10/20/30 questions accumulated over the lower levels; once the internal level is established for every entity of the canonical level, the draw takes 5 questions per internal level (1/2/3, falling back on the neighbouring levels if one of them lacks entities)
+- A question's points and the displayed difficulty badge use this internal level rather than the canonical difficulty alone, once it is established
+- An entity's internal level and encounter history are kept across `prepopulate.json` updates, unless its name, mythology, race, domain, clue or difficulty changes
+- Quiz help screen updated accordingly
+
+#### V4.2.4
+
+- Duel mode choice screen (Classic/Multiple-choice) switched to the image plates `assets/button/classique.png` and `assets/button/qcm.png`, already used by the solo quiz selection screen for the same notion, instead of two plain text buttons
 
 ### Getting started
 
@@ -51,9 +61,19 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V4.2.3
+### Nouveautés depuis la dernière release (V4.2.3)
 
-- Nouvelles versions des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : recadrées au ras de la plaque et allégées en 8 bits (1226×422, comme les 6 autres boutons), après un premier dépôt en 1920×1080/16 bits avec une grosse marge vide qui les aurait fait apparaître nettement plus petites que les autres boutons à l'écran
+#### V4.3.0
+
+- Quiz Entités (Classique et QCM uniquement — Artéfacts et Duel inchangés) repensé avec une difficulté adaptative à deux niveaux : en plus du niveau canonique choisi (Facile/Moyen/Difficile), chaque entité acquiert un niveau interne (1 à 3) propre aux performances du joueur sur elle, établi définitivement dès qu'elle a été rencontrée 10 fois (fautes sur ses 10 dernières rencontres : ≤3 → niveau 1, ≥8 → niveau 3, sinon 2 ; une faute vaut 1 si jamais trouvée, 0,5 si trouvée au second essai en Classique, 0 sinon)
+- Les trois niveaux (Facile/Moyen/Difficile) proposent désormais chacun 15 questions puisées uniquement parmi les entités du niveau canonique choisi, au lieu de 10/20/30 questions cumulées sur les niveaux inférieurs ; une fois le niveau interne établi pour toutes les entités du niveau canonique, le tirage se fait à 5 questions par niveau interne (1/2/3, avec repli sur les niveaux voisins si l'un d'eux manque d'entités)
+- Les points d'une question et la pastille de difficulté affichée utilisent ce niveau interne plutôt que la seule difficulté canonique, une fois celui-ci établi
+- Le niveau interne et l'historique de rencontres d'une entité sont conservés lors des mises à jour de `prepopulate.json`, sauf si son nom, sa mythologie, sa race, son domaine, son indice ou sa difficulté changent
+- Écran d'aide du quiz mis à jour en conséquence
+
+#### V4.2.4
+
+- Écran de choix du mode en Duel (Classique/QCM) passé aux plaques-images `assets/button/classique.png` et `assets/button/qcm.png`, déjà utilisées par l'écran de choix du quiz solo pour la même notion, au lieu de deux boutons texte unis
 
 ### Démarrage
 
