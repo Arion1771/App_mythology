@@ -82,13 +82,40 @@
 #### V3.4.2
 
 - Orthos rejoint le type de monstre « Chien » (auparavant « Chien à Deux Têtes »), commun à Cerbère, Lélaps et Garm
-  - Entité (Mise à jour) : Orthos
+  - Ajout/Modification d'entités :
+    - Orthos : Chien à Deux Têtes -> Chien (type de monstre modifié)
 
 #### V3.4.1
 
 - Ajout de 3 nouvelles entités niveau 3 : Shango (Yoruba), Hinezumi (Japonaise), Huoshu (Chinoise)
 - Ajout des 23 dieux/monstres/héros présents dans Smite et/ou Smite 2 encore absents de la base, tous niveau 3 : Méduse et Arachné (Grecque), Bakasura, Kumbhakarna, Rama, Ravana et Vamana (Hindouisme), Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang et Zhong Kui (Chinoise), Xbalanque (Maya), Sol, Ullr et Ymir (Nordique), Danzaburou et Kuzenbo (Japonaise), Cu Chulainn (Celtique Irlandaise)
-  - Entité (Ajout) : Shango, Hinezumi, Huoshu, Méduse, Arachné, Bakasura, Kumbhakarna, Rama, Ravana, Vamana, Chang'e, Da Ji, Guan Yu, Hou Yi, Jing Wei, Hua Mulan, Sun Wukong, Yu Huang, Zhong Kui, Xbalanque, Sol, Ullr, Ymir, Danzaburou, Kuzenbo, Cu Chulainn
+  - Ajout/Modification d'entités :
+    - Shango (ajout)
+    - Hinezumi (ajout)
+    - Huoshu (ajout)
+    - Méduse (ajout)
+    - Arachné (ajout)
+    - Bakasura (ajout)
+    - Kumbhakarna (ajout)
+    - Rama (ajout)
+    - Ravana (ajout)
+    - Vamana (ajout)
+    - Chang'e (ajout)
+    - Da Ji (ajout)
+    - Guan Yu (ajout)
+    - Hou Yi (ajout)
+    - Jing Wei (ajout)
+    - Hua Mulan (ajout)
+    - Sun Wukong (ajout)
+    - Yu Huang (ajout)
+    - Zhong Kui (ajout)
+    - Xbalanque (ajout)
+    - Sol (ajout)
+    - Ullr (ajout)
+    - Ymir (ajout)
+    - Danzaburou (ajout)
+    - Kuzenbo (ajout)
+    - Cu Chulainn (ajout)
 
 ### V3.4.0
 
@@ -125,10 +152,10 @@
 
 - Correction de la description de Camazotz, qui reprenait par erreur celle de Hun Batz (le singe transformé, saint patron des artisans) au lieu de décrire le dieu chauve-souris associé à la nuit et au sacrifice
 - Retrait de « Pendragon » du nom d'Arthur et d'Uther, patronyme tardif absent des sources arthuriennes les plus anciennes
-  - Entité :
-    - Arthur, ex-Arthur Pendragon (Mise à jour)
-    - Uther, ex-Uther Pendragon (Mise à jour)
-    - Camazotz (Mise à jour)
+  - Ajout/Modification d'entités :
+    - Arthur : Arthur Pendragon -> Arthur (nom modifié)
+    - Uther : Uther Pendragon -> Uther (nom modifié)
+    - Camazotz : "Transformé en singe par ses demi-frères jaloux de son talent, il devient avec son jumeau le saint patron des artistes et des artisans." -> "Dieu chauve-souris associé à la nuit, à la mort et au sacrifice, il règne sur la Maison des Chauves-souris de Xibalba où il décapite l'un des Jumeaux Héros dans le Popol Vuh." (description modifiée)
 
 
 #### V3.2.3
@@ -140,10 +167,10 @@
 #### V3.2.2
 
 - Ajout de Néoptolème et Philoctète, rattachés au thème « Guerriers grecs devant Troie » du mode Liste, ainsi que de Télémaque
-  - Entité :
-    - Néoptolème (Ajout)
-    - Philoctète (Ajout)
-    - Télémaque (Ajout)
+  - Ajout/Modification d'entités :
+    - Néoptolème (ajout)
+    - Philoctète (ajout)
+    - Télémaque (ajout)
 
 
 #### V3.2.1
@@ -172,20 +199,20 @@
 #### V3.0.2
 
 - Complétion des tags thématiques manquants pour des entités qui n'avaient hérité que du tag Principal lors de l'assignation heuristique de V3.0.0, faute de correspondance repérée avec un mot-clé
-  - Entité :
-    - Poséidon (Mise à jour)
-    - Cymopolée (Mise à jour)
-    - Mélinoé (Mise à jour)
-    - Discordia (Mise à jour)
-    - Janus (Mise à jour)
-    - Silvanus (Mise à jour)
-    - Ptah (Mise à jour)
-    - Hâpy (Mise à jour)
-    - Taouret (Mise à jour)
-    - Ériu (Mise à jour)
-    - Ah-Muzen-Cab (Mise à jour)
-    - Camazotz (Mise à jour)
-    - Kali (Mise à jour)
+  - Ajout/Modification d'entités :
+    - Poséidon : Principal -> Principal, Eau (tags modifiés)
+    - Cymopolée : Principal -> Principal, Eau (tags modifiés)
+    - Mélinoé : Principal -> Principal, Mort (tags modifiés)
+    - Discordia : Principal -> Principal, Guerre (tags modifiés)
+    - Janus : Principal -> Principal, Gardien (tags modifiés)
+    - Silvanus : Principal -> Principal, Gardien (tags modifiés)
+    - Ptah : Principal -> Principal, Artisanat (tags modifiés)
+    - Hâpy : Principal -> Principal, Eau, Fertilité (tags modifiés)
+    - Taouret : Principal -> Principal, Fertilité (tags modifiés)
+    - Ériu : Principal -> Principal, Royauté, Terre (tags modifiés)
+    - Ah-Muzen-Cab : Principal -> Principal, Animal (tags modifiés)
+    - Camazotz : Principal -> Principal, Animal (tags modifiés)
+    - Kali : Principal -> Principal, Mort (tags modifiés)
 
 
 #### V3.0.1
@@ -233,16 +260,16 @@
 #### V2.4.2
 
 - Culture populaire : mise à jour de 108 entités selon les rosters exacts de Smite et Smite 2 (« Smite », « Smite 2 » ou les deux selon présence dans chaque jeu) ; le « Sol » nordique de Smite n'a volontairement pas été rapproché de l'entité romaine homonyme (panthéons distincts)
-- Entité :
-  - Agamemnon (Ajout)
-  - Ajax le Petit (Ajout)
-  - Ajax le Grand, ex-Ajax (Mise à jour)
-  - Diomède (Ajout)
-  - Ménélas (Ajout)
-  - Nestor (Ajout)
-  - Patrocle (Ajout)
-  - Bake Kujira (Ajout)
-  - Moritasgus (Ajout)
+- Ajout/Modification d'entités :
+  - Agamemnon (ajout)
+  - Ajax le Petit (ajout)
+  - Ajax le Grand : Ajax -> Ajax le Grand (nom modifié)
+  - Diomède (ajout)
+  - Ménélas (ajout)
+  - Nestor (ajout)
+  - Patrocle (ajout)
+  - Bake Kujira (ajout)
+  - Moritasgus (ajout)
 
 
 #### V2.4.1
@@ -267,11 +294,11 @@
 - Archanges : conformité au Livre d'Hénoch (1 Hénoch 20), suppression de Chamuel, Haniel, Jophiel, Métatron, Sandalphon et Zadkiel (tradition ésotérique distincte) et ajout de Sariel, pour ne conserver que les 7 archanges originels
 - Corrections de noms : Freyja (ex-Freya), Valkyrie (ex-Valkyries), Nephtys (ex-Nephthys)
 - Rééquilibrage de la difficulté (1 → 2) de 8 entités : 3 Moires, 9 Muses, Aigle du Caucase, Érèbe, 3 Parques, 9 Camènes, Polyphemus, Tyr
-- Entité :
-  - Sariel (Ajout)
-  - Freyja, ex-Freya (Mise à jour)
-  - Valkyrie, ex-Valkyries (Mise à jour)
-  - Nephtys, ex-Nephthys (Mise à jour)
+- Ajout/Modification d'entités :
+  - Sariel (ajout)
+  - Freyja : Freya -> Freyja (nom modifié)
+  - Valkyrie : Valkyries -> Valkyrie (nom modifié)
+  - Nephtys : Nephthys -> Nephtys (nom modifié)
 
 
 #### V2.3.1
@@ -304,33 +331,33 @@
 - Audit orthographique et grammatical complet des entités, lieux et artéfacts (accents, accords, typographie) et suppression des articles en début de nom, avec propagation aux champs qui les référencent
 - Enrichissement des 54 descriptions d'entités jusque-là identiques à l'indice du quiz
 - Ajustement de la difficulté d'Olorun (1 → 2)
-- Entité :
-  - Iapetus, ex-Lapetus (Mise à jour)
-  - Poissons, ex-Poisson (Mise à jour)
-  - Dvalin, ex-Dwalin (Mise à jour)
-  - Cottos, ex-Cotos (Mise à jour)
-  - Goibniu, ex-Goibnu (Mise à jour)
-  - Érèbe, ex-Erèbe (Mise à jour)
-  - Érinyes, ex-Erinyes (Mise à jour)
-  - Éros, ex-Eros (Mise à jour)
-  - Éphialtès, ex-Ephialtès (Mise à jour)
-  - Ériu, ex-Eriu (Mise à jour)
-  - Étain, ex-Etain (Mise à jour)
-  - Sanglier d'Érymanthe, ex-Sanglier d'Erymanthe (Mise à jour)
-  - Astréos, ex-Astreos (Mise à jour)
-  - Coéos, ex-Coeos (Mise à jour)
-  - Eurymédon, ex-Eurymedon (Mise à jour)
-  - Océanos, ex-Oceanos (Mise à jour)
-  - Lélaps, ex-Lelaps (Mise à jour)
-  - 9 Muses, ex-9 muses (Mise à jour)
-  - Susanoo, ex-Susano (Mise à jour)
-  - Dame du Lac, ex-La dame du Lac (Mise à jour)
-  - Qilin, ex-Kirin (Mise à jour)
-  - Ogma, ex-Ogmios (Mise à jour)
-  - Pele, ex-Pélé (Mise à jour)
-  - Bouddha, ex-Buddha (Mise à jour)
-  - Rê, ex-Ré (Mise à jour)
-  - Mélinoé (Ajout)
+- Ajout/Modification d'entités :
+  - Iapetus : Lapetus -> Iapetus (nom modifié)
+  - Poissons : Poisson -> Poissons (nom modifié)
+  - Dvalin : Dwalin -> Dvalin (nom modifié)
+  - Cottos : Cotos -> Cottos (nom modifié)
+  - Goibniu : Goibnu -> Goibniu (nom modifié)
+  - Érèbe : Erèbe -> Érèbe (nom modifié)
+  - Érinyes : Erinyes -> Érinyes (nom modifié)
+  - Éros : Eros -> Éros (nom modifié)
+  - Éphialtès : Ephialtès -> Éphialtès (nom modifié)
+  - Ériu : Eriu -> Ériu (nom modifié)
+  - Étain : Etain -> Étain (nom modifié)
+  - Sanglier d'Érymanthe : Sanglier d'Erymanthe -> Sanglier d'Érymanthe (nom modifié)
+  - Astréos : Astreos -> Astréos (nom modifié)
+  - Coéos : Coeos -> Coéos (nom modifié)
+  - Eurymédon : Eurymedon -> Eurymédon (nom modifié)
+  - Océanos : Oceanos -> Océanos (nom modifié)
+  - Lélaps : Lelaps -> Lélaps (nom modifié)
+  - 9 Muses : 9 muses -> 9 Muses (nom modifié)
+  - Susanoo : Susano -> Susanoo (nom modifié)
+  - Dame du Lac : La dame du Lac -> Dame du Lac (nom modifié)
+  - Qilin : Kirin -> Qilin (nom modifié)
+  - Ogma : Ogmios -> Ogma (nom modifié)
+  - Pele : Pélé -> Pele (nom modifié)
+  - Bouddha : Buddha -> Bouddha (nom modifié)
+  - Rê : Ré -> Rê (nom modifié)
+  - Mélinoé (ajout)
 - Lieu :
   - Vanaheim, ex-Vanneheim (Mise à jour)
   - Jotunheim, ex-Jotunnheim (Mise à jour)
@@ -418,6 +445,29 @@
 #### V1.7.1
 
 - Rééquilibrage des niveaux de difficulté de plusieurs entités
+  - Ajout/Modification d'entités :
+    - Astreos : 1 -> 2 (difficulté modifiée)
+    - Circé : 1 -> 2 (difficulté modifiée)
+    - Coeos : 1 -> 2 (difficulté modifiée)
+    - Erinyes : 1 -> 2 (difficulté modifiée)
+    - Grées : 1 -> 2 (difficulté modifiée)
+    - Héméra : 1 -> 2 (difficulté modifiée)
+    - Médée : 1 -> 2 (difficulté modifiée)
+    - Morphée : 1 -> 2 (difficulté modifiée)
+    - Orphée : 1 -> 2 (difficulté modifiée)
+    - Prométhée : 1 -> 2 (difficulté modifiée)
+    - Sanglier d'Erymanthe : 1 -> 2 (difficulté modifiée)
+    - Séléné : 1 -> 2 (difficulté modifiée)
+    - Aura : 3 -> 2 (difficulté modifiée)
+    - Euros : 3 -> 2 (difficulté modifiée)
+    - Néphélée : 3 -> 2 (difficulté modifiée)
+    - Notos : 3 -> 2 (difficulté modifiée)
+    - Aeolus : 1 -> 2 (difficulté modifiée)
+    - Faunus : 1 -> 2 (difficulté modifiée)
+    - Furies : 1 -> 2 (difficulté modifiée)
+    - Luna : 1 -> 2 (difficulté modifiée)
+    - Sol : 1 -> 2 (difficulté modifiée)
+    - Chac : 2 -> 3 (difficulté modifiée)
 
 
 ### V1.7.0
@@ -448,6 +498,10 @@
 #### V1.6.1
 
 - Ajout de nouvelles entités (Érinyes, Grées, Valkyries) en base et tri des identifiants par mythologie
+  - Ajout/Modification d'entités :
+    - Erinyes (ajout)
+    - Grées (ajout)
+    - Valkyries (ajout)
 
 
 ### V1.6.0
