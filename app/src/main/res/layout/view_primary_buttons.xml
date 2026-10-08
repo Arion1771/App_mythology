@@ -8,6 +8,12 @@
   sont détourées au ras de la plaque) ; fitCenter + adjustViewBounds font
   dériver la largeur de l'image, donc rigoureusement la même pour les trois.
   Cohérence verrouillée par PrimaryButtonPlacementTest (branche Test-Unit).
+
+  La colonne étant centrée verticalement, l'espace de tête la décale vers le
+  bas pour que le bas du premier bouton tombe pile au milieu de l'écran :
+  hauteur totale = tête + 3 × (78 + 16) = tête + 282, et bas du bouton 1 =
+  tête + 78 = moitié de la colonne ⇒ tête = 126dp. À recalculer si la
+  hauteur ou l'espacement des boutons change.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/primary_button_column"
@@ -15,6 +21,10 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center_horizontal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="126dp" />
 
     <ImageButton
         android:id="@+id/btn_primary_1"

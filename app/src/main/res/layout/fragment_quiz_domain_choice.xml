@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <TextView android:id="@+id/tv_domain_choice_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="72dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/on_surface"/>
+    <!-- Titre centré sur le tiers supérieur de l'écran (aux deux tiers en
+         partant du bas), au-dessus de la colonne des boutons principaux. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.333" />
+
+        <TextView android:id="@+id/tv_domain_choice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/guide_title"
+            app:layout_constraintBottom_toBottomOf="@id/guide_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_surface"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <include layout="@layout/view_primary_buttons"
         android:layout_width="match_parent"
