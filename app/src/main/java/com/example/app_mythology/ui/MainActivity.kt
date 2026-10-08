@@ -6,9 +6,6 @@ import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
 import com.example.app_mythology.R
 import com.example.app_mythology.achievements.Achievement
 import com.example.app_mythology.achievements.AchievementManager
@@ -31,15 +28,6 @@ class MainActivity : AppCompatActivity() {
         // sélecteur de thème.
         findViewById<View>(R.id.main_root).background =
             BackgroundAssets.load(this, BackgroundThemeManager.getSelected())
-
-        val navHost = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHost.navController
-        val appBarConfig = AppBarConfiguration(setOf(R.id.homeFragment))
-
-        // setupActionBarWithNavController nécessite une ActionBar native,
-        // pas une Toolbar manuelle. On utilise NavigationUI directement.
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
 
         AchievementManager.bannerListener = { achievement -> enqueueBanner(achievement) }
     }
@@ -71,11 +59,5 @@ class MainActivity : AppCompatActivity() {
             banner.visibility = View.GONE
             showNextBanner()
         }, 3000)
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navHost = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        return navHost.navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

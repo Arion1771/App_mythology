@@ -3,13 +3,13 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **515 entités**, **22 lieux**, **43 artéfacts**.
+Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 ---
 
 ## Entités
 
-515 entités, groupées par mythologie puis par race.
+519 entités, groupées par mythologie puis par race.
 
 ### Grecque (199)
 
@@ -528,11 +528,12 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Mammon
 - Satan
 
-### Celtique Irlandaise (13)
+### Celtique Irlandaise (14)
 
-#### Dieu (11)
+#### Dieu (12)
 
 - Brigit
+- Cliodhna
 - Dagda
 - Eithne
 - Goibniu
@@ -647,6 +648,18 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Susanoo
 - Tsukuyomi
 
+### Celtique Gauloise (7)
+
+#### Dieu (7)
+
+- Artio
+- Cernunnos
+- Esus
+- Moritasgus
+- Morrigan
+- Taranis
+- Teutatès
+
 ### Européenne (7)
 
 #### Monstre (7)
@@ -658,6 +671,23 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Drake
 - Manticore
 - Wyvern
+
+### Mésopotamienne (6)
+
+#### Dieu (4)
+
+- Enlil
+- Ishtar
+- Marduk
+- Nergal
+
+#### Héros (1)
+
+- Gilgamesh
+
+#### Monstre (1)
+
+- Tiamat
 
 ### Yoruba (4)
 
@@ -676,38 +706,12 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 - Tarasque
 - Vouivre
 
-### Gaulois (3)
-
-#### Dieu (3)
-
-- Cernunnos
-- Moritasgus
-- Teutatès
-
-### Mésopotamienne (3)
-
-#### Dieu (2)
-
-- Ishtar
-- Marduk
-
-#### Monstre (1)
-
-- Tiamat
-
 ### Aztèque (2)
 
 #### Dieu (2)
 
 - Quetzalcóatl
 - Tlaloc
-
-### Celtique (2)
-
-#### Dieu (2)
-
-- Artio
-- Morrigan
 
 ### Slave (2)
 
@@ -735,12 +739,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 
 - Wolpertinger
 
-### Celte (1)
-
-#### Dieu (1)
-
-- Cliodhna
-
 ### Hawaïenne (1)
 
 #### Dieu (1)
@@ -752,12 +750,6 @@ Total : **515 entités**, **22 lieux**, **43 artéfacts**.
 #### Monstre (1)
 
 - Rokh
-
-### Sumérienne (1)
-
-#### Héros (1)
-
-- Gilgamesh
 
 ---
 
@@ -962,11 +954,11 @@ main sur les entités concernées dans `prepopulate.json`.
 | Mythologie chinoise | 31 | 5 | champ |
 | Mythologie shinto | 9 | 3 | champ |
 | Mythologie d'Amérique du Sud | 13 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
-| Dieux | 225 | 10 | champ |
+| Dieux | 229 | 10 | champ |
 | Monstres | 109 | 10 | champ |
 | Héros | 49 | 5 | champ |
 | Artefacts | 43 | 5 | tous les artéfacts |
-| Entités | 515 | 10 | toutes les entités |
+| Entités | 519 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
