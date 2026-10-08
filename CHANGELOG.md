@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
+
 #### V4.3.1
 
 - Ajout de 4 nouvelles entités, et renumérotation complète des identifiants internes de toutes les entités pour qu'ils correspondent exactement à leur position dans `prepopulate.json` (plus aucune entité sans identifiant, convention désormais permanente) ; les entités dont seul l'identifiant a changé à cause de ce décalage n'apparaissent pas ci-dessous
