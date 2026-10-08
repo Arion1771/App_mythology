@@ -73,8 +73,9 @@ class QuizEntityQcmFragment : Fragment() {
             tvMythology.text = "Mythologie : ${e.mythology}"
             tvRace.text      = "Race : ${translateRace(e.race)}"
             tvClue.text      = e.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
-            tvBadge.text     = e.difficulty.toString()
-            tvBadge.setBackgroundResource(difficultyBadgeRes(e.difficulty))
+            val pointsLevel  = viewModel.qcmEntityPointsLevelAt(index)
+            tvBadge.text     = pointsLevel.toString()
+            tvBadge.setBackgroundResource(difficultyBadgeRes(pointsLevel))
         }
 
         viewModel.qcmEntites.observe(viewLifecycleOwner) { entites ->

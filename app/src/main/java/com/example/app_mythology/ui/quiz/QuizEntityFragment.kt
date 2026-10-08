@@ -67,8 +67,9 @@ class QuizEntityFragment : Fragment() {
             tvProgress.text  = "Question ${index + 1} / ${entities.size}"
             tvMythology.text = "Mythologie : ${e.mythology}"
             tvRace.text      = "Race : ${translateRace(e.race)}"
-            tvDifficultyBadge.text = e.difficulty.toString()
-            tvDifficultyBadge.setBackgroundResource(difficultyBadgeRes(e.difficulty))
+            val pointsLevel = viewModel.entityPointsLevelAt(index)
+            tvDifficultyBadge.text = pointsLevel.toString()
+            tvDifficultyBadge.setBackgroundResource(difficultyBadgeRes(pointsLevel))
 
             // Seul l'indice (clue) est affiché — rien d'autre tant que pas révélé
             tvDomain.text = e.clue?.takeIf { it.isNotBlank() }?.let { "Indice : $it" } ?: "Indice : —"
