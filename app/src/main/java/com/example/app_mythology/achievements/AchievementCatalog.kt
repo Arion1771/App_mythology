@@ -56,10 +56,13 @@ object AchievementCatalog {
         add(Achievement("entity_moritasgus", "Blaireau Divin", "Répondez correctement à Moritasgus dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("entity_arion", "Très Beau Pseudonyme", "Répondez correctement à Arion dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("entity_ulysse_telemaque", "Nono le Robot est fière de toi", "Répondez correctement à Ulysse ou Télémaque dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("entity_teutates", "Le ciel nous tombe sur la tête", "Répondez correctement à Teutatès dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("entity_ptah", "Ça va Immotep, ça va", "Répondez correctement à Ptah dans un quiz Classique ou QCM", "Entités"))
 
         // ── Entités — succès de collection ───────────────────────────────
         add(Achievement("collection_dogs", "C'est bien, bon toutou", "Obtenez au moins une fois chaque entité de type Chien (Cerbère, Lélaps, Garm, Orthos) dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("collection_animals", "Très bizarre ton Zoo", "Obtenez au moins une fois chaque entité portant le tag Animal dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("collection_zodiac", "Astrologie de trottoir", "Obtenez au moins une fois chacun des 12 signes du zodiaque classique dans un quiz Classique ou QCM", "Entités"))
 
         // ── Entités — paliers de score parfait ───────────────────────────
         add(Achievement("classic_entity_10", "Mortel du classique", "Terminez un quiz Classique Entités niveau Facile sans faute (score 10/10)", "Entités"))

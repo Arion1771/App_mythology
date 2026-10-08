@@ -2,6 +2,25 @@
 
 ## V4
 
+#### V4.3.1
+
+- Ajout de 4 nouvelles entités, et renumérotation complète des identifiants internes de toutes les entités pour qu'ils correspondent exactement à leur position dans `prepopulate.json` (plus aucune entité sans identifiant, convention désormais permanente) ; les entités dont seul l'identifiant a changé à cause de ce décalage n'apparaissent pas ci-dessous
+- Fusion des mythologies génériques « Celte »/« Celtique » dans deux catégories précises, « Celtique Irlandaise » et « Celtique Gauloise » (renommée depuis « Gaulois ») ; les entités concernées ont été replacées au bon endroit du fichier selon la convention de regroupement par mythologie puis par race
+- Ajout de 3 nouveaux succès : « Le ciel nous tombe sur la tête » (répondre correctement à Teutatès), « Ça va Immotep, ça va » (répondre correctement à Ptah) et « Astrologie de trottoir » (obtenir au moins une fois chacun des 12 signes du zodiaque classique) — blason générique en attendant une illustration définitive, comme pour les autres succès non encore illustrés
+- Changement d'adaptation graphique mineure
+- Ajout/Modification d'entités :
+  - Taranis (ajout)
+  - Esus (ajout)
+  - Enlil (ajout)
+  - Nergal (ajout)
+  - Gilgamesh : Sumérienne -> Mésopotamienne (mythologie modifiée)
+  - Artio : Celtique -> Celtique Gauloise (mythologie modifiée)
+  - Morrigan : Celtique -> Celtique Gauloise (mythologie modifiée)
+  - Cliodhna : Celte -> Celtique Irlandaise (mythologie modifiée)
+  - Cernunnos : Gaulois -> Celtique Gauloise (mythologie modifiée)
+  - Moritasgus : Gaulois -> Celtique Gauloise (mythologie modifiée)
+  - Teutatès : Gaulois -> Celtique Gauloise (mythologie modifiée)
+
 ### V4.3.0
 
 - Quiz Entités (Classique et QCM uniquement — Artéfacts et Duel inchangés) repensé avec une difficulté adaptative à deux niveaux : en plus du niveau canonique choisi (Facile/Moyen/Difficile), chaque entité acquiert un niveau interne (1 à 3) propre aux performances du joueur sur elle, établi définitivement dès qu'elle a été rencontrée 10 fois (fautes sur ses 10 dernières rencontres : ≤3 → niveau 1, ≥8 → niveau 3, sinon 2 ; une faute vaut 1 si jamais trouvée, 0,5 si trouvée au second essai en Classique, 0 sinon)
