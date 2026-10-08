@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.1
+### Latest addition — V4.3.3
 
-Added 4 new entities (Taranis, Esus, Enlil, Nergal), folded the generic "Celte"/"Celtique" mythology tags into "Celtique Irlandaise" and "Celtique Gauloise" (renamed from "Gaulois", with entities regrouped and ids renumbered to match), added 3 new achievements (Teutatès, Ptah, classic zodiac collection), and a minor graphic adaptation change.
+On every three-button menu screen (home, Browse, quiz choice, Place quiz, domain choice, Duel mode choice), the main button column has been moved down so the bottom of the first button sits at the middle of the screen, and the screen's title/text is now centered at the upper third of the screen instead of hugging the top.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.1
+### Dernier ajout — V4.3.3
 
-Ajout de 4 nouvelles entités (Taranis, Esus, Enlil, Nergal), fusion des mythologies génériques « Celte »/« Celtique » en « Celtique Irlandaise » et « Celtique Gauloise » (renommée depuis « Gaulois », entités replacées et id renumérotés en conséquence), ajout de 3 nouveaux succès (Teutatès, Ptah, collection du zodiaque classique), et changement d'adaptation graphique mineure.
+Sur tous les écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel), la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur au lieu d'être collé en haut.
 
 ### Démarrage
 
