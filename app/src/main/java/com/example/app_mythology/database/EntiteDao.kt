@@ -38,6 +38,10 @@ interface EntiteDao {
     @Query("SELECT * FROM entites WHERE difficulty = :difficulty ORDER BY RANDOM() LIMIT :limit")
     suspend fun getRandomByDifficulty(difficulty: Int, limit: Int): List<EntiteEntity>
 
+    /** Toutes les entités d'un niveau de difficulté canonique donné, pour le moteur de difficulté adaptative. */
+    @Query("SELECT * FROM entites WHERE difficulty = :difficulty")
+    suspend fun getAllByDifficulty(difficulty: Int): List<EntiteEntity>
+
     /** Mythologies distinctes, triées par nombre d'entités décroissant (alphabétique à égalité). */
     @Query("SELECT mythology FROM entites GROUP BY mythology ORDER BY COUNT(*) DESC, mythology ASC")
     fun getDistinctMythologies(): LiveData<List<String>>
