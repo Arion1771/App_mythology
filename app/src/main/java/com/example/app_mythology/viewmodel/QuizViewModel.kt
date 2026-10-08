@@ -224,6 +224,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             "Moritasgus" -> "entity_moritasgus"
             "Arion" -> "entity_arion"
             "Ulysse", "Télémaque" -> "entity_ulysse_telemaque"
+            "Teutatès" -> "entity_teutates"
+            "Ptah" -> "entity_ptah"
             else -> null
         }
         if (id != null) AchievementManager.unlock(id)
@@ -239,7 +241,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         AchievementManager.markEntityObtained(entity.name)
         val isDog = entity.monsterType == "Chien"
         val isAnimal = entity.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
-        if (!isDog && !isAnimal) return
+        val isZodiacClassic = entity.race == "Zodiacal_Sign" && entity.zodiacType == "Classique"
+        if (!isDog && !isAnimal && !isZodiacClassic) return
         viewModelScope.launch {
             val all = entiteRepo.getAllSync()
             if (isDog) {
@@ -251,6 +254,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     e.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
                 }.map { it.name }.toSet()
                 AchievementManager.unlockIfAllObtained(target, "collection_animals")
+            }
+            if (isZodiacClassic) {
+                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Classique" }.map { it.name }.toSet()
+                AchievementManager.unlockIfAllObtained(target, "collection_zodiac")
             }
         }
     }
