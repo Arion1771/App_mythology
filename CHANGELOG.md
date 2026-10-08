@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
+
 #### V4.3.2
 
 - Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons principaux et de leurs boutons isolés (retour inclus), déroulé des quiz Classique/QCM (Entités et Artéfacts), du quiz Liste et du quiz Lieux, déroulé du mode Duel (Classique et QCM) jusqu'à la première question, tests instrumentés de la base Room (round-trip des 5 tables, stratégie de remplacement de `entity_levels`, fenêtre de `entity_encounters`, unicité de la clé nom+mythologie+race sur les vraies données), et vérification que chaque thème du mode Liste prend en compte toutes les entités/artéfacts correspondants de `prepopulate.json`, ni plus ni moins

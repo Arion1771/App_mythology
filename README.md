@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.3
+
+- Three-button menu screens (home, Browse, quiz choice, Places quiz, domain choice, Duel mode choice): the column of main buttons is moved down so that the bottom of the first button falls in the middle of the screen, and the screen title/text is now centred in the upper third (two thirds of the way up from the bottom) instead of sticking to the top
+
 #### V4.3.2
 
 - Added an automated test suite (Test-Non-Regression branch): navigation of every screen with main buttons and of their standalone buttons (back included), runs of the Classic/Multiple-choice quizzes (Entities and Artifacts), the List quiz and the Places quiz, run of Duel mode (Classic and Multiple-choice) up to the first question, instrumented tests of the Room database (round-trip of the 5 tables, replacement strategy of `entity_levels`, window of `entity_encounters`, uniqueness of the name+mythology+race key on the real data), and a check that each List theme includes exactly all matching entities/artifacts from `prepopulate.json`, no more, no less
@@ -86,6 +90,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
 
 #### V4.3.2
 
