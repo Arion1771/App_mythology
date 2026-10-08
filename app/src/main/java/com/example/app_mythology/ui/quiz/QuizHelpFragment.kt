@@ -51,12 +51,16 @@ class QuizHelpFragment : Fragment() {
         ),
         HelpPage(
             "Difficulté et score",
-            "Avant de lancer un quiz d'entités ou d'artéfacts (Classique ou QCM), choisissez un niveau :\n\n" +
+            "Avant de lancer un quiz (Classique ou QCM), choisissez un niveau.\n\n" +
+            "Artéfacts :\n" +
             "• Facile — 10 questions de difficulté 1\n" +
             "• Moyen — 20 questions (difficultés 1 et 2)\n" +
             "• Difficile — 30 questions (difficultés 1, 2 et 3)\n\n" +
-            "Pendant le quiz, une pastille colorée indique la difficulté de la question en cours : vert (facile), jaune (moyen), rouge (difficile) — à ne pas confondre avec les couleurs de l'écran de résultat, qui indiquent elles votre performance sur la question.\n\n" +
-            "En mode Classique, une bonne réponse du premier coup rapporte autant de points que le niveau de difficulté de la question ; du second coup, seulement la moitié. En mode QCM, une bonne réponse rapporte tous les points de la question (un seul essai possible), une mauvaise n'en rapporte aucun. Le score final s'affiche sur le total de points possible.\n\n" +
+            "Entités :\n" +
+            "• Facile, Moyen et Difficile proposent chacun 15 questions, puisées uniquement parmi les entités du niveau choisi.\n" +
+            "• Chaque entité acquiert aussi, avec le temps, un niveau interne (1 à 3) propre à vos performances passées sur elle. Une fois que toutes les entités du niveau choisi ont été rencontrées au moins 10 fois, ce niveau interne est définitivement établi pour chacune, et le quiz pioche alors 5 questions par niveau interne (1, 2 et 3) plutôt qu'un tirage purement aléatoire.\n\n" +
+            "Pendant le quiz, une pastille colorée indique la difficulté de la question en cours (le niveau interne pour les entités une fois établi, sinon le niveau choisi) : vert (1), jaune (2), rouge (3) — à ne pas confondre avec les couleurs de l'écran de résultat, qui indiquent elles votre performance sur la question.\n\n" +
+            "En mode Classique, une bonne réponse du premier coup rapporte autant de points que ce niveau ; du second coup, seulement la moitié. En mode QCM, une bonne réponse rapporte tous les points de la question (un seul essai possible), une mauvaise n'en rapporte aucun. Le score final s'affiche sur le total de points possible.\n\n" +
             "Le mode Liste et le quiz Lieux n'ont pas de niveau de difficulté ni de score par points : le résultat final indique simplement le nombre d'entrées trouvées sur le total."
         ),
         HelpPage(

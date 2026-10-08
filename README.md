@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.2.3
+### Latest addition — V4.3.0
 
-Re-cropped and re-compressed the 6 button plaques generated in V4.1.0 (QCM, Classic, List, World Tree, Rivers of Hell, Kingdom of the Dead): a first pass had been dropped in at 1920×1080/16-bit with a large empty margin, which would have rendered them noticeably smaller than the other buttons on screen — they're now back to the shared 1226×422/8-bit frame, cropped flush to the plaque. This follows V4.2.2, which added the empty `assets/background/` folder where future background theme images belong.
+The solo Entity quiz (Classic and MCQ only — Artifacts and Duel unchanged) now adapts to the player: alongside the chosen canonical level (Easy/Medium/Hard), each entity also builds up its own inner level (1 to 3) from recent performance, locked in for good once that entity has been seen 10 times. All three canonical levels now draw a flat 15 questions from entities of that level only (instead of 10/20/30 stacked across lower levels), split 5/5/5 by inner level once it's established for the whole set — falling back to neighboring inner levels when one runs short. Question points and the difficulty dot now follow this inner level too, once set. Per-entity history survives `prepopulate.json` updates unless that entity's name, mythology, race, domain, clue or difficulty actually changes.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.2.3
+### Dernier ajout — V4.3.0
 
-Recadrage et recompression des 6 plaques générées en V4.1.0 (QCM, Classique, Liste, Arbre Monde, Fleuves de l'Enfer, Royaume des Morts) : un premier dépôt en 1920×1080/16 bits avec une grosse marge vide les aurait fait apparaître nettement plus petites que les autres boutons à l'écran ; elles reviennent au gabarit commun 1226×422/8 bits, détourées au ras de la plaque. Cela fait suite à la V4.2.2, qui a ajouté le dossier `assets/background/` (vide pour l'instant), où déposer les images des futurs thèmes de fond.
+Le quiz solo Entités (Classique et QCM uniquement — Artéfacts et Duel inchangés) s'adapte désormais au joueur : en plus du niveau canonique choisi (Facile/Moyen/Difficile), chaque entité se constitue son propre niveau interne (1 à 3) à partir de ses performances récentes, figé définitivement une fois l'entité rencontrée 10 fois. Les trois niveaux canoniques proposent désormais chacun 15 questions puisées uniquement dans les entités de ce niveau (au lieu de 10/20/30 cumulées sur les niveaux inférieurs), réparties 5/5/5 par niveau interne une fois celui-ci établi pour tout l'ensemble — avec repli sur les niveaux voisins si l'un d'eux manque d'entités. Les points de chaque question et la pastille de difficulté suivent désormais ce niveau interne, une fois établi. L'historique par entité survit aux mises à jour de `prepopulate.json`, sauf si son nom, sa mythologie, sa race, son domaine, son indice ou sa difficulté changent réellement.
 
 ### Démarrage
 

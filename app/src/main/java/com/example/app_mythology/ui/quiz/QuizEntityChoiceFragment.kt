@@ -20,6 +20,12 @@ class QuizEntityChoiceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Layout partagé avec Artéfacts/Duel (toujours 10/20/30 cumulés) : seul le quiz
+        // d'entités est passé à 15 questions fixes (voir EntityDifficultyEngine).
+        view.findViewById<Button>(R.id.btn_level_easy).text = "Facile (15 questions)"
+        view.findViewById<Button>(R.id.btn_level_medium).text = "Moyen (15 questions)"
+        view.findViewById<Button>(R.id.btn_level_hard).text = "Difficile (15 questions)"
+
         view.findViewById<Button>(R.id.btn_level_easy).setOnClickListener {
             findNavController().navigate(
                 R.id.action_quizEntityChoice_to_quizEntity,
