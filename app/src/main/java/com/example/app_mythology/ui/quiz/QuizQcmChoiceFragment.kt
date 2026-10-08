@@ -28,6 +28,14 @@ class QuizQcmChoiceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Layout partagé avec Artéfacts (toujours 10/20/30 cumulés) : seul le QCM
+        // d'entités est passé à 15 questions fixes (voir EntityDifficultyEngine).
+        if (quizType == "entity") {
+            view.findViewById<Button>(R.id.btn_level_easy).text = "Facile (15 questions)"
+            view.findViewById<Button>(R.id.btn_level_medium).text = "Moyen (15 questions)"
+            view.findViewById<Button>(R.id.btn_level_hard).text = "Difficile (15 questions)"
+        }
+
         fun go(level: String) {
             findNavController().navigate(
                 R.id.action_qcmChoice_to_qcm,

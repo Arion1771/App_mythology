@@ -23,6 +23,7 @@ class EntiteRepository(private val dao: EntiteDao) {
     suspend fun getRandomForQuiz() = dao.getRandomForQuiz()
     suspend fun getRandomByDifficulty(difficulty: Int, limit: Int) =
         dao.getRandomByDifficulty(difficulty, limit)
+    suspend fun getAllByDifficulty(difficulty: Int) = dao.getAllByDifficulty(difficulty)
 
     companion object {
         @Volatile private var INSTANCE: EntiteRepository? = null

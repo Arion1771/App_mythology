@@ -10,8 +10,9 @@ import org.json.JSONObject
 import java.security.MessageDigest
 
 @Database(
-    entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class],
-    version = 8,
+    entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class,
+                EntityEncounterEntity::class, EntityLevelEntity::class],
+    version = 9,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -19,6 +20,8 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun entiteDao(): EntiteDao
     abstract fun placeDao(): PlaceDao
     abstract fun artifactDao(): ArtifactDao
+    abstract fun entityEncounterDao(): EntityEncounterDao
+    abstract fun entityLevelDao(): EntityLevelDao
 
     companion object {
         @Volatile
@@ -68,13 +71,31 @@ abstract class AppDatabase : RoomDatabase() {
         }
 
         private suspend fun reloadFromJson(db: AppDatabase, root: JSONObject) {
+            // Avant de tout vider, repère les entités dont le contenu pertinent pour
+            // le quiz (nom/mythologie/race/domaine/indice/difficulté) a changé ou qui
+            // ont disparu : leur historique de rencontres et leur niveau interne de
+            // difficulté adaptative (tables entity_encounters/entity_levels, clées par
+            // nom+mythologie+race car l'id Room ne survit pas au rechargement complet)
+            // doivent être réinitialisés. Les entités inchangées gardent leur historique.
+            val oldHashByKey = db.entiteDao().getAllSync()
+                .associate { EntityProgressKey.keyOf(it) to EntityProgressKey.contentHashOf(it) }
+
             db.entiteDao().deleteAll()
             db.placeDao().deleteAll()
             db.artifactDao().deleteAll()
 
             val entites = root.getJSONArray("entites")
-            db.entiteDao().insertAll((0 until entites.length()).map { entiteFromJson(entites.getJSONObject(it)) })
+            val newEntites = (0 until entites.length()).map { entiteFromJson(entites.getJSONObject(it)) }
+            db.entiteDao().insertAll(newEntites)
             Log.d("AppDatabase", "✓ ${entites.length()} entités chargées")
+
+            val newHashByKey = newEntites.associate { EntityProgressKey.keyOf(it) to EntityProgressKey.contentHashOf(it) }
+            val staleKeys = oldHashByKey.filter { (key, oldHash) -> newHashByKey[key] != oldHash }.keys.toList()
+            if (staleKeys.isNotEmpty()) {
+                db.entityEncounterDao().deleteForKeys(staleKeys)
+                db.entityLevelDao().deleteForKeys(staleKeys)
+                Log.d("AppDatabase", "✓ Historique de difficulté adaptative réinitialisé pour ${staleKeys.size} entité(s) modifiée(s)/supprimée(s)")
+            }
 
             val places = root.getJSONArray("places")
             db.placeDao().insertAll((0 until places.length()).map { placeFromJson(places.getJSONObject(it)) })
