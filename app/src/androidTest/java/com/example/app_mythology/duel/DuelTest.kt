@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.QCM_CHOICE_BUTTONS
+import com.example.app_mythology.DeviceStateRestoreRule
 import com.example.app_mythology.R
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
@@ -21,6 +22,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.MethodSorters
@@ -37,6 +39,10 @@ import org.junit.runners.MethodSorters
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class DuelTest {
+
+    /** Rencontres, niveaux internes et succès de l'appareil restaurés après chaque test. */
+    @get:Rule
+    val deviceState = DeviceStateRestoreRule()
 
     /** Statut et score du premier joueur sur la première question. */
     private fun assertFirstResult(scenario: ActivityScenario<MainActivity>, vm: DuelViewModel, name: String, expected: String) {
