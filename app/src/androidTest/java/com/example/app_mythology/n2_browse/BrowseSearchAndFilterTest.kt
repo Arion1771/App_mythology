@@ -1,4 +1,4 @@
-package com.example.app_mythology.browse
+package com.example.app_mythology.n2_browse
 
 import android.widget.Spinner
 import androidx.recyclerview.widget.ListAdapter
