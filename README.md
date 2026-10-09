@@ -12,6 +12,11 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.10
+
+- Removed the "Opposant" and "Équivalent chinois" entity fields, filled in for no entity: line removed from the detail sheet, mentions removed from the information shown by the quiz, Duel and List mode
+- Database version 10: only the entities table is rebuilt without these two columns, data kept; the adaptive difficulty history, internal levels and the player's achievements are untouched
+
 #### V4.3.9
 
 - Entity detail sheet: added the "Zodiaque" line (Classique or Chinois), filled in for the 24 zodiac signs but never shown so far in the data screens, whereas the quiz and Duel already showed it
@@ -141,6 +146,11 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.10
+
+- Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste
+- Base de données en version 10 : seule la table des entités est reconstruite sans ces deux colonnes, données conservées ; l'historique de difficulté adaptative, les niveaux internes et les succès du joueur ne sont pas touchés
 
 #### V4.3.9
 
