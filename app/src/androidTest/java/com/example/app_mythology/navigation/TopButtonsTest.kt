@@ -1,4 +1,4 @@
-package com.example.app_mythology
+package com.example.app_mythology.navigation
 
 import android.graphics.Rect
 import android.view.View
@@ -6,39 +6,41 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.Visibility
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import androidx.test.espresso.matcher.ViewMatchers.Visibility
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.app_mythology.R
+import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.onMain
 import com.example.app_mythology.ui.MainActivity
-import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.junit.runners.MethodSorters
+import kotlin.math.abs
 
 /** Rectangle à l'écran de la vue [id] de l'activité. */
-private fun ActivityScenario<MainActivity>.screenRect(id: Int): Rect {
-    val rect = Rect()
-    onActivity { activity ->
-        val view = activity.findViewById<View>(id)
-        val loc = IntArray(2).also { view.getLocationOnScreen(it) }
-        rect.set(loc[0], loc[1], loc[0] + view.width, loc[1] + view.height)
-    }
-    return rect
+private fun ActivityScenario<MainActivity>.screenRect(id: Int): Rect = onMain { activity ->
+    val view = activity.findViewById<View>(id)
+    val loc = IntArray(2).also { view.getLocationOnScreen(it) }
+    Rect(loc[0], loc[1], loc[0] + view.width, loc[1] + view.height)
 }
 
 /**
  * Présence et fonctionnement des boutons d'angle : retour (←, tous les
- * écrans sauf l'accueil), Succès (🏆, accueil) et Aide (?, choix du quiz).
- * Le bouton retour et la recherche avaient disparu avec la barre d'action
- * en V4.3.1 : ces tests verrouillent leur retour.
+ * écrans sauf l'accueil), Succès (🏆, accueil) et Aide (?, choix du quiz),
+ * ainsi que la version affichée sur l'accueil — branche Test-Non-Regression.
+ * Le bouton retour avait disparu avec la barre d'action en V4.3.1.
  */
 @RunWith(AndroidJUnit4::class)
-class TopButtonsPresenceTest {
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+class TopButtonsTest {
 
     @Test
-    fun homeShowsTrophyAndVersionButNoBackButton() {
+    fun t01_homeShowsTrophyAndVersionButNoBackButton() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_trophy)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_version)).check(matches(isDisplayed()))
@@ -47,7 +49,7 @@ class TopButtonsPresenceTest {
     }
 
     @Test
-    fun trophyOpensAchievementsAndBackButtonReturnsHome() {
+    fun t02_trophyOpensAchievementsAndBackButtonReturnsHome() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_trophy)).perform(click())
         scenario.assertCurrentDestination(R.id.achievementsFragment)
@@ -60,7 +62,7 @@ class TopButtonsPresenceTest {
     }
 
     @Test
-    fun quizChoiceShowsHelpAndBackButtons() {
+    fun t03_quizChoiceShowsHelpAndBackButtons() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // Quizz
         scenario.assertCurrentDestination(R.id.quizChoiceFragment)
@@ -77,7 +79,7 @@ class TopButtonsPresenceTest {
     }
 
     @Test
-    fun backButtonUnwindsSeveralLevelsOneAtATime() {
+    fun t04_backButtonUnwindsSeveralLevelsOneAtATime() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_1)).perform(click()) // Données
         onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
@@ -91,8 +93,9 @@ class TopButtonsPresenceTest {
         scenario.close()
     }
 
+    /** Champ de recherche sur la ligne du bouton retour, démarrant après lui (donc sans recouvrement). */
     @Test
-    fun listSearchFieldSharesTheBackButtonLine() {
+    fun t05_listSearchFieldSharesTheBackButtonLine() {
         for (button in listOf(R.id.btn_primary_1, R.id.btn_primary_2, R.id.btn_primary_3)) {
             val scenario = ActivityScenario.launch(MainActivity::class.java)
             onView(withId(R.id.btn_primary_1)).perform(click()) // Données
@@ -101,10 +104,9 @@ class TopButtonsPresenceTest {
 
             val back = scenario.screenRect(R.id.btn_back)
             val search = scenario.screenRect(R.id.search_view)
-            val tolerance = 2
             assertTrue(
                 "Recherche et bouton retour doivent être sur la même ligne ($back / $search)",
-                kotlin.math.abs(back.centerY() - search.centerY()) <= tolerance
+                abs(back.centerY() - search.centerY()) <= 2
             )
             assertTrue(
                 "La recherche doit commencer après le bouton retour ($back / $search)",
@@ -112,21 +114,5 @@ class TopButtonsPresenceTest {
             )
             scenario.close()
         }
-    }
-
-    @Test
-    fun backButtonDoesNotCoverListSearchField() {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Données
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
-        scenario.assertCurrentDestination(R.id.entityListFragment)
-
-        val back = scenario.screenRect(R.id.btn_back)
-        val search = scenario.screenRect(R.id.search_view)
-        assertFalse(
-            "Le bouton retour ne doit pas recouvrir le champ de recherche ($back / $search)",
-            Rect.intersects(back, search)
-        )
-        scenario.close()
     }
 }
