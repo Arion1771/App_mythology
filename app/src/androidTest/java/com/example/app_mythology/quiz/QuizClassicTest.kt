@@ -24,7 +24,6 @@ import com.example.app_mythology.viewmodel.QuizViewModel
 import com.example.app_mythology.waitFor
 import com.example.app_mythology.waitForDestination
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
@@ -33,11 +32,11 @@ import org.junit.runners.MethodSorters
 
 /**
  * Quiz Classique (entités, artéfacts) — branche Test-Non-Regression : essai
- * vide ignoré, essai faux révélant les informations complémentaires, bonne
- * réponse au 1er essai (statut green) et au 2e essai (statut yellow), avec
- * points accordés et passage à l'écran de résultat, puis quiz complet joué
- * jusqu'à l'écran de score avec vérification du score final. Les questions étant
- * tirées au hasard, la bonne réponse est lue dans le ViewModel du quiz.
+ * vide ignoré et essai faux révélant les informations complémentaires, puis
+ * quiz complet joué jusqu'à l'écran de score (bonne réponse au 1er essai,
+ * au 2e essai, deux essais faux) avec vérification du statut de chaque
+ * question et du score final. Les questions étant tirées au hasard, la bonne
+ * réponse est lue dans le ViewModel du quiz.
  */
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -75,30 +74,6 @@ class QuizClassicTest {
         return scenario
     }
 
-    private fun goodAnswer(domain: Domain, secondTry: Boolean) {
-        val scenario = openFirstQuestion(domain)
-        val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
-        fun currentName(): String? = scenario.onMain {
-            val i = vm.currentIndex.value ?: 0
-            if (domain.isArtifact) vm.quizArtifacts.value?.getOrNull(i)?.name
-            else vm.quizEntites.value?.getOrNull(i)?.name
-        }
-        waitFor { currentName() != null }
-        val name = currentName()!!
-
-        if (secondTry) {
-            answerAndValidate(WRONG_ANSWER, R.id.et_answer, R.id.btn_validate, scrollable = true)
-            waitFor { scenario.onMain { vm.currentStep.value } == 2 }
-        }
-        answerAndValidate(name, R.id.et_answer, R.id.btn_validate, scrollable = true)
-        scenario.waitForDestination(domain.resultDest)
-
-        val expected = if (secondTry) "yellow" else "green"
-        assertEquals("Statut de la question « $name »", expected, scenario.onMain { vm.results.value?.getOrNull(0) })
-        assertTrue("Des points doivent être accordés", scenario.onMain { vm.score.value ?: 0.0 } > 0.0)
-        scenario.close()
-    }
-
     @Test
     fun t01_entityEmptyThenWrongAnswerRevealsInfoPanel() {
         val scenario = openFirstQuestion(entities)
@@ -114,22 +89,11 @@ class QuizClassicTest {
         scenario.close()
     }
 
-    @Test
-    fun t02_entityGoodAnswerFirstTry() = goodAnswer(entities, secondTry = false)
-
-    @Test
-    fun t03_entityGoodAnswerSecondTry() = goodAnswer(entities, secondTry = true)
-
-    @Test
-    fun t04_artifactGoodAnswerFirstTry() = goodAnswer(artifacts, secondTry = false)
-
-    @Test
-    fun t05_artifactGoodAnswerSecondTry() = goodAnswer(artifacts, secondTry = true)
-
     /**
      * Joue tout le quiz en alternant bonne réponse au 1er essai (points pleins),
-     * au 2e essai (moitié des points) et deux essais faux (0), puis vérifie le
-     * score final calculé et celui affiché.
+     * au 2e essai (moitié des points) et deux essais faux (0) : vérifie le
+     * statut de chaque question (green / yellow / red), puis le score final
+     * calculé et celui affiché.
      */
     private fun fullQuizScore(domain: Domain) {
         val scenario = openFirstQuestion(domain)
@@ -172,8 +136,8 @@ class QuizClassicTest {
     }
 
     @Test
-    fun t06_entityFullQuizScore() = fullQuizScore(entities)
+    fun t02_entityFullQuiz() = fullQuizScore(entities)
 
     @Test
-    fun t07_artifactFullQuizScore() = fullQuizScore(artifacts)
+    fun t03_artifactFullQuiz() = fullQuizScore(artifacts)
 }
