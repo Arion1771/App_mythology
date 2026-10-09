@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.5
+
+- Added the "Quand le chat dort..." achievement: get each of the 12 Chinese zodiac signs at least once in a Classic or Multiple-choice quiz, on the same principle as "Astrologie de trottoir" for the classical zodiac — generic emblem until a final illustration
+
 #### V4.3.4
 
 - Rank of the 12 Chinese zodiac signs corrected in their descriptions and clues to follow the true order of the race held by the Jade Emperor (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon); the years associated with each sign (from 2000) are unchanged
@@ -107,6 +111,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.5
+
+- Ajout du succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique — blason générique en attendant une illustration définitive
 
 #### V4.3.4
 
