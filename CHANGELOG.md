@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.6
+
+- Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)
+
 #### V4.3.5
 
 - Ajout du succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique — blason générique en attendant une illustration définitive
