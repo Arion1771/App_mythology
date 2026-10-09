@@ -5,7 +5,9 @@ import com.example.app_mythology.database.EntiteEntity
 import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import java.io.File
 
 /**
@@ -28,6 +30,7 @@ import java.io.File
  * de `listThemes` elles-mêmes (vocabulaire fermé, déjà verrouillé par
  * ailleurs dans `PrepopulateDataRegressionTest`).
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class ListThemeCompletenessTest {
 
     private companion object {
@@ -106,32 +109,32 @@ class ListThemeCompletenessTest {
 
     // ── Thèmes déductibles d'un champ ──────────────────────────────────────
 
-    @Test fun mythologieGrecque() = assertThemeComplete("mythologie_grecque", expectedEntityNames { it.getString("mythology") == "Grecque" })
-    @Test fun mythologieRomaine() = assertThemeComplete("mythologie_romaine", expectedEntityNames { it.getString("mythology") == "Romaine" })
-    @Test fun mythologieHindoue() = assertThemeComplete("mythologie_hindoue", expectedEntityNames { it.getString("mythology") == "Hindouisme" })
-    @Test fun mythologieChinoise() = assertThemeComplete("mythologie_chinoise", expectedEntityNames { it.getString("mythology") == "Chinoise" })
-    @Test fun mythologieShinto() = assertThemeComplete("mythologie_shinto", expectedEntityNames { it.getString("mythology") == "Shinto" })
-    @Test fun mythologieAmeriqueDuSud() = assertThemeComplete(
+    @Test fun t01_mythologieGrecque() = assertThemeComplete("mythologie_grecque", expectedEntityNames { it.getString("mythology") == "Grecque" })
+    @Test fun t02_mythologieRomaine() = assertThemeComplete("mythologie_romaine", expectedEntityNames { it.getString("mythology") == "Romaine" })
+    @Test fun t03_mythologieHindoue() = assertThemeComplete("mythologie_hindoue", expectedEntityNames { it.getString("mythology") == "Hindouisme" })
+    @Test fun t04_mythologieChinoise() = assertThemeComplete("mythologie_chinoise", expectedEntityNames { it.getString("mythology") == "Chinoise" })
+    @Test fun t05_mythologieShinto() = assertThemeComplete("mythologie_shinto", expectedEntityNames { it.getString("mythology") == "Shinto" })
+    @Test fun t06_mythologieAmeriqueDuSud() = assertThemeComplete(
         "mythologie_amerique_sud",
         expectedEntityNames { it.getString("mythology") in setOf("Maya", "Aztèque") },
     )
 
-    @Test fun dieux() = assertThemeComplete("dieux", expectedEntityNames { it.getString("race") == "God" })
-    @Test fun monstres() = assertThemeComplete("monstres", expectedEntityNames { it.getString("race") == "Monster" })
-    @Test fun heros() = assertThemeComplete("heros", expectedEntityNames { it.getString("race") == "Heroes" })
-    @Test fun grees() = assertThemeComplete("grees", expectedEntityNames { it.getString("race") == "Grées" })
-    @Test fun erinyes() = assertThemeComplete("erinyes", expectedEntityNames { it.getString("race") == "Erinyes" })
+    @Test fun t07_dieux() = assertThemeComplete("dieux", expectedEntityNames { it.getString("race") == "God" })
+    @Test fun t08_monstres() = assertThemeComplete("monstres", expectedEntityNames { it.getString("race") == "Monster" })
+    @Test fun t09_heros() = assertThemeComplete("heros", expectedEntityNames { it.getString("race") == "Heroes" })
+    @Test fun t10_grees() = assertThemeComplete("grees", expectedEntityNames { it.getString("race") == "Grées" })
+    @Test fun t11_erinyes() = assertThemeComplete("erinyes", expectedEntityNames { it.getString("race") == "Erinyes" })
 
-    @Test fun entites() = assertThemeComplete("entites", ENTITES_JSON.objects().map { it.getString("name") }.sorted())
+    @Test fun t12_entites() = assertThemeComplete("entites", ENTITES_JSON.objects().map { it.getString("name") }.sorted())
 
-    @Test fun artefacts() {
+    @Test fun t13_artefacts() {
         val expected = ARTIFACTS_JSON.objects().map { it.getString("name") }.sorted()
         val actual = ListThemeCatalog.byId("artefacts")!!.resolveGroups(ENTITES, ARTIFACTS)
             .flatMap { it.items }.map { it.name }.sorted()
         assertEquals(expected, actual)
     }
 
-    @Test fun muses() = assertThemeComplete(
+    @Test fun t14_muses() = assertThemeComplete(
         "muses",
         expectedEntityNames { o ->
             (o.strOrNull("museType") == "Grecque" && o.getString("mythology") == "Grecque") ||
@@ -139,32 +142,32 @@ class ListThemeCompletenessTest {
         },
     )
 
-    @Test fun olympiensGrecs() = assertThemeComplete(
+    @Test fun t15_olympiensGrecs() = assertThemeComplete(
         "olympiens_grecs",
         expectedEntityNames { it.strOrNull("godType") == "Olympien" && it.getString("mythology") == "Grecque" },
     )
 
-    @Test fun olympiensRomains() = assertThemeComplete(
+    @Test fun t16_olympiensRomains() = assertThemeComplete(
         "olympiens_romains",
         expectedEntityNames { it.strOrNull("godType") == "Olympien" && it.getString("mythology") == "Romaine" },
     )
 
-    @Test fun geantsGrecs() = assertThemeComplete(
+    @Test fun t17_geantsGrecs() = assertThemeComplete(
         "geants_grecs",
         expectedEntityNames { it.getString("race") == "Giant" && it.getString("mythology") == "Grecque" },
     )
 
-    @Test fun enfantsGaiaOuranos() = assertThemeComplete(
+    @Test fun t18_enfantsGaiaOuranos() = assertThemeComplete(
         "enfants_gaia_ouranos",
         expectedEntityNames { it.getString("mythology") == "Grecque" && it.getString("race") in setOf("Titan", "Cyclope", "Hecatoncheires") },
     )
 
-    @Test fun archangesEtDemons() = assertThemeComplete(
+    @Test fun t19_archangesEtDemons() = assertThemeComplete(
         "archanges_demons",
         expectedEntityNames { it.getString("race") in setOf("Archangels", "Demon_Prince") },
     )
 
-    @Test fun signesDuZodiaque() = assertThemeComplete(
+    @Test fun t20_signesDuZodiaque() = assertThemeComplete(
         "zodiaque",
         expectedEntityNames { it.strOrNull("zodiacType") in setOf("Classique", "Chinois") },
     )
@@ -182,7 +185,7 @@ class ListThemeCompletenessTest {
     )
 
     @Test
-    fun everyCuratedThemeResolvesExactlyItsListThemesMembers() {
+    fun t21_everyCuratedThemeResolvesExactlyItsListThemesMembers() {
         for ((themeId, title) in curatedThemeTitles) {
             val expected = expectedEntityNames { title in listThemesOf(it) }
             assertThemeComplete(themeId, expected)

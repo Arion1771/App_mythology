@@ -4,7 +4,9 @@ import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.database.EntiteEntity
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 
 /**
  * Tests unitaires de [pickQcmChoices] (sélection des 4 propositions d'un QCM).
@@ -15,6 +17,7 @@ import org.junit.Test
  * leurres par proximité thématique est couvert indirectement : il ne peut pas
  * introduire de doublon ni faire disparaître la bonne réponse.
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class QcmDecoysTest {
 
     private fun ent(id: Int, name: String, mythology: String = "Grecque", race: String = "God",
@@ -46,7 +49,7 @@ class QcmDecoysTest {
     )
 
     @Test
-    fun `entity qcm returns four distinct choices`() {
+    fun `t01 entity qcm returns four distinct choices`() {
         val correct = entityPool.first { it.name == "Zeus" }
         val choices = pickQcmChoices(correct, entityPool)
 
@@ -55,7 +58,7 @@ class QcmDecoysTest {
     }
 
     @Test
-    fun `entity qcm always contains the correct name exactly once`() {
+    fun `t02 entity qcm always contains the correct name exactly once`() {
         val correct = entityPool.first { it.name == "Poséidon" }
         repeat(50) {
             val choices = pickQcmChoices(correct, entityPool)
@@ -64,7 +67,7 @@ class QcmDecoysTest {
     }
 
     @Test
-    fun `entity qcm decoys are drawn from the pool and never equal the correct entity`() {
+    fun `t03 entity qcm decoys are drawn from the pool and never equal the correct entity`() {
         val correct = entityPool.first { it.name == "Apollon" }
         val poolNames = entityPool.map { it.name }.toSet()
         repeat(50) {
@@ -74,7 +77,7 @@ class QcmDecoysTest {
     }
 
     @Test
-    fun `artifact qcm returns four distinct choices including the correct one`() {
+    fun `t04 artifact qcm returns four distinct choices including the correct one`() {
         val correct = artifactPool.first { it.name == "Mjöllnir" }
         val choices = pickQcmChoices(correct, artifactPool)
 
@@ -84,7 +87,7 @@ class QcmDecoysTest {
     }
 
     @Test
-    fun `artifact qcm decoys are drawn from the pool`() {
+    fun `t05 artifact qcm decoys are drawn from the pool`() {
         val correct = artifactPool.first { it.name == "Gungnir" }
         val poolNames = artifactPool.map { it.name }.toSet()
         repeat(50) {
