@@ -16,13 +16,13 @@
     <!-- Bouton retour, coin supérieur gauche de tous les écrans sauf l'accueil
          (où cet emplacement affiche la version) : remplace la flèche de
          l'ActionBar retirée en V4.3.1. -->
-    <TextView android:id="@+id/btn_back"
+    <ImageView android:id="@+id/btn_back"
         android:layout_width="40dp" android:layout_height="40dp"
         android:layout_gravity="top|start" android:layout_margin="16dp"
         android:background="@drawable/bg_help_button"
-        android:gravity="center"
-        android:text="←" android:textSize="20sp" android:textStyle="bold"
-        android:textColor="@color/primary"
+        android:padding="9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back_arrow"
         android:contentDescription="Retour"
         android:clickable="true" android:focusable="true"
         android:visibility="gone"/>
