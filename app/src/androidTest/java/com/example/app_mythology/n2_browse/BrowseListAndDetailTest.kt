@@ -167,6 +167,12 @@ class BrowseListAndDetailTest {
         }
         androidx.test.espresso.Espresso.onIdle()
 
+        // Quand la liste passe de toute la base aux résultats, ses lignes glissent de leur
+        // ancienne position vers la nouvelle (animation qu'Espresso n'attend pas) : la
+        // ligne visée était tapée en bas d'écran, à moitié coupée. Animation coupée sur la
+        // liste de ce test uniquement (l'application n'est pas modifiée).
+        scenario.onActivity { it.findViewById<RecyclerView>(R.id.recycler_entities).itemAnimator = null }
+
         fun searchResultsOnly(): Boolean {
             val items = scenario.listItems(R.id.recycler_entities).map { it as EntiteEntity }
             return items.size < all.size && items.all { it.name.contains(entity.name, ignoreCase = true) } &&
@@ -190,8 +196,11 @@ class BrowseListAndDetailTest {
             var item: View? = null
             waitFor {
                 item = scenario.onMain {
-                    it.findViewById<RecyclerView>(R.id.recycler_entities)
-                        .findViewHolderForAdapterPosition(position)?.itemView
+                    val recycler = it.findViewById<RecyclerView>(R.id.recycler_entities)
+                    // Ligne retenue seulement une fois la liste immobile et la ligne entièrement dedans.
+                    recycler.findViewHolderForAdapterPosition(position)?.itemView?.takeIf { row ->
+                        !recycler.isAnimating && row.top >= 0 && row.bottom <= recycler.height
+                    }
                 }
                 item != null
             }
