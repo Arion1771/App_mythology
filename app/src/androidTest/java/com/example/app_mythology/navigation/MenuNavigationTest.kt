@@ -97,7 +97,25 @@ class MenuNavigationTest {
     }
 
     @Test
-    fun t04_classicDomainChoiceHasThreeDomainsIncludingPlaces() {
+    fun t04_qcmDomainChoiceHasOnlyTwoDomains() {
+        val scenario = ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
+        onView(withId(R.id.btn_primary_1)).perform(click()) // qcmDomainChoice
+        scenario.assertCurrentDestination(R.id.qcmDomainChoiceFragment)
+
+        onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
+        scenario.assertCurrentDestination(R.id.quizEntityQcmChoiceFragment)
+        pressBack()
+
+        onView(withId(R.id.btn_primary_2)).perform(click()) // Artéfacts
+        scenario.assertCurrentDestination(R.id.quizArtifactQcmChoiceFragment)
+        pressBack()
+
+        scenario.close()
+    }
+
+    @Test
+    fun t05_classicDomainChoiceHasThreeDomainsIncludingPlaces() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
         onView(withId(R.id.btn_primary_2)).perform(click()) // classicDomainChoice
@@ -114,24 +132,6 @@ class MenuNavigationTest {
 
         onView(withId(R.id.btn_primary_3)).perform(click()) // Lieux
         scenario.assertCurrentDestination(R.id.quizPlaceChoiceFragment)
-        pressBack()
-
-        scenario.close()
-    }
-
-    @Test
-    fun t05_qcmDomainChoiceHasOnlyTwoDomains() {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
-        onView(withId(R.id.btn_primary_1)).perform(click()) // qcmDomainChoice
-        scenario.assertCurrentDestination(R.id.qcmDomainChoiceFragment)
-
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
-        scenario.assertCurrentDestination(R.id.quizEntityQcmChoiceFragment)
-        pressBack()
-
-        onView(withId(R.id.btn_primary_2)).perform(click()) // Artéfacts
-        scenario.assertCurrentDestination(R.id.quizArtifactQcmChoiceFragment)
         pressBack()
 
         scenario.close()
