@@ -5,6 +5,8 @@ import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import org.json.JSONArray
 import org.json.JSONObject
 import java.security.MessageDigest
@@ -12,7 +14,7 @@ import java.security.MessageDigest
 @Database(
     entities = [EntiteEntity::class, PlaceEntity::class, ArtifactEntity::class,
                 EntityEncounterEntity::class, EntityLevelEntity::class],
-    version = 9,
+    version = 10,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -30,6 +32,35 @@ abstract class AppDatabase : RoomDatabase() {
         private const val PREFS_NAME = "db_sync"
         private const val KEY_JSON_HASH = "prepopulate_hash"
 
+        /**
+         * 9 → 10 : suppression des champs jamais renseignés opponentName et
+         * chineseEquivalent. Seule la table `entites` est reconstruite (données
+         * recopiées) : une migration destructive viderait aussi l'historique de
+         * difficulté adaptative et les niveaux internes du joueur, et laisserait
+         * `entites` vide, prepopulate.json n'ayant pas changé.
+         */
+        val MIGRATION_9_10 = object : Migration(9, 10) {
+            private val columns = "`id`, `name`, `mythology`, `race`, `clue`, `difficulty`, `domain`, " +
+                "`godType`, `equivalentName`, `fatherName`, `motherName`, `giantType`, `story`, `killer`, " +
+                "`ascendantName`, `monsterType`, `description`, `primordial`, `museType`, `role`, `death`, " +
+                "`zodiacType`, `popularCulture`, `tags`, `listThemes`"
+
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `entites_new` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                        "`name` TEXT NOT NULL, `mythology` TEXT NOT NULL, `race` TEXT NOT NULL, `clue` TEXT, " +
+                        "`difficulty` INTEGER NOT NULL, `domain` TEXT, `godType` TEXT, `equivalentName` TEXT, " +
+                        "`fatherName` TEXT, `motherName` TEXT, `giantType` TEXT, `story` TEXT, `killer` TEXT, " +
+                        "`ascendantName` TEXT, `monsterType` TEXT, `description` TEXT, `primordial` INTEGER, " +
+                        "`museType` TEXT, `role` TEXT, `death` TEXT, `zodiacType` TEXT, `popularCulture` TEXT, " +
+                        "`tags` TEXT, `listThemes` TEXT)"
+                )
+                db.execSQL("INSERT INTO `entites_new` ($columns) SELECT $columns FROM `entites`")
+                db.execSQL("DROP TABLE `entites`")
+                db.execSQL("ALTER TABLE `entites_new` RENAME TO `entites`")
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE ?: Room.databaseBuilder(
@@ -37,6 +68,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "mythobase.db"
                 )
+                .addMigrations(MIGRATION_9_10)
                 .fallbackToDestructiveMigration()
                 .build()
                 .also { INSTANCE = it }
@@ -119,7 +151,6 @@ abstract class AppDatabase : RoomDatabase() {
             fatherName        = o.ns("fatherName"),
             motherName        = o.ns("motherName"),
             giantType         = o.ns("giantType"),
-            opponentName      = o.ns("opponentName"),
             story             = o.ns("story"),
             killer            = o.ns("killer"),
             ascendantName     = o.ns("ascendantName"),
@@ -131,7 +162,6 @@ abstract class AppDatabase : RoomDatabase() {
             role              = o.ns("role"),
             death             = o.ns("death"),
             zodiacType        = o.ns("zodiacType"),
-            chineseEquivalent = o.ns("chineseEquivalent"),
             popularCulture    = o.ns("popularCulture"),
             tags              = o.ns("tags"),
             listThemes        = o.ns("listThemes")

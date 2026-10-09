@@ -26,7 +26,6 @@ data class EntiteEntity(
 
     // ─── Giant ─────────────────────────────────────────────────────────────
     val giantType: String? = null,
-    val opponentName: String? = null,
 
     // ─── Heroes ────────────────────────────────────────────────────────────
     val story: String? = null,
@@ -51,7 +50,6 @@ data class EntiteEntity(
 
     // ─── Zodiacal_Sign ─────────────────────────────────────────────────────
     val zodiacType: String? = null,
-    val chineseEquivalent: String? = null,
 
     // ─── Culture populaire ─────────────────────────────────────────────────
     val popularCulture: String? = null,  // Apparitions notables dans jeux/films/séries/animés

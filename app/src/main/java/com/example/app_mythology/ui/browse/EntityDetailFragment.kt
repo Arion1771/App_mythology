@@ -43,7 +43,6 @@ class EntityDetailFragment : Fragment() {
         bind(view, R.id.tv_detail_domain,      R.id.row_domain,      e.domain)
         bind(view, R.id.tv_detail_godtype,     R.id.row_godtype,     e.godType?.let { translateGodType(it) })
         bind(view, R.id.tv_detail_gianttype,   R.id.row_gianttype,   e.giantType)
-        bind(view, R.id.tv_detail_opponent,    R.id.row_opponent,    e.opponentName)
         bind(view, R.id.tv_detail_story,       R.id.row_story,       e.story)
         bind(view, R.id.tv_detail_killer,      R.id.row_killer,      e.killer)
         bind(view, R.id.tv_detail_ascendant,   R.id.row_ascendant,   e.ascendantName)
