@@ -11,9 +11,8 @@ import com.example.app_mythology.QCM_CHOICE_BUTTONS
 import com.example.app_mythology.R
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
-import com.example.app_mythology.assertCurrentDestination
-import com.example.app_mythology.graphViewModel
 import com.example.app_mythology.onMain
+import com.example.app_mythology.startDuel
 import com.example.app_mythology.ui.MainActivity
 import com.example.app_mythology.viewmodel.DuelViewModel
 import com.example.app_mythology.waitFor
@@ -38,30 +37,6 @@ import org.junit.runners.MethodSorters
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class DuelTest {
-
-    /** Mise en place d'un duel à 2 joueurs (noms par défaut, niveau facile) jusqu'à la première question. */
-    private fun startDuel(
-        scenario: ActivityScenario<MainActivity>, modeButton: Int, poolButton: Int, questionDest: Int,
-    ): DuelViewModel {
-        onView(withId(R.id.btn_primary_3)).perform(click()) // Home -> Duel (nombre de joueurs)
-        scenario.waitForDestination(R.id.duelPlayerCountFragment)
-        onView(withId(R.id.btn_duel_players_next)).perform(click()) // 2 joueurs par défaut
-        scenario.assertCurrentDestination(R.id.duelPlayerNamesFragment)
-        onView(withId(R.id.btn_duel_names_next)).perform(click()) // noms par défaut (Joueur 1/2)
-        scenario.assertCurrentDestination(R.id.duelModeChoiceFragment)
-
-        onView(withId(modeButton)).perform(click())
-        scenario.assertCurrentDestination(R.id.duelDifficultyChoiceFragment)
-        onView(withId(R.id.btn_level_easy)).perform(click())
-        scenario.assertCurrentDestination(R.id.duelPoolChoiceFragment)
-        onView(withId(poolButton)).perform(click())
-        scenario.waitForDestination(R.id.duelAnnounceFragment)
-        onView(withId(R.id.tv_duel_announce_player)).check(matches(isDisplayed()))
-
-        onView(withId(R.id.btn_duel_announce_start)).perform(click())
-        scenario.waitForDestination(questionDest)
-        return scenario.graphViewModel(R.id.duel_graph)
-    }
 
     /** Statut et score du premier joueur sur la première question. */
     private fun assertFirstResult(scenario: ActivityScenario<MainActivity>, vm: DuelViewModel, name: String, expected: String) {

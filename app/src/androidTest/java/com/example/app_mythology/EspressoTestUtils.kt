@@ -1,5 +1,7 @@
 package com.example.app_mythology
 
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
@@ -15,8 +17,11 @@ import androidx.test.espresso.ViewAction
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.action.ViewActions.scrollTo
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import com.example.app_mythology.ui.MainActivity
+import com.example.app_mythology.viewmodel.DuelViewModel
 import com.example.app_mythology.viewmodel.QuizViewModel
 import org.hamcrest.Matcher
 import org.hamcrest.core.IsInstanceOf
@@ -112,5 +117,49 @@ fun clickFirstChildButton(): ViewAction = object : ViewAction {
         val group = view as ViewGroup
         (0 until group.childCount).map { group.getChildAt(it) }.first { it is Button }.performClick()
         uiController.loopMainThreadUntilIdle()
+    }
+}
+
+/**
+ * Mise en place d'un duel à 2 joueurs (noms par défaut, niveau facile) depuis
+ * l'accueil jusqu'à la première question ; renvoie le ViewModel du duel.
+ */
+fun startDuel(
+    scenario: ActivityScenario<MainActivity>, modeButton: Int, poolButton: Int, questionDest: Int,
+): DuelViewModel {
+    onView(withId(R.id.btn_primary_3)).perform(click()) // Home -> Duel (nombre de joueurs)
+    scenario.waitForDestination(R.id.duelPlayerCountFragment)
+    onView(withId(R.id.btn_duel_players_next)).perform(click()) // 2 joueurs par défaut
+    scenario.assertCurrentDestination(R.id.duelPlayerNamesFragment)
+    onView(withId(R.id.btn_duel_names_next)).perform(click()) // noms par défaut (Joueur 1/2)
+    scenario.assertCurrentDestination(R.id.duelModeChoiceFragment)
+
+    onView(withId(modeButton)).perform(click())
+    scenario.assertCurrentDestination(R.id.duelDifficultyChoiceFragment)
+    onView(withId(R.id.btn_level_easy)).perform(click())
+    scenario.assertCurrentDestination(R.id.duelPoolChoiceFragment)
+    onView(withId(poolButton)).perform(click())
+    scenario.waitForDestination(R.id.duelAnnounceFragment)
+    onView(withId(R.id.tv_duel_announce_player)).check(matches(isDisplayed()))
+
+    onView(withId(R.id.btn_duel_announce_start)).perform(click())
+    scenario.waitForDestination(questionDest)
+    return scenario.graphViewModel(R.id.duel_graph)
+}
+
+/**
+ * Passe l'écran en paysage puis le remet en portrait, en attendant à chaque
+ * fois que l'activité soit recréée dans la nouvelle orientation. Le
+ * verrouillage portrait du manifeste est volontairement contourné : c'est la
+ * recréation de l'activité qui remettait autrefois les quiz à zéro.
+ */
+fun ActivityScenario<MainActivity>.rotateToLandscapeAndBack() {
+    closeSoftKeyboard()
+    for ((requested, expected) in listOf(
+        ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE to Configuration.ORIENTATION_LANDSCAPE,
+        ActivityInfo.SCREEN_ORIENTATION_PORTRAIT to Configuration.ORIENTATION_PORTRAIT,
+    )) {
+        onActivity { it.requestedOrientation = requested }
+        waitFor(timeoutMs = 10_000) { onMain { it.resources.configuration.orientation } == expected }
     }
 }
