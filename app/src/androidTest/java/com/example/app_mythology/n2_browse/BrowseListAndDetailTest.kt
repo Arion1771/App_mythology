@@ -10,8 +10,6 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso.closeSoftKeyboard
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBack
-import androidx.test.espresso.UiController
-import androidx.test.espresso.ViewAction
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.action.ViewActions.scrollTo
@@ -31,8 +29,7 @@ import com.example.app_mythology.ui.MainActivity
 import com.example.app_mythology.waitFor
 import com.example.app_mythology.waitForDestination
 import kotlinx.coroutines.runBlocking
-import org.hamcrest.Matcher
-import org.hamcrest.core.IsInstanceOf
+import org.hamcrest.Matchers.sameInstance
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
@@ -45,26 +42,6 @@ private val db get() = AppDatabase.getInstance(ApplicationProvider.getApplicatio
 /** Contenu actuellement soumis à l'adapter de la liste [recyclerId]. */
 private fun ActivityScenario<MainActivity>.listItems(recyclerId: Int): List<Any> = onMain {
     (it.findViewById<RecyclerView>(recyclerId).adapter as ListAdapter<*, *>).currentList.toList()
-}
-
-/** Fait défiler la liste jusqu'à [position] puis clique sur l'élément, comme un doigt. */
-private fun clickItemAt(position: Int): ViewAction = object : ViewAction {
-    override fun getConstraints(): Matcher<View> = IsInstanceOf.instanceOf(RecyclerView::class.java)
-    override fun getDescription() = "clique l'élément $position de la liste"
-    override fun perform(uiController: UiController, view: View) {
-        val recycler = view as RecyclerView
-        recycler.scrollToPosition(position)
-        // La liste ne se met en page qu'à la frame suivante : on attend que l'élément existe.
-        var holder = recycler.findViewHolderForAdapterPosition(position)
-        var waited = 0
-        while (holder == null && waited < 5000) {
-            uiController.loopMainThreadForAtLeast(50)
-            waited += 50
-            holder = recycler.findViewHolderForAdapterPosition(position)
-        }
-        checkNotNull(holder) { "élément $position jamais affiché dans la liste" }.itemView.performClick()
-        uiController.loopMainThreadUntilIdle()
-    }
 }
 
 /** Libellés français attendus sur la fiche (même traduction que l'écran de détail). */
@@ -111,7 +88,8 @@ private val DETAIL_ROWS = listOf(
  * défile au doigt et jusqu'au dernier élément ; un clic sur une entité ouvre
  * sa fiche, qui affiche toutes ses données (chaque ligne visible avec la bonne
  * valeur si le champ est renseigné, masquée sinon), atteignables en faisant
- * défiler la fiche ; le lien « équivalent » ouvre la fiche correspondante.
+ * défiler la fiche ; le lien « équivalent » ouvre la fiche correspondante, et
+ * le retour ramène alors à la liste.
  *
  * Restent volontairement hors fiche : l'indice (propre au quiz), les tags
  * (leurres du QCM) et les thèmes du mode Liste, données internes.
@@ -178,11 +156,43 @@ class BrowseListAndDetailTest {
 
     /** Recherche [entity] dans la liste des entités, clique dessus et attend l'ouverture de sa fiche. */
     private fun openDetailFromList(scenario: ActivityScenario<MainActivity>, entity: EntiteEntity) {
+        // À chaque (re)création de la liste, le filtre se reconstruit puis resélectionne
+        // « Toutes », ce qui réaffiche toute la base : on attend que ce soit fait avant de
+        // chercher, sinon la liste changerait sous le test après la recherche.
+        val total = runBlocking { db.entiteDao().getAllSync().size }
+        waitFor(timeoutMs = 10_000) {
+            scenario.onMain { (it.findViewById<android.widget.Spinner>(R.id.spinner_filter).adapter?.count ?: 0) > 1 } &&
+                scenario.listItems(R.id.recycler_entities).size == total
+        }
+        androidx.test.espresso.Espresso.onIdle()
+
         onView(withId(androidx.appcompat.R.id.search_src_text)).perform(replaceText(entity.name))
         closeSoftKeyboard()
-        waitFor { scenario.listItems(R.id.recycler_entities).any { (it as EntiteEntity).id == entity.id } }
+        // Liste réduite aux seuls résultats de la recherche, dont l'entité voulue.
+        waitFor {
+            val items = scenario.listItems(R.id.recycler_entities).map { it as EntiteEntity }
+            items.size < total && items.all { it.name.contains(entity.name, ignoreCase = true) } &&
+                items.any { it.id == entity.id }
+        }
         val position = scenario.listItems(R.id.recycler_entities).indexOfFirst { (it as EntiteEntity).id == entity.id }
-        onView(withId(R.id.recycler_entities)).perform(clickItemAt(position))
+
+        // Défilement demandé puis attente hors de l'application, qui met la liste en page
+        // librement (comme pour les tests de défilement), puis vrai tap sur l'élément.
+        // Élément placé en haut de la liste, entièrement visible (Espresso refuse de taper
+        // une vue visible à moins de 90 %).
+        scenario.onActivity {
+            (it.findViewById<RecyclerView>(R.id.recycler_entities).layoutManager as LinearLayoutManager)
+                .scrollToPositionWithOffset(position, 0)
+        }
+        var item: View? = null
+        waitFor {
+            item = scenario.onMain {
+                it.findViewById<RecyclerView>(R.id.recycler_entities)
+                    .findViewHolderForAdapterPosition(position)?.itemView
+            }
+            item != null
+        }
+        onView(sameInstance<View>(item!!)).perform(click())
         scenario.waitForDestination(R.id.entityDetailFragment)
         waitFor {
             scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name
@@ -254,8 +264,10 @@ class BrowseListAndDetailTest {
         scenario.assertCurrentDestination(R.id.entityDetailFragment)
         assertDetailShowsEverything(scenario, equivalent)
 
+        // L'action « équivalent » remplace la fiche d'origine (popUpTo de la liste, pour ne
+        // pas empiler les fiches d'équivalent en équivalent) : le retour ramène à la liste.
         pressBack()
-        waitFor { scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name }
+        scenario.waitForDestination(R.id.entityListFragment)
         scenario.close()
     }
 }
