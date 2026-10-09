@@ -1,7 +1,5 @@
 package com.example.app_mythology
 
-import android.content.pm.ActivityInfo
-import android.content.res.Configuration
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
@@ -147,19 +145,3 @@ fun startDuel(
     return scenario.graphViewModel(R.id.duel_graph)
 }
 
-/**
- * Passe l'écran en paysage puis le remet en portrait, en attendant à chaque
- * fois que l'activité soit recréée dans la nouvelle orientation. Le
- * verrouillage portrait du manifeste est volontairement contourné : c'est la
- * recréation de l'activité qui remettait autrefois les quiz à zéro.
- */
-fun ActivityScenario<MainActivity>.rotateToLandscapeAndBack() {
-    closeSoftKeyboard()
-    for ((requested, expected) in listOf(
-        ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE to Configuration.ORIENTATION_LANDSCAPE,
-        ActivityInfo.SCREEN_ORIENTATION_PORTRAIT to Configuration.ORIENTATION_PORTRAIT,
-    )) {
-        onActivity { it.requestedOrientation = requested }
-        waitFor(timeoutMs = 10_000) { onMain { it.resources.configuration.orientation } == expected }
-    }
-}
