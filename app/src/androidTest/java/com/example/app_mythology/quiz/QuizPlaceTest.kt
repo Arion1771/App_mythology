@@ -28,9 +28,9 @@ import org.junit.runners.MethodSorters
 
 /**
  * Quiz Lieux (Arbre Monde / Fleuves de l'Enfer / Royaume des Morts) — branche
- * Test-Non-Regression : chaque quiz s'ouvre avec sa grille et sa saisie, une
- * bonne réponse marque le lieu comme trouvé sans compter d'erreur, et un quiz
- * complet (une erreur puis tous les lieux) se termine sur le score attendu.
+ * Test-Non-Regression : chaque quiz s'ouvre avec sa grille et sa saisie, et un
+ * quiz complet (une erreur puis tous les lieux, chaque bonne réponse marquant
+ * le lieu trouvé sans compter d'erreur) se termine sur le score attendu.
  */
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -68,23 +68,7 @@ class QuizPlaceTest {
     }
 
     @Test
-    fun t02_goodAnswerMarksPlaceFound() {
-        val scenario = openPlaceChoice()
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Arbre Monde
-        scenario.waitForDestination(R.id.quizYggdrasilFragment)
-
-        val vm = scenario.currentFragmentQuizViewModel()
-        waitFor { scenario.onMain { vm.yggdrasilRealms.value }.orEmpty().isNotEmpty() }
-        val place = scenario.onMain { vm.yggdrasilRealms.value!!.first() }
-
-        answerAndValidate(place.name, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
-        waitFor { place.id in scenario.onMain { vm.foundIds.value }.orEmpty() }
-        assertEquals("Une bonne réponse ne compte pas comme erreur", 0, scenario.onMain { vm.placeWrongAttempts.value })
-        scenario.close()
-    }
-
-    @Test
-    fun t03_fullQuizShowsScore() {
+    fun t02_fullQuizShowsScore() {
         val scenario = openPlaceChoice()
         onView(withId(R.id.btn_primary_1)).perform(click()) // Arbre Monde
         scenario.waitForDestination(R.id.quizYggdrasilFragment)
