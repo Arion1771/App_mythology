@@ -82,7 +82,6 @@ private val DETAIL_ROWS = listOf(
     DetailRow("père", R.id.row_father, R.id.tv_detail_father) { it.fatherName },
     DetailRow("mère", R.id.row_mother, R.id.tv_detail_mother) { it.motherName },
     DetailRow("type de géant", R.id.row_gianttype, R.id.tv_detail_gianttype) { it.giantType },
-    DetailRow("opposant", R.id.row_opponent, R.id.tv_detail_opponent) { it.opponentName },
     DetailRow("histoire", R.id.row_story, R.id.tv_detail_story) { it.story },
     DetailRow("tué par", R.id.row_killer, R.id.tv_detail_killer) { it.killer },
     DetailRow("ascendant", R.id.row_ascendant, R.id.tv_detail_ascendant) { it.ascendantName },
@@ -207,7 +206,7 @@ class BrowseListAndDetailTest {
         val all = runBlocking { db.entiteDao().getAllSync() }
         // Zeus (fiche très fournie) + au moins une entité par ligne de la fiche, pour que
         // chaque donnée affichable soit vérifiée au moins une fois. Une ligne renseignée
-        // pour aucune entité de la base (ex. opposant) est vérifiée masquée sur chaque fiche.
+        // pour aucune entité de la base serait vérifiée masquée sur chaque fiche.
         val sample = LinkedHashSet<EntiteEntity>()
         all.firstOrNull { it.name == "Zeus" }?.let { sample += it }
         for (row in DETAIL_ROWS) {
