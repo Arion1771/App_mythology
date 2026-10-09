@@ -1,4 +1,4 @@
-package com.example.app_mythology
+package com.example.app_mythology.navigation
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
@@ -6,21 +6,27 @@ import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.app_mythology.R
+import com.example.app_mythology.assertCurrentDestination
 import com.example.app_mythology.ui.MainActivity
+import com.example.app_mythology.waitForDestination
+import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.junit.runners.MethodSorters
 
 /**
- * Vérifie que chaque bouton principal (colonne `view_primary_buttons`, slots
- * `btn_primary_1/2/3`) de chaque écran de menu, ainsi que les boutons isolés
- * (trophée, aide quiz), navigue bien vers l'écran attendu, et que le retour
- * système ramène à l'écran précédent (branche Test-Non-Regression).
+ * Navigation par les trois boutons principaux (colonne `view_primary_buttons`,
+ * slots `btn_primary_1/2/3`) de chaque menu, et retour système vers l'écran
+ * précédent — branche Test-Non-Regression. Les boutons d'angle (←, 🏆, ?)
+ * sont couverts par [TopButtonsTest].
  */
 @RunWith(AndroidJUnit4::class)
-class ButtonNavigationTest {
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+class MenuNavigationTest {
 
     @Test
-    fun homeButtonsNavigateAndBackReturnsHome() {
+    fun t01_homeButtonsNavigateAndSystemBackReturnsHome() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         scenario.assertCurrentDestination(R.id.homeFragment)
 
@@ -43,17 +49,7 @@ class ButtonNavigationTest {
     }
 
     @Test
-    fun homeTrophyButtonOpensAchievements() {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_trophy)).perform(click())
-        scenario.assertCurrentDestination(R.id.achievementsFragment)
-        pressBack()
-        scenario.assertCurrentDestination(R.id.homeFragment)
-        scenario.close()
-    }
-
-    @Test
-    fun browseChoiceButtonsNavigateToEachList() {
+    fun t02_browseChoiceButtonsNavigateToEachList() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_1)).perform(click()) // -> browseChoiceFragment
         scenario.assertCurrentDestination(R.id.browseChoiceFragment)
@@ -77,7 +73,7 @@ class ButtonNavigationTest {
     }
 
     @Test
-    fun quizChoiceButtonsAndHelpNavigate() {
+    fun t03_quizChoiceButtonsNavigate() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // -> quizChoiceFragment
         scenario.assertCurrentDestination(R.id.quizChoiceFragment)
@@ -97,16 +93,11 @@ class ButtonNavigationTest {
         pressBack()
         scenario.assertCurrentDestination(R.id.quizChoiceFragment)
 
-        onView(withId(R.id.btn_quiz_help)).perform(click())
-        scenario.assertCurrentDestination(R.id.quizHelpFragment)
-        pressBack()
-        scenario.assertCurrentDestination(R.id.quizChoiceFragment)
-
         scenario.close()
     }
 
     @Test
-    fun classicDomainChoiceHasThreeDomainsIncludingPlaces() {
+    fun t04_classicDomainChoiceHasThreeDomainsIncludingPlaces() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
         onView(withId(R.id.btn_primary_2)).perform(click()) // classicDomainChoice
@@ -115,6 +106,7 @@ class ButtonNavigationTest {
         onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
         scenario.assertCurrentDestination(R.id.quizEntityChoiceFragment)
         pressBack()
+        scenario.assertCurrentDestination(R.id.classicDomainChoiceFragment)
 
         onView(withId(R.id.btn_primary_2)).perform(click()) // Artéfacts
         scenario.assertCurrentDestination(R.id.quizArtifactChoiceFragment)
@@ -128,7 +120,7 @@ class ButtonNavigationTest {
     }
 
     @Test
-    fun qcmDomainChoiceHasOnlyTwoDomains() {
+    fun t05_qcmDomainChoiceHasOnlyTwoDomains() {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
         onView(withId(R.id.btn_primary_1)).perform(click()) // qcmDomainChoice
@@ -140,29 +132,6 @@ class ButtonNavigationTest {
 
         onView(withId(R.id.btn_primary_2)).perform(click()) // Artéfacts
         scenario.assertCurrentDestination(R.id.quizArtifactQcmChoiceFragment)
-        pressBack()
-
-        scenario.close()
-    }
-
-    @Test
-    fun placeChoiceButtonsNavigateToEachPlaceQuiz() {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_primary_2)).perform(click()) // quizChoice
-        onView(withId(R.id.btn_primary_2)).perform(click()) // classicDomainChoice
-        onView(withId(R.id.btn_primary_3)).perform(click()) // quizPlaceChoice
-        scenario.assertCurrentDestination(R.id.quizPlaceChoiceFragment)
-
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Arbre Monde
-        scenario.assertCurrentDestination(R.id.quizYggdrasilFragment)
-        pressBack()
-
-        onView(withId(R.id.btn_primary_2)).perform(click()) // Fleuves de l'Enfer
-        scenario.assertCurrentDestination(R.id.quizRiversFragment)
-        pressBack()
-
-        onView(withId(R.id.btn_primary_3)).perform(click()) // Royaume des Morts
-        scenario.assertCurrentDestination(R.id.quizUnderworldFragment)
         pressBack()
 
         scenario.close()
