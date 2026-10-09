@@ -5,7 +5,9 @@ import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import java.io.File
 
 /**
@@ -26,6 +28,7 @@ import java.io.File
  * Exécutables via `./gradlew :app:testDebugUnitTest` (répertoire de travail =
  * module `app/`).
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class PrepopulateDataRegressionTest {
 
     private companion object {
@@ -69,14 +72,14 @@ class PrepopulateDataRegressionTest {
     // ── Structure ──────────────────────────────────────────────────────────
 
     @Test
-    fun `root holds the three non-empty collections`() {
+    fun `t01 root holds the three non-empty collections`() {
         assertTrue(ENTITES.length() > 400)
         assertTrue(ARTIFACTS.length() > 30)
         assertTrue(PLACES.length() > 15)
     }
 
     @Test
-    fun `entity ids present are unique, and place ids are unique`() {
+    fun `t02 entity ids present are unique, and place ids are unique`() {
         val entityIds = ENTITES.objects().filter { it.has("id") }.map { it.getInt("id") }
         assertEquals("ids d'entités dupliqués", entityIds.size, entityIds.toSet().size)
 
@@ -87,7 +90,7 @@ class PrepopulateDataRegressionTest {
     // ── Champs obligatoires / plages de valeurs ────────────────────────────
 
     @Test
-    fun `every entity has the mandatory quiz fields and a difficulty within 1 to 3`() {
+    fun `t03 every entity has the mandatory quiz fields and a difficulty within 1 to 3`() {
         for (e in ENTITES.objects()) {
             val name = e.strOrNull("name")
             assertTrue("nom d'entité vide", !name.isNullOrBlank())
@@ -100,7 +103,7 @@ class PrepopulateDataRegressionTest {
     }
 
     @Test
-    fun `every artifact has mandatory fields, a known type and a difficulty within 1 to 3`() {
+    fun `t04 every artifact has mandatory fields, a known type and a difficulty within 1 to 3`() {
         for (a in ARTIFACTS.objects()) {
             val name = a.strOrNull("name")
             assertTrue("nom d'artéfact vide", !name.isNullOrBlank())
@@ -113,7 +116,7 @@ class PrepopulateDataRegressionTest {
     }
 
     @Test
-    fun `every place has the mandatory fields`() {
+    fun `t05 every place has the mandatory fields`() {
         for (p in PLACES.objects()) {
             assertTrue(!p.strOrNull("name").isNullOrBlank())
             assertTrue(!p.strOrNull("mythology").isNullOrBlank())
@@ -123,7 +126,7 @@ class PrepopulateDataRegressionTest {
     }
 
     @Test
-    fun `every entity race belongs to the known set`() {
+    fun `t06 every entity race belongs to the known set`() {
         val unknown = ENTITES.objects().map { it.getString("race") }.toSet() - KNOWN_RACES
         assertTrue("races inconnues : $unknown", unknown.isEmpty())
     }
@@ -131,18 +134,18 @@ class PrepopulateDataRegressionTest {
     // ── Bugs déjà corrigés — ne doivent pas revenir ────────────────────────
 
     @Test
-    fun `the Primodrial typo never reappears`() {
+    fun `t07 the Primodrial typo never reappears`() {
         assertFalse("coquille 'Primodrial' réintroduite (cf. V1.6.4)", RAW.contains("Primodrial"))
     }
 
     @Test
-    fun `the Pendragon surname stays removed from names`() {
+    fun `t08 the Pendragon surname stays removed from names`() {
         val offenders = ENTITES.objects().map { it.getString("name") }.filter { it.contains("Pendragon") }
         assertTrue("« Pendragon » réintroduit dans un nom (cf. V3.2.4) : $offenders", offenders.isEmpty())
     }
 
     @Test
-    fun `no entity name starts with a French article`() {
+    fun `t09 no entity name starts with a French article`() {
         val articles = Regex("^(le|la|les|l'|un|une|des)\\s|^l'", RegexOption.IGNORE_CASE)
         val offenders = ENTITES.objects().map { it.getString("name") }
             .filter { articles.containsMatchIn(it) }
@@ -150,7 +153,7 @@ class PrepopulateDataRegressionTest {
     }
 
     @Test
-    fun `entity descriptions are never identical to the quiz clue`() {
+    fun `t10 entity descriptions are never identical to the quiz clue`() {
         val offenders = ENTITES.objects()
             .filter { it.strOrNull("description") != null && it.strOrNull("description") == it.strOrNull("clue") }
             .map { it.getString("name") }
@@ -158,7 +161,7 @@ class PrepopulateDataRegressionTest {
     }
 
     @Test
-    fun `only the seven canonical archangels remain`() {
+    fun `t11 only the seven canonical archangels remain`() {
         val archangels = ENTITES.objects().filter { it.getString("race") == "Archangels" }.map { it.getString("name") }
         assertEquals("le nombre d'archanges doit rester à 7 (cf. V2.3.2) : $archangels", 7, archangels.size)
 
@@ -172,14 +175,14 @@ class PrepopulateDataRegressionTest {
     // ── Cohérence des thèmes du mode Liste ─────────────────────────────────
 
     @Test
-    fun `listThemes only ever references the curated vocabulary`() {
+    fun `t12 listThemes only ever references the curated vocabulary`() {
         val used = ENTITES.objects().flatMap { it.listThemes() }.toSet()
         val unknown = used - CURATED_LIST_THEMES
         assertTrue("valeurs de listThemes hors vocabulaire curé : $unknown", unknown.isEmpty())
     }
 
     @Test
-    fun `every curated list theme has at least one member`() {
+    fun `t13 every curated list theme has at least one member`() {
         val used = ENTITES.objects().flatMap { it.listThemes() }.toSet()
         val missing = CURATED_LIST_THEMES - used
         assertTrue("thèmes curés sans aucune entité : $missing", missing.isEmpty())
@@ -188,13 +191,13 @@ class PrepopulateDataRegressionTest {
     // ── Verrous data ponctuels ────────────────────────────────────────────
 
     @Test
-    fun `Orthos is a Chien monster`() {
+    fun `t14 Orthos is a Chien monster`() {
         val orthos = ENTITES.objects().single { it.getString("name") == "Orthos" }
         assertEquals("Chien", orthos.strOrNull("monsterType"))
     }
 
     @Test
-    fun `Grecque stays the most represented mythology`() {
+    fun `t15 Grecque stays the most represented mythology`() {
         val top = ENTITES.objects().map { it.getString("mythology") }
             .groupingBy { it }.eachCount()
             .maxByOrNull { it.value }!!.key
