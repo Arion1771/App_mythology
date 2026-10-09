@@ -2,7 +2,9 @@ package com.example.app_mythology.ui
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import org.w3c.dom.Element
 import java.io.File
 import javax.xml.parsers.DocumentBuilderFactory
@@ -17,6 +19,7 @@ import javax.xml.parsers.DocumentBuilderFactory
  * Analyse statique des layouts XML (pas de rendu), donc exécutable en test
  * JVM sans émulateur.
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class PrimaryButtonPlacementTest {
 
     private val screens = listOf(
@@ -58,7 +61,7 @@ class PrimaryButtonPlacementTest {
     // ── La colonne partagée ────────────────────────────────────────────────
 
     @Test
-    fun `view_primary_buttons stacks three identical ImageButtons`() {
+    fun `t01 view_primary_buttons stacks three identical ImageButtons`() {
         val root = layout("view_primary_buttons")
         assertEquals("LinearLayout", root.tagName)
         assertEquals("vertical", root.getAttribute("android:orientation"))
@@ -93,7 +96,7 @@ class PrimaryButtonPlacementTest {
     // ── Chaque écran inclut la colonne de la même façon ────────────────────
 
     @Test
-    fun `every three-button screen is a FrameLayout including the shared column, centered and marginless`() {
+    fun `t02 every three-button screen is a FrameLayout including the shared column, centered and marginless`() {
         val signatures = HashSet<Map<String, String>>()
 
         for (name in screens) {

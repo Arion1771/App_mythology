@@ -2,7 +2,9 @@ package com.example.app_mythology.achievements
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import java.io.File
 
 /**
@@ -12,6 +14,7 @@ import java.io.File
  * générique quand le fichier manque — ce test empêche qu'un succès reste
  * sans emblème sans qu'on le remarque (cf. V4.1.1).
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class AchievementEmblemAssetsTest {
 
     private val dir: File = listOf("src/main/assets/achievements", "app/src/main/assets/achievements")
@@ -19,7 +22,7 @@ class AchievementEmblemAssetsTest {
         ?: error("dossier assets/achievements introuvable (cwd=${File(".").absolutePath})")
 
     @Test
-    fun `every catalog achievement has an emblem png`() {
+    fun `t01 every catalog achievement has an emblem png`() {
         val missing = AchievementCatalog.all
             .map { it.id }
             .filter { !File(dir, "$it.png").isFile }
@@ -27,7 +30,7 @@ class AchievementEmblemAssetsTest {
     }
 
     @Test
-    fun `no orphan emblem png without a matching achievement`() {
+    fun `t02 no orphan emblem png without a matching achievement`() {
         val ids = AchievementCatalog.all.map { it.id }.toSet()
         val orphans = dir.listFiles { f -> f.extension == "png" }
             .orEmpty()
@@ -37,7 +40,7 @@ class AchievementEmblemAssetsTest {
     }
 
     @Test
-    fun `catalog ids are unique`() {
+    fun `t03 catalog ids are unique`() {
         val ids = AchievementCatalog.all.map { it.id }
         assertEquals(ids.size, ids.toSet().size)
     }

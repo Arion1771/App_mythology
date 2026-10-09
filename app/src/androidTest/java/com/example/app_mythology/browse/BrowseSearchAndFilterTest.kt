@@ -125,24 +125,7 @@ class BrowseSearchAndFilterTest {
     }
 
     @Test
-    fun t03_artifactSearchFiltersByName() {
-        val scenario = openList(R.id.btn_primary_3, R.id.artifactListFragment)
-        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).isNotEmpty() }
-        val fullSize = scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size
-
-        typeSearch("excal")
-        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size < fullSize }
-        val results = scenario.listItems<ArtifactEntity>(R.id.recycler_entities)
-        assertTrue(results.any { it.name == "Excalibur" })
-        assertTrue(results.all { it.name.contains("excal", ignoreCase = true) })
-
-        clearSearch()
-        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size == fullSize }
-        scenario.close()
-    }
-
-    @Test
-    fun t04_placeSearchFiltersByNameAndTakesPrecedenceOverFilter() {
+    fun t03_placeSearchFiltersByNameAndTakesPrecedenceOverFilter() {
         val scenario = openList(R.id.btn_primary_2, R.id.placeListFragment)
         waitFor { scenario.listItems<PlaceEntity>(R.id.recycler_places).isNotEmpty() }
         val fullSize = scenario.listItems<PlaceEntity>(R.id.recycler_places).size
@@ -165,6 +148,23 @@ class BrowseSearchAndFilterTest {
             scenario.listItems<PlaceEntity>(R.id.recycler_places)
                 .let { l -> l.isNotEmpty() && l.all { it.placeType == "Royaume" } }
         }
+        scenario.close()
+    }
+
+    @Test
+    fun t04_artifactSearchFiltersByName() {
+        val scenario = openList(R.id.btn_primary_3, R.id.artifactListFragment)
+        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).isNotEmpty() }
+        val fullSize = scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size
+
+        typeSearch("excal")
+        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size < fullSize }
+        val results = scenario.listItems<ArtifactEntity>(R.id.recycler_entities)
+        assertTrue(results.any { it.name == "Excalibur" })
+        assertTrue(results.all { it.name.contains("excal", ignoreCase = true) })
+
+        clearSearch()
+        waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size == fullSize }
         scenario.close()
     }
 
