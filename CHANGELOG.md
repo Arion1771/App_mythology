@@ -2,6 +2,23 @@
 
 ## V4
 
+#### V4.3.4
+
+- Rang des 12 signes du zodiaque chinois corrigé dans leurs descriptions et indices pour suivre le vrai ordre de la course organisée par l'Empereur de Jade (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon) ; les années associées à chaque signe (à partir de 2000) restent inchangées
+- Ajout/Modification d'entités :
+  - Rat : Neuvième -> Premier signe (description, indice modifiés)
+  - Buffle : Dixième -> Deuxième signe (description, indice modifiés)
+  - Tigre : Onzième -> Troisième signe (description, indice modifiés)
+  - Lapin : Douzième -> Quatrième signe (description, indice modifiés)
+  - Dragon : Premier -> Cinquième signe (description, indice modifiés)
+  - Serpent : Deuxième -> Sixième signe (description, indice modifiés)
+  - Cheval : Troisième -> Septième signe (description, indice modifiés)
+  - Chèvre : Quatrième -> Huitième signe (description, indice modifiés)
+  - Singe : Cinquième -> Neuvième signe (description, indice modifiés)
+  - Coq : Sixième -> Dixième signe (description, indice modifiés)
+  - Chien : Septième -> Onzième signe (description, indice modifiés)
+  - Cochon : Huitième -> Douzième signe (description, indice modifiés)
+
 #### V4.3.3
 
 - Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
