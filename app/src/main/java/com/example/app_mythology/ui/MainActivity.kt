@@ -20,14 +20,21 @@ class MainActivity : AppCompatActivity() {
     private var bannerShowing = false
     private val bannerHandler = Handler(Looper.getMainLooper())
 
-    /** Menus à trois boutons principaux centrés : coin supérieur gauche libre. */
-    private val menuDestinations = setOf(
+    /**
+     * Écrans qui gèrent eux-mêmes le coin supérieur gauche, sans décalage du
+     * contenu : menus à trois boutons principaux centrés (coin libre) et
+     * listes de consultation (champ de recherche aligné à droite du bouton).
+     */
+    private val selfInsetDestinations = setOf(
         R.id.browseChoiceFragment,
         R.id.quizChoiceFragment,
         R.id.qcmDomainChoiceFragment,
         R.id.classicDomainChoiceFragment,
         R.id.quizPlaceChoiceFragment,
         R.id.duelModeChoiceFragment,
+        R.id.entityListFragment,
+        R.id.artifactListFragment,
+        R.id.placeListFragment,
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,8 +51,9 @@ class MainActivity : AppCompatActivity() {
         // dispatcher système pour respecter les retours personnalisés des
         // fragments, et reste masqué sur l'accueil. Sur les menus à trois
         // boutons principaux il se superpose au coin vide (les boutons restent
-        // au même pixel que sur l'accueil) ; ailleurs, le contenu est décalé
-        // sous le bouton pour ne pas masquer les titres.
+        // au même pixel que sur l'accueil), sur les listes il partage la ligne
+        // du champ de recherche ; ailleurs, le contenu est décalé sous le
+        // bouton pour ne pas masquer les titres.
         val backButton = findViewById<View>(R.id.btn_back)
         backButton.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
         val navHostView = findViewById<View>(R.id.nav_host_fragment)
@@ -55,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         navHost.navController.addOnDestinationChangedListener { _, destination, _ ->
             val isHome = destination.id == R.id.homeFragment
             backButton.visibility = if (isHome) View.GONE else View.VISIBLE
-            val inset = if (isHome || destination.id in menuDestinations) 0 else backInset
+            val inset = if (isHome || destination.id in selfInsetDestinations) 0 else backInset
             navHostView.setPadding(0, inset, 0, 0)
         }
 

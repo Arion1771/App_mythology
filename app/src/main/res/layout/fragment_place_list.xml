@@ -9,14 +9,17 @@
     android:focusable="true"
     android:focusableInTouchMode="true">
 
-    <!-- Barre de recherche intégrée à l'écran (plus d'ActionBar depuis V4.3.1) -->
+    <!-- Barre de recherche intégrée à l'écran (plus d'ActionBar depuis V4.3.1),
+         sur la même ligne que le bouton retour (40dp à 16dp du haut et du
+         bord gauche) : même hauteur, même marge haute, et démarrage après
+         le bouton (16 + 40 + 16 = 72dp). -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:iconifiedByDefault="false"/>
 
     <Spinner

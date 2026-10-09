@@ -13,6 +13,7 @@ import androidx.test.espresso.matcher.ViewMatchers.Visibility
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.ui.MainActivity
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -88,6 +89,29 @@ class TopButtonsPresenceTest {
         onView(withId(R.id.btn_back)).perform(click())
         scenario.assertCurrentDestination(R.id.homeFragment)
         scenario.close()
+    }
+
+    @Test
+    fun listSearchFieldSharesTheBackButtonLine() {
+        for (button in listOf(R.id.btn_primary_1, R.id.btn_primary_2, R.id.btn_primary_3)) {
+            val scenario = ActivityScenario.launch(MainActivity::class.java)
+            onView(withId(R.id.btn_primary_1)).perform(click()) // Données
+            onView(withId(button)).perform(click())             // Entités / Lieux / Artéfacts
+            onView(withId(R.id.search_view)).check(matches(isDisplayed()))
+
+            val back = scenario.screenRect(R.id.btn_back)
+            val search = scenario.screenRect(R.id.search_view)
+            val tolerance = 2
+            assertTrue(
+                "Recherche et bouton retour doivent être sur la même ligne ($back / $search)",
+                kotlin.math.abs(back.centerY() - search.centerY()) <= tolerance
+            )
+            assertTrue(
+                "La recherche doit commencer après le bouton retour ($back / $search)",
+                search.left >= back.right
+            )
+            scenario.close()
+        }
     }
 
     @Test
