@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.6
+### Latest addition — V4.3.10
 
-Collection achievements now remember the entities you got by name + mythology + race instead of name alone, so a namesake no longer counts in place of another (e.g. the European Dragon used to count as the Chinese Dragon). Existing progress is kept and converted automatically.
+The never-filled « Opponent » and « Chinese equivalent » entity fields are removed (detail sheet, quiz, Duel and List information). The database moves to version 10 by rebuilding only the entity table: the player's adaptive-difficulty history, internal levels and achievements are kept.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.6
+### Dernier ajout — V4.3.10
 
-Les succès de collection mémorisent désormais les entités obtenues par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen comptait pour le Dragon chinois). La progression déjà acquise est conservée et convertie automatiquement.
+Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité (fiche détaillée, informations du quiz, du Duel et du mode Liste). La base passe en version 10 en ne reconstruisant que la table des entités : l'historique de difficulté adaptative, les niveaux internes et les succès du joueur sont conservés.
 
 ### Démarrage
 

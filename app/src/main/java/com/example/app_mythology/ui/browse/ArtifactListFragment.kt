@@ -25,10 +25,18 @@ class ArtifactListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setHasOptionsMenu(true)
 
         val recycler = view.findViewById<RecyclerView>(R.id.recycler_entities)
         val spinner  = view.findViewById<Spinner>(R.id.spinner_filter)
+        val searchView = view.findViewById<SearchView>(R.id.search_view)
+        searchView.queryHint = "Rechercher…"
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(q: String?) = false
+            override fun onQueryTextChange(q: String?): Boolean {
+                if (q.isNullOrBlank()) viewModel.showAll() else viewModel.search(q)
+                return true
+            }
+        })
 
         adapter = ArtifactAdapter { artifact ->
             findNavController().navigate(
@@ -77,19 +85,5 @@ class ArtifactListFragment : Fragment() {
         viewModel.artifacts.observe(viewLifecycleOwner) { list ->
             adapter.submitList(list)
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_entity_list, menu)
-        val searchItem = menu.findItem(R.id.action_search)
-        val searchView = searchItem.actionView as SearchView
-        searchView.queryHint = "Rechercher…"
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(q: String?) = false
-            override fun onQueryTextChange(q: String?): Boolean {
-                if (q.isNullOrBlank()) viewModel.showAll() else viewModel.search(q)
-                return true
-            }
-        })
     }
 }
