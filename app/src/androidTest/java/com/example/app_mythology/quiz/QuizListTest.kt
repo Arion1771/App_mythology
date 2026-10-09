@@ -30,8 +30,8 @@ import org.junit.runners.MethodSorters
 /**
  * Quiz Liste (thème choisi, retrouver toutes les entrées) — branche
  * Test-Non-Regression : le choix d'un thème ouvre sa grille de cartes avec
- * la saisie prête, une bonne réponse marque l'entrée comme trouvée sans
- * compter d'erreur, et un thème complet se termine sur le score attendu.
+ * la saisie prête, et un thème complet (chaque bonne réponse marquant
+ * l'entrée trouvée sans compter d'erreur) se termine sur le score attendu.
  */
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -62,20 +62,7 @@ class QuizListTest {
     }
 
     @Test
-    fun t02_goodAnswerMarksItemFound() {
-        val scenario = openFirstTheme()
-        val vm = scenario.currentFragmentQuizViewModel()
-        waitFor { scenario.onMain { vm.allListItems() }.isNotEmpty() }
-        val item = scenario.onMain { vm.allListItems().first() }
-
-        answerAndValidate(item.name, R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
-        waitFor { item.id in scenario.onMain { vm.listFoundIds.value }.orEmpty() }
-        assertEquals("Une bonne réponse ne compte pas comme erreur", 0, scenario.onMain { vm.listWrongAttempts.value })
-        scenario.close()
-    }
-
-    @Test
-    fun t03_fullThemeShowsScore() {
+    fun t02_fullThemeShowsScore() {
         val scenario = openFirstTheme()
         val vm = scenario.currentFragmentQuizViewModel()
         waitFor { scenario.onMain { vm.allListItems() }.isNotEmpty() }
