@@ -18,7 +18,7 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 #### V4.3.7
 
-- The back button (←), lost with the action bar in V4.3.1, is back: it shows in the top-left corner of every screen except home, in the same style as the Achievements and Help buttons; on screens other than three-button menus, the content is moved below the button so as not to be hidden
+- The back button (←), lost with the action bar in V4.3.1, is back: it shows in the top-left corner of every screen except home, in the same style as the Achievements and Help buttons; it sits in the empty corner of three-button menus, shares the line of the search field on lists, and pushes the content below it on the other screens so as not to hide it
 - Added the "Valkyrie Apocalypse" pop-culture reference (Shūmatsu no Valkyrie / Record of Ragnarok) on the most important gods of the series, and on Brynhild, its heroine
 - Entities added/modified:
   - Zeus : Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece -> Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece, Valkyrie Apocalypse (popularCulture modified)
@@ -144,7 +144,7 @@ Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANG
 
 #### V4.3.7
 
-- Retour du bouton retour (←), disparu avec la barre d'action en V4.3.1 : il s'affiche dans le coin supérieur gauche de tous les écrans sauf l'accueil, au même style que les boutons Succès et Aide ; sur les écrans autres que les menus à trois boutons, le contenu est décalé sous le bouton pour ne pas être masqué
+- Retour du bouton retour (←), disparu avec la barre d'action en V4.3.1 : il s'affiche dans le coin supérieur gauche de tous les écrans sauf l'accueil, au même style que les boutons Succès et Aide ; il se place dans le coin vide des menus à trois boutons, partage la ligne du champ de recherche sur les listes, et décale le contenu sous lui sur les autres écrans pour ne pas le masquer
 - Ajout de la référence de culture populaire « Valkyrie Apocalypse » (Shūmatsu no Valkyrie / Record of Ragnarok) sur les dieux les plus importants de la série, ainsi que sur Brynhild, son héroïne
 - Ajout/Modification d'entités :
   - Zeus : Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece -> Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece, Valkyrie Apocalypse (popularCulture modifié)
