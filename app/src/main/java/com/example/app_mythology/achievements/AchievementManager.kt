@@ -2,6 +2,8 @@ package com.example.app_mythology.achievements
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.example.app_mythology.database.EntiteEntity
+import com.example.app_mythology.database.EntityProgressKey
 
 /**
  * Persiste les succès débloqués dans des SharedPreferences dédiées, distinctes de
@@ -13,7 +15,9 @@ object AchievementManager {
 
     private const val PREFS_NAME = "achievements"
     private const val KEY_UNLOCKED = "unlocked_ids"
-    private const val KEY_OBTAINED_ENTITIES = "obtained_entity_names"
+    private const val KEY_OBTAINED_ENTITY_KEYS = "obtained_entity_keys"
+    /** Ancien stockage par nom seul, converti par [migrateLegacyObtainedNames]. */
+    private const val KEY_LEGACY_OBTAINED_NAMES = "obtained_entity_names"
 
     private lateinit var prefs: SharedPreferences
 
@@ -49,21 +53,43 @@ object AchievementManager {
         }
     }
 
-    private fun obtainedEntityNames(): Set<String> =
-        prefs.getStringSet(KEY_OBTAINED_ENTITIES, emptySet()) ?: emptySet()
+    private fun obtainedEntityKeys(): Set<String> =
+        prefs.getStringSet(KEY_OBTAINED_ENTITY_KEYS, emptySet()) ?: emptySet()
 
-    /** Mémorise qu'une entité a été répondue correctement au moins une fois, pour les succès de collection. */
-    fun markEntityObtained(name: String) {
-        val current = obtainedEntityNames()
-        if (name in current) return
+    /**
+     * Mémorise qu'une entité a été répondue correctement au moins une fois, pour les succès
+     * de collection. Identifiée par sa clé nom+mythologie+race ([EntityProgressKey]) et non
+     * par son seul nom, pour que deux homonymes (ex. Dragon chinois / Dragon européen) ne
+     * comptent pas l'un pour l'autre.
+     */
+    fun markEntityObtained(entity: EntiteEntity) {
+        val key = EntityProgressKey.keyOf(entity)
+        val current = obtainedEntityKeys()
+        if (key in current) return
         val updated = HashSet(current)
-        updated.add(name)
-        prefs.edit().putStringSet(KEY_OBTAINED_ENTITIES, updated).apply()
+        updated.add(key)
+        prefs.edit().putStringSet(KEY_OBTAINED_ENTITY_KEYS, updated).apply()
     }
 
-    /** Débloque [achievementId] si toutes les entités de [targetNames] ont déjà été obtenues au moins une fois. */
-    fun unlockIfAllObtained(targetNames: Set<String>, achievementId: String) {
-        if (targetNames.isNotEmpty() && obtainedEntityNames().containsAll(targetNames)) {
+    /**
+     * Convertit l'ancien stockage par nom seul en clés nom+mythologie+race, puis le supprime.
+     * Le nom seul ne permettant pas de savoir lequel de deux homonymes avait été obtenu, ils
+     * sont tous considérés obtenus : aucune progression déjà acquise n'est perdue.
+     */
+    fun migrateLegacyObtainedNames(all: List<EntiteEntity>) {
+        val legacyNames = prefs.getStringSet(KEY_LEGACY_OBTAINED_NAMES, null) ?: return
+        val updated = HashSet(obtainedEntityKeys())
+        all.filter { it.name in legacyNames }.mapTo(updated) { EntityProgressKey.keyOf(it) }
+        prefs.edit()
+            .putStringSet(KEY_OBTAINED_ENTITY_KEYS, updated)
+            .remove(KEY_LEGACY_OBTAINED_NAMES)
+            .apply()
+    }
+
+    /** Débloque [achievementId] si toutes les entités de [targets] ont déjà été obtenues au moins une fois. */
+    fun unlockIfAllObtained(targets: Collection<EntiteEntity>, achievementId: String) {
+        val targetKeys = targets.map { EntityProgressKey.keyOf(it) }
+        if (targetKeys.isNotEmpty() && obtainedEntityKeys().containsAll(targetKeys)) {
             unlock(achievementId)
         }
     }
