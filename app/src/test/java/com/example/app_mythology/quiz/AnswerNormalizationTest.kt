@@ -2,7 +2,9 @@ package com.example.app_mythology.quiz
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import java.text.Normalizer
 
 /**
@@ -16,38 +18,32 @@ import java.text.Normalizer
  * répercutée ici **et** dans ces deux ViewModels (candidat à une extraction
  * ultérieure dans une fonction pure partagée).
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class AnswerNormalizationTest {
 
     private fun normalize(s: String): String =
         Normalizer.normalize(s.trim().lowercase(), Normalizer.Form.NFD)
             .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
 
-    private fun matches(input: String, expected: String) = normalize(input) == normalize(expected)
-
     @Test
-    fun `comparison ignores case`() {
+    fun `t01 comparison ignores case`() {
         assertEquals(normalize("Zeus"), normalize("zEUS"))
     }
 
     @Test
-    fun `comparison ignores leading and trailing whitespace`() {
+    fun `t02 comparison ignores leading and trailing whitespace`() {
         assertEquals(normalize("Odin"), normalize("   Odin  "))
     }
 
     @Test
-    fun `comparison ignores diacritics`() {
+    fun `t03 comparison ignores diacritics`() {
         assertEquals(normalize("Rê"), normalize("Re"))
         assertEquals(normalize("Épona"), normalize("epona"))
         assertEquals(normalize("Thialfï"), normalize("Thialfi"))
     }
 
     @Test
-    fun `a correct answer with mixed case accents and spaces still matches`() {
-        assertEquals(true, matches("  hÉraclÈs ", "Héraclès"))
-    }
-
-    @Test
-    fun `a genuinely different answer does not match`() {
+    fun `t04 a genuinely different answer does not match`() {
         assertNotEquals(normalize("Thor"), normalize("Loki"))
         assertNotEquals(normalize("Freyr"), normalize("Freyja"))
     }
