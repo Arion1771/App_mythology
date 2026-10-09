@@ -145,3 +145,7 @@ fun startDuel(
     return scenario.graphViewModel(R.id.duel_graph)
 }
 
+/** Score formaté exactement comme l'affichent les écrans de score (entier, sinon une décimale). */
+fun formatScoreLikeApp(v: Double): String =
+    if (v == Math.round(v).toDouble()) Math.round(v).toString() else String.format("%.1f", v)
+
