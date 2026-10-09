@@ -2,6 +2,11 @@
 
 ## V4
 
+#### V4.3.10
+
+- Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste
+- Base de données en version 10 : seule la table des entités est reconstruite sans ces deux colonnes, données conservées ; l'historique de difficulté adaptative, les niveaux internes et les succès du joueur ne sont pas touchés
+
 #### V4.3.9
 
 - Fiche détaillée d'une entité : ajout de la ligne « Zodiaque » (Classique ou Chinois), renseignée pour les 24 signes du zodiaque mais jamais affichée jusqu'ici dans les données, alors que le quiz et le Duel la montraient déjà
