@@ -9,8 +9,10 @@ import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Before
+import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.junit.runners.MethodSorters
 
 /**
  * Vérifie le fonctionnement réel de la base Room et ses contraintes
@@ -24,6 +26,7 @@ import org.junit.runner.RunWith
  * qui persiste dans un vrai fichier) : chaque test repart d'une base vide.
  */
 @RunWith(AndroidJUnit4::class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class DatabaseConstraintsTest {
 
     private lateinit var db: AppDatabase
@@ -42,7 +45,7 @@ class DatabaseConstraintsTest {
     // ── Round-trip des 5 tables ─────────────────────────────────────────────
 
     @Test
-    fun entiteRoundTrip() = runBlocking {
+    fun t01_entiteRoundTrip() = runBlocking {
         val e = EntiteEntity(name = "Test Entité", mythology = "Test", race = "God", difficulty = 2)
         db.entiteDao().insertAll(listOf(e))
         val all = db.entiteDao().getAllSync()
@@ -52,7 +55,7 @@ class DatabaseConstraintsTest {
     }
 
     @Test
-    fun artifactRoundTrip() = runBlocking {
+    fun t02_artifactRoundTrip() = runBlocking {
         val a = ArtifactEntity(name = "Test Artéfact", mythology = "Test", artifactType = "Arme", difficulty = 1)
         db.artifactDao().insertAll(listOf(a))
         val all = db.artifactDao().getAllSync()
@@ -61,7 +64,7 @@ class DatabaseConstraintsTest {
     }
 
     @Test
-    fun placeRoundTrip() = runBlocking {
+    fun t03_placeRoundTrip() = runBlocking {
         val p = PlaceEntity(name = "Test Lieu", mythology = "Test", description = "desc", placeType = "yggdrasil")
         db.placeDao().insertAll(listOf(p))
         val all = db.placeDao().getAllSync()
@@ -70,7 +73,7 @@ class DatabaseConstraintsTest {
     }
 
     @Test
-    fun entityEncounterAccumulatesMultipleRowsForSameKey() = runBlocking {
+    fun t04_entityEncounterAccumulatesMultipleRowsForSameKey() = runBlocking {
         val key = "Zeus|Grecque|God"
         db.entityEncounterDao().insert(EntityEncounterEntity(entityKey = key, faute = 0.0))
         db.entityEncounterDao().insert(EntityEncounterEntity(entityKey = key, faute = 1.0))
@@ -84,7 +87,7 @@ class DatabaseConstraintsTest {
     }
 
     @Test
-    fun entityLevelReplaceConflictStrategyOverwritesExistingRow() = runBlocking {
+    fun t05_entityLevelReplaceConflictStrategyOverwritesExistingRow() = runBlocking {
         val key = "Zeus|Grecque|God"
         db.entityLevelDao().insertAll(listOf(EntityLevelEntity(entityKey = key, level = 1, contentHash = "h1")))
         db.entityLevelDao().insertAll(listOf(EntityLevelEntity(entityKey = key, level = 3, contentHash = "h2")))
@@ -99,7 +102,7 @@ class DatabaseConstraintsTest {
     }
 
     @Test
-    fun deleteForKeysRemovesOnlyTargetedEntities() = runBlocking {
+    fun t06_deleteForKeysRemovesOnlyTargetedEntities() = runBlocking {
         db.entityEncounterDao().insert(EntityEncounterEntity(entityKey = "A", faute = 0.0))
         db.entityEncounterDao().insert(EntityEncounterEntity(entityKey = "B", faute = 0.0))
         db.entityLevelDao().insertAll(listOf(
@@ -119,7 +122,7 @@ class DatabaseConstraintsTest {
     // ── Cohérence de la clé stable sur les vraies données de prepopulate.json ──
 
     @Test
-    fun everyEntityFromPrepopulateJsonHasAUniqueStableKeyOnceLoaded() = runBlocking {
+    fun t07_everyEntityFromPrepopulateJsonHasAUniqueStableKeyOnceLoaded() = runBlocking {
         val context = ApplicationProvider.getApplicationContext<android.content.Context>()
         val raw = context.assets.open("prepopulate.json").bufferedReader().use { it.readText() }
         val root = JSONObject(raw)
