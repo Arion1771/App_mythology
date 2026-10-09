@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.2
+### Latest addition — V4.3.6
 
-Added an automated test suite (Test-Non-Regression branch): navigation across every button screen, the Classic/MCQ/List/Place quiz flows, the Duel flow up to its first question, instrumented Room database tests, and a check that every List-mode theme accounts for exactly the matching entities/artifacts in `prepopulate.json`.
+Collection achievements now remember the entities you got by name + mythology + race instead of name alone, so a namesake no longer counts in place of another (e.g. the European Dragon used to count as the Chinese Dragon). Existing progress is kept and converted automatically.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.2
+### Dernier ajout — V4.3.6
 
-Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons, déroulés des quiz Classique/QCM/Liste/Lieux, déroulé du Duel jusqu'à la première question, tests instrumentés de la base Room, et vérification que chaque thème du mode Liste prend en compte exactement les entités/artéfacts correspondants de `prepopulate.json`.
+Les succès de collection mémorisent désormais les entités obtenues par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen comptait pour le Dragon chinois). La progression déjà acquise est conservée et convertie automatiquement.
 
 ### Démarrage
 
