@@ -2,6 +2,24 @@
 
 ## V4
 
+#### V4.3.7
+
+- Retour du bouton retour (←), disparu avec la barre d'action en V4.3.1 : il s'affiche dans le coin supérieur gauche de tous les écrans sauf l'accueil, au même style que les boutons Succès et Aide ; sur les écrans autres que les menus à trois boutons, le contenu est décalé sous le bouton pour ne pas être masqué
+- Ajout de la référence de culture populaire « Valkyrie Apocalypse » (Shūmatsu no Valkyrie / Record of Ragnarok) sur les dieux les plus importants de la série, ainsi que sur Brynhild, son héroïne
+- Ajout/Modification d'entités :
+  - Zeus : Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece -> Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece, Valkyrie Apocalypse (popularCulture modifié)
+  - Poséidon : Smite, Smite 2, Percy Jackson, Assassin's Creed Odyssey, Odyssée, Ulysse 31, Les Héros de l'Olympe, One Piece -> Smite, Smite 2, Percy Jackson, Assassin's Creed Odyssey, Odyssée, Ulysse 31, Les Héros de l'Olympe, One Piece, Valkyrie Apocalypse (popularCulture modifié)
+  - Hadès : Smite, Smite 2, Hadès, Hercule (Disney), God of War, Odyssée, Les Héros de l'Olympe -> Smite, Smite 2, Hadès, Hercule (Disney), God of War, Odyssée, Les Héros de l'Olympe, Valkyrie Apocalypse (popularCulture modifié)
+  - Apollon (Grecque) : Smite, Smite 2, God of War III, Percy Jackson, Iliade, Les Héros de l'Olympe, Les Travaux d'Apollon -> Smite, Smite 2, God of War III, Percy Jackson, Iliade, Les Héros de l'Olympe, Les Travaux d'Apollon, Valkyrie Apocalypse (popularCulture modifié)
+  - Héraclès : Hercule (Disney), Hercules -> Hercule (Disney), Hercules, Valkyrie Apocalypse (popularCulture modifié)
+  - Thor : Smite, Smite 2, Marvel, God of War, Magnus Chase -> Smite, Smite 2, Marvel, God of War, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Odin : Smite, Smite 2, God of War, Marvel, Assassin's Creed Valhalla, Magnus Chase -> Smite, Smite 2, God of War, Marvel, Assassin's Creed Valhalla, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Loki : Smite, Smite 2, Marvel, Loki, Magnus Chase -> Smite, Smite 2, Marvel, Loki, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Shiva : Smite, Final Fantasy, Asura's Wrath -> Smite, Final Fantasy, Asura's Wrath, Valkyrie Apocalypse (popularCulture modifié)
+  - Susanoo : Smite, Smite 2, Naruto -> Smite, Smite 2, Naruto, Valkyrie Apocalypse (popularCulture modifié)
+  - Bouddha : (vide) -> Valkyrie Apocalypse (popularCulture modifié)
+  - Brynhild : L'Anneau du Nibelung (Wagner) -> L'Anneau du Nibelung (Wagner), Valkyrie Apocalypse (popularCulture modifié)
+
 #### V4.3.6
 
 - Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)
