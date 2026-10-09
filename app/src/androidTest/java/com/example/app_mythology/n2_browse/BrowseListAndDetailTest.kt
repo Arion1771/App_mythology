@@ -156,47 +156,60 @@ class BrowseListAndDetailTest {
 
     /** Recherche [entity] dans la liste des entités, clique dessus et attend l'ouverture de sa fiche. */
     private fun openDetailFromList(scenario: ActivityScenario<MainActivity>, entity: EntiteEntity) {
-        // À chaque (re)création de la liste, le filtre se reconstruit puis resélectionne
-        // « Toutes », ce qui réaffiche toute la base : on attend que ce soit fait avant de
-        // chercher, sinon la liste changerait sous le test après la recherche.
-        val total = runBlocking { db.entiteDao().getAllSync().size }
+        val all = runBlocking { db.entiteDao().getAllSync() }
+        // Le filtre se reconstruit deux fois à chaque (re)création de la liste (races, puis
+        // mythologies), et chaque reconstruction resélectionne « Toutes », ce qui réaffiche
+        // toute la base : on attend la version finale du filtre et la liste complète.
+        val filterEntries = 1 + all.map { it.race }.distinct().size + all.map { it.mythology }.distinct().size
         waitFor(timeoutMs = 10_000) {
-            scenario.onMain { (it.findViewById<android.widget.Spinner>(R.id.spinner_filter).adapter?.count ?: 0) > 1 } &&
-                scenario.listItems(R.id.recycler_entities).size == total
+            scenario.onMain { it.findViewById<android.widget.Spinner>(R.id.spinner_filter).adapter?.count } == filterEntries &&
+                scenario.listItems(R.id.recycler_entities).size == all.size
         }
         androidx.test.espresso.Espresso.onIdle()
 
-        onView(withId(androidx.appcompat.R.id.search_src_text)).perform(replaceText(entity.name))
-        closeSoftKeyboard()
-        // Liste réduite aux seuls résultats de la recherche, dont l'entité voulue.
-        waitFor {
+        fun searchResultsOnly(): Boolean {
             val items = scenario.listItems(R.id.recycler_entities).map { it as EntiteEntity }
-            items.size < total && items.all { it.name.contains(entity.name, ignoreCase = true) } &&
+            return items.size < all.size && items.all { it.name.contains(entity.name, ignoreCase = true) } &&
                 items.any { it.id == entity.id }
         }
-        val position = scenario.listItems(R.id.recycler_entities).indexOfFirst { (it as EntiteEntity).id == entity.id }
 
-        // Défilement demandé puis attente hors de l'application, qui met la liste en page
-        // librement (comme pour les tests de défilement), puis vrai tap sur l'élément.
-        // Élément placé en haut de la liste, entièrement visible (Espresso refuse de taper
-        // une vue visible à moins de 90 %).
-        scenario.onActivity {
-            (it.findViewById<RecyclerView>(R.id.recycler_entities).layoutManager as LinearLayoutManager)
-                .scrollToPositionWithOffset(position, 0)
-        }
-        var item: View? = null
-        waitFor {
-            item = scenario.onMain {
-                it.findViewById<RecyclerView>(R.id.recycler_entities)
-                    .findViewHolderForAdapterPosition(position)?.itemView
+        // Par sécurité, la recherche est refaite si la liste a encore changé sous le test.
+        for (attempt in 1..3) {
+            onView(withId(androidx.appcompat.R.id.search_src_text)).perform(replaceText(entity.name))
+            closeSoftKeyboard()
+            waitFor { searchResultsOnly() }
+            val position = scenario.listItems(R.id.recycler_entities).indexOfFirst { (it as EntiteEntity).id == entity.id }
+
+            // Élément amené en haut de la liste, entièrement visible (Espresso refuse de taper
+            // une vue visible à moins de 90 %) ; défilement demandé puis attente hors de
+            // l'application, qui met la liste en page librement.
+            scenario.onActivity {
+                (it.findViewById<RecyclerView>(R.id.recycler_entities).layoutManager as LinearLayoutManager)
+                    .scrollToPositionWithOffset(position, 0)
             }
-            item != null
+            var item: View? = null
+            waitFor {
+                item = scenario.onMain {
+                    it.findViewById<RecyclerView>(R.id.recycler_entities)
+                        .findViewHolderForAdapterPosition(position)?.itemView
+                }
+                item != null
+            }
+            androidx.test.espresso.Espresso.onIdle()
+
+            // Juste avant le tap : la liste ne contient toujours que les résultats et la
+            // ligne visée affiche bien le nom de l'entité ; sinon on recommence.
+            val rowName = scenario.onMain { item!!.findViewById<TextView>(R.id.tv_entity_name).text.toString() }
+            if (!searchResultsOnly() || rowName != entity.name) continue
+
+            onView(sameInstance<View>(item!!)).perform(click())
+            scenario.waitForDestination(R.id.entityDetailFragment)
+            waitFor {
+                scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name
+            }
+            return
         }
-        onView(sameInstance<View>(item!!)).perform(click())
-        scenario.waitForDestination(R.id.entityDetailFragment)
-        waitFor {
-            scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name
-        }
+        throw AssertionError("Impossible d'ouvrir la fiche de ${entity.name} depuis la liste après 3 recherches")
     }
 
     /** Vérifie chaque donnée de la fiche de [e], en faisant défiler la fiche jusqu'à chaque ligne affichée. */
