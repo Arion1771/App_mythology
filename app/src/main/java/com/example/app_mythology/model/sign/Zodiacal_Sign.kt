@@ -6,6 +6,5 @@ import com.example.app_mythology.model.enum.ZodiacType
 class Zodiacal_Sign(
     name: String,
     mythology: String,
-    val zodiacType: ZodiacType,
-    val chineseEquivalent: String? = null
+    val zodiacType: ZodiacType
 ) : Entity(name, mythology)
