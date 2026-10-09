@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.8
+### Latest addition — V4.3.9
 
-Search is back in the Entities, Artifacts and Places lists: it lived in the action bar removed in V4.3.1 and had disappeared with it. It is now a search field built into the top of each list, above the filter.
+Entity detail sheet: new « Zodiac » row (Classic or Chinese), filled for the 24 zodiac signs but never shown in the browse data until now, although the quiz and the Duel already displayed it.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.8
+### Dernier ajout — V4.3.9
 
-Retour de la recherche dans les listes Entités, Artéfacts et Lieux : elle était portée par la barre d'action retirée en V4.3.1 et avait disparu avec elle. Elle prend désormais la forme d'un champ de recherche intégré en haut de chaque liste, au-dessus du filtre.
+Fiche détaillée d'une entité : nouvelle ligne « Zodiaque » (Classique ou Chinois), renseignée pour les 24 signes du zodiaque mais jamais affichée jusqu'ici dans les données, alors que le quiz et le Duel la montraient déjà.
 
 ### Démarrage
 

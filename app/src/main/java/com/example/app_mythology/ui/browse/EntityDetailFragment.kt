@@ -50,6 +50,7 @@ class EntityDetailFragment : Fragment() {
         bind(view, R.id.tv_detail_monstertype, R.id.row_monstertype, e.monsterType)
         bind(view, R.id.tv_detail_description, R.id.row_description, e.description)
         bind(view, R.id.tv_detail_musetype,    R.id.row_musetype,    e.museType)
+        bind(view, R.id.tv_detail_zodiac,      R.id.row_zodiac,      e.zodiacType)
         bind(view, R.id.tv_detail_role,        R.id.row_role,        e.role)
         bind(view, R.id.tv_detail_death,       R.id.row_death,       e.death)
         bind(view, R.id.tv_detail_father,      R.id.row_father,      e.fatherName)
