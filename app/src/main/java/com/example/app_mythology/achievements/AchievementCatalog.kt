@@ -63,6 +63,7 @@ object AchievementCatalog {
         add(Achievement("collection_dogs", "C'est bien, bon toutou", "Obtenez au moins une fois chaque entité de type Chien (Cerbère, Lélaps, Garm, Orthos) dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("collection_animals", "Très bizarre ton Zoo", "Obtenez au moins une fois chaque entité portant le tag Animal dans un quiz Classique ou QCM", "Entités"))
         add(Achievement("collection_zodiac", "Astrologie de trottoir", "Obtenez au moins une fois chacun des 12 signes du zodiaque classique dans un quiz Classique ou QCM", "Entités"))
+        add(Achievement("collection_zodiac_chinese", "Quand le chat dort...", "Obtenez au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM", "Entités"))
 
         // ── Entités — paliers de score parfait ───────────────────────────
         add(Achievement("classic_entity_10", "Mortel du classique", "Terminez un quiz Classique Entités niveau Facile sans faute (score 10/10)", "Entités"))

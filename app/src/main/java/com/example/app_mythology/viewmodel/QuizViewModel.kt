@@ -233,7 +233,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     /**
      * Succès de collection : mémorise l'entité obtenue, puis débloque le succès
-     * correspondant si toutes les entités de type Chien (resp. tag Animal) ont
+     * correspondant si toutes les entités de type Chien (resp. tag Animal, signes du zodiaque classique ou chinois) ont
      * désormais été obtenues au moins une fois, toutes sessions confondues.
      */
     private fun checkCollectionAchievements(entity: EntiteEntity?) {
@@ -242,7 +242,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val isDog = entity.monsterType == "Chien"
         val isAnimal = entity.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
         val isZodiacClassic = entity.race == "Zodiacal_Sign" && entity.zodiacType == "Classique"
-        if (!isDog && !isAnimal && !isZodiacClassic) return
+        val isZodiacChinese = entity.race == "Zodiacal_Sign" && entity.zodiacType == "Chinois"
+        if (!isDog && !isAnimal && !isZodiacClassic && !isZodiacChinese) return
         viewModelScope.launch {
             val all = entiteRepo.getAllSync()
             if (isDog) {
@@ -258,6 +259,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             if (isZodiacClassic) {
                 val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Classique" }.map { it.name }.toSet()
                 AchievementManager.unlockIfAllObtained(target, "collection_zodiac")
+            }
+            if (isZodiacChinese) {
+                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Chinois" }.map { it.name }.toSet()
+                AchievementManager.unlockIfAllObtained(target, "collection_zodiac_chinese")
             }
         }
     }
