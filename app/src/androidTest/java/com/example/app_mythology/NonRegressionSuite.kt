@@ -1,5 +1,6 @@
 package com.example.app_mythology
 
+import com.example.app_mythology.browse.BrowseListAndDetailTest
 import com.example.app_mythology.browse.BrowseSearchAndFilterTest
 import com.example.app_mythology.database.DatabaseConstraintsTest
 import com.example.app_mythology.duel.DuelTest
@@ -15,16 +16,17 @@ import org.junit.runners.Suite
 /**
  * Suite complète de non-régression, dans l'ordre de l'application :
  * verrouillage portrait, navigation (menus, boutons d'angle), Données
- * (recherche, filtre), Quiz (Classique, QCM, Lieux, Liste), Duel, puis base
- * de données. Chaque groupe correspond à un package et peut aussi être
- * lancé seul ; dans chaque classe, les tests s'exécutent dans l'ordre de leur
- * numéro (t01_, t02_...).
+ * (défilement des listes, fiche détaillée, recherche, filtre), Quiz
+ * (Classique, QCM, Lieux, Liste), Duel, puis base de données. Chaque groupe
+ * correspond à un package et peut aussi être lancé seul ; dans chaque classe,
+ * les tests s'exécutent dans l'ordre de leur numéro (t01_, t02_...).
  */
 @RunWith(Suite::class)
 @Suite.SuiteClasses(
     OrientationLockTest::class,
     MenuNavigationTest::class,
     TopButtonsTest::class,
+    BrowseListAndDetailTest::class,
     BrowseSearchAndFilterTest::class,
     QuizClassicTest::class,
     QuizQcmTest::class,
