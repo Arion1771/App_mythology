@@ -1,6 +1,13 @@
-package com.example.app_mythology.database
+package com.example.app_mythology.n5_database
 
 import androidx.room.Room
+import com.example.app_mythology.database.AppDatabase
+import com.example.app_mythology.database.ArtifactEntity
+import com.example.app_mythology.database.EntiteEntity
+import com.example.app_mythology.database.EntityEncounterEntity
+import com.example.app_mythology.database.EntityLevelEntity
+import com.example.app_mythology.database.EntityProgressKey
+import com.example.app_mythology.database.PlaceEntity
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import kotlinx.coroutines.runBlocking
