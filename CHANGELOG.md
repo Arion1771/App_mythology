@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.5
+
+- Ajout du succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique — blason générique en attendant une illustration définitive
+
 #### V4.3.4
 
 - Rang des 12 signes du zodiaque chinois corrigé dans leurs descriptions et indices pour suivre le vrai ordre de la course organisée par l'Empereur de Jade (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon) ; les années associées à chaque signe (à partir de 2000) restent inchangées
