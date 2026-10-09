@@ -60,6 +60,9 @@ class DuelFlowTest {
         onView(withId(R.id.et_answer)).perform(typeText("__reponse_forcement_fausse__"))
         closeSoftKeyboard()
         onView(withId(R.id.btn_validate)).perform(scrollTo(), click()) // essai 1 faux -> essai 2
+        // Le passage à l'essai 2 vide le champ, et une saisie vide est ignorée :
+        // il faut ressaisir une réponse fausse.
+        onView(withId(R.id.et_answer)).perform(scrollTo(), typeText("__reponse_forcement_fausse__"))
         closeSoftKeyboard()
         onView(withId(R.id.btn_validate)).perform(scrollTo(), click()) // essai 2 faux -> révélation -> recap
         scenario.waitForDestination(R.id.duelRecapFragment)
