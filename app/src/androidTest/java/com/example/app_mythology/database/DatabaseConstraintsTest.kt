@@ -151,4 +151,65 @@ class DatabaseConstraintsTest {
         // Chaque entité doit toujours avoir un id Room valide (auto-généré, > 0).
         assertTrue("tous les id Room générés doivent être positifs", loaded.all { it.id > 0 })
     }
+
+    /**
+     * Migration 9 → 10 (suppression de opponentName et chineseEquivalent) sur une
+     * base au format V9 avec des données : Room doit l'ouvrir sans recourir à une
+     * migration destructive, les entités doivent être recopiées à l'identique et
+     * l'historique de difficulté adaptative du joueur (rencontres, niveaux
+     * internes) conservé.
+     */
+    @Test
+    fun t08_migration9To10KeepsEntitiesAndPlayerProgress() = runBlocking {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        val name = "migration_9_10_test.db"
+        context.deleteDatabase(name)
+
+        // Base au format V9 : `entites` avec les deux colonnes supprimées depuis.
+        android.database.sqlite.SQLiteDatabase.openOrCreateDatabase(context.getDatabasePath(name), null).use { v9 ->
+            v9.execSQL("CREATE TABLE `entites` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `mythology` TEXT NOT NULL, `race` TEXT NOT NULL, `clue` TEXT, `difficulty` INTEGER NOT NULL, `domain` TEXT, `godType` TEXT, `equivalentName` TEXT, `fatherName` TEXT, `motherName` TEXT, `giantType` TEXT, `opponentName` TEXT, `story` TEXT, `killer` TEXT, `ascendantName` TEXT, `monsterType` TEXT, `description` TEXT, `primordial` INTEGER, `museType` TEXT, `role` TEXT, `death` TEXT, `zodiacType` TEXT, `chineseEquivalent` TEXT, `popularCulture` TEXT, `tags` TEXT, `listThemes` TEXT)")
+            v9.execSQL("CREATE TABLE `places` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `mythology` TEXT NOT NULL, `description` TEXT NOT NULL, `placeType` TEXT NOT NULL, `particularity` TEXT, `inhabitants` TEXT, `souls` TEXT)")
+            v9.execSQL("CREATE TABLE `artifacts` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `mythology` TEXT NOT NULL, `artifactType` TEXT NOT NULL, `ownerName` TEXT, `creatorName` TEXT, `power` TEXT, `story` TEXT, `description` TEXT, `clue` TEXT, `difficulty` INTEGER NOT NULL, `tags` TEXT)")
+            v9.execSQL("CREATE TABLE `entity_encounters` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `entityKey` TEXT NOT NULL, `faute` REAL NOT NULL)")
+            v9.execSQL("CREATE TABLE `entity_levels` (`entityKey` TEXT NOT NULL, `level` INTEGER NOT NULL, `contentHash` TEXT NOT NULL, PRIMARY KEY(`entityKey`))")
+            v9.execSQL("CREATE TABLE room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)")
+            v9.execSQL("INSERT INTO room_master_table (id,identity_hash) VALUES(42, 'schema-v9')")
+
+            v9.execSQL("INSERT INTO `entites` (`id`, `name`, `mythology`, `race`, `clue`, `difficulty`, `domain`, `godType`, `equivalentName`, `fatherName`, `motherName`, `giantType`, `opponentName`, `zodiacType`, `chineseEquivalent`, `primordial`, `popularCulture`, `tags`, `listThemes`) VALUES (7, 'Zeus', 'Grecque', 'God', 'Roi des dieux', 1, 'Ciel', 'Olympien', 'Jupiter', 'Cronos', 'Rhéa', NULL, 'Typhon', NULL, 'Inutile', 0, 'Smite', 'Ciel', 'Olympiens')")
+            v9.execSQL("INSERT INTO `places` (`name`, `mythology`, `description`, `placeType`) VALUES ('Styx', 'Grecque', 'Fleuve', 'Fleuve')")
+            v9.execSQL("INSERT INTO `entity_encounters` (`entityKey`, `faute`) VALUES ('zeus|grecque|god', 0.0), ('zeus|grecque|god', 1.0)")
+            v9.execSQL("INSERT INTO `entity_levels` (`entityKey`, `level`, `contentHash`) VALUES ('zeus|grecque|god', 2, 'h')")
+            v9.version = 9
+        }
+
+        // Ouverture par Room avec la seule migration fournie (aucun repli destructif).
+        val migrated = Room.databaseBuilder(context, AppDatabase::class.java, name)
+            .addMigrations(AppDatabase.MIGRATION_9_10)
+            .build()
+        try {
+            val zeus = migrated.entiteDao().getAllSync().single()
+            assertEquals(7, zeus.id)
+            assertEquals("Zeus", zeus.name)
+            assertEquals("Grecque", zeus.mythology)
+            assertEquals("God", zeus.race)
+            assertEquals("Roi des dieux", zeus.clue)
+            assertEquals(1, zeus.difficulty)
+            assertEquals("Ciel", zeus.domain)
+            assertEquals("Olympien", zeus.godType)
+            assertEquals("Jupiter", zeus.equivalentName)
+            assertEquals("Cronos", zeus.fatherName)
+            assertEquals("Rhéa", zeus.motherName)
+            assertEquals(false, zeus.primordial)
+            assertEquals("Smite", zeus.popularCulture)
+            assertEquals("Ciel", zeus.tags)
+            assertEquals("Olympiens", zeus.listThemes)
+
+            assertEquals(1, migrated.placeDao().getAllSync().size)
+            assertEquals("rencontres conservées", 2, migrated.entityEncounterDao().countForKey("zeus|grecque|god"))
+            assertEquals("niveau interne conservé", 2, migrated.entityLevelDao().getByKey("zeus|grecque|god")?.level)
+        } finally {
+            migrated.close()
+            context.deleteDatabase(name)
+        }
+    }
 }
