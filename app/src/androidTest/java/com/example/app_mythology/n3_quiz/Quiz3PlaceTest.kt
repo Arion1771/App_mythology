@@ -1,4 +1,4 @@
-package com.example.app_mythology.quiz
+package com.example.app_mythology.n3_quiz
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
@@ -34,7 +34,7 @@ import org.junit.runners.MethodSorters
  */
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class QuizPlaceTest {
+class Quiz3PlaceTest {
 
     /** Rencontres, niveaux internes et succès de l'appareil restaurés après chaque test. */
     @get:Rule
