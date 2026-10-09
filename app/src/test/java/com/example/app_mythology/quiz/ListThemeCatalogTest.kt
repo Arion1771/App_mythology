@@ -6,13 +6,16 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 
 /**
  * Tests unitaires de [ListThemeCatalog] : intégrité du catalogue des thèmes du
  * quiz Liste et comportement déterministe des fonctions de regroupement
  * (filtrage par mythologie/race, sous-groupes, ordre canonique des mythologies).
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class ListThemeCatalogTest {
 
     private fun ent(
@@ -32,7 +35,7 @@ class ListThemeCatalogTest {
     // ── Intégrité du catalogue ─────────────────────────────────────────────
 
     @Test
-    fun `catalog exposes 27 themes with unique ids and non-blank titles`() {
+    fun `t01 catalog exposes 27 themes with unique ids and non-blank titles`() {
         val all = ListThemeCatalog.all
         assertEquals(27, all.size)
         assertEquals("les identifiants de thème doivent être uniques", all.size, all.map { it.id }.toSet().size)
@@ -40,7 +43,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `byId round-trips for every theme and rejects unknown ids`() {
+    fun `t02 byId round-trips for every theme and rejects unknown ids`() {
         for (theme in ListThemeCatalog.all) {
             assertEquals(theme, ListThemeCatalog.byId(theme.id))
         }
@@ -48,7 +51,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `only the artefacts theme is an ArtifactTheme`() {
+    fun `t03 only the artefacts theme is an ArtifactTheme`() {
         val artifactThemes = ListThemeCatalog.all.filterIsInstance<ListTheme.ArtifactTheme>()
         assertEquals(1, artifactThemes.size)
         assertEquals("artefacts", artifactThemes.single().id)
@@ -56,14 +59,14 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `every theme uses one of the three attempt tiers`() {
+    fun `t04 every theme uses one of the three attempt tiers`() {
         assertTrue(ListThemeCatalog.all.all { it.maxErrors in setOf(3, 5, 10) })
     }
 
     // ── Regroupements ──────────────────────────────────────────────────────
 
     @Test
-    fun `mythology theme keeps only its mythology and sub-groups by translated race alphabetically`() {
+    fun `t05 mythology theme keeps only its mythology and sub-groups by translated race alphabetically`() {
         val entites = listOf(
             ent(1, "Zeus", "Grecque", "God"),
             ent(2, "Typhon", "Grecque", "Monster"),
@@ -78,7 +81,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `race theme sub-groups by mythology ordered by descending entity count`() {
+    fun `t06 race theme sub-groups by mythology ordered by descending entity count`() {
         val entites = listOf(
             ent(1, "Zeus", "Grecque", "God"),
             ent(2, "Héra", "Grecque", "God"),
@@ -94,7 +97,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `global entites theme groups everything by ranked mythology`() {
+    fun `t07 global entites theme groups everything by ranked mythology`() {
         val entites = listOf(
             ent(1, "Zeus", "Grecque", "God"),
             ent(2, "Héra", "Grecque", "God"),
@@ -109,7 +112,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `muses theme always exposes the Classiques and Beotiennes sub-groups`() {
+    fun `t08 muses theme always exposes the Classiques and Beotiennes sub-groups`() {
         val entites = listOf(
             ent(1, "Calliope", "Grecque", "Muses", museType = "Grecque"),
             ent(2, "Mélété", "Grecque", "Muses", museType = "Beotienne"),
@@ -121,7 +124,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `zodiaque theme splits classic and chinese signs`() {
+    fun `t09 zodiaque theme splits classic and chinese signs`() {
         val entites = listOf(
             ent(1, "Bélier", "Grecque", "Zodiacal_Sign", zodiacType = "Classique"),
             ent(2, "Rat", "Chinoise", "Zodiacal_Sign", zodiacType = "Chinois"),
@@ -131,7 +134,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `artefacts theme returns a single group with every artifact and a filled detail text`() {
+    fun `t10 artefacts theme returns a single group with every artifact and a filled detail text`() {
         val artifacts = listOf(art(1, "Mjöllnir"), art(2, "Gungnir"), art(3, "Excalibur"))
         val g = groups("artefacts", artifacts = artifacts)
 
@@ -142,7 +145,7 @@ class ListThemeCatalogTest {
     }
 
     @Test
-    fun `resolveGroups preserves entity id and name on every ListItem`() {
+    fun `t11 resolveGroups preserves entity id and name on every ListItem`() {
         val entites = listOf(ent(42, "Athéna", "Grecque", "God"))
         val item = groups("mythologie_grecque", entites).flatMap { it.items }.single()
         assertEquals(42, item.id)
