@@ -1,4 +1,4 @@
-package com.example.app_mythology
+package com.example.app_mythology.browse
 
 import android.widget.Spinner
 import androidx.recyclerview.widget.ListAdapter
@@ -14,15 +14,20 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.app_mythology.R
+import com.example.app_mythology.assertCurrentDestination
 import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.ui.MainActivity
+import com.example.app_mythology.waitFor
 import org.hamcrest.Matchers.`is`
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.junit.runners.MethodSorters
 
 /** Contenu actuellement soumis à l'adapter de la liste [recyclerId]. */
 @Suppress("UNCHECKED_CAST")
@@ -66,6 +71,7 @@ private fun clearSearch() {
  * race du spinner de la liste des entités.
  */
 @RunWith(AndroidJUnit4::class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class BrowseSearchAndFilterTest {
 
     private fun openList(button: Int, destination: Int): ActivityScenario<MainActivity> {
@@ -76,18 +82,24 @@ class BrowseSearchAndFilterTest {
         return scenario
     }
 
-    // ── Entités ─────────────────────────────────────────────────────────────
+    // ── Recherche ───────────────────────────────────────────────────────────
 
     @Test
-    fun entityListShowsSearchField() {
-        val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
-        onView(withId(R.id.search_view)).check(matches(isDisplayed()))
-        onView(withId(androidx.appcompat.R.id.search_src_text)).check(matches(isDisplayed()))
-        scenario.close()
+    fun t01_searchFieldIsPresentOnEveryList() {
+        for ((button, destination) in listOf(
+            R.id.btn_primary_1 to R.id.entityListFragment,
+            R.id.btn_primary_2 to R.id.placeListFragment,
+            R.id.btn_primary_3 to R.id.artifactListFragment,
+        )) {
+            val scenario = openList(button, destination)
+            onView(withId(R.id.search_view)).check(matches(isDisplayed()))
+            onView(withId(androidx.appcompat.R.id.search_src_text)).check(matches(isDisplayed()))
+            scenario.close()
+        }
     }
 
     @Test
-    fun entitySearchFiltersByNameAndClearingRestoresFullList() {
+    fun t02_entitySearchFiltersByNameAndClearingRestoresFullList() {
         val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
         waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).isNotEmpty() }
         val fullSize = scenario.listItems<EntiteEntity>(R.id.recycler_entities).size
@@ -113,53 +125,8 @@ class BrowseSearchAndFilterTest {
     }
 
     @Test
-    fun entityRaceFilterOffersEveryRace() {
-        val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
-        onView(withId(R.id.spinner_filter)).check(matches(isDisplayed()))
-        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).isNotEmpty() }
-        waitFor { scenario.spinnerOptions(R.id.spinner_filter).any { it.startsWith("Race : ") } }
-
-        val raceOptions = scenario.spinnerOptions(R.id.spinner_filter).filter { it.startsWith("Race : ") }
-        val distinctRaces = scenario.listItems<EntiteEntity>(R.id.recycler_entities).map { it.race }.toSet()
-        assertEquals(
-            "Une option « Race : … » par race présente en base",
-            distinctRaces.size, raceOptions.size
-        )
-        scenario.close()
-    }
-
-    @Test
-    fun entityRaceFilterShowsOnlyThatRaceAndResetRestoresAll() {
-        val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
-        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).isNotEmpty() }
-        waitFor { scenario.spinnerOptions(R.id.spinner_filter).contains("Race : Titan") }
-        val fullSize = scenario.listItems<EntiteEntity>(R.id.recycler_entities).size
-
-        onView(withId(R.id.spinner_filter)).perform(click())
-        onData(`is`("Race : Titan")).perform(click())
-        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).let { it.isNotEmpty() && it.size < fullSize } }
-        val titans = scenario.listItems<EntiteEntity>(R.id.recycler_entities)
-        assertTrue("Seuls des Titans doivent être listés", titans.all { it.race == "Titan" })
-        assertTrue("Cronos fait partie des Titans", titans.any { it.name == "Cronos" })
-
-        // Une race traduite (valeur en base anglaise, libellé français)
-        onView(withId(R.id.spinner_filter)).perform(click())
-        onData(`is`("Race : Dieu")).perform(click())
-        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).let { l -> l.isNotEmpty() && l.all { it.race == "God" } } }
-
-        // Retour à l'option par défaut → liste complète
-        onView(withId(R.id.spinner_filter)).perform(click())
-        onData(`is`("Toutes (par race)")).perform(click())
-        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).size == fullSize }
-        scenario.close()
-    }
-
-    // ── Artéfacts ───────────────────────────────────────────────────────────
-
-    @Test
-    fun artifactSearchFiltersByName() {
+    fun t03_artifactSearchFiltersByName() {
         val scenario = openList(R.id.btn_primary_3, R.id.artifactListFragment)
-        onView(withId(R.id.search_view)).check(matches(isDisplayed()))
         waitFor { scenario.listItems<ArtifactEntity>(R.id.recycler_entities).isNotEmpty() }
         val fullSize = scenario.listItems<ArtifactEntity>(R.id.recycler_entities).size
 
@@ -174,12 +141,9 @@ class BrowseSearchAndFilterTest {
         scenario.close()
     }
 
-    // ── Lieux ───────────────────────────────────────────────────────────────
-
     @Test
-    fun placeSearchFiltersByNameAndTakesPrecedenceOverFilter() {
+    fun t04_placeSearchFiltersByNameAndTakesPrecedenceOverFilter() {
         val scenario = openList(R.id.btn_primary_2, R.id.placeListFragment)
-        onView(withId(R.id.search_view)).check(matches(isDisplayed()))
         waitFor { scenario.listItems<PlaceEntity>(R.id.recycler_places).isNotEmpty() }
         val fullSize = scenario.listItems<PlaceEntity>(R.id.recycler_places).size
 
@@ -201,6 +165,50 @@ class BrowseSearchAndFilterTest {
             scenario.listItems<PlaceEntity>(R.id.recycler_places)
                 .let { l -> l.isNotEmpty() && l.all { it.placeType == "Royaume" } }
         }
+        scenario.close()
+    }
+
+    // ── Filtre par race (entités) ───────────────────────────────────────────
+
+    @Test
+    fun t05_entityRaceFilterOffersEveryRace() {
+        val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
+        onView(withId(R.id.spinner_filter)).check(matches(isDisplayed()))
+        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).isNotEmpty() }
+        waitFor { scenario.spinnerOptions(R.id.spinner_filter).any { it.startsWith("Race : ") } }
+
+        val raceOptions = scenario.spinnerOptions(R.id.spinner_filter).filter { it.startsWith("Race : ") }
+        val distinctRaces = scenario.listItems<EntiteEntity>(R.id.recycler_entities).map { it.race }.toSet()
+        assertEquals(
+            "Une option « Race : … » par race présente en base",
+            distinctRaces.size, raceOptions.size
+        )
+        scenario.close()
+    }
+
+    @Test
+    fun t06_entityRaceFilterShowsOnlyThatRaceAndResetRestoresAll() {
+        val scenario = openList(R.id.btn_primary_1, R.id.entityListFragment)
+        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).isNotEmpty() }
+        waitFor { scenario.spinnerOptions(R.id.spinner_filter).contains("Race : Titan") }
+        val fullSize = scenario.listItems<EntiteEntity>(R.id.recycler_entities).size
+
+        onView(withId(R.id.spinner_filter)).perform(click())
+        onData(`is`("Race : Titan")).perform(click())
+        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).let { it.isNotEmpty() && it.size < fullSize } }
+        val titans = scenario.listItems<EntiteEntity>(R.id.recycler_entities)
+        assertTrue("Seuls des Titans doivent être listés", titans.all { it.race == "Titan" })
+        assertTrue("Cronos fait partie des Titans", titans.any { it.name == "Cronos" })
+
+        // Une race traduite (valeur en base anglaise, libellé français)
+        onView(withId(R.id.spinner_filter)).perform(click())
+        onData(`is`("Race : Dieu")).perform(click())
+        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).let { l -> l.isNotEmpty() && l.all { it.race == "God" } } }
+
+        // Retour à l'option par défaut → liste complète
+        onView(withId(R.id.spinner_filter)).perform(click())
+        onData(`is`("Toutes (par race)")).perform(click())
+        waitFor { scenario.listItems<EntiteEntity>(R.id.recycler_entities).size == fullSize }
         scenario.close()
     }
 }
