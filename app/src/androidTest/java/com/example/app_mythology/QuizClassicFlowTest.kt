@@ -1,9 +1,11 @@
 package com.example.app_mythology
 
 import androidx.test.core.app.ActivityScenario
+import androidx.test.espresso.Espresso.closeSoftKeyboard
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.action.ViewActions.scrollTo
 import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
@@ -41,13 +43,16 @@ class QuizClassicFlowTest {
         onView(withId(R.id.tv_quiz_progress)).check(matches(isDisplayed()))
 
         // Essai vide : ignoré, toujours sur la question 1.
-        onView(withId(R.id.btn_validate)).perform(click())
+        onView(withId(R.id.btn_validate)).perform(scrollTo(), click())
         onView(withId(R.id.group_all_info)).check(matches(androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility(
             androidx.test.espresso.matcher.ViewMatchers.Visibility.GONE)))
 
         // Essai faux : bascule au 2e essai, les informations complémentaires apparaissent.
+        // Clavier fermé et défilement avant le clic : le clavier ouvert par la
+        // saisie peut masquer « Valider » (Espresso exige 90 % de la vue visible).
         onView(withId(R.id.et_answer)).perform(typeText("__reponse_forcement_fausse__"))
-        onView(withId(R.id.btn_validate)).perform(click())
+        closeSoftKeyboard()
+        onView(withId(R.id.btn_validate)).perform(scrollTo(), click())
         onView(withId(R.id.group_all_info)).check(matches(isDisplayed()))
 
         scenario.close()
