@@ -2,6 +2,37 @@
 
 ## V4
 
+#### V4.3.10
+
+- Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste
+- Base de données en version 10 : seule la table des entités est reconstruite sans ces deux colonnes, données conservées ; l'historique de difficulté adaptative, les niveaux internes et les succès du joueur ne sont pas touchés
+
+#### V4.3.9
+
+- Fiche détaillée d'une entité : ajout de la ligne « Zodiaque » (Classique ou Chinois), renseignée pour les 24 signes du zodiaque mais jamais affichée jusqu'ici dans les données, alors que le quiz et le Duel la montraient déjà
+
+#### V4.3.8
+
+- Rétablissement de la recherche dans les listes Entités, Artéfacts et Lieux : elle était portée par la barre d'action, retirée en V4.3.1, et avait disparu avec elle. Elle prend désormais la forme d'un champ de recherche intégré en haut de chaque liste, au-dessus du filtre (dans la liste des Lieux, la recherche prime sur le filtre, qui reprend la main quand le champ est vidé)
+
+#### V4.3.7
+
+- Retour du bouton retour (←), disparu avec la barre d'action en V4.3.1 : il s'affiche dans le coin supérieur gauche de tous les écrans sauf l'accueil, au même style que les boutons Succès et Aide ; il se place dans le coin vide des menus à trois boutons, partage la ligne du champ de recherche sur les listes, et décale le contenu sous lui sur les autres écrans pour ne pas le masquer
+- Ajout de la référence de culture populaire « Valkyrie Apocalypse » (Shūmatsu no Valkyrie / Record of Ragnarok) sur les dieux les plus importants de la série, ainsi que sur Brynhild, son héroïne
+- Ajout/Modification d'entités :
+  - Zeus : Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece -> Smite, Smite 2, Le Choc des Titans, God of War III, Odyssée, Iliade, Ulysse 31, Les Héros de l'Olympe, Les Travaux d'Apollon, One Piece, Valkyrie Apocalypse (popularCulture modifié)
+  - Poséidon : Smite, Smite 2, Percy Jackson, Assassin's Creed Odyssey, Odyssée, Ulysse 31, Les Héros de l'Olympe, One Piece -> Smite, Smite 2, Percy Jackson, Assassin's Creed Odyssey, Odyssée, Ulysse 31, Les Héros de l'Olympe, One Piece, Valkyrie Apocalypse (popularCulture modifié)
+  - Hadès : Smite, Smite 2, Hadès, Hercule (Disney), God of War, Odyssée, Les Héros de l'Olympe -> Smite, Smite 2, Hadès, Hercule (Disney), God of War, Odyssée, Les Héros de l'Olympe, Valkyrie Apocalypse (popularCulture modifié)
+  - Apollon (Grecque) : Smite, Smite 2, God of War III, Percy Jackson, Iliade, Les Héros de l'Olympe, Les Travaux d'Apollon -> Smite, Smite 2, God of War III, Percy Jackson, Iliade, Les Héros de l'Olympe, Les Travaux d'Apollon, Valkyrie Apocalypse (popularCulture modifié)
+  - Héraclès : Hercule (Disney), Hercules -> Hercule (Disney), Hercules, Valkyrie Apocalypse (popularCulture modifié)
+  - Thor : Smite, Smite 2, Marvel, God of War, Magnus Chase -> Smite, Smite 2, Marvel, God of War, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Odin : Smite, Smite 2, God of War, Marvel, Assassin's Creed Valhalla, Magnus Chase -> Smite, Smite 2, God of War, Marvel, Assassin's Creed Valhalla, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Loki : Smite, Smite 2, Marvel, Loki, Magnus Chase -> Smite, Smite 2, Marvel, Loki, Magnus Chase, Valkyrie Apocalypse (popularCulture modifié)
+  - Shiva : Smite, Final Fantasy, Asura's Wrath -> Smite, Final Fantasy, Asura's Wrath, Valkyrie Apocalypse (popularCulture modifié)
+  - Susanoo : Smite, Smite 2, Naruto -> Smite, Smite 2, Naruto, Valkyrie Apocalypse (popularCulture modifié)
+  - Bouddha : (vide) -> Valkyrie Apocalypse (popularCulture modifié)
+  - Brynhild : L'Anneau du Nibelung (Wagner) -> L'Anneau du Nibelung (Wagner), Valkyrie Apocalypse (popularCulture modifié)
+
 #### V4.3.6
 
 - Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)

@@ -201,7 +201,6 @@ private fun entityDetailText(e: EntiteEntity) = buildString {
     e.motherName?.let { appendLine("Mère : $it") }
     e.equivalentName?.let { appendLine("Équivalent : $it") }
     e.giantType?.let { appendLine("Type de géant : $it") }
-    e.opponentName?.let { appendLine("Opposant : $it") }
     e.story?.let { appendLine("Histoire : $it") }
     e.killer?.let { appendLine("Tué par : $it") }
     e.ascendantName?.let { appendLine("Ascendant : $it") }
@@ -212,7 +211,6 @@ private fun entityDetailText(e: EntiteEntity) = buildString {
     e.role?.let { appendLine("Rôle : $it") }
     e.death?.let { appendLine("Mort : $it") }
     e.zodiacType?.let { appendLine("Zodiaque : $it") }
-    e.chineseEquivalent?.let { appendLine("Équivalent chinois : $it") }
     e.popularCulture?.let { appendLine("Culture populaire : $it") }
     e.clue?.let { appendLine("Indice : $it") }
     e.tags?.let { appendLine("Tags : $it") }

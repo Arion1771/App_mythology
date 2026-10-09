@@ -62,7 +62,6 @@ class QuizEntityQcmResultFragment : Fragment() {
         e.fatherName?.let     { appendLine("Père : $it") }
         e.motherName?.let     { appendLine("Mère : $it") }
         e.equivalentName?.let { appendLine("Équivalent : $it") }
-        e.opponentName?.let   { appendLine("Opposant : $it") }
         e.giantType?.let      { appendLine("Type de géant : $it") }
         e.story?.let          { appendLine("Histoire : $it") }
         e.killer?.let          { appendLine("Tué par : $it") }
