@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.6
+### Latest addition — V4.3.7
 
-Collection achievements now remember the entities you got by name + mythology + race instead of name alone, so a namesake no longer counts in place of another (e.g. the European Dragon used to count as the Chinese Dragon). Existing progress is kept and converted automatically.
+New pop-culture reference "Valkyrie Apocalypse" (Shūmatsu no Valkyrie / Record of Ragnarok) on the most important gods of the series, as well as on Brynhild, its heroine. Updated entities: Zeus, Poséidon, Hadès, Apollon (Greek), Héraclès, Thor, Odin, Loki, Shiva, Susanoo, Bouddha, Brynhild. The back button (←), lost with the action bar in V4.3.1, is also back in the top-left corner of every screen except home.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.6
+### Dernier ajout — V4.3.7
 
-Les succès de collection mémorisent désormais les entités obtenues par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen comptait pour le Dragon chinois). La progression déjà acquise est conservée et convertie automatiquement.
+Nouvelle référence de culture populaire « Valkyrie Apocalypse » (Shūmatsu no Valkyrie / Record of Ragnarok) sur les dieux les plus importants de la série, ainsi que sur Brynhild, son héroïne. Entités mises à jour : Zeus, Poséidon, Hadès, Apollon (grecque), Héraclès, Thor, Odin, Loki, Shiva, Susanoo, Bouddha, Brynhild. Le bouton retour (←), disparu avec la barre d'action en V4.3.1, revient aussi dans le coin supérieur gauche de tous les écrans sauf l'accueil.
 
 ### Démarrage
 

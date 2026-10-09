@@ -6,6 +6,7 @@ import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
 import com.example.app_mythology.R
 import com.example.app_mythology.achievements.Achievement
 import com.example.app_mythology.achievements.AchievementManager
@@ -19,6 +20,16 @@ class MainActivity : AppCompatActivity() {
     private var bannerShowing = false
     private val bannerHandler = Handler(Looper.getMainLooper())
 
+    /** Menus à trois boutons principaux centrés : coin supérieur gauche libre. */
+    private val menuDestinations = setOf(
+        R.id.browseChoiceFragment,
+        R.id.quizChoiceFragment,
+        R.id.qcmDomainChoiceFragment,
+        R.id.classicDomainChoiceFragment,
+        R.id.quizPlaceChoiceFragment,
+        R.id.duelModeChoiceFragment,
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,6 +39,25 @@ class MainActivity : AppCompatActivity() {
         // sélecteur de thème.
         findViewById<View>(R.id.main_root).background =
             BackgroundAssets.load(this, BackgroundThemeManager.getSelected())
+
+        // Bouton retour (plus d'ActionBar depuis V4.3.1) : passe par le
+        // dispatcher système pour respecter les retours personnalisés des
+        // fragments, et reste masqué sur l'accueil. Sur les menus à trois
+        // boutons principaux il se superpose au coin vide (les boutons restent
+        // au même pixel que sur l'accueil) ; ailleurs, le contenu est décalé
+        // sous le bouton pour ne pas masquer les titres.
+        val backButton = findViewById<View>(R.id.btn_back)
+        backButton.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        val navHostView = findViewById<View>(R.id.nav_host_fragment)
+        val backInset = (72 * resources.displayMetrics.density).toInt()
+        val navHost = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navHost.navController.addOnDestinationChangedListener { _, destination, _ ->
+            val isHome = destination.id == R.id.homeFragment
+            backButton.visibility = if (isHome) View.GONE else View.VISIBLE
+            val inset = if (isHome || destination.id in menuDestinations) 0 else backInset
+            navHostView.setPadding(0, inset, 0, 0)
+        }
 
         AchievementManager.bannerListener = { achievement -> enqueueBanner(achievement) }
     }
