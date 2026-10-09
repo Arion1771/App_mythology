@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.6
+
+- Collection achievements ("C'est bien, bon toutou", "Très bizarre ton Zoo", "Astrologie de trottoir", "Quand le chat dort..."): obtained entities are now recorded by name + mythology + race instead of name alone, so that a namesake no longer counts for another (e.g. the European Dragon used to validate the Chinese Dragon). Progress already made is kept: previously stored names are converted automatically (with namesakes, all are considered obtained)
+
 #### V4.3.5
 
 - Added the "Quand le chat dort..." achievement: get each of the 12 Chinese zodiac signs at least once in a Classic or Multiple-choice quiz, on the same principle as "Astrologie de trottoir" for the classical zodiac — generic emblem until a final illustration
@@ -111,6 +115,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.6
+
+- Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)
 
 #### V4.3.5
 
