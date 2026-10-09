@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.QCM_CHOICE_BUTTONS
+import com.example.app_mythology.DeviceStateRestoreRule
 import com.example.app_mythology.R
 import com.example.app_mythology.assertCurrentDestination
 import com.example.app_mythology.graphViewModel
@@ -19,6 +20,7 @@ import com.example.app_mythology.waitForDestination
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.MethodSorters
@@ -32,6 +34,10 @@ import org.junit.runners.MethodSorters
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class QuizQcmTest {
+
+    /** Rencontres, niveaux internes et succès de l'appareil restaurés après chaque test. */
+    @get:Rule
+    val deviceState = DeviceStateRestoreRule()
 
     private class Domain(
         val button: Int, val choiceDest: Int, val quizDest: Int, val resultDest: Int,
