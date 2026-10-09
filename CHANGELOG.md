@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.9
+
+- Fiche détaillée d'une entité : ajout de la ligne « Zodiaque » (Classique ou Chinois), renseignée pour les 24 signes du zodiaque mais jamais affichée jusqu'ici dans les données, alors que le quiz et le Duel la montraient déjà
+
 #### V4.3.8
 
 - Rétablissement de la recherche dans les listes Entités, Artéfacts et Lieux : elle était portée par la barre d'action, retirée en V4.3.1, et avait disparu avec elle. Elle prend désormais la forme d'un champ de recherche intégré en haut de chaque liste, au-dessus du filtre (dans la liste des Lieux, la recherche prime sur le filtre, qui reprend la main quand le champ est vidé)

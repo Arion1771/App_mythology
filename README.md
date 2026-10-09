@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.9
+
+- Entity detail sheet: added the "Zodiaque" line (Classique or Chinois), filled in for the 24 zodiac signs but never shown so far in the data screens, whereas the quiz and Duel already showed it
+
 #### V4.3.8
 
 - Search restored in the Entities, Artifacts and Places lists: it lived in the action bar, removed in V4.3.1, and had disappeared with it. It now takes the form of a search field built into the top of each list, above the filter (in the Places list, search takes precedence over the filter, which takes over again when the field is cleared)
@@ -137,6 +141,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.9
+
+- Fiche détaillée d'une entité : ajout de la ligne « Zodiaque » (Classique ou Chinois), renseignée pour les 24 signes du zodiaque mais jamais affichée jusqu'ici dans les données, alors que le quiz et le Duel la montraient déjà
 
 #### V4.3.8
 
