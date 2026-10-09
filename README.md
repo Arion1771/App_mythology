@@ -12,6 +12,35 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.6
+
+- Collection achievements ("C'est bien, bon toutou", "Très bizarre ton Zoo", "Astrologie de trottoir", "Quand le chat dort..."): obtained entities are now recorded by name + mythology + race instead of name alone, so that a namesake no longer counts for another (e.g. the European Dragon used to validate the Chinese Dragon). Progress already made is kept: previously stored names are converted automatically (with namesakes, all are considered obtained)
+
+#### V4.3.5
+
+- Added the "Quand le chat dort..." achievement: get each of the 12 Chinese zodiac signs at least once in a Classic or Multiple-choice quiz, on the same principle as "Astrologie de trottoir" for the classical zodiac — generic emblem until a final illustration
+
+#### V4.3.4
+
+- Rank of the 12 Chinese zodiac signs corrected in their descriptions and clues to follow the true order of the race held by the Jade Emperor (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon); the years associated with each sign (from 2000) are unchanged
+- Entities added/modified:
+  - Rat : Neuvième -> Premier signe (description, clue modified)
+  - Buffle : Dixième -> Deuxième signe (description, clue modified)
+  - Tigre : Onzième -> Troisième signe (description, clue modified)
+  - Lapin : Douzième -> Quatrième signe (description, clue modified)
+  - Dragon : Premier -> Cinquième signe (description, clue modified)
+  - Serpent : Deuxième -> Sixième signe (description, clue modified)
+  - Cheval : Troisième -> Septième signe (description, clue modified)
+  - Chèvre : Quatrième -> Huitième signe (description, clue modified)
+  - Singe : Cinquième -> Neuvième signe (description, clue modified)
+  - Coq : Sixième -> Dixième signe (description, clue modified)
+  - Chien : Septième -> Onzième signe (description, clue modified)
+  - Cochon : Huitième -> Douzième signe (description, clue modified)
+
+#### V4.3.3
+
+- Three-button menu screens (home, Browse, quiz choice, Places quiz, domain choice, Duel mode choice): the column of main buttons is moved down so that the bottom of the first button falls in the middle of the screen, and the screen title/text is now centred in the upper third (two thirds of the way up from the bottom) instead of sticking to the top
+
 #### V4.3.2
 
 - Added an automated test suite (Test-Non-Regression branch): navigation of every screen with main buttons and of their standalone buttons (back included), runs of the Classic/Multiple-choice quizzes (Entities and Artifacts), the List quiz and the Places quiz, run of Duel mode (Classic and Multiple-choice) up to the first question, instrumented tests of the Room database (round-trip of the 5 tables, replacement strategy of `entity_levels`, window of `entity_encounters`, uniqueness of the name+mythology+race key on the real data), and a check that each List theme includes exactly all matching entities/artifacts from `prepopulate.json`, no more, no less
@@ -86,6 +115,35 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.6
+
+- Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)
+
+#### V4.3.5
+
+- Ajout du succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique — blason générique en attendant une illustration définitive
+
+#### V4.3.4
+
+- Rang des 12 signes du zodiaque chinois corrigé dans leurs descriptions et indices pour suivre le vrai ordre de la course organisée par l'Empereur de Jade (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon) ; les années associées à chaque signe (à partir de 2000) restent inchangées
+- Ajout/Modification d'entités :
+  - Rat : Neuvième -> Premier signe (description, indice modifiés)
+  - Buffle : Dixième -> Deuxième signe (description, indice modifiés)
+  - Tigre : Onzième -> Troisième signe (description, indice modifiés)
+  - Lapin : Douzième -> Quatrième signe (description, indice modifiés)
+  - Dragon : Premier -> Cinquième signe (description, indice modifiés)
+  - Serpent : Deuxième -> Sixième signe (description, indice modifiés)
+  - Cheval : Troisième -> Septième signe (description, indice modifiés)
+  - Chèvre : Quatrième -> Huitième signe (description, indice modifiés)
+  - Singe : Cinquième -> Neuvième signe (description, indice modifiés)
+  - Coq : Sixième -> Dixième signe (description, indice modifiés)
+  - Chien : Septième -> Onzième signe (description, indice modifiés)
+  - Cochon : Huitième -> Douzième signe (description, indice modifiés)
+
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
 
 #### V4.3.2
 

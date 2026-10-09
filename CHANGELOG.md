@@ -2,6 +2,35 @@
 
 ## V4
 
+#### V4.3.6
+
+- Succès de collection (« C'est bien, bon toutou », « Très bizarre ton Zoo », « Astrologie de trottoir », « Quand le chat dort... ») : les entités obtenues sont désormais mémorisées par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen validait le Dragon chinois). La progression déjà acquise est conservée : les anciens noms enregistrés sont convertis automatiquement (en cas d'homonymes, tous sont considérés obtenus)
+
+#### V4.3.5
+
+- Ajout du succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique — blason générique en attendant une illustration définitive
+
+#### V4.3.4
+
+- Rang des 12 signes du zodiaque chinois corrigé dans leurs descriptions et indices pour suivre le vrai ordre de la course organisée par l'Empereur de Jade (Rat, Buffle, Tigre, Lapin, Dragon, Serpent, Cheval, Chèvre, Singe, Coq, Chien, Cochon) ; les années associées à chaque signe (à partir de 2000) restent inchangées
+- Ajout/Modification d'entités :
+  - Rat : Neuvième -> Premier signe (description, indice modifiés)
+  - Buffle : Dixième -> Deuxième signe (description, indice modifiés)
+  - Tigre : Onzième -> Troisième signe (description, indice modifiés)
+  - Lapin : Douzième -> Quatrième signe (description, indice modifiés)
+  - Dragon : Premier -> Cinquième signe (description, indice modifiés)
+  - Serpent : Deuxième -> Sixième signe (description, indice modifiés)
+  - Cheval : Troisième -> Septième signe (description, indice modifiés)
+  - Chèvre : Quatrième -> Huitième signe (description, indice modifiés)
+  - Singe : Cinquième -> Neuvième signe (description, indice modifiés)
+  - Coq : Sixième -> Dixième signe (description, indice modifiés)
+  - Chien : Septième -> Onzième signe (description, indice modifiés)
+  - Cochon : Huitième -> Douzième signe (description, indice modifiés)
+
+#### V4.3.3
+
+- Écrans de menu à trois boutons (accueil, Parcourir, choix du quiz, quiz Lieux, choix du domaine, choix du mode en Duel) : la colonne des boutons principaux est descendue pour que le bas du premier bouton tombe au milieu de l'écran, et le titre/texte de l'écran est désormais centré au tiers supérieur (aux deux tiers de l'écran en partant du bas) au lieu d'être collé en haut
+
 #### V4.3.2
 
 - Ajout d'une suite de tests automatiques (branche Test-Non-Regression) : navigation de tous les écrans à boutons principaux et de leurs boutons isolés (retour inclus), déroulé des quiz Classique/QCM (Entités et Artéfacts), du quiz Liste et du quiz Lieux, déroulé du mode Duel (Classique et QCM) jusqu'à la première question, tests instrumentés de la base Room (round-trip des 5 tables, stratégie de remplacement de `entity_levels`, fenêtre de `entity_encounters`, unicité de la clé nom+mythologie+race sur les vraies données), et vérification que chaque thème du mode Liste prend en compte toutes les entités/artéfacts correspondants de `prepopulate.json`, ni plus ni moins
