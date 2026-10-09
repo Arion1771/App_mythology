@@ -1,4 +1,4 @@
-package com.example.app_mythology.navigation
+package com.example.app_mythology.n1_navigation
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView

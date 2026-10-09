@@ -1,4 +1,4 @@
-package com.example.app_mythology.browse
+package com.example.app_mythology.n2_browse
 
 import android.view.View
 import android.widget.TextView
@@ -23,6 +23,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.R
 import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.currentScreenView
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.onMain
@@ -53,8 +54,15 @@ private fun clickItemAt(position: Int): ViewAction = object : ViewAction {
     override fun perform(uiController: UiController, view: View) {
         val recycler = view as RecyclerView
         recycler.scrollToPosition(position)
-        uiController.loopMainThreadUntilIdle()
-        recycler.findViewHolderForAdapterPosition(position)!!.itemView.performClick()
+        // La liste ne se met en page qu'à la frame suivante : on attend que l'élément existe.
+        var holder = recycler.findViewHolderForAdapterPosition(position)
+        var waited = 0
+        while (holder == null && waited < 5000) {
+            uiController.loopMainThreadForAtLeast(50)
+            waited += 50
+            holder = recycler.findViewHolderForAdapterPosition(position)
+        }
+        checkNotNull(holder) { "élément $position jamais affiché dans la liste" }.itemView.performClick()
         uiController.loopMainThreadUntilIdle()
     }
 }
@@ -177,12 +185,18 @@ class BrowseListAndDetailTest {
         onView(withId(R.id.recycler_entities)).perform(clickItemAt(position))
         scenario.waitForDestination(R.id.entityDetailFragment)
         waitFor {
-            scenario.onMain { it.findViewById<TextView>(R.id.tv_detail_name).text.toString() } == entity.name
+            scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name
         }
     }
 
     /** Vérifie chaque donnée de la fiche de [e], en faisant défiler la fiche jusqu'à chaque ligne affichée. */
     private fun assertDetailShowsEverything(scenario: ActivityScenario<MainActivity>, e: EntiteEntity) {
+        // Après une navigation fiche -> fiche, l'ancienne fiche reste un instant dans la
+        // fenêtre : on attend qu'il n'en reste qu'une avant les vérifications Espresso.
+        fun countNames(v: View): Int = (if (v.id == R.id.tv_detail_name) 1 else 0) +
+            ((v as? android.view.ViewGroup)?.let { g -> (0 until g.childCount).sumOf { countNames(g.getChildAt(it)) } } ?: 0)
+        waitFor { scenario.onMain { countNames(it.window.decorView) } == 1 }
+
         onView(withId(R.id.tv_detail_name)).check(matches(withText(e.name)))
         onView(withId(R.id.tv_detail_mythology)).check(matches(withText("Mythologie : ${e.mythology}")))
         onView(withId(R.id.tv_detail_race)).check(matches(withText("Race : ${expectedRace(e.race)}")))
@@ -190,7 +204,7 @@ class BrowseListAndDetailTest {
 
         for (row in DETAIL_ROWS) {
             val expected = row.value(e)?.takeIf { it.isNotBlank() }
-            val visible = scenario.onMain { it.findViewById<View>(row.rowId).visibility == View.VISIBLE }
+            val visible = scenario.currentScreenView<View>(row.rowId)?.visibility == View.VISIBLE
             if (expected == null) {
                 assertTrue("« ${row.label} » de ${e.name} : ligne attendue masquée", !visible)
             } else {
@@ -235,13 +249,13 @@ class BrowseListAndDetailTest {
         openDetailFromList(scenario, entity)
         onView(withId(R.id.tv_detail_equivalent)).perform(scrollTo(), click())
         waitFor {
-            scenario.onMain { it.findViewById<TextView>(R.id.tv_detail_name).text.toString() } == equivalent.name
+            scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == equivalent.name
         }
         scenario.assertCurrentDestination(R.id.entityDetailFragment)
         assertDetailShowsEverything(scenario, equivalent)
 
         pressBack()
-        waitFor { scenario.onMain { it.findViewById<TextView>(R.id.tv_detail_name).text.toString() } == entity.name }
+        waitFor { scenario.currentScreenView<TextView>(R.id.tv_detail_name)?.text?.toString() == entity.name }
         scenario.close()
     }
 }

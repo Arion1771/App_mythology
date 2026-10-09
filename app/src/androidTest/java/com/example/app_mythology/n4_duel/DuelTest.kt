@@ -1,4 +1,4 @@
-package com.example.app_mythology.duel
+package com.example.app_mythology.n4_duel
 
 import android.widget.LinearLayout
 import android.widget.TextView

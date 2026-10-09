@@ -95,6 +95,15 @@ fun ActivityScenario<MainActivity>.currentFragmentQuizViewModel(): QuizViewModel
 }
 
 /**
+ * Vue [id] de l'écran actuellement affiché, ou null s'il n'est pas encore prêt.
+ * Pendant une navigation, l'ancien et le nouvel écran coexistent un instant :
+ * chercher dans toute la fenêtre peut tomber sur le mauvais, ou sur rien.
+ */
+fun <V : android.view.View> ActivityScenario<MainActivity>.currentScreenView(id: Int): V? = onMain {
+    navHostOf(it).childFragmentManager.primaryNavigationFragment?.view?.findViewById<V>(id)
+}
+
+/**
  * Saisit [answer] dans [inputId] puis clique sur [validateId]. Saisie directe
  * (accents compris, que typeText ne sait pas taper), clavier fermé et, sur
  * les écrans défilants, défilement jusqu'au bouton : le clavier peut sinon
