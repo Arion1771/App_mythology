@@ -9,12 +9,14 @@ import androidx.test.espresso.matcher.ViewMatchers.Visibility
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.DeviceStateRestoreRule
 import com.example.app_mythology.R
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
 import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.formatScoreLikeApp
 import com.example.app_mythology.graphViewModel
 import com.example.app_mythology.onMain
 import com.example.app_mythology.ui.MainActivity
@@ -33,7 +35,8 @@ import org.junit.runners.MethodSorters
  * Quiz Classique (entités, artéfacts) — branche Test-Non-Regression : essai
  * vide ignoré, essai faux révélant les informations complémentaires, bonne
  * réponse au 1er essai (statut green) et au 2e essai (statut yellow), avec
- * points accordés et passage à l'écran de résultat. Les questions étant
+ * points accordés et passage à l'écran de résultat, puis quiz complet joué
+ * jusqu'à l'écran de score avec vérification du score final. Les questions étant
  * tirées au hasard, la bonne réponse est lue dans le ViewModel du quiz.
  */
 @RunWith(AndroidJUnit4::class)
@@ -122,4 +125,55 @@ class QuizClassicTest {
 
     @Test
     fun t05_artifactGoodAnswerSecondTry() = goodAnswer(artifacts, secondTry = true)
+
+    /**
+     * Joue tout le quiz en alternant bonne réponse au 1er essai (points pleins),
+     * au 2e essai (moitié des points) et deux essais faux (0), puis vérifie le
+     * score final calculé et celui affiché.
+     */
+    private fun fullQuizScore(domain: Domain) {
+        val scenario = openFirstQuestion(domain)
+        val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
+        waitFor { scenario.onMain { vm.results.value }.orEmpty().isNotEmpty() }
+        val size = scenario.onMain { vm.results.value!!.size }
+
+        var expected = 0.0
+        val expectedResults = mutableListOf<String>()
+        for (i in 0 until size) {
+            scenario.waitForDestination(domain.quizDest)
+            waitFor { scenario.onMain { vm.currentIndex.value == i && vm.currentStep.value == 1 } }
+            val (name, points) = scenario.onMain {
+                if (domain.isArtifact) vm.quizArtifacts.value!![i].let { it.name to it.difficulty.toDouble() }
+                else vm.quizEntites.value!![i].name to vm.entityPointsLevelAt(i).toDouble()
+            }
+            val answers = when (i % 3) {
+                0 -> listOf(name).also { expected += points; expectedResults += "green" }
+                1 -> listOf(WRONG_ANSWER, name).also { expected += points / 2; expectedResults += "yellow" }
+                else -> listOf(WRONG_ANSWER, WRONG_ANSWER).also { expectedResults += "red" }
+            }
+            answers.forEachIndexed { attempt, answer ->
+                answerAndValidate(answer, R.id.et_answer, R.id.btn_validate, scrollable = true)
+                if (attempt == 0 && answers.size == 2) waitFor { scenario.onMain { vm.currentStep.value } == 2 }
+            }
+            scenario.waitForDestination(domain.resultDest)
+            onView(withId(R.id.btn_result_next)).perform(scrollTo(), click()) // suivante / voir le score
+        }
+
+        scenario.waitForDestination(domain.quizDest)
+        waitFor { scenario.onMain { vm.quizFinished.value } == true }
+        assertEquals("Statuts de toutes les questions", expectedResults, scenario.onMain { vm.results.value })
+        assertEquals("Score final", expected, scenario.onMain { vm.score.value ?: 0.0 }, 1e-9)
+        val max = scenario.onMain { vm.maxScore.value ?: 0.0 }
+        onView(withId(R.id.layout_result)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_score)).check(
+            matches(withText("Score : ${formatScoreLikeApp(expected)} / ${formatScoreLikeApp(max)}"))
+        )
+        scenario.close()
+    }
+
+    @Test
+    fun t06_entityFullQuizScore() = fullQuizScore(entities)
+
+    @Test
+    fun t07_artifactFullQuizScore() = fullQuizScore(artifacts)
 }
