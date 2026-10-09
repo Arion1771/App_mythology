@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.5
+### Latest addition — V4.3.6
 
-New achievement "Quand le chat dort..." ("When the cat's asleep..."): get each of the 12 Chinese zodiac signs at least once in a Classic or Multiple-choice quiz, just like "Astrologie de trottoir" does for the Western zodiac.
+Collection achievements now remember the entities you got by name + mythology + race instead of name alone, so a namesake no longer counts in place of another (e.g. the European Dragon used to count as the Chinese Dragon). Existing progress is kept and converted automatically.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.5
+### Dernier ajout — V4.3.6
 
-Nouveau succès « Quand le chat dort... » : obtenir au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM, sur le même principe que « Astrologie de trottoir » pour le zodiaque classique.
+Les succès de collection mémorisent désormais les entités obtenues par nom + mythologie + race au lieu du seul nom, pour qu'un homonyme ne compte plus à la place d'un autre (ex. le Dragon européen comptait pour le Dragon chinois). La progression déjà acquise est conservée et convertie automatiquement.
 
 ### Démarrage
 

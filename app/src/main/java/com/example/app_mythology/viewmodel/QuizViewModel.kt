@@ -238,7 +238,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
      */
     private fun checkCollectionAchievements(entity: EntiteEntity?) {
         if (entity == null) return
-        AchievementManager.markEntityObtained(entity.name)
+        AchievementManager.markEntityObtained(entity)
         val isDog = entity.monsterType == "Chien"
         val isAnimal = entity.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
         val isZodiacClassic = entity.race == "Zodiacal_Sign" && entity.zodiacType == "Classique"
@@ -246,22 +246,23 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         if (!isDog && !isAnimal && !isZodiacClassic && !isZodiacChinese) return
         viewModelScope.launch {
             val all = entiteRepo.getAllSync()
+            AchievementManager.migrateLegacyObtainedNames(all)
             if (isDog) {
-                val target = all.filter { it.monsterType == "Chien" }.map { it.name }.toSet()
+                val target = all.filter { it.monsterType == "Chien" }
                 AchievementManager.unlockIfAllObtained(target, "collection_dogs")
             }
             if (isAnimal) {
                 val target = all.filter { e ->
                     e.tags?.split(",")?.map { it.trim() }?.contains("Animal") == true
-                }.map { it.name }.toSet()
+                }
                 AchievementManager.unlockIfAllObtained(target, "collection_animals")
             }
             if (isZodiacClassic) {
-                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Classique" }.map { it.name }.toSet()
+                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Classique" }
                 AchievementManager.unlockIfAllObtained(target, "collection_zodiac")
             }
             if (isZodiacChinese) {
-                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Chinois" }.map { it.name }.toSet()
+                val target = all.filter { it.race == "Zodiacal_Sign" && it.zodiacType == "Chinois" }
                 AchievementManager.unlockIfAllObtained(target, "collection_zodiac_chinese")
             }
         }
