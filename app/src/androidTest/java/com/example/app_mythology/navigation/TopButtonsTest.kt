@@ -69,6 +69,7 @@ class TopButtonsTest {
         onView(withId(R.id.btn_quiz_help)).check(matches(isDisplayed()))
         onView(withId(R.id.btn_back)).check(matches(isDisplayed()))
 
+        // Deux niveaux à remonter avec le bouton retour : aide -> choix du quiz -> accueil.
         onView(withId(R.id.btn_quiz_help)).perform(click())
         scenario.assertCurrentDestination(R.id.quizHelpFragment)
         onView(withId(R.id.btn_back)).perform(click())
@@ -78,24 +79,9 @@ class TopButtonsTest {
         scenario.close()
     }
 
-    @Test
-    fun t04_backButtonUnwindsSeveralLevelsOneAtATime() {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Données
-        onView(withId(R.id.btn_primary_1)).perform(click()) // Entités
-        scenario.assertCurrentDestination(R.id.entityListFragment)
-        onView(withId(R.id.btn_back)).check(matches(isDisplayed()))
-
-        onView(withId(R.id.btn_back)).perform(click())
-        scenario.assertCurrentDestination(R.id.browseChoiceFragment)
-        onView(withId(R.id.btn_back)).perform(click())
-        scenario.assertCurrentDestination(R.id.homeFragment)
-        scenario.close()
-    }
-
     /** Champ de recherche sur la ligne du bouton retour, démarrant après lui (donc sans recouvrement). */
     @Test
-    fun t05_listSearchFieldSharesTheBackButtonLine() {
+    fun t04_listSearchFieldSharesTheBackButtonLine() {
         for (button in listOf(R.id.btn_primary_1, R.id.btn_primary_2, R.id.btn_primary_3)) {
             val scenario = ActivityScenario.launch(MainActivity::class.java)
             onView(withId(R.id.btn_primary_1)).perform(click()) // Données

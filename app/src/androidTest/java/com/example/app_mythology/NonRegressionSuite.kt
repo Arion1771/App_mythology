@@ -14,12 +14,13 @@ import org.junit.runner.RunWith
 import org.junit.runners.Suite
 
 /**
- * Suite complète de non-régression, dans l'ordre de l'application :
+ * Suite complète de non-régression, dans l'ordre des menus de l'application :
  * verrouillage portrait, navigation (menus, boutons d'angle), Données
- * (défilement des listes, fiche détaillée, recherche, filtre), Quiz
- * (Classique, QCM, Lieux, Liste), Duel, puis base de données. Chaque groupe
- * correspond à un package et peut aussi être lancé seul ; dans chaque classe,
- * les tests s'exécutent dans l'ordre de leur numéro (t01_, t02_...).
+ * (défilement des listes et fiche détaillée, puis recherche et filtre ;
+ * Entités, Lieux, Artéfacts), Quizz (QCM, Classique, Lieux, Liste), Duel
+ * (Classique, QCM), puis base de données. Chaque groupe correspond à un
+ * package et peut aussi être lancé seul ; dans chaque classe, les tests
+ * s'exécutent dans l'ordre de leur numéro (t01_, t02_...).
  */
 @RunWith(Suite::class)
 @Suite.SuiteClasses(
@@ -28,8 +29,8 @@ import org.junit.runners.Suite
     TopButtonsTest::class,
     BrowseListAndDetailTest::class,
     BrowseSearchAndFilterTest::class,
-    QuizClassicTest::class,
     QuizQcmTest::class,
+    QuizClassicTest::class,
     QuizPlaceTest::class,
     QuizListTest::class,
     DuelTest::class,
