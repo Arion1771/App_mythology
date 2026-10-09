@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.8
+
+- Search restored in the Entities, Artifacts and Places lists: it lived in the action bar, removed in V4.3.1, and had disappeared with it. It now takes the form of a search field built into the top of each list, above the filter (in the Places list, search takes precedence over the filter, which takes over again when the field is cleared)
+
 #### V4.3.7
 
 - The back button (←), lost with the action bar in V4.3.1, is back: it shows in the top-left corner of every screen except home, in the same style as the Achievements and Help buttons; on screens other than three-button menus, the content is moved below the button so as not to be hidden
@@ -133,6 +137,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.8
+
+- Rétablissement de la recherche dans les listes Entités, Artéfacts et Lieux : elle était portée par la barre d'action, retirée en V4.3.1, et avait disparu avec elle. Elle prend désormais la forme d'un champ de recherche intégré en haut de chaque liste, au-dessus du filtre (dans la liste des Lieux, la recherche prime sur le filtre, qui reprend la main quand le champ est vidé)
 
 #### V4.3.7
 

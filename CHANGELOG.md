@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.8
+
+- Rétablissement de la recherche dans les listes Entités, Artéfacts et Lieux : elle était portée par la barre d'action, retirée en V4.3.1, et avait disparu avec elle. Elle prend désormais la forme d'un champ de recherche intégré en haut de chaque liste, au-dessus du filtre (dans la liste des Lieux, la recherche prime sur le filtre, qui reprend la main quand le champ est vidé)
+
 #### V4.3.7
 
 - Retour du bouton retour (←), disparu avec la barre d'action en V4.3.1 : il s'affiche dans le coin supérieur gauche de tous les écrans sauf l'accueil, au même style que les boutons Succès et Aide ; sur les écrans autres que les menus à trois boutons, le contenu est décalé sous le bouton pour ne pas être masqué
