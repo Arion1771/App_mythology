@@ -14,6 +14,7 @@ import com.example.app_mythology.QCM_CHOICE_BUTTONS
 import com.example.app_mythology.R
 import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.checkLevelButtonLabels
 import com.example.app_mythology.formatScoreLikeApp
 import com.example.app_mythology.graphViewModel
 import com.example.app_mythology.onMain
@@ -57,24 +58,32 @@ class Quiz1QcmTest {
         R.id.quizArtifactQcmResultFragment, R.id.quiz_artifact_qcm_graph, isArtifact = true
     )
 
+    /** Ouvre la première question QCM du domaine (niveau [levelButton], facile par défaut). */
+    private fun openQcm(domain: Domain, levelButton: Int = R.id.btn_level_easy): ActivityScenario<MainActivity> {
+        val scenario = ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.btn_primary_2)).perform(click()) // Quizz
+        onView(withId(R.id.btn_primary_1)).perform(click()) // QCM
+        onView(withId(domain.button)).perform(click())
+        scenario.assertCurrentDestination(domain.choiceDest)
+        checkLevelButtonLabels()
+        onView(withId(levelButton)).perform(click())
+        scenario.waitForDestination(domain.quizDest)
+        return scenario
+    }
+
     /**
      * Joue tout le QCM en alternant bonne réponse (points pleins) et mauvaise
      * réponse (0) : vérifie les quatre choix affichés, le statut de chaque
      * question (green / red), puis le score final calculé et celui affiché.
      */
     private fun fullQcmScore(domain: Domain) {
-        val scenario = ActivityScenario.launch(MainActivity::class.java)
-        onView(withId(R.id.btn_primary_2)).perform(click()) // Quizz
-        onView(withId(R.id.btn_primary_1)).perform(click()) // QCM
-        onView(withId(domain.button)).perform(click())
-        scenario.assertCurrentDestination(domain.choiceDest)
-        onView(withId(R.id.btn_level_easy)).perform(click())
-        scenario.waitForDestination(domain.quizDest)
+        val scenario = openQcm(domain)
         QCM_CHOICE_BUTTONS.forEach { onView(withId(it)).check(matches(isDisplayed())) }
 
         val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
         waitFor { scenario.onMain { vm.qcmResults.value }.orEmpty().isNotEmpty() }
         val size = scenario.onMain { vm.qcmResults.value!!.size }
+        assertEquals("Nombre de questions", FlatQuizRules.QUESTIONS_PER_QUIZ, size)
 
         var expected = 0.0
         val expectedResults = mutableListOf<String>()
@@ -115,4 +124,21 @@ class Quiz1QcmTest {
 
     @Test
     fun t02_artifactFullQcm() = fullQcmScore(artifacts)
+
+    /** Entités comme artéfacts, chaque niveau propose exactement 15 questions. */
+    @Test
+    fun t03_everyLevelHasFifteenQuestions() {
+        for (domain in listOf(entities, artifacts)) {
+            for (level in listOf(R.id.btn_level_easy, R.id.btn_level_medium, R.id.btn_level_hard)) {
+                val scenario = openQcm(domain, level)
+                val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
+                waitFor { scenario.onMain { vm.qcmResults.value }.orEmpty().isNotEmpty() }
+                val count = scenario.onMain {
+                    if (domain.isArtifact) vm.qcmArtifacts.value!!.size else vm.qcmEntites.value!!.size
+                }
+                assertEquals("Questions (artéfacts=${domain.isArtifact}, niveau $level)", FlatQuizRules.QUESTIONS_PER_QUIZ, count)
+                scenario.close()
+            }
+        }
+    }
 }

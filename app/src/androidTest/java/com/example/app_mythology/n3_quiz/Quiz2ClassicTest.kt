@@ -17,6 +17,7 @@ import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
 import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.checkLevelButtonLabels
 import com.example.app_mythology.formatScoreLikeApp
 import com.example.app_mythology.graphViewModel
 import com.example.app_mythology.onMain
@@ -61,14 +62,15 @@ class Quiz2ClassicTest {
         R.id.quizArtifactResultFragment, R.id.quiz_artifact_graph, isArtifact = true
     )
 
-    /** Ouvre la première question du domaine (niveau facile). */
-    private fun openFirstQuestion(domain: Domain): ActivityScenario<MainActivity> {
+    /** Ouvre la première question du domaine (niveau [levelButton], facile par défaut). */
+    private fun openFirstQuestion(domain: Domain, levelButton: Int = R.id.btn_level_easy): ActivityScenario<MainActivity> {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // Quizz
         onView(withId(R.id.btn_primary_2)).perform(click()) // Classique
         onView(withId(domain.button)).perform(click())
         scenario.assertCurrentDestination(domain.choiceDest)
-        onView(withId(R.id.btn_level_easy)).perform(click())
+        checkLevelButtonLabels()
+        onView(withId(levelButton)).perform(click())
         scenario.waitForDestination(domain.quizDest)
         onView(withId(R.id.tv_quiz_progress)).check(matches(isDisplayed()))
         onView(withId(R.id.et_answer)).check(matches(isDisplayed()))
@@ -101,6 +103,7 @@ class Quiz2ClassicTest {
         val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
         waitFor { scenario.onMain { vm.results.value }.orEmpty().isNotEmpty() }
         val size = scenario.onMain { vm.results.value!!.size }
+        assertEquals("Nombre de questions", FlatQuizRules.QUESTIONS_PER_QUIZ, size)
 
         var expected = 0.0
         val expectedResults = mutableListOf<String>()
@@ -145,4 +148,21 @@ class Quiz2ClassicTest {
 
     @Test
     fun t03_artifactFullQuiz() = fullQuizScore(artifacts)
+
+    /** Entités comme artéfacts, chaque niveau propose exactement 15 questions. */
+    @Test
+    fun t04_everyLevelHasFifteenQuestions() {
+        for (domain in listOf(entities, artifacts)) {
+            for (level in listOf(R.id.btn_level_easy, R.id.btn_level_medium, R.id.btn_level_hard)) {
+                val scenario = openFirstQuestion(domain, level)
+                val vm = scenario.graphViewModel<QuizViewModel>(domain.graphId)
+                waitFor { scenario.onMain { vm.results.value }.orEmpty().isNotEmpty() }
+                val count = scenario.onMain {
+                    if (domain.isArtifact) vm.quizArtifacts.value!!.size else vm.quizEntites.value!!.size
+                }
+                assertEquals("Questions (artéfacts=${domain.isArtifact}, niveau $level)", FlatQuizRules.QUESTIONS_PER_QUIZ, count)
+                scenario.close()
+            }
+        }
+    }
 }
