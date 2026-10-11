@@ -162,6 +162,13 @@ class QuizPlaceFragment : Fragment() {
 
         btnValidate.setOnClickListener {
             val input = etInput.text.toString()
+            // Champ vide ou lieu déjà trouvé : réponse ignorée, aucune erreur comptée.
+            if (input.isBlank()) return@setOnClickListener
+            if (viewModel.isPlaceAlreadyFound(input, places)) {
+                etInput.text?.clear()
+                Toast.makeText(requireContext(), "Déjà trouvé", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             val found = viewModel.checkPlaceAnswer(input, places)
             if (found != null) {
                 viewModel.markPlaceFound(found.id, places.size)

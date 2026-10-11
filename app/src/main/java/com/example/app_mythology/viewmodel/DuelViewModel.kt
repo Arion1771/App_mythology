@@ -226,20 +226,31 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
         _placeFinished.value = false
     }
 
+    /** Issue d'un essai en Duel Lieux. */
+    sealed interface PlaceTry {
+        data class Found(val place: PlaceEntity) : PlaceTry
+        /** Lieu déjà trouvé : refusé, sans erreur ni changement de joueur. */
+        data object AlreadyFound : PlaceTry
+        data object Wrong : PlaceTry
+        /** Essai ignoré (partie terminée ou lieux pas encore chargés). */
+        data object Ignored : PlaceTry
+    }
+
     /**
      * Un essai du joueur courant : un lieu trouvé lui est attribué, sinon il
-     * prend une erreur. La partie s'arrête quand tout est trouvé ou que chaque
+     * prend une erreur (un lieu déjà trouvé est simplement refusé, le joueur
+     * garde la main). La partie s'arrête quand tout est trouvé ou que chaque
      * joueur a atteint [MAX_PLACE_ERRORS] ; sinon la main passe à l'autre
      * joueur, sauf s'il est déjà éliminé (le joueur courant continue seul).
-     * Renvoie le lieu trouvé, ou null.
      */
-    fun submitPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceEntity? {
-        if (_placeFinished.value == true || places.isEmpty()) return null
-        val players = _players.value ?: return null
+    fun submitPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceTry {
+        if (_placeFinished.value == true || places.isEmpty()) return PlaceTry.Ignored
+        val players = _players.value ?: return PlaceTry.Ignored
         val turn = _placeTurn.value ?: 0
         val foundBy = _placeFoundBy.value ?: emptyMap()
         val errors = (_placeErrors.value ?: emptyList()).toMutableList()
 
+        if (places.any { it.id in foundBy && normalize(input) == normalize(it.name) }) return PlaceTry.AlreadyFound
         val match = places.firstOrNull { it.id !in foundBy && normalize(input) == normalize(it.name) }
         if (match != null) {
             _placeFoundBy.value = foundBy + (match.id to turn)
@@ -256,7 +267,7 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
             val next = (turn + 1) % players.size
             if (errors[next] < MAX_PLACE_ERRORS) _placeTurn.value = next
         }
-        return match
+        return if (match != null) PlaceTry.Found(match) else PlaceTry.Wrong
     }
 
     /** Points comptés en fin de partie : 1 par lieu trouvé. */
