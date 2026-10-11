@@ -51,7 +51,7 @@ class QuizHelpFragment : Fragment() {
         ),
         HelpPage(
             "Difficulté et score",
-            "Avant de lancer un quiz (Classique ou QCM), choisissez un niveau : Facile, Moyen ou Difficile. Entités comme artéfacts, le quiz propose 15 questions puisées uniquement parmi celles du niveau choisi (s'il en contient moins de 15, comme les artéfacts faciles et moyens, il est complété par le niveau voisin).\n\n" +
+            "Avant de lancer un quiz (Classique ou QCM), choisissez un niveau : Facile, Moyen ou Difficile. Entités comme artéfacts, le quiz propose 15 questions puisées uniquement parmi celles du niveau choisi (s'il en contient moins de 15, il est complété par le niveau voisin).\n\n" +
             "Artéfacts :\n" +
             "• Chaque question vaut 2 points, quelle que soit sa difficulté : le quiz est donc noté sur 30.\n\n" +
             "Entités :\n" +
