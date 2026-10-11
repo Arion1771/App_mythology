@@ -12,6 +12,54 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.5.2
+
+- Added 18 artifacts (Norse, Greek, Egyptian, Arthurian, Hindu, Japanese, Aztec), bringing the database to 61 artifacts: each level now has at least 15 artifacts (20 easy, 19 medium, 22 hard), so the Artifacts quizzes no longer need to be topped up from the neighbouring level
+- "Artefacts" theme of the List quiz: 10 attempts allowed instead of 5, as the theme now exceeds 50 entries
+- Artifact:
+  - Gjallarhorn (Added)
+  - Megingjörd (Added)
+  - Járngreipr (Added)
+  - Gram (Added)
+  - Tyrfing (Added)
+  - Naglfar (Added)
+  - Hlidskjalf (Added)
+  - Fil d'Ariane (Added)
+  - Pomme de discorde (Added)
+  - Corne d'abondance (Added)
+  - Ankh (Added)
+  - Clarent (Added)
+  - Vajra (Added)
+  - Trishula (Added)
+  - Gandiva (Added)
+  - Brahmastra (Added)
+  - Ame-no-Nuboko (Added)
+  - Xiuhcoatl (Added)
+
+#### V4.5.1
+
+- Solo Places quiz: an empty field no longer counts as a mistake, and entering a place already found is simply rejected ("Déjà trouvé") instead of using an attempt
+- Places Duel: a place already found is also rejected without a mistake, and the same player plays again
+- Places Duel: each player now has their own colour (blue for the first, pink for the second), used for their name above the input field on their turn, in the mistake and point counts, and for the names of the places they found, which replaces the player's name on the card
+- Quiz and Duel help screens updated
+
+#### V4.5.0
+
+- Added Places Duel mode, offered (third button of the game-type choice, existing "Lieux" plate) only for a two-player game: after choosing one of the three Places quizzes (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), the whole game is played on a single screen, on the same card grid as the solo Places quiz
+- The name of the player who must answer is shown above the input field; each player gets one attempt, then it is the other's turn. Each player is allowed 3 mistakes: once eliminated, the other player carries on alone. The game ends when every place is found or both players have made 3 mistakes
+- Points are counted at the end of the game: 1 point per place found for the player who found it (their name is shown on the card), then the final Duel ranking
+- Duel help screen updated
+
+#### V4.4.0
+
+- Artifacts quizzes (Classic and Multiple-choice) aligned on the Entities quiz format: 15 questions drawn only from the chosen level (instead of 10, 20 or 30 questions accumulating the lower levels), topped up from the neighbouring level when it has fewer than 15 artifacts (Easy: 12, Medium: 14). No internal difficulty: each question is worth 2 points whatever its difficulty (1 point for a correct answer on the second attempt in Classic, 0 for a wrong answer), i.e. a quiz out of 30 points
+- Duel mode (Classic and Multiple-choice) on the same model: 15 entity questions of the chosen level per player (instead of 10, 20 or 30), 2 points per correct answer on the first attempt, 1 on the second attempt in Classic, 0 otherwise, i.e. 30 points per player. If the level does not have enough entities to give each player different questions, it is topped up from the neighbouring level, shared evenly between the players
+- Quiz and Duel help screens updated accordingly
+
+#### V4.3.11
+
+- "No mistake" achievements of the Classic and Multiple-choice quizzes (Entities and Artifacts): the tier unlocked now depends on the chosen level (Easy, Medium or Hard) rather than on the quiz's maximum score (10, 30 or 60 points). As entity quizzes never total 10 or 60 points (15 questions), the Easy and Hard entity achievements could not be obtained, and a perfect Easy or Hard run could unlock the Medium one; the expected score is removed from these achievements' description
+
 #### V4.3.10
 
 - Removed the "Opposant" and "Équivalent chinois" entity fields, filled in for no entity: line removed from the detail sheet, mentions removed from the information shown by the quiz, Duel and List mode
@@ -146,6 +194,54 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.5.2
+
+- Ajout de 18 artéfacts (Nordique, Grecque, Égyptienne, Arthurienne, Hindouisme, Japonaise, Aztèque), portant la base à 61 artéfacts : chaque niveau compte désormais au moins 15 artéfacts (20 faciles, 19 moyens, 22 difficiles), les quiz Artéfacts n'ont donc plus besoin d'être complétés par le niveau voisin
+- Thème « Artefacts » du mode Liste : 10 essais autorisés au lieu de 5, le thème dépassant désormais 50 entrées
+- Artefact :
+  - Gjallarhorn (Ajout)
+  - Megingjörd (Ajout)
+  - Járngreipr (Ajout)
+  - Gram (Ajout)
+  - Tyrfing (Ajout)
+  - Naglfar (Ajout)
+  - Hlidskjalf (Ajout)
+  - Fil d'Ariane (Ajout)
+  - Pomme de discorde (Ajout)
+  - Corne d'abondance (Ajout)
+  - Ankh (Ajout)
+  - Clarent (Ajout)
+  - Vajra (Ajout)
+  - Trishula (Ajout)
+  - Gandiva (Ajout)
+  - Brahmastra (Ajout)
+  - Ame-no-Nuboko (Ajout)
+  - Xiuhcoatl (Ajout)
+
+#### V4.5.1
+
+- Quiz Lieux solo : un champ vide n'est plus compté comme une erreur, et la saisie d'un lieu déjà trouvé est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai
+- Duel Lieux : un lieu déjà trouvé est lui aussi refusé sans erreur, et le même joueur rejoue
+- Duel Lieux : chaque joueur a désormais sa couleur (bleu pour le premier, rose pour le second), utilisée pour son nom au-dessus du champ de saisie quand c'est son tour, dans le décompte des erreurs et des points, et pour le nom des lieux qu'il a trouvés, qui remplace l'affichage du nom du joueur sur la carte
+- Écrans d'aide du quiz et du Duel mis à jour
+
+#### V4.5.0
+
+- Ajout du mode Duel Lieux, proposé (troisième bouton du choix du type de partie, plaque « Lieux » existante) uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), toute la partie se joue sur un seul écran, sur la même grille de cartes que le quiz Lieux solo
+- Le nom du joueur qui doit répondre est affiché au-dessus du champ de saisie ; chaque joueur a un essai, puis la main passe à l'autre. Chaque joueur a droit à 3 erreurs : une fois éliminé, l'autre joueur continue seul. La partie se termine quand tous les lieux sont trouvés ou que les deux joueurs ont fait 3 erreurs
+- Les points sont comptés en fin de partie : 1 point par lieu trouvé pour le joueur qui l'a trouvé (son nom s'affiche sur la carte), puis classement final du Duel
+- Écran d'aide du Duel mis à jour
+
+#### V4.4.0
+
+- Quiz Artéfacts (Classique et QCM) alignés sur le format du quiz Entités : 15 questions puisées uniquement dans le niveau choisi (au lieu de 10, 20 ou 30 questions cumulant les niveaux inférieurs), complétées par le niveau voisin quand celui-ci compte moins de 15 artéfacts (Facile : 12, Moyen : 14). Sans difficulté interne : chaque question vaut 2 points quelle que soit sa difficulté (1 point pour une bonne réponse au second essai en Classique, 0 pour une mauvaise réponse), soit un quiz sur 30 points
+- Mode Duel (Classique et QCM) sur le même modèle : 15 questions d'entités du niveau choisi par joueur (au lieu de 10, 20 ou 30), 2 points par bonne réponse au premier essai, 1 au second essai en Classique, 0 sinon, soit 30 points par joueur. Si le niveau ne compte pas assez d'entités pour donner des questions différentes à chaque joueur, il est complété par le niveau voisin, réparti équitablement entre les joueurs
+- Écrans d'aide du quiz et du Duel mis à jour en conséquence
+
+#### V4.3.11
+
+- Succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) : le palier débloqué dépend désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points). Les quiz d'entités ne totalisant jamais 10 ni 60 points (15 questions), les succès Facile et Difficile des entités étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen ; le score attendu est retiré de la description de ces succès
 
 #### V4.3.10
 

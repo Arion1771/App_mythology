@@ -91,7 +91,7 @@ object ListThemeCatalog {
         ListTheme.EntityTheme("heros", "Héros", 5) {
             groupByMythologyRanked(it, it.filter { e -> e.race == "Heroes" })
         },
-        ListTheme.ArtifactTheme("artefacts", "Artefacts", 5) { artifacts ->
+        ListTheme.ArtifactTheme("artefacts", "Artefacts", 10) { artifacts ->
             artifacts.asSingleGroup()
         },
         ListTheme.EntityTheme("entites", "Entités", 10) {

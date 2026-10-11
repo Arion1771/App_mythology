@@ -31,8 +31,9 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Classique/QCM réutilisent les plaques assets/button/classique.png et
-         qcm.png déjà utilisées par le choix de quiz solo (même notion). -->
+    <!-- Classique/QCM/Lieux réutilisent les plaques assets/button/classique.png,
+         qcm.png et places.png déjà utilisées par les menus solo (même notion) ;
+         Lieux n'apparaît que pour une partie à deux joueurs. -->
     <include layout="@layout/view_primary_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
