@@ -23,7 +23,7 @@
         Boutons de l'application.
         - textAllCaps=false + letterSpacing=0 : le texte prend beaucoup moins de
           place que le style Material par défaut (MAJUSCULES + espacement large),
-          ce qui évite que des libellés comme "Difficile (30 questions)" soient
+          ce qui évite que des libellés longs soient
           coupés dans les boutons à largeur fixe.
         - insetTop/insetBottom=0 : utilise toute la hauteur définie (56dp).
         - Repli automatique de la taille du texte pour les écrans étroits/denses.
