@@ -1,8 +1,10 @@
 package com.example.app_mythology.n4_duel
 
+import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.NumberPicker
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
@@ -200,6 +202,27 @@ class DuelTest {
         waitFor { scenario.onMain { (vm.placeFoundBy.value?.size ?: 0) + (vm.placeErrors.value?.sum() ?: 0) } == before + 1 }
     }
 
+    /** Essai refusé (champ vide, lieu déjà trouvé) : ni lieu ni erreur en plus, le même joueur garde la main. */
+    private fun rejectedPlaceTry(
+        scenario: ActivityScenario<MainActivity>, vm: DuelViewModel, expectedPlayer: Int, answer: String,
+    ) {
+        val before = scenario.onMain { vm.placeFoundBy.value to vm.placeErrors.value }
+        answerAndValidate(answer, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
+        assertEquals("Essai « $answer » refusé sans effet", before, scenario.onMain { vm.placeFoundBy.value to vm.placeErrors.value })
+        assertEquals("Joueur qui garde la main", expectedPlayer, scenario.onMain { vm.placeTurn.value })
+    }
+
+    private fun playerColor(scenario: ActivityScenario<MainActivity>, player: Int): Int = scenario.onMain {
+        ContextCompat.getColor(it, if (player == 0) R.color.duel_player_1 else R.color.duel_player_2)
+    }
+
+    /** Couleur du nom affiché sur la carte du lieu [placeId]. */
+    private fun cardNameColor(scenario: ActivityScenario<MainActivity>, placeId: Int): Int = scenario.onMain { activity ->
+        val grid = activity.findViewById<GridLayout>(R.id.grid_places)
+        val card = (0 until grid.childCount).map { grid.getChildAt(it) }.first { it.tag == placeId }
+        card.findViewById<TextView>(R.id.tv_card_name).currentTextColor
+    }
+
     /** Vérifie le classement final affiché après le bouton « Classement final ». */
     private fun checkPlaceRanking(scenario: ActivityScenario<MainActivity>, expected: List<String>) {
         onView(withId(R.id.layout_place_result)).check(matches(isDisplayed()))
@@ -228,9 +251,11 @@ class DuelTest {
     }
 
     /**
-     * Arbre Monde : un essai chacun à tour de rôle ; le joueur 1 atteint ses 3
-     * erreurs en premier et passe ensuite son tour, le joueur 2 continue seul
-     * jusqu'à sa 3e erreur, qui termine la partie. Points : 1 par lieu trouvé.
+     * Arbre Monde : un essai chacun à tour de rôle ; un champ vide ou un lieu
+     * déjà trouvé est refusé sans erreur ; le joueur 1 atteint ses 3 erreurs
+     * en premier et passe ensuite son tour, le joueur 2 continue seul jusqu'à
+     * sa 3e erreur, qui termine la partie. Points : 1 par lieu trouvé ; nom du
+     * joueur courant et des lieux trouvés à la couleur du joueur.
      */
     @Test
     fun t04_placeDuelEndsWhenBothPlayersHaveThreeErrors() {
@@ -238,13 +263,18 @@ class DuelTest {
         val (vm, places) = startPlaceDuel(scenario, R.id.btn_primary_1)
         assertTrue("Arbre Monde doit compter au moins 4 lieux", places.size >= 4)
 
+        val turnColor = { scenario.onMain { it.findViewById<TextView>(R.id.tv_duel_place_player).currentTextColor } }
+        assertEquals("Couleur du joueur 1 à son tour", playerColor(scenario, 0), turnColor())
+        rejectedPlaceTry(scenario, vm, 0, "")       // J1 : champ vide refusé
         placeTry(scenario, vm, 0, WRONG_ANSWER)     // J1 : 1 erreur
+        assertEquals("Couleur du joueur 2 à son tour", playerColor(scenario, 1), turnColor())
         placeTry(scenario, vm, 1, places[0].name)   // J2 trouve
         placeTry(scenario, vm, 0, places[1].name)   // J1 trouve
         placeTry(scenario, vm, 1, WRONG_ANSWER)     // J2 : 1 erreur
         placeTry(scenario, vm, 0, WRONG_ANSWER)     // J1 : 2 erreurs
         placeTry(scenario, vm, 1, places[2].name)   // J2 trouve
-        placeTry(scenario, vm, 0, places[2].name)   // J1 : lieu déjà trouvé = 3 erreurs, éliminé
+        rejectedPlaceTry(scenario, vm, 0, places[2].name) // J1 : lieu déjà trouvé, refusé sans erreur
+        placeTry(scenario, vm, 0, WRONG_ANSWER)     // J1 : 3 erreurs, éliminé
         assertEquals(listOf(3, 1), scenario.onMain { vm.placeErrors.value })
         placeTry(scenario, vm, 1, WRONG_ANSWER)     // J2 continue seul : 2 erreurs
         placeTry(scenario, vm, 1, places[3].name)   // J2 trouve
@@ -254,6 +284,9 @@ class DuelTest {
         waitFor { scenario.onMain { vm.placeFinished.value } == true }
         assertEquals(mapOf(places[0].id to 1, places[1].id to 0, places[2].id to 1, places[3].id to 1),
             scenario.onMain { vm.placeFoundBy.value })
+        scenario.onMain { vm.placeFoundBy.value!! }.forEach { (placeId, finder) ->
+            assertEquals("Couleur du lieu $placeId", playerColor(scenario, finder), cardNameColor(scenario, placeId))
+        }
         onView(withId(R.id.layout_place_input)).check(matches(withEffectiveVisibility(Visibility.GONE)))
         checkPlaceRanking(scenario, listOf("1. Joueur 2 — 3 pts", "2. Joueur 1 — 1 pts"))
         scenario.close()
