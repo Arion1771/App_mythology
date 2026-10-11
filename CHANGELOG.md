@@ -2,6 +2,11 @@
 
 ## V4
 
+#### V4.5.3
+
+- Mode Liste : un champ vide n'est plus compté comme une erreur, et la saisie d'une entrée déjà trouvée est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai, comme pour le quiz Lieux depuis V4.5.1
+- Écran d'aide du quiz mis à jour
+
 #### V4.5.2
 
 - Ajout de 18 artéfacts (Nordique, Grecque, Égyptienne, Arthurienne, Hindouisme, Japonaise, Aztèque), portant la base à 61 artéfacts : chaque niveau compte désormais au moins 15 artéfacts (20 faciles, 19 moyens, 22 difficiles), les quiz Artéfacts n'ont donc plus besoin d'être complétés par le niveau voisin
