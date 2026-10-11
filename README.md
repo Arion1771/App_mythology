@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.4.0
+### Latest addition — V4.5.0
 
-The artifact quizzes (Classic and Multiple-choice) and the Duel mode now follow the entity quiz format: 15 questions drawn only from the chosen level (topped up from the neighbouring level when it holds fewer than 15), without adaptive internal difficulty. Every question is worth the same: 2 points for a right answer on the first try, 1 on the second try (Classic), 0 otherwise — each quiz, and each Duel player, plays for 30 points.
+New Places Duel, available for two-player games only: pick one of the three Places quizzes, then both players share a single screen and the same card grid as the solo Places quiz. The current player's name is shown above the answer field, each player gets one try in turn, and a player who reaches 3 mistakes is out while the other keeps going. The game ends when every place is found or both players have made 3 mistakes; each player then scores 1 point per place they found.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.4.0
+### Dernier ajout — V4.5.0
 
-Les quiz Artéfacts (Classique et QCM) et le mode Duel suivent désormais le format du quiz Entités : 15 questions puisées uniquement dans le niveau choisi (complétées par le niveau voisin quand il en compte moins de 15), sans difficulté interne. Chaque question vaut autant : 2 points pour une bonne réponse au premier essai, 1 au second essai (Classique), 0 sinon — chaque quiz, et chaque joueur du Duel, se joue donc sur 30 points.
+Nouveau Duel Lieux, proposé uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux, les deux joueurs partagent un seul écran et la même grille de cartes que le quiz Lieux solo. Le nom du joueur qui doit répondre s'affiche au-dessus du champ de saisie, chacun a un essai à tour de rôle, et un joueur qui atteint 3 erreurs est éliminé tandis que l'autre continue. La partie se termine quand tous les lieux sont trouvés ou que les deux joueurs ont fait 3 erreurs ; chaque joueur marque alors 1 point par lieu qu'il a trouvé.
 
 ### Démarrage
 

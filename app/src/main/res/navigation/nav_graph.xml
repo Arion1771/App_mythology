@@ -59,6 +59,27 @@
             tools:layout="@layout/fragment_duel_mode_choice">
             <action android:id="@+id/action_duelModeChoice_to_duelDifficultyChoice"
                 app:destination="@id/duelDifficultyChoiceFragment" />
+            <action android:id="@+id/action_duelModeChoice_to_duelPlaceChoice"
+                app:destination="@id/duelPlaceChoiceFragment" />
+        </fragment>
+
+        <!-- Duel Lieux (2 joueurs) : choix du quiz, puis partie sur un seul écran. -->
+        <fragment
+            android:id="@+id/duelPlaceChoiceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelPlaceChoiceFragment"
+            android:label="Duel — Lieux"
+            tools:layout="@layout/fragment_quiz_place_choice">
+            <action android:id="@+id/action_duelPlaceChoice_to_duelPlace"
+                app:destination="@id/duelPlaceFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/duelPlaceFragment"
+            android:name="com.example.app_mythology.ui.duel.DuelPlaceFragment"
+            android:label="Duel — Lieux"
+            tools:layout="@layout/fragment_duel_place">
+            <action android:id="@+id/action_duelPlace_to_duelResult"
+                app:destination="@id/duelResultFragment" />
         </fragment>
 
         <fragment
