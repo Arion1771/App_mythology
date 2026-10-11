@@ -7,17 +7,24 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.EntiteEntity
+import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.quiz.pickQcmChoices
 import com.example.app_mythology.repository.EntiteRepository
+import com.example.app_mythology.repository.PlaceRepository
 import kotlinx.coroutines.launch
 
-/** Mode duel multijoueur local (pass-and-play), entités uniquement. */
+/**
+ * Mode duel multijoueur local (pass-and-play) : questions d'entités
+ * (Classique, QCM), ou quiz Lieux à deux joueurs sur un seul écran.
+ */
 class DuelViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val entiteRepo = EntiteRepository.getInstance(AppDatabase.getInstance(application))
+    private val appDb = AppDatabase.getInstance(application)
+    private val entiteRepo = EntiteRepository.getInstance(appDb)
+    private val placeRepo = PlaceRepository.getInstance(appDb)
 
-    enum class DuelMode { CLASSIC, QCM }
+    enum class DuelMode { CLASSIC, QCM, PLACES }
 
     class DuelPlayer(val name: String) {
         var score: Double = 0.0
@@ -90,7 +97,10 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
                     p.questions = pool.filterIndexed { j, _ -> j % players.size == i }.shuffled()
                 }
             }
-            players.forEach { it.results = MutableList(it.questions.size) { null } }
+            players.forEach {
+                it.score = 0.0
+                it.results = MutableList(it.questions.size) { null }
+            }
             _players.value = players
 
             _currentPlayerIndex.value = 0
@@ -175,6 +185,90 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
             _currentPlayerIndex.value = 0
         }
         if (mode == DuelMode.QCM) buildCurrentQcmChoices()
+    }
+
+    // ── Duel Lieux (2 joueurs, un essai chacun à tour de rôle) ─────────────
+
+    /** Quiz Lieux joué : "yggdrasil" | "rivers" | "underworld" (mêmes listes que le quiz solo). */
+    var placeQuizType: String = "yggdrasil"
+        private set
+
+    /** Lieu trouvé → index du joueur qui l'a trouvé. */
+    private val _placeFoundBy = MutableLiveData<Map<Int, Int>>(emptyMap())
+    val placeFoundBy: LiveData<Map<Int, Int>> = _placeFoundBy
+
+    /** Erreurs de chaque joueur (même ordre que [players]). */
+    private val _placeErrors = MutableLiveData<List<Int>>(emptyList())
+    val placeErrors: LiveData<List<Int>> = _placeErrors
+
+    /** Index du joueur qui doit répondre. */
+    private val _placeTurn = MutableLiveData(0)
+    val placeTurn: LiveData<Int> = _placeTurn
+
+    private val _placeFinished = MutableLiveData(false)
+    val placeFinished: LiveData<Boolean> = _placeFinished
+
+    fun placesOf(type: String): LiveData<List<PlaceEntity>> = when (type) {
+        "yggdrasil" -> placeRepo.yggdrasilRealms
+        "rivers" -> placeRepo.hellRivers
+        else -> placeRepo.underworldPlaces
+    }
+
+    /** (Re)lance une partie : appelé au choix du quiz, pas à la création de l'écran (survit à une rotation). */
+    fun startPlaceDuel(type: String) {
+        mode = DuelMode.PLACES
+        placeQuizType = type
+        val players = _players.value ?: return
+        players.forEach { it.score = 0.0 }
+        _placeFoundBy.value = emptyMap()
+        _placeErrors.value = List(players.size) { 0 }
+        _placeTurn.value = 0
+        _placeFinished.value = false
+    }
+
+    /**
+     * Un essai du joueur courant : un lieu trouvé lui est attribué, sinon il
+     * prend une erreur. La partie s'arrête quand tout est trouvé ou que chaque
+     * joueur a atteint [MAX_PLACE_ERRORS] ; sinon la main passe à l'autre
+     * joueur, sauf s'il est déjà éliminé (le joueur courant continue seul).
+     * Renvoie le lieu trouvé, ou null.
+     */
+    fun submitPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceEntity? {
+        if (_placeFinished.value == true || places.isEmpty()) return null
+        val players = _players.value ?: return null
+        val turn = _placeTurn.value ?: 0
+        val foundBy = _placeFoundBy.value ?: emptyMap()
+        val errors = (_placeErrors.value ?: emptyList()).toMutableList()
+
+        val match = places.firstOrNull { it.id !in foundBy && normalize(input) == normalize(it.name) }
+        if (match != null) {
+            _placeFoundBy.value = foundBy + (match.id to turn)
+        } else {
+            errors[turn] = errors[turn] + 1
+            _placeErrors.value = errors
+        }
+
+        val allFound = (_placeFoundBy.value?.size ?: 0) >= places.size
+        val everyoneOut = errors.all { it >= MAX_PLACE_ERRORS }
+        if (allFound || everyoneOut) {
+            finishPlaceDuel(players)
+        } else {
+            val next = (turn + 1) % players.size
+            if (errors[next] < MAX_PLACE_ERRORS) _placeTurn.value = next
+        }
+        return match
+    }
+
+    /** Points comptés en fin de partie : 1 par lieu trouvé. */
+    private fun finishPlaceDuel(players: List<DuelPlayer>) {
+        val foundBy = _placeFoundBy.value ?: emptyMap()
+        players.forEachIndexed { i, p -> p.score = foundBy.values.count { it == i }.toDouble() }
+        _players.value = players
+        _placeFinished.value = true
+    }
+
+    companion object {
+        const val MAX_PLACE_ERRORS = 3
     }
 
     private fun normalize(s: String): String =
