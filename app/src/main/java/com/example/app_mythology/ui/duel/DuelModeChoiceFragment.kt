@@ -28,11 +28,16 @@ class DuelModeChoiceFragment : Fragment() {
             viewModel.mode = mode
             findNavController().navigate(R.id.action_duelModeChoice_to_duelDifficultyChoice)
         }
-        view.bindPrimaryButtons(
-            listOf(
-                PrimaryButton("classique", "Classique") { go(DuelViewModel.DuelMode.CLASSIC) },
-                PrimaryButton("qcm", "QCM") { go(DuelViewModel.DuelMode.QCM) },
-            )
+        val buttons = mutableListOf(
+            PrimaryButton("classique", "Classique") { go(DuelViewModel.DuelMode.CLASSIC) },
+            PrimaryButton("qcm", "QCM") { go(DuelViewModel.DuelMode.QCM) },
         )
+        // Duel Lieux : un essai chacun à tour de rôle, réservé aux parties à deux joueurs.
+        if (viewModel.players.value?.size == 2) {
+            buttons += PrimaryButton("places", "Lieux") {
+                findNavController().navigate(R.id.action_duelModeChoice_to_duelPlaceChoice)
+            }
+        }
+        view.bindPrimaryButtons(buttons)
     }
 }
