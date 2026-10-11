@@ -2,6 +2,23 @@
 
 ## V4
 
+### V4.5.0
+
+- Ajout du mode Duel Lieux, proposé (troisième bouton du choix du type de partie, plaque « Lieux » existante) uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), toute la partie se joue sur un seul écran, sur la même grille de cartes que le quiz Lieux solo
+- Le nom du joueur qui doit répondre est affiché au-dessus du champ de saisie ; chaque joueur a un essai, puis la main passe à l'autre. Chaque joueur a droit à 3 erreurs : une fois éliminé, l'autre joueur continue seul. La partie se termine quand tous les lieux sont trouvés ou que les deux joueurs ont fait 3 erreurs
+- Les points sont comptés en fin de partie : 1 point par lieu trouvé pour le joueur qui l'a trouvé (son nom s'affiche sur la carte), puis classement final du Duel
+- Écran d'aide du Duel mis à jour
+
+### V4.4.0
+
+- Quiz Artéfacts (Classique et QCM) alignés sur le format du quiz Entités : 15 questions puisées uniquement dans le niveau choisi (au lieu de 10, 20 ou 30 questions cumulant les niveaux inférieurs), complétées par le niveau voisin quand celui-ci compte moins de 15 artéfacts (Facile : 12, Moyen : 14). Sans difficulté interne : chaque question vaut 2 points quelle que soit sa difficulté (1 point pour une bonne réponse au second essai en Classique, 0 pour une mauvaise réponse), soit un quiz sur 30 points
+- Mode Duel (Classique et QCM) sur le même modèle : 15 questions d'entités du niveau choisi par joueur (au lieu de 10, 20 ou 30), 2 points par bonne réponse au premier essai, 1 au second essai en Classique, 0 sinon, soit 30 points par joueur. Si le niveau ne compte pas assez d'entités pour donner des questions différentes à chaque joueur, il est complété par le niveau voisin, réparti équitablement entre les joueurs
+- Écrans d'aide du quiz et du Duel mis à jour en conséquence
+
+#### V4.3.11
+
+- Succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) : le palier débloqué dépend désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points). Les quiz d'entités ne totalisant jamais 10 ni 60 points (15 questions), les succès Facile et Difficile des entités étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen ; le score attendu est retiré de la description de ces succès
+
 #### V4.3.10
 
 - Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste
