@@ -154,7 +154,16 @@ class QuizListFragment : Fragment() {
 
         btnValidate.setOnClickListener {
             val input = etInput.text.toString()
+            // Champ vide ou entrée déjà trouvée : réponse ignorée, aucune erreur comptée.
+            if (input.isBlank()) return@setOnClickListener
+            // Une entrée non trouvée passe avant le refus « déjà trouvé » : un homonyme
+            // (ex. les deux Enyo grecques) reste trouvable après le premier.
             val found = viewModel.checkListAnswer(input)
+            if (found == null && viewModel.isListAlreadyFound(input)) {
+                etInput.text.clear()
+                Toast.makeText(requireContext(), "Déjà trouvé", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             if (found != null) {
                 viewModel.markListFound(found.id)
                 etInput.text.clear()

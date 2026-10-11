@@ -10,19 +10,19 @@
 
     <Button android:id="@+id/btn_level_easy"
         android:layout_width="240dp" android:layout_height="56dp"
-        android:text="Facile (10 questions)"
+        android:text="Facile"
         android:backgroundTint="#FF4CAF50" android:textColor="#FF1A1A1A"
         android:layout_marginBottom="20dp"/>
 
     <Button android:id="@+id/btn_level_medium"
         android:layout_width="240dp" android:layout_height="56dp"
-        android:text="Moyen (20 questions)"
+        android:text="Moyen"
         android:backgroundTint="#FFFFC107" android:textColor="#FF1A1A1A"
         android:layout_marginBottom="20dp"/>
 
     <Button android:id="@+id/btn_level_hard"
         android:layout_width="240dp" android:layout_height="56dp"
-        android:text="Difficile (30 questions)"
+        android:text="Difficile"
         android:backgroundTint="#FFFF5252" android:textColor="#FF1A1A1A"/>
 
 </LinearLayout>

@@ -21,6 +21,7 @@ import com.example.app_mythology.ui.MainActivity
 import com.example.app_mythology.waitFor
 import com.example.app_mythology.waitForDestination
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
@@ -30,8 +31,10 @@ import org.junit.runners.MethodSorters
 /**
  * Quiz Liste (thème choisi, retrouver toutes les entrées) — branche
  * Test-Non-Regression : le choix d'un thème ouvre sa grille de cartes avec
- * la saisie prête, et un thème complet (chaque bonne réponse marquant
- * l'entrée trouvée sans compter d'erreur) se termine sur le score attendu.
+ * la saisie prête, un thème complet (chaque bonne réponse marquant
+ * l'entrée trouvée sans compter d'erreur) se termine sur le score attendu, et
+ * un champ vide ou une entrée déjà trouvée ne consomme pas d'essai et ne
+ * valide rien.
  */
 @RunWith(AndroidJUnit4::class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -77,6 +80,52 @@ class Quiz4ListTest {
         assertEquals("Toutes les entrées trouvées", items.map { it.id }.toSet(), scenario.onMain { vm.listFoundIds.value })
         assertEquals("Erreurs comptées", if (withError) 1 else 0, scenario.onMain { vm.listWrongAttempts.value })
         onView(withId(R.id.tv_list_score)).check(matches(withText("Score : ${items.size} / ${items.size} trouvés")))
+        scenario.close()
+    }
+
+    @Test
+    fun t03_emptyOrAlreadyFoundAnswerConsumesNoAttemptAndValidatesNothing() {
+        val scenario = openFirstTheme()
+        val vm = scenario.currentFragmentQuizViewModel()
+        waitFor { scenario.onMain { vm.allListItems() }.isNotEmpty() }
+        val items = scenario.onMain { vm.allListItems() }
+        assertTrue("Le thème doit compter au moins 2 entrées", items.size >= 2)
+        // Entrée au nom unique dans le thème (un homonyme serait, lui, encore à trouver).
+        val item = items.first { i -> items.count { it.name.equals(i.name, ignoreCase = true) } == 1 }
+
+        answerAndValidate(item.name, R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+        assertEquals(setOf(item.id), scenario.onMain { vm.listFoundIds.value })
+
+        answerAndValidate("", R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+        answerAndValidate("   ", R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+        answerAndValidate(item.name, R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+        answerAndValidate(item.name.uppercase(), R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+
+        assertEquals("Aucun essai consommé", 0, scenario.onMain { vm.listWrongAttempts.value })
+        assertEquals("Rien d'autre validé", setOf(item.id), scenario.onMain { vm.listFoundIds.value })
+        assertEquals("Quiz toujours en cours", false, scenario.onMain { vm.listFinished.value })
+        onView(withId(R.id.et_list_answer)).check(matches(isDisplayed()))
+        scenario.close()
+    }
+
+    /**
+     * Mythologie grecque (premier thème) : deux entrées homonymes (les deux
+     * Enyo) se valident l'une après l'autre ; une fois les deux trouvées, le
+     * nom est refusé sans erreur.
+     */
+    @Test
+    fun t04_homonymsAreBothFoundBeforeBeingRejected() {
+        val scenario = openFirstTheme()
+        val vm = scenario.currentFragmentQuizViewModel()
+        waitFor { scenario.onMain { vm.allListItems() }.isNotEmpty() }
+        val items = scenario.onMain { vm.allListItems() }
+        val homonyms = items.groupBy { it.name.lowercase() }.values.first { it.size >= 2 }
+
+        homonyms.forEach { answerAndValidate(it.name, R.id.et_list_answer, R.id.btn_list_validate, scrollable = false) }
+        assertEquals("Tous les homonymes trouvés", homonyms.map { it.id }.toSet(), scenario.onMain { vm.listFoundIds.value })
+        answerAndValidate(homonyms[0].name, R.id.et_list_answer, R.id.btn_list_validate, scrollable = false)
+        assertEquals("Aucun essai consommé", 0, scenario.onMain { vm.listWrongAttempts.value })
+        assertEquals(homonyms.map { it.id }.toSet(), scenario.onMain { vm.listFoundIds.value })
         scenario.close()
     }
 }
