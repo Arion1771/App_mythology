@@ -66,12 +66,12 @@ object AchievementCatalog {
         add(Achievement("collection_zodiac_chinese", "Quand le chat dort...", "Obtenez au moins une fois chacun des 12 signes du zodiaque chinois dans un quiz Classique ou QCM", "Entités"))
 
         // ── Entités — paliers de score parfait ───────────────────────────
-        add(Achievement("classic_entity_10", "Mortel du classique", "Terminez un quiz Classique Entités niveau Facile sans faute (score 10/10)", "Entités"))
-        add(Achievement("classic_entity_30", "Demi-dieu du classique", "Terminez un quiz Classique Entités niveau Moyen sans faute (score 30/30)", "Entités"))
-        add(Achievement("classic_entity_60", "Dieu du classique", "Terminez un quiz Classique Entités niveau Difficile sans faute (score 60/60)", "Entités"))
-        add(Achievement("qcm_entity_10", "C'est un bon début", "Terminez un quiz QCM Entités niveau Facile sans faute (score 10/10)", "Entités"))
-        add(Achievement("qcm_entity_30", "Imposteur", "Terminez un quiz QCM Entités niveau Moyen sans faute (score 30/30)", "Entités"))
-        add(Achievement("qcm_entity_60", "Usurpateur", "Terminez un quiz QCM Entités niveau Difficile sans faute (score 60/60)", "Entités"))
+        add(Achievement("classic_entity_10", "Mortel du classique", "Terminez un quiz Classique Entités niveau Facile sans faute", "Entités"))
+        add(Achievement("classic_entity_30", "Demi-dieu du classique", "Terminez un quiz Classique Entités niveau Moyen sans faute", "Entités"))
+        add(Achievement("classic_entity_60", "Dieu du classique", "Terminez un quiz Classique Entités niveau Difficile sans faute", "Entités"))
+        add(Achievement("qcm_entity_10", "C'est un bon début", "Terminez un quiz QCM Entités niveau Facile sans faute", "Entités"))
+        add(Achievement("qcm_entity_30", "Imposteur", "Terminez un quiz QCM Entités niveau Moyen sans faute", "Entités"))
+        add(Achievement("qcm_entity_60", "Usurpateur", "Terminez un quiz QCM Entités niveau Difficile sans faute", "Entités"))
 
         // ── Global ────────────────────────────────────────────────────────
         add(Achievement("all_wrong", "C'est très très mauvais", "Terminez un quiz Classique ou QCM (Entités ou Artéfacts) sans une seule bonne réponse", "Général"))
@@ -83,12 +83,12 @@ object AchievementCatalog {
         add(Achievement("place_all", "Dora l'exploratrice", "Obtenez les trois succès de lieux ci-dessus", "Lieux"))
 
         // ── Artéfacts — paliers de score parfait ─────────────────────────
-        add(Achievement("classic_artifact_10", "Goblin du classique", "Terminez un quiz Classique Artéfacts niveau Facile sans faute (score 10/10)", "Artéfacts"))
-        add(Achievement("classic_artifact_30", "Griffon du classique", "Terminez un quiz Classique Artéfacts niveau Moyen sans faute (score 30/30)", "Artéfacts"))
-        add(Achievement("classic_artifact_60", "Dragon du classique", "Terminez un quiz Classique Artéfacts niveau Difficile sans faute (score 60/60)", "Artéfacts"))
-        add(Achievement("qcm_artifact_10", "Pilleur", "Terminez un quiz QCM Artéfacts niveau Facile sans faute (score 10/10)", "Artéfacts"))
-        add(Achievement("qcm_artifact_30", "Faussaire", "Terminez un quiz QCM Artéfacts niveau Moyen sans faute (score 30/30)", "Artéfacts"))
-        add(Achievement("qcm_artifact_60", "Trafiquant", "Terminez un quiz QCM Artéfacts niveau Difficile sans faute (score 60/60)", "Artéfacts"))
+        add(Achievement("classic_artifact_10", "Goblin du classique", "Terminez un quiz Classique Artéfacts niveau Facile sans faute", "Artéfacts"))
+        add(Achievement("classic_artifact_30", "Griffon du classique", "Terminez un quiz Classique Artéfacts niveau Moyen sans faute", "Artéfacts"))
+        add(Achievement("classic_artifact_60", "Dragon du classique", "Terminez un quiz Classique Artéfacts niveau Difficile sans faute", "Artéfacts"))
+        add(Achievement("qcm_artifact_10", "Pilleur", "Terminez un quiz QCM Artéfacts niveau Facile sans faute", "Artéfacts"))
+        add(Achievement("qcm_artifact_30", "Faussaire", "Terminez un quiz QCM Artéfacts niveau Moyen sans faute", "Artéfacts"))
+        add(Achievement("qcm_artifact_60", "Trafiquant", "Terminez un quiz QCM Artéfacts niveau Difficile sans faute", "Artéfacts"))
 
         // ── Listes ────────────────────────────────────────────────────────
         addAll(listAchievements)
