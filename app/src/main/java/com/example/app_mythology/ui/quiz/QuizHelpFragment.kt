@@ -47,7 +47,7 @@ class QuizHelpFragment : Fragment() {
             "Mode Liste",
             "Choisissez d'abord un thème (mythologie, famille de créatures, groupe légendaire…) : une grille de cartes grisées s'affiche, une par entrée à trouver — certains thèmes regroupent leurs cartes sous plusieurs sous-titres (ex. Muses classiques / béotiennes).\n\n" +
             "Touchez une carte non trouvée pour ouvrir un écran complet listant toutes ses informations sauf le nom (comme le second essai du mode Classique) ; un retour vous ramène à la grille sans rien perdre de votre progression. Saisissez ensuite votre réponse dans le champ prévu, comme pour le quiz Lieux.\n\n" +
-            "Le nombre d'essais autorisés dépend de la taille du thème : 3 pour les thèmes de moins de 20 entrées, 5 pour ceux de moins de 50, 10 au-delà. Le quiz se termine dès que tout est trouvé ou une fois les essais épuisés : toutes les cartes sont alors révélées (vert si trouvée, rouge sinon), suivies d'un score sur le total de la liste."
+            "Le nombre d'essais autorisés dépend de la taille du thème : 3 pour les thèmes de moins de 20 entrées, 5 pour ceux de moins de 50, 10 au-delà. Un champ vide ou une entrée déjà trouvée est simplement refusé, sans compter comme une erreur. Le quiz se termine dès que tout est trouvé ou une fois les essais épuisés : toutes les cartes sont alors révélées (vert si trouvée, rouge sinon), suivies d'un score sur le total de la liste."
         ),
         HelpPage(
             "Difficulté et score",
