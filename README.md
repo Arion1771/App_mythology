@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.10
+### Latest addition — V4.5.0
 
-The never-filled « Opponent » and « Chinese equivalent » entity fields are removed (detail sheet, quiz, Duel and List information). The database moves to version 10 by rebuilding only the entity table: the player's adaptive-difficulty history, internal levels and achievements are kept.
+New Places Duel, available for two-player games only: pick one of the three Places quizzes, then both players share a single screen and the same card grid as the solo Places quiz. The current player's name is shown above the answer field, each player gets one try in turn, and a player who reaches 3 mistakes is out while the other keeps going. The game ends when every place is found or both players have made 3 mistakes; each player then scores 1 point per place they found.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.10
+### Dernier ajout — V4.5.0
 
-Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité (fiche détaillée, informations du quiz, du Duel et du mode Liste). La base passe en version 10 en ne reconstruisant que la table des entités : l'historique de difficulté adaptative, les niveaux internes et les succès du joueur sont conservés.
+Nouveau Duel Lieux, proposé uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux, les deux joueurs partagent un seul écran et la même grille de cartes que le quiz Lieux solo. Le nom du joueur qui doit répondre s'affiche au-dessus du champ de saisie, chacun a un essai à tour de rôle, et un joueur qui atteint 3 erreurs est éliminé tandis que l'autre continue. La partie se termine quand tous les lieux sont trouvés ou que les deux joueurs ont fait 3 erreurs ; chaque joueur marque alors 1 point par lieu qu'il a trouvé.
 
 ### Démarrage
 

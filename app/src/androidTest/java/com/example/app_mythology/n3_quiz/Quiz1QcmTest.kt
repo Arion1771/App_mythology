@@ -12,6 +12,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.DeviceStateRestoreRule
 import com.example.app_mythology.QCM_CHOICE_BUTTONS
 import com.example.app_mythology.R
+import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.assertCurrentDestination
 import com.example.app_mythology.formatScoreLikeApp
 import com.example.app_mythology.graphViewModel
@@ -80,7 +81,7 @@ class Quiz1QcmTest {
         for (i in 0 until size) {
             scenario.waitForDestination(domain.quizDest)
             val (name, points) = scenario.onMain {
-                if (domain.isArtifact) vm.qcmArtifacts.value!![i].let { it.name to it.difficulty.toDouble() }
+                if (domain.isArtifact) vm.qcmArtifacts.value!![i].name to FlatQuizRules.POINTS_PER_QUESTION
                 else vm.qcmEntites.value!![i].name to vm.qcmEntityPointsLevelAt(i).toDouble()
             }
             waitFor { scenario.onMain { vm.qcmIndex.value == i && vm.qcmChoices.value.orEmpty().contains(name) } }
@@ -98,6 +99,10 @@ class Quiz1QcmTest {
         assertEquals("Statuts de toutes les questions", expectedResults, scenario.onMain { vm.qcmResults.value })
         assertEquals("Score final", expected, scenario.onMain { vm.qcmScore.value ?: 0.0 }, 1e-9)
         val max = scenario.onMain { vm.qcmMaxScore.value ?: 0.0 }
+        if (domain.isArtifact) {
+            assertEquals("Questions du QCM Artéfacts", FlatQuizRules.QUESTIONS_PER_QUIZ, size)
+            assertEquals("Score maximal du QCM Artéfacts", 30.0, max, 1e-9)
+        }
         onView(withId(R.id.layout_result)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_score)).check(
             matches(withText("Score : ${formatScoreLikeApp(expected)} / ${formatScoreLikeApp(max)}"))

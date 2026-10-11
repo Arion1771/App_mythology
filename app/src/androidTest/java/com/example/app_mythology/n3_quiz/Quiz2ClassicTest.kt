@@ -13,6 +13,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app_mythology.DeviceStateRestoreRule
 import com.example.app_mythology.R
+import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
 import com.example.app_mythology.assertCurrentDestination
@@ -107,7 +108,7 @@ class Quiz2ClassicTest {
             scenario.waitForDestination(domain.quizDest)
             waitFor { scenario.onMain { vm.currentIndex.value == i && vm.currentStep.value == 1 } }
             val (name, points) = scenario.onMain {
-                if (domain.isArtifact) vm.quizArtifacts.value!![i].let { it.name to it.difficulty.toDouble() }
+                if (domain.isArtifact) vm.quizArtifacts.value!![i].name to FlatQuizRules.POINTS_PER_QUESTION
                 else vm.quizEntites.value!![i].name to vm.entityPointsLevelAt(i).toDouble()
             }
             val answers = when (i % 3) {
@@ -128,6 +129,10 @@ class Quiz2ClassicTest {
         assertEquals("Statuts de toutes les questions", expectedResults, scenario.onMain { vm.results.value })
         assertEquals("Score final", expected, scenario.onMain { vm.score.value ?: 0.0 }, 1e-9)
         val max = scenario.onMain { vm.maxScore.value ?: 0.0 }
+        if (domain.isArtifact) {
+            assertEquals("Questions du quiz Artéfacts", FlatQuizRules.QUESTIONS_PER_QUIZ, size)
+            assertEquals("Score maximal du quiz Artéfacts", 30.0, max, 1e-9)
+        }
         onView(withId(R.id.layout_result)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_score)).check(
             matches(withText("Score : ${formatScoreLikeApp(expected)} / ${formatScoreLikeApp(max)}"))
