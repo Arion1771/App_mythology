@@ -67,6 +67,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var entityQuizLoaded = false
     private var artifactQuizLoaded = false
 
+    // Niveau choisi pour le quiz Classique (resp. QCM) en cours : fixe le palier
+    // des succès « sans faute », le score maximal ne permettant pas de le déduire.
+    private var classicLevel = QuizLevel.EASY
+    private var qcmLevel = QuizLevel.EASY
+
     /** Niveau canonique choisi par le joueur (EASY=1, MEDIUM=2, HARD=3). */
     private fun canonicalDifficultyOf(level: QuizLevel) = when (level) {
         QuizLevel.EASY -> 1
@@ -91,6 +96,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         // cours (index, score, résultats…) est conservé au lieu d'être réinitialisé.
         if (entityQuizLoaded) return
         entityQuizLoaded = true
+        classicLevel = level
         viewModelScope.launch {
             val canonicalDifficulty = canonicalDifficultyOf(level)
             val allOfLevel = entiteRepo.getAllByDifficulty(canonicalDifficulty)
@@ -107,6 +113,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun loadArtifactQuiz(level: QuizLevel = QuizLevel.EASY) {
         if (artifactQuizLoaded) return
         artifactQuizLoaded = true
+        classicLevel = level
         viewModelScope.launch {
             val pool = mutableListOf<ArtifactEntity>()
             pool += artifactRepo.getRandomByDifficulty(1, 10)
@@ -268,7 +275,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Sans-faute (score == maxScore) sur 10/30/60 points, ou 0 bonne réponse (tout faux). */
+    /**
+     * Sans-faute (score == maxScore) au niveau choisi, ou 0 bonne réponse (tout
+     * faux). Les identifiants des succès gardent leurs anciens suffixes de
+     * palier (10/30/60 = Facile/Moyen/Difficile) pour conserver ceux déjà obtenus.
+     */
     private fun checkScoreAchievements(isArtifact: Boolean, isQcm: Boolean) {
         val score = if (isQcm) _qcmScore.value ?: 0.0 else _score.value ?: 0.0
         val max = if (isQcm) _qcmMaxScore.value ?: 0.0 else _maxScore.value ?: 0.0
@@ -277,13 +288,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         if (score == 0.0) {
             AchievementManager.unlock("all_wrong")
         } else if (score == max) {
-            val tier = when (max) {
-                10.0 -> "10"
-                30.0 -> "30"
-                60.0 -> "60"
-                else -> null
+            val tier = when (if (isQcm) qcmLevel else classicLevel) {
+                QuizLevel.EASY -> "10"
+                QuizLevel.MEDIUM -> "30"
+                QuizLevel.HARD -> "60"
             }
-            if (tier != null) AchievementManager.unlock("${prefix}_$tier")
+            AchievementManager.unlock("${prefix}_$tier")
         }
     }
 
@@ -407,6 +417,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun loadEntityQcm(level: QuizLevel = QuizLevel.EASY) {
         if (qcmEntityQuizLoaded) return
         qcmEntityQuizLoaded = true
+        qcmLevel = level
         viewModelScope.launch {
             qcmAllEntites = entiteRepo.getAllSync()
             val canonicalDifficulty = canonicalDifficultyOf(level)
@@ -424,6 +435,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun loadArtifactQcm(level: QuizLevel = QuizLevel.EASY) {
         if (qcmArtifactQuizLoaded) return
         qcmArtifactQuizLoaded = true
+        qcmLevel = level
         viewModelScope.launch {
             qcmAllArtifacts = artifactRepo.getAllSync()
             val pool = mutableListOf<ArtifactEntity>()
