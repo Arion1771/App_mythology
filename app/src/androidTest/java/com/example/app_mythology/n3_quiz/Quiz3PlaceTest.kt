@@ -78,7 +78,16 @@ class Quiz3PlaceTest {
         val places = scenario.onMain { vm.yggdrasilRealms.value!! }
 
         answerAndValidate(WRONG_ANSWER, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
-        places.forEach { answerAndValidate(it.name, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false) }
+        places.forEachIndexed { i, place ->
+            answerAndValidate(place.name, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
+            if (i == 0) {
+                // Champ vide et lieu déjà trouvé : refusés, sans compter d'erreur.
+                answerAndValidate("", R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
+                answerAndValidate(place.name, R.id.et_place_answer, R.id.btn_place_validate, scrollable = false)
+                assertEquals("Erreurs après champ vide et lieu déjà trouvé", 1,
+                    scenario.onMain { vm.placeWrongAttempts.value })
+            }
+        }
 
         waitFor { scenario.onMain { vm.placeQuizFinished.value } == true }
         assertEquals("Tous les lieux trouvés", places.map { it.id }.toSet(), scenario.onMain { vm.foundIds.value })
