@@ -12,6 +12,30 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.5.2
+
+- Added 18 artifacts (Norse, Greek, Egyptian, Arthurian, Hindu, Japanese, Aztec), bringing the database to 61 artifacts: each level now has at least 15 artifacts (20 easy, 19 medium, 22 hard), so the Artifacts quizzes no longer need to be topped up from the neighbouring level
+- "Artefacts" theme of the List quiz: 10 attempts allowed instead of 5, as the theme now exceeds 50 entries
+- Artifact:
+  - Gjallarhorn (Added)
+  - Megingjörd (Added)
+  - Járngreipr (Added)
+  - Gram (Added)
+  - Tyrfing (Added)
+  - Naglfar (Added)
+  - Hlidskjalf (Added)
+  - Fil d'Ariane (Added)
+  - Pomme de discorde (Added)
+  - Corne d'abondance (Added)
+  - Ankh (Added)
+  - Clarent (Added)
+  - Vajra (Added)
+  - Trishula (Added)
+  - Gandiva (Added)
+  - Brahmastra (Added)
+  - Ame-no-Nuboko (Added)
+  - Xiuhcoatl (Added)
+
 #### V4.5.1
 
 - Solo Places quiz: an empty field no longer counts as a mistake, and entering a place already found is simply rejected ("Déjà trouvé") instead of using an attempt
@@ -170,6 +194,30 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.5.2
+
+- Ajout de 18 artéfacts (Nordique, Grecque, Égyptienne, Arthurienne, Hindouisme, Japonaise, Aztèque), portant la base à 61 artéfacts : chaque niveau compte désormais au moins 15 artéfacts (20 faciles, 19 moyens, 22 difficiles), les quiz Artéfacts n'ont donc plus besoin d'être complétés par le niveau voisin
+- Thème « Artefacts » du mode Liste : 10 essais autorisés au lieu de 5, le thème dépassant désormais 50 entrées
+- Artefact :
+  - Gjallarhorn (Ajout)
+  - Megingjörd (Ajout)
+  - Járngreipr (Ajout)
+  - Gram (Ajout)
+  - Tyrfing (Ajout)
+  - Naglfar (Ajout)
+  - Hlidskjalf (Ajout)
+  - Fil d'Ariane (Ajout)
+  - Pomme de discorde (Ajout)
+  - Corne d'abondance (Ajout)
+  - Ankh (Ajout)
+  - Clarent (Ajout)
+  - Vajra (Ajout)
+  - Trishula (Ajout)
+  - Gandiva (Ajout)
+  - Brahmastra (Ajout)
+  - Ame-no-Nuboko (Ajout)
+  - Xiuhcoatl (Ajout)
 
 #### V4.5.1
 

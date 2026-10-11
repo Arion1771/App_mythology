@@ -15,7 +15,7 @@ object FlatQuizRules {
 
     /**
      * Pioche [count] éléments de niveau [target] (1-3) dans [all]. Si le
-     * niveau n'en contient pas assez (ex. 12 artéfacts de niveau 1), complète
+     * niveau n'en contient pas assez (ex. Duel à de nombreux joueurs), complète
      * avec les niveaux voisins, du plus proche au plus éloigné (le plus facile
      * d'abord à distance égale). Le résultat est trié par priorité (niveau
      * choisi d'abord, chaque niveau mélangé) : à l'appelant de le mélanger.
