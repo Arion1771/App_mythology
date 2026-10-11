@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.10
+### Latest addition — V4.3.11
 
-The never-filled « Opponent » and « Chinese equivalent » entity fields are removed (detail sheet, quiz, Duel and List information). The database moves to version 10 by rebuilding only the entity table: the player's adaptive-difficulty history, internal levels and achievements are kept.
+The "perfect score" achievements of the Classic and Multiple-choice quizzes (entities and artifacts) now depend on the chosen level (Easy, Medium or Hard) instead of the quiz's maximum score (10, 30 or 60 points): entity quizzes never total 10 or 60 points, so their Easy and Hard achievements could not be earned, and a perfect Easy or Hard quiz could unlock the Medium one.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.10
+### Dernier ajout — V4.3.11
 
-Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité (fiche détaillée, informations du quiz, du Duel et du mode Liste). La base passe en version 10 en ne reconstruisant que la table des entités : l'historique de difficulté adaptative, les niveaux internes et les succès du joueur sont conservés.
+Les succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) dépendent désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points) : les quiz d'entités ne totalisant jamais 10 ni 60 points, leurs succès Facile et Difficile étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen.
 
 ### Démarrage
 
