@@ -154,6 +154,13 @@ class QuizListFragment : Fragment() {
 
         btnValidate.setOnClickListener {
             val input = etInput.text.toString()
+            // Champ vide ou entrée déjà trouvée : réponse ignorée, aucune erreur comptée.
+            if (input.isBlank()) return@setOnClickListener
+            if (viewModel.isListAlreadyFound(input)) {
+                etInput.text.clear()
+                Toast.makeText(requireContext(), "Déjà trouvé", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             val found = viewModel.checkListAnswer(input)
             if (found != null) {
                 viewModel.markListFound(found.id)

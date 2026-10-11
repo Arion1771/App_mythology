@@ -560,6 +560,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         return allListItems().firstOrNull { it.id !in found && normalize(input) == normalize(it.name) }
     }
 
+    /** true si [input] désigne une entrée déjà trouvée : réponse refusée, sans compter d'erreur. */
+    fun isListAlreadyFound(input: String): Boolean {
+        val found = _listFoundIds.value ?: emptySet()
+        return allListItems().any { it.id in found && normalize(input) == normalize(it.name) }
+    }
+
     fun markListFound(id: Int) {
         val updated = (_listFoundIds.value ?: emptySet()) + id
         _listFoundIds.value = updated
