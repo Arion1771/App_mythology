@@ -18,6 +18,7 @@ import androidx.test.espresso.action.ViewActions.scrollTo
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers.withText
 import com.example.app_mythology.ui.MainActivity
 import com.example.app_mythology.viewmodel.DuelViewModel
 import com.example.app_mythology.viewmodel.QuizViewModel
@@ -128,11 +129,23 @@ fun clickFirstChildButton(): ViewAction = object : ViewAction {
 }
 
 /**
- * Mise en place d'un duel à 2 joueurs (noms par défaut, niveau facile) depuis
- * l'accueil jusqu'à la première question ; renvoie le ViewModel du duel.
+ * Boutons du choix de difficulté (quiz et Duel) : niveau seul, sans nombre de
+ * questions (toujours 15 depuis V4.4.0).
+ */
+fun checkLevelButtonLabels() {
+    onView(withId(R.id.btn_level_easy)).check(matches(withText("Facile")))
+    onView(withId(R.id.btn_level_medium)).check(matches(withText("Moyen")))
+    onView(withId(R.id.btn_level_hard)).check(matches(withText("Difficile")))
+}
+
+/**
+ * Mise en place d'un duel à 2 joueurs (noms par défaut, niveau [levelButton],
+ * facile par défaut) depuis l'accueil jusqu'à la première question ; renvoie
+ * le ViewModel du duel.
  */
 fun startDuel(
     scenario: ActivityScenario<MainActivity>, modeButton: Int, poolButton: Int, questionDest: Int,
+    levelButton: Int = R.id.btn_level_easy,
 ): DuelViewModel {
     onView(withId(R.id.btn_primary_3)).perform(click()) // Home -> Duel (nombre de joueurs)
     scenario.waitForDestination(R.id.duelPlayerCountFragment)
@@ -143,7 +156,8 @@ fun startDuel(
 
     onView(withId(modeButton)).perform(click())
     scenario.assertCurrentDestination(R.id.duelDifficultyChoiceFragment)
-    onView(withId(R.id.btn_level_easy)).perform(click())
+    checkLevelButtonLabels()
+    onView(withId(levelButton)).perform(click())
     scenario.assertCurrentDestination(R.id.duelPoolChoiceFragment)
     onView(withId(poolButton)).perform(click())
     scenario.waitForDestination(R.id.duelAnnounceFragment)
