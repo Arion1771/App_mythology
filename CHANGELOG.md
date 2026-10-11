@@ -2,6 +2,30 @@
 
 ## V4
 
+#### V4.5.2
+
+- Ajout de 18 artéfacts (Nordique, Grecque, Égyptienne, Arthurienne, Hindouisme, Japonaise, Aztèque), portant la base à 61 artéfacts : chaque niveau compte désormais au moins 15 artéfacts (20 faciles, 19 moyens, 22 difficiles), les quiz Artéfacts n'ont donc plus besoin d'être complétés par le niveau voisin
+- Thème « Artefacts » du mode Liste : 10 essais autorisés au lieu de 5, le thème dépassant désormais 50 entrées
+- Artefact :
+  - Gjallarhorn (Ajout)
+  - Megingjörd (Ajout)
+  - Járngreipr (Ajout)
+  - Gram (Ajout)
+  - Tyrfing (Ajout)
+  - Naglfar (Ajout)
+  - Hlidskjalf (Ajout)
+  - Fil d'Ariane (Ajout)
+  - Pomme de discorde (Ajout)
+  - Corne d'abondance (Ajout)
+  - Ankh (Ajout)
+  - Clarent (Ajout)
+  - Vajra (Ajout)
+  - Trishula (Ajout)
+  - Gandiva (Ajout)
+  - Brahmastra (Ajout)
+  - Ame-no-Nuboko (Ajout)
+  - Xiuhcoatl (Ajout)
+
 #### V4.5.1
 
 - Quiz Lieux solo : un champ vide n'est plus compté comme une erreur, et la saisie d'un lieu déjà trouvé est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai

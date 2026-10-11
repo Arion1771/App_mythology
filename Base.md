@@ -3,7 +3,7 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **519 entités**, **22 lieux**, **43 artéfacts**.
+Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 
 ---
 
@@ -796,9 +796,9 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 ## Artéfacts
 
-43 artéfacts, groupés par mythologie puis par type d'artéfact.
+61 artéfacts, groupés par mythologie puis par type d'artéfact.
 
-### Grecque (13)
+### Grecque (16)
 
 #### Arme (3)
 
@@ -806,9 +806,10 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 - Keraunos
 - Trident de Poséidon
 
-#### Artefact (3)
+#### Artefact (4)
 
 - Boîte de Pandore
+- Pomme de discorde
 - Pommes d'or des Hespérides
 - Toison d'or
 
@@ -817,9 +818,11 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 - Ambroisie
 - Nectar
 
-#### Objet magique (4)
+#### Objet magique (6)
 
 - Caducée
+- Corne d'abondance
+- Fil d'Ariane
 - Kunée
 - Talaria
 - Égide
@@ -828,30 +831,37 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 - Char d'Hélios
 
-### Nordique (9)
+### Nordique (16)
 
-#### Arme (2)
+#### Arme (4)
 
+- Gram
 - Gungnir
 - Mjölnir
+- Tyrfing
 
-#### Artefact (3)
+#### Artefact (4)
 
 - Andvaranaut
 - Draupnir
 - Gleipnir
+- Hlidskjalf
 
 #### Nourriture (2)
 
 - Pommes d'Idunn
 - Ódroerir
 
-#### Objet magique (1)
+#### Objet magique (4)
 
 - Brísingamen
+- Gjallarhorn
+- Járngreipr
+- Megingjörd
 
-#### Véhicule (1)
+#### Véhicule (2)
 
+- Naglfar
 - Skidbladnir
 
 ### Chinoise (2)
@@ -864,20 +874,22 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 - Pêches d'immortalité
 
-### Égyptienne (2)
+### Égyptienne (3)
 
-#### Objet magique (1)
+#### Objet magique (2)
 
+- Ankh
 - Oeil d'Horus
 
 #### Véhicule (1)
 
 - Barque solaire de Rê
 
-### Arthurienne (3)
+### Arthurienne (4)
 
-#### Arme (1)
+#### Arme (2)
 
+- Clarent
 - Excalibur
 
 #### Artefact (1)
@@ -904,11 +916,15 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 - Chaudron du Dagda
 
-### Hindouisme (3)
+### Hindouisme (7)
 
-#### Arme (1)
+#### Arme (5)
 
+- Brahmastra
+- Gandiva
 - Sudarshana Chakra
+- Trishula
+- Vajra
 
 #### Nourriture (1)
 
@@ -918,10 +934,11 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 
 - Pushpaka Vimana
 
-### Japonaise (5)
+### Japonaise (6)
 
-#### Arme (3)
+#### Arme (4)
 
+- Ame-no-Nuboko
 - Kusanagi-no-Tsurugi
 - Muramasa
 - Totsuka-no-Tsurugi
@@ -936,6 +953,12 @@ Total : **519 entités**, **22 lieux**, **43 artéfacts**.
 #### Artefact (1)
 
 - Tablette des Destinées
+
+### Aztèque (1)
+
+#### Arme (1)
+
+- Xiuhcoatl
 
 ---
 
@@ -957,7 +980,7 @@ main sur les entités concernées dans `prepopulate.json`.
 | Dieux | 229 | 10 | champ |
 | Monstres | 109 | 10 | champ |
 | Héros | 49 | 5 | champ |
-| Artefacts | 43 | 5 | tous les artéfacts |
+| Artefacts | 61 | 10 | tous les artéfacts |
 | Entités | 519 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
