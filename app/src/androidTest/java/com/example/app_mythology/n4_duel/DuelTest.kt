@@ -124,6 +124,14 @@ class DuelTest {
     ) { vm, scenario, player, round ->
         onView(withId(R.id.et_answer)).check(matches(isDisplayed()))
         val question = scenario.onMain { vm.currentQuestion()!! }
+        if (round == 0) {
+            // Champ vide : ignoré, ne consomme pas d'essai et ne valide rien.
+            answerAndValidate("", R.id.et_answer, R.id.btn_validate, scrollable = true)
+            assertEquals("Essai après champ vide", 1, scenario.onMain { vm.currentStep.value })
+            assertEquals("Question non résolue après champ vide", null,
+                scenario.onMain { vm.currentPlayer()!!.results[0] })
+            scenario.assertCurrentDestination(R.id.duelQuestionClassicFragment)
+        }
         val (answers, outcome) = when ((round + player) % 3) {
             0 -> listOf(question.name) to Outcome(2.0, "green")
             1 -> listOf(WRONG_ANSWER, question.name) to Outcome(1.0, "yellow")
@@ -305,5 +313,26 @@ class DuelTest {
         val p2 = places.size / 2
         checkPlaceRanking(scenario, listOf("1. Joueur 1 — $p1 pts", "2. Joueur 2 — $p2 pts"))
         scenario.close()
+    }
+
+    // ── Nombre de questions par niveau ────────────────────────────────────
+
+    /** Moyen et Difficile : 15 questions par joueur, toutes du niveau choisi, sélections disjointes. */
+    @Test
+    fun t06_everyLevelGivesFifteenQuestionsPerPlayer() {
+        for ((levelButton, level) in listOf(R.id.btn_level_medium to 2, R.id.btn_level_hard to 3)) {
+            val scenario = ActivityScenario.launch(MainActivity::class.java)
+            val vm = startDuel(
+                scenario, R.id.btn_primary_1, R.id.btn_duel_pool_different,
+                R.id.duelQuestionClassicFragment, levelButton,
+            )
+            val players = scenario.onMain { vm.players.value!! }
+            players.forEach { p ->
+                assertEquals("Questions de ${p.name} (niveau $level)", FlatQuizRules.QUESTIONS_PER_QUIZ, p.questions.size)
+                assertTrue("Questions de ${p.name} hors du niveau $level", p.questions.all { it.difficulty == level })
+            }
+            assertTrue("Questions communes (niveau $level)", players[0].questions.none { it in players[1].questions })
+            scenario.close()
+        }
     }
 }
