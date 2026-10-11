@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.3.11
+### Latest addition — V4.4.0
 
-The "perfect score" achievements of the Classic and Multiple-choice quizzes (entities and artifacts) now depend on the chosen level (Easy, Medium or Hard) instead of the quiz's maximum score (10, 30 or 60 points): entity quizzes never total 10 or 60 points, so their Easy and Hard achievements could not be earned, and a perfect Easy or Hard quiz could unlock the Medium one.
+The artifact quizzes (Classic and Multiple-choice) and the Duel mode now follow the entity quiz format: 15 questions drawn only from the chosen level (topped up from the neighbouring level when it holds fewer than 15), without adaptive internal difficulty. Every question is worth the same: 2 points for a right answer on the first try, 1 on the second try (Classic), 0 otherwise — each quiz, and each Duel player, plays for 30 points.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.3.11
+### Dernier ajout — V4.4.0
 
-Les succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) dépendent désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points) : les quiz d'entités ne totalisant jamais 10 ni 60 points, leurs succès Facile et Difficile étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen.
+Les quiz Artéfacts (Classique et QCM) et le mode Duel suivent désormais le format du quiz Entités : 15 questions puisées uniquement dans le niveau choisi (complétées par le niveau voisin quand il en compte moins de 15), sans difficulté interne. Chaque question vaut autant : 2 points pour une bonne réponse au premier essai, 1 au second essai (Classique), 0 sinon — chaque quiz, et chaque joueur du Duel, se joue donc sur 30 points.
 
 ### Démarrage
 

@@ -8,6 +8,7 @@ import com.example.app_mythology.database.ArtifactEntity
 import com.example.app_mythology.database.EntiteEntity
 import com.example.app_mythology.database.PlaceEntity
 import com.example.app_mythology.quiz.EntityDifficultyEngine
+import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.quiz.ListItem
 import com.example.app_mythology.quiz.ListThemeCatalog
 import com.example.app_mythology.quiz.ThemeGroup
@@ -27,7 +28,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     // ── Quiz Entités / Artéfacts (mécanisme partagé : indice → nom) ─────────
 
-    enum class QuizLevel { EASY, MEDIUM, HARD }
+    /** Niveau choisi par le joueur, et le niveau canonique (1-3) correspondant. */
+    enum class QuizLevel(val canonical: Int) { EASY(1), MEDIUM(2), HARD(3) }
 
     private val _quizEntites  = MutableLiveData<List<EntiteEntity>>()
     val quizEntites: LiveData<List<EntiteEntity>> = _quizEntites
@@ -73,11 +75,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var qcmLevel = QuizLevel.EASY
 
     /** Niveau canonique choisi par le joueur (EASY=1, MEDIUM=2, HARD=3). */
-    private fun canonicalDifficultyOf(level: QuizLevel) = when (level) {
-        QuizLevel.EASY -> 1
-        QuizLevel.MEDIUM -> 2
-        QuizLevel.HARD -> 3
-    }
+    private fun canonicalDifficultyOf(level: QuizLevel) = level.canonical
 
     // Niveau (canonique en bootstrap, interne sinon) de chaque question du quiz
     // Entité en cours, parallèle à _quizEntites, pour le calcul des points.
@@ -109,25 +107,25 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Même principe que [loadEntityQuiz], pour les artéfacts. */
+    /**
+     * Même format que [loadEntityQuiz] (15 questions du niveau choisi), pour
+     * les artéfacts, sans difficulté interne : voir [FlatQuizRules].
+     */
     fun loadArtifactQuiz(level: QuizLevel = QuizLevel.EASY) {
         if (artifactQuizLoaded) return
         artifactQuizLoaded = true
         classicLevel = level
         viewModelScope.launch {
-            val pool = mutableListOf<ArtifactEntity>()
-            pool += artifactRepo.getRandomByDifficulty(1, 10)
-            if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) {
-                pool += artifactRepo.getRandomByDifficulty(2, 10)
-            }
-            if (level == QuizLevel.HARD) {
-                pool += artifactRepo.getRandomByDifficulty(3, 10)
-            }
-            pool.shuffle()
+            val pool = buildArtifactPool(level)
             _quizArtifacts.value = pool
-            resetQuizState(pool.sumOf { it.difficulty.toDouble() }, pool.size)
+            resetQuizState(pool.size * FlatQuizRules.POINTS_PER_QUESTION, pool.size)
         }
     }
+
+    private suspend fun buildArtifactPool(level: QuizLevel): List<ArtifactEntity> =
+        FlatQuizRules.pickFromLevel(
+            artifactRepo.getAllSync(), level.canonical, FlatQuizRules.QUESTIONS_PER_QUIZ
+        ) { it.difficulty }.shuffled()
 
     private fun resetQuizState(maxScore: Double, poolSize: Int) {
         _currentIndex.value   = 0
@@ -144,10 +142,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private fun currentQuizName(index: Int): String? =
         _quizArtifacts.value?.getOrNull(index)?.name ?: _quizEntites.value?.getOrNull(index)?.name
 
-    /** Difficulté canonique (artéfacts) ou niveau de points (canonique en bootstrap, interne sinon — entités). */
+    /** Points d'une bonne réponse au 1er essai : fixes (artéfacts), ou niveau de points (canonique en bootstrap, interne sinon — entités). */
     private fun currentQuizDifficulty(index: Int): Double =
-        (_quizArtifacts.value?.getOrNull(index)?.difficulty
-            ?: entityPointsLevels.getOrNull(index)
+        if (!_quizArtifacts.value.isNullOrEmpty()) FlatQuizRules.POINTS_PER_QUESTION
+        else (entityPointsLevels.getOrNull(index)
             ?: _quizEntites.value?.getOrNull(index)?.difficulty ?: 1).toDouble()
 
     fun checkAnswer(input: String): Boolean {
@@ -438,13 +436,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         qcmLevel = level
         viewModelScope.launch {
             qcmAllArtifacts = artifactRepo.getAllSync()
-            val pool = mutableListOf<ArtifactEntity>()
-            pool += artifactRepo.getRandomByDifficulty(1, 10)
-            if (level == QuizLevel.MEDIUM || level == QuizLevel.HARD) pool += artifactRepo.getRandomByDifficulty(2, 10)
-            if (level == QuizLevel.HARD) pool += artifactRepo.getRandomByDifficulty(3, 10)
-            pool.shuffle()
+            val pool = buildArtifactPool(level)
             _qcmArtifacts.value = pool
-            resetQcmState(pool.sumOf { it.difficulty.toDouble() }, pool.size)
+            resetQcmState(pool.size * FlatQuizRules.POINTS_PER_QUESTION, pool.size)
             buildQcmChoices(0)
         }
     }
@@ -474,8 +468,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _qcmArtifacts.value?.getOrNull(index)?.name ?: _qcmEntites.value?.getOrNull(index)?.name
 
     private fun currentQcmDifficulty(index: Int): Double =
-        (_qcmArtifacts.value?.getOrNull(index)?.difficulty
-            ?: qcmEntityPointsLevels.getOrNull(index)
+        if (!_qcmArtifacts.value.isNullOrEmpty()) FlatQuizRules.POINTS_PER_QUESTION
+        else (qcmEntityPointsLevels.getOrNull(index)
             ?: _qcmEntites.value?.getOrNull(index)?.difficulty ?: 1).toDouble()
 
     private fun isEntityQcm(): Boolean = _qcmArtifacts.value.isNullOrEmpty() && !_qcmEntites.value.isNullOrEmpty()
