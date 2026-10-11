@@ -2,6 +2,10 @@
 
 ## V4
 
+#### V4.3.11
+
+- Succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) : le palier débloqué dépend désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points). Les quiz d'entités ne totalisant jamais 10 ni 60 points (15 questions), les succès Facile et Difficile des entités étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen ; le score attendu est retiré de la description de ces succès
+
 #### V4.3.10
 
 - Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste

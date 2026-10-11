@@ -12,6 +12,10 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.3.11
+
+- "No mistake" achievements of the Classic and Multiple-choice quizzes (Entities and Artifacts): the tier unlocked now depends on the chosen level (Easy, Medium or Hard) rather than on the quiz's maximum score (10, 30 or 60 points). As entity quizzes never total 10 or 60 points (15 questions), the Easy and Hard entity achievements could not be obtained, and a perfect Easy or Hard run could unlock the Medium one; the expected score is removed from these achievements' description
+
 #### V4.3.10
 
 - Removed the "Opposant" and "Équivalent chinois" entity fields, filled in for no entity: line removed from the detail sheet, mentions removed from the information shown by the quiz, Duel and List mode
@@ -146,6 +150,10 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.3.11
+
+- Succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) : le palier débloqué dépend désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points). Les quiz d'entités ne totalisant jamais 10 ni 60 points (15 questions), les succès Facile et Difficile des entités étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen ; le score attendu est retiré de la description de ces succès
 
 #### V4.3.10
 
