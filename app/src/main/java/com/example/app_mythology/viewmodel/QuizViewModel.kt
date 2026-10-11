@@ -329,6 +329,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         return places.firstOrNull { p -> p.id !in found && normalize(input) == normalize(p.name) }
     }
 
+    /** true si [input] désigne un lieu déjà trouvé : réponse refusée, sans compter d'erreur. */
+    fun isPlaceAlreadyFound(input: String, places: List<PlaceEntity>): Boolean {
+        val found = _foundIds.value ?: emptySet()
+        return places.any { p -> p.id in found && normalize(input) == normalize(p.name) }
+    }
+
     /** Marque un lieu trouvé et termine le quiz si tous les lieux ont été trouvés. */
     fun markPlaceFound(id: Int, totalCount: Int) {
         val updated = (_foundIds.value ?: emptySet()) + id

@@ -1,6 +1,9 @@
 package com.example.app_mythology.ui.duel
 
 import android.os.Bundle
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +12,7 @@ import android.widget.EditText
 import android.widget.GridLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -21,6 +25,8 @@ import com.example.app_mythology.viewmodel.DuelViewModel
  * Duel Lieux à deux joueurs, sur un seul écran : même grille de cartes que le
  * quiz Lieux solo, un essai chacun à tour de rôle (nom du joueur courant
  * affiché au-dessus du champ de saisie), 3 erreurs maximum par joueur.
+ * Chaque joueur a sa couleur : celle de son nom quand c'est son tour, et
+ * celle du nom des lieux qu'il a trouvés.
  */
 class DuelPlaceFragment : Fragment() {
 
@@ -58,12 +64,29 @@ class DuelPlaceFragment : Fragment() {
 
         fun playerName(index: Int) = players.getOrNull(index)?.name ?: "Joueur ${index + 1}"
 
+        val playerColors = listOf(R.color.duel_player_1, R.color.duel_player_2)
+            .map { ContextCompat.getColor(requireContext(), it) }
+        fun playerColor(index: Int) = playerColors[index % playerColors.size]
+
+        /** Une ligne "<nom> : <texte>" par joueur, le nom à la couleur du joueur. */
+        fun coloredLines(separator: String, line: (Int) -> String): CharSequence {
+            val out = SpannableStringBuilder()
+            players.indices.forEach { i ->
+                if (i > 0) out.append(separator)
+                val start = out.length
+                out.append(playerName(i))
+                out.setSpan(ForegroundColorSpan(playerColor(i)), start, out.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                out.append(" : ").append(line(i))
+            }
+            return out
+        }
+
         fun updateFoundCount() {
             val found = viewModel.placeFoundBy.value ?: emptyMap()
             tvFoundCount.text = "${found.size} / ${places.size} trouvés"
         }
 
-        /** Carte trouvée : nom du lieu et du joueur qui l'a trouvé ; en fin de partie, les autres sont révélées en rouge. */
+        /** Carte trouvée : nom du lieu, à la couleur du joueur qui l'a trouvé ; en fin de partie, les autres sont révélées en rouge. */
         fun refreshCards() {
             val foundBy = viewModel.placeFoundBy.value ?: emptyMap()
             val finished = viewModel.placeFinished.value == true
@@ -75,16 +98,12 @@ class DuelPlaceFragment : Fragment() {
                 if (finder == null && !finished) continue
                 card.findViewById<TextView>(R.id.tv_card_info).isVisible = false
                 card.findViewById<TextView>(R.id.tv_card_name).apply {
-                    text = if (finder != null) "${place.name}\n${playerName(finder)}" else place.name
+                    text = place.name
+                    if (finder != null) setTextColor(playerColor(finder))
                     isVisible = true
                 }
-                card.setBackgroundResource(
-                    when {
-                        finder == null -> R.drawable.card_notfound_bg
-                        finished -> R.drawable.card_found_final_bg
-                        else -> R.drawable.card_found_bg
-                    }
-                )
+                // Fond sombre pour les cartes trouvées : la couleur du joueur reste lisible.
+                card.setBackgroundResource(if (finder != null) R.drawable.card_bg else R.drawable.card_notfound_bg)
             }
         }
 
@@ -120,13 +139,14 @@ class DuelPlaceFragment : Fragment() {
         }
 
         viewModel.placeErrors.observe(viewLifecycleOwner) { errors ->
-            tvErrors.text = errors.mapIndexed { i, e ->
-                "${playerName(i)} : $e / ${DuelViewModel.MAX_PLACE_ERRORS} erreurs"
-            }.joinToString("  —  ")
+            tvErrors.text = coloredLines("  —  ") { i ->
+                "${errors.getOrElse(i) { 0 }} / ${DuelViewModel.MAX_PLACE_ERRORS} erreurs"
+            }
         }
 
         viewModel.placeTurn.observe(viewLifecycleOwner) { turn ->
             tvPlayer.text = "Au tour de ${playerName(turn)}"
+            tvPlayer.setTextColor(playerColor(turn))
         }
 
         viewModel.placeFinished.observe(viewLifecycleOwner) { finished ->
@@ -134,9 +154,9 @@ class DuelPlaceFragment : Fragment() {
             refreshCards()
             layoutInput.isVisible = false
             layoutResult.isVisible = true
-            tvScore.text = (viewModel.players.value ?: emptyList()).joinToString("\n") { p ->
-                val n = p.score.toInt()
-                "${p.name} : $n lieu${if (n > 1) "x" else ""} trouvé${if (n > 1) "s" else ""}"
+            tvScore.text = coloredLines("\n") { i ->
+                val n = players[i].score.toInt()
+                "$n lieu${if (n > 1) "x" else ""} trouvé${if (n > 1) "s" else ""}"
             }
         }
 
@@ -144,10 +164,14 @@ class DuelPlaceFragment : Fragment() {
             val input = etInput.text.toString()
             if (input.isBlank()) return@setOnClickListener
             val player = playerName(viewModel.placeTurn.value ?: 0)
-            val found = viewModel.submitPlaceAnswer(input, places)
+            val message = when (val result = viewModel.submitPlaceAnswer(input, places)) {
+                is DuelViewModel.PlaceTry.Found -> "✓ ${result.place.name} ($player)"
+                DuelViewModel.PlaceTry.AlreadyFound -> "Déjà trouvé"
+                DuelViewModel.PlaceTry.Wrong -> "Pas trouvé… ($player)"
+                DuelViewModel.PlaceTry.Ignored -> null
+            }
             etInput.text.clear()
-            val message = if (found != null) "✓ ${found.name} ($player)" else "Pas trouvé… ($player)"
-            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+            if (message != null) Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
         }
 
         btnRanking.setOnClickListener {

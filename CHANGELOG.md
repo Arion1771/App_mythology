@@ -2,6 +2,13 @@
 
 ## V4
 
+#### V4.5.1
+
+- Quiz Lieux solo : un champ vide n'est plus compté comme une erreur, et la saisie d'un lieu déjà trouvé est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai
+- Duel Lieux : un lieu déjà trouvé est lui aussi refusé sans erreur, et le même joueur rejoue
+- Duel Lieux : chaque joueur a désormais sa couleur (bleu pour le premier, rose pour le second), utilisée pour son nom au-dessus du champ de saisie quand c'est son tour, dans le décompte des erreurs et des points, et pour le nom des lieux qu'il a trouvés, qui remplace l'affichage du nom du joueur sur la carte
+- Écrans d'aide du quiz et du Duel mis à jour
+
 ### V4.5.0
 
 - Ajout du mode Duel Lieux, proposé (troisième bouton du choix du type de partie, plaque « Lieux » existante) uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), toute la partie se joue sur un seul écran, sur la même grille de cartes que le quiz Lieux solo
