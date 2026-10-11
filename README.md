@@ -12,6 +12,13 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.2.3)
 
+#### V4.5.1
+
+- Solo Places quiz: an empty field no longer counts as a mistake, and entering a place already found is simply rejected ("Déjà trouvé") instead of using an attempt
+- Places Duel: a place already found is also rejected without a mistake, and the same player plays again
+- Places Duel: each player now has their own colour (blue for the first, pink for the second), used for their name above the input field on their turn, in the mistake and point counts, and for the names of the places they found, which replaces the player's name on the card
+- Quiz and Duel help screens updated
+
 #### V4.5.0
 
 - Added Places Duel mode, offered (third button of the game-type choice, existing "Lieux" plate) only for a two-player game: after choosing one of the three Places quizzes (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), the whole game is played on a single screen, on the same card grid as the solo Places quiz
@@ -163,6 +170,13 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.2.3)
+
+#### V4.5.1
+
+- Quiz Lieux solo : un champ vide n'est plus compté comme une erreur, et la saisie d'un lieu déjà trouvé est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai
+- Duel Lieux : un lieu déjà trouvé est lui aussi refusé sans erreur, et le même joueur rejoue
+- Duel Lieux : chaque joueur a désormais sa couleur (bleu pour le premier, rose pour le second), utilisée pour son nom au-dessus du champ de saisie quand c'est son tour, dans le décompte des erreurs et des points, et pour le nom des lieux qu'il a trouvés, qui remplace l'affichage du nom du joueur sur la carte
+- Écrans d'aide du quiz et du Duel mis à jour
 
 #### V4.5.0
 
