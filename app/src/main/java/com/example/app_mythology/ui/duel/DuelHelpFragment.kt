@@ -20,13 +20,13 @@ class DuelHelpFragment : Fragment() {
         view.findViewById<TextView>(R.id.tv_duel_help_body).text = """
             Le mode Duel oppose de 2 à 12 joueurs sur le même appareil, à tour de rôle, sur des questions d'entités.
 
-            Après avoir choisi le nombre de joueurs et leurs noms, vous choisissez le type de question (Classique ou QCM), puis une difficulté commune (Facile, Moyen ou Difficile) qui fixe le nombre de questions que chaque joueur affrontera (10, 20 ou 30).
+            Après avoir choisi le nombre de joueurs et leurs noms, vous choisissez le type de question (Classique ou QCM), puis une difficulté commune (Facile, Moyen ou Difficile) : chaque joueur affronte 15 questions puisées parmi les entités de ce niveau.
 
             Vous choisissez ensuite si tous les joueurs répondent aux mêmes questions dans le même ordre, ou si chacun reçoit sa propre sélection.
 
             Le jeu se déroule ensuite en tours : chaque joueur répond à une question à son tour, sur 3 écrans — l'annonce du joueur et de son score, la question, puis un récapitulatif — jusqu'à ce que tout le monde ait répondu à toutes ses questions.
 
-            En mode Classique, chaque question laisse deux essais (indice, puis toutes les informations en cas d'erreur). En mode QCM, un seul essai est possible parmi 4 noms proposés.
+            En mode Classique, chaque question laisse deux essais (indice, puis toutes les informations en cas d'erreur) : une bonne réponse rapporte 2 points au premier essai, 1 point au second, 0 sinon. En mode QCM, un seul essai est possible parmi 4 noms proposés : 2 points si la réponse est juste, 0 sinon. Une question vaut le même nombre de points quelle que soit sa difficulté : chaque joueur joue donc sur 30 points.
 
             Une fois la partie terminée, un classement final affiche tous les joueurs du meilleur score au moins bon.
         """.trimIndent()
