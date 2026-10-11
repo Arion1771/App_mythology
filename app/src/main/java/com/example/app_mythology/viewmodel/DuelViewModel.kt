@@ -7,16 +7,24 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.app_mythology.database.AppDatabase
 import com.example.app_mythology.database.EntiteEntity
+import com.example.app_mythology.database.PlaceEntity
+import com.example.app_mythology.quiz.FlatQuizRules
 import com.example.app_mythology.quiz.pickQcmChoices
 import com.example.app_mythology.repository.EntiteRepository
+import com.example.app_mythology.repository.PlaceRepository
 import kotlinx.coroutines.launch
 
-/** Mode duel multijoueur local (pass-and-play), entités uniquement. */
+/**
+ * Mode duel multijoueur local (pass-and-play) : questions d'entités
+ * (Classique, QCM), ou quiz Lieux à deux joueurs sur un seul écran.
+ */
 class DuelViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val entiteRepo = EntiteRepository.getInstance(AppDatabase.getInstance(application))
+    private val appDb = AppDatabase.getInstance(application)
+    private val entiteRepo = EntiteRepository.getInstance(appDb)
+    private val placeRepo = PlaceRepository.getInstance(appDb)
 
-    enum class DuelMode { CLASSIC, QCM }
+    enum class DuelMode { CLASSIC, QCM, PLACES }
 
     class DuelPlayer(val name: String) {
         var score: Double = 0.0
@@ -68,32 +76,31 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
         duelStarted = true
         viewModelScope.launch {
             val players = _players.value ?: return@launch
-            val perPlayer = when (level) {
-                QuizViewModel.QuizLevel.EASY -> 10
-                QuizViewModel.QuizLevel.MEDIUM -> 20
-                QuizViewModel.QuizLevel.HARD -> 30
-            }
+            val perPlayer = FlatQuizRules.QUESTIONS_PER_QUIZ
             _questionCount.value = perPlayer
-            if (mode == DuelMode.QCM) qcmAllEntites = entiteRepo.getAllSync()
+            val all = entiteRepo.getAllSync()
+            if (mode == DuelMode.QCM) qcmAllEntites = all
 
-            // Une seule requête RANDOM() LIMIT n par palier ne renvoie jamais deux fois
-            // la même ligne : demander n * nombre de joueurs suffit à obtenir des
-            // segments disjoints par joueur en mode "questions différentes", sans
-            // nouvelle requête DAO dédiée.
-            val multiplier = if (sameQuestions) 1 else players.size
-            val pool = mutableListOf<EntiteEntity>()
-            pool += entiteRepo.getRandomByDifficulty(1, 10 * multiplier)
-            if (level != QuizViewModel.QuizLevel.EASY) pool += entiteRepo.getRandomByDifficulty(2, 10 * multiplier)
-            if (level == QuizViewModel.QuizLevel.HARD) pool += entiteRepo.getRandomByDifficulty(3, 10 * multiplier)
-            pool.shuffle()
+            // 15 questions par joueur dans le niveau choisi, complétées par les
+            // niveaux voisins s'il n'en contient pas assez (beaucoup de joueurs
+            // en mode "questions différentes"). Le pool est trié niveau choisi
+            // d'abord : le distribuer une carte à chaque joueur à tour de rôle
+            // répartit équitablement les éventuelles questions d'appoint.
+            val needed = perPlayer * (if (sameQuestions) 1 else players.size)
+            val pool = FlatQuizRules.pickFromLevel(all, level.canonical, needed) { it.difficulty }
 
             if (sameQuestions) {
-                val shared = pool.take(perPlayer)
+                val shared = pool.shuffled()
                 players.forEach { it.questions = shared }
             } else {
-                players.forEachIndexed { i, p -> p.questions = pool.drop(i * perPlayer).take(perPlayer) }
+                players.forEachIndexed { i, p ->
+                    p.questions = pool.filterIndexed { j, _ -> j % players.size == i }.shuffled()
+                }
             }
-            players.forEach { it.results = MutableList(it.questions.size) { null } }
+            players.forEach {
+                it.score = 0.0
+                it.results = MutableList(it.questions.size) { null }
+            }
             _players.value = players
 
             _currentPlayerIndex.value = 0
@@ -119,7 +126,7 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
         return normalize(input) == normalize(name)
     }
 
-    /** Essai 1 correct → points pleins ; essai 2 correct → moitié ; sinon 0. */
+    /** Essai 1 correct → 2 points ; essai 2 correct → 1 point ; sinon 0 (voir [FlatQuizRules]). */
     fun submitClassicAnswer(correct: Boolean) {
         val player = currentPlayer() ?: return
         val round = _currentRound.value ?: 0
@@ -127,7 +134,7 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
         val step = _currentStep.value ?: 1
 
         if (correct) {
-            player.score += if (step == 1) question.difficulty.toDouble() else question.difficulty / 2.0
+            player.score += if (step == 1) FlatQuizRules.POINTS_PER_QUESTION else FlatQuizRules.POINTS_PER_QUESTION / 2
             player.results[round] = if (step == 1) "green" else "yellow"
             _players.value = _players.value
             _answerRevealed.value = true
@@ -140,13 +147,13 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Essai unique : points pleins si correct, 0 sinon. */
+    /** Essai unique : 2 points si correct, 0 sinon. */
     fun submitQcmAnswer(selected: String) {
         val player = currentPlayer() ?: return
         val round = _currentRound.value ?: 0
         val question = currentQuestion() ?: return
         val correct = normalize(selected) == normalize(question.name)
-        if (correct) player.score += question.difficulty.toDouble()
+        if (correct) player.score += FlatQuizRules.POINTS_PER_QUESTION
         player.results[round] = if (correct) "green" else "red"
         _players.value = _players.value
         _answerRevealed.value = true
@@ -178,6 +185,101 @@ class DuelViewModel(application: Application) : AndroidViewModel(application) {
             _currentPlayerIndex.value = 0
         }
         if (mode == DuelMode.QCM) buildCurrentQcmChoices()
+    }
+
+    // ── Duel Lieux (2 joueurs, un essai chacun à tour de rôle) ─────────────
+
+    /** Quiz Lieux joué : "yggdrasil" | "rivers" | "underworld" (mêmes listes que le quiz solo). */
+    var placeQuizType: String = "yggdrasil"
+        private set
+
+    /** Lieu trouvé → index du joueur qui l'a trouvé. */
+    private val _placeFoundBy = MutableLiveData<Map<Int, Int>>(emptyMap())
+    val placeFoundBy: LiveData<Map<Int, Int>> = _placeFoundBy
+
+    /** Erreurs de chaque joueur (même ordre que [players]). */
+    private val _placeErrors = MutableLiveData<List<Int>>(emptyList())
+    val placeErrors: LiveData<List<Int>> = _placeErrors
+
+    /** Index du joueur qui doit répondre. */
+    private val _placeTurn = MutableLiveData(0)
+    val placeTurn: LiveData<Int> = _placeTurn
+
+    private val _placeFinished = MutableLiveData(false)
+    val placeFinished: LiveData<Boolean> = _placeFinished
+
+    fun placesOf(type: String): LiveData<List<PlaceEntity>> = when (type) {
+        "yggdrasil" -> placeRepo.yggdrasilRealms
+        "rivers" -> placeRepo.hellRivers
+        else -> placeRepo.underworldPlaces
+    }
+
+    /** (Re)lance une partie : appelé au choix du quiz, pas à la création de l'écran (survit à une rotation). */
+    fun startPlaceDuel(type: String) {
+        mode = DuelMode.PLACES
+        placeQuizType = type
+        val players = _players.value ?: return
+        players.forEach { it.score = 0.0 }
+        _placeFoundBy.value = emptyMap()
+        _placeErrors.value = List(players.size) { 0 }
+        _placeTurn.value = 0
+        _placeFinished.value = false
+    }
+
+    /** Issue d'un essai en Duel Lieux. */
+    sealed interface PlaceTry {
+        data class Found(val place: PlaceEntity) : PlaceTry
+        /** Lieu déjà trouvé : refusé, sans erreur ni changement de joueur. */
+        data object AlreadyFound : PlaceTry
+        data object Wrong : PlaceTry
+        /** Essai ignoré (partie terminée ou lieux pas encore chargés). */
+        data object Ignored : PlaceTry
+    }
+
+    /**
+     * Un essai du joueur courant : un lieu trouvé lui est attribué, sinon il
+     * prend une erreur (un lieu déjà trouvé est simplement refusé, le joueur
+     * garde la main). La partie s'arrête quand tout est trouvé ou que chaque
+     * joueur a atteint [MAX_PLACE_ERRORS] ; sinon la main passe à l'autre
+     * joueur, sauf s'il est déjà éliminé (le joueur courant continue seul).
+     */
+    fun submitPlaceAnswer(input: String, places: List<PlaceEntity>): PlaceTry {
+        if (_placeFinished.value == true || places.isEmpty()) return PlaceTry.Ignored
+        val players = _players.value ?: return PlaceTry.Ignored
+        val turn = _placeTurn.value ?: 0
+        val foundBy = _placeFoundBy.value ?: emptyMap()
+        val errors = (_placeErrors.value ?: emptyList()).toMutableList()
+
+        if (places.any { it.id in foundBy && normalize(input) == normalize(it.name) }) return PlaceTry.AlreadyFound
+        val match = places.firstOrNull { it.id !in foundBy && normalize(input) == normalize(it.name) }
+        if (match != null) {
+            _placeFoundBy.value = foundBy + (match.id to turn)
+        } else {
+            errors[turn] = errors[turn] + 1
+            _placeErrors.value = errors
+        }
+
+        val allFound = (_placeFoundBy.value?.size ?: 0) >= places.size
+        val everyoneOut = errors.all { it >= MAX_PLACE_ERRORS }
+        if (allFound || everyoneOut) {
+            finishPlaceDuel(players)
+        } else {
+            val next = (turn + 1) % players.size
+            if (errors[next] < MAX_PLACE_ERRORS) _placeTurn.value = next
+        }
+        return if (match != null) PlaceTry.Found(match) else PlaceTry.Wrong
+    }
+
+    /** Points comptés en fin de partie : 1 par lieu trouvé. */
+    private fun finishPlaceDuel(players: List<DuelPlayer>) {
+        val foundBy = _placeFoundBy.value ?: emptyMap()
+        players.forEachIndexed { i, p -> p.score = foundBy.values.count { it == i }.toDouble() }
+        _players.value = players
+        _placeFinished.value = true
+    }
+
+    companion object {
+        const val MAX_PLACE_ERRORS = 3
     }
 
     private fun normalize(s: String): String =

@@ -2,6 +2,54 @@
 
 ## V4
 
+#### V4.5.2
+
+- Ajout de 18 artéfacts (Nordique, Grecque, Égyptienne, Arthurienne, Hindouisme, Japonaise, Aztèque), portant la base à 61 artéfacts : chaque niveau compte désormais au moins 15 artéfacts (20 faciles, 19 moyens, 22 difficiles), les quiz Artéfacts n'ont donc plus besoin d'être complétés par le niveau voisin
+- Thème « Artefacts » du mode Liste : 10 essais autorisés au lieu de 5, le thème dépassant désormais 50 entrées
+- Artefact :
+  - Gjallarhorn (Ajout)
+  - Megingjörd (Ajout)
+  - Járngreipr (Ajout)
+  - Gram (Ajout)
+  - Tyrfing (Ajout)
+  - Naglfar (Ajout)
+  - Hlidskjalf (Ajout)
+  - Fil d'Ariane (Ajout)
+  - Pomme de discorde (Ajout)
+  - Corne d'abondance (Ajout)
+  - Ankh (Ajout)
+  - Clarent (Ajout)
+  - Vajra (Ajout)
+  - Trishula (Ajout)
+  - Gandiva (Ajout)
+  - Brahmastra (Ajout)
+  - Ame-no-Nuboko (Ajout)
+  - Xiuhcoatl (Ajout)
+
+#### V4.5.1
+
+- Quiz Lieux solo : un champ vide n'est plus compté comme une erreur, et la saisie d'un lieu déjà trouvé est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai
+- Duel Lieux : un lieu déjà trouvé est lui aussi refusé sans erreur, et le même joueur rejoue
+- Duel Lieux : chaque joueur a désormais sa couleur (bleu pour le premier, rose pour le second), utilisée pour son nom au-dessus du champ de saisie quand c'est son tour, dans le décompte des erreurs et des points, et pour le nom des lieux qu'il a trouvés, qui remplace l'affichage du nom du joueur sur la carte
+- Écrans d'aide du quiz et du Duel mis à jour
+
+### V4.5.0
+
+- Ajout du mode Duel Lieux, proposé (troisième bouton du choix du type de partie, plaque « Lieux » existante) uniquement pour une partie à deux joueurs : après le choix de l'un des trois quiz Lieux (Arbre Monde, Fleuves de l'Enfer, Royaume des Morts), toute la partie se joue sur un seul écran, sur la même grille de cartes que le quiz Lieux solo
+- Le nom du joueur qui doit répondre est affiché au-dessus du champ de saisie ; chaque joueur a un essai, puis la main passe à l'autre. Chaque joueur a droit à 3 erreurs : une fois éliminé, l'autre joueur continue seul. La partie se termine quand tous les lieux sont trouvés ou que les deux joueurs ont fait 3 erreurs
+- Les points sont comptés en fin de partie : 1 point par lieu trouvé pour le joueur qui l'a trouvé (son nom s'affiche sur la carte), puis classement final du Duel
+- Écran d'aide du Duel mis à jour
+
+### V4.4.0
+
+- Quiz Artéfacts (Classique et QCM) alignés sur le format du quiz Entités : 15 questions puisées uniquement dans le niveau choisi (au lieu de 10, 20 ou 30 questions cumulant les niveaux inférieurs), complétées par le niveau voisin quand celui-ci compte moins de 15 artéfacts (Facile : 12, Moyen : 14). Sans difficulté interne : chaque question vaut 2 points quelle que soit sa difficulté (1 point pour une bonne réponse au second essai en Classique, 0 pour une mauvaise réponse), soit un quiz sur 30 points
+- Mode Duel (Classique et QCM) sur le même modèle : 15 questions d'entités du niveau choisi par joueur (au lieu de 10, 20 ou 30), 2 points par bonne réponse au premier essai, 1 au second essai en Classique, 0 sinon, soit 30 points par joueur. Si le niveau ne compte pas assez d'entités pour donner des questions différentes à chaque joueur, il est complété par le niveau voisin, réparti équitablement entre les joueurs
+- Écrans d'aide du quiz et du Duel mis à jour en conséquence
+
+#### V4.3.11
+
+- Succès « sans faute » des quiz Classique et QCM (Entités et Artéfacts) : le palier débloqué dépend désormais du niveau choisi (Facile, Moyen ou Difficile) et non plus du score maximal du quiz (10, 30 ou 60 points). Les quiz d'entités ne totalisant jamais 10 ni 60 points (15 questions), les succès Facile et Difficile des entités étaient impossibles à obtenir, et un sans-faute en Facile ou Difficile pouvait débloquer celui du niveau Moyen ; le score attendu est retiré de la description de ces succès
+
 #### V4.3.10
 
 - Suppression des champs « Opposant » et « Équivalent chinois » des entités, renseignés pour aucune entité : ligne retirée de la fiche détaillée, mentions retirées des informations affichées par le quiz, le Duel et le mode Liste

@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         R.id.classicDomainChoiceFragment,
         R.id.quizPlaceChoiceFragment,
         R.id.duelModeChoiceFragment,
+        R.id.duelPlaceChoiceFragment,
         R.id.entityListFragment,
         R.id.artifactListFragment,
         R.id.placeListFragment,
