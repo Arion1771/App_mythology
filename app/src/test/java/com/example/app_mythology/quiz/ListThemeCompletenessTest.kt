@@ -137,7 +137,7 @@ class ListThemeCompletenessTest {
     @Test fun t14_muses() = assertThemeComplete(
         "muses",
         expectedEntityNames { o ->
-            (o.strOrNull("museType") == "Grecque" && o.getString("mythology") == "Grecque") ||
+            (o.strOrNull("museType") == "Classique" && o.getString("mythology") == "Grecque") ||
                 o.strOrNull("museType") == "Beotienne"
         },
     )

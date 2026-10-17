@@ -10,10 +10,48 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V4.5.3
+### Changes since the last release (V4.5.3)
 
-- List mode: an empty field no longer counts as a mistake, and entering an entry already found is simply rejected ("Déjà trouvé") instead of using an attempt, as for the Places quiz since V4.5.1
-- Quiz help screen updated
+#### V4.5.6
+
+- Muse type "Grecque" renamed "Classique" (the nine Muses, daughters of Mnemosyne, as opposed to the three Boeotian Muses): the 9 Camenae, which belong to this type, are no longer presented as Greek muses in Roman mythology
+- Coelus's domain reworded without mentioning Ouranos, while staying distinct from Uranus's
+- Entities added/modified:
+  - Calliope : Grecque -> Classique (museType modified)
+  - Clio : Grecque -> Classique (museType modified)
+  - Érato : Grecque -> Classique (museType modified)
+  - Euterpe : Grecque -> Classique (museType modified)
+  - Melpomène : Grecque -> Classique (museType modified)
+  - Polymnie : Grecque -> Classique (museType modified)
+  - Terpsichore : Grecque -> Classique (museType modified)
+  - Thalie : Grecque -> Classique (museType modified)
+  - Uranie : Grecque -> Classique (museType modified)
+  - 9 Camènes : Grecque -> Classique (museType modified)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (domain modified)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (clue modified)
+
+#### V4.5.5
+
+- Parentage of every entity checked: each parent now belongs to the right mythology (Roman entities no longer have a Greek parent) and matches the reference genealogies; Nyx, a goddess, moves from the "Father" field to the "Mother" field of her children
+- Entities added/modified:
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modified)
+  - Hercule : Zeus -> Jupiter (ascendantName modified)
+  - Castor : Zeus -> Tyndare (fatherName modified)
+  - Médée : Hélios -> Æétès (fatherName modified)
+  - Encelade : Tartare -> Ouranos (fatherName modified)
+  - Éris : Nyx -> (empty) (fatherName modified)
+  - Éris : (empty) -> Nyx (motherName modified)
+  - Hypnos : Nyx -> (empty) (fatherName modified)
+  - Hypnos : (empty) -> Nyx (motherName modified)
+  - Thanatos : Nyx -> (empty) (fatherName modified)
+  - Thanatos : (empty) -> Nyx (motherName modified)
+  - Némésis : Nyx -> (empty) (fatherName modified)
+  - Némésis : (empty) -> Nyx (motherName modified)
+
+#### V4.5.4
+
+- Achievements screen: the "Succès" title is now shown on the same line as the back button, to its right
+- Duel screen (number of players): the "?" help button is now aligned on the same line as the back button, as on the quiz selection screen
 
 ### Getting started
 
@@ -52,10 +90,48 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V4.5.3
+### Nouveautés depuis la dernière release (V4.5.3)
 
-- Mode Liste : un champ vide n'est plus compté comme une erreur, et la saisie d'une entrée déjà trouvée est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai, comme pour le quiz Lieux depuis V4.5.1
-- Écran d'aide du quiz mis à jour
+#### V4.5.6
+
+- Type de muse « Grecque » renommé « Classique » (les neuf Muses filles de Mnémosyne, par opposition aux trois Muses béotiennes) : les 9 Camènes, rattachées à ce type, ne sont plus présentées comme des muses grecques dans la mythologie romaine
+- Domaine de Coelus reformulé sans mention d'Ouranos, tout en restant distinct de celui d'Uranus
+- Ajout/Modification d'entités :
+  - Calliope : Grecque -> Classique (museType modifié)
+  - Clio : Grecque -> Classique (museType modifié)
+  - Érato : Grecque -> Classique (museType modifié)
+  - Euterpe : Grecque -> Classique (museType modifié)
+  - Melpomène : Grecque -> Classique (museType modifié)
+  - Polymnie : Grecque -> Classique (museType modifié)
+  - Terpsichore : Grecque -> Classique (museType modifié)
+  - Thalie : Grecque -> Classique (museType modifié)
+  - Uranie : Grecque -> Classique (museType modifié)
+  - 9 Camènes : Grecque -> Classique (museType modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (domain modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (clue modifié)
+
+#### V4.5.5
+
+- Vérification des parentés de toutes les entités : chaque parent correspond désormais à la bonne mythologie (les entités romaines n'ont plus de parent grec) et aux généalogies de référence ; Nyx, déesse, passe du champ « Père » au champ « Mère » de ses enfants
+- Ajout/Modification d'entités :
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modifié)
+  - Hercule : Zeus -> Jupiter (ascendantName modifié)
+  - Castor : Zeus -> Tyndare (fatherName modifié)
+  - Médée : Hélios -> Æétès (fatherName modifié)
+  - Encelade : Tartare -> Ouranos (fatherName modifié)
+  - Éris : Nyx -> (vide) (fatherName modifié)
+  - Éris : (vide) -> Nyx (motherName modifié)
+  - Hypnos : Nyx -> (vide) (fatherName modifié)
+  - Hypnos : (vide) -> Nyx (motherName modifié)
+  - Thanatos : Nyx -> (vide) (fatherName modifié)
+  - Thanatos : (vide) -> Nyx (motherName modifié)
+  - Némésis : Nyx -> (vide) (fatherName modifié)
+  - Némésis : (vide) -> Nyx (motherName modifié)
+
+#### V4.5.4
+
+- Écran des succès : le titre « Succès » est désormais affiché sur la même ligne que le bouton retour, à sa droite
+- Écran du Duel (choix du nombre de joueurs) : le bouton d'aide « ? » est désormais aligné sur la même ligne que le bouton retour, comme sur l'écran de choix du quiz
 
 ### Démarrage
 
