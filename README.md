@@ -10,10 +10,12 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest version — V4.5.3
+### Changes since the last release (V4.5.3)
 
-- List mode: an empty field no longer counts as a mistake, and entering an entry already found is simply rejected ("Déjà trouvé") instead of using an attempt, as for the Places quiz since V4.5.1
-- Quiz help screen updated
+#### V4.5.4
+
+- Achievements screen: the "Succès" title is now shown on the same line as the back button, to its right
+- Duel screen (number of players): the "?" help button is now aligned on the same line as the back button, as on the quiz selection screen
 
 ### Getting started
 
@@ -52,10 +54,12 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernière version — V4.5.3
+### Nouveautés depuis la dernière release (V4.5.3)
 
-- Mode Liste : un champ vide n'est plus compté comme une erreur, et la saisie d'une entrée déjà trouvée est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai, comme pour le quiz Lieux depuis V4.5.1
-- Écran d'aide du quiz mis à jour
+#### V4.5.4
+
+- Écran des succès : le titre « Succès » est désormais affiché sur la même ligne que le bouton retour, à sa droite
+- Écran du Duel (choix du nombre de joueurs) : le bouton d'aide « ? » est désormais aligné sur la même ligne que le bouton retour, comme sur l'écran de choix du quiz
 
 ### Démarrage
 

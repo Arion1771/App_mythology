@@ -2,6 +2,11 @@
 
 ## V4
 
+#### V4.5.4
+
+- Écran des succès : le titre « Succès » est désormais affiché sur la même ligne que le bouton retour, à sa droite
+- Écran du Duel (choix du nombre de joueurs) : le bouton d'aide « ? » est désormais aligné sur la même ligne que le bouton retour, comme sur l'écran de choix du quiz
+
 #### V4.5.3
 
 - Mode Liste : un champ vide n'est plus compté comme une erreur, et la saisie d'une entrée déjà trouvée est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai, comme pour le quiz Lieux depuis V4.5.1
