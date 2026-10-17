@@ -99,7 +99,7 @@ object ListThemeCatalog {
         },
         ListTheme.EntityTheme("muses", "Muses", 3) { entites ->
             listOf(
-                ThemeGroup("Classiques", entites.filter { it.museType == "Grecque" && it.mythology == "Grecque" }),
+                ThemeGroup("Classiques", entites.filter { it.museType == "Classique" && it.mythology == "Grecque" }),
                 ThemeGroup("Béotiennes", entites.filter { it.museType == "Beotienne" })
             )
         },
