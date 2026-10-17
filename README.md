@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.5.5
+### Latest addition — V4.5.6
 
-Parentage check across all entities: every parent now belongs to the right mythology and matches the reference genealogies. Updated entities: Apollon (Roman), Hercule, Castor, Médée, Encelade, Éris, Hypnos, Thanatos, Némésis.
+The "Greek" muse type is renamed "Classic", so the 9 Camènes are no longer shown as Greek muses in Roman mythology, and Coelus's domain no longer mentions Ouranos while staying distinct from Uranus. Updated entities: Calliope, Clio, Érato, Euterpe, Melpomène, Polymnie, Terpsichore, Thalie, Uranie, 9 Camènes, Coelus.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.5.5
+### Dernier ajout — V4.5.6
 
-Vérification des parentés de toutes les entités : chaque parent appartient désormais à la bonne mythologie et correspond aux généalogies de référence. Entités modifiées : Apollon (romain), Hercule, Castor, Médée, Encelade, Éris, Hypnos, Thanatos, Némésis.
+Le type de muse « Grecque » est renommé « Classique » : les 9 Camènes ne sont plus présentées comme des muses grecques dans la mythologie romaine, et le domaine de Coelus ne mentionne plus Ouranos tout en restant distinct de celui d'Uranus. Entités modifiées : Calliope, Clio, Érato, Euterpe, Melpomène, Polymnie, Terpsichore, Thalie, Uranie, 9 Camènes, Coelus.
 
 ### Démarrage
 
