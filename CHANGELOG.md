@@ -2,6 +2,24 @@
 
 ## V4
 
+#### V4.5.5
+
+- Vérification des parentés de toutes les entités : chaque parent correspond désormais à la bonne mythologie (les entités romaines n'ont plus de parent grec) et aux généalogies de référence ; Nyx, déesse, passe du champ « Père » au champ « Mère » de ses enfants
+- Ajout/Modification d'entités :
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modifié)
+  - Hercule : Zeus -> Jupiter (ascendantName modifié)
+  - Castor : Zeus -> Tyndare (fatherName modifié)
+  - Médée : Hélios -> Æétès (fatherName modifié)
+  - Encelade : Tartare -> Ouranos (fatherName modifié)
+  - Éris : Nyx -> (vide) (fatherName modifié)
+  - Éris : (vide) -> Nyx (motherName modifié)
+  - Hypnos : Nyx -> (vide) (fatherName modifié)
+  - Hypnos : (vide) -> Nyx (motherName modifié)
+  - Thanatos : Nyx -> (vide) (fatherName modifié)
+  - Thanatos : (vide) -> Nyx (motherName modifié)
+  - Némésis : Nyx -> (vide) (fatherName modifié)
+  - Némésis : (vide) -> Nyx (motherName modifié)
+
 #### V4.5.4
 
 - Écran des succès : le titre « Succès » est désormais affiché sur la même ligne que le bouton retour, à sa droite

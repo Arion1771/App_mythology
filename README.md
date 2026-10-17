@@ -12,6 +12,24 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.5.3)
 
+#### V4.5.5
+
+- Parentage of every entity checked: each parent now belongs to the right mythology (Roman entities no longer have a Greek parent) and matches the reference genealogies; Nyx, a goddess, moves from the "Father" field to the "Mother" field of her children
+- Entities added/modified:
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modified)
+  - Hercule : Zeus -> Jupiter (ascendantName modified)
+  - Castor : Zeus -> Tyndare (fatherName modified)
+  - Médée : Hélios -> Æétès (fatherName modified)
+  - Encelade : Tartare -> Ouranos (fatherName modified)
+  - Éris : Nyx -> (empty) (fatherName modified)
+  - Éris : (empty) -> Nyx (motherName modified)
+  - Hypnos : Nyx -> (empty) (fatherName modified)
+  - Hypnos : (empty) -> Nyx (motherName modified)
+  - Thanatos : Nyx -> (empty) (fatherName modified)
+  - Thanatos : (empty) -> Nyx (motherName modified)
+  - Némésis : Nyx -> (empty) (fatherName modified)
+  - Némésis : (empty) -> Nyx (motherName modified)
+
 #### V4.5.4
 
 - Achievements screen: the "Succès" title is now shown on the same line as the back button, to its right
@@ -55,6 +73,24 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.5.3)
+
+#### V4.5.5
+
+- Vérification des parentés de toutes les entités : chaque parent correspond désormais à la bonne mythologie (les entités romaines n'ont plus de parent grec) et aux généalogies de référence ; Nyx, déesse, passe du champ « Père » au champ « Mère » de ses enfants
+- Ajout/Modification d'entités :
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modifié)
+  - Hercule : Zeus -> Jupiter (ascendantName modifié)
+  - Castor : Zeus -> Tyndare (fatherName modifié)
+  - Médée : Hélios -> Æétès (fatherName modifié)
+  - Encelade : Tartare -> Ouranos (fatherName modifié)
+  - Éris : Nyx -> (vide) (fatherName modifié)
+  - Éris : (vide) -> Nyx (motherName modifié)
+  - Hypnos : Nyx -> (vide) (fatherName modifié)
+  - Hypnos : (vide) -> Nyx (motherName modifié)
+  - Thanatos : Nyx -> (vide) (fatherName modifié)
+  - Thanatos : (vide) -> Nyx (motherName modifié)
+  - Némésis : Nyx -> (vide) (fatherName modifié)
+  - Némésis : (vide) -> Nyx (motherName modifié)
 
 #### V4.5.4
 
