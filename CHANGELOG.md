@@ -2,6 +2,47 @@
 
 ## V4
 
+#### V4.5.6
+
+- Type de muse « Grecque » renommé « Classique » (les neuf Muses filles de Mnémosyne, par opposition aux trois Muses béotiennes) : les 9 Camènes, rattachées à ce type, ne sont plus présentées comme des muses grecques dans la mythologie romaine
+- Domaine de Coelus reformulé sans mention d'Ouranos, tout en restant distinct de celui d'Uranus
+- Ajout/Modification d'entités :
+  - Calliope : Grecque -> Classique (museType modifié)
+  - Clio : Grecque -> Classique (museType modifié)
+  - Érato : Grecque -> Classique (museType modifié)
+  - Euterpe : Grecque -> Classique (museType modifié)
+  - Melpomène : Grecque -> Classique (museType modifié)
+  - Polymnie : Grecque -> Classique (museType modifié)
+  - Terpsichore : Grecque -> Classique (museType modifié)
+  - Thalie : Grecque -> Classique (museType modifié)
+  - Uranie : Grecque -> Classique (museType modifié)
+  - 9 Camènes : Grecque -> Classique (museType modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (domain modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (clue modifié)
+
+#### V4.5.5
+
+- Vérification des parentés de toutes les entités : chaque parent correspond désormais à la bonne mythologie (les entités romaines n'ont plus de parent grec) et aux généalogies de référence ; Nyx, déesse, passe du champ « Père » au champ « Mère » de ses enfants
+- Ajout/Modification d'entités :
+  - Apollon (Romaine) : Zeus -> Jupiter (fatherName modifié)
+  - Hercule : Zeus -> Jupiter (ascendantName modifié)
+  - Castor : Zeus -> Tyndare (fatherName modifié)
+  - Médée : Hélios -> Æétès (fatherName modifié)
+  - Encelade : Tartare -> Ouranos (fatherName modifié)
+  - Éris : Nyx -> (vide) (fatherName modifié)
+  - Éris : (vide) -> Nyx (motherName modifié)
+  - Hypnos : Nyx -> (vide) (fatherName modifié)
+  - Hypnos : (vide) -> Nyx (motherName modifié)
+  - Thanatos : Nyx -> (vide) (fatherName modifié)
+  - Thanatos : (vide) -> Nyx (motherName modifié)
+  - Némésis : Nyx -> (vide) (fatherName modifié)
+  - Némésis : (vide) -> Nyx (motherName modifié)
+
+#### V4.5.4
+
+- Écran des succès : le titre « Succès » est désormais affiché sur la même ligne que le bouton retour, à sa droite
+- Écran du Duel (choix du nombre de joueurs) : le bouton d'aide « ? » est désormais aligné sur la même ligne que le bouton retour, comme sur l'écran de choix du quiz
+
 #### V4.5.3
 
 - Mode Liste : un champ vide n'est plus compté comme une erreur, et la saisie d'une entrée déjà trouvée est simplement refusée (« Déjà trouvé ») au lieu de consommer un essai, comme pour le quiz Lieux depuis V4.5.1
