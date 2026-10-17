@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
     /**
      * Écrans qui gèrent eux-mêmes le coin supérieur gauche, sans décalage du
      * contenu : menus à trois boutons principaux centrés (coin libre) et
-     * listes de consultation (champ de recherche aligné à droite du bouton).
+     * listes de consultation (champ de recherche aligné à droite du bouton),
+     * écrans dont le bouton d'aide « ? » doit rester sur la même ligne que le
+     * bouton retour, et écran des succès (titre à droite du bouton).
      */
     private val selfInsetDestinations = setOf(
         R.id.browseChoiceFragment,
@@ -33,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         R.id.quizPlaceChoiceFragment,
         R.id.duelModeChoiceFragment,
         R.id.duelPlaceChoiceFragment,
+        R.id.duelPlayerCountFragment,
+        R.id.achievementsFragment,
         R.id.entityListFragment,
         R.id.artifactListFragment,
         R.id.placeListFragment,
