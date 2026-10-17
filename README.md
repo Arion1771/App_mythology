@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.5.3
+### Latest addition — V4.5.4
 
-In the List quiz, an empty answer or an entry that was already found is now simply rejected instead of counting as a mistake, as in the Places quiz.
+Layout fixes: on the Achievements screen, the "Achievements" title now sits next to the back button, and on the Duel screen the "?" help button is now aligned on the same line as the back button.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.5.3
+### Dernier ajout — V4.5.4
 
-Dans le mode Liste, un champ vide ou une entrée déjà trouvée est désormais simplement refusé au lieu de compter comme une erreur, comme dans le quiz Lieux.
+Corrections de mise en page : sur l'écran des succès, le titre « Succès » est désormais affiché à côté du bouton retour, et sur l'écran du Duel le bouton d'aide « ? » est désormais aligné sur la même ligne que le bouton retour.
 
 ### Démarrage
 
