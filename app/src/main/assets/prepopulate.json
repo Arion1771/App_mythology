@@ -166,7 +166,7 @@
       "description": "Frère jumeau né d'un père mortel, il partage l'immortalité de son frère divin après sa propre mort, les deux passant l'éternité un jour sur deux entre Enfers et Olympe.",
       "clue": "Argonautes, frère mortel de Pollux",
       "difficulty": 1,
-      "fatherName": "Zeus",
+      "fatherName": "Tyndare",
       "tags": "Humain, Jour, Mort",
       "listThemes": "Argonautes"
     },
@@ -623,7 +623,7 @@
       "description": "Après avoir trahi sa propre famille par amour, elle se venge d'un époux infidèle par un acte d'une cruauté extrême envers leurs propres enfants.",
       "clue": "Magicienne, petite-fille d'Hélios, aide Jason pour la Toison d'Or",
       "difficulty": 2,
-      "fatherName": "Hélios",
+      "fatherName": "Æétès",
       "tags": "Amour, Humain"
     },
     {
@@ -1424,7 +1424,7 @@
       "description": "Géant à cent bras s'opposant à Athéna, enterré sous l'Etna",
       "clue": "Géant à cent bras s'opposant à Athéna",
       "difficulty": 2,
-      "fatherName": "Tartare",
+      "fatherName": "Ouranos",
       "motherName": "Gaïa",
       "tags": "Terre"
     },
@@ -1451,7 +1451,7 @@
       "description": "Non invitée à un mariage divin, elle se venge en jetant parmi les convives un objet doré destiné à la plus belle, déclenchant une rivalité qui mènera à une grande guerre.",
       "clue": "Déesse de la Discorde",
       "difficulty": 2,
-      "fatherName": "Nyx",
+      "motherName": "Nyx",
       "tags": "Guerre, Sentiments"
     },
     {
@@ -1594,7 +1594,7 @@
       "popularCulture": "Hadès",
       "clue": "Dieu du sommeil",
       "difficulty": 2,
-      "fatherName": "Nyx",
+      "motherName": "Nyx",
       "tags": "Soleil"
     },
     {
@@ -1760,7 +1760,7 @@
       "popularCulture": "Smite, Smite 2, Resident Evil 3, Les Héros de l'Olympe, Les Travaux d'Apollon",
       "clue": "Déesse de la vengeance et de l'équilibre",
       "difficulty": 2,
-      "fatherName": "Nyx",
+      "motherName": "Nyx",
       "tags": "Amour, Mort, Sentiments"
     },
     {
@@ -2084,7 +2084,7 @@
       "popularCulture": "Smite, Smite 2, Les Héros de l'Olympe",
       "clue": "Dieu de la mort",
       "difficulty": 2,
-      "fatherName": "Nyx",
+      "motherName": "Nyx",
       "tags": "Mort"
     },
     {
@@ -2624,7 +2624,7 @@
       "popularCulture": "Smite, Smite 2, God of War III, Percy Jackson, Iliade, Les Héros de l'Olympe, Les Travaux d'Apollon",
       "clue": "Dieu de la lumière et des arts",
       "difficulty": 1,
-      "fatherName": "Zeus",
+      "fatherName": "Jupiter",
       "tags": "Arts"
     },
     {
@@ -2719,7 +2719,7 @@
       "mythology": "Romaine",
       "race": "Heroes",
       "equivalentName": "Héraclès",
-      "ascendantName": "Zeus",
+      "ascendantName": "Jupiter",
       "story": "Réalise 12 Travaux pour expier le meurtre de sa famille",
       "description": "Rendu fou par une déesse jalouse, il tue sa propre famille dans un accès de démence, et doit accomplir une série d'épreuves impossibles pour expier ce crime.",
       "popularCulture": "Smite, Smite 2, Astronomie",
