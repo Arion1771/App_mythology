@@ -114,7 +114,7 @@ class ListThemeCatalogTest {
     @Test
     fun `t08 muses theme always exposes the Classiques and Beotiennes sub-groups`() {
         val entites = listOf(
-            ent(1, "Calliope", "Grecque", "Muses", museType = "Grecque"),
+            ent(1, "Calliope", "Grecque", "Muses", museType = "Classique"),
             ent(2, "Mélété", "Grecque", "Muses", museType = "Beotienne"),
         )
         val g = groups("muses", entites)
