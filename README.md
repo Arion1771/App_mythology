@@ -12,6 +12,24 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.5.3)
 
+#### V4.5.6
+
+- Muse type "Grecque" renamed "Classique" (the nine Muses, daughters of Mnemosyne, as opposed to the three Boeotian Muses): the 9 Camenae, which belong to this type, are no longer presented as Greek muses in Roman mythology
+- Coelus's domain reworded without mentioning Ouranos, while staying distinct from Uranus's
+- Entities added/modified:
+  - Calliope : Grecque -> Classique (museType modified)
+  - Clio : Grecque -> Classique (museType modified)
+  - Érato : Grecque -> Classique (museType modified)
+  - Euterpe : Grecque -> Classique (museType modified)
+  - Melpomène : Grecque -> Classique (museType modified)
+  - Polymnie : Grecque -> Classique (museType modified)
+  - Terpsichore : Grecque -> Classique (museType modified)
+  - Thalie : Grecque -> Classique (museType modified)
+  - Uranie : Grecque -> Classique (museType modified)
+  - 9 Camènes : Grecque -> Classique (museType modified)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (domain modified)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (clue modified)
+
 #### V4.5.5
 
 - Parentage of every entity checked: each parent now belongs to the right mythology (Roman entities no longer have a Greek parent) and matches the reference genealogies; Nyx, a goddess, moves from the "Father" field to the "Mother" field of her children
@@ -73,6 +91,24 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.5.3)
+
+#### V4.5.6
+
+- Type de muse « Grecque » renommé « Classique » (les neuf Muses filles de Mnémosyne, par opposition aux trois Muses béotiennes) : les 9 Camènes, rattachées à ce type, ne sont plus présentées comme des muses grecques dans la mythologie romaine
+- Domaine de Coelus reformulé sans mention d'Ouranos, tout en restant distinct de celui d'Uranus
+- Ajout/Modification d'entités :
+  - Calliope : Grecque -> Classique (museType modifié)
+  - Clio : Grecque -> Classique (museType modifié)
+  - Érato : Grecque -> Classique (museType modifié)
+  - Euterpe : Grecque -> Classique (museType modifié)
+  - Melpomène : Grecque -> Classique (museType modifié)
+  - Polymnie : Grecque -> Classique (museType modifié)
+  - Terpsichore : Grecque -> Classique (museType modifié)
+  - Thalie : Grecque -> Classique (museType modifié)
+  - Uranie : Grecque -> Classique (museType modifié)
+  - 9 Camènes : Grecque -> Classique (museType modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (domain modifié)
+  - Coelus : Dieu du ciel romain, équivalent d'Ouranos -> Personnification latine du ciel (clue modifié)
 
 #### V4.5.5
 
