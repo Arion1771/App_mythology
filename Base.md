@@ -3,15 +3,15 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **519 entités**, **22 lieux**, **61 artéfacts**.
+Total : **576 entités**, **22 lieux**, **61 artéfacts**.
 
 ---
 
 ## Entités
 
-519 entités, groupées par mythologie puis par race.
+576 entités, groupées par mythologie puis par race.
 
-### Grecque (199)
+### Grecque (234)
 
 #### Cyclope (4)
 
@@ -20,11 +20,12 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Polyphème
 - Stéropès
 
-#### Dieu (54)
+#### Dieu (58)
 
 - 3 Moires
 - 9 Muses
 - Achlys
+- Achéloos
 - Aphrodite
 - Apollon
 - Artémis
@@ -53,6 +54,7 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Héphaïstos
 - Héra
 - Iris
+- Kéto
 - Morphée
 - Mélinoé
 - Niké
@@ -64,6 +66,8 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Pan
 - Perséphone
 - Phobos
+- Phorcys
+- Pontos
 - Poséidon
 - Potamoi
 - Tartare
@@ -83,8 +87,9 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Enyo
 - Pemphrédo
 
-#### Géant (14)
+#### Géant (15)
 
+- Agrios
 - Alcyonée
 - Clytios
 - Damasen
@@ -106,13 +111,15 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Cottos
 - Gygès
 
-#### Héros (38)
+#### Héros (52)
 
 - Achille
 - Agamemnon
 - Ajax le Grand
 - Ajax le Petit
+- Amazones
 - Arachné
+- Ariane
 - Atalante
 - Bellérophon
 - Calaïs
@@ -121,38 +128,51 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Circé
 - Diomède
 - Dédale
+- Galanthis
+- Ganymède
 - Hector
+- Hippolyte
+- Hécube
 - Héraclès
 - Icare
 - Jason
 - Lycaon
 - Midas
+- Minos
 - Médée
 - Méléagre
 - Ménélas
+- Narcisse
 - Nestor
 - Néoptolème
 - Oedipe
 - Orphée
+- Pandore
 - Paris
+- Pasiphaé
 - Patrocle
 - Perdix
 - Persée
 - Philoctète
+- Phinée
 - Pollux
+- Procuste
+- Psyché
 - Sisyphe
 - Tantale
 - Thésée
+- Triptolème
 - Télémaque
 - Ulysse
 - Zétés
 
-#### Monstre (53)
+#### Monstre (65)
 
 - Aigle du Caucase
 - Amalthée
 - Antée
 - Anémoi
+- Arai
 - Argos
 - Arion
 - Aura
@@ -162,17 +182,22 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Cerbère
 - Cercopès
 - Charybde
+- Chimère
 - Chiron
+- Chrysaor
 - Drakaina
 - Drakon
 - Dryade
 - Eidolon
 - Empuse
 - Euryale
+- Eurynomos
 - Griffon
 - Grées
+- Gégénéis
 - Géryon
 - Harpie
+- Hespérides
 - Hydre
 - Karpos
 - Ladon
@@ -180,12 +205,16 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Lestrygon
 - Lion de Némée
 - Lélaps
+- Makhai
 - Maron
+- Minotaure
 - Méduse
 - Naïade
 - Nessos
 - Néphélée
+- Néréides
 - Oiseaux du lac de Stymphale
+- Ophiotaurus
 - Orthos
 - Python
 - Pégase
@@ -198,10 +227,12 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Sirène
 - Sphinx
 - Sthéno
+- Talos
 - Telchine
 - Triton
 - Typhon
 - Échidna
+- Écho
 
 #### Muse (12)
 
@@ -218,16 +249,18 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Uranie
 - Érato
 
-#### Titan (15)
+#### Titan (19)
 
 - Astréos
 - Atlas
+- Calypso
 - Coéos
 - Crios
 - Cronos
 - Hypérion
 - Hélios
 - Japet
+- Léto
 - Mnémosyne
 - Océanos
 - Phébé
@@ -235,6 +268,8 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Rhéa
 - Séléné
 - Thémis
+- Téthys
+- Épiméthée
 
 #### Érinye (3)
 
@@ -242,7 +277,7 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Mégère
 - Tisiphone
 
-### Romaine (71)
+### Romaine (73)
 
 #### Cyclope (4)
 
@@ -251,7 +286,7 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Polyphemus
 - Steropes
 
-#### Dieu (53)
+#### Dieu (55)
 
 - 3 Parques
 - Aeolus
@@ -281,6 +316,8 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Junon
 - Jupiter
 - Juventas
+- Lares
+- Lupa
 - Mars
 - Mercure
 - Minerve
@@ -333,9 +370,9 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Saturne
 - Sol
 
-### Nordique (49)
+### Nordique (63)
 
-#### Dieu (19)
+#### Dieu (27)
 
 - 3 Nornes
 - Balder
@@ -344,29 +381,43 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Frigg
 - Heimdall
 - Hel
+- Höd
+- Hœnir
 - Idunn
 - Kvasir
+- Magni
 - Mimir
+- Módi
 - Njord
 - Odin
+- Ran
 - Sif
+- Sigyn
 - Skadi
 - Sol
 - Thor
 - Tyr
 - Ullr
 - Valkyrie
+- Vidar
+- Váli
 
-#### Géant (4)
+#### Géant (5)
 
+- Angrboda
 - Loki
 - Surtr
 - Utgard-Loki
 - Ymir
 
-#### Héros (1)
+#### Héros (6)
 
+- Andvari
+- Brokkr
 - Einherjar
+- Eitri
+- Líf
+- Lífthrasir
 
 #### Monstre (22)
 
@@ -398,6 +449,48 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Brynhild
 - Göndul
 - Sigrún
+
+### Égyptienne (34)
+
+#### Dieu (32)
+
+- Amon
+- Anhour
+- Anubis
+- Apophis
+- Bastet
+- Bès
+- Geb
+- Hathor
+- Horus
+- Hâpy
+- Isis
+- Khnoum
+- Khonsou
+- Khépri
+- Maat
+- Mout
+- Neith
+- Nekhbet
+- Nephtys
+- Nout
+- Osiris
+- Ptah
+- Rê
+- Sekhmet
+- Serket
+- Seth
+- Shou
+- Sobek
+- Sérapis
+- Taouret
+- Tefnout
+- Thot
+
+#### Monstre (2)
+
+- Ammit
+- Ouchebti
 
 ### Chinoise (31)
 
@@ -443,43 +536,6 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Serpent
 - Singe
 - Tigre
-
-### Égyptienne (29)
-
-#### Dieu (28)
-
-- Amon
-- Anhour
-- Anubis
-- Apophis
-- Bastet
-- Bès
-- Geb
-- Hathor
-- Horus
-- Hâpy
-- Isis
-- Khonsou
-- Khépri
-- Maat
-- Mout
-- Neith
-- Nephtys
-- Nout
-- Osiris
-- Ptah
-- Rê
-- Sekhmet
-- Serket
-- Seth
-- Shou
-- Sobek
-- Taouret
-- Thot
-
-#### Monstre (1)
-
-- Ouchebti
 
 ### Arthurienne (19)
 
@@ -648,6 +704,19 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Susanoo
 - Tsukuyomi
 
+### Européenne (8)
+
+#### Monstre (8)
+
+- Amphiptère
+- Basilic
+- Catoblépas
+- Cocatrix
+- Dragon
+- Drake
+- Manticore
+- Wyvern
+
 ### Celtique Gauloise (7)
 
 #### Dieu (7)
@@ -659,18 +728,6 @@ Total : **519 entités**, **22 lieux**, **61 artéfacts**.
 - Morrigan
 - Taranis
 - Teutatès
-
-### Européenne (7)
-
-#### Monstre (7)
-
-- Amphiptère
-- Basilic
-- Cocatrix
-- Dragon
-- Drake
-- Manticore
-- Wyvern
 
 ### Mésopotamienne (6)
 
@@ -971,22 +1028,22 @@ main sur les entités concernées dans `prepopulate.json`.
 
 | Thème | Taille | Essais autorisés | Source |
 |---|---|---|---|
-| Mythologie grecque | 199 | 10 | champ |
-| Mythologie romaine | 71 | 10 | champ |
+| Mythologie grecque | 234 | 10 | champ |
+| Mythologie romaine | 73 | 10 | champ |
 | Mythologie hindoue | 13 | 3 | champ |
 | Mythologie chinoise | 31 | 5 | champ |
 | Mythologie shinto | 9 | 3 | champ |
 | Mythologie d'Amérique du Sud | 13 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
-| Dieux | 229 | 10 | champ |
-| Monstres | 109 | 10 | champ |
-| Héros | 49 | 5 | champ |
+| Dieux | 247 | 10 | champ |
+| Monstres | 123 | 10 | champ |
+| Héros | 68 | 10 | champ |
 | Artefacts | 61 | 10 | tous les artéfacts |
-| Entités | 519 | 10 | toutes les entités |
+| Entités | 576 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
-| Géants grecs | 14 | 3 | champ |
-| Enfants de Gaïa et Ouranos | 22 | 5 | champ (Titans / Cyclopes / Hécatonchires, grecs uniquement) |
+| Géants grecs | 15 | 3 | champ |
+| Enfants de Gaïa et Ouranos | 26 | 5 | champ (Titans / Cyclopes / Hécatonchires, grecs uniquement) |
 | Monstres des 12 travaux | 8 | 3 | `listThemes` |
 | Guerriers grecs devant Troie | 11 | 3 | `listThemes` |
 | Archanges et démons | 15 | 3 | champ (Archanges / Démons) |

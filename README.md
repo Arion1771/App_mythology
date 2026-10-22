@@ -10,9 +10,9 @@ Three quiz modes let you test your knowledge — Classic (a clue, guess the name
 
 Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANGELOG.md) tracks the full version history of the project, and [Base.md](Base.md) is a complete, always up-to-date inventory of every entity, place and artifact currently in the database, including the theme catalog used by the List quiz.
 
-### Latest addition — V4.5.6
+### Latest addition — V4.5.7
 
-The "Greek" muse type is renamed "Classic", so the 9 Camènes are no longer shown as Greek muses in Roman mythology, and Coelus's domain no longer mentions Ouranos while staying distinct from Uranus. Updated entities: Calliope, Clio, Érato, Euterpe, Melpomène, Polymnie, Terpsichore, Thalie, Uranie, 9 Camènes, Coelus.
+57 entities from Rick Riordan's novels (Percy Jackson, Heroes of Olympus, The Trials of Apollo, Magnus Chase, The Kane Chronicles) are added, including the gods who survive Ragnarök and the human couple who repopulate the world after it, bringing the database to 576 entities. The "Heroes" theme of the List quiz now allows 10 attempts instead of 5, as it exceeds 50 entries. Added entities: Minotaure, Chimère, Néréides, Hespérides, Écho, Téthys, Calypso, Ariane, Amazones, Hippolyte, Narcisse, Pandore, Minos, Chrysaor, Léto, Épiméthée, Agrios, Pontos, Phorcys, Kéto, Achéloos, Ganymède, Psyché, Pasiphaé, Procuste, Ophiotaurus, Talos, Gégénéis, Eurynomos, Arai, Makhai, Triptolème, Phinée, Galanthis, Hécube, Lupa, Lares, Ran, Angrboda, Vidar, Váli, Magni, Módi, Andvari, Brokkr, Eitri, Sigyn, Höd, Hœnir, Líf, Lífthrasir, Tefnout, Khnoum, Ammit, Nekhbet, Sérapis, Catoblépas.
 
 ### Getting started
 
@@ -51,9 +51,9 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
-### Dernier ajout — V4.5.6
+### Dernier ajout — V4.5.7
 
-Le type de muse « Grecque » est renommé « Classique » : les 9 Camènes ne sont plus présentées comme des muses grecques dans la mythologie romaine, et le domaine de Coelus ne mentionne plus Ouranos tout en restant distinct de celui d'Uranus. Entités modifiées : Calliope, Clio, Érato, Euterpe, Melpomène, Polymnie, Terpsichore, Thalie, Uranie, 9 Camènes, Coelus.
+Ajout de 57 entités issues des romans de Rick Riordan (Percy Jackson, Les Héros de l'Olympe, Les Travaux d'Apollon, Magnus Chase, Les Chroniques de Kane), dont les dieux survivants du Ragnarök et le couple humain qui repeuple le monde après lui, portant la base à 576 entités. Le thème « Héros » du mode Liste autorise désormais 10 essais au lieu de 5, le thème dépassant 50 entrées. Entités ajoutées : Minotaure, Chimère, Néréides, Hespérides, Écho, Téthys, Calypso, Ariane, Amazones, Hippolyte, Narcisse, Pandore, Minos, Chrysaor, Léto, Épiméthée, Agrios, Pontos, Phorcys, Kéto, Achéloos, Ganymède, Psyché, Pasiphaé, Procuste, Ophiotaurus, Talos, Gégénéis, Eurynomos, Arai, Makhai, Triptolème, Phinée, Galanthis, Hécube, Lupa, Lares, Ran, Angrboda, Vidar, Váli, Magni, Módi, Andvari, Brokkr, Eitri, Sigyn, Höd, Hœnir, Líf, Lífthrasir, Tefnout, Khnoum, Ammit, Nekhbet, Sérapis, Catoblépas.
 
 ### Démarrage
 
