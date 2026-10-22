@@ -2575,6 +2575,479 @@
     },
     {
       "id": 200,
+      "name": "Minotaure",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Mi-Homme Mi-Taureau",
+      "description": "Né des amours d'une reine et d'un taureau envoyé par Poséidon, il est enfermé au cœur d'un dédale inextricable où il dévore les jeunes Athéniens livrés en tribut.",
+      "popularCulture": "Percy Jackson, Hadès, Assassin's Creed Odyssey, God of War",
+      "clue": "Monstre à tête de taureau enfermé dans le Labyrinthe",
+      "difficulty": 1,
+      "motherName": "Pasiphaé",
+      "tags": "Animal, Gardien"
+    },
+    {
+      "id": 201,
+      "name": "Chimère",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Lion-Chèvre-Serpent",
+      "description": "Créature crachant le feu, avec une tête de lion, un corps de chèvre et une queue de serpent, elle ravage la Lycie jusqu'à ce qu'un cavalier ailé l'abatte depuis les airs.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Monstre à tête de lion, corps de chèvre et queue de serpent",
+      "difficulty": 1,
+      "fatherName": "Typhon",
+      "motherName": "Échidna",
+      "tags": "Animal, Feu"
+    },
+    {
+      "id": 202,
+      "name": "Néréides",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Nymphe marine",
+      "description": "Les cinquante filles du vieux dieu de la mer vivent dans les profondeurs, chevauchent les dauphins et viennent en aide aux marins en détresse.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Cinquante nymphes de la mer, filles de Nérée",
+      "difficulty": 1,
+      "fatherName": "Nérée",
+      "motherName": "Doris",
+      "tags": "Eau"
+    },
+    {
+      "id": 203,
+      "name": "Hespérides",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Nymphe du couchant",
+      "description": "Nymphes du soir, elles veillent sur un jardin à l'extrême occident où pousse l'arbre aux pommes d'or offert à Héra pour ses noces, avec l'aide d'un dragon.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Nymphes gardiennes du jardin aux pommes d'or",
+      "difficulty": 1,
+      "fatherName": "Atlas",
+      "tags": "Gardien, Nuit"
+    },
+    {
+      "id": 204,
+      "name": "Écho",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Nymphe des montagnes",
+      "description": "Punie par Héra pour l'avoir distraite par ses bavardages, elle ne peut plus que répéter les derniers mots des autres, et dépérit d'amour pour un jeune homme qui ne s'aime que lui-même.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Nymphe condamnée à répéter les derniers mots entendus",
+      "difficulty": 1,
+      "tags": "Amour, Sentiments"
+    },
+    {
+      "id": 205,
+      "name": "Téthys",
+      "mythology": "Grecque",
+      "race": "Titan",
+      "domain": "Titanide des eaux douces",
+      "equivalentName": null,
+      "description": "Épouse du Titan du fleuve qui encercle le monde, elle donne naissance à des milliers de fleuves et de nymphes des eaux, et recueille Héra enfant pendant la guerre contre les Titans.",
+      "clue": "Titanide des eaux douces, mère des fleuves",
+      "difficulty": 1,
+      "fatherName": "Ouranos",
+      "motherName": "Gaïa",
+      "tags": "Eau, Fertilité"
+    },
+    {
+      "id": 206,
+      "name": "Calypso",
+      "mythology": "Grecque",
+      "race": "Titan",
+      "domain": "Titanide de l'île d'Ogygie",
+      "equivalentName": null,
+      "description": "Exilée sur une île paradisiaque, elle retient pendant sept ans un héros naufragé en lui promettant l'immortalité, jusqu'à ce que les dieux lui ordonnent de le laisser partir.",
+      "popularCulture": "Percy Jackson, Les Héros de l'Olympe, Les Travaux d'Apollon, Odyssée, Pirates des Caraïbes",
+      "clue": "Titanide exilée sur l'île d'Ogygie, fille d'Atlas",
+      "difficulty": 1,
+      "fatherName": "Atlas",
+      "tags": "Amour, Eau"
+    },
+    {
+      "id": 207,
+      "name": "Ariane",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Zeus (Grand-père)",
+      "story": "Princesse crétoise, donne à Thésée le fil qui lui permet de sortir du Labyrinthe, puis devient l'épouse de Dionysos",
+      "description": "Après avoir trahi sa famille par amour pour un héros étranger, elle est abandonnée par lui sur une île, où un dieu la trouve, l'épouse et la rend immortelle.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Princesse au fil qui guide Thésée hors du Labyrinthe",
+      "difficulty": 1,
+      "fatherName": "Minos",
+      "motherName": "Pasiphaé",
+      "tags": "Amour, Humain, Ruse"
+    },
+    {
+      "id": 208,
+      "name": "Amazones",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Arès",
+      "story": "Peuple de femmes guerrières descendantes d'Arès, vivant sans hommes aux confins du monde grec",
+      "description": "Cavalières et archères redoutées, elles combattent aux côtés des Troyens et affrontent plusieurs grands héros venus leur dérober des trésors ou leurs reines.",
+      "popularCulture": "Les Héros de l'Olympe, Wonder Woman",
+      "clue": "Peuple de femmes guerrières, filles d'Arès",
+      "difficulty": 1,
+      "tags": "Chasse, Guerre, Humain"
+    },
+    {
+      "id": 209,
+      "name": "Hippolyte",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Arès",
+      "story": "Reine des Amazones, dont la ceinture est l'objet du neuvième travail d'Héraclès",
+      "description": "Souveraine d'un peuple guerrier, elle accepte d'offrir sa ceinture magique à un héros venu la réclamer, avant qu'une rumeur semée par Héra ne transforme la rencontre en bataille sanglante.",
+      "popularCulture": "Wonder Woman",
+      "clue": "Reine des Amazones à la ceinture convoitée par Héraclès",
+      "difficulty": 1,
+      "tags": "Guerre, Humain, Royauté"
+    },
+    {
+      "id": 210,
+      "name": "Narcisse",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Céphise",
+      "story": "Jeune homme d'une grande beauté, tombé amoureux de son propre reflet",
+      "description": "Insensible à tous ceux qui l'aiment, il est puni par les dieux en s'éprenant de son reflet dans une source, qu'il contemple jusqu'à en mourir avant d'être changé en fleur.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Amoureux de son propre reflet",
+      "difficulty": 1,
+      "tags": "Amour, Humain, Sentiments"
+    },
+    {
+      "id": 211,
+      "name": "Pandore",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Première femme, façonnée par Héphaïstos, qui ouvre la jarre libérant tous les maux sur l'humanité",
+      "description": "Créée par les dieux et dotée de tous les dons pour punir les hommes, elle ouvre par curiosité un récipient interdit dont s'échappent tous les fléaux, seul l'espoir restant enfermé au fond.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Première femme, ouvre la jarre libérant les maux du monde",
+      "difficulty": 1,
+      "tags": "Destin, Humain"
+    },
+    {
+      "id": 212,
+      "name": "Minos",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Zeus",
+      "story": "Roi de Crète qui fait construire le Labyrinthe, devenu après sa mort l'un des juges des Enfers",
+      "description": "Souverain d'une grande île, il exige d'Athènes un tribut de jeunes gens pour nourrir le monstre de son palais, puis poursuit l'architecte qui l'a trahi jusqu'en Sicile, où il trouve la mort.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Roi de Crète, juge des Enfers",
+      "difficulty": 1,
+      "motherName": "Europe",
+      "tags": "Humain, Justice, Mort, Royauté"
+    },
+    {
+      "id": 213,
+      "name": "Chrysaor",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Guerrier",
+      "description": "Jailli tout armé du cou tranché de sa mère en même temps qu'un cheval ailé, il porte une épée d'or et devient le père d'un géant à trois corps.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Guerrier à l'épée d'or, né du cou tranché de Méduse",
+      "difficulty": 2,
+      "fatherName": "Poséidon",
+      "motherName": "Méduse",
+      "tags": "Guerre, Richesse"
+    },
+    {
+      "id": 214,
+      "name": "Léto",
+      "mythology": "Grecque",
+      "race": "Titan",
+      "domain": "Titanide de la maternité",
+      "equivalentName": null,
+      "description": "Poursuivie par la jalousie d'Héra, elle erre de terre en terre sans trouver où accoucher, jusqu'à une île flottante où elle met au monde des jumeaux divins, archère et musicien.",
+      "popularCulture": "Les Travaux d'Apollon",
+      "clue": "Titanide, mère d'Apollon et d'Artémis",
+      "difficulty": 2,
+      "fatherName": "Coéos",
+      "motherName": "Phébé",
+      "tags": "Fertilité, Nuit"
+    },
+    {
+      "id": 215,
+      "name": "Épiméthée",
+      "mythology": "Grecque",
+      "race": "Titan",
+      "domain": "Titan de l'imprévoyance",
+      "equivalentName": null,
+      "description": "Frère étourdi du voleur du feu, il distribue toutes les qualités aux animaux sans en garder pour les hommes, puis accepte malgré les avertissements l'épouse que lui envoient les dieux.",
+      "clue": "Titan de l'imprévoyance, frère de Prométhée",
+      "difficulty": 2,
+      "fatherName": "Japet",
+      "tags": "Création, Destin"
+    },
+    {
+      "id": 216,
+      "name": "Agrios",
+      "mythology": "Grecque",
+      "race": "Giant",
+      "giantType": "Geant",
+      "description": "Géant sauvage né pour combattre les dieux, il est abattu pendant la Gigantomachie par les Moires armées de massues de bronze.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Géant abattu par les Moires pendant la Gigantomachie",
+      "difficulty": 2,
+      "fatherName": "Ouranos",
+      "motherName": "Gaïa",
+      "tags": "Guerre, Terre"
+    },
+    {
+      "id": 217,
+      "name": "Pontos",
+      "mythology": "Grecque",
+      "race": "God",
+      "godType": "Primordial",
+      "domain": "Dieu primordial de la mer",
+      "equivalentName": null,
+      "description": "Engendré par la Terre seule aux origines du monde, il personnifie les flots profonds et devient le père de plusieurs anciennes divinités et monstres marins.",
+      "clue": "Dieu primordial de la mer",
+      "difficulty": 2,
+      "motherName": "Gaïa",
+      "tags": "Création, Eau"
+    },
+    {
+      "id": 218,
+      "name": "Phorcys",
+      "mythology": "Grecque",
+      "race": "God",
+      "godType": "Primordial",
+      "domain": "Dieu des profondeurs marines et de leurs monstres",
+      "equivalentName": null,
+      "description": "Vieillard de la mer à la peau de crustacé selon certaines représentations, il engendre avec sa sœur une redoutable descendance de monstres, des sœurs aux cheveux de serpents aux vieilles femmes à l'œil unique.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Dieu des profondeurs marines, père des Gorgones",
+      "difficulty": 2,
+      "fatherName": "Pontos",
+      "motherName": "Gaïa",
+      "tags": "Animal, Eau"
+    },
+    {
+      "id": 219,
+      "name": "Kéto",
+      "mythology": "Grecque",
+      "race": "God",
+      "godType": "Primordial",
+      "domain": "Déesse des dangers de la mer et des monstres marins",
+      "equivalentName": null,
+      "description": "Personnification des périls des océans, elle donne à son frère et époux une progéniture monstrueuse, dont le dragon gardien des pommes d'or.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Déesse des monstres marins, mère des Gorgones",
+      "difficulty": 2,
+      "fatherName": "Pontos",
+      "motherName": "Gaïa",
+      "tags": "Animal, Eau"
+    },
+    {
+      "id": 220,
+      "name": "Achéloos",
+      "mythology": "Grecque",
+      "race": "God",
+      "godType": "Autre",
+      "domain": "Dieu du plus grand fleuve de Grèce",
+      "equivalentName": null,
+      "description": "Capable de prendre la forme d'un serpent ou d'un taureau, il affronte Héraclès pour la main de Déjanire et perd une corne dans le combat, qui devient la corne d'abondance.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Dieu-fleuve qui perd une corne face à Héraclès",
+      "difficulty": 2,
+      "fatherName": "Océanos",
+      "motherName": "Téthys",
+      "tags": "Animal, Eau"
+    },
+    {
+      "id": 221,
+      "name": "Ganymède",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Prince troyen enlevé par Zeus changé en aigle, devenu l'échanson des dieux et immortel",
+      "description": "Jugé le plus beau des mortels, il est emporté sur l'Olympe par un aigle pour servir le nectar à la table des dieux, et sa figure est placée parmi les constellations.",
+      "popularCulture": "Percy Jackson, Astronomie",
+      "clue": "Prince troyen devenu l'échanson des dieux",
+      "difficulty": 2,
+      "fatherName": "Tros",
+      "tags": "Ciel, Humain, Troyens"
+    },
+    {
+      "id": 222,
+      "name": "Psyché",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Mortelle aimée d'Éros, rendue immortelle après une série d'épreuves imposées par Aphrodite",
+      "description": "Unie à un époux invisible qu'elle n'a pas le droit de regarder, elle trahit cette interdiction par curiosité et doit accomplir des tâches impossibles pour le retrouver et devenir une déesse.",
+      "clue": "Mortelle aimée d'Éros, personnification de l'âme",
+      "difficulty": 2,
+      "tags": "Amour, Humain, Sentiments"
+    },
+    {
+      "id": 223,
+      "name": "Pasiphaé",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Hélios",
+      "story": "Magicienne, fille d'Hélios et reine de Crète, mère du Minotaure",
+      "description": "Frappée par la vengeance d'un dieu marin contre son époux, elle s'éprend d'un taureau et donne naissance à un monstre ; experte en sortilèges, elle maudit les infidélités de son mari.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Reine de Crète, mère du Minotaure",
+      "difficulty": 2,
+      "tags": "Amour, Humain, Magie, Royauté"
+    },
+    {
+      "id": 224,
+      "name": "Procuste",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Poséidon",
+      "story": "Brigand de l'Attique qui ajustait ses victimes à la taille de son lit, tué par Thésée",
+      "description": "Il offre l'hospitalité aux voyageurs puis les étire ou les ampute pour qu'ils correspondent exactement à la longueur de son lit, jusqu'à ce qu'un jeune héros lui inflige le même sort.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Brigand qui ajustait ses victimes à la taille de son lit",
+      "difficulty": 2,
+      "tags": "Humain, Ruse"
+    },
+    {
+      "id": 225,
+      "name": "Ophiotaurus",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Mi-Taureau Mi-Serpent",
+      "description": "Créature à l'avant de taureau et à l'arrière de serpent, une prophétie annonce que quiconque brûlera ses entrailles pourra renverser les dieux.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Mi-taureau mi-serpent dont les entrailles brûlées donneraient le pouvoir de vaincre les dieux",
+      "difficulty": 3,
+      "tags": "Animal, Destin, Eau"
+    },
+    {
+      "id": 226,
+      "name": "Talos",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Automate de bronze",
+      "description": "Géant de bronze forgé pour protéger la Crète, il fait trois fois par jour le tour de l'île et lance des rochers sur les navires, jusqu'à ce qu'une magicienne lui fasse perdre son unique veine de métal liquide.",
+      "popularCulture": "Percy Jackson, Jason et les Argonautes",
+      "clue": "Géant de bronze gardien de la Crète",
+      "difficulty": 3,
+      "tags": "Artisanat, Gardien"
+    },
+    {
+      "id": 227,
+      "name": "Gégénéis",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Géant à six bras",
+      "description": "Géants nés de la terre et dotés de six bras, ils attaquent les Argonautes près de Cyzique et sont abattus un à un par les flèches d'Héraclès.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Géants à six bras nés de la terre",
+      "difficulty": 3,
+      "motherName": "Gaïa",
+      "tags": "Guerre, Terre"
+    },
+    {
+      "id": 228,
+      "name": "Eurynomos",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Démon des Enfers",
+      "description": "Démon à la peau bleu-noir comme une mouche à viande, il dévore la chair des morts pour n'en laisser que les os, assis sur une peau de vautour.",
+      "popularCulture": "Les Travaux d'Apollon",
+      "clue": "Démon des Enfers qui dévore la chair des morts",
+      "difficulty": 3,
+      "tags": "Mort"
+    },
+    {
+      "id": 229,
+      "name": "Arai",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Esprit",
+      "description": "Esprits des malédictions, elles accomplissent les imprécations lancées par les mourants et les victimes contre ceux qui leur ont fait du tort.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Esprits des malédictions",
+      "difficulty": 3,
+      "motherName": "Nyx",
+      "tags": "Destin, Justice, Nuit"
+    },
+    {
+      "id": 230,
+      "name": "Makhai",
+      "mythology": "Grecque",
+      "race": "Monster",
+      "monsterType": "Esprit",
+      "description": "Filles de la discorde, elles incarnent la fureur des combats et des batailles, aux côtés de leurs nombreux frères et sœurs personnifiant les maux de la guerre.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Esprits des batailles et des combats",
+      "difficulty": 3,
+      "motherName": "Éris",
+      "tags": "Guerre"
+    },
+    {
+      "id": 231,
+      "name": "Triptolème",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Prince d'Éleusis à qui Déméter enseigne l'agriculture, qu'il répand dans le monde sur un char tiré par des serpents ailés",
+      "description": "Élevé par une déesse en deuil de sa fille, il reçoit d'elle les premiers grains de blé et parcourt la terre pour apprendre aux hommes à labourer et à semer.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Prince d'Éleusis qui enseigne l'agriculture aux hommes",
+      "difficulty": 3,
+      "fatherName": "Céléos",
+      "tags": "Fertilité, Humain, Terre"
+    },
+    {
+      "id": 232,
+      "name": "Phinée",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": "Poséidon",
+      "story": "Roi devin de Thrace, aveuglé et tourmenté par les Harpies, délivré par les Argonautes",
+      "description": "Puni pour avoir trop révélé les secrets des dieux, il voit chacun de ses repas souillé par des créatures ailées, jusqu'à ce que deux héros les chassent en échange de ses prophéties.",
+      "popularCulture": "Les Héros de l'Olympe, Jason et les Argonautes",
+      "clue": "Roi devin aveugle tourmenté par les Harpies",
+      "difficulty": 3,
+      "tags": "Humain, Prophétie, Royauté"
+    },
+    {
+      "id": 233,
+      "name": "Galanthis",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Servante d'Alcmène qui trompe les déesses retenant la naissance d'Héraclès, changée en belette, compagne d'Hécate",
+      "description": "En annonçant faussement une naissance déjà accomplie, elle dupe les divinités qui empêchaient sa maîtresse d'accoucher, et est punie par une métamorphose en petit animal.",
+      "popularCulture": "Percy Jackson",
+      "clue": "Servante d'Alcmène changée en belette",
+      "difficulty": 3,
+      "tags": "Animal, Humain, Ruse"
+    },
+    {
+      "id": 234,
+      "name": "Hécube",
+      "mythology": "Grecque",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Reine de Troie, épouse de Priam, changée en chienne à la fin de la guerre et devenue compagne d'Hécate",
+      "description": "Après avoir vu périr presque tous ses enfants lors de la chute de sa cité, elle se venge cruellement du meurtrier de son dernier fils avant d'être métamorphosée en chienne.",
+      "popularCulture": "Iliade, Percy Jackson",
+      "clue": "Reine de Troie changée en chienne",
+      "difficulty": 3,
+      "tags": "Animal, Humain, Royauté, Troyens"
+    },
+    {
+      "id": 235,
       "name": "3 Parques",
       "mythology": "Romaine",
       "race": "God",
@@ -2593,14 +3066,14 @@
       "domain": "Équivalent romain des 9 Muses grecques",
       "museType": "Classique",
       "equivalentName": "9 Muses",
-      "id": 201,
+      "id": 236,
       "description": "Ces neuf déesses inspiratrices président chacune à un art différent et sont associées à une source sacrée proche de Rome.",
       "clue": "Équivalent romain des 9 Muses grecques",
       "difficulty": 2,
       "tags": "Arts, Eau"
     },
     {
-      "id": 202,
+      "id": 237,
       "name": "Aeolus",
       "mythology": "Romaine",
       "race": "God",
@@ -2613,7 +3086,7 @@
       "tags": "Gardien, Vent"
     },
     {
-      "id": 203,
+      "id": 238,
       "name": "Apollon",
       "mythology": "Romaine",
       "race": "God",
@@ -2628,7 +3101,7 @@
       "tags": "Arts"
     },
     {
-      "id": 204,
+      "id": 239,
       "name": "Bacchus",
       "mythology": "Romaine",
       "race": "God",
@@ -2643,7 +3116,7 @@
       "tags": "Arts"
     },
     {
-      "id": 205,
+      "id": 240,
       "name": "Cérès",
       "mythology": "Romaine",
       "race": "God",
@@ -2658,7 +3131,7 @@
       "tags": "Fertilité, Terre"
     },
     {
-      "id": 206,
+      "id": 241,
       "name": "Cupidon",
       "mythology": "Romaine",
       "race": "God",
@@ -2673,7 +3146,7 @@
       "tags": "Amour, Destin"
     },
     {
-      "id": 207,
+      "id": 242,
       "name": "Diane",
       "mythology": "Romaine",
       "race": "God",
@@ -2688,7 +3161,7 @@
       "tags": "Chasse"
     },
     {
-      "id": 208,
+      "id": 243,
       "name": "Faunus",
       "mythology": "Romaine",
       "race": "God",
@@ -2701,7 +3174,7 @@
       "tags": "Gardien"
     },
     {
-      "id": 209,
+      "id": 244,
       "name": "Furies",
       "mythology": "Romaine",
       "race": "God",
@@ -2714,7 +3187,7 @@
       "tags": "Justice"
     },
     {
-      "id": 210,
+      "id": 245,
       "name": "Hercule",
       "mythology": "Romaine",
       "race": "Heroes",
@@ -2729,7 +3202,7 @@
       "tags": "Humain"
     },
     {
-      "id": 211,
+      "id": 246,
       "name": "Junon",
       "mythology": "Romaine",
       "race": "God",
@@ -2744,7 +3217,7 @@
       "tags": "Royauté"
     },
     {
-      "id": 212,
+      "id": 247,
       "name": "Jupiter",
       "mythology": "Romaine",
       "race": "God",
@@ -2758,7 +3231,7 @@
       "tags": "Ciel, Royauté"
     },
     {
-      "id": 213,
+      "id": 248,
       "name": "Luna",
       "mythology": "Romaine",
       "race": "Titan",
@@ -2770,7 +3243,7 @@
       "tags": "Amour, Ciel, Mort, Nuit, Terre, Lune"
     },
     {
-      "id": 214,
+      "id": 249,
       "name": "Mars",
       "mythology": "Romaine",
       "race": "God",
@@ -2786,7 +3259,7 @@
       "tags": "Gardien, Guerre"
     },
     {
-      "id": 215,
+      "id": 250,
       "name": "Mercure",
       "mythology": "Romaine",
       "race": "God",
@@ -2801,7 +3274,7 @@
       "tags": "Gardien, Messager"
     },
     {
-      "id": 216,
+      "id": 251,
       "name": "Minerve",
       "mythology": "Romaine",
       "race": "God",
@@ -2816,7 +3289,7 @@
       "tags": "Sagesse"
     },
     {
-      "id": 217,
+      "id": 252,
       "name": "Neptune",
       "mythology": "Romaine",
       "race": "God",
@@ -2831,7 +3304,7 @@
       "tags": "Eau"
     },
     {
-      "id": 218,
+      "id": 253,
       "name": "Pluton",
       "mythology": "Romaine",
       "race": "God",
@@ -2846,7 +3319,7 @@
       "tags": "Royauté, Terre, Richesse"
     },
     {
-      "id": 219,
+      "id": 254,
       "name": "Polyphemus",
       "mythology": "Romaine",
       "race": "Cyclope",
@@ -2859,7 +3332,7 @@
       "tags": "Eau, Ruse, Terre"
     },
     {
-      "id": 220,
+      "id": 255,
       "name": "Rémus",
       "mythology": "Romaine",
       "race": "Heroes",
@@ -2872,7 +3345,7 @@
       "tags": "Animal, Eau, Humain"
     },
     {
-      "id": 221,
+      "id": 256,
       "name": "Romulus",
       "mythology": "Romaine",
       "race": "Heroes",
@@ -2885,7 +3358,7 @@
       "tags": "Animal, Eau, Humain"
     },
     {
-      "id": 222,
+      "id": 257,
       "name": "Saturne",
       "mythology": "Romaine",
       "race": "Titan",
@@ -2899,7 +3372,7 @@
       "tags": "Destin, Prophétie, Royauté, Ruse, Terre"
     },
     {
-      "id": 223,
+      "id": 258,
       "name": "Sol",
       "mythology": "Romaine",
       "race": "Titan",
@@ -2911,7 +3384,7 @@
       "tags": "Ciel, Jour, Soleil, Terre"
     },
     {
-      "id": 224,
+      "id": 259,
       "name": "Tartarus",
       "mythology": "Romaine",
       "race": "God",
@@ -2924,7 +3397,7 @@
       "tags": "Ciel, Terre"
     },
     {
-      "id": 225,
+      "id": 260,
       "name": "Terra",
       "mythology": "Romaine",
       "race": "God",
@@ -2938,7 +3411,7 @@
       "tags": "Ciel, Terre"
     },
     {
-      "id": 226,
+      "id": 261,
       "name": "Uranus",
       "mythology": "Romaine",
       "race": "God",
@@ -2951,7 +3424,7 @@
       "tags": "Ciel, Nuit"
     },
     {
-      "id": 227,
+      "id": 262,
       "name": "Vénus",
       "mythology": "Romaine",
       "race": "God",
@@ -2965,7 +3438,7 @@
       "tags": "Amour, Magie"
     },
     {
-      "id": 228,
+      "id": 263,
       "name": "Vesta",
       "mythology": "Romaine",
       "race": "God",
@@ -2979,7 +3452,7 @@
       "tags": "Feu"
     },
     {
-      "id": 229,
+      "id": 264,
       "name": "Vulcain",
       "mythology": "Romaine",
       "race": "God",
@@ -2995,7 +3468,7 @@
       "tags": "Artisanat, Feu"
     },
     {
-      "id": 230,
+      "id": 265,
       "name": "Arges",
       "mythology": "Romaine",
       "race": "Cyclope",
@@ -3008,7 +3481,7 @@
       "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
-      "id": 231,
+      "id": 266,
       "name": "Brontes",
       "mythology": "Romaine",
       "race": "Cyclope",
@@ -3021,7 +3494,7 @@
       "tags": "Artisanat, Foudre, Royauté, Terre"
     },
     {
-      "id": 232,
+      "id": 267,
       "name": "Caligo",
       "mythology": "Romaine",
       "race": "God",
@@ -3034,7 +3507,7 @@
       "tags": "Nuit, Ombres, Sentiments"
     },
     {
-      "id": 233,
+      "id": 268,
       "name": "Chione",
       "mythology": "Romaine",
       "race": "God",
@@ -3047,7 +3520,7 @@
       "tags": "Messager, Vent"
     },
     {
-      "id": 234,
+      "id": 269,
       "name": "Crius",
       "mythology": "Romaine",
       "race": "Titan",
@@ -3061,7 +3534,7 @@
       "tags": "Terre"
     },
     {
-      "id": 235,
+      "id": 270,
       "name": "Dies",
       "mythology": "Romaine",
       "race": "God",
@@ -3074,7 +3547,7 @@
       "tags": "Jour, Nuit"
     },
     {
-      "id": 236,
+      "id": 271,
       "name": "Discordia",
       "mythology": "Romaine",
       "race": "God",
@@ -3088,7 +3561,7 @@
       "tags": "Guerre, Sentiments"
     },
     {
-      "id": 237,
+      "id": 272,
       "name": "Énée",
       "mythology": "Romaine",
       "race": "Heroes",
@@ -3101,7 +3574,7 @@
       "tags": "Humain, Troyens"
     },
     {
-      "id": 238,
+      "id": 273,
       "name": "Erebus",
       "mythology": "Romaine",
       "race": "God",
@@ -3114,7 +3587,7 @@
       "tags": "Mort, Nuit, Ombres"
     },
     {
-      "id": 239,
+      "id": 274,
       "name": "Esculape",
       "mythology": "Romaine",
       "race": "God",
@@ -3127,7 +3600,7 @@
       "tags": "Guérison, Mort, Royauté"
     },
     {
-      "id": 240,
+      "id": 275,
       "name": "Faune",
       "mythology": "Romaine",
       "race": "Monster",
@@ -3139,7 +3612,7 @@
       "tags": "Animal"
     },
     {
-      "id": 241,
+      "id": 276,
       "name": "Formido",
       "mythology": "Romaine",
       "race": "God",
@@ -3152,7 +3625,7 @@
       "tags": "Guerre, Sentiments"
     },
     {
-      "id": 242,
+      "id": 277,
       "name": "Fortuna",
       "mythology": "Romaine",
       "race": "God",
@@ -3170,7 +3643,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Dieu des choix et des portes",
-      "id": 243,
+      "id": 278,
       "description": "Doté de deux visages tournés en sens opposés, il observe simultanément le passé et l'avenir et préside à tous les commencements.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des choix et des portes",
@@ -3178,7 +3651,7 @@
       "tags": "Gardien"
     },
     {
-      "id": 244,
+      "id": 279,
       "name": "Justitia",
       "mythology": "Romaine",
       "race": "Titan",
@@ -3190,7 +3663,7 @@
       "tags": "Justice, Terre"
     },
     {
-      "id": 245,
+      "id": 280,
       "name": "Juventas",
       "mythology": "Romaine",
       "race": "God",
@@ -3203,7 +3676,7 @@
       "tags": "Gardien"
     },
     {
-      "id": 246,
+      "id": 281,
       "name": "Iapetus",
       "mythology": "Romaine",
       "race": "Titan",
@@ -3217,7 +3690,7 @@
       "tags": "Destin, Ruse, Terre"
     },
     {
-      "id": 247,
+      "id": 282,
       "name": "Morpheus",
       "mythology": "Romaine",
       "race": "God",
@@ -3230,7 +3703,7 @@
       "difficulty": 2
     },
     {
-      "id": 248,
+      "id": 283,
       "name": "Mors",
       "mythology": "Romaine",
       "race": "God",
@@ -3243,7 +3716,7 @@
       "tags": "Mort"
     },
     {
-      "id": 249,
+      "id": 284,
       "name": "Nereus",
       "mythology": "Romaine",
       "race": "God",
@@ -3256,7 +3729,7 @@
       "tags": "Eau, Sagesse"
     },
     {
-      "id": 250,
+      "id": 285,
       "name": "Nox",
       "mythology": "Romaine",
       "race": "God",
@@ -3270,7 +3743,7 @@
       "tags": "Nuit, Royauté"
     },
     {
-      "id": 251,
+      "id": 286,
       "name": "Proserpine",
       "mythology": "Romaine",
       "race": "God",
@@ -3291,7 +3764,7 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Dieu des Forêts",
-      "id": 252,
+      "id": 287,
       "description": "Divinité rustique protégeant les frontières entre terres cultivées et forêts sauvages, il est honoré par les paysans et les bûcherons.",
       "popularCulture": "Smite, Smite 2",
       "clue": "Dieu des Forêts",
@@ -3299,7 +3772,7 @@
       "tags": "Gardien"
     },
     {
-      "id": 253,
+      "id": 288,
       "name": "Somnus",
       "mythology": "Romaine",
       "race": "God",
@@ -3312,7 +3785,7 @@
       "tags": "Jour"
     },
     {
-      "id": 254,
+      "id": 289,
       "name": "Steropes",
       "mythology": "Romaine",
       "race": "Cyclope",
@@ -3330,14 +3803,14 @@
       "race": "God",
       "godType": "Autre",
       "domain": "Dieu des Frontières",
-      "id": 255,
+      "id": 290,
       "description": "Représenté par une simple borne de pierre, il refuse traditionnellement de céder sa place, même face au roi des dieux, selon une légende fondatrice.",
       "clue": "Dieu des Frontières",
       "difficulty": 2,
       "tags": "Royauté"
     },
     {
-      "id": 256,
+      "id": 291,
       "name": "Trivia",
       "mythology": "Romaine",
       "race": "God",
@@ -3350,7 +3823,7 @@
       "tags": "Magie, Nuit"
     },
     {
-      "id": 257,
+      "id": 292,
       "name": "Venti",
       "mythology": "Romaine",
       "race": "Monster",
@@ -3362,7 +3835,7 @@
       "tags": "Vent"
     },
     {
-      "id": 258,
+      "id": 293,
       "name": "Victoire",
       "mythology": "Romaine",
       "race": "God",
@@ -3376,7 +3849,7 @@
       "tags": "Royauté"
     },
     {
-      "id": 259,
+      "id": 294,
       "name": "Aquilon",
       "mythology": "Romaine",
       "race": "God",
@@ -3389,7 +3862,7 @@
       "tags": "Vent"
     },
     {
-      "id": 260,
+      "id": 295,
       "name": "Arcus",
       "mythology": "Romaine",
       "race": "God",
@@ -3402,7 +3875,7 @@
       "tags": "Ciel, Terre"
     },
     {
-      "id": 261,
+      "id": 296,
       "name": "Auster",
       "mythology": "Romaine",
       "race": "God",
@@ -3415,7 +3888,7 @@
       "tags": "Vent"
     },
     {
-      "id": 262,
+      "id": 297,
       "name": "Bellone",
       "mythology": "Romaine",
       "race": "God",
@@ -3429,7 +3902,7 @@
       "tags": "Guerre"
     },
     {
-      "id": 263,
+      "id": 298,
       "name": "Vulturnus",
       "mythology": "Romaine",
       "race": "God",
@@ -3442,7 +3915,7 @@
       "tags": "Soleil, Vent"
     },
     {
-      "id": 264,
+      "id": 299,
       "name": "Favonius",
       "mythology": "Romaine",
       "race": "God",
@@ -3455,7 +3928,7 @@
       "tags": "Vent"
     },
     {
-      "id": 265,
+      "id": 300,
       "name": "Invidia",
       "mythology": "Romaine",
       "race": "God",
@@ -3468,7 +3941,7 @@
       "tags": "Sentiments"
     },
     {
-      "id": 266,
+      "id": 301,
       "name": "Moneta",
       "mythology": "Romaine",
       "race": "Titan",
@@ -3480,7 +3953,7 @@
       "tags": "Terre"
     },
     {
-      "id": 267,
+      "id": 302,
       "name": "Pavor",
       "mythology": "Romaine",
       "race": "God",
@@ -3493,7 +3966,7 @@
       "tags": "Guerre, Sentiments"
     },
     {
-      "id": 268,
+      "id": 303,
       "name": "Salus",
       "mythology": "Romaine",
       "race": "God",
@@ -3506,7 +3979,7 @@
       "tags": "Guérison"
     },
     {
-      "id": 269,
+      "id": 304,
       "name": "Tempestas",
       "mythology": "Romaine",
       "race": "God",
@@ -3524,18 +3997,46 @@
       "race": "God",
       "godType": "Primordial",
       "domain": "Personnification latine du ciel",
-      "id": 270,
+      "id": 305,
       "description": "Personnification de la voûte céleste, il est le père de nombreuses divinités primordiales selon certaines généalogies latines.",
       "clue": "Personnification latine du ciel",
       "difficulty": 3,
       "tags": "Ciel"
     },
     {
+      "id": 306,
+      "name": "Lupa",
+      "mythology": "Romaine",
+      "race": "God",
+      "godType": "Autre",
+      "domain": "Louve divine, nourrice de Romulus et Rémus",
+      "equivalentName": null,
+      "description": "Elle recueille deux jumeaux abandonnés au bord du Tibre et les allaite dans une grotte, avant que l'un d'eux ne fonde Rome.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Louve nourrice de Romulus et Rémus",
+      "difficulty": 1,
+      "tags": "Animal, Gardien"
+    },
+    {
+      "id": 307,
+      "name": "Lares",
+      "mythology": "Romaine",
+      "race": "God",
+      "godType": "Autre",
+      "domain": "Divinités protectrices du foyer et des carrefours",
+      "equivalentName": null,
+      "description": "Honorés dans un petit autel de chaque maison, ils veillent sur la famille et ses terres, et reçoivent des offrandes à chaque repas et chaque fête familiale.",
+      "popularCulture": "Les Héros de l'Olympe",
+      "clue": "Divinités protectrices du foyer",
+      "difficulty": 2,
+      "tags": "Gardien, Mort"
+    },
+    {
       "name": "Fenrir",
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Loup",
-      "id": 271,
+      "id": 308,
       "description": "Les dieux, redoutant sa force grandissante, le ligotèrent avec un lien magique forgé par des nains, non sans qu'il n'arrache le bras du dieu qui accepta de placer sa main dans sa gueule en gage de confiance.",
       "popularCulture": "Smite, Smite 2, God of War, Assassin's Creed Valhalla, Magnus Chase",
       "clue": "Loup géant fils de Loki, enchaîné par les dieux",
@@ -3544,7 +4045,7 @@
       "tags": "Animal, Artisanat, Magie"
     },
     {
-      "id": 272,
+      "id": 309,
       "name": "Freyja",
       "mythology": "Nordique",
       "race": "God",
@@ -3558,7 +4059,7 @@
       "tags": "Amour, Fertilité, Guerre, Royauté"
     },
     {
-      "id": 273,
+      "id": 310,
       "name": "Heimdall",
       "mythology": "Nordique",
       "race": "God",
@@ -3571,7 +4072,7 @@
       "tags": "Gardien, Royauté"
     },
     {
-      "id": 274,
+      "id": 311,
       "name": "Hel",
       "mythology": "Nordique",
       "race": "God",
@@ -3589,7 +4090,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Serpent",
-      "id": 275,
+      "id": 312,
       "description": "Sa taille est si grande qu'il encercle le monde des hommes en se mordant la queue.",
       "popularCulture": "Smite, Smite 2, God of War Ragnarök, Magnus Chase",
       "clue": "Serpent monde, fils de Loki, encercle Midgard",
@@ -3598,7 +4099,7 @@
       "tags": "Animal"
     },
     {
-      "id": 276,
+      "id": 313,
       "name": "Kraken",
       "mythology": "Nordique",
       "race": "Monster",
@@ -3610,7 +4111,7 @@
       "tags": "Animal"
     },
     {
-      "id": 277,
+      "id": 314,
       "name": "Loki",
       "mythology": "Nordique",
       "race": "Giant",
@@ -3623,7 +4124,7 @@
       "tags": "Ruse, Terre"
     },
     {
-      "id": 278,
+      "id": 315,
       "name": "Odin",
       "mythology": "Nordique",
       "race": "God",
@@ -3636,7 +4137,7 @@
       "tags": "Eau, Royauté, Sagesse"
     },
     {
-      "id": 279,
+      "id": 316,
       "name": "Thor",
       "mythology": "Nordique",
       "race": "God",
@@ -3650,7 +4151,7 @@
       "tags": "Foudre, Gardien"
     },
     {
-      "id": 280,
+      "id": 317,
       "name": "Tyr",
       "mythology": "Nordique",
       "race": "God",
@@ -3664,7 +4165,7 @@
       "tags": "Animal, Justice, Ruse"
     },
     {
-      "id": 281,
+      "id": 318,
       "name": "Valkyrie",
       "mythology": "Nordique",
       "race": "God",
@@ -3677,7 +4178,7 @@
       "tags": "Ciel, Guerre, Mort, Royauté"
     },
     {
-      "id": 282,
+      "id": 319,
       "name": "3 Nornes",
       "mythology": "Nordique",
       "race": "God",
@@ -3689,7 +4190,7 @@
       "tags": "Destin"
     },
     {
-      "id": 283,
+      "id": 320,
       "name": "Balder",
       "mythology": "Nordique",
       "race": "God",
@@ -3704,7 +4205,7 @@
       "tags": "Mort, Ruse"
     },
     {
-      "id": 284,
+      "id": 321,
       "name": "Draugr",
       "mythology": "Nordique",
       "race": "Monster",
@@ -3720,14 +4221,14 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Cerf",
-      "id": 285,
+      "id": 322,
       "description": "Il broute le feuillage de l'arbre-monde, et l'eau qui s'écoule de ses bois alimente l'une des sources souterraines.",
       "clue": "Cerf au sommet de l'Yggdrasil, ses cornes ruissellent d'eau",
       "difficulty": 2,
       "tags": "Animal, Eau"
     },
     {
-      "id": 286,
+      "id": 323,
       "name": "Fafnir",
       "mythology": "Nordique",
       "race": "Monster",
@@ -3739,7 +4240,7 @@
       "tags": "Animal"
     },
     {
-      "id": 287,
+      "id": 324,
       "name": "Freyr",
       "mythology": "Nordique",
       "race": "God",
@@ -3753,7 +4254,7 @@
       "tags": "Amour, Animal, Fertilité, Magie"
     },
     {
-      "id": 288,
+      "id": 325,
       "name": "Frigg",
       "mythology": "Nordique",
       "race": "God",
@@ -3770,7 +4271,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Chien",
-      "id": 289,
+      "id": 326,
       "description": "Il est destiné à s'affronter avec un dieu lors du crépuscule des dieux, un combat où les deux adversaires périront.",
       "clue": "Chien gardien de Helheim",
       "difficulty": 2,
@@ -3781,7 +4282,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Loup",
-      "id": 290,
+      "id": 327,
       "description": "Il est destiné à rattraper sa proie céleste au moment du crépuscule des dieux.",
       "clue": "Loup fils de Fenrir, pourchasse la lune",
       "difficulty": 2,
@@ -3792,7 +4293,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Corbeau",
-      "id": 291,
+      "id": 328,
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
       "popularCulture": "God of War, Magnus Chase",
       "clue": "Corbeau d'Odin représentant la pensée",
@@ -3800,7 +4301,7 @@
       "tags": "Animal, Jour"
     },
     {
-      "id": 292,
+      "id": 329,
       "name": "Idunn",
       "mythology": "Nordique",
       "race": "God",
@@ -3813,7 +4314,7 @@
       "tags": "Gardien"
     },
     {
-      "id": 293,
+      "id": 330,
       "name": "Kvasir",
       "mythology": "Nordique",
       "race": "God",
@@ -3825,7 +4326,7 @@
       "tags": "Arts, Sagesse"
     },
     {
-      "id": 294,
+      "id": 331,
       "name": "Mimir",
       "mythology": "Nordique",
       "race": "God",
@@ -3842,7 +4343,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Corbeau",
-      "id": 295,
+      "id": 332,
       "description": "Il parcourt le monde chaque jour aux côtés d'un autre oiseau identique et rapporte ce qu'il voit à son maître.",
       "popularCulture": "God of War, Magnus Chase",
       "clue": "Corbeau d'Odin représentant la mémoire",
@@ -3854,7 +4355,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Dragon",
-      "id": 296,
+      "id": 333,
       "description": "Il se nourrit des cadavres des damnés et échange des insultes avec un aigle perché au sommet de l'arbre-monde, par l'intermédiaire d'un messager.",
       "popularCulture": "Nidhogg",
       "clue": "Dragon qui ronge les racines de l'Yggdrasil",
@@ -3863,7 +4364,7 @@
       "listThemes": "Monstres de l'arbre monde"
     },
     {
-      "id": 297,
+      "id": 334,
       "name": "Njord",
       "mythology": "Nordique",
       "race": "God",
@@ -3880,7 +4381,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Écureuil",
-      "id": 298,
+      "id": 335,
       "description": "Il fait la navette entre la cime et les racines de l'arbre-monde, portant des insultes entre un aigle et un serpent qui se détestent.",
       "popularCulture": "Smite, Smite 2, God of War, Magnus Chase",
       "clue": "Écureuil messager de l'Yggdrasil",
@@ -3889,7 +4390,7 @@
       "listThemes": "Monstres de l'arbre monde"
     },
     {
-      "id": 299,
+      "id": 336,
       "name": "Sif",
       "mythology": "Nordique",
       "race": "God",
@@ -3902,7 +4403,7 @@
       "tags": "Ruse, Terre"
     },
     {
-      "id": 300,
+      "id": 337,
       "name": "Skadi",
       "mythology": "Nordique",
       "race": "God",
@@ -3919,7 +4420,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Loup",
-      "id": 301,
+      "id": 338,
       "description": "Il est destiné à rattraper sa proie céleste au moment du crépuscule des dieux.",
       "clue": "Loup fils de Fenrir, pourchasse le soleil",
       "difficulty": 2,
@@ -3930,7 +4431,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Cheval",
-      "id": 302,
+      "id": 339,
       "description": "Le plus rapide de tous les chevaux, il est capable de voyager entre les mondes, y compris jusqu'au royaume des morts.",
       "popularCulture": "God of War Ragnarök, Assassin's Creed Valhalla, Magnus Chase",
       "clue": "Cheval à huit pattes d'Odin, fils de Loki",
@@ -3939,7 +4440,7 @@
       "tags": "Animal, Mort, Royauté"
     },
     {
-      "id": 303,
+      "id": 340,
       "name": "Surtr",
       "mythology": "Nordique",
       "race": "Giant",
@@ -3952,7 +4453,7 @@
       "tags": "Feu, Royauté, Terre"
     },
     {
-      "id": 304,
+      "id": 341,
       "name": "Utgard-Loki",
       "mythology": "Nordique",
       "race": "Giant",
@@ -3968,7 +4469,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Faucon",
-      "id": 305,
+      "id": 342,
       "description": "Il se dresse au sommet de l'arbre-monde, au-dessus d'un aigle qui y a également élu domicile.",
       "clue": "Faucon perché au sommet de l'Yggdrasil",
       "difficulty": 2,
@@ -3976,7 +4477,7 @@
       "listThemes": "Monstres de l'arbre monde"
     },
     {
-      "id": 306,
+      "id": 343,
       "name": "Brynhild",
       "mythology": "Nordique",
       "race": "Valkyrie",
@@ -3993,7 +4494,7 @@
       "race": "Monster",
       "monsterType": "Cerf",
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui est mort'",
-      "id": 307,
+      "id": 344,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
       "difficulty": 3,
       "tags": "Animal, Mort",
@@ -4005,7 +4506,7 @@
       "race": "Monster",
       "monsterType": "Cerf",
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui a les oreilles recouvertes de duvet'",
-      "id": 308,
+      "id": 345,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
       "difficulty": 3,
       "tags": "Animal",
@@ -4017,7 +4518,7 @@
       "race": "Monster",
       "monsterType": "Cerf",
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui a sommeil'",
-      "id": 309,
+      "id": 346,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
       "difficulty": 3,
       "tags": "Animal",
@@ -4029,14 +4530,14 @@
       "race": "Monster",
       "monsterType": "Cerf",
       "description": "L'un des quatre cerfs de l'Yggdrasil, 'celui qui est lent'",
-      "id": 310,
+      "id": 347,
       "clue": "L'un des quatre cerfs de l'Yggdrasil",
       "difficulty": 3,
       "tags": "Animal",
       "listThemes": "Monstres de l'arbre monde"
     },
     {
-      "id": 311,
+      "id": 348,
       "name": "Einherjar",
       "mythology": "Nordique",
       "race": "Heroes",
@@ -4047,7 +4548,7 @@
       "tags": "Guerre, Humain, Jour, Mort"
     },
     {
-      "id": 312,
+      "id": 349,
       "name": "Göndul",
       "mythology": "Nordique",
       "race": "Valkyrie",
@@ -4062,7 +4563,7 @@
       "mythology": "Nordique",
       "race": "Monster",
       "monsterType": "Aigle",
-      "id": 313,
+      "id": 350,
       "description": "Le battement de ses ailes est à l'origine des vents qui soufflent sur le monde des hommes.",
       "popularCulture": "Final Fantasy XIV",
       "clue": "Aigle géant perché au sommet de l'Yggdrasil",
@@ -4071,7 +4572,7 @@
       "listThemes": "Monstres de l'arbre monde"
     },
     {
-      "id": 314,
+      "id": 351,
       "name": "Sigrún",
       "mythology": "Nordique",
       "race": "Valkyrie",
@@ -4087,7 +4588,7 @@
       "race": "Monster",
       "monsterType": "Bouc",
       "description": "Bouc de Thor, 'celui qui fait grincer ses dents'",
-      "id": 315,
+      "id": 352,
       "clue": "Bouc de Thor",
       "difficulty": 3,
       "tags": "Animal"
@@ -4098,13 +4599,13 @@
       "race": "Monster",
       "monsterType": "Bouc",
       "description": "Bouc de Thor, 'celui qui grogne'",
-      "id": 316,
+      "id": 353,
       "clue": "Bouc de Thor",
       "difficulty": 3,
       "tags": "Animal"
     },
     {
-      "id": 317,
+      "id": 354,
       "name": "Sol",
       "mythology": "Nordique",
       "race": "God",
@@ -4117,7 +4618,7 @@
       "tags": "Soleil, Ciel"
     },
     {
-      "id": 318,
+      "id": 355,
       "name": "Ullr",
       "mythology": "Nordique",
       "race": "God",
@@ -4131,7 +4632,7 @@
       "tags": "Chasse"
     },
     {
-      "id": 319,
+      "id": 356,
       "name": "Ymir",
       "mythology": "Nordique",
       "race": "Giant",
@@ -4144,7 +4645,192 @@
       "tags": "Création, Eau, Terre"
     },
     {
-      "id": 320,
+      "id": 357,
+      "name": "Ran",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Autre",
+      "domain": "Déesse de la mer et des noyés",
+      "description": "Elle capture les marins dans son filet pour les entraîner au fond des flots, et ceux qui se noient rejoignent sa demeure sous-marine ; on emportait de l'or en mer pour s'attirer sa faveur.",
+      "popularCulture": "Magnus Chase",
+      "clue": "Déesse de la mer qui capture les noyés dans son filet",
+      "difficulty": 2,
+      "tags": "Eau, Mort"
+    },
+    {
+      "id": 358,
+      "name": "Angrboda",
+      "mythology": "Nordique",
+      "race": "Giant",
+      "giantType": "Géant Jotunns",
+      "domain": "Géante, mère des enfants monstrueux de Loki",
+      "description": "Géante du Bois-de-Fer, elle donne à Loki trois enfants redoutés des dieux : un loup gigantesque, un serpent qui encercle le monde et une reine des morts.",
+      "popularCulture": "God of War Ragnarök",
+      "clue": "Géante, mère de Fenrir, Jormungandr et Hel",
+      "difficulty": 2,
+      "tags": "Mort, Terre"
+    },
+    {
+      "id": 359,
+      "name": "Vidar",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu silencieux de la vengeance",
+      "description": "Lors du crépuscule des dieux, il venge son père dévoré en déchirant la gueule du grand loup grâce à une chaussure épaisse, puis survit pour habiter le monde renouvelé.",
+      "clue": "Dieu silencieux qui tue Fenrir au Ragnarök",
+      "difficulty": 2,
+      "fatherName": "Odin",
+      "motherName": "Gríðr",
+      "tags": "Guerre, Justice"
+    },
+    {
+      "id": 360,
+      "name": "Váli",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu de la vengeance",
+      "description": "Engendré dans le seul but de venger un frère tué par ruse, il grandit en une seule journée et accomplit sa tâche avant même de s'être lavé ou peigné, puis survit à la fin du monde.",
+      "clue": "Dieu né pour venger Balder",
+      "difficulty": 2,
+      "fatherName": "Odin",
+      "motherName": "Rindr",
+      "tags": "Guerre, Justice"
+    },
+    {
+      "id": 361,
+      "name": "Magni",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu de la force",
+      "description": "Encore enfant, il soulève la jambe d'un géant qui écrase son père alors qu'aucun dieu n'y parvenait ; après la fin du monde, il hérite avec son frère du marteau paternel.",
+      "popularCulture": "God of War",
+      "clue": "Dieu de la force, fils de Thor",
+      "difficulty": 2,
+      "fatherName": "Thor",
+      "motherName": "Járnsaxa",
+      "tags": "Guerre"
+    },
+    {
+      "id": 362,
+      "name": "Módi",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu de la colère et du courage",
+      "description": "Incarnation de la fureur au combat, il survit au crépuscule des dieux et reçoit avec son frère l'arme de son père pour veiller sur le monde nouveau.",
+      "popularCulture": "God of War",
+      "clue": "Dieu de la colère, fils de Thor",
+      "difficulty": 2,
+      "fatherName": "Thor",
+      "tags": "Guerre, Sentiments"
+    },
+    {
+      "id": 363,
+      "name": "Andvari",
+      "mythology": "Nordique",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Nain changé en brochet, dépossédé de son trésor par Loki, qui maudit l'anneau Andvaranaut",
+      "description": "Gardien d'un immense trésor caché sous une cascade, il est capturé par un dieu rusé qui le force à tout céder, et lance alors une malédiction sur l'anneau qu'il voulait garder.",
+      "popularCulture": "Magnus Chase",
+      "clue": "Nain dont l'anneau maudit cause la perte de ses possesseurs",
+      "difficulty": 2,
+      "tags": "Animal, Destin, Richesse"
+    },
+    {
+      "id": 364,
+      "name": "Brokkr",
+      "mythology": "Nordique",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Nain forgeron qui, avec son frère Eitri, forge Mjöllnir, Draupnir et Gullinbursti pour gagner un pari contre Loki",
+      "description": "Chargé d'actionner le soufflet de la forge malgré une mouche qui le pique sans relâche, il remporte un pari face à un dieu rusé et tente de lui coudre les lèvres.",
+      "popularCulture": "God of War, God of War Ragnarök",
+      "clue": "Nain forgeron du marteau de Thor",
+      "difficulty": 2,
+      "tags": "Artisanat, Ruse"
+    },
+    {
+      "id": 365,
+      "name": "Eitri",
+      "mythology": "Nordique",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Nain forgeron, frère de Brokkr, créateur de Mjöllnir, de l'anneau Draupnir et du sanglier d'or Gullinbursti",
+      "description": "Maître artisan de la forge, il crée en un seul concours trois trésors pour les dieux, dont un marteau au manche trop court à cause d'un instant d'inattention de son frère.",
+      "popularCulture": "Marvel",
+      "clue": "Nain forgeron créateur de Mjöllnir",
+      "difficulty": 2,
+      "tags": "Artisanat, Richesse"
+    },
+    {
+      "id": 366,
+      "name": "Sigyn",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Déesse de la fidélité",
+      "description": "Lorsque son époux est enchaîné sous un serpent crachant du venin, elle reste à ses côtés pour recueillir le poison dans une coupe, et chaque fois qu'elle la vide la terre tremble.",
+      "popularCulture": "Magnus Chase, Marvel",
+      "clue": "Épouse fidèle de Loki",
+      "difficulty": 3,
+      "tags": "Amour, Sentiments"
+    },
+    {
+      "id": 367,
+      "name": "Höd",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu aveugle de l'hiver et de l'obscurité",
+      "description": "Aveugle, il est manipulé par un dieu rusé qui lui met en main une branche de gui et guide son geste, tuant ainsi son propre frère, avant de revenir de chez les morts après la fin du monde.",
+      "clue": "Dieu aveugle qui tue Balder avec le gui",
+      "difficulty": 3,
+      "fatherName": "Odin",
+      "motherName": "Frigg",
+      "tags": "Mort, Nuit, Ombres"
+    },
+    {
+      "id": 368,
+      "name": "Hœnir",
+      "mythology": "Nordique",
+      "race": "God",
+      "godType": "Ase",
+      "domain": "Dieu de l'esprit et de la réflexion",
+      "description": "Il participe à la création des premiers humains en leur donnant l'esprit, est envoyé en otage chez les Vanes à la fin de la guerre entre dieux, et survit au crépuscule du monde pour y pratiquer la divination.",
+      "clue": "Dieu qui donne l'esprit aux premiers humains",
+      "difficulty": 3,
+      "tags": "Création, Prophétie, Sagesse"
+    },
+    {
+      "id": 369,
+      "name": "Líf",
+      "mythology": "Nordique",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Femme survivante du Ragnarök, cachée dans le bois de Hoddmímir, mère de la nouvelle humanité",
+      "description": "Abritée dans un bois pendant la destruction du monde, elle se nourrit de rosée et repeuple ensuite la terre renouvelée avec son compagnon.",
+      "clue": "Femme survivante du Ragnarök",
+      "difficulty": 3,
+      "tags": "Création, Humain"
+    },
+    {
+      "id": 370,
+      "name": "Lífthrasir",
+      "mythology": "Nordique",
+      "race": "Heroes",
+      "ascendantName": null,
+      "story": "Homme survivant du Ragnarök, caché dans le bois de Hoddmímir, père de la nouvelle humanité",
+      "description": "Protégé de l'hiver terrible et des flammes de la fin du monde dans un bois, il en ressort pour devenir l'ancêtre de tous les humains du monde nouveau.",
+      "clue": "Homme survivant du Ragnarök",
+      "difficulty": 3,
+      "tags": "Création, Humain"
+    },
+    {
+      "id": 371,
       "name": "Anubis",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4158,7 +4844,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 321,
+      "id": 372,
       "name": "Horus",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4173,7 +4859,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 322,
+      "id": 373,
       "name": "Isis",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4188,7 +4874,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 323,
+      "id": 374,
       "name": "Nephtys",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4202,7 +4888,7 @@
       "tags": "Mort"
     },
     {
-      "id": 324,
+      "id": 375,
       "name": "Osiris",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4217,7 +4903,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 325,
+      "id": 376,
       "name": "Rê",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4230,7 +4916,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 326,
+      "id": 377,
       "name": "Seth",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4245,7 +4931,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 327,
+      "id": 378,
       "name": "Thot",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4258,7 +4944,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 328,
+      "id": 379,
       "name": "Apophis",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4270,7 +4956,7 @@
       "tags": "Animal, Guerre, Nuit, Soleil, Terre"
     },
     {
-      "id": 329,
+      "id": 380,
       "name": "Bastet",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4282,7 +4968,7 @@
       "tags": "Gardien, Nuit, Soleil"
     },
     {
-      "id": 330,
+      "id": 381,
       "name": "Bès",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4294,7 +4980,7 @@
       "tags": "Destin, Gardien"
     },
     {
-      "id": 331,
+      "id": 382,
       "name": "Geb",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4307,7 +4993,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 332,
+      "id": 383,
       "name": "Khépri",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4319,7 +5005,7 @@
       "tags": "Animal, Soleil"
     },
     {
-      "id": 333,
+      "id": 384,
       "name": "Khonsou",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4331,7 +5017,7 @@
       "tags": "Guérison, Nuit, Royauté, Lune"
     },
     {
-      "id": 334,
+      "id": 385,
       "name": "Maat",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4343,7 +5029,7 @@
       "tags": "Justice"
     },
     {
-      "id": 335,
+      "id": 386,
       "name": "Nout",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4356,7 +5042,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 336,
+      "id": 387,
       "name": "Ouchebti",
       "mythology": "Égyptienne",
       "race": "Monster",
@@ -4368,7 +5054,7 @@
       "tags": "Mort"
     },
     {
-      "id": 337,
+      "id": 388,
       "name": "Ptah",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4381,7 +5067,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 338,
+      "id": 389,
       "name": "Shou",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4393,7 +5079,7 @@
       "tags": "Ciel, Terre, Vent"
     },
     {
-      "id": 339,
+      "id": 390,
       "name": "Sobek",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4405,7 +5091,7 @@
       "tags": "Animal, Eau, Fertilité"
     },
     {
-      "id": 340,
+      "id": 391,
       "name": "Amon",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4418,7 +5104,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 341,
+      "id": 392,
       "name": "Anhour",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4430,7 +5116,7 @@
       "tags": "Chasse, Ciel, Guerre, Soleil"
     },
     {
-      "id": 342,
+      "id": 393,
       "name": "Hâpy",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4442,7 +5128,7 @@
       "tags": "Eau, Fertilité"
     },
     {
-      "id": 343,
+      "id": 394,
       "name": "Hathor",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4455,7 +5141,7 @@
       "listThemes": "Grands dieux d'Égypte"
     },
     {
-      "id": 344,
+      "id": 395,
       "name": "Mout",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4467,7 +5153,7 @@
       "tags": "Royauté"
     },
     {
-      "id": 345,
+      "id": 396,
       "name": "Neith",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4479,7 +5165,7 @@
       "tags": "Guerre, Soleil, Création"
     },
     {
-      "id": 346,
+      "id": 397,
       "name": "Sekhmet",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4491,7 +5177,7 @@
       "tags": "Guerre, Vent"
     },
     {
-      "id": 347,
+      "id": 398,
       "name": "Serket",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4503,7 +5189,7 @@
       "tags": "Guérison"
     },
     {
-      "id": 348,
+      "id": 399,
       "name": "Taouret",
       "mythology": "Égyptienne",
       "race": "God",
@@ -4515,7 +5201,67 @@
       "tags": "Fertilité"
     },
     {
-      "id": 349,
+      "id": 400,
+      "name": "Tefnout",
+      "mythology": "Égyptienne",
+      "race": "God",
+      "domain": "Déesse de l'humidité et de la rosée",
+      "description": "Née du souffle du créateur avec son frère jumeau, l'air, elle forme le premier couple divin ; fâchée, elle s'enfuit au désert sous forme de lionne, emportant avec elle toute l'humidité du pays.",
+      "clue": "Déesse de l'humidité",
+      "difficulty": 2,
+      "fatherName": "Rê",
+      "tags": "Eau, Création"
+    },
+    {
+      "id": 401,
+      "name": "Khnoum",
+      "mythology": "Égyptienne",
+      "race": "God",
+      "domain": "Dieu potier créateur des êtres",
+      "description": "Représenté avec une tête de bélier, il façonne sur son tour de potier le corps et le double des enfants avant leur naissance, et garde les sources du Nil.",
+      "popularCulture": "Les Chroniques de Kane",
+      "clue": "Dieu à tête de bélier qui façonne les êtres sur un tour de potier",
+      "difficulty": 2,
+      "tags": "Artisanat, Création, Eau"
+    },
+    {
+      "id": 402,
+      "name": "Ammit",
+      "mythology": "Égyptienne",
+      "race": "Monster",
+      "monsterType": "Mi-Crocodile Mi-Lion Mi-Hippopotame",
+      "description": "Postée près de la balance du jugement des morts, elle dévore le cœur de ceux dont les fautes pèsent plus lourd que la plume de vérité, les condamnant à disparaître à jamais.",
+      "popularCulture": "Les Chroniques de Kane, Moon Knight",
+      "clue": "Dévoreuse du cœur des défunts jugés indignes",
+      "difficulty": 2,
+      "tags": "Animal, Justice, Mort"
+    },
+    {
+      "id": 403,
+      "name": "Nekhbet",
+      "mythology": "Égyptienne",
+      "race": "God",
+      "domain": "Déesse vautour protectrice de la Haute-Égypte",
+      "description": "Représentée en vautour aux ailes déployées au-dessus du pharaon, elle figure sur sa couronne aux côtés d'un cobra protecteur de l'autre moitié du royaume.",
+      "popularCulture": "Les Chroniques de Kane",
+      "clue": "Déesse vautour de la Haute-Égypte",
+      "difficulty": 3,
+      "tags": "Animal, Gardien, Royauté"
+    },
+    {
+      "id": 404,
+      "name": "Sérapis",
+      "mythology": "Égyptienne",
+      "race": "God",
+      "domain": "Dieu gréco-égyptien de l'abondance et de l'au-delà",
+      "description": "Créé à l'époque des rois grecs d'Alexandrie pour unir Grecs et Égyptiens, il porte une corbeille à grain sur la tête et son sceptre est surmonté d'une tête à trois museaux.",
+      "popularCulture": "Percy Jackson, Les Chroniques de Kane",
+      "clue": "Dieu gréco-égyptien d'Alexandrie",
+      "difficulty": 3,
+      "tags": "Fertilité, Mort, Royauté"
+    },
+    {
+      "id": 405,
       "name": "Buffle",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4526,7 +5272,7 @@
       "tags": "Destin"
     },
     {
-      "id": 350,
+      "id": 406,
       "name": "Cheval",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4537,7 +5283,7 @@
       "tags": "Destin"
     },
     {
-      "id": 351,
+      "id": 407,
       "name": "Chèvre",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4548,7 +5294,7 @@
       "tags": "Destin"
     },
     {
-      "id": 352,
+      "id": 408,
       "name": "Chien",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4559,7 +5305,7 @@
       "tags": "Destin, Justice"
     },
     {
-      "id": 353,
+      "id": 409,
       "name": "Cochon",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4570,7 +5316,7 @@
       "tags": "Animal, Destin"
     },
     {
-      "id": 354,
+      "id": 410,
       "name": "Coq",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4581,7 +5327,7 @@
       "tags": "Destin"
     },
     {
-      "id": 355,
+      "id": 411,
       "name": "Dragon",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4592,7 +5338,7 @@
       "tags": "Destin"
     },
     {
-      "id": 356,
+      "id": 412,
       "name": "Lapin",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4603,7 +5349,7 @@
       "tags": "Destin"
     },
     {
-      "id": 357,
+      "id": 413,
       "name": "Phénix",
       "mythology": "Chinoise",
       "race": "Monster",
@@ -4615,7 +5361,7 @@
       "tags": "Animal, Feu"
     },
     {
-      "id": 358,
+      "id": 414,
       "name": "Rat",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4626,7 +5372,7 @@
       "tags": "Destin, Ruse"
     },
     {
-      "id": 359,
+      "id": 415,
       "name": "Serpent",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4637,7 +5383,7 @@
       "tags": "Destin, Sagesse"
     },
     {
-      "id": 360,
+      "id": 416,
       "name": "Singe",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4648,7 +5394,7 @@
       "tags": "Destin, Ruse"
     },
     {
-      "id": 361,
+      "id": 417,
       "name": "Tigre",
       "mythology": "Chinoise",
       "race": "Zodiacal_Sign",
@@ -4659,7 +5405,7 @@
       "tags": "Destin"
     },
     {
-      "id": 362,
+      "id": 418,
       "name": "Qilin",
       "mythology": "Chinoise",
       "race": "Monster",
@@ -4670,7 +5416,7 @@
       "tags": "Animal, Foudre, Mort, Sagesse"
     },
     {
-      "id": 363,
+      "id": 419,
       "name": "Nezha",
       "mythology": "Chinoise",
       "race": "God",
@@ -4682,7 +5428,7 @@
       "tags": "Animal, Feu, Guerre, Royauté"
     },
     {
-      "id": 364,
+      "id": 420,
       "name": "Nuwa",
       "mythology": "Chinoise",
       "race": "God",
@@ -4694,7 +5440,7 @@
       "tags": "Ciel, Création"
     },
     {
-      "id": 365,
+      "id": 421,
       "name": "Ao Guang",
       "mythology": "Chinoise",
       "race": "Monster",
@@ -4706,7 +5452,7 @@
       "tags": "Animal, Eau, Royauté"
     },
     {
-      "id": 366,
+      "id": 422,
       "name": "Erlang Shen",
       "mythology": "Chinoise",
       "race": "God",
@@ -4718,7 +5464,7 @@
       "tags": "Animal, Ciel"
     },
     {
-      "id": 367,
+      "id": 423,
       "name": "Hebo",
       "mythology": "Chinoise",
       "race": "God",
@@ -4730,7 +5476,7 @@
       "tags": "Eau"
     },
     {
-      "id": 368,
+      "id": 424,
       "name": "Pangu",
       "mythology": "Chinoise",
       "race": "God",
@@ -4741,7 +5487,7 @@
       "tags": "Ciel, Création"
     },
     {
-      "id": 369,
+      "id": 425,
       "name": "Xingtian",
       "mythology": "Chinoise",
       "race": "God",
@@ -4753,7 +5499,7 @@
       "tags": "Ciel, Guerre, Royauté"
     },
     {
-      "id": 370,
+      "id": 426,
       "name": "Huoshu",
       "mythology": "Chinoise",
       "race": "Monster",
@@ -4764,7 +5510,7 @@
       "tags": "Feu, Animal"
     },
     {
-      "id": 371,
+      "id": 427,
       "name": "Chang'e",
       "mythology": "Chinoise",
       "race": "God",
@@ -4776,7 +5522,7 @@
       "tags": "Lune"
     },
     {
-      "id": 372,
+      "id": 428,
       "name": "Da Ji",
       "mythology": "Chinoise",
       "race": "Monster",
@@ -4788,7 +5534,7 @@
       "tags": "Animal, Ruse"
     },
     {
-      "id": 373,
+      "id": 429,
       "name": "Guan Yu",
       "mythology": "Chinoise",
       "race": "God",
@@ -4800,7 +5546,7 @@
       "tags": "Guerre"
     },
     {
-      "id": 374,
+      "id": 430,
       "name": "Hou Yi",
       "mythology": "Chinoise",
       "race": "God",
@@ -4812,7 +5558,7 @@
       "tags": "Soleil, Chasse"
     },
     {
-      "id": 375,
+      "id": 431,
       "name": "Jing Wei",
       "mythology": "Chinoise",
       "race": "Heroes",
@@ -4825,7 +5571,7 @@
       "tags": "Animal, Eau"
     },
     {
-      "id": 376,
+      "id": 432,
       "name": "Hua Mulan",
       "mythology": "Chinoise",
       "race": "Heroes",
@@ -4837,7 +5583,7 @@
       "tags": "Guerre, Humain"
     },
     {
-      "id": 377,
+      "id": 433,
       "name": "Sun Wukong",
       "mythology": "Chinoise",
       "race": "God",
@@ -4849,7 +5595,7 @@
       "tags": "Animal, Magie"
     },
     {
-      "id": 378,
+      "id": 434,
       "name": "Yu Huang",
       "mythology": "Chinoise",
       "race": "God",
@@ -4861,7 +5607,7 @@
       "tags": "Ciel, Royauté"
     },
     {
-      "id": 379,
+      "id": 435,
       "name": "Zhong Kui",
       "mythology": "Chinoise",
       "race": "God",
@@ -4873,7 +5619,7 @@
       "tags": "Ombres, Mort"
     },
     {
-      "id": 380,
+      "id": 436,
       "name": "Dagda",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4885,7 +5631,7 @@
       "tags": "Fertilité"
     },
     {
-      "id": 381,
+      "id": 437,
       "name": "Morrigan",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4897,7 +5643,7 @@
       "tags": "Guerre, Jour, Mort"
     },
     {
-      "id": 382,
+      "id": 438,
       "name": "Banshee",
       "mythology": "Celtique Irlandaise",
       "race": "Monster",
@@ -4909,7 +5655,7 @@
       "tags": "Mort"
     },
     {
-      "id": 383,
+      "id": 439,
       "name": "Brigit",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4920,7 +5666,7 @@
       "tags": "Arts, Guérison, Magie"
     },
     {
-      "id": 384,
+      "id": 440,
       "name": "Eithne",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4931,7 +5677,7 @@
       "tags": "Arts, Guerre, Prophétie"
     },
     {
-      "id": 385,
+      "id": 441,
       "name": "Ériu",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4942,7 +5688,7 @@
       "tags": "Royauté, Terre"
     },
     {
-      "id": 386,
+      "id": 442,
       "name": "Étain",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4953,7 +5699,7 @@
       "tags": "Eau"
     },
     {
-      "id": 387,
+      "id": 443,
       "name": "Goibniu",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4964,7 +5710,7 @@
       "tags": "Artisanat"
     },
     {
-      "id": 388,
+      "id": 444,
       "name": "Lugh",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4976,7 +5722,7 @@
       "tags": "Amour, Guerre, Sagesse, Soleil"
     },
     {
-      "id": 389,
+      "id": 445,
       "name": "Midir",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4987,7 +5733,7 @@
       "tags": "Arts, Royauté"
     },
     {
-      "id": 390,
+      "id": 446,
       "name": "Nuada",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -4999,7 +5745,7 @@
       "tags": "Guerre, Royauté, Richesse"
     },
     {
-      "id": 391,
+      "id": 447,
       "name": "Ogma",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -5010,7 +5756,7 @@
       "tags": "Arts, Ciel, Guerre, Magie, Nuit"
     },
     {
-      "id": 392,
+      "id": 448,
       "name": "Cu Chulainn",
       "mythology": "Celtique Irlandaise",
       "race": "Heroes",
@@ -5023,7 +5769,7 @@
       "tags": "Guerre, Humain"
     },
     {
-      "id": 393,
+      "id": 449,
       "name": "Cliodhna",
       "mythology": "Celtique Irlandaise",
       "race": "God",
@@ -5035,7 +5781,7 @@
       "tags": "Amour, Arts, Royauté"
     },
     {
-      "id": 394,
+      "id": 450,
       "name": "Ah-Muzen-Cab",
       "mythology": "Maya",
       "race": "God",
@@ -5047,7 +5793,7 @@
       "tags": "Animal"
     },
     {
-      "id": 395,
+      "id": 451,
       "name": "Chac",
       "mythology": "Maya",
       "race": "God",
@@ -5059,7 +5805,7 @@
       "tags": "Foudre"
     },
     {
-      "id": 396,
+      "id": 452,
       "name": "Kukulkan",
       "mythology": "Maya",
       "race": "God",
@@ -5071,7 +5817,7 @@
       "tags": "Animal, Vent"
     },
     {
-      "id": 397,
+      "id": 453,
       "name": "Ah Puch",
       "mythology": "Maya",
       "race": "God",
@@ -5083,7 +5829,7 @@
       "tags": "Mort, Terre"
     },
     {
-      "id": 398,
+      "id": 454,
       "name": "Awilix",
       "mythology": "Maya",
       "race": "God",
@@ -5095,7 +5841,7 @@
       "tags": "Nuit, Royauté, Terre, Lune"
     },
     {
-      "id": 399,
+      "id": 455,
       "name": "Cabrakan",
       "mythology": "Maya",
       "race": "God",
@@ -5107,7 +5853,7 @@
       "tags": "Ruse, Terre"
     },
     {
-      "id": 400,
+      "id": 456,
       "name": "Camazotz",
       "mythology": "Maya",
       "race": "God",
@@ -5119,7 +5865,7 @@
       "tags": "Animal"
     },
     {
-      "id": 401,
+      "id": 457,
       "name": "Hun Batz",
       "mythology": "Maya",
       "race": "God",
@@ -5131,7 +5877,7 @@
       "tags": "Arts"
     },
     {
-      "id": 402,
+      "id": 458,
       "name": "Hun Chouen",
       "mythology": "Maya",
       "race": "God",
@@ -5142,7 +5888,7 @@
       "tags": "Arts"
     },
     {
-      "id": 403,
+      "id": 459,
       "name": "Ixchel",
       "mythology": "Maya",
       "race": "God",
@@ -5154,7 +5900,7 @@
       "tags": "Animal, Eau, Guérison, Nuit, Lune"
     },
     {
-      "id": 404,
+      "id": 460,
       "name": "Xbalanque",
       "mythology": "Maya",
       "race": "Heroes",
@@ -5167,7 +5913,7 @@
       "tags": "Mort, Ombres"
     },
     {
-      "id": 405,
+      "id": 461,
       "name": "Amaterasu",
       "mythology": "Shinto",
       "race": "God",
@@ -5180,7 +5926,7 @@
       "tags": "Arts, Nuit, Soleil"
     },
     {
-      "id": 406,
+      "id": 462,
       "name": "Izanagi",
       "mythology": "Shinto",
       "race": "God",
@@ -5192,7 +5938,7 @@
       "tags": "Eau, Création"
     },
     {
-      "id": 407,
+      "id": 463,
       "name": "Izanami",
       "mythology": "Shinto",
       "race": "God",
@@ -5204,7 +5950,7 @@
       "tags": "Feu, Mort, Terre, Création"
     },
     {
-      "id": 408,
+      "id": 464,
       "name": "Susanoo",
       "mythology": "Shinto",
       "race": "God",
@@ -5217,7 +5963,7 @@
       "tags": "Animal, Ciel, Eau"
     },
     {
-      "id": 409,
+      "id": 465,
       "name": "Tsukuyomi",
       "mythology": "Shinto",
       "race": "God",
@@ -5230,7 +5976,7 @@
       "tags": "Jour, Nuit, Lune"
     },
     {
-      "id": 410,
+      "id": 466,
       "name": "Fujin",
       "mythology": "Shinto",
       "race": "God",
@@ -5242,7 +5988,7 @@
       "tags": "Vent"
     },
     {
-      "id": 411,
+      "id": 467,
       "name": "Inari",
       "mythology": "Shinto",
       "race": "God",
@@ -5253,7 +5999,7 @@
       "tags": "Fertilité"
     },
     {
-      "id": 412,
+      "id": 468,
       "name": "Raijin",
       "mythology": "Shinto",
       "race": "God",
@@ -5265,7 +6011,7 @@
       "tags": "Foudre, Vent"
     },
     {
-      "id": 413,
+      "id": 469,
       "name": "Hachiman",
       "mythology": "Shinto",
       "race": "God",
@@ -5277,7 +6023,7 @@
       "tags": "Gardien, Guerre"
     },
     {
-      "id": 414,
+      "id": 470,
       "name": "Bouddha",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5289,7 +6035,7 @@
       "tags": "Gardien, Mort, Terre"
     },
     {
-      "id": 415,
+      "id": 471,
       "name": "Agni",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5301,7 +6047,7 @@
       "tags": "Ciel, Feu, Messager"
     },
     {
-      "id": 416,
+      "id": 472,
       "name": "Brahma",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5313,7 +6059,7 @@
       "tags": "Royauté, Création"
     },
     {
-      "id": 417,
+      "id": 473,
       "name": "Ganesh",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5326,7 +6072,7 @@
       "tags": "Sagesse"
     },
     {
-      "id": 418,
+      "id": 474,
       "name": "Indra",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5338,7 +6084,7 @@
       "tags": "Animal, Ciel, Guerre, Royauté, Sagesse"
     },
     {
-      "id": 419,
+      "id": 475,
       "name": "Kali",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5350,7 +6096,7 @@
       "tags": "Mort"
     },
     {
-      "id": 420,
+      "id": 476,
       "name": "Shiva",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5362,7 +6108,7 @@
       "tags": "Arts"
     },
     {
-      "id": 421,
+      "id": 477,
       "name": "Vishnou",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5374,7 +6120,7 @@
       "tags": "Gardien, Terre"
     },
     {
-      "id": 422,
+      "id": 478,
       "name": "Bakasura",
       "mythology": "Hindouisme",
       "race": "Monster",
@@ -5386,7 +6132,7 @@
       "tags": "Animal"
     },
     {
-      "id": 423,
+      "id": 479,
       "name": "Kumbhakarna",
       "mythology": "Hindouisme",
       "race": "Giant",
@@ -5399,7 +6145,7 @@
       "tags": "Guerre"
     },
     {
-      "id": 424,
+      "id": 480,
       "name": "Rama",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5412,7 +6158,7 @@
       "tags": "Guerre, Royauté"
     },
     {
-      "id": 425,
+      "id": 481,
       "name": "Ravana",
       "mythology": "Hindouisme",
       "race": "Heroes",
@@ -5426,7 +6172,7 @@
       "tags": "Guerre, Royauté"
     },
     {
-      "id": 426,
+      "id": 482,
       "name": "Vamana",
       "mythology": "Hindouisme",
       "race": "God",
@@ -5438,7 +6184,7 @@
       "tags": "Terre, Ciel"
     },
     {
-      "id": 427,
+      "id": 483,
       "name": "Ishtar",
       "mythology": "Mésopotamienne",
       "race": "God",
@@ -5450,7 +6196,7 @@
       "tags": "Amour, Guerre, Mort, Royauté"
     },
     {
-      "id": 428,
+      "id": 484,
       "name": "Tiamat",
       "mythology": "Mésopotamienne",
       "race": "Monster",
@@ -5463,7 +6209,7 @@
       "tags": "Animal, Eau"
     },
     {
-      "id": 429,
+      "id": 485,
       "name": "Marduk",
       "mythology": "Mésopotamienne",
       "race": "God",
@@ -5475,7 +6221,7 @@
       "tags": "Eau, Création"
     },
     {
-      "id": 430,
+      "id": 486,
       "name": "Enlil",
       "mythology": "Mésopotamienne",
       "race": "God",
@@ -5487,7 +6233,7 @@
       "tags": "Ciel, Royauté"
     },
     {
-      "id": 431,
+      "id": 487,
       "name": "Nergal",
       "mythology": "Mésopotamienne",
       "race": "God",
@@ -5499,7 +6245,7 @@
       "tags": "Guerre, Mort"
     },
     {
-      "id": 432,
+      "id": 488,
       "name": "Gilgamesh",
       "mythology": "Mésopotamienne",
       "race": "Heroes",
@@ -5512,7 +6258,7 @@
       "tags": "Humain, Mort, Royauté"
     },
     {
-      "id": 433,
+      "id": 489,
       "name": "Olorun",
       "mythology": "Yoruba",
       "race": "God",
@@ -5524,7 +6270,7 @@
       "tags": "Ciel, Création"
     },
     {
-      "id": 434,
+      "id": 490,
       "name": "Obatala",
       "mythology": "Yoruba",
       "race": "God",
@@ -5535,7 +6281,7 @@
       "tags": "Justice, Création"
     },
     {
-      "id": 435,
+      "id": 491,
       "name": "Yemoja",
       "mythology": "Yoruba",
       "race": "God",
@@ -5547,7 +6293,7 @@
       "tags": "Eau, Fertilité"
     },
     {
-      "id": 436,
+      "id": 492,
       "name": "Shango",
       "mythology": "Yoruba",
       "race": "God",
@@ -5559,7 +6305,7 @@
       "tags": "Foudre, Justice, Royauté"
     },
     {
-      "id": 437,
+      "id": 493,
       "name": "Quetzalcóatl",
       "mythology": "Aztèque",
       "race": "God",
@@ -5571,7 +6317,7 @@
       "tags": "Animal, Mort, Vent"
     },
     {
-      "id": 438,
+      "id": 494,
       "name": "Tlaloc",
       "mythology": "Aztèque",
       "race": "God",
@@ -5583,7 +6329,7 @@
       "tags": "Eau, Foudre"
     },
     {
-      "id": 439,
+      "id": 495,
       "name": "Artio",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5595,7 +6341,7 @@
       "tags": "Animal, Chasse"
     },
     {
-      "id": 440,
+      "id": 496,
       "name": "Morrigan",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5607,7 +6353,7 @@
       "tags": "Guerre, Mort"
     },
     {
-      "id": 441,
+      "id": 497,
       "name": "Cernunnos",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5619,7 +6365,7 @@
       "tags": "Animal, Fertilité"
     },
     {
-      "id": 442,
+      "id": 498,
       "name": "Moritasgus",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5631,7 +6377,7 @@
       "tags": "Guérison"
     },
     {
-      "id": 443,
+      "id": 499,
       "name": "Teutatès",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5642,7 +6388,7 @@
       "tags": "Guerre, Justice, Mort"
     },
     {
-      "id": 444,
+      "id": 500,
       "name": "Taranis",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5654,7 +6400,7 @@
       "tags": "Ciel, Guerre"
     },
     {
-      "id": 445,
+      "id": 501,
       "name": "Esus",
       "mythology": "Celtique Gauloise",
       "race": "God",
@@ -5666,7 +6412,7 @@
       "tags": "Commerce, Nature"
     },
     {
-      "id": 446,
+      "id": 502,
       "name": "Baba Yaga",
       "mythology": "Slave",
       "race": "God",
@@ -5678,7 +6424,7 @@
       "tags": "Chasse, Magie"
     },
     {
-      "id": 447,
+      "id": 503,
       "name": "Tchernobog",
       "mythology": "Slave",
       "race": "God",
@@ -5690,7 +6436,7 @@
       "tags": "Nuit, Soleil, Ombres"
     },
     {
-      "id": 448,
+      "id": 504,
       "name": "Baron Samedi",
       "mythology": "Vaudou",
       "race": "God",
@@ -5702,7 +6448,7 @@
       "tags": "Mort"
     },
     {
-      "id": 449,
+      "id": 505,
       "name": "Maman Brigitte",
       "mythology": "Vaudou",
       "race": "God",
@@ -5714,7 +6460,7 @@
       "tags": "Gardien, Mort"
     },
     {
-      "id": 450,
+      "id": 506,
       "name": "Pele",
       "mythology": "Hawaïenne",
       "race": "God",
@@ -5726,7 +6472,7 @@
       "tags": "Arts, Feu"
     },
     {
-      "id": 451,
+      "id": 507,
       "name": "Balance",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5738,7 +6484,7 @@
       "tags": "Destin"
     },
     {
-      "id": 452,
+      "id": 508,
       "name": "Bélier",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5750,7 +6496,7 @@
       "tags": "Destin, Feu"
     },
     {
-      "id": 453,
+      "id": 509,
       "name": "Cancer",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5762,7 +6508,7 @@
       "tags": "Destin, Eau, Nuit, Lune"
     },
     {
-      "id": 454,
+      "id": 510,
       "name": "Capricorne",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5774,7 +6520,7 @@
       "tags": "Animal, Destin, Terre"
     },
     {
-      "id": 455,
+      "id": 511,
       "name": "Gémeaux",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5786,7 +6532,7 @@
       "tags": "Destin"
     },
     {
-      "id": 456,
+      "id": 512,
       "name": "Licorne",
       "mythology": "Universelle",
       "race": "Monster",
@@ -5798,7 +6544,7 @@
       "tags": "Animal"
     },
     {
-      "id": 457,
+      "id": 513,
       "name": "Lion",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5810,7 +6556,7 @@
       "tags": "Destin, Feu, Royauté, Soleil"
     },
     {
-      "id": 458,
+      "id": 514,
       "name": "Poissons",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5822,7 +6568,7 @@
       "tags": "Destin, Eau"
     },
     {
-      "id": 459,
+      "id": 515,
       "name": "Sagittaire",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5834,7 +6580,7 @@
       "tags": "Animal, Destin, Feu"
     },
     {
-      "id": 460,
+      "id": 516,
       "name": "Scorpion",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5846,7 +6592,7 @@
       "tags": "Destin, Eau"
     },
     {
-      "id": 461,
+      "id": 517,
       "name": "Taureau",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5858,7 +6604,7 @@
       "tags": "Destin, Terre"
     },
     {
-      "id": 462,
+      "id": 518,
       "name": "Verseau",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5870,7 +6616,7 @@
       "tags": "Destin, Eau"
     },
     {
-      "id": 463,
+      "id": 519,
       "name": "Vierge",
       "mythology": "Universelle",
       "race": "Zodiacal_Sign",
@@ -5882,7 +6628,7 @@
       "tags": "Destin, Terre"
     },
     {
-      "id": 464,
+      "id": 520,
       "name": "Basilic",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5894,7 +6640,7 @@
       "tags": "Animal, Arts, Royauté, Vent"
     },
     {
-      "id": 465,
+      "id": 521,
       "name": "Dragon",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5906,7 +6652,7 @@
       "tags": "Animal"
     },
     {
-      "id": 466,
+      "id": 522,
       "name": "Drake",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5917,7 +6663,7 @@
       "tags": "Animal, Gardien"
     },
     {
-      "id": 467,
+      "id": 523,
       "name": "Manticore",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5929,7 +6675,7 @@
       "tags": "Animal"
     },
     {
-      "id": 468,
+      "id": 524,
       "name": "Wyvern",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5941,7 +6687,7 @@
       "tags": "Animal"
     },
     {
-      "id": 469,
+      "id": 525,
       "name": "Amphiptère",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5952,7 +6698,7 @@
       "tags": "Animal, Royauté, Sagesse"
     },
     {
-      "id": 470,
+      "id": 526,
       "name": "Cocatrix",
       "mythology": "Européenne",
       "race": "Monster",
@@ -5964,7 +6710,19 @@
       "tags": "Animal"
     },
     {
-      "id": 471,
+      "id": 527,
+      "name": "Catoblépas",
+      "mythology": "Européenne",
+      "race": "Monster",
+      "monsterType": "Bovin",
+      "description": "Bête d'Éthiopie décrite par Pline l'Ancien, sa tête est si lourde qu'elle la garde toujours penchée vers le sol, heureusement, car son regard ou son souffle tue sur-le-champ.",
+      "popularCulture": "Donjons & Dragons",
+      "clue": "Bovin à la tête toujours baissée dont le regard tue",
+      "difficulty": 3,
+      "tags": "Animal, Mort"
+    },
+    {
+      "id": 528,
       "name": "Kitsune",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -5977,7 +6735,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 472,
+      "id": 529,
       "name": "Yokai",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -5989,7 +6747,7 @@
       "tags": "Animal"
     },
     {
-      "id": 473,
+      "id": 530,
       "name": "Bake Kujira",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6002,7 +6760,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 474,
+      "id": 531,
       "name": "Kappa",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6014,7 +6772,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 475,
+      "id": 532,
       "name": "Tanuki",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6027,7 +6785,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 476,
+      "id": 533,
       "name": "Yamata no Orochi",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6040,7 +6798,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 477,
+      "id": 534,
       "name": "Hinezumi",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6052,7 +6810,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 478,
+      "id": 535,
       "name": "Danzaburou",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6064,7 +6822,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 479,
+      "id": 536,
       "name": "Kuzenbo",
       "mythology": "Japonaise",
       "race": "Monster",
@@ -6076,7 +6834,7 @@
       "listThemes": "Yokais"
     },
     {
-      "id": 480,
+      "id": 537,
       "name": "Feu Follet",
       "mythology": "Française",
       "race": "Monster",
@@ -6087,7 +6845,7 @@
       "tags": "Feu, Mort"
     },
     {
-      "id": 481,
+      "id": 538,
       "name": "Tarasque",
       "mythology": "Française",
       "race": "Monster",
@@ -6099,7 +6857,7 @@
       "tags": "Animal"
     },
     {
-      "id": 482,
+      "id": 539,
       "name": "Vouivre",
       "mythology": "Française",
       "race": "Monster",
@@ -6110,7 +6868,7 @@
       "tags": "Animal"
     },
     {
-      "id": 483,
+      "id": 540,
       "name": "Wendigo",
       "mythology": "Amérindienne",
       "race": "Monster",
@@ -6122,7 +6880,7 @@
       "tags": "Animal"
     },
     {
-      "id": 484,
+      "id": 541,
       "name": "Wolpertinger",
       "mythology": "Bavaroise",
       "race": "Monster",
@@ -6133,7 +6891,7 @@
       "tags": "Animal"
     },
     {
-      "id": 485,
+      "id": 542,
       "name": "Rokh",
       "mythology": "Perse",
       "race": "Monster",
@@ -6145,7 +6903,7 @@
       "tags": "Animal, Eau"
     },
     {
-      "id": 486,
+      "id": 543,
       "name": "Lilith",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6157,7 +6915,7 @@
       "tags": "Nuit, Ruse"
     },
     {
-      "id": 487,
+      "id": 544,
       "name": "Lucifer",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6169,7 +6927,7 @@
       "tags": "Ruse"
     },
     {
-      "id": 488,
+      "id": 545,
       "name": "Satan",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6181,7 +6939,7 @@
       "tags": "Ruse"
     },
     {
-      "id": 489,
+      "id": 546,
       "name": "Asmodée",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6193,7 +6951,7 @@
       "tags": "Animal, Chasse, Feu, Ruse"
     },
     {
-      "id": 490,
+      "id": 547,
       "name": "Bélial",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6204,7 +6962,7 @@
       "tags": "Justice, Ruse"
     },
     {
-      "id": 491,
+      "id": 548,
       "name": "Gabriel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6216,7 +6974,7 @@
       "tags": "Justice, Messager, Vent"
     },
     {
-      "id": 492,
+      "id": 549,
       "name": "Léviathan",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6228,7 +6986,7 @@
       "tags": "Ruse"
     },
     {
-      "id": 493,
+      "id": 550,
       "name": "Michaël",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6240,7 +6998,7 @@
       "tags": "Gardien, Justice, Messager"
     },
     {
-      "id": 494,
+      "id": 551,
       "name": "Raphaël",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6252,7 +7010,7 @@
       "tags": "Gardien, Messager"
     },
     {
-      "id": 495,
+      "id": 552,
       "name": "Uriel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6264,7 +7022,7 @@
       "tags": "Messager, Sagesse"
     },
     {
-      "id": 496,
+      "id": 553,
       "name": "Belphégor",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6276,7 +7034,7 @@
       "tags": "Ruse"
     },
     {
-      "id": 497,
+      "id": 554,
       "name": "Jérémiel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6287,7 +7045,7 @@
       "tags": "Messager"
     },
     {
-      "id": 498,
+      "id": 555,
       "name": "Mammon",
       "mythology": "Abrahamique",
       "race": "Demon_Prince",
@@ -6299,7 +7057,7 @@
       "tags": "Ruse, Richesse"
     },
     {
-      "id": 499,
+      "id": 556,
       "name": "Raguel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6310,7 +7068,7 @@
       "tags": "Gardien, Justice, Messager"
     },
     {
-      "id": 500,
+      "id": 557,
       "name": "Sariel",
       "mythology": "Abrahamique",
       "race": "Archangels",
@@ -6321,7 +7079,7 @@
       "tags": "Gardien, Messager"
     },
     {
-      "id": 501,
+      "id": 558,
       "name": "Arthur",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6336,7 +7094,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 502,
+      "id": 559,
       "name": "Lancelot",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6350,7 +7108,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 503,
+      "id": 560,
       "name": "Merlin",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6363,7 +7121,7 @@
       "tags": "Guerre, Magie, Royauté, Ruse"
     },
     {
-      "id": 504,
+      "id": 561,
       "name": "Uther",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6376,7 +7134,7 @@
       "tags": "Eau, Guerre, Magie, Royauté"
     },
     {
-      "id": 505,
+      "id": 562,
       "name": "Caradoc",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6389,7 +7147,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 506,
+      "id": 563,
       "name": "Galahad",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6403,7 +7161,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 507,
+      "id": 564,
       "name": "Gauvain",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6417,7 +7175,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 508,
+      "id": 565,
       "name": "Guenièvre",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6430,7 +7188,7 @@
       "tags": "Amour, Guerre, Royauté"
     },
     {
-      "id": 509,
+      "id": 566,
       "name": "Keu",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6444,7 +7202,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 510,
+      "id": 567,
       "name": "Mordred",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6459,7 +7217,7 @@
       "tags": "Guerre, Royauté"
     },
     {
-      "id": 511,
+      "id": 568,
       "name": "Morgane",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6472,7 +7230,7 @@
       "tags": "Guerre, Magie, Royauté"
     },
     {
-      "id": 512,
+      "id": 569,
       "name": "Perceval",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6486,7 +7244,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 513,
+      "id": 570,
       "name": "Yvain",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6499,7 +7257,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 514,
+      "id": 571,
       "name": "Bohort",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6513,7 +7271,7 @@
       "listThemes": "Chevaliers de la table ronde"
     },
     {
-      "id": 515,
+      "id": 572,
       "name": "Iseult",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6526,7 +7284,7 @@
       "tags": "Amour, Guerre, Mort, Royauté"
     },
     {
-      "id": 516,
+      "id": 573,
       "name": "Dame du Lac",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6539,7 +7297,7 @@
       "tags": "Eau, Guerre, Magie, Royauté"
     },
     {
-      "id": 517,
+      "id": 574,
       "name": "Léodagan",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6552,7 +7310,7 @@
       "tags": "Guerre, Royauté"
     },
     {
-      "id": 518,
+      "id": 575,
       "name": "Méléagant",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
@@ -6564,7 +7322,7 @@
       "tags": "Guerre, Mort, Royauté"
     },
     {
-      "id": 519,
+      "id": 576,
       "name": "Tristan",
       "mythology": "Arthurienne",
       "race": "Arthurian_Knight",
