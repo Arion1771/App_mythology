@@ -128,6 +128,17 @@ fun clickFirstChildButton(): ViewAction = object : ViewAction {
     }
 }
 
+/** Clique le bouton enfant libellé [text] d'un conteneur créé dynamiquement (thèmes du mode Liste). */
+fun clickChildButtonWithText(text: String): ViewAction = object : ViewAction {
+    override fun getConstraints(): Matcher<android.view.View> = IsInstanceOf.instanceOf(ViewGroup::class.java)
+    override fun getDescription() = "clique le bouton enfant « $text »"
+    override fun perform(uiController: UiController, view: android.view.View) {
+        val group = view as ViewGroup
+        (0 until group.childCount).map { group.getChildAt(it) }.first { it is Button && it.text == text }.performClick()
+        uiController.loopMainThreadUntilIdle()
+    }
+}
+
 /**
  * Boutons du choix de difficulté (quiz et Duel) : niveau seul, sans nombre de
  * questions (toujours 15 depuis V4.4.0).
