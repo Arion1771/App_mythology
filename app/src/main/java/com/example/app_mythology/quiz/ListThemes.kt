@@ -88,7 +88,7 @@ object ListThemeCatalog {
         ListTheme.EntityTheme("monstres", "Monstres", 10) {
             groupByMythologyRanked(it, it.filter { e -> e.race == "Monster" })
         },
-        ListTheme.EntityTheme("heros", "Héros", 5) {
+        ListTheme.EntityTheme("heros", "Héros", 10) {
             groupByMythologyRanked(it, it.filter { e -> e.race == "Heroes" })
         },
         ListTheme.ArtifactTheme("artefacts", "Artefacts", 10) { artifacts ->
