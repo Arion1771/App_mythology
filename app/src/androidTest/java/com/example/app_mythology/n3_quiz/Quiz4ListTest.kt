@@ -14,6 +14,7 @@ import com.example.app_mythology.R
 import com.example.app_mythology.WRONG_ANSWER
 import com.example.app_mythology.answerAndValidate
 import com.example.app_mythology.assertCurrentDestination
+import com.example.app_mythology.clickChildButtonWithText
 import com.example.app_mythology.clickFirstChildButton
 import com.example.app_mythology.currentFragmentQuizViewModel
 import com.example.app_mythology.onMain
@@ -32,7 +33,8 @@ import org.junit.runners.MethodSorters
  * Quiz Liste (thème choisi, retrouver toutes les entrées) — branche
  * Test-Non-Regression : le choix d'un thème ouvre sa grille de cartes avec
  * la saisie prête, un thème complet (chaque bonne réponse marquant
- * l'entrée trouvée sans compter d'erreur) se termine sur le score attendu, et
+ * l'entrée trouvée sans compter d'erreur) se termine sur le score attendu —
+ * vérifié sur un thème court (Grées) pour limiter la durée du test —, et
  * un champ vide ou une entrée déjà trouvée ne consomme pas d'essai et ne
  * valide rien.
  */
@@ -44,15 +46,19 @@ class Quiz4ListTest {
     @get:Rule
     val deviceState = DeviceStateRestoreRule()
 
-    private fun openFirstTheme(): ActivityScenario<MainActivity> {
+    /** Ouvre le thème libellé [title], ou le premier thème (Mythologie grecque) si null. */
+    private fun openTheme(title: String? = null): ActivityScenario<MainActivity> {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btn_primary_2)).perform(click()) // Quizz
         onView(withId(R.id.btn_primary_3)).perform(click()) // Liste
         scenario.assertCurrentDestination(R.id.quizListChoiceFragment)
-        onView(withId(R.id.container_themes)).perform(clickFirstChildButton())
+        onView(withId(R.id.container_themes))
+            .perform(if (title == null) clickFirstChildButton() else clickChildButtonWithText(title))
         scenario.waitForDestination(R.id.quizListFragment)
         return scenario
     }
+
+    private fun openFirstTheme() = openTheme()
 
     @Test
     fun t01_pickingAThemeOpensItsGridWithInputReady() {
@@ -66,7 +72,7 @@ class Quiz4ListTest {
 
     @Test
     fun t02_fullThemeShowsScore() {
-        val scenario = openFirstTheme()
+        val scenario = openTheme("Grées") // 3 entrées : un thème complet sans parcourir toute une mythologie
         val vm = scenario.currentFragmentQuizViewModel()
         waitFor { scenario.onMain { vm.allListItems() }.isNotEmpty() }
         val items = scenario.onMain { vm.allListItems() }
