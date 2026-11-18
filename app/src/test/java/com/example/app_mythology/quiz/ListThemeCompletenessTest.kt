@@ -172,6 +172,13 @@ class ListThemeCompletenessTest {
         expectedEntityNames { it.strOrNull("zodiacType") in setOf("Classique", "Chinois") },
     )
 
+    @Test fun t21_mythologiePolynesienne() = assertThemeComplete(
+        "mythologie_polynesienne",
+        expectedEntityNames { it.getString("mythology") in setOf("Polynésienne", "Hawaïenne") },
+    )
+    @Test fun t22_mythologieInuit() = assertThemeComplete("mythologie_inuit", expectedEntityNames { it.getString("mythology") == "Inuit" })
+    @Test fun t23_mythologieAmazighe() = assertThemeComplete("mythologie_amazighe", expectedEntityNames { it.getString("mythology") == "Amazighe" })
+
     // ── Thèmes curés (champ listThemes) ────────────────────────────────────
 
     private val curatedThemeTitles = mapOf(
@@ -185,7 +192,7 @@ class ListThemeCompletenessTest {
     )
 
     @Test
-    fun t21_everyCuratedThemeResolvesExactlyItsListThemesMembers() {
+    fun t24_everyCuratedThemeResolvesExactlyItsListThemesMembers() {
         for ((themeId, title) in curatedThemeTitles) {
             val expected = expectedEntityNames { title in listThemesOf(it) }
             assertThemeComplete(themeId, expected)

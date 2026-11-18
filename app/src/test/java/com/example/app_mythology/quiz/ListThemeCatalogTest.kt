@@ -35,9 +35,9 @@ class ListThemeCatalogTest {
     // ── Intégrité du catalogue ─────────────────────────────────────────────
 
     @Test
-    fun `t01 catalog exposes 27 themes with unique ids and non-blank titles`() {
+    fun `t01 catalog exposes 30 themes with unique ids and non-blank titles`() {
         val all = ListThemeCatalog.all
-        assertEquals(27, all.size)
+        assertEquals(30, all.size)
         assertEquals("les identifiants de thème doivent être uniques", all.size, all.map { it.id }.toSet().size)
         assertTrue(all.all { it.title.isNotBlank() })
     }
