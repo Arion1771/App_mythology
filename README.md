@@ -12,6 +12,36 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.5.3)
 
+#### V4.5.8
+
+- Three new List quiz themes: "Mythologie polynésienne" (Polynesian and Hawaiian mythologies), "Mythologie inuit" and "Mythologie amazighe", each allowing 3 attempts
+- Three matching achievements ("Connaisseur de la mythologie polynésienne / inuit / amazighe"); the "Faut sortir la" achievement now requires completing all 30 themes
+- Entities added/modified in the database:
+  - Sokaris (added)
+  - Maui (added)
+  - Rangi (added)
+  - Papa (added)
+  - Tāne (added)
+  - Tangaroa (added)
+  - Tū (added)
+  - Rongo (added)
+  - Hina (added)
+  - Sedna (added)
+  - Anningan (added)
+  - Malina (added)
+  - Nanook (added)
+  - Pinga (added)
+  - Sila (added)
+  - Tekkeitsertok (added)
+  - Tornarsuk (added)
+  - Tanit (added)
+  - Ammon (added)
+  - Anzar (added)
+  - Ayyur (added)
+  - Gurzil (added)
+  - Ifri (added)
+  - Mastiman (added)
+
 #### V4.5.7
 
 - "Héros" theme of the List quiz: 10 attempts allowed instead of 5, as the theme now exceeds 50 entries
@@ -153,6 +183,36 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.5.3)
+
+#### V4.5.8
+
+- Trois nouveaux thèmes dans le mode Liste : « Mythologie polynésienne » (mythologies polynésienne et hawaïenne), « Mythologie inuit » et « Mythologie amazighe », 3 essais autorisés chacun
+- Trois nouveaux succès associés (« Connaisseur de la mythologie polynésienne / inuit / amazighe ») ; le succès « Faut sortir la » demande désormais de compléter les 30 thèmes
+- Ajout/Modification d'entités en base :
+  - Sokaris (ajout)
+  - Maui (ajout)
+  - Rangi (ajout)
+  - Papa (ajout)
+  - Tāne (ajout)
+  - Tangaroa (ajout)
+  - Tū (ajout)
+  - Rongo (ajout)
+  - Hina (ajout)
+  - Sedna (ajout)
+  - Anningan (ajout)
+  - Malina (ajout)
+  - Nanook (ajout)
+  - Pinga (ajout)
+  - Sila (ajout)
+  - Tekkeitsertok (ajout)
+  - Tornarsuk (ajout)
+  - Tanit (ajout)
+  - Ammon (ajout)
+  - Anzar (ajout)
+  - Ayyur (ajout)
+  - Gurzil (ajout)
+  - Ifri (ajout)
+  - Mastiman (ajout)
 
 #### V4.5.7
 

@@ -3,13 +3,13 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **576 entités**, **22 lieux**, **61 artéfacts**.
+Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 
 ---
 
 ## Entités
 
-576 entités, groupées par mythologie puis par race.
+600 entités, groupées par mythologie puis par race.
 
 ### Grecque (234)
 
@@ -450,9 +450,9 @@ Total : **576 entités**, **22 lieux**, **61 artéfacts**.
 - Göndul
 - Sigrún
 
-### Égyptienne (34)
+### Égyptienne (35)
 
-#### Dieu (32)
+#### Dieu (33)
 
 - Amon
 - Anhour
@@ -482,6 +482,7 @@ Total : **576 entités**, **22 lieux**, **61 artéfacts**.
 - Seth
 - Shou
 - Sobek
+- Sokaris
 - Sérapis
 - Taouret
 - Tefnout
@@ -716,6 +717,44 @@ Total : **576 entités**, **22 lieux**, **61 artéfacts**.
 - Drake
 - Manticore
 - Wyvern
+
+### Inuit (8)
+
+#### Dieu (8)
+
+- Anningan
+- Malina
+- Nanook
+- Pinga
+- Sedna
+- Sila
+- Tekkeitsertok
+- Tornarsuk
+
+### Polynésienne (8)
+
+#### Dieu (8)
+
+- Hina
+- Maui
+- Papa
+- Rangi
+- Rongo
+- Tangaroa
+- Tāne
+- Tū
+
+### Amazighe (7)
+
+#### Dieu (7)
+
+- Ammon
+- Anzar
+- Ayyur
+- Gurzil
+- Ifri
+- Mastiman
+- Tanit
 
 ### Celtique Gauloise (7)
 
@@ -1021,7 +1060,7 @@ Total : **576 entités**, **22 lieux**, **61 artéfacts**.
 
 ## Thèmes du mode Liste
 
-27 thèmes proposés par le quiz Liste. Ceux marqués « (champ) » se déduisent
+30 thèmes proposés par le quiz Liste. Ceux marqués « (champ) » se déduisent
 automatiquement d'un ou plusieurs champs existants (mythologie, race,
 godType…) ; les autres reposent sur le champ `listThemes`, renseigné à la
 main sur les entités concernées dans `prepopulate.json`.
@@ -1034,11 +1073,14 @@ main sur les entités concernées dans `prepopulate.json`.
 | Mythologie chinoise | 31 | 5 | champ |
 | Mythologie shinto | 9 | 3 | champ |
 | Mythologie d'Amérique du Sud | 13 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
-| Dieux | 247 | 10 | champ |
+| Mythologie polynésienne | 9 | 3 | champ (Polynésienne, Hawaïenne) |
+| Mythologie inuit | 8 | 3 | champ |
+| Mythologie amazighe | 7 | 3 | champ |
+| Dieux | 271 | 10 | champ |
 | Monstres | 123 | 10 | champ |
 | Héros | 68 | 10 | champ |
 | Artefacts | 61 | 10 | tous les artéfacts |
-| Entités | 576 | 10 | toutes les entités |
+| Entités | 600 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
