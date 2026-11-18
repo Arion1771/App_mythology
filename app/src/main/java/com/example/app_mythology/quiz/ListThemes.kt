@@ -82,6 +82,15 @@ object ListThemeCatalog {
         ListTheme.EntityTheme("mythologie_amerique_sud", "Mythologie d'Amérique du Sud", 3) {
             groupByRaceAlpha(it.filter { e -> e.mythology in listOf("Maya", "Aztèque") })
         },
+        ListTheme.EntityTheme("mythologie_polynesienne", "Mythologie polynésienne", 3) {
+            groupByRaceAlpha(it.filter { e -> e.mythology in listOf("Polynésienne", "Hawaïenne") })
+        },
+        ListTheme.EntityTheme("mythologie_inuit", "Mythologie inuit", 3) {
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Inuit" })
+        },
+        ListTheme.EntityTheme("mythologie_amazighe", "Mythologie amazighe", 3) {
+            groupByRaceAlpha(it.filter { e -> e.mythology == "Amazighe" })
+        },
         ListTheme.EntityTheme("dieux", "Dieux", 10) {
             groupByMythologyRanked(it, it.filter { e -> e.race == "God" })
         },

@@ -13,6 +13,9 @@ object AchievementCatalog {
         "mythologie_chinoise" to "de la mythologie chinoise",
         "mythologie_shinto" to "de la mythologie shinto",
         "mythologie_amerique_sud" to "de la mythologie d'Amérique du Sud",
+        "mythologie_polynesienne" to "de la mythologie polynésienne",
+        "mythologie_inuit" to "de la mythologie inuit",
+        "mythologie_amazighe" to "de la mythologie amazighe",
         "dieux" to "des dieux",
         "monstres" to "des monstres",
         "heros" to "des héros",
@@ -92,7 +95,7 @@ object AchievementCatalog {
 
         // ── Listes ────────────────────────────────────────────────────────
         addAll(listAchievements)
-        add(Achievement("list_all", "Faut sortir la", "Complétez les 27 thèmes du quiz Liste", "Listes"))
+        add(Achievement("list_all", "Faut sortir la", "Complétez les 30 thèmes du quiz Liste", "Listes"))
     }
 
     fun byId(id: String): Achievement? = all.firstOrNull { it.id == id }

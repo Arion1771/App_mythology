@@ -2,6 +2,36 @@
 
 ## V4
 
+#### V4.5.8
+
+- Trois nouveaux thèmes dans le mode Liste : « Mythologie polynésienne » (mythologies polynésienne et hawaïenne), « Mythologie inuit » et « Mythologie amazighe », 3 essais autorisés chacun
+- Trois nouveaux succès associés (« Connaisseur de la mythologie polynésienne / inuit / amazighe ») ; le succès « Faut sortir la » demande désormais de compléter les 30 thèmes
+- Ajout/Modification d'entités en base :
+  - Sokaris (ajout)
+  - Maui (ajout)
+  - Rangi (ajout)
+  - Papa (ajout)
+  - Tāne (ajout)
+  - Tangaroa (ajout)
+  - Tū (ajout)
+  - Rongo (ajout)
+  - Hina (ajout)
+  - Sedna (ajout)
+  - Anningan (ajout)
+  - Malina (ajout)
+  - Nanook (ajout)
+  - Pinga (ajout)
+  - Sila (ajout)
+  - Tekkeitsertok (ajout)
+  - Tornarsuk (ajout)
+  - Tanit (ajout)
+  - Ammon (ajout)
+  - Anzar (ajout)
+  - Ayyur (ajout)
+  - Gurzil (ajout)
+  - Ifri (ajout)
+  - Mastiman (ajout)
+
 #### V4.5.7
 
 - Thème « Héros » du mode Liste : 10 essais autorisés au lieu de 5, le thème dépassant désormais 50 entrées
