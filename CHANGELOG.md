@@ -2,6 +2,37 @@
 
 ## V4
 
+#### V4.5.9
+
+- Ajout/Modification d'entités en base :
+  - Huitzilopochtli (ajout)
+  - Tezcatlipoca (ajout)
+  - Xipe Totec (ajout)
+  - Mictlantecuhtli (ajout)
+  - Coatlicue (ajout)
+  - Ahura Mazda (ajout)
+  - Ahriman (ajout)
+  - Mithra (ajout)
+  - Anahita (ajout)
+  - Perun (ajout)
+  - Veles (ajout)
+  - Svarog (ajout)
+  - Dazhbog (ajout)
+  - Mokosh (ajout)
+  - Koschei (ajout)
+  - Ogun (ajout)
+  - Eshu (ajout)
+  - Oshun (ajout)
+  - Oya (ajout)
+  - Orunmila (ajout)
+  - Anu (ajout)
+  - Enki (ajout)
+  - Shamash (ajout)
+  - Sin (ajout)
+  - Ereshkigal (ajout)
+  - Enkidou (ajout)
+  - Humbaba (ajout)
+
 #### V4.5.8
 
 - Trois nouveaux thèmes dans le mode Liste : « Mythologie polynésienne » (mythologies polynésienne et hawaïenne), « Mythologie inuit » et « Mythologie amazighe », 3 essais autorisés chacun
