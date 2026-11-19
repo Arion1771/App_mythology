@@ -12,6 +12,37 @@ Two other files in this repository are worth knowing about: [CHANGELOG.md](CHANG
 
 ### Changes since the last release (V4.5.3)
 
+#### V4.5.9
+
+- Entities added/modified in the database:
+  - Huitzilopochtli (added)
+  - Tezcatlipoca (added)
+  - Xipe Totec (added)
+  - Mictlantecuhtli (added)
+  - Coatlicue (added)
+  - Ahura Mazda (added)
+  - Ahriman (added)
+  - Mithra (added)
+  - Anahita (added)
+  - Perun (added)
+  - Veles (added)
+  - Svarog (added)
+  - Dazhbog (added)
+  - Mokosh (added)
+  - Koschei (added)
+  - Ogun (added)
+  - Eshu (added)
+  - Oshun (added)
+  - Oya (added)
+  - Orunmila (added)
+  - Anu (added)
+  - Enki (added)
+  - Shamash (added)
+  - Sin (added)
+  - Ereshkigal (added)
+  - Enkidou (added)
+  - Humbaba (added)
+
 #### V4.5.8
 
 - Three new List quiz themes: "Mythologie polynésienne" (Polynesian and Hawaiian mythologies), "Mythologie inuit" and "Mythologie amazighe", each allowing 3 attempts
@@ -183,6 +214,37 @@ Trois types de quiz permettent de tester vos connaissances — Classique (un ind
 Deux autres fichiers du dépôt sont utiles à connaître : [CHANGELOG.md](CHANGELOG.md) retrace l'historique complet des versions du projet, et [Base.md](Base.md) est un inventaire complet, tenu à jour, de toutes les entités, tous les lieux et tous les artéfacts actuellement dans la base, ainsi que le catalogue des thèmes utilisés par le quiz Liste.
 
 ### Nouveautés depuis la dernière release (V4.5.3)
+
+#### V4.5.9
+
+- Ajout/Modification d'entités en base :
+  - Huitzilopochtli (ajout)
+  - Tezcatlipoca (ajout)
+  - Xipe Totec (ajout)
+  - Mictlantecuhtli (ajout)
+  - Coatlicue (ajout)
+  - Ahura Mazda (ajout)
+  - Ahriman (ajout)
+  - Mithra (ajout)
+  - Anahita (ajout)
+  - Perun (ajout)
+  - Veles (ajout)
+  - Svarog (ajout)
+  - Dazhbog (ajout)
+  - Mokosh (ajout)
+  - Koschei (ajout)
+  - Ogun (ajout)
+  - Eshu (ajout)
+  - Oshun (ajout)
+  - Oya (ajout)
+  - Orunmila (ajout)
+  - Anu (ajout)
+  - Enki (ajout)
+  - Shamash (ajout)
+  - Sin (ajout)
+  - Ereshkigal (ajout)
+  - Enkidou (ajout)
+  - Humbaba (ajout)
 
 #### V4.5.8
 

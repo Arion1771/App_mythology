@@ -3,13 +3,13 @@
 Ce document recense l'intégralité du contenu de `app/src/main/assets/prepopulate.json`.
 **Il doit être régénéré/tenu à jour à chaque ajout, suppression ou renommage touchant la base.**
 
-Total : **600 entités**, **22 lieux**, **61 artéfacts**.
+Total : **627 entités**, **22 lieux**, **61 artéfacts**.
 
 ---
 
 ## Entités
 
-600 entités, groupées par mythologie puis par race.
+627 entités, groupées par mythologie puis par race.
 
 ### Grecque (234)
 
@@ -637,6 +637,30 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 
 - Bakasura
 
+### Mésopotamienne (13)
+
+#### Dieu (9)
+
+- Anu
+- Enki
+- Enlil
+- Ereshkigal
+- Ishtar
+- Marduk
+- Nergal
+- Shamash
+- Sin
+
+#### Héros (2)
+
+- Enkidou
+- Gilgamesh
+
+#### Monstre (2)
+
+- Humbaba
+- Tiamat
+
 ### Universelle (13)
 
 #### Monstre (1)
@@ -705,6 +729,20 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 - Susanoo
 - Tsukuyomi
 
+### Yoruba (9)
+
+#### Dieu (9)
+
+- Eshu
+- Obatala
+- Ogun
+- Olorun
+- Orunmila
+- Oshun
+- Oya
+- Shango
+- Yemoja
+
 ### Européenne (8)
 
 #### Monstre (8)
@@ -744,6 +782,22 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 - Tāne
 - Tū
 
+### Slave (8)
+
+#### Dieu (7)
+
+- Baba Yaga
+- Dazhbog
+- Mokosh
+- Perun
+- Svarog
+- Tchernobog
+- Veles
+
+#### Monstre (1)
+
+- Koschei
+
 ### Amazighe (7)
 
 #### Dieu (7)
@@ -755,6 +809,18 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 - Ifri
 - Mastiman
 - Tanit
+
+### Aztèque (7)
+
+#### Dieu (7)
+
+- Coatlicue
+- Huitzilopochtli
+- Mictlantecuhtli
+- Quetzalcóatl
+- Tezcatlipoca
+- Tlaloc
+- Xipe Totec
 
 ### Celtique Gauloise (7)
 
@@ -768,31 +834,18 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 - Taranis
 - Teutatès
 
-### Mésopotamienne (6)
+### Perse (5)
 
 #### Dieu (4)
 
-- Enlil
-- Ishtar
-- Marduk
-- Nergal
-
-#### Héros (1)
-
-- Gilgamesh
+- Ahriman
+- Ahura Mazda
+- Anahita
+- Mithra
 
 #### Monstre (1)
 
-- Tiamat
-
-### Yoruba (4)
-
-#### Dieu (4)
-
-- Obatala
-- Olorun
-- Shango
-- Yemoja
+- Rokh
 
 ### Française (3)
 
@@ -801,20 +854,6 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 - Feu Follet
 - Tarasque
 - Vouivre
-
-### Aztèque (2)
-
-#### Dieu (2)
-
-- Quetzalcóatl
-- Tlaloc
-
-### Slave (2)
-
-#### Dieu (2)
-
-- Baba Yaga
-- Tchernobog
 
 ### Vaudou (2)
 
@@ -840,12 +879,6 @@ Total : **600 entités**, **22 lieux**, **61 artéfacts**.
 #### Dieu (1)
 
 - Pele
-
-### Perse (1)
-
-#### Monstre (1)
-
-- Rokh
 
 ---
 
@@ -1072,15 +1105,15 @@ main sur les entités concernées dans `prepopulate.json`.
 | Mythologie hindoue | 13 | 3 | champ |
 | Mythologie chinoise | 31 | 5 | champ |
 | Mythologie shinto | 9 | 3 | champ |
-| Mythologie d'Amérique du Sud | 13 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
+| Mythologie d'Amérique du Sud | 18 | 3 | champ (Maya, Aztèque — aucune entité Inca en base) |
 | Mythologie polynésienne | 9 | 3 | champ (Polynésienne, Hawaïenne) |
 | Mythologie inuit | 8 | 3 | champ |
 | Mythologie amazighe | 7 | 3 | champ |
-| Dieux | 271 | 10 | champ |
-| Monstres | 123 | 10 | champ |
-| Héros | 68 | 10 | champ |
+| Dieux | 295 | 10 | champ |
+| Monstres | 125 | 10 | champ |
+| Héros | 69 | 10 | champ |
 | Artefacts | 61 | 10 | tous les artéfacts |
-| Entités | 600 | 10 | toutes les entités |
+| Entités | 627 | 10 | toutes les entités |
 | Muses | 12 | 3 | champ (Classiques / Béotiennes) |
 | Olympiens grecs | 14 | 3 | champ |
 | Olympiens romains | 14 | 3 | champ |
